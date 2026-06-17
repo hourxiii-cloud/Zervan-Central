@@ -24,6 +24,9 @@
 “load_receipt”: “receipts/v39_0_load_receipt.md”,
 “replay_scars”: “replay/v39_0_replay_scars.md”,
 “operation_route_catalog”: “routes/operation_route_catalog_v39_0.md”,
+“human_gate_authority_boundary”: “governance/human_gate_authority_boundary.md”,
+“hash_inventory_plan”: “verification/hash_inventory_plan.md”,
+“validation_checklist”: “verification/v39_0_validation_checklist.md”,
 “local_verifier”: “call/verify_local_call.py”,
 “local_provenance_simulator”: “scripts/local_provenance_simulator.py”,
 “repo_ignore_rules”: “.gitignore”
@@ -96,6 +99,24 @@
 “hash_status”: “pending_validation”
 },
 {
+“path”: “governance/human_gate_authority_boundary.md”,
+“role”: “human_gate_authority_boundary”,
+“required”: true,
+“hash_status”: “pending_validation”
+},
+{
+“path”: “verification/hash_inventory_plan.md”,
+“role”: “hash_inventory_plan”,
+“required”: true,
+“hash_status”: “pending_validation”
+},
+{
+“path”: “verification/v39_0_validation_checklist.md”,
+“role”: “validation_checklist”,
+“required”: true,
+“hash_status”: “pending_validation”
+},
+{
 “path”: “call/verify_local_call.py”,
 “role”: “local_verification_script”,
 “required”: true,
@@ -138,8 +159,11 @@
 “Secondary Manifest Control Layer”,
 “Origin Dataset Boundary”,
 “Data Provenance Control Layer”,
+“Hash Inventory Plan”,
+“Validation Checklist”,
 “Replay Scar”,
 “Human Gate”,
+“Human Gate Authority Boundary”,
 “No-Compression-Out”
 ],
 “claim_ceiling”: [
@@ -151,6 +175,8 @@
 “secondary manifest control presence”,
 “origin dataset boundary presence”,
 “data provenance control layer presence”,
+“hash inventory planning”,
+“validation checklist presence”,
 “human-gated authority boundary”
 ],
 “not_authorized”: [
@@ -161,7 +187,9 @@
 “legal finding”,
 “compliance certification”,
 “FedRAMP authorization”,
-“authority-bearing action”
+“authority-bearing action”,
+“system population”,
+“production execution”
 ],
 “truth_boundary”: [
 “Receipt is not truth.”,
@@ -171,6 +199,7 @@
 “Secondary Manifest Control is not truth.”,
 “Origin Dataset Boundary is not factual truth.”,
 “Data Provenance Control Layer is not truth.”,
+“Validation checklist is not authority.”,
 “Classification is not proof.”,
 “Framework mapping is not compliance.”,
 “Reporting adaptation is not verdict.”,
