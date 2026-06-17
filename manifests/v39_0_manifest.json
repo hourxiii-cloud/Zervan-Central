@@ -1,0 +1,92 @@
+{
+“package_id”: “LCALL-2026.06.17-001”,
+“repository”: “Zervan-Core-v39”,
+“canonical_configuration”: “vTemporal.39.0”,
+“implementation_package_version”: “LJCP-V39-MDM-DP-HELIX-ORIGIN-TMANIFEST-BCRR-2026.06.17-001”,
+“artifact_state”: “Produced Only”,
+“authority_state”: “NONE”,
+“human_gate”: “ACTIVE”,
+“runtime_state”: “DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE”,
+“posture”: “CONTROLLED / READ-ONLY”,
+“external_runtime”: “DISABLED”,
+“system_population”: “DISALLOWED”,
+“created_utc”: “2026-06-17T17:43:06Z”,
+“manifest_type”: “initial_static_manifest”,
+“source_of_truth”: {
+“canonical_body”: “canonical/ZERVAN_v39_0_CANONICAL_LOAD.md”,
+“local_call_statement”: “call/INITIATION_STATEMENT_V39_0.md”,
+“readme”: “README.md”
+},
+“files”: [
+{
+“path”: “README.md”,
+“role”: “repository_explanation”,
+“required”: true,
+“hash_status”: “pending_validation”
+},
+{
+“path”: “canonical/ZERVAN_v39_0_CANONICAL_LOAD.md”,
+“role”: “canonical_body”,
+“required”: true,
+“hash_status”: “pending_validation”
+},
+{
+“path”: “call/INITIATION_STATEMENT_V39_0.md”,
+“role”: “local_call_initiation”,
+“required”: true,
+“hash_status”: “pending_validation”
+}
+],
+“preserved_function_surfaces”: [
+“Multidirectional Communication Mesh”,
+“Signal Ecology”,
+“Pups”,
+“K9”,
+“Goblin Signal”,
+“Goblins”,
+“Goblin Teams”,
+“Goblin Platoon”,
+“FAMILY”,
+“Unit / Observer Registry”,
+“Persona Partner Registry”,
+“Processor Matrix”,
+“Beagle / Retriever / Raven”,
+“Operation Route Catalog”,
+“Workbook / Spreadsheet / Tabular Attribute Route”,
+“Classification Overlay”,
+“Framework Mapping Spine”,
+“Reporting Adaptation Layer”,
+“BDRR”,
+“Replay Scar”,
+“Human Gate”,
+“No-Compression-Out”
+],
+“claim_ceiling”: [
+“local-call identity”,
+“canonical configuration preservation”,
+“repo-carried source-of-truth body”,
+“manifest inventory”,
+“human-gated authority boundary”
+],
+“not_authorized”: [
+“external deployment”,
+“S3 population”,
+“DynamoDB population”,
+“Jira population”,
+“legal finding”,
+“compliance certification”,
+“FedRAMP authorization”,
+“authority-bearing action”
+],
+“truth_boundary”: [
+“Receipt is not truth.”,
+“Hash is not truth.”,
+“Manifest is not truth.”,
+“Classification is not proof.”,
+“Framework mapping is not compliance.”,
+“Reporting adaptation is not verdict.”,
+“Prepared movement is not execution.”,
+“Human analysis validates output.”,
+“Human authorization permits authority-bearing action.”
+]
+}
