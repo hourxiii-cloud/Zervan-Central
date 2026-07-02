@@ -10,8 +10,8 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 
 ## Counts
 
-- Modified existing files: 33
-- Added files: 9
+- Modified existing files: 35
+- Added files: 13
 - Deleted files: 0
 
 ## Modified Existing Files
@@ -22,6 +22,7 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 - `Accelerator/LLM_INIT.md`
 - `Accelerator/hydration_profile.full.json`
 - `DoctrineOps/DOCTRINE_MANIFEST.md`
+- `DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md`
 - `Hydrated_Zervan_Initialization.md`
 - `INVENTORY.md`
 - `Modules/AnimalKingdom/README.md`
@@ -33,6 +34,8 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 - `Modules/Retriever/README.md`
 - `Modules/Retriever/retriever_contract.md`
 - `README.md`
+- `ZERVAN_5_6_MODIFIED_FILE_RECORD.md`
+- `ZERVAN_5_6_TRANSITION_NOTE.md`
 - `ZERVAN_OPERATIONAL_MODES.md`
 - `observers/Duck/README.md`
 - `observers/Duck/duck_contract.md`
@@ -52,6 +55,9 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 
 ## Added Files
 
+- `ZERVAN_5_6_CANONICAL_DEFINITIONS.md`
+- `ZERVAN_5_6_VALIDATION_RESULTS.json`
+- `ZERVAN_5_6_VALIDATION_PROCESS.md`
 - `DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md`
 - `ZERVAN_5_6_MODIFIED_FILE_RECORD.md`
 - `ZERVAN_5_6_TRANSITION_NOTE.md`
@@ -61,6 +67,7 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 - `observers/Armadillo/armadillo_contract.md`
 - `observers/Osprey/README.md`
 - `observers/Osprey/osprey_contract.md`
+- `tools/validate_zervan_5_6_bridge.py`
 
 ## Deleted Files
 
@@ -68,8 +75,17 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 
 ## Modification Families
 
+### canonical_definitions
+- `ZERVAN_5_6_CANONICAL_DEFINITIONS.md`
+
 ### transition_control
 - `DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md`
+- `ZERVAN_5_6_TRANSITION_NOTE.md`
+
+### validation_reproducibility
+- `tools/validate_zervan_5_6_bridge.py`
+- `ZERVAN_5_6_VALIDATION_RESULTS.json`
+- `ZERVAN_5_6_VALIDATION_PROCESS.md`
 - `ZERVAN_5_6_TRANSITION_NOTE.md`
 
 ### modified_file_record
@@ -157,6 +173,11 @@ Source SHA-512: `12cc043ce5ce16e435e81ef3844e9ba82f374e8c377c0917153a6f8d7e4c296
 
 ## Capability Preservation Result
 
+- Canonical 5.6 definitions centralized in `ZERVAN_5_6_CANONICAL_DEFINITIONS.md` to reduce drift risk.
+- Bridge and transition note reference the canonical definitions instead of restating the full observer/spine model.
+- Reproducible validation mechanism added: `tools/validate_zervan_5_6_bridge.py`.
+- Validation process artifact added: `ZERVAN_5_6_VALIDATION_PROCESS.md`.
+- Validation result artifact added: `ZERVAN_5_6_VALIDATION_RESULTS.json`.
 - Full spine preserved and surfaced.
 - Owl_Hoot preserved as primary observer with optional bounded sub-observer mode only.
 - No files deleted.
