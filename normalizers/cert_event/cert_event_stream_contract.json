@@ -1,0 +1,57 @@
+{
+  "contract_name": "cert_event_stream",
+  "contract_version": "1.0.0",
+  "description": "Canonical CERT log normalizer output for Zervan insider-threat analysis.",
+  "records": {
+    "type": "object",
+    "required": [
+      "source_file",
+      "raw_type",
+      "event_id",
+      "ts",
+      "user",
+      "host",
+      "event_type",
+      "file_path",
+      "file_ext",
+      "email_to",
+      "email_from",
+      "email_subject",
+      "attachment_count",
+      "attachment_total_bytes",
+      "attachment_names",
+      "attachment_ext_counts",
+      "raw_text"
+    ],
+    "properties": {
+      "source_file": { "type": "string" },
+      "raw_type": { "type": "string" },
+      "event_id": { "type": "string" },
+      "ts": { "type": "string", "format": "date-time" },
+      "user": { "type": "string" },
+      "host": { "type": "string" },
+
+      "event_type": {
+        "type": "string",
+        "enum": ["logon", "logoff", "file_open", "file_event", "email_send", "email_event"]
+      },
+
+      "file_path": { "type": ["string", "null"] },
+      "file_ext": { "type": ["string", "null"] },
+
+      "email_to": { "type": ["string", "null"] },
+      "email_from": { "type": ["string", "null"] },
+      "email_subject": { "type": ["string", "null"] },
+
+      "attachment_count": { "type": "integer", "minimum": 0 },
+      "attachment_total_bytes": { "type": "integer", "minimum": 0 },
+      "attachment_names": { "type": "array", "items": { "type": "string" } },
+      "attachment_ext_counts": {
+        "type": "object",
+        "additionalProperties": { "type": "integer", "minimum": 0 }
+      },
+
+      "raw_text": { "type": ["string", "null"] }
+    }
+  }
+}

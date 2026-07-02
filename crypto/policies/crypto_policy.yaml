@@ -1,0 +1,355 @@
+from __future__ import annotations
+
+import base64
+import hashlib
+import json
+from decimal import Decimal
+from typing import Any, Dict, List, Set, Tuple
+
+
+from compiler.zervan_compiler import canonical_json_bytes, sha512_id
+
+
+class VerificationError(Exception):
+    """Fail-closed verification error."""
+    pass
+
+
+# ----------------------------
+# Small fail-closed coercions
+# ----------------------------
+
+def _as_dict(x: Any, name: str) -> Dict[str, Any]:
+    if not isinstance(x, dict):
+        raise VerificationError(f"{name} must be an object.")
+    return x
+
+
+def _as_list(x: Any, name: str) -> List[Any]:
+    if not isinstance(x, list):
+        raise VerificationError(f"{name} must be a list.")
+    return x
+
+
+def _as_str(x: Any, name: str) -> str:
+    if not isinstance(x, str) or not x.strip():
+        raise VerificationError(f"{name} must be a non-empty string.")
+    return x.strip()
+
+
+def _reject_python_floats(obj: Any, path: str = "$") -> None:
+    """
+    Safety net: reject Python floats anywhere in loaded objects.
+    Complements policy.canonicalization.envelope.forbid_signed_scope_floats.
+    """
+    if isinstance(obj, float):
+        raise VerificationError(f"Float value found at {path}; floats are inadmissible in signed material.")
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            _reject_python_floats(v, f"{path}.{k}")
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            _reject_python_floats(v, f"{path}[{i}]")
+
+
+def _b64decode_strict(b64: str, field_name: str) -> bytes:
+    try:
+        return base64.b64decode(b64, validate=True)
+    except Exception:
+        raise VerificationError(f"Invalid base64 in {field_name}.")
+
+
+# ----------------------------
+# Policy extraction (Option 2)
+# ----------------------------
+
+def _extract_crypto_policy_requirements(crypto_policy: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Extract runtime-enforced constraints from your crypto_policy.yaml structure.
+
+    Returns a dict with:
+      - policy_id
+      - required_canon_version_manifest
+      - required_signature_scope_manifest
+      - allowed_algs_union
+      - rsa_min_bits
+      - ecc_allowed_curves
+      - required_roles_manifest
+      - forbid_signed_scope_floats
+      - signature_preimage_type
+    """
+    root = _as_dict(crypto_policy, "crypto_policy")
+
+    policy = _as_dict(root.get("policy"), "crypto_policy.policy")
+    policy_id = _as_str(policy.get("id"), "crypto_policy.policy.id")
+
+    canonicalization = _as_dict(root.get("canonicalization"), "crypto_policy.canonicalization")
+    envelope_canon = _as_dict(canonicalization.get("envelope"), "crypto_policy.canonicalization.envelope")
+    canon_version = _as_str(envelope_canon.get("version"), "crypto_policy.canonicalization.envelope.version")
+    forbid_floats = bool(envelope_canon.get("forbid_signed_scope_floats", False))
+
+    signatures = _as_dict(root.get("signatures"), "crypto_policy.signatures")
+    preimage = _as_dict(signatures.get("preimage"), "crypto_policy.signatures.preimage")
+    preimage_type = _as_str(preimage.get("type"), "crypto_policy.signatures.preimage.type")
+    if preimage_type != "sha512_digest_bytes":
+        raise VerificationError(f"Unsupported preimage type in policy: {preimage_type}")
+
+    # Required roles for manifest
+    required_roles_manifest: Set[str] = set()
+    required_sets = signatures.get("required_sets", [])
+    if isinstance(required_sets, list):
+        for rs in required_sets:
+            if not isinstance(rs, dict):
+                continue
+            applies_to = rs.get("applies_to", [])
+            if isinstance(applies_to, list) and "manifest" in applies_to:
+                req = rs.get("required_roles", [])
+                if isinstance(req, list):
+                    required_roles_manifest.update([r for r in req if isinstance(r, str)])
+
+    if not required_roles_manifest:
+        # Fail-closed default aligned to your policy intent.
+        required_roles_manifest = {"engine"}
+
+    # Allowed algorithms union from roles.*.allow_algs
+    roles_obj = _as_dict(signatures.get("roles"), "crypto_policy.signatures.roles")
+    allowed_algs_union: Set[str] = set()
+    for _, role_cfg in roles_obj.items():
+        if isinstance(role_cfg, dict):
+            allow = role_cfg.get("allow_algs", [])
+            if isinstance(allow, list):
+                allowed_algs_union.update([a for a in allow if isinstance(a, str)])
+
+    if not allowed_algs_union:
+        raise VerificationError("crypto_policy: no allowed algorithms found under signatures.roles.*.allow_algs")
+
+    # Algorithm constraints
+    algorithms = _as_dict(root.get("algorithms"), "crypto_policy.algorithms")
+
+    rsa_min_bits = 3072
+    rsa_block = _as_dict(algorithms.get("rsa"), "crypto_policy.algorithms.rsa")
+    rsa_allowed = rsa_block.get("allowed", [])
+    if isinstance(rsa_allowed, list) and rsa_allowed:
+        mins = []
+        for entry in rsa_allowed:
+            if isinstance(entry, dict) and isinstance(entry.get("min_bits"), int):
+                mins.append(entry["min_bits"])
+        if mins:
+            rsa_min_bits = max(mins)
+
+    ecc_allowed_curves: Set[str] = set()
+    ecc_block = _as_dict(algorithms.get("ecc"), "crypto_policy.algorithms.ecc")
+    ecc_allowed = ecc_block.get("allowed", [])
+    if isinstance(ecc_allowed, list):
+        for entry in ecc_allowed:
+            if isinstance(entry, dict):
+                curves = entry.get("curves_allowed", [])
+                if isinstance(curves, list):
+                    ecc_allowed_curves.update([c for c in curves if isinstance(c, str)])
+
+    # Envelope-type rules (manifest) — THIS is what your YAML pins explicitly
+    envelopes = _as_dict(root.get("envelopes"), "crypto_policy.envelopes")
+    manifest_rules = _as_dict(envelopes.get("manifest"), "crypto_policy.envelopes.manifest")
+    required_sig_scope_manifest = _as_str(
+        manifest_rules.get("required_signature_scope"),
+        "crypto_policy.envelopes.manifest.required_signature_scope",
+    )
+    required_canon_version_manifest = _as_str(
+        manifest_rules.get("required_canonicalization_version"),
+        "crypto_policy.envelopes.manifest.required_canonicalization_version",
+    )
+
+    # Sanity: policy should be self-consistent
+    if required_canon_version_manifest != canon_version:
+        raise VerificationError(
+            "Policy inconsistency: envelopes.manifest.required_canonicalization_version "
+            "!= canonicalization.envelope.version"
+        )
+
+    return {
+        "policy_id": policy_id,
+        "required_canon_version_manifest": required_canon_version_manifest,
+        "required_signature_scope_manifest": required_sig_scope_manifest,
+        "allowed_algs_union": allowed_algs_union,
+        "rsa_min_bits": rsa_min_bits,
+        "ecc_allowed_curves": ecc_allowed_curves,
+        "required_roles_manifest": required_roles_manifest,
+        "forbid_signed_scope_floats": forbid_floats,
+        "signature_preimage_type": preimage_type,
+    }
+
+
+def validate_crypto_policy_preflight(crypto_policy: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Fail-closed preflight that returns extracted requirements.
+    (Keeps runtime deterministic and avoids repeated parsing.)
+    """
+    if crypto_policy is None:
+        raise VerificationError("crypto_policy is required (Option 2: policy injection).")
+    _reject_python_floats(crypto_policy)
+    req = _extract_crypto_policy_requirements(crypto_policy)
+    return req
+
+
+# ----------------------------
+# Signature lookup
+# ----------------------------
+
+def _find_signature_by_role(signatures: List[Dict[str, Any]], role: str) -> Dict[str, Any]:
+    for s in signatures:
+        if isinstance(s, dict) and s.get("role") == role:
+            return s
+    raise VerificationError(f"Missing required signature with role='{role}'.")
+
+
+# ----------------------------
+# Manifest verification
+# ----------------------------
+
+def verify_manifest(
+    manifest: Dict[str, Any],
+    public_key_pem: bytes,
+    *,
+    crypto_policy: Dict[str, Any],
+    require_role_fields: bool = True,
+    enforce_policy_binding: bool = False,
+) -> bool:
+    """
+    Option 2: runtime does NOT load policy by path. It REQUIRES the policy object.
+
+    Enforces policy-driven requirements:
+      - canonicalization version (from policy)
+      - manifest signature_scope (from policy)
+      - required signature roles for manifest (from policy)
+      - algorithm allowlist (from policy roles)
+      - RSA min bits (from policy)
+      - ECC curve allowlist (from policy)
+      - preimage type (policy pins sha512_digest_bytes)
+      - float rejection safety net (policy may require)
+    """
+    req = validate_crypto_policy_preflight(crypto_policy)
+
+    # Optional (recommended): bind manifest to the active crypto policy id
+    if enforce_policy_binding:
+        m_crypto = _as_dict(manifest.get("crypto", {}), "manifest.crypto")
+        m_policy_id = _as_str(m_crypto.get("policy_id"), "manifest.crypto.policy_id")
+        if m_policy_id != req["policy_id"]:
+            raise VerificationError(
+                f"Policy binding mismatch: manifest.crypto.policy_id='{m_policy_id}' != policy.id='{req['policy_id']}'"
+            )
+
+    try:
+        from cryptography.hazmat.primitives import hashes, serialization
+        from cryptography.hazmat.primitives.asymmetric import ec, padding, utils, rsa
+    except Exception as e:
+        raise RuntimeError("cryptography package is required. Install it in your environment.") from e
+
+    manifest = _as_dict(manifest, "manifest")
+
+    # Float rule (fail closed if policy demands it)
+    if req["forbid_signed_scope_floats"]:
+        _reject_python_floats(manifest)
+
+    canon = _as_dict(manifest.get("canonicalization", {}), "manifest.canonicalization")
+    if canon.get("version") != req["required_canon_version_manifest"]:
+        raise VerificationError(
+            f"canonicalization.version mismatch: found '{canon.get('version')}', "
+            f"required '{req['required_canon_version_manifest']}'"
+        )
+    if canon.get("signature_scope") != req["required_signature_scope_manifest"]:
+        raise VerificationError(
+            f"signature_scope mismatch: found '{canon.get('signature_scope')}', "
+            f"required '{req['required_signature_scope_manifest']}'"
+        )
+
+    crypto = _as_dict(manifest.get("crypto", {}), "manifest.crypto")
+    signed_hash = _as_str(crypto.get("signed_hash"), "manifest.crypto.signed_hash")
+    sigs_raw = _as_list(crypto.get("signatures"), "manifest.crypto.signatures")
+
+    sigs: List[Dict[str, Any]] = []
+    for i, s in enumerate(sigs_raw):
+        if not isinstance(s, dict):
+            raise VerificationError(f"manifest.crypto.signatures[{i}] must be an object.")
+        sigs.append(s)
+
+    # Recompute canonical bytes + hash
+    canonical = canonical_json_bytes(manifest)
+    recomputed = sha512_id(canonical)
+    if recomputed != signed_hash:
+        raise VerificationError("signed_hash does not match canonical bytes hash.")
+
+    # Required roles for manifest (policy-driven)
+    if require_role_fields:
+        for r in req["required_roles_manifest"]:
+            _find_signature_by_role(sigs, role=r)
+        sig_engine = _find_signature_by_role(sigs, role="engine")
+    else:
+        # Only allowed if you explicitly opt out.
+        if not sigs:
+            raise VerificationError("crypto.signatures is empty.")
+        sig_engine = sigs[0]
+
+    alg = _as_str(sig_engine.get("alg"), "engine_signature.alg")
+    if alg not in req["allowed_algs_union"]:
+        raise VerificationError(f"Signature alg not allowed by policy: {alg}")
+
+    sig_b64 = _as_str(sig_engine.get("signature_b64"), "engine_signature.signature_b64")
+    signature = _b64decode_strict(sig_b64, "engine_signature.signature_b64")
+
+    # Policy pins sha512_digest_bytes (raw 64-byte digest)
+    digest64 = hashlib.sha512(canonical).digest()
+
+    pub = serialization.load_pem_public_key(public_key_pem)
+
+    if alg == "RSA-PSS-SHA512":
+        if not isinstance(pub, rsa.RSAPublicKey):
+            raise VerificationError("RSA-PSS-SHA512 requires an RSA public key.")
+        if pub.key_size < req["rsa_min_bits"]:
+            raise VerificationError(f"RSA key too small: {pub.key_size} bits (min {req['rsa_min_bits']}).")
+
+        pub.verify(
+            signature,
+            digest64,
+            padding.PSS(
+                mgf=padding.MGF1(hashes.SHA512()),
+                salt_length=hashes.SHA512().digest_size,
+            ),
+            utils.Prehashed(hashes.SHA512()),
+        )
+
+    elif alg == "ECDSA-SHA512":
+        if not isinstance(pub, ec.EllipticCurvePublicKey):
+            raise VerificationError("ECDSA-SHA512 requires an EC public key.")
+        if not req["ecc_allowed_curves"]:
+            raise VerificationError("ECC verification requested but policy curves_allowed is empty.")
+        curve_name = pub.curve.name
+        if curve_name not in req["ecc_allowed_curves"]:
+            raise VerificationError(f"EC curve not allowed by policy: {curve_name}")
+
+        pub.verify(
+            signature,
+            digest64,
+            ec.ECDSA(utils.Prehashed(hashes.SHA512())),
+        )
+
+    else:
+        raise VerificationError(f"Unsupported signature alg: {alg}")
+
+    return True
+
+
+# ----------------------------
+# JSON loader (float-safe)
+# ----------------------------
+
+def load_json_no_float(path: str) -> Dict[str, Any]:
+    """
+    Parse JSON while preventing Python float introduction at parse time.
+    (Decimals will be produced for JSON fractional numbers.)
+    """
+    with open(path, "r", encoding="utf-8") as f:
+        obj = json.load(f, parse_float=Decimal)
+    if not isinstance(obj, dict):
+        raise VerificationError("Expected top-level JSON object.")
+    _reject_python_floats(obj)
+    return obj

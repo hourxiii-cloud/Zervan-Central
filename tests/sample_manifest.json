@@ -1,0 +1,23 @@
+{
+  "manifest_version": "1.1.0",
+  "canonicalization": {
+    "version": "zervan://crypto/canonicalization/envelope/1",
+    "signature_scope": "full_envelope"
+  },
+  "query": {
+    "query_id": "Q-SMOKE-0001",
+    "intent": "crypto_smoke_test"
+  },
+  "evidence": {
+    "dataset_ref": "sha512:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "execution": {
+    "ir_ref": "sha512:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "outputs": {
+    "result_ref": "sha512:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  },
+  "crypto": {
+    "policy_ref": "zervan://crypto/policy/1"
+  }
+}

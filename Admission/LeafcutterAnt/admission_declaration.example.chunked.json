@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+
+  "mode": "CONTROLLED",
+  "posture": "READ-ONLY",
+  "discovery": "DISABLED",
+  "mutation": "DISALLOWED",
+  "invention": "DISALLOWED",
+  "authority_inference": "DISALLOWED",
+  "fail_closed": "ENABLED",
+
+  "filename": "large_dataset_10gb.parquet",
+  "byte_size": 10737418240,
+
+  "chunking_required": true,
+  "threshold_used": "analysis_max_bytes_v1",
+
+  "chunking": {
+    "engine_ref": "FastCDC",
+    "profile_ref": "FastCDC/1",
+    "target_chunk_bytes": 134217728
+  },
+
+  "inputs": {
+    "chunk_manifest_ref": "chunk_manifest.large_dataset_10gb.json"
+  },
+
+  "evidence_type": "dataset",
+
+  "timestamp_utc": "2026-01-22T10:22:00Z",
+  "declared_by": "operator@example"
+}

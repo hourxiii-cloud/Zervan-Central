@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schema/envelopes/diagnostics/1.0.0",
+  "title": "Zervan Run Diagnostics",
+  "description": "Diagnostic output emitted by the compiler/conductor and sealed into the envelope. Includes schema validation results and ephemerality control checks.",
+  "type": "object",
+  "required": [
+    "diag_version",
+    "query_id",
+    "created_at",
+    "schema_validation",
+    "controls",
+    "purge"
+  ],
+  "properties": {
+    "diag_version": { "type": "string" },
+
+    "query_id": { "type": "string" },
+
+    "created_at": {
+      "type": "string",
+      "description": "ISO-8601 timestamp when diagnostics were produced."
+    },
+
+    "schema_validation": {
+      "type": "object",
+      "required": ["manifest", "run_plan_ir"],
+      "properties": {
+        "manifest": {
+          "type": "object",
+          "required": ["schema_id", "valid"],
+          "properties": {
+            "schema_id": { "type": "string" },
+            "valid": { "type": "boolean" },
+            "errors": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "run_plan_ir": {
+          "type": "object",
+          "required": ["schema_id", "valid"],
+          "properties": {
+            "schema_id": { "type": "string" },
+            "valid": { "type": "boolean" },
+            "errors": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "proof": {
+          "type": "object",
+          "required": ["schema_id", "valid"],
+          "properties": {
+            "schema_id": { "type": "string" },
+            "valid": { "type": "boolean" },
+            "errors": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "controls": {
+      "type": "object",
+      "required": ["asserted", "results"],
+      "properties": {
+        "asserted": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Controls asserted for this run (e.g., SC-EPH-01..05)."
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["control_id", "passed"],
+            "properties": {
+              "control_id": { "type": "string" },
+              "passed": { "type": "boolean" },
+              "details": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "purge": {
+      "type": "object",
+      "required": [
+        "ttl_seconds",
+        "generated_code_deleted",
+        "build_dir_deleted",
+        "residuals_found"
+      ],
+      "properties": {
+        "ttl_seconds": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Configured dwell-time / TTL used for ephemeral conductor lifetime."
+        },
+        "generated_code_deleted": { "type": "boolean" },
+        "build_dir_deleted": { "type": "boolean" },
+        "residuals_found": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Any unexpected residual artifacts discovered post-purge."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

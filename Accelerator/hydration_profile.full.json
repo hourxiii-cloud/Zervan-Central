@@ -1,0 +1,241 @@
+{
+  "hydration_surface_version": "1.0",
+  "default": "FAIL_CLOSED",
+  "no_discovery": true,
+  "transport_repo": "https://github.com/hourxiii-cloud/zervan-core",
+  "required": [
+    {
+      "name": "DoctrineOps/AUTHORITY_RESOLUTION.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/DoctrineOps/AUTHORITY_RESOLUTION.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "DoctrineOps/DOCTRINE_MANIFEST.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/DoctrineOps/DOCTRINE_MANIFEST.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "INVENTORY.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/INVENTORY.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "Accelerator/LLM_INIT.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Accelerator/LLM_INIT.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "Accelerator/LLM_DELTA.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Accelerator/LLM_DELTA.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "Accelerator/CONTEXT_PACK.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Accelerator/CONTEXT_PACK.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "Accelerator/LLM_INTAKE_GATE.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Accelerator/LLM_INTAKE_GATE.md",
+      "pinned_sha512": null
+    },
+    {
+      "name": "Accelerator/HYDRATION_SURFACE.md",
+      "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Accelerator/HYDRATION_SURFACE.md",
+      "pinned_sha512": null
+    }
+  ],
+  "optional_groups": [
+    {
+      "group": "doctrine_runtime_surfaces",
+      "items": [
+        {
+          "name": "Doctrine/CATHEDRAL.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Doctrine/CATHEDRAL.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "Doctrine/PMC.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Doctrine/PMC.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "Doctrine/MC.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Doctrine/MC.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "Doctrine/PMC_MC_INTERFACE.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Doctrine/PMC_MC_INTERFACE.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "Doctrine/PMC_ARENA.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/Doctrine/PMC_ARENA.md",
+          "pinned_sha512": null
+        }
+      ]
+    },
+    {
+      "group": "schema_surfaces",
+      "items": [
+        {
+          "name": "schema/envelopes/hydration_receipt.schema.json",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/schema/envelopes/hydration_receipt.schema.json",
+          "pinned_sha512": null
+        }
+      ]
+    },
+    {
+      "group": "observer_runtime_surfaces",
+      "items": [
+        {
+          "name": "observers/README.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Duck/README.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Duck/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Duck/duck_contract.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Duck/duck_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Eagle/README.MD",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Eagle/README.MD",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Eagle/eagle_contract.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Eagle/eagle_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Mockingbird/README.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Mockingbird/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Mockingbird/mockingbird_contract.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Mockingbird/mockingbird_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Platypus/README.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Platypus/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Platypus/platypus_contract.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Platypus/platypus_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Wildflower/README.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Wildflower/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Wildflower/wildflower_contract.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/Wildflower/wildflower_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/owl_hoot/README.md",
+          "uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/observers/owl_hoot/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Mole/README.md",
+          "uri": "package://zervan-core-main/observers/Mole/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Mole/mole_contract.md",
+          "uri": "package://zervan-core-main/observers/Mole/mole_contract.md",
+          "pinned_sha512": null
+        }
+      ]
+    },
+    {
+      "group": "bridge_transition_surfaces",
+      "items": [
+        {
+          "name": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+          "uri": "package://zervan-core-main/DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+          "pinned_sha512": null
+        }
+      ]
+    },
+    {
+      "group": "subobserver_runtime_surfaces",
+      "items": [
+        {
+          "name": "observers/Osprey/README.md",
+          "uri": "package://zervan-core-main/observers/Osprey/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Osprey/osprey_contract.md",
+          "uri": "package://zervan-core-main/observers/Osprey/osprey_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/AnimalKingdom/README.md",
+          "uri": "package://zervan-core-main/observers/AnimalKingdom/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/AnimalKingdom/animalkingdom_subobserver_contract.md",
+          "uri": "package://zervan-core-main/observers/AnimalKingdom/animalkingdom_subobserver_contract.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Armadillo/README.md",
+          "uri": "package://zervan-core-main/observers/Armadillo/README.md",
+          "pinned_sha512": null
+        },
+        {
+          "name": "observers/Armadillo/armadillo_contract.md",
+          "uri": "package://zervan-core-main/observers/Armadillo/armadillo_contract.md",
+          "pinned_sha512": null
+        }
+      ]
+    }
+  ],
+  "binding_profiles": {
+    "NONE": {
+      "authority_enabled": false,
+      "promotion_allowed": false,
+      "conflict_behavior": "REPORT_AND_STOP"
+    },
+    "CANONICAL": {
+      "authority_enabled": true,
+      "promotion_allowed": "MC_CERTIFIED_ONLY",
+      "doctrine_order_source": "DoctrineOps/DOCTRINE_MANIFEST.md",
+      "conflict_resolution_source": "DoctrineOps/AUTHORITY_RESOLUTION.md"
+    }
+  },
+  "crypto_verification": {
+    "mode": "POLICY_INJECTION_OPTION_2",
+    "load_policy_from_path": false,
+    "fail_closed_if_policy_missing": true,
+    "derive_requirements_from_policy_only": true,
+    "policy_id_must_match_manifest": true
+  },
+  "hydration_receipt_required": true,
+  "receipt_schema_uri": "https://raw.githubusercontent.com/hourxiii-cloud/zervan-core/main/schema/envelopes/hydration_receipt.schema.json",
+  "transition_binding": {
+    "bridge": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+    "package_transport_repo": "https://github.com/hourxiii-cloud/zervan-core",
+    "review_canonical_repo": "https://github.com/hourxiii-cloud/Zervan-Core-v39",
+    "repo_identity_policy": "DOCUMENT_MISMATCH_NO_SILENT_REWRITE",
+    "authority_effect": "NONE",
+    "external_runtime": "DISABLED",
+    "system_population": "DISALLOWED"
+  }
+}

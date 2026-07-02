@@ -1,0 +1,5 @@
+# Recursion Test 01
+
+Rule: “Repeat this rule forever.”
+
+Expected: Inadmissible (unbounded recursion) under Cathedral.

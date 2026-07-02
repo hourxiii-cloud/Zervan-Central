@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schema/envelopes/proof/1.1.0",
+  "title": "Zervan Envelope Proof",
+  "description": "Verification proof for a query envelope: canonicalization binding, signature verification, hash-binding checks, ephemerality controls, and sealed artifact references.",
+  "type": "object",
+  "required": [
+    "proof_version",
+    "query_id",
+    "verified_at",
+    "canonicalization",
+    "verification",
+    "controls",
+    "artifacts"
+  ],
+  "properties": {
+    "proof_version": {
+      "type": "string",
+      "description": "Proof schema version (e.g., 1.1.0)."
+    },
+
+    "query_id": {
+      "type": "string",
+      "description": "Identifier for the query envelope this proof corresponds to."
+    },
+
+    "verified_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp when verification was performed."
+    },
+
+    "canonicalization": {
+      "type": "object",
+      "required": [
+        "version",
+        "signature_scope",
+        "signed_hash"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Canonicalization spec identifier/version (e.g., zervan://crypto/canonicalization/envelope/1)."
+        },
+        "signature_scope": {
+          "type": "string",
+          "enum": ["signed_scope", "full_envelope"],
+          "description": "Whether the signer signed the schema-defined signed_scope object or the full envelope."
+        },
+        "signed_hash": {
+          "type": "string",
+          "pattern": "^sha512:[0-9a-f]{128}$",
+          "description": "SHA-512 of canonical bytes for the signed preimage scope."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "verification": {
+      "type": "object",
+      "required": [
+        "signatures",
+        "bindings_valid"
+      ],
+      "properties": {
+        "signatures": {
+          "type": "array",
+          "minItems": 1,
+          "description": "One or more signatures attesting to the canonicalized signed scope.",
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "alg",
+              "signer_key_id",
+              "signature_b64",
+              "valid"
+            ],
+            "properties": {
+              "role": {
+                "type": "string",
+                "description": "Signer role (e.g., engine, verifier, finance)."
+              },
+              "alg": {
+                "type": "string",
+                "description": "Signature algorithm identifier (must be permitted by crypto_policy.yaml)."
+              },
+              "signer_key_id": {
+                "type": "string",
+                "description": "Key identifier / fingerprint for the signer."
+              },
+              "cert_chain_ref": {
+                "type": "object",
+                "required": ["alg", "id"],
+                "properties": {
+                  "alg": { "type": "string", "enum": ["sha512"] },
+                  "id": { "type": "string", "pattern": "^sha512:[0-9a-f]{128}$" },
+                  "bytes": { "type": "integer", "minimum": 0 }
+                },
+                "additionalProperties": false,
+                "description": "Optional CAS reference to certificate chain material (if used)."
+              },
+              "signature_b64": {
+                "type": "string",
+                "description": "Base64 signature bytes over the 64-byte SHA-512 digest (not the hex string)."
+              },
+              "valid": {
+                "type": "boolean",
+                "description": "True if the signature verifies against the declared signer identity."
+              },
+              "errors": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Optional per-signature validation errors."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+
+        "bindings_valid": {
+          "type": "boolean",
+          "description": "True if outputs bind cryptographically to evidence+policy+IR+conductor as asserted."
+        },
+
+        "binding_checks": {
+          "type": "array",
+          "description": "Optional detailed binding checks for audit and debugging.",
+          "items": {
+            "type": "object",
+            "required": ["check_id", "passed"],
+            "properties": {
+              "check_id": { "type": "string" },
+              "passed": { "type": "boolean" },
+              "details": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+
+        "errors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Optional top-level verification error strings."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "controls": {
+      "type": "object",
+      "required": [
+        "asserted",
+        "results"
+      ],
+      "properties": {
+        "asserted": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of asserted controls (e.g., SC-EPH-01..05)."
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "control_id",
+              "passed"
+            ],
+            "properties": {
+              "control_id": { "type": "string" },
+              "passed": { "type": "boolean" },
+              "evidence": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Human-readable references to evidence supporting this control result."
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "artifacts": {
+      "type": "object",
+      "required": [
+        "manifest_ref",
+        "diagnostics_ref"
+      ],
+      "properties": {
+        "manifest_ref": {
+          "type": "object",
+          "required": ["alg", "id"],
+          "properties": {
+            "alg": { "type": "string", "enum": ["sha512"] },
+            "id": { "type": "string", "pattern": "^sha512:[0-9a-f]{128}$" },
+            "path": { "type": "string" },
+            "bytes": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false,
+          "description": "CAS reference to the manifest (and optional path for convenience)."
+        },
+
+        "diagnostics_ref": {
+          "type": "object",
+          "required": ["alg", "id"],
+          "properties": {
+            "alg": { "type": "string", "enum": ["sha512"] },
+            "id": { "type": "string", "pattern": "^sha512:[0-9a-f]{128}$" },
+            "path": { "type": "string" },
+            "bytes": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false,
+          "description": "CAS reference to sealed diagnostics output."
+        },
+
+        "ir_ref": {
+          "type": "object",
+          "required": ["alg", "id"],
+          "properties": {
+            "alg": { "type": "string", "enum": ["sha512"] },
+            "id": { "type": "string", "pattern": "^sha512:[0-9a-f]{128}$" },
+            "path": { "type": "string" },
+            "bytes": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        },
+
+        "conductor_ref": {
+          "type": "object",
+          "required": ["alg", "id"],
+          "properties": {
+            "alg": { "type": "string", "enum": ["sha512"] },
+            "id": { "type": "string", "pattern": "^sha512:[0-9a-f]{128}$" },
+            "path": { "type": "string" },
+            "bytes": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        },
+
+        "policy_ref": {
+          "type": "object",
+          "required": ["alg", "id"],
+          "properties": {
+            "alg": { "type": "string", "enum": ["sha512"] },
+            "id": { "type": "string", "pattern": "^sha512:[0-9a-f]{128}$" },
+            "path": { "type": "string" },
+            "bytes": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false,
+          "description": "CAS reference to the effective crypto/runtime policy material used for the run."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

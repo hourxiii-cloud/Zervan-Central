@@ -1,35 +1,18 @@
-Zervan local runtime state
+# Local evidence artifacts (do not commit by default)
+pmc_logs/
+pmc_seal/
 
-.zervan_local/
-
-Python cache
-
-pycache/
-*.py[cod]
-*$py.class
-
-Virtual environments
-
-.venv/
-venv/
-env/
-
-OS / editor noise
-
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-
-Logs and temporary files
-
+# Local/runtime artifacts
+__pycache__/
+*.pyc
+runtime/
+hydration_receipt*.json
 *.log
-*.tmp
-*.bak
+# Runtime build artifacts
+/runtime/build/
+# Secrets
+/crypto/private/
+# Editor junk (optional but common)
 *.swp
-
-Local test artifacts
-
-.pytest_cache/
-.coverage
-htmlcov/
+*.tmp
+.DS_Store

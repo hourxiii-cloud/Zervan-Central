@@ -12,51 +12,68 @@ This patch applies the 5.6 deployment bridge as transition control against the u
 
 This is not a rewrite. This is not compression-out. This is not authority promotion. This is not external runtime activation. This is not system population.
 
-## Structural Result
+## Canonical Definition Source
 
-The full Zervan spine is restored as the visible controlling frame:
+Canonical 5.6 bridge definitions are centralized in:
 
 ```text
-INIT → SIGNAL / Signal Ecology → DELTA → K9 / Pups → FAMILY / Teams →
-TRAVERSAL → VERIFICATION → ANALYTICAL → CREATIVE → GOVERNANCE
+ZERVAN_5_6_CANONICAL_DEFINITIONS.md
 ```
 
-Beagle, Retriever, Raven, and Audit are clarified as the primary evidence / analysis / reporting / validation pipeline inside the spine.
+This transition note does not restate the full spine, observer registry, sub-observer registry, Owl_Hoot boundary, or Raven / The Unkindness role definitions. It records the transition outcome against that canonical definition file.
+
+## Structural Result
+
+The patched worktree references and preserves the canonical full spine defined in `ZERVAN_5_6_CANONICAL_DEFINITIONS.md`.
+
+Beagle, Retriever, Raven, and Audit are clarified as the primary evidence / analysis / reporting / validation pipeline inside that spine, not as replacements for the spine.
 
 ## Observer Result
 
-Canonical primary observers are preserved:
+The patched worktree preserves the canonical primary observer and controlled sub-observer model defined in `ZERVAN_5_6_CANONICAL_DEFINITIONS.md`.
 
-- Eagle
-- Mole
-- Duck
-- Wildflower
-- Mockingbird
-- Platypus
-- Owl_Hoot
-
-Owl_Hoot remains a primary observer. It may operate in bounded sub-observer mode only for single-claim, single-report, dataset-gap, or function-family pressure. This does not demote Owl_Hoot.
-
-Controlled sub-observers are registered as:
-
-- Osprey
-- AnimalKingdom
-- Armadillo
+Key result: Owl_Hoot remains a primary observer. Its bounded sub-observer mode is documented only for single-claim, single-report, dataset-gap, or function-family pressure and does not demote Owl_Hoot.
 
 ## Raven Result
 
+The patched worktree preserves the canonical Raven / The Unkindness boundary defined in `ZERVAN_5_6_CANONICAL_DEFINITIONS.md`.
+
 The Unkindness is added as Raven's reporting brand and output voice only. It is not a separate module and does not mutate, learn, gate, approve, or steer.
 
-## Validation Result
+## Validation Mechanism
+
+The validation result below was produced with the package-local validation script:
+
+```bash
+python tools/validate_zervan_5_6_bridge.py --root . --emit ZERVAN_5_6_VALIDATION_RESULTS.json
+```
+
+Validation artifacts:
+
+```text
+ZERVAN_5_6_VALIDATION_PROCESS.md
+tools/validate_zervan_5_6_bridge.py
+ZERVAN_5_6_VALIDATION_RESULTS.json
+```
+
+The script checks:
 
 - JSON files parse successfully.
 - Python files compile successfully.
+- Required bridge artifacts exist.
 - Added observer/sub-observer paths exist.
+- Canonical definition invariants are present.
 - Owl_Hoot primary observer language is present.
 - Full spine language is present.
 - The Unkindness language is present.
-- No files were deleted.
+- The modified-file record states that no files were deleted.
+
+## Validation Result
+
+Current validation status: PASS.
+
+See `ZERVAN_5_6_VALIDATION_RESULTS.json` for the generated validation record.
 
 ## Promotion Boundary
 
-This package is patched but not promoted. Promotion requires explicit human gate approval, final review of `ZERVAN_5_6_MODIFIED_FILE_RECORD.md`, and acceptance of this transition note.
+This package is patched but not promoted. Promotion requires explicit human gate approval, final review of `ZERVAN_5_6_MODIFIED_FILE_RECORD.md`, acceptance of this transition note, and a current passing validation result from `tools/validate_zervan_5_6_bridge.py`.

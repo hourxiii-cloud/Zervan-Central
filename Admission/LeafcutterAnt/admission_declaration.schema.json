@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://admission/leafcutterant/admission_declaration.schema/1",
+  "title": "Zervan LeafcutterAnt Admission Declaration Schema (v1)",
+  "description": "Control-plane declaration emitted by LeafcutterAnt when (and only when) routing authorizes LEAFCUTTERANT_STAGING. Binds staging/chunking decision inputs to a hash-bound declaration. Does not seal evidence identity.",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "schema_version",
+    "generated_utc",
+    "mode_flags",
+    "route_binding",
+    "evidence_set",
+    "threshold_used",
+    "chunking_required_any",
+    "chunking_required_all",
+    "declared_by",
+    "inputs",
+    "integrity"
+  ],
+
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "zervan://admission/leafcutterant/admission_declaration/1"
+    },
+
+    "generated_utc": {
+      "type": "string",
+      "description": "UTC timestamp (RFC3339) when this declaration was produced.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+
+    "mode_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "posture",
+        "discovery",
+        "mutation",
+        "invention",
+        "authority_inference",
+        "fail_closed"
+      ],
+      "properties": {
+        "mode": { "type": "string", "const": "CONTROLLED" },
+        "posture": { "type": "string", "const": "READ_ONLY" },
+        "discovery": { "type": "string", "const": "DISABLED" },
+        "mutation": { "type": "string", "const": "DISALLOWED" },
+        "invention": { "type": "string", "const": "DISALLOWED" },
+        "authority_inference": { "type": "string", "const": "DISALLOWED" },
+        "fail_closed": { "type": "string", "const": "ENABLED" }
+      }
+    },
+
+    "route_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Binds this declaration to the routing authorization artifact.",
+      "required": [
+        "route_selected",
+        "admission_route_sha512",
+        "reason_codes"
+      ],
+      "properties": {
+        "route_selected": {
+          "type": "string",
+          "const": "LEAFCUTTERANT_STAGING",
+          "description": "LeafcutterAnt declarations exist only when routing explicitly selected staging."
+        },
+        "admission_route_sha512": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{128}$",
+          "description": "SHA-512 of canonicalized admission_route.json payload (or the value recorded in admission_route integrity)."
+        },
+        "reason_codes": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Reason codes copied from admission_route.json (explainability only; enforcement remains in routing artifact).",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "channel_limits_snapshot": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Optional informational snapshot copied from admission_route.json.channel_limits.",
+          "properties": {
+            "active_channel_name": { "type": "string", "minLength": 1 },
+            "max_total_bytes_per_upload": { "type": "integer", "minimum": 0 },
+            "max_files_per_upload": { "type": "integer", "minimum": 1 },
+            "max_single_file_bytes": { "type": "integer", "minimum": 0 },
+            "supported_file_types": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^\\.[A-Za-z0-9\\.\\-_]+$" },
+              "minItems": 1
+            },
+            "compression_policy": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "allowed": { "type": "boolean" },
+                "requires_deterministic_decompression": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "evidence_set": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Declared evidence items being admitted (logical names only; no paths).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "filename",
+          "byte_size",
+          "chunking_required"
+        ],
+        "properties": {
+          "filename": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Logical filename of the evidence object being admitted."
+          },
+          "byte_size": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Measured size in bytes at LeafcutterAnt admission time."
+          },
+          "row_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Optional row count if deterministically measurable. Omit if unavailable."
+          },
+          "chunking_required": {
+            "type": "boolean",
+            "description": "Per-item decision: whether this item requires chunking under threshold_used."
+          }
+        }
+      }
+    },
+
+    "threshold_used": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the threshold rule used to decide chunking (must exist in thresholds.json)."
+    },
+
+    "chunking_required_any": {
+      "type": "boolean",
+      "description": "Evidence-set summary: true if any evidence item requires chunking."
+    },
+
+    "chunking_required_all": {
+      "type": "boolean",
+      "description": "Evidence-set summary: true if all evidence items require chunking."
+    },
+
+    "chunking": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Chunking configuration. REQUIRED iff chunking_required_any is true.",
+      "required": [
+        "engine_ref",
+        "profile_ref",
+        "target_chunk_bytes"
+      ],
+      "properties": {
+        "engine_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reference identifier for the chunking executor (e.g., 'FastCDC')."
+        },
+        "profile_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reference identifier for the engine profile (e.g., 'FastCDC/1' or a profile filename)."
+        },
+        "target_chunk_bytes": {
+          "type": "integer",
+          "minimum": 1024,
+          "description": "Target chunk size in bytes (e.g., 67108864 for 64MB)."
+        }
+      }
+    },
+
+    "evidence_type": {
+      "type": "string",
+      "enum": ["dataset", "artifact", "bundle", "unknown"],
+      "default": "dataset",
+      "description": "Optional non-authoritative classification of what is being admitted."
+    },
+
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Provenance bindings to the exact config inputs used for this decision.",
+      "required": [
+        "thresholds_sha512",
+        "active_channel_limits_sha512",
+        "admission_route_sha512"
+      ],
+      "properties": {
+        "thresholds_sha512": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{128}$",
+          "description": "SHA-512 of thresholds.json used for decision."
+        },
+        "active_channel_limits_sha512": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{128}$",
+          "description": "SHA-512 of active_channel_limits.json used for decision."
+        },
+        "admission_route_sha512": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{128}$",
+          "description": "SHA-512 of canonicalized admission_route.json payload (duplicated here for direct provenance checking)."
+        },
+        "optional": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Optional non-authoritative pointers (e.g., chunk manifest reference name/id)."
+        }
+      }
+    },
+
+    "declared_by": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Operator identifier (human or system) that produced the declaration."
+    },
+
+    "notes": {
+      "type": "string",
+      "description": "Optional free-text notes. Must not contain derived findings or content excerpts."
+    },
+
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "declaration_sha512",
+        "canonicalization_method_id"
+      ],
+      "properties": {
+        "declaration_sha512": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{128}$",
+          "description": "SHA-512 of the canonicalized admission_declaration.json payload."
+        },
+        "canonicalization_method_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier describing how the declaration payload was canonicalized prior to hashing."
+        }
+      }
+    }
+  },
+
+  "allOf": [
+    {
+      "description": "LeafcutterAnt declarations are only valid for staging runs.",
+      "properties": {
+        "route_binding": {
+          "properties": {
+            "route_selected": { "const": "LEAFCUTTERANT_STAGING" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "chunking_required_any": { "const": true } },
+        "required": ["chunking_required_any"]
+      },
+      "then": {
+        "required": ["chunking"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "chunking_required_any": { "const": false } },
+        "required": ["chunking_required_any"]
+      },
+      "then": {
+        "not": { "required": ["chunking"] }
+      }
+    }
+  ]
+}

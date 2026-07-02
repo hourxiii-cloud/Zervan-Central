@@ -1,0 +1,75 @@
+{
+  "$schema": "zervan://admission/leafcutterant/thresholds/1",
+  "schema_version": "zervan://admission/leafcutterant/thresholds/1",
+  "generated_utc": "2026-01-22T00:00:00Z",
+
+  "authority": {
+    "class": "DECLARATIVE_CONFIG",
+    "scope": "LEAFCUTTERANT_CHUNKING_THRESHOLD_ONLY",
+    "canonical": false,
+    "notes": [
+      "This file declares deterministic threshold rules used by LeafcutterAnt to decide chunking requirements when staging is authorized.",
+      "It does not confer authority on evidence identity, analysis, or outcomes.",
+      "Routing remains authoritative for whether LeafcutterAnt may execute."
+    ]
+  },
+
+  "default_rule": "analysis_max_bytes_v1",
+
+  "rules": {
+    "analysis_max_bytes_v1": {
+      "description": "If admitted evidence byte_size exceeds max_inline_bytes, chunking is required. Missing or invalid byte_size is fail-closed and must hard halt upstream.",
+      "decision": {
+        "type": "byte_size_threshold",
+        "operator": ">",
+        "max_inline_bytes": 524288000
+      },
+      "chunking": {
+        "engine_ref": "FastCDC",
+        "profile_ref": "FastCDC/1",
+        "target_chunk_bytes": 134217728
+      }
+    },
+
+    "analysis_max_bytes_conservative_v1": {
+      "description": "More conservative threshold for environments with tighter memory or transport constraints.",
+      "decision": {
+        "type": "byte_size_threshold",
+        "operator": ">",
+        "max_inline_bytes": 268435456
+      },
+      "chunking": {
+        "engine_ref": "FastCDC",
+        "profile_ref": "FastCDC/1",
+        "target_chunk_bytes": 67108864
+      }
+    },
+
+    "analysis_max_bytes_aggressive_v1": {
+      "description": "Less conservative threshold. Chunking occurs only for very large evidence objects.",
+      "decision": {
+        "type": "byte_size_threshold",
+        "operator": ">",
+        "max_inline_bytes": 1073741824
+      },
+      "chunking": {
+        "engine_ref": "FastCDC",
+        "profile_ref": "FastCDC/1",
+        "target_chunk_bytes": 268435456
+      }
+    }
+  },
+
+  "constants": {
+    "hash_algorithm": "SHA-512",
+    "time_basis": "UTC",
+    "fail_closed": true
+  },
+
+  "integrity": {
+    "canonicalization_method_id": "zervan://json/canonicalization/1",
+    "notes": [
+      "SHA-512 is computed over the canonicalized JSON payload when this file is hash-bound as an input to routing or declarations."
+    ]
+  }
+}

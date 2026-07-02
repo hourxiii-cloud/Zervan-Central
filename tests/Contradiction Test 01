@@ -1,0 +1,6 @@
+# Contradiction Test 01
+
+Claim A: Outputs must be deterministically recomputable.
+Claim B: Outputs may change without changes in assumptions.
+
+Expected: Claim B is inadmissible under Cathedral (Deterministic Recomputability).

@@ -1,119 +1,155 @@
-Zervan-Core-v39
+# zervan-core
 
-Zervan vTemporal.39.0 canonical core: multidirectional mesh, terrain hydration, signal re-justification, route catalog, reporting liquidity, governance, and human-gated authority boundary.
+Doctrine-first, engine-gated, observer-driven analysis architecture.
 
-⸻
+## Purpose
 
-Zervan v39.0 Local Call Package
+Zervan is a language-driven, policy-governed analytical system for evidence interrogation, replayable analysis, and secure package generation. It is designed to:
 
-Package ID: LCALL-2026.06.17-001
-Canonical Configuration: vTemporal.39.0
-Implementation Package Version: LJCP-V39-MDM-DP-HELIX-ORIGIN-TMANIFEST-BCRR-2026.06.17-001
-Created UTC: 2026-06-17T17:43:06Z
+- admit evidence through governed intake
+- analyze through bounded analytical passes
+- lock validated state for replay and authorization
+- apply control overlays and templated outputs without mutating underlying evidentiary truth
+- support iterative rehydration for ConMon and subsequent analysis cycles
 
-What this package is
+## Repository Role
 
-This repository carries the Zervan v39.0 canonical core and local-call package structure.
+This repository is the active working source for Zervan doctrine, contracts, tests, and implementation material.
 
-v39.0 is a complete canonical rebuild of the Zervan program as one system. It preserves the working v38 local-call package and BCRR inline-routing connector as upstream references, then adds v39-native:
+However, repository location alone does not confer authority.
 
-* multidirectional communication mesh correction,
-* Data Provenance Patch ZERVAN-v39.DATA-PROVENANCE.1,
-* Origin Dataset Boundary,
-* Transition Manifest,
-* Secondary Manifest Control Layer,
-* Helix 1 / 2 / 3 branch continuity,
-* no-change / no-reach law,
-* no-unnecessary-rehash law,
-* local S3 / DynamoDB simulation boundaries,
-* terrain hydration,
-* signal re-justification,
-* operation route catalog preservation,
-* workbook / spreadsheet / tabular attribute routing,
-* Beagle / Retriever / Raven reporting-liquidity spine,
-* classification overlay boundary,
-* framework mapping boundary,
-* reporting adaptation separation,
-* Replay Scar,
-* Human Gate.
+Authority is determined by the doctrinal and manifest chain defined by Zervan itself, including the applicable DoctrineOps materials, manifests, initialization contracts, and any locked/frozen evidentiary state produced by the system.
 
-What this package is not
+In plain terms:
 
-It is not external deployment.
-It is not S3 or DynamoDB population.
-It is not Jira population.
-It is not legal, compliance, certification, or authorization authority.
-It does not rewrite upstream v38 package bytes.
-It does not create authority by receipt, hash, manifest, route, classification, framework mapping, or report surface.
+- this repository is the maintained source of working truth
+- authority must still be resolved through doctrine, manifests, and locked state
+- branch names, forks, clones, URLs, or local copies do not by themselves create trust or authorization
 
-Runtime posture
+## Core Model
 
-Artifact State: Produced Only
-Authority State: NONE
-Mode: DISCUSSION / TECH / NON-DOCTRINAL / STABLE
-Posture: CONTROLLED / READ-ONLY
-External Runtime: DISABLED unless explicitly invoked
-System Population: DISALLOWED unless gated and authorized
-Human Gate: ACTIVE
+Zervan operates through a staged architecture.
 
-Core law
 
-Same assistant.
-Better analysis.
-No fracture.
+## Zervan 5.6 Bridge Overlay — Full Spine Preservation
 
-Function first.
-Solution first.
-Complete system first.
-Routes explicit.
-Communication multidirectional.
-Signal Ecology forward.
-Terrain hydrated.
-Sniffs re-justified.
-Reporting liquid.
-Classification auditable.
-Framework mapping bounded.
-Reporting adaptation separated.
-Governance preserved.
-Creative preserved.
-No compression out.
+This repository may be reviewed against the 5.6 deployment bridge, but bridge review does not compress Zervan into only Beagle / Retriever / Raven.
 
-Verification
+The full primary spine remains:
 
-Once package files are added, local verification should run from a cloned working copy:
+```text
+INIT → SIGNAL / Signal Ecology → DELTA → K9 / Pups → FAMILY / Teams →
+TRAVERSAL → VERIFICATION → ANALYTICAL → CREATIVE → GOVERNANCE
+```
 
-python call/verify_local_call.py
+Beagle, Retriever, Raven, and Audit are the primary evidence, analysis, reporting, and validation pipeline inside that spine. They do not replace the spine.
 
-Expected:
+5.6 control line:
 
-PASS: v39.0 local call package verified
+```text
+Primary modules produce evidence.
+Primary observers perceive evidence and context.
+Controlled sub-observers pressure evidence.
+Raven reports what survives.
+Audit records what fails.
+```
 
-Function test, local only
+### Helix 1
+Helix 1 performs interrogation and analysis against admitted material.
 
-Once the local simulator is added, provenance simulation should run from a cloned working copy:
+It is responsible for:
+- evidence interrogation
+- pattern derivation
+- analytical transformation
+- finding generation
+- preparation of material worth locking
 
-python scripts/local_provenance_simulator.py README.md demo.origin
+### Helix 2
+Helix 2 consumes the validated dataset, derived analytical state, and crypto envelope, then:
 
-Run it twice.
+- locks the evidentiary state
+- enables deterministic replay on the analysis front end
+- provides authorization basis on the back end
+- supports control overlays
+- supports prompt-dependent templating and output shaping
+- produces a sealed package suitable for handoff
 
-Expected behavior:
+At the end of Helix 2, a freeze can be rerun to produce an auditor / 3PAO-ready package.
 
-* first run records origin,
-* second run returns no-change / no-reach behavior,
-* external reach remains disabled.
+### ConMon Cycle
+For continuous monitoring, the last frozen package may be rehydrated, augmented with newly admitted material, reanalyzed through Helix 1, relocked through Helix 2, and frozen again as the next authoritative package.
 
-Source-of-truth boundary
+This creates a chained sequence of replayable, hash-bound, and auditable states.
 
-Git carries the canonical body.
+## Observers
 
-A local conversation load may initialize from user-supplied text or repo-pulled text, but authority remains NONE unless Human Gate promotes.
+Observers provide structured visibility into output-level effects and analytical conditions that may not be directly observable through internal model telemetry.
 
-Receipt is not truth.
-Hash is not truth.
-Manifest is not truth.
-Classification is not proof.
-Framework mapping is not compliance.
-Reporting adaptation is not verdict.
-Prepared movement is not execution.
-Human analysis validates output.
-Human authorization permits authority-bearing action.
+Examples include detection of:
+- softening
+- bloom / overgrowth
+- hidden drift
+- anchor displacement
+- structural occlusion
+- semantic center change
+
+Observers are not canonical truth by themselves. They are analysis-support surfaces.
+
+## Authority and Trust
+
+Zervan is fail-closed.
+
+Nothing is authoritative merely because it exists in the repository.
+Nothing is trusted merely because it is named correctly.
+Nothing is canonical merely because it is convenient.
+
+Authority must be established through the active doctrinal chain, validated references, and locked state.
+
+## Packaging and Portability
+
+Helix 2 output is intended to support structured export, especially JSON-first packaging, so locked analysis can be:
+
+- replayed
+- transported
+- transformed
+- attached to control evidence flows
+- handed to auditors / 3PAOs
+- re-ingested into later analytical cycles
+
+## Directory Intent
+
+Key areas in this repository include, but are not limited to:
+
+- `DoctrineOps/` — doctrine and authority-resolution materials
+- `Accelerator/` — initialization, hydration, and operational framing surfaces
+- `Modules/` / runtime surfaces — execution logic and supporting machinery
+- `observers/` — observable effect and support-layer logic
+- `tests/` — validation and behavioral checks
+- `tools/` — supporting utilities
+
+## Operational Principle
+
+Zervan is not built to maximize comfort language.
+It is built to maximize bounded interpretation, evidentiary integrity, replayability, and controlled output generation.
+
+## Status
+
+This repository may contain active branch work.
+Branch content may differ.
+Before execution, initialization, packaging, or handoff, resolve branch, doctrine, and locked-state truth explicitly.
+
+---
+
+## Raven Reporting Brand — The Unkindness
+
+The Unkindness is Raven's reporting brand and output voice. It is not a separate module and does not mutate, learn, gate, approve, or steer.
+
+Raven may emit reports using The Unkindness voice when reporting validated evidence, timeline reconstruction, witness-layer conflicts, unresolved gaps, or claims that cannot be verified.
+
+---
+
+## 5.6 Observer Boundary
+
+Canonical primary observers include Eagle, Mole, Duck, Wildflower, Mockingbird, Platypus, and Owl_Hoot.
+
+Osprey, AnimalKingdom, and Armadillo are controlled sub-observers for bounded pressure. Owl_Hoot remains a primary observer and may only enter bounded sub-observer mode for single-claim, single-report, dataset-gap, or function-family pressure.

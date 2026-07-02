@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schema/envelopes/run_plan_ir/1.0.0",
+  "title": "Zervan Run Plan IR",
+  "description": "Intermediate representation (IR) for a per-evidence run plan. Used to generate the ephemeral conductor.",
+  "type": "object",
+  "required": [
+    "ir_version",
+    "query_id",
+    "determinism",
+    "graph"
+  ],
+  "properties": {
+    "ir_version": { "type": "string" },
+
+    "query_id": {
+      "type": "string",
+      "description": "Identifier for the query envelope this run plan belongs to."
+    },
+
+    "policy_ref": {
+      "type": "string",
+      "description": "Reference to the crypto/runtime policy version used when generating this plan."
+    },
+
+    "determinism": {
+      "type": "object",
+      "required": ["mode"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["deterministic", "stochastic_seeded"]
+        },
+        "seed": {
+          "type": ["integer", "string", "null"],
+          "description": "Required when mode is stochastic_seeded."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "graph": {
+      "type": "object",
+      "required": ["nodes", "edges"],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "op"],
+            "properties": {
+              "id": { "type": "string" },
+              "op": {
+                "type": "string",
+                "description": "Operator identifier (maps to a persistent operator implementation)."
+              },
+              "params": {
+                "type": "object",
+                "description": "Operator parameters; intentionally loose in v1."
+              },
+              "inputs": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Upstream node ids or input handles."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["from", "to"],
+            "properties": {
+              "from": { "type": "string" },
+              "to": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
