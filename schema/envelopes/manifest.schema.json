@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schema/envelopes/manifest/1.1.0",
+  "title": "Zervan Query Envelope Manifest",
+  "description": "Canonical, signed representation of a Zervan query envelope. Declares canonicalization rules and binds evidence, execution artifacts, outputs, and cryptographic attestations.",
+  "type": "object",
+  "required": [
+    "manifest_version",
+    "canonicalization",
+    "query",
+    "evidence",
+    "execution",
+    "outputs",
+    "crypto"
+  ],
+  "properties": {
+    "manifest_version": {
+      "type": "string",
+      "description": "Manifest schema version (e.g., 1.1.0)."
+    },
+
+    "canonicalization": {
+      "type": "object",
+      "required": [
+        "version",
+        "signature_scope"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Canonicalization spec identifier/version (e.g., zervan://crypto/canonicalization/envelope/1)."
+        },
+        "signature_scope": {
+          "type": "string",
+          "enum": ["full_envelope"],
+          "description": "Signing mode for this manifest. v1.1.0 requires full_envelope signing."
+        }
+      },
+      "additionalProperties": false,
+      "description": "Declares the canonical byte representation rules used for hashing and signing."
+    },
+
+    "query": {
+      "type": "object",
+      "description": "Canonical description of the query being executed.",
+      "additionalProperties": true
+    },
+
+    "evidence": {
+      "type": "object",
+      "description": "Referenced evidence artifacts and their hashes.",
+      "additionalProperties": true
+    },
+
+    "execution": {
+      "type": "object",
+      "description": "IR hash, conductor hash, and execution metadata.",
+      "additionalProperties": true
+    },
+
+    "outputs": {
+      "type": "object",
+      "description": "Produced outputs and their hashes (prefer CAS refs, not inline payloads).",
+      "additionalProperties": true
+    },
+
+    "crypto": {
+      "type": "object",
+      "required": [
+        "policy_ref",
+        "signed_hash",
+        "signatures"
+      ],
+      "properties": {
+        "policy_ref": {
+          "type": "string",
+          "description": "Reference or hash of the effective crypto policy applied."
+        },
+
+        "signed_hash": {
+          "type": "string",
+          "pattern": "^sha512:[0-9a-f]{128}$",
+          "description": "SHA-512 of canonical bytes for the full manifest."
+        },
+
+        "signatures": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Signatures over the raw 64-byte SHA-512 digest of the canonicalized manifest.",
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "alg",
+              "signer_key_id",
+              "signature_b64"
+            ],
+            "properties": {
+              "role": {
+                "type": "string",
+                "description": "Signer role (e.g., engine, verifier, finance)."
+              },
+              "alg": {
+                "type": "string",
+                "description": "Signature algorithm identifier (must be permitted by crypto_policy.yaml)."
+              },
+              "signer_key_id": {
+                "type": "string",
+                "description": "Key identifier / fingerprint for the signer."
+              },
+              "signature_b64": {
+                "type": "string",
+                "description": "Base64 signature bytes over the raw SHA-512 digest."
+              },
+              "cert_chain_ref": {
+                "type": "object",
+                "required": ["alg", "id"],
+                "properties": {
+                  "alg": { "type": "string", "enum": ["sha512"] },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^sha512:[0-9a-f]{128}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "additionalProperties": false,
+                "description": "Optional CAS reference to certificate chain material."
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false,
+      "description": "Cryptographic binding: policy + canonical hash + signature attestations."
+    }
+  },
+  "additionalProperties": false
+}

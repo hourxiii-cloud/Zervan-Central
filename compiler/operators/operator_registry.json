@@ -1,0 +1,26 @@
+{
+  "registry_version": "1.0.0",
+  "description": "Approved operator IDs usable by Run Plan IR. The compiler MUST refuse unknown operators.",
+  "operators": [
+    {
+      "id": "normalize.cert_event",
+      "version": "0.1.0",
+      "language": "python",
+      "entrypoint": "normalizers/cert_event/cert_event_normalizer.py",
+      "determinism": "deterministic",
+      "network": "forbidden",
+      "filesystem": "restricted",
+      "notes": "Example operator mapping to existing normalizer."
+    },
+    {
+      "id": "noop.echo",
+      "version": "0.1.0",
+      "language": "python",
+      "entrypoint": "compiler/operators/noop_echo.py",
+      "determinism": "deterministic",
+      "network": "forbidden",
+      "filesystem": "restricted",
+      "notes": "Test operator for end-to-end compile/run plumbing."
+    }
+  ]
+}

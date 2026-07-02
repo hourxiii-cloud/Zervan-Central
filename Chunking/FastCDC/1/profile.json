@@ -1,0 +1,101 @@
+{
+  "profile_type": "chunking_profile",
+  "profile_name": "FastCDC Baseline Profile A",
+  "profile_version": "1",
+  "method_id": "zervan://chunking/fastcdc/1",
+  "status": "CANONICAL",
+  "immutability": "IMMUTABLE",
+
+  "authority": {
+    "source": "explicit_reference_only",
+    "repository_is_transport_only": true,
+    "modification_policy": "new_version_required"
+  },
+
+  "algorithm": {
+    "family": "content_defined_chunking",
+    "name": "fastcdc",
+    "lineage": "rabin_fingerprint_derived",
+    "boundary_selection": "content_dependent_anchor"
+  },
+
+  "parameters": {
+    "chunk_size_bytes": {
+      "min": 2097152,
+      "avg": 8388608,
+      "max": 33554432,
+      "units": "bytes",
+      "unit_type": "binary"
+    },
+    "window_size": {
+      "value": "implementation_defined",
+      "constraint": "must_be_deterministic"
+    },
+    "cut_condition": {
+      "type": "anchor_mask",
+      "style": "fastcdc"
+    }
+  },
+
+  "determinism_requirements": {
+    "content_only_boundaries": true,
+    "offset_independent": true,
+    "environment_independent": true,
+    "parallelism_independent": true,
+    "deterministic_replay_required": true
+  },
+
+  "chunk_identity": {
+    "defines_boundaries_only": true,
+    "identity_generated_elsewhere": true,
+    "recommended_hashes": [
+      "SHA-256",
+      "SHA-512"
+    ],
+    "requires_profile_linkage": true
+  },
+
+  "intended_use": [
+    "large_file_ingestion",
+    "streaming_analysis",
+    "incremental_reanalysis",
+    "distributed_processing",
+    "llm_assisted_recomposition"
+  ],
+
+  "non_goals": [
+    "encryption",
+    "compression",
+    "transport",
+    "storage_layout",
+    "execution_scheduling",
+    "security_policy",
+    "trust_or_authority_resolution"
+  ],
+
+  "versioning": {
+    "upgrade_policy": "explicit_only",
+    "in_place_modification": false,
+    "successor_profiles": "fastcdc/2+"
+  },
+
+  "conformance": {
+    "claiming_conformance_requires": [
+      "exact_parameter_match",
+      "deterministic_output",
+      "content_defined_boundaries"
+    ],
+    "non_conformance_rule": "must_not_claim_profile"
+  },
+
+  "integrity": {
+    "profile_hash_required": true,
+    "hash_algorithms_allowed": [
+      "SHA-256",
+      "SHA-512"
+    ],
+    "profile_sealing": "upon_first_canonical_use"
+  },
+
+  "notes": "This profile defines a stable, deterministic FastCDC chunking contract. Implementations that cannot meet these constraints MUST NOT claim conformance."
+}

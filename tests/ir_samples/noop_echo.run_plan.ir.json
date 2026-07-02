@@ -1,0 +1,21 @@
+{
+  "ir_version": "1.0.0",
+  "query_id": "TEST_NOOP_ECHO",
+  "policy_ref": "1.0.0",
+  "determinism": {
+    "mode": "deterministic"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "n1",
+        "op": "noop.echo",
+        "params": {
+          "hello": "world"
+        },
+        "inputs": []
+      }
+    ],
+    "edges": []
+  }
+}

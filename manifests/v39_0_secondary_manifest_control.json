@@ -1,112 +1,112 @@
 {
-“secondary_manifest_control_id”: “ZERVAN-v39.0-SECONDARY-MANIFEST-CONTROL-2026.06.17-001”,
-“package_id”: “LCALL-2026.06.17-001”,
-“repository”: “Zervan-Core-v39”,
-“canonical_configuration”: “vTemporal.39.0”,
-“authority_state”: “NONE”,
-“human_gate”: “ACTIVE”,
-“external_runtime”: “DISABLED”,
-“system_population”: “DISALLOWED”,
-“control_type”: “secondary_manifest_control_layer”,
-“purpose”: [
-“Bind static manifest inventory to transition manifest movement history.”,
-“Preserve branch continuity across Helix 1, Helix 2, and Helix 3 states.”,
-“Prevent later reports, payloads, or packages from overwriting origin truth.”,
-“Separate inventory from movement.”,
-“Separate package preservation from authority.”
-],
-“primary_manifests”: {
-“static_manifest”: “manifests/v39_0_manifest.json”,
-“transition_manifest”: “manifests/v39_0_transition_manifest.json”
-},
-“source_of_truth”: {
-“canonical_body”: “canonical/ZERVAN_v39_0_CANONICAL_LOAD.md”,
-“local_call_statement”: “call/INITIATION_STATEMENT_V39_0.md”,
-“load_receipt”: “receipts/v39_0_load_receipt.md”,
-“operation_route_catalog”: “routes/operation_route_catalog_v39_0.md”,
-“replay_scars”: “replay/v39_0_replay_scars.md”
-},
-“helix_branch_model”: {
-“helix_1”: {
-“name”: “intake_and_analysis”,
-“function”: “Receives origin object or branch, hydrates terrain, validates source/object/schema, performs analysis, applies routes, and prepares findings.”,
-“authority”: “NONE”
-},
-“helix_2”: {
-“name”: “preserved_analysis_package_state”,
-“function”: “Preserves stable analysis state, reports, registers, evidence graphs, source maps, manifests, receipts, hashes, workbooks, classification tables, mappings, and claim ceiling.”,
-“authority”: “NONE”
-},
-“helix_3”: {
-“name”: “prepared_movement_state”,
-“function”: “Prepares downstream movement packets such as Jira-ready JSON, POA&M epics, evidence requests, issue links, milestone tickets, and implementation-ready payloads.”,
-“authority”: “NONE unless Human Gate promotes”
-}
-},
-“branch_continuity_laws”: [
-“Each new operating group returns to Helix 1.”,
-“Prior Helix 1, Helix 2, and Helix 3 branches remain intact.”,
-“Later reports do not become origin truth.”,
-“Later packages do not erase originating dataset or source boundary.”,
-“Prepared movement does not equal execution.”,
-“Helix continuity is not approval.”,
-“Human Gate controls authority-bearing movement.”
-],
-“manifest_separation_laws”: [
-“Static Manifest answers what files exist and what roles they serve.”,
-“Transition Manifest answers what changed, why it changed, and what state was created.”,
-“Secondary Manifest Control binds manifest relationships and branch continuity.”,
-“A changed hash is not automatically corruption.”,
-“A changed hash may indicate a missing transition.”,
-“A missing transition is provenance debt.”
-],
-“required_controls”: [
-“origin_dataset_boundary”,
-“transition_manifest”,
-“static_manifest”,
-“secondary_manifest_control”,
-“claim_ceiling”,
-“human_gate_status”,
-“replay_scar_where_material”,
-“rollback_note_where_state_changed”,
-“no_change_no_reach_check”,
-“no_unnecessary_rehash_check”
-],
-“no_change_no_reach_rule”: {
-“law”: “If no state transition occurred and local state is complete, read state, confirm stable, do not reach object storage, do not rehash, and move.”,
-“external_reach”: false,
-“system_population”: false
-},
-“no_unnecessary_rehash_rule”: {
-“law”: “Rehash only changed objects, packages, manifests, reports, envelopes, receipts, branch packages, payloads, or transition artifacts.”,
-“unchanged_objects”: “do_not_rehash”
-},
-“claim_ceiling”: [
-“manifest relationship control”,
-“branch continuity control”,
-“local package provenance support”,
-“non-authoritative package state preservation”
-],
-“not_authorized”: [
-“external deployment”,
-“S3 population”,
-“DynamoDB population”,
-“Jira population”,
-“legal finding”,
-“compliance certification”,
-“FedRAMP authorization”,
-“authority-bearing action”,
-“system population”
-],
-“truth_boundary”: [
-“Secondary Manifest Control is not truth.”,
-“Static Manifest is not truth.”,
-“Transition Manifest is not truth.”,
-“Receipt is not truth.”,
-“Hash is not truth.”,
-“Prepared movement is not execution.”,
-“Helix continuity is not approval.”,
-“Human analysis validates output.”,
-“Human authorization permits authority-bearing action.”
-]
+  "secondary_manifest_control_id": "ZERVAN-v39.0-SECONDARY-MANIFEST-CONTROL-2026.06.17-001",
+  "package_id": "LCALL-2026.06.17-001",
+  "repository": "Zervan-Core-v39",
+  "canonical_configuration": "vTemporal.39.0",
+  "authority_state": "NONE",
+  "human_gate": "ACTIVE",
+  "external_runtime": "DISABLED",
+  "system_population": "DISALLOWED",
+  "control_type": "secondary_manifest_control_layer",
+  "purpose": [
+    "Bind static manifest inventory to transition manifest movement history.",
+    "Preserve branch continuity across Helix 1, Helix 2, and Helix 3 states.",
+    "Prevent later reports, payloads, or packages from overwriting origin truth.",
+    "Separate inventory from movement.",
+    "Separate package preservation from authority."
+  ],
+  "primary_manifests": {
+    "static_manifest": "manifests/v39_0_manifest.json",
+    "transition_manifest": "manifests/v39_0_transition_manifest.json"
+  },
+  "source_of_truth": {
+    "canonical_body": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+    "local_call_statement": "call/INITIATION_STATEMENT_V39_0.md",
+    "load_receipt": "receipts/v39_0_load_receipt.md",
+    "operation_route_catalog": "routes/operation_route_catalog_v39_0.md",
+    "replay_scars": "replay/v39_0_replay_scars.md"
+  },
+  "helix_branch_model": {
+    "helix_1": {
+      "name": "intake_and_analysis",
+      "function": "Receives origin object or branch, hydrates terrain, validates source/object/schema, performs analysis, applies routes, and prepares findings.",
+      "authority": "NONE"
+    },
+    "helix_2": {
+      "name": "preserved_analysis_package_state",
+      "function": "Preserves stable analysis state, reports, registers, evidence graphs, source maps, manifests, receipts, hashes, workbooks, classification tables, mappings, and claim ceiling.",
+      "authority": "NONE"
+    },
+    "helix_3": {
+      "name": "prepared_movement_state",
+      "function": "Prepares downstream movement packets such as Jira-ready JSON, POA&M epics, evidence requests, issue links, milestone tickets, and implementation-ready payloads.",
+      "authority": "NONE unless Human Gate promotes"
+    }
+  },
+  "branch_continuity_laws": [
+    "Each new operating group returns to Helix 1.",
+    "Prior Helix 1, Helix 2, and Helix 3 branches remain intact.",
+    "Later reports do not become origin truth.",
+    "Later packages do not erase originating dataset or source boundary.",
+    "Prepared movement does not equal execution.",
+    "Helix continuity is not approval.",
+    "Human Gate controls authority-bearing movement."
+  ],
+  "manifest_separation_laws": [
+    "Static Manifest answers what files exist and what roles they serve.",
+    "Transition Manifest answers what changed, why it changed, and what state was created.",
+    "Secondary Manifest Control binds manifest relationships and branch continuity.",
+    "A changed hash is not automatically corruption.",
+    "A changed hash may indicate a missing transition.",
+    "A missing transition is provenance debt."
+  ],
+  "required_controls": [
+    "origin_dataset_boundary",
+    "transition_manifest",
+    "static_manifest",
+    "secondary_manifest_control",
+    "claim_ceiling",
+    "human_gate_status",
+    "replay_scar_where_material",
+    "rollback_note_where_state_changed",
+    "no_change_no_reach_check",
+    "no_unnecessary_rehash_check"
+  ],
+  "no_change_no_reach_rule": {
+    "law": "If no state transition occurred and local state is complete, read state, confirm stable, do not reach object storage, do not rehash, and move.",
+    "external_reach": false,
+    "system_population": false
+  },
+  "no_unnecessary_rehash_rule": {
+    "law": "Rehash only changed objects, packages, manifests, reports, envelopes, receipts, branch packages, payloads, or transition artifacts.",
+    "unchanged_objects": "do_not_rehash"
+  },
+  "claim_ceiling": [
+    "manifest relationship control",
+    "branch continuity control",
+    "local package provenance support",
+    "non-authoritative package state preservation"
+  ],
+  "not_authorized": [
+    "external deployment",
+    "S3 population",
+    "DynamoDB population",
+    "Jira population",
+    "legal finding",
+    "compliance certification",
+    "FedRAMP authorization",
+    "authority-bearing action",
+    "system population"
+  ],
+  "truth_boundary": [
+    "Secondary Manifest Control is not truth.",
+    "Static Manifest is not truth.",
+    "Transition Manifest is not truth.",
+    "Receipt is not truth.",
+    "Hash is not truth.",
+    "Prepared movement is not execution.",
+    "Helix continuity is not approval.",
+    "Human analysis validates output.",
+    "Human authorization permits authority-bearing action."
+  ]
 }

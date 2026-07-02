@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "detail": "present",
+      "name": "required_file:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_file:ZERVAN_5_6_TRANSITION_NOTE.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_file:ZERVAN_5_6_VALIDATION_PROCESS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_file:ZERVAN_5_6_MODIFIED_FILE_RECORD.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_file:DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_file:tools/validate_zervan_5_6_bridge.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Eagle",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Mole",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Duck",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Wildflower",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Mockingbird",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Platypus",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/owl_hoot",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Osprey",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/Armadillo",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:observers/AnimalKingdom",
+      "status": "PASS"
+    },
+    {
+      "detail": "present",
+      "name": "required_dir:Modules/AnimalKingdom",
+      "status": "PASS"
+    },
+    {
+      "detail": "INIT \u2192 SIGNAL / Signal Ecology \u2192 DELTA \u2192 K9 / Pups \u2192 FAMILY / Teams",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "Primary modules produce evidence.",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "Primary observers observe evidence",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "Controlled sub-observers pressure evidence.",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "Owl_Hoot remains a primary observer.",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "Owl_Hoot is not canonically reseated as a sub-observer.",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "The Unkindness is Raven's reporting brand and output voice.",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "No capability is compressed out.",
+      "name": "required_text:ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "python tools/validate_zervan_5_6_bridge.py --root . --emit ZERVAN_5_6_VALIDATION_RESULTS.json",
+      "name": "required_text:ZERVAN_5_6_TRANSITION_NOTE.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+      "name": "required_text:DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "- Deleted files: 0",
+      "name": "required_text:ZERVAN_5_6_MODIFIED_FILE_RECORD.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "manifests/v39_0_transition_manifest.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2); manifests/v39_0_manifest.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2); manifests/v39_0_secondary_manifest_control.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)",
+      "name": "json_parse",
+      "status": "FAIL"
+    },
+    {
+      "detail": "scripts/local_provenance_simulator.py:   File \"/workspaces/Zervan-Central/scripts/local_provenance_simulator.py\", line 2\n    \u201c\u201d\u201d\n    ^\nSyntaxError: invalid character '\u201c' (U+201C)\n; call/verify_local_call.py:   File \"/workspaces/Zervan-Central/call/verify_local_call.py\", line 2\n    \u201c\u201d\u201d\n    ^\nSyntaxError: invalid character '\u201c' (U+201C)\n",
+      "name": "python_compile",
+      "status": "FAIL"
+    }
+  ],
+  "root": "/workspaces/Zervan-Central",
+  "status": "FAIL",
+  "timestamp_utc": "2026-07-02T19:17:43.627963+00:00",
+  "validation_id": "zervan_5_6_bridge_validation"
+}

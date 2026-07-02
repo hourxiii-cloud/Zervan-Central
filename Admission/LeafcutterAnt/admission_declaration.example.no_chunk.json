@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+
+  "mode": "CONTROLLED",
+  "posture": "READ-ONLY",
+  "discovery": "DISABLED",
+  "mutation": "DISALLOWED",
+  "invention": "DISALLOWED",
+  "authority_inference": "DISALLOWED",
+  "fail_closed": "ENABLED",
+
+  "filename": "sample_small_dataset.csv",
+  "byte_size": 187392,
+  "row_count": 4217,
+
+  "chunking_required": false,
+  "threshold_used": "analysis_max_bytes_v1",
+
+  "evidence_type": "dataset",
+
+  "timestamp_utc": "2026-01-22T10:15:00Z",
+  "declared_by": "operator@example"
+}

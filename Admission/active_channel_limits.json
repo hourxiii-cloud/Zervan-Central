@@ -1,0 +1,59 @@
+{
+  "schema_version": "zervan://admission/active_channel_limits/1",
+  "generated_utc": "AUTO",
+  "authority": {
+    "class": "DECLARATIVE_CONFIG",
+    "scope": "ADMISSION_ROUTING_ONLY",
+    "canonical": false,
+    "notes": [
+      "This file declares active intake channel constraints used by Admission routing.",
+      "It does not confer authority on evidence, analysis, or outcomes.",
+      "Routing is fail-closed if required limits are missing or ambiguous."
+    ]
+  },
+  "active_channel": {
+    "name": "LLM_UI_UPLOAD",
+    "description": "Interactive LLM chat upload channel (mobile-friendly).",
+    "enforcement_mode": "HARD"
+  },
+  "limits": {
+    "max_total_bytes_per_upload": 998900000,
+    "max_files_per_upload": 10,
+    "max_single_file_bytes": 998900000,
+    "supported_file_types": [
+      ".csv",
+      ".csv.zip",
+      ".json",
+      ".json.zip",
+      ".txt",
+      ".md",
+      ".pdf",
+      ".png"
+    ],
+    "compression_policy": {
+      "allowed": true,
+      "requires_deterministic_decompression": true,
+      "notes": [
+        "Compressed evidence is admissible only if decompression is deterministic and explicitly declared.",
+        "Compression does not change routing eligibility; total decompressed size may still exceed limits.",
+        "If compression is used while deterministic decompression is not declared, routing MUST hard halt."
+      ]
+    }
+  },
+  "routing_policy": {
+    "default_route": "DIRECT_TO_BEAGLE",
+    "conditional_route": "LEAFCUTTERANT_STAGING",
+    "schema_required": "zervan://admission/admission_route/2",
+    "hard_halt_if_missing_required_fields": true,
+    "hard_halt_if_unknown_channel": true,
+    "hard_halt_if_declared_bytes_missing": true,
+    "hard_halt_if_limits_inconsistent": true
+  },
+  "notes_for_operators": [
+    "DIRECT_TO_BEAGLE is permitted only when evidence_set_count == 1 and all declared limits are satisfied.",
+    "Multi-file evidence sets MUST route to LEAFCUTTERANT_STAGING regardless of total byte size.",
+    "If evidence exceeds channel limits, Admission MUST route to LEAFCUTTERANT_STAGING.",
+    "If compression is used, determinism MUST be explicitly declared and validated.",
+    "If the true channel limits change, update this file explicitly—do not infer or override at runtime."
+  ]
+}

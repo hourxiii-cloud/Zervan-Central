@@ -1,0 +1,265 @@
+{
+  "schema_name": "cert_event_stream",
+  "schema_version": "1.0.0",
+  "canonical": true,
+  "purpose": "Normalize CERT-style insider threat logs into a single canonical event stream suitable for chaining, anomaly detection, and audit-grade reporting.",
+  "event_contract": {
+    "id": "event_id",
+    "timestamp": "ts",
+    "actor": "user",
+    "entity": "host",
+    "type": "event_type",
+    "action": "action"
+  },
+  "fields": [
+    {
+      "name": "event_id",
+      "type": "string",
+      "required": true,
+      "description": "Deterministic unique event identifier (e.g., hash of source + row + timestamp + user)."
+    },
+    {
+      "name": "ts",
+      "type": "datetime",
+      "required": true,
+      "description": "Event timestamp in ISO-8601 UTC when possible."
+    },
+    {
+      "name": "ts_epoch",
+      "type": "integer",
+      "required": false,
+      "description": "Optional epoch seconds for fast windowing."
+    },
+    {
+      "name": "source_system",
+      "type": "string",
+      "required": true,
+      "description": "Origin system/log type (e.g., device, file, email, web, psychometric)."
+    },
+    {
+      "name": "source_file",
+      "type": "string",
+      "required": true,
+      "description": "The raw input filename this event came from."
+    },
+    {
+      "name": "source_row",
+      "type": "integer",
+      "required": false,
+      "description": "Row number in source file (if applicable)."
+    },
+    {
+      "name": "scenario_id",
+      "type": "string",
+      "required": false,
+      "description": "Optional scenario/case identifier when running multiple scenario files."
+    },
+    {
+      "name": "user",
+      "type": "string",
+      "required": true,
+      "description": "Canonical user identifier (employee id / username)."
+    },
+    {
+      "name": "user_role",
+      "type": "string",
+      "required": false,
+      "description": "Optional role or org label if present."
+    },
+    {
+      "name": "host",
+      "type": "string",
+      "required": false,
+      "description": "Canonical endpoint/host identifier if available."
+    },
+    {
+      "name": "src_ip",
+      "type": "string",
+      "required": false,
+      "description": "Source IP if available."
+    },
+    {
+      "name": "dst_ip",
+      "type": "string",
+      "required": false,
+      "description": "Destination IP if available."
+    },
+    {
+      "name": "event_type",
+      "type": "string",
+      "required": true,
+      "enum": [
+        "file",
+        "email",
+        "web",
+        "device",
+        "auth",
+        "process",
+        "other"
+      ],
+      "description": "High-level event category."
+    },
+    {
+      "name": "action",
+      "type": "string",
+      "required": true,
+      "description": "Canonical action name (e.g., file_open, file_copy, email_send, web_visit, logon, process_start)."
+    },
+
+    {
+      "name": "object_type",
+      "type": "string",
+      "required": false,
+      "enum": [
+        "file",
+        "email",
+        "url",
+        "process",
+        "device",
+        "account",
+        "attachment",
+        "other"
+      ],
+      "description": "Type of primary object acted upon."
+    },
+    {
+      "name": "object_name",
+      "type": "string",
+      "required": false,
+      "description": "Human-readable object identifier (filename, url, process name)."
+    },
+    {
+      "name": "file_path",
+      "type": "string",
+      "required": false,
+      "description": "Full path for file-related events when available."
+    },
+    {
+      "name": "file_ext",
+      "type": "string",
+      "required": false,
+      "description": "Lowercased extension (e.g., doc, pdf, zip)."
+    },
+    {
+      "name": "file_size_bytes",
+      "type": "integer",
+      "required": false,
+      "description": "File size in bytes if available."
+    },
+
+    {
+      "name": "email_from",
+      "type": "string",
+      "required": false,
+      "description": "Sender address/user if available."
+    },
+    {
+      "name": "email_to",
+      "type": "string",
+      "required": false,
+      "description": "Primary recipient or recipient list (stringified) if available."
+    },
+    {
+      "name": "email_cc",
+      "type": "string",
+      "required": false,
+      "description": "CC recipients (stringified) if available."
+    },
+    {
+      "name": "email_subject",
+      "type": "string",
+      "required": false,
+      "description": "Email subject if available."
+    },
+
+    {
+      "name": "has_attachments",
+      "type": "boolean",
+      "required": false,
+      "description": "True if email/send event includes attachments."
+    },
+    {
+      "name": "attachment_count",
+      "type": "integer",
+      "required": false,
+      "description": "Number of attachments on the email/send event."
+    },
+    {
+      "name": "attachment_total_bytes",
+      "type": "integer",
+      "required": false,
+      "description": "Sum of attachment sizes in bytes."
+    },
+    {
+      "name": "attachment_types",
+      "type": "string",
+      "required": false,
+      "description": "Comma-separated list of attachment extensions/types (e.g., pdf,doc,zip)."
+    },
+
+    {
+      "name": "url",
+      "type": "string",
+      "required": false,
+      "description": "URL for web events if available."
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "required": false,
+      "description": "Parsed domain for web events if available."
+    },
+
+    {
+      "name": "process_name",
+      "type": "string",
+      "required": false,
+      "description": "Process/binary name if applicable."
+    },
+    {
+      "name": "command_line",
+      "type": "string",
+      "required": false,
+      "description": "Command line if applicable."
+    },
+
+    {
+      "name": "outcome",
+      "type": "string",
+      "required": false,
+      "enum": [
+        "success",
+        "fail",
+        "unknown"
+      ],
+      "description": "Outcome if provided by source."
+    },
+
+    {
+      "name": "tags",
+      "type": "string",
+      "required": false,
+      "description": "Comma-separated analyst/system tags (optional)."
+    },
+
+    {
+      "name": "raw",
+      "type": "string",
+      "required": false,
+      "description": "Optional raw record payload (stringified) for provenance/debug."
+    }
+  ],
+  "required_minimum": [
+    "event_id",
+    "ts",
+    "source_system",
+    "source_file",
+    "user",
+    "event_type",
+    "action"
+  ],
+  "notes": [
+    "This schema is designed to tolerate partial sources; normalizers should populate required_minimum and fill the rest opportunistically.",
+    "Downstream chaining (exfil logic) relies primarily on user, ts, event_type/action, file_ext, attachment_count/bytes."
+  ]
+}
