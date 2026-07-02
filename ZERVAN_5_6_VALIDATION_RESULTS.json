@@ -141,18 +141,18 @@
       "status": "PASS"
     },
     {
-      "detail": "manifests/v39_0_transition_manifest.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2); manifests/v39_0_manifest.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2); manifests/v39_0_secondary_manifest_control.json: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)",
+      "detail": "22 JSON files parsed",
       "name": "json_parse",
-      "status": "FAIL"
+      "status": "PASS"
     },
     {
-      "detail": "scripts/local_provenance_simulator.py:   File \"/workspaces/Zervan-Central/scripts/local_provenance_simulator.py\", line 2\n    \u201c\u201d\u201d\n    ^\nSyntaxError: invalid character '\u201c' (U+201C)\n; call/verify_local_call.py:   File \"/workspaces/Zervan-Central/call/verify_local_call.py\", line 2\n    \u201c\u201d\u201d\n    ^\nSyntaxError: invalid character '\u201c' (U+201C)\n",
+      "detail": "8 Python files compiled",
       "name": "python_compile",
-      "status": "FAIL"
+      "status": "PASS"
     }
   ],
   "root": "/workspaces/Zervan-Central",
-  "status": "FAIL",
-  "timestamp_utc": "2026-07-02T19:17:43.627963+00:00",
+  "status": "PASS",
+  "timestamp_utc": "2026-07-02T19:47:05.700715+00:00",
   "validation_id": "zervan_5_6_bridge_validation"
 }

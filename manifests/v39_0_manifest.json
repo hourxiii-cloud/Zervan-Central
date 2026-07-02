@@ -1,210 +1,210 @@
 {
-“package_id”: “LCALL-2026.06.17-001”,
-“repository”: “Zervan-Core-v39”,
-“canonical_configuration”: “vTemporal.39.0”,
-“implementation_package_version”: “LJCP-V39-MDM-DP-HELIX-ORIGIN-TMANIFEST-BCRR-2026.06.17-001”,
-“artifact_state”: “Produced Only”,
-“authority_state”: “NONE”,
-“human_gate”: “ACTIVE”,
-“runtime_state”: “DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE”,
-“posture”: “CONTROLLED / READ-ONLY”,
-“external_runtime”: “DISABLED”,
-“system_population”: “DISALLOWED”,
-“created_utc”: “2026-06-17T17:43:06Z”,
-“manifest_type”: “initial_static_manifest”,
-“source_of_truth”: {
-“canonical_body”: “canonical/ZERVAN_v39_0_CANONICAL_LOAD.md”,
-“local_call_statement”: “call/INITIATION_STATEMENT_V39_0.md”,
-“readme”: “README.md”,
-“static_manifest”: “manifests/v39_0_manifest.json”,
-“transition_manifest”: “manifests/v39_0_transition_manifest.json”,
-“secondary_manifest_control”: “manifests/v39_0_secondary_manifest_control.json”,
-“origin_dataset_boundary”: “provenance/origin_dataset_boundary.md”,
-“data_provenance_control_layer”: “controls/data_provenance_control_layer.md”,
-“load_receipt”: “receipts/v39_0_load_receipt.md”,
-“replay_scars”: “replay/v39_0_replay_scars.md”,
-“operation_route_catalog”: “routes/operation_route_catalog_v39_0.md”,
-“human_gate_authority_boundary”: “governance/human_gate_authority_boundary.md”,
-“hash_inventory_plan”: “verification/hash_inventory_plan.md”,
-“validation_checklist”: “verification/v39_0_validation_checklist.md”,
-“local_verifier”: “call/verify_local_call.py”,
-“local_provenance_simulator”: “scripts/local_provenance_simulator.py”,
-“repo_ignore_rules”: “.gitignore”
-},
-“files”: [
-{
-“path”: “README.md”,
-“role”: “repository_explanation”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “canonical/ZERVAN_v39_0_CANONICAL_LOAD.md”,
-“role”: “canonical_body”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “call/INITIATION_STATEMENT_V39_0.md”,
-“role”: “local_call_initiation”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “manifests/v39_0_manifest.json”,
-“role”: “static_manifest”,
-“required”: true,
-“hash_status”: “self_referential_pending_validation”
-},
-{
-“path”: “manifests/v39_0_transition_manifest.json”,
-“role”: “transition_manifest”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “manifests/v39_0_secondary_manifest_control.json”,
-“role”: “secondary_manifest_control_layer”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “provenance/origin_dataset_boundary.md”,
-“role”: “origin_dataset_boundary”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “controls/data_provenance_control_layer.md”,
-“role”: “data_provenance_control_layer”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “receipts/v39_0_load_receipt.md”,
-“role”: “load_receipt”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “replay/v39_0_replay_scars.md”,
-“role”: “replay_scar_register”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “routes/operation_route_catalog_v39_0.md”,
-“role”: “operation_route_catalog”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “governance/human_gate_authority_boundary.md”,
-“role”: “human_gate_authority_boundary”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “verification/hash_inventory_plan.md”,
-“role”: “hash_inventory_plan”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “verification/v39_0_validation_checklist.md”,
-“role”: “validation_checklist”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “call/verify_local_call.py”,
-“role”: “local_verification_script”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “scripts/local_provenance_simulator.py”,
-“role”: “local_provenance_simulator”,
-“required”: true,
-“hash_status”: “pending_validation”
-},
-{
-“path”: “.gitignore”,
-“role”: “repo_local_ignore_rules”,
-“required”: true,
-“hash_status”: “pending_validation”
-}
-],
-“preserved_function_surfaces”: [
-“Multidirectional Communication Mesh”,
-“Signal Ecology”,
-“Pups”,
-“K9”,
-“Goblin Signal”,
-“Goblins”,
-“Goblin Teams”,
-“Goblin Platoon”,
-“FAMILY”,
-“Unit / Observer Registry”,
-“Persona Partner Registry”,
-“Processor Matrix”,
-“Beagle / Retriever / Raven”,
-“Operation Route Catalog”,
-“Workbook / Spreadsheet / Tabular Attribute Route”,
-“Classification Overlay”,
-“Framework Mapping Spine”,
-“Reporting Adaptation Layer”,
-“BDRR”,
-“Transition Manifest”,
-“Secondary Manifest Control Layer”,
-“Origin Dataset Boundary”,
-“Data Provenance Control Layer”,
-“Hash Inventory Plan”,
-“Validation Checklist”,
-“Replay Scar”,
-“Human Gate”,
-“Human Gate Authority Boundary”,
-“No-Compression-Out”
-],
-“claim_ceiling”: [
-“local-call identity”,
-“canonical configuration preservation”,
-“repo-carried source-of-truth body”,
-“manifest inventory”,
-“transition record presence”,
-“secondary manifest control presence”,
-“origin dataset boundary presence”,
-“data provenance control layer presence”,
-“hash inventory planning”,
-“validation checklist presence”,
-“human-gated authority boundary”
-],
-“not_authorized”: [
-“external deployment”,
-“S3 population”,
-“DynamoDB population”,
-“Jira population”,
-“legal finding”,
-“compliance certification”,
-“FedRAMP authorization”,
-“authority-bearing action”,
-“system population”,
-“production execution”
-],
-“truth_boundary”: [
-“Receipt is not truth.”,
-“Hash is not truth.”,
-“Manifest is not truth.”,
-“Transition Manifest is not truth.”,
-“Secondary Manifest Control is not truth.”,
-“Origin Dataset Boundary is not factual truth.”,
-“Data Provenance Control Layer is not truth.”,
-“Validation checklist is not authority.”,
-“Classification is not proof.”,
-“Framework mapping is not compliance.”,
-“Reporting adaptation is not verdict.”,
-“Prepared movement is not execution.”,
-“Human analysis validates output.”,
-“Human authorization permits authority-bearing action.”
-]
+  "package_id": "LCALL-2026.06.17-001",
+  "repository": "Zervan-Core-v39",
+  "canonical_configuration": "vTemporal.39.0",
+  "implementation_package_version": "LJCP-V39-MDM-DP-HELIX-ORIGIN-TMANIFEST-BCRR-2026.06.17-001",
+  "artifact_state": "Produced Only",
+  "authority_state": "NONE",
+  "human_gate": "ACTIVE",
+  "runtime_state": "DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE",
+  "posture": "CONTROLLED / READ-ONLY",
+  "external_runtime": "DISABLED",
+  "system_population": "DISALLOWED",
+  "created_utc": "2026-06-17T17:43:06Z",
+  "manifest_type": "initial_static_manifest",
+  "source_of_truth": {
+    "canonical_body": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+    "local_call_statement": "call/INITIATION_STATEMENT_V39_0.md",
+    "readme": "README.md",
+    "static_manifest": "manifests/v39_0_manifest.json",
+    "transition_manifest": "manifests/v39_0_transition_manifest.json",
+    "secondary_manifest_control": "manifests/v39_0_secondary_manifest_control.json",
+    "origin_dataset_boundary": "provenance/origin_dataset_boundary.md",
+    "data_provenance_control_layer": "controls/data_provenance_control_layer.md",
+    "load_receipt": "receipts/v39_0_load_receipt.md",
+    "replay_scars": "replay/v39_0_replay_scars.md",
+    "operation_route_catalog": "routes/operation_route_catalog_v39_0.md",
+    "human_gate_authority_boundary": "governance/human_gate_authority_boundary.md",
+    "hash_inventory_plan": "verification/hash_inventory_plan.md",
+    "validation_checklist": "verification/v39_0_validation_checklist.md",
+    "local_verifier": "call/verify_local_call.py",
+    "local_provenance_simulator": "scripts/local_provenance_simulator.py",
+    "repo_ignore_rules": ".gitignore"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "role": "repository_explanation",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "role": "canonical_body",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "role": "local_call_initiation",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "manifests/v39_0_manifest.json",
+      "role": "static_manifest",
+      "required": true,
+      "hash_status": "self_referential_pending_validation"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "role": "transition_manifest",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "manifests/v39_0_secondary_manifest_control.json",
+      "role": "secondary_manifest_control_layer",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "provenance/origin_dataset_boundary.md",
+      "role": "origin_dataset_boundary",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "controls/data_provenance_control_layer.md",
+      "role": "data_provenance_control_layer",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "role": "load_receipt",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "replay/v39_0_replay_scars.md",
+      "role": "replay_scar_register",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "routes/operation_route_catalog_v39_0.md",
+      "role": "operation_route_catalog",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "governance/human_gate_authority_boundary.md",
+      "role": "human_gate_authority_boundary",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "verification/hash_inventory_plan.md",
+      "role": "hash_inventory_plan",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "verification/v39_0_validation_checklist.md",
+      "role": "validation_checklist",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "role": "local_verification_script",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": "scripts/local_provenance_simulator.py",
+      "role": "local_provenance_simulator",
+      "required": true,
+      "hash_status": "pending_validation"
+    },
+    {
+      "path": ".gitignore",
+      "role": "repo_local_ignore_rules",
+      "required": true,
+      "hash_status": "pending_validation"
+    }
+  ],
+  "preserved_function_surfaces": [
+    "Multidirectional Communication Mesh",
+    "Signal Ecology",
+    "Pups",
+    "K9",
+    "Goblin Signal",
+    "Goblins",
+    "Goblin Teams",
+    "Goblin Platoon",
+    "FAMILY",
+    "Unit / Observer Registry",
+    "Persona Partner Registry",
+    "Processor Matrix",
+    "Beagle / Retriever / Raven",
+    "Operation Route Catalog",
+    "Workbook / Spreadsheet / Tabular Attribute Route",
+    "Classification Overlay",
+    "Framework Mapping Spine",
+    "Reporting Adaptation Layer",
+    "BDRR",
+    "Transition Manifest",
+    "Secondary Manifest Control Layer",
+    "Origin Dataset Boundary",
+    "Data Provenance Control Layer",
+    "Hash Inventory Plan",
+    "Validation Checklist",
+    "Replay Scar",
+    "Human Gate",
+    "Human Gate Authority Boundary",
+    "No-Compression-Out"
+  ],
+  "claim_ceiling": [
+    "local-call identity",
+    "canonical configuration preservation",
+    "repo-carried source-of-truth body",
+    "manifest inventory",
+    "transition record presence",
+    "secondary manifest control presence",
+    "origin dataset boundary presence",
+    "data provenance control layer presence",
+    "hash inventory planning",
+    "validation checklist presence",
+    "human-gated authority boundary"
+  ],
+  "not_authorized": [
+    "external deployment",
+    "S3 population",
+    "DynamoDB population",
+    "Jira population",
+    "legal finding",
+    "compliance certification",
+    "FedRAMP authorization",
+    "authority-bearing action",
+    "system population",
+    "production execution"
+  ],
+  "truth_boundary": [
+    "Receipt is not truth.",
+    "Hash is not truth.",
+    "Manifest is not truth.",
+    "Transition Manifest is not truth.",
+    "Secondary Manifest Control is not truth.",
+    "Origin Dataset Boundary is not factual truth.",
+    "Data Provenance Control Layer is not truth.",
+    "Validation checklist is not authority.",
+    "Classification is not proof.",
+    "Framework mapping is not compliance.",
+    "Reporting adaptation is not verdict.",
+    "Prepared movement is not execution.",
+    "Human analysis validates output.",
+    "Human authorization permits authority-bearing action."
+  ]
 }
