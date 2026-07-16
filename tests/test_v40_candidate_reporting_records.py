@@ -5,7 +5,15 @@ import json
 import unittest
 from pathlib import Path
 
-from test_v40_candidate_continuity import SchemaValidationError, validate_schema
+from candidate.v40.runtime.reporting_records import (
+    ReportingRecordError,
+    analysis_digest,
+    seal_analysis_record,
+    seal_evidence_record,
+    semantic_digest,
+    validate_reporting_records,
+)
+from candidate.v40.runtime.schema_validation import SchemaValidationError, validate_schema
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -148,6 +156,35 @@ def valid_analysis() -> dict:
         "status": "FROZEN",
         "analysis_sha512": "d" * 128,
     }
+
+
+def sealed_records() -> tuple[dict, dict]:
+    evidence = seal_evidence_record(valid_evidence())
+    analysis = seal_analysis_record(valid_analysis(), [evidence])
+    return evidence, analysis
+
+
+def analysis_with_risk_inheritance() -> dict:
+    value = valid_analysis()
+    threat = copy.deepcopy(value["claim_objects"][0])
+    threat["claim_id"] = "CL-THREAT-001"
+    threat["claim_text"] = "Identity 001 presents a threat through inherited anomaly evidence."
+    threat["semantic"]["risk_category"] = "THREAT"
+    threat["semantic"]["inheritance_refs"] = ["RIE-ANOMALY-THREAT-001"]
+    value["claim_objects"].append(threat)
+    value["uncertainty_objects"][0]["affected_claim_refs"].append("CL-THREAT-001")
+    value["limitation_objects"][0]["affected_claim_refs"].append("CL-THREAT-001")
+    value["risk_inheritance_edges"] = [
+        {
+            "edge_id": "RIE-ANOMALY-THREAT-001",
+            "from_claim_ref": "CL-ANOMALY-001",
+            "to_claim_ref": "CL-THREAT-001",
+            "inheritance_class": "RISK_ESCALATION",
+            "evidence_refs": ["EV-REPORTING-001"],
+            "rationale": "The threat claim inherits the anomaly evidence.",
+        }
+    ]
+    return value
 
 
 class RecordSchemaTestCase(unittest.TestCase):
@@ -332,6 +369,151 @@ class AnalysisRecordSchemaFixtures(RecordSchemaTestCase):
         value = valid_analysis()
         value["claim_objects"] = []
         self.assert_invalid(value, analysis_schema())
+
+
+class ReportingRecordRuntimeFixtures(unittest.TestCase):
+    def test_sealed_records_validate_with_independent_digests(self):
+        evidence, analysis = sealed_records()
+        self.assertEqual(validate_reporting_records([evidence], analysis), [])
+        self.assertNotEqual(evidence["evidence_sha512"], "b" * 128)
+        self.assertNotEqual(analysis["analysis_sha512"], "d" * 128)
+        self.assertNotEqual(
+            analysis["claim_objects"][0]["semantic"]["semantic_sha512"],
+            "c" * 128,
+        )
+
+    def test_fixture_06_evidence_mutation_after_hashing_is_rejected(self):
+        evidence, analysis = sealed_records()
+        evidence["object_ref"] = "OBJECT-MUTATED-AFTER-SEAL"
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("Evidence digest mismatch" in error for error in errors))
+
+    def test_analysis_mutation_after_hashing_is_rejected(self):
+        evidence, analysis = sealed_records()
+        analysis["claim_objects"][0]["claim_text"] = "Mutated after the analysis was sealed."
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertIn("Analysis digest mismatch: AN-REPORTING-001", errors)
+
+    def test_semantic_mutation_survives_outer_rehash_detection(self):
+        evidence, analysis = sealed_records()
+        analysis["claim_objects"][0]["semantic"]["polarity"] = "NEGATED"
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertIn("Claim semantic digest mismatch: CL-ANOMALY-001", errors)
+        self.assertNotIn("Analysis digest mismatch: AN-REPORTING-001", errors)
+
+    def test_duplicate_evidence_and_claim_identifiers_are_rejected(self):
+        evidence, analysis = sealed_records()
+        errors = validate_reporting_records([evidence, copy.deepcopy(evidence)], analysis)
+        self.assertIn("Duplicate Evidence identifier: EV-REPORTING-001", errors)
+
+        value = valid_analysis()
+        duplicate = copy.deepcopy(value["claim_objects"][0])
+        duplicate["claim_text"] = "A different claim body reusing the same identifier."
+        value["claim_objects"].append(duplicate)
+        with self.assertRaises(ReportingRecordError) as context:
+            seal_analysis_record(value, [evidence])
+        self.assertIn("Duplicate claim identifier: CL-ANOMALY-001", context.exception.errors)
+
+    def test_dangling_evidence_reference_is_rejected(self):
+        evidence, analysis = sealed_records()
+        claim = analysis["claim_objects"][0]
+        claim["evidence_refs"] = ["EV-MISSING-001"]
+        analysis["evidence_refs"] = ["EV-MISSING-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("EV-MISSING-001" in error for error in errors))
+
+    def test_uncertainty_reference_must_resolve_and_be_reciprocal(self):
+        evidence, analysis = sealed_records()
+        analysis["claim_objects"][0]["uncertainty_refs"] = ["UNC-MISSING-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("UNC-MISSING-001" in error for error in errors))
+
+        evidence, analysis = sealed_records()
+        analysis["uncertainty_objects"][0]["affected_claim_refs"] = ["CL-OTHER-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("UNC-ANOMALY-001" in error and "affected_claim_refs" in error for error in errors))
+
+    def test_limitation_reference_must_resolve_and_be_reciprocal(self):
+        evidence, analysis = sealed_records()
+        analysis["claim_objects"][0]["limitation_refs"] = ["LIM-MISSING-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("LIM-MISSING-001" in error for error in errors))
+
+        evidence, analysis = sealed_records()
+        analysis["limitation_objects"][0]["affected_claim_refs"] = ["CL-OTHER-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("LIM-TIME-001" in error and "affected_claim_refs" in error for error in errors))
+
+    def test_contradiction_reference_must_resolve_to_analysis_boundary(self):
+        evidence, analysis = sealed_records()
+        claim = analysis["claim_objects"][0]
+        claim["support_state"] = "CONTRADICTED"
+        claim["contradiction_refs"] = ["CONTRADICTION-MISSING-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("CONTRADICTION-MISSING-001" in error for error in errors))
+
+    def test_attribution_transformation_and_source_claim_must_resolve(self):
+        evidence, analysis = sealed_records()
+        analysis["claim_objects"][0]["attribution"]["transformation_refs"] = ["METHOD-MISSING-001"]
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("METHOD-MISSING-001" in error for error in errors))
+
+        evidence, analysis = sealed_records()
+        analysis["claim_objects"][0]["attribution"]["source_claim_ref"] = "CL-MISSING-001"
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertTrue(any("source_claim_ref is unresolved" in error for error in errors))
+
+    def test_claim_ceiling_must_match_analysis_boundary(self):
+        evidence, analysis = sealed_records()
+        semantic = analysis["claim_objects"][0]["semantic"]
+        semantic["claim_ceiling"] = "TRIAGE_ONLY"
+        semantic["semantic_sha512"] = semantic_digest(semantic)
+        analysis["analysis_sha512"] = analysis_digest(analysis)
+        errors = validate_reporting_records([evidence], analysis)
+        self.assertIn("Claim ceiling differs from analysis ceiling: CL-ANOMALY-001", errors)
+
+    def test_valid_risk_inheritance_resolves_both_claims_and_evidence(self):
+        evidence = seal_evidence_record(valid_evidence())
+        analysis = seal_analysis_record(analysis_with_risk_inheritance(), [evidence])
+        self.assertEqual(validate_reporting_records([evidence], analysis), [])
+
+    def test_risk_inheritance_rejects_missing_target_carriage(self):
+        evidence = seal_evidence_record(valid_evidence())
+        value = analysis_with_risk_inheritance()
+        value["claim_objects"][1]["semantic"]["inheritance_refs"] = []
+        with self.assertRaises(ReportingRecordError) as context:
+            seal_analysis_record(value, [evidence])
+        self.assertTrue(any("does not carry inheritance edge" in error for error in context.exception.errors))
+
+    def test_risk_inheritance_rejects_backward_or_stationary_risk(self):
+        evidence = seal_evidence_record(valid_evidence())
+        value = analysis_with_risk_inheritance()
+        value["claim_objects"][1]["semantic"]["risk_category"] = "ANOMALY"
+        with self.assertRaises(ReportingRecordError) as context:
+            seal_analysis_record(value, [evidence])
+        self.assertTrue(any("does not advance risk" in error for error in context.exception.errors))
+
+    def test_risk_inheritance_evidence_must_exist_in_both_claims(self):
+        evidence = seal_evidence_record(valid_evidence())
+        second_source = valid_evidence()
+        second_source["evidence_id"] = "EV-REPORTING-002"
+        second_source["object_ref"] = "OBJECT-IDENTITY-002"
+        second_source = seal_evidence_record(second_source)
+        value = analysis_with_risk_inheritance()
+        value["evidence_refs"].append("EV-REPORTING-002")
+        value["claim_objects"][1]["evidence_refs"] = ["EV-REPORTING-002"]
+        with self.assertRaises(ReportingRecordError) as context:
+            seal_analysis_record(value, [evidence, second_source])
+        self.assertTrue(any("absent from target claim" in error for error in context.exception.errors))
 
 
 if __name__ == "__main__":
