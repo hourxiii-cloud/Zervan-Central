@@ -142,6 +142,10 @@ def validate_schema(
             raise SchemaValidationError(f"{path}: value is below minimum")
 
     if isinstance(instance, list):
+        if len(instance) < schema.get("minItems", 0):
+            raise SchemaValidationError(f"{path}: array has fewer than minItems")
+        if "maxItems" in schema and len(instance) > schema["maxItems"]:
+            raise SchemaValidationError(f"{path}: array has more than maxItems")
         if schema.get("uniqueItems"):
             canonical_items = [json.dumps(item, sort_keys=True, separators=(",", ":")) for item in instance]
             if len(canonical_items) != len(set(canonical_items)):

@@ -1,0 +1,461 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/analysis_record/1",
+  "title": "Zervan v40 Candidate Analysis Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "analysis_version",
+    "analysis_id",
+    "inquiry_ref",
+    "route_ref",
+    "contract_ref",
+    "method_refs",
+    "claim_objects",
+    "finding_refs",
+    "count_refs",
+    "identity_refs",
+    "evidence_refs",
+    "uncertainty_objects",
+    "contradiction_refs",
+    "limitation_objects",
+    "eliminated_world_refs",
+    "surviving_world_refs",
+    "risk_inheritance_edges",
+    "classification_refs",
+    "framework_mapping_refs",
+    "attribution",
+    "analysis_time_utc",
+    "provenance_refs",
+    "authority_state",
+    "human_gate_state",
+    "claim_ceiling",
+    "status",
+    "analysis_sha512"
+  ],
+  "properties": {
+    "analysis_version": {"const": "v40-candidate.1"},
+    "analysis_id": {"type": "string", "pattern": "^AN-[A-Z0-9._-]+$"},
+    "inquiry_ref": {"type": "string", "minLength": 1},
+    "route_ref": {"type": "string", "minLength": 3},
+    "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "method_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+    "claim_objects": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/claim_object"}
+    },
+    "finding_refs": {"$ref": "#/$defs/unique_strings"},
+    "count_refs": {"$ref": "#/$defs/unique_strings"},
+    "identity_refs": {"$ref": "#/$defs/unique_strings"},
+    "evidence_refs": {"$ref": "#/$defs/unique_strings"},
+    "uncertainty_objects": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/uncertainty_object"}
+    },
+    "contradiction_refs": {"$ref": "#/$defs/unique_strings"},
+    "limitation_objects": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/limitation_object"}
+    },
+    "eliminated_world_refs": {"$ref": "#/$defs/unique_strings"},
+    "surviving_world_refs": {"$ref": "#/$defs/unique_strings"},
+    "risk_inheritance_edges": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/risk_inheritance_edge"}
+    },
+    "classification_refs": {"$ref": "#/$defs/unique_strings"},
+    "framework_mapping_refs": {"$ref": "#/$defs/unique_strings"},
+    "attribution": {"$ref": "#/$defs/attribution_object"},
+    "analysis_time_utc": {"type": "string", "format": "date-time"},
+    "provenance_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+    "authority_state": {"const": "NONE"},
+    "human_gate_state": {"const": "ACTIVE"},
+    "claim_ceiling": {"$ref": "#/$defs/claim_ceiling"},
+    "status": {"enum": ["FROZEN", "SUPERSEDED", "RETRACTED", "UNKNOWN"]},
+    "analysis_sha512": {"$ref": "#/$defs/sha512"}
+  },
+  "$defs": {
+    "sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "unique_strings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nonempty_unique_strings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "claim_ceiling": {
+      "enum": [
+        "ANALYTICAL_ONLY",
+        "CANDIDATE_CLASSIFICATION_ONLY",
+        "FRAMEWORK_MAPPING_ONLY",
+        "TRIAGE_ONLY",
+        "NO_AUTHORITY"
+      ]
+    },
+    "attribution_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin_class",
+        "origin_ref",
+        "source_claim_ref",
+        "transformation_refs",
+        "attributed_at_utc",
+        "notes"
+      ],
+      "properties": {
+        "origin_class": {
+          "enum": [
+            "USER_ESTABLISHED",
+            "SOURCE_ASSERTED",
+            "EVIDENCE_OBSERVED",
+            "SYSTEM_DERIVED",
+            "HUMAN_VALIDATED",
+            "HUMAN_DECIDED",
+            "UNKNOWN"
+          ]
+        },
+        "origin_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "source_claim_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "transformation_refs": {"$ref": "#/$defs/unique_strings"},
+        "attributed_at_utc": {"type": "string", "format": "date-time"},
+        "notes": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"origin_class": {"const": "UNKNOWN"}},
+            "required": ["origin_class"]
+          },
+          "then": {},
+          "else": {
+            "properties": {"origin_ref": {"type": "string", "minLength": 1}}
+          }
+        }
+      ]
+    },
+    "quantitative_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["applicable", "magnitude", "unit", "value_ref"],
+      "properties": {
+        "applicable": {"type": "boolean"},
+        "magnitude": {
+          "anyOf": [
+            {"type": "number"},
+            {"type": "null"}
+          ]
+        },
+        "unit": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "value_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"applicable": {"const": true}},
+            "required": ["applicable"]
+          },
+          "then": {
+            "properties": {"unit": {"type": "string", "minLength": 1}},
+            "anyOf": [
+              {"properties": {"magnitude": {"type": "number"}}},
+              {"properties": {"value_ref": {"type": "string", "minLength": 1}}}
+            ]
+          },
+          "else": {
+            "properties": {
+              "magnitude": {"type": "null"},
+              "unit": {"type": "null"},
+              "value_ref": {"type": "null"}
+            }
+          }
+        }
+      ]
+    },
+    "temporal_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_utc", "end_utc", "as_of_utc", "description"],
+      "properties": {
+        "start_utc": {
+          "anyOf": [
+            {"type": "string", "format": "date-time"},
+            {"type": "null"}
+          ]
+        },
+        "end_utc": {
+          "anyOf": [
+            {"type": "string", "format": "date-time"},
+            {"type": "null"}
+          ]
+        },
+        "as_of_utc": {
+          "anyOf": [
+            {"type": "string", "format": "date-time"},
+            {"type": "null"}
+          ]
+        },
+        "description": {"type": "string", "minLength": 1}
+      }
+    },
+    "claim_semantic_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject_ref",
+        "predicate",
+        "object_ref",
+        "polarity",
+        "quantitative",
+        "population_ref",
+        "denominator_ref",
+        "scope",
+        "temporal_boundary",
+        "classification_ref",
+        "risk_category",
+        "ordering_ref",
+        "inheritance_refs",
+        "claim_ceiling",
+        "semantic_sha512"
+      ],
+      "properties": {
+        "subject_ref": {"type": "string", "minLength": 1},
+        "predicate": {"type": "string", "minLength": 1},
+        "object_ref": {"type": "string", "minLength": 1},
+        "polarity": {"enum": ["AFFIRMED", "NEGATED", "CONDITIONAL", "UNKNOWN"]},
+        "quantitative": {"$ref": "#/$defs/quantitative_object"},
+        "population_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "denominator_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "scope": {"type": "string", "minLength": 1},
+        "temporal_boundary": {"$ref": "#/$defs/temporal_boundary"},
+        "classification_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "risk_category": {
+          "enum": [
+            "ANOMALY",
+            "THREAT",
+            "HIDDEN_THREAT",
+            "INSIDER_THREAT",
+            "OFFENDING_ID",
+            "OTHER_DECLARED",
+            "NOT_APPLICABLE",
+            "UNKNOWN"
+          ]
+        },
+        "ordering_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "inheritance_refs": {"$ref": "#/$defs/unique_strings"},
+        "claim_ceiling": {"$ref": "#/$defs/claim_ceiling"},
+        "semantic_sha512": {"$ref": "#/$defs/sha512"}
+      }
+    },
+    "claim_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "claim_text",
+        "semantic",
+        "support_state",
+        "evidence_refs",
+        "uncertainty_refs",
+        "contradiction_refs",
+        "limitation_refs",
+        "attribution"
+      ],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^CL-[A-Z0-9._-]+$"},
+        "claim_text": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "semantic": {"$ref": "#/$defs/claim_semantic_object"},
+        "support_state": {
+          "enum": [
+            "SUPPORTED",
+            "PARTIALLY_SUPPORTED",
+            "CONTRADICTED",
+            "UNRESOLVED",
+            "RETRACTED",
+            "UNKNOWN"
+          ]
+        },
+        "evidence_refs": {"$ref": "#/$defs/unique_strings"},
+        "uncertainty_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "contradiction_refs": {"$ref": "#/$defs/unique_strings"},
+        "limitation_refs": {"$ref": "#/$defs/unique_strings"},
+        "attribution": {"$ref": "#/$defs/attribution_object"}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "support_state": {"enum": ["SUPPORTED", "PARTIALLY_SUPPORTED"]}
+            },
+            "required": ["support_state"]
+          },
+          "then": {
+            "properties": {"evidence_refs": {"$ref": "#/$defs/nonempty_unique_strings"}}
+          }
+        },
+        {
+          "if": {
+            "properties": {"support_state": {"const": "CONTRADICTED"}},
+            "required": ["support_state"]
+          },
+          "then": {
+            "properties": {
+              "contradiction_refs": {"$ref": "#/$defs/nonempty_unique_strings"}
+            }
+          }
+        }
+      ]
+    },
+    "uncertainty_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uncertainty_id",
+        "uncertainty_class",
+        "description",
+        "affected_claim_refs",
+        "evidence_refs",
+        "quantification_ref",
+        "state"
+      ],
+      "properties": {
+        "uncertainty_id": {"type": "string", "pattern": "^UNC-[A-Z0-9._-]+$"},
+        "uncertainty_class": {
+          "enum": [
+            "MISSING_EVIDENCE",
+            "UNRELIABLE_EVIDENCE",
+            "CONTRADICTORY_EVIDENCE",
+            "BOUNDED_STATISTICAL_UNCERTAINTY",
+            "SCOPE_UNCERTAINTY",
+            "TEMPORAL_UNCERTAINTY",
+            "CLASSIFICATION_UNCERTAINTY",
+            "MAPPING_UNCERTAINTY",
+            "UNRESOLVED_ANALYTICAL_STATE",
+            "UNKNOWN_CAUSE",
+            "NO_MATERIAL_UNCERTAINTY_IDENTIFIED"
+          ]
+        },
+        "description": {"type": "string", "minLength": 1},
+        "affected_claim_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "evidence_refs": {"$ref": "#/$defs/unique_strings"},
+        "quantification_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "state": {"enum": ["ACTIVE", "RESOLVED", "UNKNOWN"]}
+      }
+    },
+    "limitation_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "limitation_id",
+        "limitation_class",
+        "description",
+        "affected_claim_refs",
+        "evidence_refs"
+      ],
+      "properties": {
+        "limitation_id": {"type": "string", "pattern": "^LIM-[A-Z0-9._-]+$"},
+        "limitation_class": {
+          "enum": [
+            "SCOPE",
+            "EVIDENCE",
+            "METHOD",
+            "TEMPORAL",
+            "DATA_QUALITY",
+            "ACCESS",
+            "OTHER_DECLARED"
+          ]
+        },
+        "description": {"type": "string", "minLength": 1},
+        "affected_claim_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "evidence_refs": {"$ref": "#/$defs/unique_strings"}
+      }
+    },
+    "risk_inheritance_edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "from_claim_ref",
+        "to_claim_ref",
+        "inheritance_class",
+        "evidence_refs",
+        "rationale"
+      ],
+      "properties": {
+        "edge_id": {"type": "string", "pattern": "^RIE-[A-Z0-9._-]+$"},
+        "from_claim_ref": {"type": "string", "pattern": "^CL-[A-Z0-9._-]+$"},
+        "to_claim_ref": {"type": "string", "pattern": "^CL-[A-Z0-9._-]+$"},
+        "inheritance_class": {
+          "enum": ["EVIDENCE", "RISK_ESCALATION", "DEPENDENCY", "OTHER_DECLARED"]
+        },
+        "evidence_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
