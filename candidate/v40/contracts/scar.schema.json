@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/scar/1",
+  "title": "Zervan v40 Candidate Scar Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scar_version", "scar_id", "contract_ref", "contract_instance_id", "route_id",
+    "route_lock", "canonical_binding_ref", "terminal_event_id", "terminal_event_sequence",
+    "terminal_event_sha512", "transition_ledger_head_sha512", "recorded_at_utc",
+    "authority_state", "human_gate_state", "scar_class", "stop_class", "trigger",
+    "reason", "evidence_boundary", "analysis_state", "continuation", "provenance_refs",
+    "scar_sha512"
+  ],
+  "properties": {
+    "scar_version": {"const": "v40-candidate.1"},
+    "scar_id": {"type": "string", "pattern": "^SC-[A-Z0-9._-]+$"},
+    "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "contract_instance_id": {"type": "string", "pattern": "^OCI-[A-Z0-9._-]+$"},
+    "route_id": {"type": "string", "minLength": 3},
+    "route_lock": {"type": "string", "minLength": 3},
+    "canonical_binding_ref": {"type": "string", "minLength": 3},
+    "terminal_event_id": {"type": "string", "pattern": "^TE-[A-Z0-9._-]+$"},
+    "terminal_event_sequence": {"type": "integer", "minimum": 1},
+    "terminal_event_sha512": {"$ref": "#/$defs/sha512"},
+    "transition_ledger_head_sha512": {"$ref": "#/$defs/sha512"},
+    "recorded_at_utc": {"type": "string", "format": "date-time"},
+    "authority_state": {"const": "NONE"},
+    "human_gate_state": {"const": "ACTIVE"},
+    "scar_class": {
+      "enum": [
+        "CONTRACT_CONTROL_STOP", "HUMAN_GATE_STOP", "EVIDENCE_BOUNDARY_EXHAUSTION",
+        "UNRESOLVED_CONTRADICTION", "RECURSIVE_ANALYTICAL_FAILURE",
+        "TRANSITION_WITNESS_FAILURE", "UNCLASSIFIED_CONTROL_STOP"
+      ]
+    },
+    "stop_class": {"$ref": "#/$defs/stop_class"},
+    "trigger": {"type": "string", "minLength": 1},
+    "reason": {"type": "string", "minLength": 1},
+    "evidence_boundary": {"$ref": "#/$defs/evidence_boundary"},
+    "analysis_state": {"$ref": "#/$defs/analysis_state"},
+    "continuation": {"$ref": "#/$defs/continuation"},
+    "provenance_refs": {"$ref": "#/$defs/unique_refs"},
+    "scar_sha512": {"$ref": "#/$defs/sha512"}
+  },
+  "$defs": {
+    "sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "unique_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nullable_time": {
+      "anyOf": [
+        {"type": "string", "format": "date-time"},
+        {"type": "null"}
+      ]
+    },
+    "stop_class": {
+      "enum": [
+        "CONTRACT_NONCONFORMANCE", "CANONICAL_BINDING_FAILURE", "ROUTE_DRIFT",
+        "UNDECLARED_ACTION", "AUDIT_INTERRUPT", "TRANSITION_WITNESS_FAILURE",
+        "COMPLETION_MISMATCH", "HUMAN_GATE_DENIED",
+        "HUMAN_GATE_APPROVED_NEW_CONTRACT_REQUIRED", "LOGIC_FREEZE"
+      ]
+    },
+    "evidence_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "boundary_state", "available_evidence_refs", "missing_evidence_refs",
+        "contradiction_refs", "invalid_evidence_refs", "scope_exclusions",
+        "boundary_reason", "evidence_time_utc"
+      ],
+      "properties": {
+        "boundary_state": {"enum": ["AVAILABLE", "PARTIAL", "EXHAUSTED", "CONTRADICTORY", "INVALID", "UNKNOWN"]},
+        "available_evidence_refs": {"$ref": "#/$defs/unique_refs"},
+        "missing_evidence_refs": {"$ref": "#/$defs/unique_refs"},
+        "contradiction_refs": {"$ref": "#/$defs/unique_refs"},
+        "invalid_evidence_refs": {"$ref": "#/$defs/unique_refs"},
+        "scope_exclusions": {"$ref": "#/$defs/unique_refs"},
+        "boundary_reason": {"type": "string", "minLength": 1},
+        "evidence_time_utc": {"$ref": "#/$defs/nullable_time"}
+      }
+    },
+    "analysis_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inquiry_ref", "claim_refs", "unresolved_claim_refs", "eliminated_world_refs",
+        "surviving_world_refs", "function_participation_refs",
+        "last_supported_conclusion_refs", "state_summary"
+      ],
+      "properties": {
+        "inquiry_ref": {"type": ["string", "null"]},
+        "claim_refs": {"$ref": "#/$defs/unique_refs"},
+        "unresolved_claim_refs": {"$ref": "#/$defs/unique_refs"},
+        "eliminated_world_refs": {"$ref": "#/$defs/unique_refs"},
+        "surviving_world_refs": {"$ref": "#/$defs/unique_refs"},
+        "function_participation_refs": {"$ref": "#/$defs/unique_refs"},
+        "last_supported_conclusion_refs": {"$ref": "#/$defs/unique_refs"},
+        "state_summary": {"type": "string", "minLength": 1}
+      }
+    },
+    "continuation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "replay_eligible", "replay_blockers", "replay_preconditions",
+        "new_contract_required", "continuation_ref", "human_gate_decision_required"
+      ],
+      "properties": {
+        "replay_eligible": {"type": "boolean"},
+        "replay_blockers": {"$ref": "#/$defs/unique_refs"},
+        "replay_preconditions": {"$ref": "#/$defs/unique_refs"},
+        "new_contract_required": {"const": true},
+        "continuation_ref": {"type": "null"},
+        "human_gate_decision_required": {"const": true}
+      }
+    }
+  }
+}

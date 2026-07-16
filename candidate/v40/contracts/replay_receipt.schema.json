@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/replay_receipt/1",
+  "title": "Zervan v40 Candidate Replay Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "replay_version", "replay_id", "replay_sequence", "decision_of_replay_id",
+    "requested_at_utc", "prepared_at_utc", "scar_ref", "scar_sha512",
+    "source_contract_ref", "source_contract_instance_id", "source_route_id",
+    "source_route_lock", "terminal_event_id", "terminal_event_sha512",
+    "transition_ledger_head_sha512", "scar_ledger_sha512",
+    "source_canonical_binding_ref", "current_canonical_binding_ref",
+    "canonical_comparison", "authority_state", "restored_context",
+    "unavailable_context", "continuation_proposal", "human_gate", "status",
+    "previous_replay_sha512", "replay_sha512"
+  ],
+  "properties": {
+    "replay_version": {"const": "v40-candidate.1"},
+    "replay_id": {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+    "replay_sequence": {"type": "integer", "minimum": 1},
+    "decision_of_replay_id": {
+      "anyOf": [
+        {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "requested_at_utc": {"type": "string", "format": "date-time"},
+    "prepared_at_utc": {"type": "string", "format": "date-time"},
+    "scar_ref": {"type": "string", "pattern": "^SC-[A-Z0-9._-]+$"},
+    "scar_sha512": {"$ref": "#/$defs/sha512"},
+    "source_contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "source_contract_instance_id": {"type": "string", "pattern": "^OCI-[A-Z0-9._-]+$"},
+    "source_route_id": {"type": "string", "minLength": 3},
+    "source_route_lock": {"type": "string", "minLength": 3},
+    "terminal_event_id": {"type": "string", "pattern": "^TE-[A-Z0-9._-]+$"},
+    "terminal_event_sha512": {"$ref": "#/$defs/sha512"},
+    "transition_ledger_head_sha512": {"$ref": "#/$defs/sha512"},
+    "scar_ledger_sha512": {"$ref": "#/$defs/sha512"},
+    "source_canonical_binding_ref": {"type": "string", "minLength": 3},
+    "current_canonical_binding_ref": {"type": ["string", "null"], "minLength": 3},
+    "canonical_comparison": {
+      "enum": [
+        "UNCHANGED", "ADVANCED_REVALIDATION_REQUIRED", "DRIFTED", "UNAVAILABLE", "INVALID"
+      ]
+    },
+    "authority_state": {"const": "NONE"},
+    "restored_context": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/restored_context_item"}
+    },
+    "unavailable_context": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/unavailable_context_item"}
+    },
+    "continuation_proposal": {"$ref": "#/$defs/continuation_proposal"},
+    "human_gate": {"$ref": "#/$defs/human_gate"},
+    "status": {
+      "enum": [
+        "PREPARED", "BLOCKED", "HUMAN_GATE_REVIEW",
+        "AUTHORIZED_NEW_CONTRACT_REQUIRED", "DENIED"
+      ]
+    },
+    "previous_replay_sha512": {
+      "anyOf": [
+        {"$ref": "#/$defs/sha512"},
+        {"type": "null"}
+      ]
+    },
+    "replay_sha512": {"$ref": "#/$defs/sha512"}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {"enum": ["PREPARED", "BLOCKED", "HUMAN_GATE_REVIEW"]}
+        },
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "decision_of_replay_id": {"type": "null"},
+          "continuation_proposal": {
+            "properties": {"continuation_ref": {"type": "null"}}
+          },
+          "human_gate": {
+            "properties": {
+              "decision": {"const": "PENDING"},
+              "decision_ref": {"type": "null"},
+              "decided_at_utc": {"type": "null"},
+              "decision_owner": {"type": "null"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"status": {"const": "HUMAN_GATE_REVIEW"}},
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {"canonical_comparison": {"const": "UNCHANGED"}}
+      }
+    },
+    {
+      "if": {
+        "properties": {"status": {"const": "AUTHORIZED_NEW_CONTRACT_REQUIRED"}},
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "decision_of_replay_id": {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+          "canonical_comparison": {"const": "UNCHANGED"},
+          "continuation_proposal": {
+            "properties": {
+              "continuation_ref": {"type": "string", "pattern": "^CONT-[A-Z0-9._-]+$"}
+            }
+          },
+          "human_gate": {
+            "properties": {
+              "decision": {"const": "APPROVED"},
+              "decision_ref": {"type": "string", "minLength": 1},
+              "decided_at_utc": {"type": "string", "format": "date-time"},
+              "decision_owner": {"const": "HUMAN"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"status": {"const": "DENIED"}},
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "decision_of_replay_id": {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+          "continuation_proposal": {
+            "properties": {"continuation_ref": {"type": "null"}}
+          },
+          "human_gate": {
+            "properties": {
+              "decision": {"const": "DENIED"},
+              "decision_ref": {"type": "string", "minLength": 1},
+              "decided_at_utc": {"type": "string", "format": "date-time"},
+              "decision_owner": {"const": "HUMAN"}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "unique_strings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "context_class": {
+      "enum": [
+        "ROUTE_CONTRACT", "CANONICAL_BINDING", "TRANSITION_LEDGER", "TERMINAL_EVENT",
+        "SCAR", "EVIDENCE_BOUNDARY", "ANALYTICAL_STATE", "FUNCTION_PARTICIPATION",
+        "PRIOR_DECISION"
+      ]
+    },
+    "restored_context_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["context_class", "ref"],
+      "properties": {
+        "context_class": {"$ref": "#/$defs/context_class"},
+        "ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "unavailable_context_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["context_class", "ref", "reason"],
+      "properties": {
+        "context_class": {"$ref": "#/$defs/context_class"},
+        "ref": {"type": ["string", "null"], "minLength": 1},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    },
+    "continuation_proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "proposed_route_id", "proposed_scope", "proposed_completion_criteria",
+        "required_evidence_refs", "new_contract_required", "new_contract_ref",
+        "new_contract_instance_id", "continuation_ref"
+      ],
+      "properties": {
+        "proposed_route_id": {"type": "string", "minLength": 3},
+        "proposed_scope": {"$ref": "#/$defs/unique_strings"},
+        "proposed_completion_criteria": {"$ref": "#/$defs/unique_strings"},
+        "required_evidence_refs": {"$ref": "#/$defs/unique_strings"},
+        "new_contract_required": {"const": true},
+        "new_contract_ref": {"type": "null"},
+        "new_contract_instance_id": {"type": "null"},
+        "continuation_ref": {
+          "anyOf": [
+            {"type": "string", "pattern": "^CONT-[A-Z0-9._-]+$"},
+            {"type": "null"}
+          ]
+        }
+      }
+    },
+    "human_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "decision", "decision_ref", "decided_at_utc", "decision_owner"],
+      "properties": {
+        "state": {"const": "ACTIVE"},
+        "decision": {"enum": ["PENDING", "APPROVED", "DENIED"]},
+        "decision_ref": {"type": ["string", "null"]},
+        "decided_at_utc": {
+          "anyOf": [
+            {"type": "string", "format": "date-time"},
+            {"type": "null"}
+          ]
+        },
+        "decision_owner": {
+          "anyOf": [
+            {"const": "HUMAN"},
+            {"type": "null"}
+          ]
+        }
+      }
+    }
+  }
+}

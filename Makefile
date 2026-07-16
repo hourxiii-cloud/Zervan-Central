@@ -14,9 +14,10 @@ pmc-seal:
 	@./tools/pmc_seal.sh
 
 validate-v40-candidate:
-	@python candidate/v40/tools/validate_failure_inventory.py
-	@python candidate/v40/tools/validate_operational_contract.py
-	@python candidate/v40/tools/validate_control_plane.py
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_failure_inventory.py
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_operational_contract.py
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_control_plane.py
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_continuity.py
 
 test-v40-candidate:
-	@python -m unittest discover -s tests -p 'test_v40_candidate_*.py' -v
+	@PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p 'test_v40_candidate_*.py' -v
