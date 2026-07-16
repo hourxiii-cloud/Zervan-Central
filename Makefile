@@ -19,6 +19,7 @@ validate-v40-candidate:
 	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_control_plane.py
 	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_continuity.py
 	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_reporting_records.py
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v40/tools/validate_reporting_inventories.py
 
 test-v40-candidate:
 	@PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p 'test_v40_candidate_*.py' -v
