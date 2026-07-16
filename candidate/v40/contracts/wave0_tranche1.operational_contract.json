@@ -1,0 +1,53 @@
+{
+  "contract_version": "v40-candidate.1",
+  "contract_id": "OC-V40.WAVE0.TRANCHE1",
+  "contract_instance_id": "OCI-V40.WAVE0.TRANCHE1.001",
+  "candidate_state": "CANDIDATE_ONLY",
+  "authority_state": "NONE",
+  "human_gate": "ACTIVE",
+  "posture": {
+    "runtime_state": "DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE",
+    "mode": "CONTROLLED / READ-ONLY",
+    "external_runtime": "DISABLED",
+    "system_population": "DISALLOWED"
+  },
+  "canonical_binding": {
+    "repository": "https://github.com/hourxiii-cloud/Zervan-Core-v39.git",
+    "branch": "main",
+    "commit": "b9460bf2955246ff3b1f61ed0b398496d7ad49c1",
+    "artifacts": [
+      {"path": "call/INITIATION_STATEMENT_V39_0.md", "sha256": "8da69fa048bcd741d1c7e5eac78343d6c816cc0ed41660073a57d4c9280368dc"},
+      {"path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md", "sha256": "aa2e8fe3a04a3d03ff7d3797b5130e0c142306c686bb74979b3aab31475cf75f"},
+      {"path": "ZERVAN_5_6_CANONICAL_DEFINITIONS.md", "sha256": "0d0be5ca21b02d749b6494ed803b861d68e8f2e748e0b43b5a8235569bed0e3d"}
+    ]
+  },
+  "route": {
+    "route_id": "v40_candidate_wave0_tranche1",
+    "purpose": "Implement inert local candidate controls and verified validator repairs without canonical promotion",
+    "permitted_actions": ["canonical.read", "candidate.edit", "validator.repair", "test.run", "receipt.prepare"],
+    "prohibited_actions": ["v40.promote", "canonical.mutate", "git.push", "external_runtime.activate", "system.populate", "authority.infer"],
+    "human_gate_required_actions": []
+  },
+  "invariants": ["Authority remains NONE", "Human Gate remains ACTIVE", "canonical v39 body remains unchanged", "external runtime remains DISABLED", "system population remains DISALLOWED", "candidate outputs remain non-doctrinal"],
+  "completion_criteria": ["P0 registry contains exactly P0-001 through P0-040", "P0 taxonomy meaning is unambiguous", "v39 verifier accepts semantic marker formatting without weakening value checks", "5.6 validator is read-only by default", "regression tests pass", "candidate receipt records verification and unresolved work"],
+  "stop_conditions": ["canonical binding mismatch", "authority state changes", "Human Gate becomes unresolved", "requested action requires external mutation", "test failure cannot be bounded to candidate work"],
+  "escalation_triggers": ["route substitution", "canonical uncertainty", "completion criteria conflict", "governance invariant divergence", "repeated non-progressing transition"],
+  "mutation_scope": {
+    "canonical_mutation": "DISALLOWED",
+    "candidate_local_edits": "ALLOWED",
+    "external_mutation": "DISALLOWED"
+  },
+  "canonicalization": "zervan://candidate/v40/canonical-json/1",
+  "transition_ledger_policy": {
+    "format": "one_canonical_json_object_per_event",
+    "digest": "sha512",
+    "atomic_write": true,
+    "overwrite": false,
+    "sequence_start": 1
+  },
+  "audit_policy": {
+    "fail_is_interrupt": true,
+    "unknown_is_failure": true,
+    "scar_on_stop": true
+  }
+}

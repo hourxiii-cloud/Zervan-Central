@@ -1,4 +1,4 @@
-.PHONY: smoke pmc-seal pmc-admit
+.PHONY: smoke pmc-seal pmc-admit validate-v40-candidate test-v40-candidate
 
 smoke:
 
@@ -12,3 +12,11 @@ pmc-admit-dataset:
 
 pmc-seal:
 	@./tools/pmc_seal.sh
+
+validate-v40-candidate:
+	@python candidate/v40/tools/validate_failure_inventory.py
+	@python candidate/v40/tools/validate_operational_contract.py
+	@python candidate/v40/tools/validate_control_plane.py
+
+test-v40-candidate:
+	@python -m unittest discover -s tests -p 'test_v40_candidate_*.py' -v

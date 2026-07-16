@@ -15,6 +15,7 @@ It does not create authority.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -77,6 +78,21 @@ def require_file(path: Path) -> str:
         raise AssertionError(f"Required path is not a file: {path}")
 
     return read_text(path)
+
+
+def normalize_markdown_marker(value: str) -> str:
+    """Normalize presentation-only Markdown without weakening marker meaning."""
+
+    value = value.replace("`", "")
+    value = re.sub(r"[ \t]+", " ", value)
+    return value.strip().rstrip(".").casefold()
+
+
+def contains_semantic_marker(text: str, marker: str) -> bool:
+    """Match a complete boundary line independent of inline-code formatting."""
+
+    expected = normalize_markdown_marker(marker)
+    return any(normalize_markdown_marker(line) == expected for line in text.splitlines())
 
 
 def verify_required_files(root: Path) -> None:
@@ -144,10 +160,10 @@ def verify_inert_posture(root: Path) -> None:
     receipt_text = require_file(root / "receipts/v39_0_load_receipt.md")
 
     required_boundary_markers = [
-        "Authority State: `NONE`",
-        "Human Gate: `ACTIVE`",
-        "External Runtime: `DISABLED`",
-        "System Population: `DISALLOWED`",
+        "Authority State: NONE",
+        "Human Gate: ACTIVE",
+        "External Runtime: DISABLED",
+        "System Population: DISALLOWED",
         "No external action",
         "Human Gate controls authority",
     ]
@@ -155,7 +171,7 @@ def verify_inert_posture(root: Path) -> None:
     combined = f"{call_text}\n{receipt_text}"
 
     for marker in required_boundary_markers:
-        if marker not in combined:
+        if not contains_semantic_marker(combined, marker):
             raise AssertionError(f"Missing inert-posture boundary marker: {marker!r}")
 
 

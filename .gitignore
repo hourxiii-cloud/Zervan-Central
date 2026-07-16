@@ -5,7 +5,7 @@ pmc_seal/
 # Local/runtime artifacts
 __pycache__/
 *.pyc
-runtime/
+/runtime/
 hydration_receipt*.json
 *.log
 # Runtime build artifacts

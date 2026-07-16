@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/operational_contract/1",
+  "title": "Zervan v40 Candidate Operational Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version", "contract_id", "contract_instance_id", "candidate_state", "authority_state", "human_gate",
+    "posture", "canonical_binding", "route", "invariants", "completion_criteria",
+    "stop_conditions", "escalation_triggers", "mutation_scope", "canonicalization",
+    "transition_ledger_policy", "audit_policy"
+  ],
+  "properties": {
+    "contract_version": {"const": "v40-candidate.1"},
+    "contract_id": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "contract_instance_id": {"type": "string", "pattern": "^OCI-[A-Z0-9._-]+$"},
+    "candidate_state": {"const": "CANDIDATE_ONLY"},
+    "authority_state": {"const": "NONE"},
+    "human_gate": {"const": "ACTIVE"},
+    "posture": {
+      "type": "object", "additionalProperties": false,
+      "required": ["runtime_state", "mode", "external_runtime", "system_population"],
+      "properties": {
+        "runtime_state": {"const": "DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE"},
+        "mode": {"const": "CONTROLLED / READ-ONLY"},
+        "external_runtime": {"const": "DISABLED"},
+        "system_population": {"const": "DISALLOWED"}
+      }
+    },
+    "canonical_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "branch", "commit", "artifacts"],
+      "properties": {
+        "repository": {"const": "https://github.com/hourxiii-cloud/Zervan-Core-v39.git"},
+        "branch": {"const": "main"},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifacts": {
+          "type": "array", "minItems": 2, "uniqueItems": true,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["path", "sha256"],
+            "properties": {
+              "path": {"type": "string", "minLength": 1},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        }
+      }
+    },
+    "route": {
+      "type": "object", "additionalProperties": false,
+      "required": ["route_id", "purpose", "permitted_actions", "prohibited_actions", "human_gate_required_actions"],
+      "properties": {
+        "route_id": {"type": "string", "minLength": 3},
+        "purpose": {"type": "string", "minLength": 10},
+        "permitted_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/action_id"}},
+        "prohibited_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/action_id"}},
+        "human_gate_required_actions": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/action_id"}}
+      }
+    },
+    "invariants": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "completion_criteria": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "stop_conditions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "escalation_triggers": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "mutation_scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["canonical_mutation", "candidate_local_edits", "external_mutation"],
+      "properties": {
+        "canonical_mutation": {"const": "DISALLOWED"},
+        "candidate_local_edits": {"const": "ALLOWED"},
+        "external_mutation": {"const": "DISALLOWED"}
+      }
+    },
+    "canonicalization": {"const": "zervan://candidate/v40/canonical-json/1"},
+    "transition_ledger_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["format", "digest", "atomic_write", "overwrite", "sequence_start"],
+      "properties": {
+        "format": {"const": "one_canonical_json_object_per_event"},
+        "digest": {"const": "sha512"},
+        "atomic_write": {"const": true},
+        "overwrite": {"const": false},
+        "sequence_start": {"const": 1}
+      }
+    },
+    "audit_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fail_is_interrupt", "unknown_is_failure", "scar_on_stop"],
+      "properties": {
+        "fail_is_interrupt": {"const": true},
+        "unknown_is_failure": {"const": true},
+        "scar_on_stop": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "action_id": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]*$"}
+  }
+}

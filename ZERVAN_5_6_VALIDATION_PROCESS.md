@@ -9,7 +9,13 @@ This file documents the validation mechanism referenced by `ZERVAN_5_6_TRANSITIO
 
 ## Validation Command
 
-Run from the package root:
+Run a read-only validation from the package root:
+
+```bash
+python tools/validate_zervan_5_6_bridge.py --root .
+```
+
+To explicitly emit a validation receipt:
 
 ```bash
 python tools/validate_zervan_5_6_bridge.py --root . --emit ZERVAN_5_6_VALIDATION_RESULTS.json
@@ -23,11 +29,11 @@ Package-local script:
 tools/validate_zervan_5_6_bridge.py
 ```
 
-The script is read-only. It does not activate external runtime, perform collection, populate systems, or promote authority.
+The script is read-only by default. It does not create validation files or Python bytecode caches unless receipt emission is explicitly requested. It does not activate external runtime, perform collection, populate systems, or promote authority.
 
 ## Validation Output
 
-Generated artifact:
+Optional generated artifact when `--emit` is supplied:
 
 ```text
 ZERVAN_5_6_VALIDATION_RESULTS.json
