@@ -1,0 +1,346 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/production_state/1",
+  "title": "Zervan v40 Candidate Reporting Production State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "production_state_version",
+    "production_state_id",
+    "contract_ref",
+    "contract_instance_id",
+    "request_ref",
+    "route_ref",
+    "route_lock",
+    "canonical_git_binding",
+    "candidate_git_binding",
+    "current_state",
+    "freeze_ref",
+    "freeze_sha512",
+    "projection_ref",
+    "projection_sha512",
+    "manifest_ref",
+    "manifest_sha512",
+    "completion_receipt_ref",
+    "human_gate_request_ref",
+    "human_gate_decision_ref",
+    "event_count",
+    "last_event_ref",
+    "last_event_sha512",
+    "reconciliation_return_count",
+    "non_progressing_return_count",
+    "last_verified_state",
+    "production_failure_class",
+    "terminal",
+    "scar_required",
+    "external_action_state",
+    "authority_state",
+    "human_gate_state",
+    "created_at_utc",
+    "updated_at_utc",
+    "production_state_sha512"
+  ],
+  "properties": {
+    "production_state_version": {"const": "v40-candidate.1"},
+    "production_state_id": {
+      "type": "string",
+      "pattern": "^PS-[A-Z0-9._-]+$"
+    },
+    "contract_ref": {
+      "type": "string",
+      "pattern": "^OC-[A-Z0-9._-]+$"
+    },
+    "contract_instance_id": {
+      "type": "string",
+      "pattern": "^OCI-[A-Z0-9._-]+$"
+    },
+    "request_ref": {"type": "string", "minLength": 1},
+    "route_ref": {"type": "string", "minLength": 3},
+    "route_lock": {"type": "string", "minLength": 3},
+    "canonical_git_binding": {"$ref": "#/$defs/git_binding"},
+    "candidate_git_binding": {"$ref": "#/$defs/git_binding"},
+    "current_state": {"$ref": "#/$defs/production_state"},
+    "freeze_ref": {"$ref": "#/$defs/nullable_freeze_ref"},
+    "freeze_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "projection_ref": {"$ref": "#/$defs/nullable_projection_ref"},
+    "projection_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "manifest_ref": {"$ref": "#/$defs/nullable_manifest_ref"},
+    "manifest_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "completion_receipt_ref": {"$ref": "#/$defs/nullable_nonempty_string"},
+    "human_gate_request_ref": {"$ref": "#/$defs/nullable_nonempty_string"},
+    "human_gate_decision_ref": {"$ref": "#/$defs/nullable_nonempty_string"},
+    "event_count": {"type": "integer", "minimum": 0},
+    "last_event_ref": {"$ref": "#/$defs/nullable_event_ref"},
+    "last_event_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "reconciliation_return_count": {"type": "integer", "minimum": 0},
+    "non_progressing_return_count": {"type": "integer", "minimum": 0},
+    "last_verified_state": {
+      "anyOf": [
+        {"$ref": "#/$defs/nonterminal_state"},
+        {"type": "null"}
+      ]
+    },
+    "production_failure_class": {
+      "anyOf": [
+        {"$ref": "#/$defs/production_failure_class"},
+        {"type": "null"}
+      ]
+    },
+    "terminal": {"type": "boolean"},
+    "scar_required": {"type": "boolean"},
+    "external_action_state": {"const": "NOT_AUTHORIZED"},
+    "authority_state": {"const": "NONE"},
+    "human_gate_state": {"const": "ACTIVE"},
+    "created_at_utc": {"type": "string", "format": "date-time"},
+    "updated_at_utc": {"type": "string", "format": "date-time"},
+    "production_state_sha512": {"$ref": "#/$defs/sha512"}
+  },
+  "allOf": [
+    {"$ref": "#/$defs/state_shape"}
+  ],
+  "$defs": {
+    "sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "nullable_sha512": {
+      "anyOf": [
+        {"$ref": "#/$defs/sha512"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_nonempty_string": {
+      "anyOf": [
+        {"type": "string", "minLength": 1},
+        {"type": "null"}
+      ]
+    },
+    "nullable_freeze_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^AIF-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_projection_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_manifest_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^PM-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_event_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^PE-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "git_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "branch", "commit"],
+      "properties": {
+        "repository": {"type": "string", "minLength": 1},
+        "branch": {"type": "string", "minLength": 1},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "production_state": {
+      "enum": [
+        "DISCOVERY",
+        "ANALYSIS_COMPLETE",
+        "REPORTING",
+        "RECONCILIATION",
+        "REVIEW_READY",
+        "HUMAN_GATE_REVIEW",
+        "PROMOTED",
+        "RETURNED",
+        "STOPPED"
+      ]
+    },
+    "nonterminal_state": {
+      "enum": [
+        "DISCOVERY",
+        "ANALYSIS_COMPLETE",
+        "REPORTING",
+        "RECONCILIATION",
+        "REVIEW_READY",
+        "HUMAN_GATE_REVIEW"
+      ]
+    },
+    "production_failure_class": {
+      "enum": [
+        "CANONICAL_BINDING_FAILURE",
+        "CONTRACT_NONCONFORMANCE",
+        "ANALYTICAL_FREEZE_FAILURE",
+        "REPORT_MUTATION",
+        "LINEAGE_BREAK",
+        "REQUIREMENT_OMISSION",
+        "INVENTORY_OMISSION",
+        "PLACEHOLDER_SUBSTITUTION",
+        "EVIDENCE_CARRIAGE_FAILURE",
+        "ESCALATION_ORDER_FAILURE",
+        "SCOPE_INFLATION",
+        "STANDALONE_REVIEW_FAILURE",
+        "PACKAGE_INTEGRITY_FAILURE",
+        "COMPLETION_MISMATCH",
+        "CLAIM_CEILING_VIOLATION",
+        "HUMAN_GATE_REQUIRED",
+        "HUMAN_GATE_DENIED",
+        "LOGIC_FREEZE",
+        "UNKNOWN_PRODUCTION_FAILURE"
+      ]
+    },
+    "bound_freeze": {
+      "properties": {
+        "freeze_ref": {"type": "string", "pattern": "^AIF-[A-Z0-9._-]+$"},
+        "freeze_sha512": {"$ref": "#/$defs/sha512"}
+      }
+    },
+    "bound_projection": {
+      "properties": {
+        "projection_ref": {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+        "projection_sha512": {"$ref": "#/$defs/sha512"}
+      }
+    },
+    "bound_review_package": {
+      "properties": {
+        "manifest_ref": {"type": "string", "pattern": "^PM-[A-Z0-9._-]+$"},
+        "manifest_sha512": {"$ref": "#/$defs/sha512"},
+        "completion_receipt_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "active_shape": {
+      "properties": {
+        "event_count": {"type": "integer", "minimum": 1},
+        "last_event_ref": {"type": "string", "pattern": "^PE-[A-Z0-9._-]+$"},
+        "last_event_sha512": {"$ref": "#/$defs/sha512"},
+        "last_verified_state": {"type": "null"},
+        "production_failure_class": {"type": "null"},
+        "terminal": {"const": false},
+        "scar_required": {"const": false}
+      }
+    },
+    "state_shape": {
+      "anyOf": [
+        {
+          "properties": {
+            "current_state": {"const": "DISCOVERY"},
+            "freeze_ref": {"type": "null"},
+            "freeze_sha512": {"type": "null"},
+            "projection_ref": {"type": "null"},
+            "projection_sha512": {"type": "null"},
+            "manifest_ref": {"type": "null"},
+            "manifest_sha512": {"type": "null"},
+            "completion_receipt_ref": {"type": "null"},
+            "human_gate_request_ref": {"type": "null"},
+            "human_gate_decision_ref": {"type": "null"},
+            "event_count": {"const": 0},
+            "last_event_ref": {"type": "null"},
+            "last_event_sha512": {"type": "null"},
+            "last_verified_state": {"type": "null"},
+            "production_failure_class": {"type": "null"},
+            "terminal": {"const": false},
+            "scar_required": {"const": false}
+          }
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/active_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {
+              "properties": {
+                "current_state": {"const": "ANALYSIS_COMPLETE"},
+                "projection_ref": {"type": "null"},
+                "projection_sha512": {"type": "null"},
+                "manifest_ref": {"type": "null"},
+                "manifest_sha512": {"type": "null"},
+                "completion_receipt_ref": {"type": "null"},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision_ref": {"type": "null"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/active_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {
+              "properties": {
+                "current_state": {"enum": ["REPORTING", "RECONCILIATION"]},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision_ref": {"type": "null"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/active_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "current_state": {"const": "REVIEW_READY"},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision_ref": {"type": "null"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/active_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "current_state": {"const": "HUMAN_GATE_REVIEW"},
+                "human_gate_request_ref": {"type": "string", "minLength": 1},
+                "human_gate_decision_ref": {"type": "null"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "current_state": {"enum": ["PROMOTED", "RETURNED"]},
+                "event_count": {"type": "integer", "minimum": 1},
+                "last_event_ref": {"type": "string", "pattern": "^PE-[A-Z0-9._-]+$"},
+                "last_event_sha512": {"$ref": "#/$defs/sha512"},
+                "human_gate_request_ref": {"type": "string", "minLength": 1},
+                "human_gate_decision_ref": {"type": "string", "minLength": 1},
+                "last_verified_state": {"type": "null"},
+                "production_failure_class": {"type": "null"},
+                "terminal": {"const": true},
+                "scar_required": {"const": false}
+              }
+            }
+          ]
+        },
+        {
+          "properties": {
+            "current_state": {"const": "STOPPED"},
+            "event_count": {"type": "integer", "minimum": 1},
+            "last_event_ref": {"type": "string", "pattern": "^PE-[A-Z0-9._-]+$"},
+            "last_event_sha512": {"$ref": "#/$defs/sha512"},
+            "last_verified_state": {"$ref": "#/$defs/nonterminal_state"},
+            "production_failure_class": {"$ref": "#/$defs/production_failure_class"},
+            "terminal": {"const": true},
+            "scar_required": {"const": true}
+          }
+        }
+      ]
+    }
+  }
+}
