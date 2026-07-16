@@ -85,9 +85,45 @@ class OperationalContractTests(unittest.TestCase):
             "candidate/v40/tools/validate_operational_contract.py",
         )
 
-    def test_contract_is_bound_to_current_canonical_head(self):
+    def test_active_contract_is_bound_to_current_canonical_head(self):
         contract = json.loads(self.contract_validator.CONTRACT.read_text(encoding="utf-8"))
         self.assertEqual(self.contract_validator.validate_contract(contract), [])
+
+    def test_historical_wave0_contract_remains_immutable_and_bound(self):
+        contract = json.loads(self.contract_validator.HISTORICAL_CONTRACT.read_text(encoding="utf-8"))
+        self.assertEqual(self.contract_validator.validate_historical_contract(contract), [])
+        self.assertEqual(
+            contract["canonical_binding"]["commit"],
+            self.contract_validator.HISTORICAL_CONTRACT_COMMIT,
+        )
+
+    def test_historical_contract_is_not_reclassified_as_active(self):
+        contract = json.loads(self.contract_validator.HISTORICAL_CONTRACT.read_text(encoding="utf-8"))
+        self.assertEqual(
+            self.contract_validator.validate_contract(contract, require_current_canonical=False),
+            [],
+        )
+        errors = self.contract_validator.validate_contract(contract)
+        self.assertTrue(any(error.startswith("canonical commit mismatch:") for error in errors))
+
+    def test_historical_contract_digest_drift_is_rejected(self):
+        contract = json.loads(self.contract_validator.HISTORICAL_CONTRACT.read_text(encoding="utf-8"))
+        contract["route"]["purpose"] = "mutated historical purpose"
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "historical.json"
+            path.write_text(json.dumps(contract), encoding="utf-8")
+            errors = self.contract_validator.validate_historical_contract(contract, path=path)
+        self.assertIn("historical Wave 0 contract digest mismatch", errors)
+
+    def test_active_contract_rejects_candidate_parent_invariant_drift(self):
+        contract = json.loads(self.contract_validator.CONTRACT.read_text(encoding="utf-8"))
+        prefix = "candidate parent binding remains "
+        contract["invariants"] = [
+            f"{prefix}{'0' * 40}" if item.startswith(prefix) else item
+            for item in contract["invariants"]
+        ]
+        errors = self.contract_validator.validate_contract(contract)
+        self.assertIn("active candidate parent binding invariant mismatch", errors)
 
     def test_contract_rejects_authority_promotion(self):
         contract = json.loads(self.contract_validator.CONTRACT.read_text(encoding="utf-8"))

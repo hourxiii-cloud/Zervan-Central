@@ -24,7 +24,7 @@ from candidate.v40.runtime.continuity import (  # noqa: E402
 from candidate.v40.runtime.transition_writer import TransitionWitnessWriter  # noqa: E402
 
 
-CONTRACT_PATH = ROOT / "candidate/v40/contracts/wave0_tranche1.operational_contract.json"
+CONTRACT_PATH = ROOT / "candidate/v40/contracts/wave1_reporting_production.operational_contract.json"
 SCAR_SCHEMA_PATH = ROOT / "candidate/v40/contracts/scar.schema.json"
 REPLAY_SCHEMA_PATH = ROOT / "candidate/v40/contracts/replay_receipt.schema.json"
 

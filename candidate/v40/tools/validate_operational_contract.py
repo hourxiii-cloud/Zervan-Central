@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the first v40 candidate operational contract and canonical binding."""
+"""Validate active and immutable historical v40 Operational Contracts."""
 
 from __future__ import annotations
 
@@ -12,7 +12,16 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
-CONTRACT = ROOT / "candidate/v40/contracts/wave0_tranche1.operational_contract.json"
+ACTIVE_CONTRACT = ROOT / "candidate/v40/contracts/wave1_reporting_production.operational_contract.json"
+HISTORICAL_CONTRACT = ROOT / "candidate/v40/contracts/wave0_tranche1.operational_contract.json"
+CONTRACT = ACTIVE_CONTRACT
+ACTIVE_CONTRACT_ID = "OC-V40.WAVE1.REPORTING-PRODUCTION"
+ACTIVE_CANDIDATE_PARENT = "23040f1cbc94b2d6094ccd64f4ed5f0554ccf360"
+ACTIVE_SPECIFICATION = ROOT / "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md"
+ACTIVE_SPECIFICATION_RELATIVE = ACTIVE_SPECIFICATION.relative_to(ROOT).as_posix()
+ACTIVE_SPECIFICATION_SHA512 = "5b74fb31e56a9ad56759038e6ba98ce464cc28f60c703cc7910d9ab394151f8e489466fcb9ff5ca8ad7b2d0b7768299378a1dbc4e1587e330344a64df63e6cc0"
+HISTORICAL_CONTRACT_COMMIT = "b9460bf2955246ff3b1f61ed0b398496d7ad49c1"
+HISTORICAL_CONTRACT_SHA512 = "5a2b62997a03a7c71d5a929916285409198a5f4754accf54fcea0fa1bd3f8efb12a283442a90daa0bbb9395af6a4cfe86554755cea59f9f64e0a7d8786d1edd1"
 SCHEMAS = [
     ROOT / "candidate/v40/contracts/operational_contract.schema.json",
     ROOT / "candidate/v40/contracts/runtime_state.schema.json",
@@ -20,12 +29,39 @@ SCHEMAS = [
 ]
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
+def sha512(path: Path) -> str:
+    digest = hashlib.sha512()
     with path.open("rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def git_blob(commit: str, relative: str) -> bytes:
+    return subprocess.run(
+        ["git", "show", f"{commit}:{relative}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout
+
+
+def git_commit_exists(commit: str) -> bool:
+    return subprocess.run(
+        ["git", "cat-file", "-e", f"{commit}^{{commit}}"],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+    ).returncode == 0
+
+
+def git_is_ancestor(ancestor: str, descendant: str = "HEAD") -> bool:
+    return subprocess.run(
+        ["git", "merge-base", "--is-ancestor", ancestor, descendant],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+    ).returncode == 0
 
 
 def canonical_head() -> str:
@@ -38,7 +74,7 @@ def canonical_head() -> str:
     ).stdout.strip()
 
 
-def validate_contract(contract: dict) -> list[str]:
+def validate_contract(contract: dict, *, require_current_canonical: bool = True) -> list[str]:
     errors: list[str] = []
     constants = {
         "contract_version": "v40-candidate.1",
@@ -76,13 +112,18 @@ def validate_contract(contract: dict) -> list[str]:
         errors.append("canonical repository mismatch")
     if binding.get("branch") != "main":
         errors.append("canonical branch must be main")
-    try:
-        current_head = canonical_head()
-    except (OSError, subprocess.CalledProcessError) as exc:
-        errors.append(f"unable to resolve origin/main: {exc}")
-    else:
-        if binding.get("commit") != current_head:
-            errors.append(f"canonical commit mismatch: contract={binding.get('commit')}, origin/main={current_head}")
+    if require_current_canonical:
+        try:
+            current_head = canonical_head()
+        except (OSError, subprocess.CalledProcessError) as exc:
+            errors.append(f"unable to resolve origin/main: {exc}")
+        else:
+            if binding.get("commit") != current_head:
+                errors.append(f"canonical commit mismatch: contract={binding.get('commit')}, origin/main={current_head}")
+
+    binding_commit = str(binding.get("commit", ""))
+    if not re.fullmatch(r"[0-9a-f]{40}", binding_commit) or not git_commit_exists(binding_commit):
+        errors.append(f"canonical binding commit is unavailable: {binding_commit}")
 
     seen_paths: set[str] = set()
     for artifact in binding.get("artifacts", []):
@@ -91,11 +132,11 @@ def validate_contract(contract: dict) -> list[str]:
             errors.append(f"duplicate canonical artifact: {relative}")
             continue
         seen_paths.add(relative)
-        path = ROOT / relative
-        if not path.is_file():
-            errors.append(f"missing canonical artifact: {relative}")
+        try:
+            actual = hashlib.sha256(git_blob(binding_commit, relative)).hexdigest()
+        except (OSError, subprocess.CalledProcessError):
+            errors.append(f"missing canonical artifact at {binding_commit}: {relative}")
             continue
-        actual = sha256(path)
         if artifact.get("sha256") != actual:
             errors.append(f"canonical artifact hash mismatch: {relative}")
 
@@ -142,27 +183,76 @@ def validate_contract(contract: dict) -> list[str]:
     }:
         errors.append("audit_policy mismatch")
 
+    if contract.get("contract_id") == ACTIVE_CONTRACT_ID:
+        invariants = set(contract.get("invariants", []))
+        parent_invariant = f"candidate parent binding remains {ACTIVE_CANDIDATE_PARENT}"
+        specification_invariant = (
+            f"reporting-production specification remains {ACTIVE_SPECIFICATION_RELATIVE} "
+            f"at SHA-512 {ACTIVE_SPECIFICATION_SHA512}"
+        )
+        if parent_invariant not in invariants:
+            errors.append("active candidate parent binding invariant mismatch")
+        if specification_invariant not in invariants:
+            errors.append("active reporting-production specification invariant mismatch")
+        if not git_commit_exists(ACTIVE_CANDIDATE_PARENT):
+            errors.append("active candidate parent commit is unavailable")
+        elif not git_is_ancestor(ACTIVE_CANDIDATE_PARENT):
+            errors.append("active candidate parent is not an ancestor of HEAD")
+        try:
+            committed_specification_sha512 = hashlib.sha512(
+                git_blob(ACTIVE_CANDIDATE_PARENT, ACTIVE_SPECIFICATION_RELATIVE)
+            ).hexdigest()
+        except (OSError, subprocess.CalledProcessError):
+            errors.append("active reporting-production specification is unavailable at candidate parent")
+        else:
+            if committed_specification_sha512 != ACTIVE_SPECIFICATION_SHA512:
+                errors.append("active reporting-production specification Git digest mismatch")
+        try:
+            working_specification_sha512 = sha512(ACTIVE_SPECIFICATION)
+        except OSError:
+            errors.append("active reporting-production specification is unavailable in the working tree")
+        else:
+            if working_specification_sha512 != ACTIVE_SPECIFICATION_SHA512:
+                errors.append("active reporting-production specification working-tree digest mismatch")
+
+    return errors
+
+
+def validate_historical_contract(contract: dict, *, path: Path = HISTORICAL_CONTRACT) -> list[str]:
+    errors: list[str] = []
+    try:
+        actual_digest = sha512(path)
+    except OSError as exc:
+        return [f"historical Wave 0 contract is unavailable: {exc}"]
+    if actual_digest != HISTORICAL_CONTRACT_SHA512:
+        errors.append("historical Wave 0 contract digest mismatch")
+    if contract.get("canonical_binding", {}).get("commit") != HISTORICAL_CONTRACT_COMMIT:
+        errors.append("historical Wave 0 canonical binding changed")
+    errors.extend(validate_contract(contract, require_current_canonical=False))
     return errors
 
 
 def main() -> int:
     try:
-        contract = json.loads(CONTRACT.read_text(encoding="utf-8"))
+        active_contract = json.loads(ACTIVE_CONTRACT.read_text(encoding="utf-8"))
+        historical_contract = json.loads(HISTORICAL_CONTRACT.read_text(encoding="utf-8"))
         for schema in SCHEMAS:
             json.loads(schema.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         print(f"FAIL: {exc}", file=sys.stderr)
         return 1
 
-    errors = validate_contract(contract)
+    errors = validate_contract(active_contract)
+    errors.extend(validate_historical_contract(historical_contract))
     if errors:
         for error in errors:
             print(f"FAIL: {error}", file=sys.stderr)
         return 1
 
     print(
-        "PASS: v40 candidate operational contract verified "
-        f"({contract['contract_id']}; canonical commit {contract['canonical_binding']['commit']})"
+        "PASS: v40 candidate Operational Contracts verified "
+        f"(active={active_contract['contract_id']}@{active_contract['canonical_binding']['commit']}; "
+        f"historical={historical_contract['contract_id']}@{historical_contract['canonical_binding']['commit']})"
     )
     return 0
 

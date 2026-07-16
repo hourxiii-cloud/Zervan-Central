@@ -30,7 +30,7 @@ from candidate.v40.runtime.transition_writer import TransitionWitnessWriter
 ROOT = Path(__file__).resolve().parents[1]
 SCAR_SCHEMA_PATH = ROOT / "candidate/v40/contracts/scar.schema.json"
 REPLAY_SCHEMA_PATH = ROOT / "candidate/v40/contracts/replay_receipt.schema.json"
-OPERATIONAL_CONTRACT_PATH = ROOT / "candidate/v40/contracts/wave0_tranche1.operational_contract.json"
+OPERATIONAL_CONTRACT_PATH = ROOT / "candidate/v40/contracts/wave1_reporting_production.operational_contract.json"
 
 
 class SchemaValidationError(ValueError):
