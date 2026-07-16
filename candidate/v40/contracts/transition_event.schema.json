@@ -1,22 +1,59 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "zervan://candidate/v40/contracts/transition_event/1",
-  "title": "Zervan v40 Candidate Transition Event",
+  "$id": "zervan://candidate/v40/contracts/transition_event/2",
+  "title": "Zervan v40 Candidate Transition Witness",
   "type": "object",
   "additionalProperties": false,
-  "required": ["event_version", "event_id", "contract_ref", "sequence", "from_state", "to_state", "trigger", "authorization", "participants", "evidence_refs", "audit_result", "scar_required"],
+  "required": [
+    "event_version", "event_id", "contract_ref", "contract_instance_id", "sequence",
+    "timestamp_utc", "event_class", "from_state", "to_state", "trigger", "action",
+    "request_ref", "reason", "route_lock", "authorization", "participants", "evidence_refs",
+    "conformance_before", "conformance_after", "audit_result", "human_gate_latched",
+    "decision_ref", "previous_event_sha512", "event_sha512", "stop_class", "scar_required",
+    "scar_reason"
+  ],
   "properties": {
-    "event_version": {"const": "v40-candidate.1"},
+    "event_version": {"const": "v40-candidate.2"},
     "event_id": {"type": "string", "pattern": "^TE-[A-Z0-9._-]+$"},
     "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "contract_instance_id": {"type": "string", "pattern": "^OCI-[A-Z0-9._-]+$"},
     "sequence": {"type": "integer", "minimum": 1},
-    "from_state": {"type": "string", "minLength": 3},
-    "to_state": {"type": "string", "minLength": 3},
-    "trigger": {"type": "string", "minLength": 3},
-    "authorization": {"enum": ["CONTRACT_PERMITTED", "HUMAN_GATE_APPROVED", "REJECTED"]},
+    "timestamp_utc": {"type": "string", "format": "date-time"},
+    "event_class": {"enum": ["ACTIVATION", "ACTION_INTENT", "ACTION_RESULT", "AUDIT", "GATE_REQUEST", "GATE_DECISION", "COMPLETION", "STOP", "NO_CHANGE"]},
+    "from_state": {"$ref": "#/$defs/state"},
+    "to_state": {"$ref": "#/$defs/state"},
+    "trigger": {"type": "string", "minLength": 1},
+    "action": {"type": ["string", "null"], "pattern": "^[a-z][a-z0-9_.-]*$"},
+    "request_ref": {"type": ["string", "null"]},
+    "reason": {"type": "string", "minLength": 1},
+    "route_lock": {"type": "string", "minLength": 3},
+    "authorization": {"enum": ["CONTRACT_PERMITTED", "HUMAN_GATE_PENDING", "HUMAN_GATE_APPROVED", "HUMAN_GATE_DENIED", "REJECTED", "NOT_APPLICABLE"]},
     "participants": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "evidence_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "conformance_before": {"$ref": "#/$defs/conformance"},
+    "conformance_after": {"$ref": "#/$defs/conformance"},
     "audit_result": {"enum": ["PASS", "FAIL", "NOT_INVOKED"]},
-    "scar_required": {"type": "boolean"}
+    "human_gate_latched": {"type": "boolean"},
+    "decision_ref": {"type": ["string", "null"]},
+    "previous_event_sha512": {"type": ["string", "null"], "pattern": "^[0-9a-f]{128}$"},
+    "event_sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "stop_class": {"anyOf": [{"$ref": "#/$defs/stop_class"}, {"type": "null"}]},
+    "scar_required": {"type": "boolean"},
+    "scar_reason": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"scar_required": {"const": true}}, "required": ["scar_required"]},
+      "then": {"properties": {"scar_reason": {"type": "string", "minLength": 1}}}
+    },
+    {
+      "if": {"properties": {"to_state": {"const": "STOPPED"}}, "required": ["to_state"]},
+      "then": {"properties": {"stop_class": {"$ref": "#/$defs/stop_class"}, "scar_required": {"const": true}}}
+    }
+  ],
+  "$defs": {
+    "state": {"enum": ["INITIALIZING", "ACTIVE", "HUMAN_GATE_REVIEW", "STOPPED", "COMPLETE"]},
+    "conformance": {"enum": ["UNKNOWN", "CONFORMING", "NONCONFORMING"]},
+    "stop_class": {"enum": ["CONTRACT_NONCONFORMANCE", "CANONICAL_BINDING_FAILURE", "ROUTE_DRIFT", "UNDECLARED_ACTION", "AUDIT_INTERRUPT", "TRANSITION_WITNESS_FAILURE", "COMPLETION_MISMATCH", "HUMAN_GATE_DENIED", "HUMAN_GATE_APPROVED_NEW_CONTRACT_REQUIRED", "LOGIC_FREEZE"]}
   }
 }

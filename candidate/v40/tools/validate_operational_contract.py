@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -48,6 +49,8 @@ def validate_contract(contract: dict) -> list[str]:
     for key, expected in constants.items():
         if contract.get(key) != expected:
             errors.append(f"{key}: expected {expected!r}, got {contract.get(key)!r}")
+    if not re.fullmatch(r"OCI-[A-Z0-9._-]+", str(contract.get("contract_instance_id", ""))):
+        errors.append("contract_instance_id is missing or malformed")
 
     posture = contract.get("posture", {})
     expected_posture = {
@@ -106,6 +109,38 @@ def validate_contract(contract: dict) -> list[str]:
         errors.append("route identity and purpose are required")
     if not route.get("permitted_actions") or not route.get("prohibited_actions"):
         errors.append("route must define permitted and prohibited actions")
+    action_sets = {
+        "permitted_actions": set(route.get("permitted_actions", [])),
+        "prohibited_actions": set(route.get("prohibited_actions", [])),
+        "human_gate_required_actions": set(route.get("human_gate_required_actions", [])),
+    }
+    action_pattern = re.compile(r"^[a-z][a-z0-9_.-]*$")
+    for name, actions in action_sets.items():
+        if any(not action_pattern.fullmatch(str(action)) for action in actions):
+            errors.append(f"{name} contains a non-normalized action identifier")
+    names = list(action_sets)
+    for index, left_name in enumerate(names):
+        for right_name in names[index + 1:]:
+            overlap = sorted(action_sets[left_name] & action_sets[right_name])
+            if overlap:
+                errors.append(f"action sets overlap between {left_name} and {right_name}: {', '.join(overlap)}")
+
+    if contract.get("canonicalization") != "zervan://candidate/v40/canonical-json/1":
+        errors.append("canonicalization identifier mismatch")
+    if contract.get("transition_ledger_policy") != {
+        "format": "one_canonical_json_object_per_event",
+        "digest": "sha512",
+        "atomic_write": True,
+        "overwrite": False,
+        "sequence_start": 1,
+    }:
+        errors.append("transition_ledger_policy mismatch")
+    if contract.get("audit_policy") != {
+        "fail_is_interrupt": True,
+        "unknown_is_failure": True,
+        "scar_on_stop": True,
+    }:
+        errors.append("audit_policy mismatch")
 
     return errors
 

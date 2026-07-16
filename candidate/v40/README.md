@@ -20,5 +20,7 @@ Current candidate controls:
 
 - `governance/` freezes the failure identifiers, severity taxonomy, remediation controls, implementation waves, acceptance evidence, and closure state.
 - `contracts/` defines the Operational Contract, runtime state, and transition event objects and binds the first tranche to current Git main.
+- `runtime/` implements the tranche-2 fail-closed control plane and transition witness ledger.
+- `specifications/` freezes reviewed behavior before implementation.
 - `tools/` validates the candidate registry and contract without third-party dependencies.
 - `receipts/` records verification without claiming promotion or authority.

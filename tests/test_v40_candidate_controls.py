@@ -101,6 +101,18 @@ class OperationalContractTests(unittest.TestCase):
         errors = self.contract_validator.validate_contract(contract)
         self.assertIn("canonical artifact hash mismatch: call/INITIATION_STATEMENT_V39_0.md", errors)
 
+    def test_contract_rejects_overlapping_action_sets(self):
+        contract = json.loads(self.contract_validator.CONTRACT.read_text(encoding="utf-8"))
+        contract["route"]["prohibited_actions"].append(contract["route"]["permitted_actions"][0])
+        errors = self.contract_validator.validate_contract(contract)
+        self.assertTrue(any(error.startswith("action sets overlap") for error in errors))
+
+    def test_contract_rejects_prose_action_identifier(self):
+        contract = json.loads(self.contract_validator.CONTRACT.read_text(encoding="utf-8"))
+        contract["route"]["permitted_actions"][0] = "read canonical Git"
+        errors = self.contract_validator.validate_contract(contract)
+        self.assertIn("permitted_actions contains a non-normalized action identifier", errors)
+
 
 if __name__ == "__main__":
     unittest.main()

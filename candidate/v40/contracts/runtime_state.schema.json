@@ -4,17 +4,38 @@
   "title": "Zervan v40 Candidate Runtime State",
   "type": "object",
   "additionalProperties": false,
-  "required": ["runtime_version", "contract_ref", "state", "conformance", "active_route", "authority_state", "human_gate", "canonical_binding_ref", "active_seats", "transition_sequence"],
+  "required": ["runtime_version", "contract_ref", "contract_instance_id", "state", "conformance", "active_route", "route_lock", "authority_state", "human_gate", "human_gate_latched", "human_gate_request_ref", "canonical_binding_ref", "active_seats", "transition_sequence", "ledger_head_sha512", "last_event_id", "stop_class", "stop_reason"],
   "properties": {
     "runtime_version": {"const": "v40-candidate.1"},
     "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "contract_instance_id": {"type": "string", "pattern": "^OCI-[A-Z0-9._-]+$"},
     "state": {"enum": ["INITIALIZING", "ACTIVE", "STOPPED", "HUMAN_GATE_REVIEW", "COMPLETE"]},
     "conformance": {"enum": ["UNKNOWN", "CONFORMING", "NONCONFORMING"]},
     "active_route": {"type": "string", "minLength": 3},
+    "route_lock": {"type": "string", "minLength": 3},
     "authority_state": {"const": "NONE"},
     "human_gate": {"const": "ACTIVE"},
+    "human_gate_latched": {"type": "boolean"},
+    "human_gate_request_ref": {"type": ["string", "null"]},
     "canonical_binding_ref": {"type": "string", "minLength": 3},
     "active_seats": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "transition_sequence": {"type": "integer", "minimum": 0}
+    "transition_sequence": {"type": "integer", "minimum": 0},
+    "ledger_head_sha512": {"type": ["string", "null"], "pattern": "^[0-9a-f]{128}$"},
+    "last_event_id": {"type": ["string", "null"], "pattern": "^TE-[A-Z0-9._-]+$"},
+    "stop_class": {"anyOf": [{"$ref": "#/$defs/stop_class"}, {"type": "null"}]},
+    "stop_reason": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"state": {"const": "STOPPED"}}, "required": ["state"]},
+      "then": {"properties": {"stop_class": {"$ref": "#/$defs/stop_class"}, "stop_reason": {"type": "string", "minLength": 1}}}
+    },
+    {
+      "if": {"properties": {"human_gate_latched": {"const": true}}, "required": ["human_gate_latched"]},
+      "then": {"properties": {"state": {"enum": ["HUMAN_GATE_REVIEW", "STOPPED"]}, "human_gate_request_ref": {"type": "string", "minLength": 1}}}
+    }
+  ],
+  "$defs": {
+    "stop_class": {"enum": ["CONTRACT_NONCONFORMANCE", "CANONICAL_BINDING_FAILURE", "ROUTE_DRIFT", "UNDECLARED_ACTION", "AUDIT_INTERRUPT", "TRANSITION_WITNESS_FAILURE", "COMPLETION_MISMATCH", "HUMAN_GATE_DENIED", "HUMAN_GATE_APPROVED_NEW_CONTRACT_REQUIRED", "LOGIC_FREEZE"]}
   }
 }

@@ -5,13 +5,15 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "contract_version", "contract_id", "candidate_state", "authority_state", "human_gate",
+    "contract_version", "contract_id", "contract_instance_id", "candidate_state", "authority_state", "human_gate",
     "posture", "canonical_binding", "route", "invariants", "completion_criteria",
-    "stop_conditions", "escalation_triggers", "mutation_scope"
+    "stop_conditions", "escalation_triggers", "mutation_scope", "canonicalization",
+    "transition_ledger_policy", "audit_policy"
   ],
   "properties": {
     "contract_version": {"const": "v40-candidate.1"},
     "contract_id": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "contract_instance_id": {"type": "string", "pattern": "^OCI-[A-Z0-9._-]+$"},
     "candidate_state": {"const": "CANDIDATE_ONLY"},
     "authority_state": {"const": "NONE"},
     "human_gate": {"const": "ACTIVE"},
@@ -47,12 +49,13 @@
     },
     "route": {
       "type": "object", "additionalProperties": false,
-      "required": ["route_id", "purpose", "permitted_actions", "prohibited_actions"],
+      "required": ["route_id", "purpose", "permitted_actions", "prohibited_actions", "human_gate_required_actions"],
       "properties": {
         "route_id": {"type": "string", "minLength": 3},
         "purpose": {"type": "string", "minLength": 10},
-        "permitted_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
-        "prohibited_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}}
+        "permitted_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/action_id"}},
+        "prohibited_actions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/action_id"}},
+        "human_gate_required_actions": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/action_id"}}
       }
     },
     "invariants": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
@@ -67,6 +70,30 @@
         "candidate_local_edits": {"const": "ALLOWED"},
         "external_mutation": {"const": "DISALLOWED"}
       }
+    },
+    "canonicalization": {"const": "zervan://candidate/v40/canonical-json/1"},
+    "transition_ledger_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["format", "digest", "atomic_write", "overwrite", "sequence_start"],
+      "properties": {
+        "format": {"const": "one_canonical_json_object_per_event"},
+        "digest": {"const": "sha512"},
+        "atomic_write": {"const": true},
+        "overwrite": {"const": false},
+        "sequence_start": {"const": 1}
+      }
+    },
+    "audit_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fail_is_interrupt", "unknown_is_failure", "scar_on_stop"],
+      "properties": {
+        "fail_is_interrupt": {"const": true},
+        "unknown_is_failure": {"const": true},
+        "scar_on_stop": {"const": true}
+      }
     }
+  },
+  "$defs": {
+    "action_id": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]*$"}
   }
 }

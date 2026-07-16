@@ -16,6 +16,7 @@ pmc-seal:
 validate-v40-candidate:
 	@python candidate/v40/tools/validate_failure_inventory.py
 	@python candidate/v40/tools/validate_operational_contract.py
+	@python candidate/v40/tools/validate_control_plane.py
 
 test-v40-candidate:
 	@python -m unittest discover -s tests -p 'test_v40_candidate_*.py' -v
