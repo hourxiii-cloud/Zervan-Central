@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import py_compile
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -87,7 +86,8 @@ def validate_python(root: Path, checks: list[Check]) -> None:
     for path in iter_files(root, ".py"):
         count += 1
         try:
-            py_compile.compile(str(path), doraise=True)
+            source = path.read_text(encoding="utf-8")
+            compile(source, str(path), "exec", dont_inherit=True)
         except Exception as exc:  # noqa: BLE001 - report validation failure
             failures.append(f"{rel(root, path)}: {exc}")
     if failures:
@@ -96,11 +96,18 @@ def validate_python(root: Path, checks: list[Check]) -> None:
         checks.append(Check("python_compile", "PASS", f"{count} Python files compiled"))
 
 
-def main() -> int:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Validate Zervan 5.6 bridge package")
     parser.add_argument("--root", default=".", help="Repository or package root to validate")
-    parser.add_argument("--emit", default="ZERVAN_5_6_VALIDATION_RESULTS.json", help="JSON output path")
-    args = parser.parse_args()
+    parser.add_argument(
+        "--emit",
+        help="Optional JSON output path. Omit for a truly read-only validation run.",
+    )
+    return parser
+
+
+def main() -> int:
+    args = build_parser().parse_args()
 
     root = Path(args.root).resolve()
     checks: list[Check] = []
@@ -156,10 +163,11 @@ def main() -> int:
         "checks": [asdict(check) for check in checks],
     }
 
-    emit = Path(args.emit)
-    if not emit.is_absolute():
-        emit = root / emit
-    emit.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    if args.emit:
+        emit = Path(args.emit)
+        if not emit.is_absolute():
+            emit = root / emit
+        emit.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
     print(json.dumps(output, indent=2, sort_keys=True))
     return 0 if status == "PASS" else 1

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/transition_event/1",
+  "title": "Zervan v40 Candidate Transition Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_version", "event_id", "contract_ref", "sequence", "from_state", "to_state", "trigger", "authorization", "participants", "evidence_refs", "audit_result", "scar_required"],
+  "properties": {
+    "event_version": {"const": "v40-candidate.1"},
+    "event_id": {"type": "string", "pattern": "^TE-[A-Z0-9._-]+$"},
+    "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "sequence": {"type": "integer", "minimum": 1},
+    "from_state": {"type": "string", "minLength": 3},
+    "to_state": {"type": "string", "minLength": 3},
+    "trigger": {"type": "string", "minLength": 3},
+    "authorization": {"enum": ["CONTRACT_PERMITTED", "HUMAN_GATE_APPROVED", "REJECTED"]},
+    "participants": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "evidence_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "audit_result": {"enum": ["PASS", "FAIL", "NOT_INVOKED"]},
+    "scar_required": {"type": "boolean"}
+  }
+}

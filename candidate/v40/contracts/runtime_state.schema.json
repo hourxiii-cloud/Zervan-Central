@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/runtime_state/1",
+  "title": "Zervan v40 Candidate Runtime State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["runtime_version", "contract_ref", "state", "conformance", "active_route", "authority_state", "human_gate", "canonical_binding_ref", "active_seats", "transition_sequence"],
+  "properties": {
+    "runtime_version": {"const": "v40-candidate.1"},
+    "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "state": {"enum": ["INITIALIZING", "ACTIVE", "STOPPED", "HUMAN_GATE_REVIEW", "COMPLETE"]},
+    "conformance": {"enum": ["UNKNOWN", "CONFORMING", "NONCONFORMING"]},
+    "active_route": {"type": "string", "minLength": 3},
+    "authority_state": {"const": "NONE"},
+    "human_gate": {"const": "ACTIVE"},
+    "canonical_binding_ref": {"type": "string", "minLength": 3},
+    "active_seats": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "transition_sequence": {"type": "integer", "minimum": 0}
+  }
+}
