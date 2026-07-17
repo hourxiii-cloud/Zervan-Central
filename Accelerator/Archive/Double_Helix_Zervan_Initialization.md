@@ -138,6 +138,8 @@ If substrate does not exist
 
 ⸻
 
+> **Terminology normalization (v40):** This archived procedure originally used `MC` as shorthand for commitment collapse/commitment records. Canonical naming now reserves `MC` exclusively for **Meta Collapse (response admissibility)**. Commitment artifacts are named **CCR — Canonical Commitment Record**. The archived procedure below has been normalized accordingly; historical intent is preserved.
+
 C. PMC Bakeoff #1 — Possible Worlds (REVISED)
 
 Evaluate, at minimum:
@@ -195,9 +197,9 @@ It does not permit:
 
 ⸻
 
-D. MC Collapse #1 — Minimal Canonical Commitments
+D. CCR Construction #1 — Minimal Canonical Commitment Record
 
-MC produces Pass 1 commitments only:
+Deterministic collapse logic produces the Pass 1 CCR candidate only:
 	•	severity-prioritized risk statements (pre-observables)
 	•	Top N line items per category (default N = 25)
 	•	explicit NOT APPLICABLE determinations
@@ -218,7 +220,7 @@ Minimum Required Frozen Artifacts
 	•	neighbor / smoothing inputs (if used)
 	•	anomaly scores (if used)
 	•	PMC #1 world decision record
-	•	MC #1 commitment record
+	•	CCR #1 canonical commitment record
 
 Artifact Integrity Requirements
 
@@ -287,9 +289,9 @@ PMC MUST:
 
 ⸻
 
-H. MC Collapse #2 — Final Canonical Commitments
+H. CCR Construction #2 — Final Canonical Commitment Record
 
-MC produces the final canonical set:
+Deterministic collapse logic produces the final CCR candidate set:
 	•	severity-prioritized risk statements
 	•	Top N line items per category (default N = 25)
 	•	explicit NOT APPLICABLE determinations
@@ -343,7 +345,7 @@ Defaults (Per-Run Overridable)
 	•	Top N: 25
 	•	Observer state: UNHYDRATED
 	•	PMC worlds: Conservative / Balanced / Aggressive
-	•	MC policy: minimal commitments + explicit rejections
+	•	CCR policy: minimal commitments + explicit rejections
 	•	Artifact freeze: mandatory
 	•	Integrity tagging: SHA-512 required
 
