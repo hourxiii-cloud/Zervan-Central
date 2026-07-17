@@ -16,7 +16,7 @@ from candidate.v40.runtime.control_plane import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTRACT_PATH = ROOT / "candidate/v40/contracts/wave0_tranche1.operational_contract.json"
+CONTRACT_PATH = ROOT / "candidate/v40/contracts/wave1_reporting_production.operational_contract.json"
 
 
 def contract() -> dict:
@@ -74,10 +74,10 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
         calls: list[str] = []
         with tempfile.TemporaryDirectory() as directory:
             handlers = {action: (lambda: None) for action in contract()["route"]["permitted_actions"]}
-            handlers["test.run"] = lambda: calls.append("executed") or "result"
+            handlers["test.run_local"] = lambda: calls.append("executed") or "result"
             plane = self.make_plane(directory, handlers=handlers)
             plane.activate()
-            result = plane.request_action("test.run")
+            result = plane.request_action("test.run_local")
             self.assertEqual(result, "result")
             self.assertEqual(calls, ["executed"])
             self.assertEqual(plane.state, "ACTIVE")
@@ -99,7 +99,7 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
             plane.activate()
             plane.runtime_route = "drifted_route"
             with self.assertRaises(AuditInterrupted):
-                plane.request_action("test.run")
+                plane.request_action("test.run_local")
             self.assertEqual(plane.state, "STOPPED")
             self.assertEqual(plane.stop_class, "ROUTE_DRIFT")
 
@@ -137,7 +137,7 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
             with self.assertRaises(HumanGateRequired):
                 plane.request_action("git.push", request_ref="REQ-PUSH-2")
             with self.assertRaises(HumanGateLatched):
-                plane.request_action("test.run")
+                plane.request_action("test.run_local")
 
     def test_fixture_12_human_gate_denial_enters_terminal_stopped(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -193,7 +193,7 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
             with self.assertRaises(AuditInterrupted):
                 plane.audit_interrupt("stop")
             with self.assertRaises(TerminalStateError):
-                plane.request_action("test.run")
+                plane.request_action("test.run_local")
 
     def test_fixture_22_reentry_from_complete_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -201,7 +201,7 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
             plane.activate()
             plane.complete(plane.contract["completion_criteria"])
             with self.assertRaises(TerminalStateError):
-                plane.request_action("test.run")
+                plane.request_action("test.run_local")
 
     def test_fixture_23_default_control_route_has_no_repository_side_effect(self):
         before = subprocess.run(["git", "status", "--porcelain=v1"], cwd=ROOT, check=True, capture_output=True, text=True).stdout
@@ -217,7 +217,7 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
 
     def test_activation_rejects_unbound_action_handler_registry(self):
         with tempfile.TemporaryDirectory() as directory:
-            plane = self.make_plane(directory, handlers={"test.run": lambda: None})
+            plane = self.make_plane(directory, handlers={"test.run_local": lambda: None})
             with self.assertRaises(AuditInterrupted):
                 plane.activate()
             self.assertEqual(plane.stop_class, "CONTRACT_NONCONFORMANCE")
@@ -227,12 +227,12 @@ class ControlPlaneAcceptanceFixtures(unittest.TestCase):
             raise RuntimeError("simulated handler failure")
 
         handlers = {action: (lambda: None) for action in contract()["route"]["permitted_actions"]}
-        handlers["test.run"] = fail
+        handlers["test.run_local"] = fail
         with tempfile.TemporaryDirectory() as directory:
             plane = self.make_plane(directory, handlers=handlers)
             plane.activate()
             with self.assertRaises(AuditInterrupted):
-                plane.request_action("test.run")
+                plane.request_action("test.run_local")
             self.assertEqual(plane.state, "STOPPED")
             self.assertEqual(plane.stop_class, "AUDIT_INTERRUPT")
 

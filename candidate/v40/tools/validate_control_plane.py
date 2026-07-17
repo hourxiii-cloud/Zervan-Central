@@ -17,7 +17,7 @@ from candidate.v40.runtime.control_plane import RuntimeControlPlane  # noqa: E40
 from candidate.v40.runtime.transition_writer import TransitionWitnessWriter  # noqa: E402
 
 
-CONTRACT = ROOT / "candidate/v40/contracts/wave0_tranche1.operational_contract.json"
+CONTRACT = ROOT / "candidate/v40/contracts/wave1_reporting_production.operational_contract.json"
 
 
 def main() -> int:

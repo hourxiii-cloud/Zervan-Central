@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/analytical_inventory_freeze/1",
+  "title": "Zervan v40 Candidate Analytical Inventory Freeze",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "freeze_version",
+    "freeze_id",
+    "freeze_state",
+    "canonical_git_binding",
+    "candidate_git_binding",
+    "contract_ref",
+    "reporting_request_ref",
+    "route_ref",
+    "ordered_inventory_items",
+    "source_analysis_records",
+    "requirement_inventory_ref",
+    "requirement_inventory_sha512",
+    "known_exclusions",
+    "unresolved_ambiguities",
+    "created_at_utc",
+    "authority_state",
+    "human_gate_state",
+    "previous_freeze_ref",
+    "freeze_sha512"
+  ],
+  "properties": {
+    "freeze_version": {"const": "v40-candidate.1"},
+    "freeze_id": {"type": "string", "pattern": "^AIF-[A-Z0-9._-]+$"},
+    "freeze_state": {"const": "FROZEN"},
+    "canonical_git_binding": {"$ref": "#/$defs/git_binding"},
+    "candidate_git_binding": {"$ref": "#/$defs/git_binding"},
+    "contract_ref": {"type": "string", "pattern": "^OC-[A-Z0-9._-]+$"},
+    "reporting_request_ref": {"type": "string", "minLength": 1},
+    "route_ref": {"type": "string", "minLength": 3},
+    "ordered_inventory_items": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/inventory_item"}
+    },
+    "source_analysis_records": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/source_analysis_record"}
+    },
+    "requirement_inventory_ref": {
+      "type": "string",
+      "pattern": "^RRI-[A-Z0-9._-]+$"
+    },
+    "requirement_inventory_sha512": {"$ref": "#/$defs/sha512"},
+    "known_exclusions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/exclusion"}
+    },
+    "unresolved_ambiguities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/ambiguity"}
+    },
+    "created_at_utc": {"type": "string", "format": "date-time"},
+    "authority_state": {"const": "NONE"},
+    "human_gate_state": {"const": "ACTIVE"},
+    "previous_freeze_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^AIF-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "freeze_sha512": {"$ref": "#/$defs/sha512"}
+  },
+  "$defs": {
+    "sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "unique_strings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nonempty_unique_strings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "git_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "branch", "commit"],
+      "properties": {
+        "repository": {"type": "string", "minLength": 1},
+        "branch": {"type": "string", "minLength": 1},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "source_analysis_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["analysis_id", "analysis_sha512", "claim_refs", "status"],
+      "properties": {
+        "analysis_id": {"type": "string", "pattern": "^AN-[A-Z0-9._-]+$"},
+        "analysis_sha512": {"$ref": "#/$defs/sha512"},
+        "claim_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "status": {"enum": ["FROZEN", "SUPERSEDED", "RETRACTED", "UNKNOWN"]}
+      }
+    },
+    "inventory_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inventory_item_id",
+        "item_class",
+        "item_ref",
+        "source_ref",
+        "source_sha512",
+        "availability_state",
+        "availability_reason",
+        "description",
+        "required",
+        "ordering_index",
+        "dependency_refs",
+        "requirement_refs",
+        "ambiguity_refs",
+        "inclusion_state",
+        "exclusion_ref"
+      ],
+      "properties": {
+        "inventory_item_id": {
+          "type": "string",
+          "pattern": "^AII-[A-Z0-9._-]+$"
+        },
+        "item_class": {
+          "enum": [
+            "FINDING",
+            "COUNT",
+            "DENOMINATOR",
+            "IDENTITY",
+            "RANKED_ENTITY",
+            "METHOD",
+            "LIMITATION",
+            "EVIDENCE",
+            "UNCERTAINTY",
+            "CONTRADICTION",
+            "CLASSIFICATION",
+            "FRAMEWORK_MAPPING",
+            "RISK_INHERITANCE",
+            "ORDERING_REQUIREMENT",
+            "REQUESTED_ARTIFACT",
+            "APPENDIX_OR_EVIDENCE_FILE",
+            "COMPLETION_CRITERION",
+            "KNOWN_UNAVAILABLE",
+            "OTHER_DECLARED"
+          ]
+        },
+        "item_ref": {"type": "string", "minLength": 1},
+        "source_ref": {"type": "string", "minLength": 1},
+        "source_sha512": {
+          "anyOf": [
+            {"$ref": "#/$defs/sha512"},
+            {"type": "null"}
+          ]
+        },
+        "availability_state": {"enum": ["AVAILABLE", "UNAVAILABLE", "UNKNOWN"]},
+        "availability_reason": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "description": {"type": "string", "minLength": 1},
+        "required": {"type": "boolean"},
+        "ordering_index": {"type": "integer", "minimum": 1},
+        "dependency_refs": {"$ref": "#/$defs/unique_strings"},
+        "requirement_refs": {"$ref": "#/$defs/unique_strings"},
+        "ambiguity_refs": {"$ref": "#/$defs/unique_strings"},
+        "inclusion_state": {"enum": ["INCLUDED", "EXCLUDED"]},
+        "exclusion_ref": {
+          "anyOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"availability_state": {"const": "AVAILABLE"}},
+            "required": ["availability_state"]
+          },
+          "then": {
+            "properties": {
+              "source_sha512": {"$ref": "#/$defs/sha512"},
+              "availability_reason": {"type": "null"}
+            }
+          },
+          "else": {
+            "properties": {
+              "source_sha512": {"type": "null"},
+              "availability_reason": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {"inclusion_state": {"const": "EXCLUDED"}},
+            "required": ["inclusion_state"]
+          },
+          "then": {
+            "properties": {"exclusion_ref": {"type": "string", "minLength": 1}}
+          },
+          "else": {
+            "properties": {"exclusion_ref": {"type": "null"}}
+          }
+        }
+      ]
+    },
+    "exclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exclusion_id",
+        "inventory_item_refs",
+        "reason",
+        "decision_source_class",
+        "decision_ref"
+      ],
+      "properties": {
+        "exclusion_id": {"type": "string", "pattern": "^EX-[A-Z0-9._-]+$"},
+        "inventory_item_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "reason": {"type": "string", "minLength": 1},
+        "decision_source_class": {
+          "enum": [
+            "USER_EXPLICIT",
+            "OPERATIONAL_CONTRACT",
+            "ROUTE_REQUIRED",
+            "ANALYTICAL_ESTABLISHED",
+            "GOVERNANCE_REQUIRED",
+            "HUMAN_GATE_DECISION"
+          ]
+        },
+        "decision_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "ambiguity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ambiguity_id",
+        "inventory_item_refs",
+        "description",
+        "clarification_required",
+        "status"
+      ],
+      "properties": {
+        "ambiguity_id": {"type": "string", "pattern": "^AMB-[A-Z0-9._-]+$"},
+        "inventory_item_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "description": {"type": "string", "minLength": 1},
+        "clarification_required": {"const": true},
+        "status": {"const": "OPEN"}
+      }
+    }
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v40/contracts/production_event/1",
+  "title": "Zervan v40 Candidate Reporting Production Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "production_event_version",
+    "production_event_id",
+    "production_state_ref",
+    "contract_ref",
+    "contract_instance_id",
+    "sequence",
+    "timestamp_utc",
+    "event_class",
+    "from_state",
+    "to_state",
+    "trigger",
+    "reason",
+    "request_ref",
+    "route_ref",
+    "route_lock",
+    "canonical_commit",
+    "candidate_commit",
+    "freeze_ref",
+    "freeze_sha512",
+    "projection_ref",
+    "projection_sha512",
+    "artifact_refs",
+    "completion_declaration_ref",
+    "completion_receipt_ref",
+    "manifest_ref",
+    "manifest_sha512",
+    "gate_receipt_refs",
+    "human_gate_request_ref",
+    "human_gate_decision",
+    "reconciliation_return",
+    "production_failure_class",
+    "audit_result",
+    "control_stop_class",
+    "control_transition_event_ref",
+    "scar_required",
+    "external_action_state",
+    "authority_state",
+    "human_gate_state",
+    "previous_event_sha512",
+    "event_sha512"
+  ],
+  "properties": {
+    "production_event_version": {"const": "v40-candidate.1"},
+    "production_event_id": {
+      "type": "string",
+      "pattern": "^PE-[A-Z0-9._-]+$"
+    },
+    "production_state_ref": {
+      "type": "string",
+      "pattern": "^PS-[A-Z0-9._-]+$"
+    },
+    "contract_ref": {
+      "type": "string",
+      "pattern": "^OC-[A-Z0-9._-]+$"
+    },
+    "contract_instance_id": {
+      "type": "string",
+      "pattern": "^OCI-[A-Z0-9._-]+$"
+    },
+    "sequence": {"type": "integer", "minimum": 1},
+    "timestamp_utc": {"type": "string", "format": "date-time"},
+    "event_class": {
+      "enum": [
+        "ANALYTICAL_FREEZE_ACCEPTED",
+        "PROJECTION_ACCEPTED",
+        "ARTIFACT_PRODUCED",
+        "RECONCILIATION_STARTED",
+        "BOUNDED_RECONCILIATION_RETURN",
+        "REVIEW_READY_DECLARED",
+        "HUMAN_GATE_REQUESTED",
+        "HUMAN_GATE_DECISION",
+        "AUDIT_STOP"
+      ]
+    },
+    "from_state": {"$ref": "#/$defs/production_state"},
+    "to_state": {"$ref": "#/$defs/production_state"},
+    "trigger": {"type": "string", "minLength": 1},
+    "reason": {"type": "string", "minLength": 1},
+    "request_ref": {"type": "string", "minLength": 1},
+    "route_ref": {"type": "string", "minLength": 3},
+    "route_lock": {"type": "string", "minLength": 3},
+    "canonical_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "candidate_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "freeze_ref": {"$ref": "#/$defs/nullable_freeze_ref"},
+    "freeze_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "projection_ref": {"$ref": "#/$defs/nullable_projection_ref"},
+    "projection_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "artifact_refs": {"$ref": "#/$defs/unique_strings"},
+    "completion_declaration_ref": {"$ref": "#/$defs/nullable_nonempty_string"},
+    "completion_receipt_ref": {"$ref": "#/$defs/nullable_nonempty_string"},
+    "manifest_ref": {"$ref": "#/$defs/nullable_manifest_ref"},
+    "manifest_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "gate_receipt_refs": {"$ref": "#/$defs/unique_strings"},
+    "human_gate_request_ref": {"$ref": "#/$defs/nullable_nonempty_string"},
+    "human_gate_decision": {
+      "anyOf": [
+        {"$ref": "#/$defs/human_gate_decision"},
+        {"type": "null"}
+      ]
+    },
+    "reconciliation_return": {
+      "anyOf": [
+        {"$ref": "#/$defs/reconciliation_return"},
+        {"type": "null"}
+      ]
+    },
+    "production_failure_class": {
+      "anyOf": [
+        {"$ref": "#/$defs/production_failure_class"},
+        {"type": "null"}
+      ]
+    },
+    "audit_result": {"enum": ["PASS", "FAIL", "NOT_INVOKED"]},
+    "control_stop_class": {
+      "anyOf": [
+        {"const": "AUDIT_INTERRUPT"},
+        {"type": "null"}
+      ]
+    },
+    "control_transition_event_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^TE-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "scar_required": {"type": "boolean"},
+    "external_action_state": {"const": "NOT_AUTHORIZED"},
+    "authority_state": {"const": "NONE"},
+    "human_gate_state": {"const": "ACTIVE"},
+    "previous_event_sha512": {"$ref": "#/$defs/nullable_sha512"},
+    "event_sha512": {"$ref": "#/$defs/sha512"}
+  },
+  "allOf": [
+    {"$ref": "#/$defs/transition_shape"},
+    {
+      "if": {
+        "properties": {"sequence": {"const": 1}},
+        "required": ["sequence"]
+      },
+      "then": {"properties": {"previous_event_sha512": {"type": "null"}}},
+      "else": {"properties": {"previous_event_sha512": {"$ref": "#/$defs/sha512"}}}
+    }
+  ],
+  "$defs": {
+    "sha512": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "nullable_sha512": {
+      "anyOf": [
+        {"$ref": "#/$defs/sha512"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_nonempty_string": {
+      "anyOf": [
+        {"type": "string", "minLength": 1},
+        {"type": "null"}
+      ]
+    },
+    "nullable_freeze_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^AIF-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_projection_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "nullable_manifest_ref": {
+      "anyOf": [
+        {"type": "string", "pattern": "^PM-[A-Z0-9._-]+$"},
+        {"type": "null"}
+      ]
+    },
+    "unique_strings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nonempty_unique_strings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "production_state": {
+      "enum": [
+        "DISCOVERY",
+        "ANALYSIS_COMPLETE",
+        "REPORTING",
+        "RECONCILIATION",
+        "REVIEW_READY",
+        "HUMAN_GATE_REVIEW",
+        "PROMOTED",
+        "RETURNED",
+        "STOPPED"
+      ]
+    },
+    "nonterminal_state": {
+      "enum": [
+        "DISCOVERY",
+        "ANALYSIS_COMPLETE",
+        "REPORTING",
+        "RECONCILIATION",
+        "REVIEW_READY",
+        "HUMAN_GATE_REVIEW"
+      ]
+    },
+    "production_failure_class": {
+      "enum": [
+        "CANONICAL_BINDING_FAILURE",
+        "CONTRACT_NONCONFORMANCE",
+        "ANALYTICAL_FREEZE_FAILURE",
+        "REPORT_MUTATION",
+        "LINEAGE_BREAK",
+        "REQUIREMENT_OMISSION",
+        "INVENTORY_OMISSION",
+        "PLACEHOLDER_SUBSTITUTION",
+        "EVIDENCE_CARRIAGE_FAILURE",
+        "ESCALATION_ORDER_FAILURE",
+        "SCOPE_INFLATION",
+        "STANDALONE_REVIEW_FAILURE",
+        "PACKAGE_INTEGRITY_FAILURE",
+        "COMPLETION_MISMATCH",
+        "CLAIM_CEILING_VIOLATION",
+        "HUMAN_GATE_REQUIRED",
+        "HUMAN_GATE_DENIED",
+        "LOGIC_FREEZE",
+        "UNKNOWN_PRODUCTION_FAILURE"
+      ]
+    },
+    "human_gate_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_ref",
+        "decision_owner",
+        "authorized_next_state",
+        "review_ready_receipt_ref",
+        "manifest_ref",
+        "manifest_sha512",
+        "authorized_scope",
+        "external_movement_included",
+        "authorized_target_or_audience",
+        "decision_time_utc",
+        "limitations_and_conditions"
+      ],
+      "properties": {
+        "decision_ref": {"type": "string", "minLength": 1},
+        "decision_owner": {"const": "HUMAN"},
+        "authorized_next_state": {"enum": ["PROMOTED", "RETURNED"]},
+        "review_ready_receipt_ref": {"type": "string", "minLength": 1},
+        "manifest_ref": {"type": "string", "pattern": "^PM-[A-Z0-9._-]+$"},
+        "manifest_sha512": {"$ref": "#/$defs/sha512"},
+        "authorized_scope": {"$ref": "#/$defs/nonempty_unique_strings"},
+        "external_movement_included": {"const": false},
+        "authorized_target_or_audience": {"type": "null"},
+        "decision_time_utc": {"type": "string", "format": "date-time"},
+        "limitations_and_conditions": {"$ref": "#/$defs/unique_strings"}
+      }
+    },
+    "reconciliation_return": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "return_id",
+        "defect_class",
+        "defect_ref",
+        "route_unchanged",
+        "freeze_unchanged",
+        "projection_valid",
+        "claim_mutation_detected",
+        "evidence_mutation_detected",
+        "uncertainty_mutation_detected",
+        "lineage_mutation_detected",
+        "progress_state",
+        "return_ordinal",
+        "prior_return_event_refs"
+      ],
+      "properties": {
+        "return_id": {"type": "string", "pattern": "^PRR-[A-Z0-9._-]+$"},
+        "defect_class": {
+          "enum": [
+            "ARTIFACT_OMISSION",
+            "FORMATTING_DEFECT",
+            "BROKEN_LOCAL_ANCHOR",
+            "OTHER_BOUNDED_PRODUCTION_DEFECT"
+          ]
+        },
+        "defect_ref": {"type": "string", "minLength": 1},
+        "route_unchanged": {"const": true},
+        "freeze_unchanged": {"const": true},
+        "projection_valid": {"const": true},
+        "claim_mutation_detected": {"const": false},
+        "evidence_mutation_detected": {"const": false},
+        "uncertainty_mutation_detected": {"const": false},
+        "lineage_mutation_detected": {"const": false},
+        "progress_state": {"enum": ["PROGRESSING", "NON_PROGRESSING"]},
+        "return_ordinal": {"type": "integer", "minimum": 1},
+        "prior_return_event_refs": {"$ref": "#/$defs/unique_strings"}
+      }
+    },
+    "bound_freeze": {
+      "properties": {
+        "freeze_ref": {"type": "string", "pattern": "^AIF-[A-Z0-9._-]+$"},
+        "freeze_sha512": {"$ref": "#/$defs/sha512"}
+      }
+    },
+    "bound_projection": {
+      "properties": {
+        "projection_ref": {"type": "string", "pattern": "^RP-[A-Z0-9._-]+$"},
+        "projection_sha512": {"$ref": "#/$defs/sha512"}
+      }
+    },
+    "bound_review_package": {
+      "properties": {
+        "manifest_ref": {"type": "string", "pattern": "^PM-[A-Z0-9._-]+$"},
+        "manifest_sha512": {"$ref": "#/$defs/sha512"},
+        "completion_receipt_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "nonstop_shape": {
+      "properties": {
+        "production_failure_class": {"type": "null"},
+        "control_stop_class": {"type": "null"},
+        "control_transition_event_ref": {"type": "null"},
+        "scar_required": {"const": false}
+      }
+    },
+    "transition_shape": {
+      "anyOf": [
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {
+              "properties": {
+                "event_class": {"const": "ANALYTICAL_FREEZE_ACCEPTED"},
+                "from_state": {"const": "DISCOVERY"},
+                "to_state": {"const": "ANALYSIS_COMPLETE"},
+                "projection_ref": {"type": "null"},
+                "projection_sha512": {"type": "null"},
+                "artifact_refs": {"type": "array", "maxItems": 0},
+                "completion_declaration_ref": {"type": "null"},
+                "completion_receipt_ref": {"type": "null"},
+                "manifest_ref": {"type": "null"},
+                "manifest_sha512": {"type": "null"},
+                "gate_receipt_refs": {"type": "array", "maxItems": 0},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"const": "PASS"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {
+              "properties": {
+                "event_class": {"const": "PROJECTION_ACCEPTED"},
+                "from_state": {"const": "ANALYSIS_COMPLETE"},
+                "to_state": {"const": "REPORTING"},
+                "artifact_refs": {"type": "array", "maxItems": 0},
+                "completion_declaration_ref": {"type": "null"},
+                "completion_receipt_ref": {"type": "null"},
+                "manifest_ref": {"type": "null"},
+                "manifest_sha512": {"type": "null"},
+                "gate_receipt_refs": {"type": "array", "maxItems": 0},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"const": "PASS"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {
+              "properties": {
+                "event_class": {"const": "ARTIFACT_PRODUCED"},
+                "from_state": {"const": "REPORTING"},
+                "to_state": {"const": "REPORTING"},
+                "artifact_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"enum": ["PASS", "NOT_INVOKED"]}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {
+              "properties": {
+                "event_class": {"const": "RECONCILIATION_STARTED"},
+                "from_state": {"const": "REPORTING"},
+                "to_state": {"const": "RECONCILIATION"},
+                "artifact_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+                "completion_declaration_ref": {"type": "string", "minLength": 1},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"const": "PASS"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {
+              "properties": {
+                "event_class": {"const": "BOUNDED_RECONCILIATION_RETURN"},
+                "from_state": {"const": "RECONCILIATION"},
+                "to_state": {"const": "REPORTING"},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"$ref": "#/$defs/reconciliation_return"},
+                "audit_result": {"const": "PASS"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "event_class": {"const": "REVIEW_READY_DECLARED"},
+                "from_state": {"const": "RECONCILIATION"},
+                "to_state": {"const": "REVIEW_READY"},
+                "gate_receipt_refs": {"$ref": "#/$defs/nonempty_unique_strings"},
+                "human_gate_request_ref": {"type": "null"},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"const": "PASS"}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "event_class": {"const": "HUMAN_GATE_REQUESTED"},
+                "from_state": {"const": "REVIEW_READY"},
+                "to_state": {"const": "HUMAN_GATE_REVIEW"},
+                "human_gate_request_ref": {"type": "string", "minLength": 1},
+                "human_gate_decision": {"type": "null"},
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"enum": ["PASS", "NOT_INVOKED"]}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "event_class": {"const": "HUMAN_GATE_DECISION"},
+                "from_state": {"const": "HUMAN_GATE_REVIEW"},
+                "to_state": {"const": "PROMOTED"},
+                "human_gate_request_ref": {"type": "string", "minLength": 1},
+                "human_gate_decision": {
+                  "allOf": [
+                    {"$ref": "#/$defs/human_gate_decision"},
+                    {"properties": {"authorized_next_state": {"const": "PROMOTED"}}}
+                  ]
+                },
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"enum": ["PASS", "NOT_INVOKED"]}
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/nonstop_shape"},
+            {"$ref": "#/$defs/bound_freeze"},
+            {"$ref": "#/$defs/bound_projection"},
+            {"$ref": "#/$defs/bound_review_package"},
+            {
+              "properties": {
+                "event_class": {"const": "HUMAN_GATE_DECISION"},
+                "from_state": {"const": "HUMAN_GATE_REVIEW"},
+                "to_state": {"const": "RETURNED"},
+                "human_gate_request_ref": {"type": "string", "minLength": 1},
+                "human_gate_decision": {
+                  "allOf": [
+                    {"$ref": "#/$defs/human_gate_decision"},
+                    {"properties": {"authorized_next_state": {"const": "RETURNED"}}}
+                  ]
+                },
+                "reconciliation_return": {"type": "null"},
+                "audit_result": {"enum": ["PASS", "NOT_INVOKED"]}
+              }
+            }
+          ]
+        },
+        {
+          "properties": {
+            "event_class": {"const": "AUDIT_STOP"},
+            "from_state": {"$ref": "#/$defs/nonterminal_state"},
+            "to_state": {"const": "STOPPED"},
+            "human_gate_decision": {"type": "null"},
+            "reconciliation_return": {"type": "null"},
+            "production_failure_class": {"$ref": "#/$defs/production_failure_class"},
+            "audit_result": {"const": "FAIL"},
+            "control_stop_class": {"const": "AUDIT_INTERRUPT"},
+            "control_transition_event_ref": {
+              "type": "string",
+              "pattern": "^TE-[A-Z0-9._-]+$"
+            },
+            "scar_required": {"const": true}
+          }
+        }
+      ]
+    }
+  }
+}

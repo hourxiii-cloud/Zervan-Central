@@ -73,6 +73,8 @@ class RuntimeControlPlane:
         self.human_gate_request_ref: str | None = None
         self.stop_class: str | None = None
         self.stop_reason: str | None = None
+        self.required_scar_class: str | None = None
+        self.last_runtime_control_marker: dict | None = None
         self.active_seats = tuple(dict.fromkeys(active_seats))
         self.action_handlers = MappingProxyType(dict(action_handlers or {}))
         options = dict(writer_options or {})
@@ -307,6 +309,46 @@ class RuntimeControlPlane:
     def report_logic_freeze(self, reason: str) -> None:
         self._guard_active()
         self._audit_stop("logic_freeze", reason, "LOGIC_FREEZE", [reason])
+
+    def observe_runtime_marker(self, value: object) -> dict:
+        """Observe a structured runtime marker without interpreting ordinary content."""
+
+        from candidate.v40.runtime.continuity import detect_repeating_thirds_marker
+
+        self._guard_active()
+        observation = detect_repeating_thirds_marker(value)
+        if observation is None:
+            return {
+                "detected": False,
+                "self_observation": "NO_STRUCTURED_MARKER",
+                "termination_required": False,
+            }
+        self.required_scar_class = observation["required_scar_class"]
+        self.last_runtime_control_marker = copy.deepcopy(observation)
+        evidence_refs = list(
+            dict.fromkeys(
+                [
+                    observation["source_ref"],
+                    *observation["evidence_refs"],
+                    f"marker-observed-at:{observation['observation_time_utc']}",
+                    "self-observation:SUCCESSFUL",
+                    "confidence-interpretation:NOT_CONFIDENCE",
+                    f"required-scar-class:{observation['required_scar_class']}",
+                ]
+            )
+        )
+        reason = (
+            f"Structured {observation['marker_kind']} runtime control marker detected; "
+            f"condition={observation['condition_class']}; detection is successful self-observation, "
+            "not confidence; terminate, Scar, and later Replay"
+        )
+        self._audit_stop(
+            "repeating_thirds_runtime_marker",
+            reason,
+            "AUDIT_INTERRUPT",
+            evidence_refs,
+        )
+        raise AssertionError("Audit stop must terminate marker observation")
 
     def _guard_active(self) -> None:
         if self.state in TERMINAL_STATES:
