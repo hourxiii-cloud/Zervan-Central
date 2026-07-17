@@ -337,7 +337,7 @@ The collapse report MUST include:
 ## 14. PMC ↔ MC Boundary
 
 PMC governs epistemic admissibility and plausibility.
-MC governs certification and promotion into canon.
+MC governs response admissibility after PMC; MC does not certify truth or promote artifacts into canon.
 
 ### 14.1 PMC May
 - evaluate
@@ -350,7 +350,7 @@ MC governs certification and promotion into canon.
 - promote to canon
 - certify authority
 - declare final truth
-- bypass MC for high-impact actions
+- bypass MC for any downstream response or action class
 
 ---
 
