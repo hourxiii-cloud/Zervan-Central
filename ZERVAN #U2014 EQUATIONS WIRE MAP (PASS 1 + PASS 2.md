@@ -32,7 +32,7 @@ Observer State (Pass 2): UNHYDRATED • NON-CANONICAL (context only)
 
 ---
 
-# PASS 1 — ANALYSIS + FIRST COLLAPSE (Canonicalizable → Minimal Canonical Commitments)
+# PASS 1 — ANALYSIS + FIRST COLLAPSE (Canonicalizable → Canonical Commitment Record)
 
 ## A) Admission Pre-Gate (Project_LeafcutterAnt) — BEFORE Beagle
 
@@ -178,7 +178,7 @@ Hard halt if:
 
 ---
 
-## D) PASS 1 Governance Helix — PMC → MC
+## D) PASS 1 Governance Helix — PMC → CCR → MC
 
 ### Eq3.PMC — World Utility Scoring & Selection
 Define worlds (minimum):
@@ -200,15 +200,24 @@ Must include:
 - selected world
 - explicit rejections
 
-### Eq3.MC — Minimal Commitments (Collapse #1)
-**Eq3.MC:** `commit = collapse(metrics, W*; TopN=25, stable_ties=true)`  
+### Eq3.CCR — Canonical Commitment Record Construction (Collapse #1)
+**Eq3.CCR:** `commit = collapse(metrics, W*; TopN=25, stable_ties=true)`  
 Outputs:
 - severity-prioritized risk statements (pre-observables)
 - Top N line items per category (default 25)
 - explicit NOT_APPLICABLE determinations
 - explicit rejection list of inadmissible claims
 
-### A11 — MC1_commitment_record.json
+### A11 — CCR1_canonical_commitment_record.json
+
+### Eq3.MC — Meta Collapse Response-Admissibility Gate
+
+MC consumes only the PMC output, the CCR candidate, explicit uncertainty, and governance constraints.
+
+MC marks each response/output class as `ADMISSIBLE`, `CONDITIONAL`, or `INADMISSIBLE`.
+
+MC may not alter PMC truth, generate CCR contents, or authorize execution.
+
 
 ---
 
@@ -310,19 +319,19 @@ PMC must state:
 
 ---
 
-## I) PASS 2 Collapse — MC (Final Canonical Commitments)
+## I) PASS 2 Collapse — CCR Construction + MC Admissibility
 
-### EqH.MC.1 — Final Severity Score
+### EqH.CCR.1 — Final Severity Score
 Let:
 - `sev_base(i)` from Pass 1 deterministic scoring
 - `W2*` selected world from PMC2
 - `adj(i)` = bounded adjustment recorded in PMC2 (not raw observer text)
 
-**EqH.MC.1:**  
+**EqH.CCR.1:**  
 `sev_final(i) = f(sev_base(i), W2*, adj(i))`
 
-### EqH.MC.2 — Deterministic Top-N Selection
-**EqH.MC.2:**  
+### EqH.CCR.2 — Deterministic Top-N Selection
+**EqH.CCR.2:**  
 `TopN(category) = stable_rank(items; key=sev_final, N=25, deterministic_ties=true)`
 
 ### Outputs (required order)
@@ -332,7 +341,7 @@ Let:
 4. Insider Threat Risk Report (or NOT APPLICABLE with reason)
 
 ### Artifacts (typical)
-- **A14** `MC2_commitment_record.json`
+- **A14** `CCR2_canonical_commitment_record.json`
 - **A15** `PASS2_HiddenThreat_Top25.csv`
 - **A16** `PASS2_Threat_Top25.csv`
 - **A17** `PASS2_Anomaly_Top25.csv`
@@ -374,12 +383,12 @@ Include:
 
 # Architectural Invariant (Pass 2)
 
-**Observers influence PMC → PMC influences MC → MC produces canonical reports.**  
-Observers never directly alter canonical commitments.
+**Observers influence PMC → PMC constrains CCR construction → MC gates response admissibility → Raven produces permitted reports.**  
+Observers never directly alter PMC truth, CCR contents, or MC admissibility decisions.
 
 ---
 
-# Mermaid Wire Map — PASS 1 (Admission → Beagle → Analysis → PMC/MC → Freeze)
+# Mermaid Wire Map — PASS 1 (Admission → Beagle → Analysis → PMC → CCR → MC → Freeze)
 
 ```mermaid
 flowchart TD
@@ -408,8 +417,9 @@ A7 --> PMC1
 A9 --> PMC1
 
 PMC1[PMC #1] --> A10[PMC1_world_record.json]
-A10 --> MC1[MC #1]
-MC1 --> A11[MC1_commitment_record.json]
+A10 --> CCR1[CCR #1]
+CCR1 --> A11[CCR1_canonical_commitment_record.json]
+A11 --> MC1[MC #1 Response Admissibility]
 
 A1 --> FREEZE
 A3 --> FREEZE

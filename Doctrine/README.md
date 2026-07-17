@@ -14,6 +14,7 @@ All doctrine in this directory is subordinate to Cathedral and must remain consi
 6. `ZEA.md` — execution architecture
 7. `ZEE.md` — evaluation envelope
 8. `PMC_MC_INTERFACE.md` — canonical PMC → MC interface contract (binding boundary)
+9. `PMC_MC_NAMING_LOCK.md` — reserved acronym meanings and CCR separation
 
 ## Push-Down Rule
 
