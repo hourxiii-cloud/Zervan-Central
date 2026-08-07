@@ -1,0 +1,3062 @@
+{
+  "schema_version": "1.0",
+  "native_version": "vTemporal.41.0",
+  "source_branch": "candidate/v41-complete",
+  "source_parent_commit": "a24b6d94f7bb37c8a627d02cab4d85e6ecdefe57",
+  "scope": "repository-wide textual version references for v39/v40/v41 families",
+  "excluded_control_files": [
+    "VERSION_REFERENCES.json",
+    "tests/test_version_identity.py",
+    "tools/validate_version_identity.py"
+  ],
+  "entries": [
+    {
+      "path": "Accelerator/Archive/Double_Helix_Zervan_Initialization.md",
+      "line": 141,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "Accelerator/HYDRATION_SURFACE.md",
+      "line": 143,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "Accelerator/HYDRATION_SURFACE.md",
+      "line": 143,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "Accelerator/hydration_profile.full.json",
+      "line": 235,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 11,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 28,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 59,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 60,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 61,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 62,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 63,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 64,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 65,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 66,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 67,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "VERSION",
+      "line": 1,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 3,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 4,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 5,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 10,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 31,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 33,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 71,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 82,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 86,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 99,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 101,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 103,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 104,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 121,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 122,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 165,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 166,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 167,
+      "token": "v41.1",
+      "classification": "CANDIDATE_BRIDGE_HISTORY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 168,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 168,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 176,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 177,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 177,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 240,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 11,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 124,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 125,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 126,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 127,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 128,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 129,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 130,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 131,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 132,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+      "line": 136,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "ZERVAN_5_6_TRANSITION_NOTE.md",
+      "line": 11,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 21,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 32,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 45,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 46,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 47,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 48,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 49,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 50,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 51,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 53,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V39_0.md",
+      "line": 62,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 1,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 4,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 21,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 32,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 45,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 46,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 47,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 48,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 49,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 50,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 51,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 53,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V40_0.md",
+      "line": 62,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 2,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 5,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 6,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 23,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 45,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 50,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 55,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/verify_local_call.py",
+      "line": 189,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/README.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/README.md",
+      "line": 15,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/README.md",
+      "line": 17,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/README.md",
+      "line": 17,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/__init__.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/analysis_record.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/analysis_record.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/analysis_record.schema.json",
+      "line": 37,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/analytical_inventory_freeze.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/analytical_inventory_freeze.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/analytical_inventory_freeze.schema.json",
+      "line": 29,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/evidence_record.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/evidence_record.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/evidence_record.schema.json",
+      "line": 33,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/operational_contract.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/operational_contract.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/operational_contract.schema.json",
+      "line": 14,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/operational_contract.schema.json",
+      "line": 34,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/operational_contract.schema.json",
+      "line": 74,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/production_event.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/production_event.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/production_event.schema.json",
+      "line": 50,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/production_state.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/production_state.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/production_state.schema.json",
+      "line": 44,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/replay_receipt.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/replay_receipt.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/replay_receipt.schema.json",
+      "line": 19,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/report_projection.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/report_projection.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/report_projection.schema.json",
+      "line": 34,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/reporting_requirement_inventory.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/reporting_requirement_inventory.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/reporting_requirement_inventory.schema.json",
+      "line": 22,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/runtime_state.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/runtime_state.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/runtime_state.schema.json",
+      "line": 9,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/scar.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/scar.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/scar.schema.json",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/transition_event.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/transition_event.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/transition_event.schema.json",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave0_tranche1.operational_contract.json",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave0_tranche1.operational_contract.json",
+      "line": 15,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/wave0_tranche1.operational_contract.json",
+      "line": 28,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave0_tranche1.operational_contract.json",
+      "line": 31,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/wave0_tranche1.operational_contract.json",
+      "line": 32,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/wave0_tranche1.operational_contract.json",
+      "line": 40,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 15,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 75,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 81,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 84,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 95,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 96,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 127,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/contracts/wave1_reporting_production.operational_contract.json",
+      "line": 135,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/governance/failure_inventory.json",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/governance/failure_inventory.schema.json",
+      "line": 3,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/governance/failure_inventory.schema.json",
+      "line": 4,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/governance/failure_inventory.schema.json",
+      "line": 18,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 19,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 22,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 25,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 38,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 54,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 55,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 65,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 72,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 73,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 74,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 75,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 76,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 77,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 78,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 79,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 80,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 81,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche1_receipt.md",
+      "line": 95,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche2_receipt.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche2_receipt.md",
+      "line": 19,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche2_receipt.md",
+      "line": 22,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche2_receipt.md",
+      "line": 103,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche2_receipt.md",
+      "line": 104,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche2_receipt.md",
+      "line": 113,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 19,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 22,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 28,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 29,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 30,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 31,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 32,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 35,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 100,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 110,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 117,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 122,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 131,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/receipts/wave0_tranche3_receipt.md",
+      "line": 131,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/__init__.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/continuity.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/continuity.py",
+      "line": 14,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/continuity.py",
+      "line": 247,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/continuity.py",
+      "line": 359,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/continuity.py",
+      "line": 800,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/continuity.py",
+      "line": 942,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/control_plane.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/control_plane.py",
+      "line": 11,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/control_plane.py",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/control_plane.py",
+      "line": 93,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/control_plane.py",
+      "line": 316,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_inventories.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_inventories.py",
+      "line": 11,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_inventories.py",
+      "line": 15,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_inventories.py",
+      "line": 20,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_inventories.py",
+      "line": 22,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_projection.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_projection.py",
+      "line": 11,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_projection.py",
+      "line": 12,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_projection.py",
+      "line": 13,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_projection.py",
+      "line": 17,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_records.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_records.py",
+      "line": 12,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_records.py",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/reporting_records.py",
+      "line": 17,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/schema_validation.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/transition_writer.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/transition_writer.py",
+      "line": 90,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/runtime/transition_writer.py",
+      "line": 221,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche2_control_state_specification.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche2_control_state_specification.md",
+      "line": 68,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche2_control_state_specification.md",
+      "line": 337,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche2_control_state_specification.md",
+      "line": 480,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 5,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 6,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 9,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 16,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 23,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 27,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 28,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 129,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 130,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 131,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 132,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 134,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 576,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 589,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche3_scar_replay_continuity_specification.md",
+      "line": 634,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 7,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 43,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 46,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 54,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 142,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 143,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 954,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 955,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 956,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 957,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 958,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 959,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 960,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 961,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 962,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 963,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 964,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 965,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 967,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 1102,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 1116,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/specifications/tranche4_reporting_production_boundary_specification.md",
+      "line": 1118,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/tools/__init__.py",
+      "line": 1,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 17,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 24,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 27,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 28,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 29,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 69,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 71,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 85,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_continuity.py",
+      "line": 218,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_control_plane.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_control_plane.py",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_control_plane.py",
+      "line": 17,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_control_plane.py",
+      "line": 20,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_control_plane.py",
+      "line": 26,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_control_plane.py",
+      "line": 45,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_failure_inventory.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_failure_inventory.py",
+      "line": 13,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_failure_inventory.py",
+      "line": 14,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_failure_inventory.py",
+      "line": 33,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_failure_inventory.py",
+      "line": 112,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 15,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 20,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 26,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 27,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 28,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 80,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 111,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 169,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_operational_contract.py",
+      "line": 253,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 18,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 24,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 28,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 35,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 59,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 67,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 152,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_inventories.py",
+      "line": 257,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 17,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 21,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 27,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 31,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 36,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 42,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 71,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_projection.py",
+      "line": 258,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_records.py",
+      "line": 2,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_records.py",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_records.py",
+      "line": 36,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_records.py",
+      "line": 104,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v40/tools/validate_reporting_records.py",
+      "line": 185,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 3,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 17,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 19,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 21,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 23,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 25,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 27,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 58,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5973,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5975,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5977,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5979,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5981,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5983,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5985,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5987,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5989,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5991,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5993,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5995,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5997,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 5999,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6001,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6003,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6005,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6007,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6009,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6011,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6013,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6015,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6017,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6019,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6021,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6023,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6025,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6027,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6029,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6031,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6033,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6035,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6037,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6039,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6041,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6043,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6045,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6047,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
+      "line": 6049,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 3,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 17,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 19,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 21,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 23,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 23,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 25,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 27,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 58,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5973,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5975,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5977,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5979,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5981,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5983,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5985,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5987,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5989,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5991,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5993,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5995,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5997,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5999,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6001,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6003,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6005,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6007,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6009,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6011,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6013,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6015,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6017,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6019,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6021,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6023,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6025,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6027,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6029,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6031,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6033,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6035,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6037,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6039,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6041,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6043,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6045,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6047,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6049,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "controls/data_provenance_control_layer.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "controls/data_provenance_control_layer.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "controls/data_provenance_control_layer.md",
+      "line": 5,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "governance/human_gate_authority_boundary.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "governance/human_gate_authority_boundary.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_manifest.json",
+      "line": 3,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_manifest.json",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_secondary_manifest_control.json",
+      "line": 2,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_secondary_manifest_control.json",
+      "line": 4,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_secondary_manifest_control.json",
+      "line": 5,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 2,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 4,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 5,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 29,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 41,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 87,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "manifests/v39_0_transition_manifest.json",
+      "line": 91,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "provenance/origin_dataset_boundary.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "provenance/origin_dataset_boundary.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 3,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 5,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 7,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 20,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 73,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v39_0_load_receipt.md",
+      "line": 213,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "replay/v39_0_replay_scars.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "replay/v39_0_replay_scars.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "replay/v39_0_replay_scars.md",
+      "line": 5,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "routes/operation_route_catalog_v39_0.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "routes/operation_route_catalog_v39_0.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "routes/operation_route_catalog_v39_0.md",
+      "line": 5,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "scripts/local_provenance_simulator.py",
+      "line": 2,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "scripts/local_provenance_simulator.py",
+      "line": 25,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "scripts/local_provenance_simulator.py",
+      "line": 202,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 13,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 24,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 25,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 26,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 30,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 31,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 32,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 51,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 107,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 1127,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_continuity.py",
+      "line": 1153,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_control_plane.py",
+      "line": 9,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_control_plane.py",
+      "line": 19,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_controls.py",
+      "line": 69,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_controls.py",
+      "line": 85,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_report_projection_schema.py",
+      "line": 8,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_report_projection_schema.py",
+      "line": 12,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_report_projection_schema.py",
+      "line": 111,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 8,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 13,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 15,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 64,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 101,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 105,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 110,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventories.py",
+      "line": 111,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventory_runtime.py",
+      "line": 6,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_inventory_runtime.py",
+      "line": 15,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 8,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 12,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 13,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 76,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 84,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 95,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_production_schemas.py",
+      "line": 216,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_projection_runtime.py",
+      "line": 6,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_projection_runtime.py",
+      "line": 11,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_projection_runtime.py",
+      "line": 18,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_records.py",
+      "line": 8,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_records.py",
+      "line": 16,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_records.py",
+      "line": 20,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_records.py",
+      "line": 21,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_records.py",
+      "line": 34,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_reporting_records.py",
+      "line": 113,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_v40_candidate_transition_writer.py",
+      "line": 24,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "verification/hash_inventory_plan.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/hash_inventory_plan.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/hash_inventory_plan.md",
+      "line": 15,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/hash_inventory_plan.md",
+      "line": 43,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/hash_inventory_plan.md",
+      "line": 169,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/v39_0_validation_checklist.md",
+      "line": 1,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/v39_0_validation_checklist.md",
+      "line": 4,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/v39_0_validation_checklist.md",
+      "line": 13,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/v39_0_validation_checklist.md",
+      "line": 52,
+      "token": "vTemporal.39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/v39_0_validation_checklist.md",
+      "line": 82,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    }
+  ]
+}

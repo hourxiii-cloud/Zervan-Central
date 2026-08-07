@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "version": "vTemporal.41.0",
+  "release_line": "v41",
+  "implementation_identity": "v41 Complete",
+  "promotion_state": "CANDIDATE",
+  "canonical": false,
+  "canonical_branch": "main",
+  "development_branch": "candidate/v41-complete",
+  "authority_contract": "VERSION_AUTHORITY.md",
+  "authority_resolution": "DoctrineOps/AUTHORITY_RESOLUTION.md",
+  "promotion_receipt_required": true,
+  "inferred_versioning_allowed": false,
+  "mixed_version_identity_allowed": false
+}
