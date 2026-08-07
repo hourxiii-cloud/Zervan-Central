@@ -2711,6 +2711,24 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/qualification/FORMATION_SELECTION_INTEGRATION.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/qualification/FORMATION_SELECTION_INTEGRATION.md",
+      "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/qualification/FORMATION_SELECTION_INTEGRATION.md",
+      "line": 109,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/qualification/OCCUPANCY_WITNESS_PRESENCE.md",
       "line": 5,
       "token": "vTemporal.41.0",

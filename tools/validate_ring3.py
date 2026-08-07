@@ -48,6 +48,13 @@ RINGS = [
         "tests/test_proportional_force.py",
     ),
 
+    (
+        "R3-G",
+        "Formation Selection / Integration",
+        "tools/validate_formation_selection.py",
+        "tests/test_formation_selection.py",
+    ),
+
 ]
 
 print()
