@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "a24b6d94f7bb37c8a627d02cab4d85e6ecdefe57",
+  "source_parent_commit": "260390c80ddfeb3060ff58c89231c67fdf028a8c",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2517,6 +2517,12 @@
       "line": 6049,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/identity/IDENTITY_INTEGRITY_PROVENANCE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "controls/data_provenance_control_layer.md",

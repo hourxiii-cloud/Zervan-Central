@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/identity/ingress_envelope.schema.json",
+  "title": "Zervan R1-C Ingress Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_identity",
+    "content_identity",
+    "storage",
+    "schema_identity",
+    "serialization_identity",
+    "provenance",
+    "admission_boundary",
+    "custody",
+    "time",
+    "controls",
+    "evidence_restrictions",
+    "authorization_posture"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "source_identity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "content_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "value"
+      ],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "const": "sha512"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^sha512:[0-9a-f]{128}$"
+        }
+      }
+    },
+    "storage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "locator",
+        "availability"
+      ],
+      "properties": {
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "availability": {
+          "type": "string",
+          "enum": [
+            "KNOWN_AVAILABLE",
+            "KNOWN_RESTRICTED",
+            "KNOWN_UNAVAILABLE",
+            "UNRESOLVED",
+            "ABSENT"
+          ]
+        }
+      }
+    },
+    "schema_identity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "serialization_identity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin_reference",
+        "parent_references",
+        "derivation_event"
+      ],
+      "properties": {
+        "origin_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parent_references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "derivation_event": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "admission_boundary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "custody": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authorization_posture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attestation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "identity",
+        "mechanism"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "VERIFIED",
+            "FAILED",
+            "ABSENT",
+            "UNRESOLVED"
+          ]
+        },
+        "identity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mechanism": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
