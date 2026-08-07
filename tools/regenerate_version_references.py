@@ -109,16 +109,10 @@ def main():
         text=True
     ).strip()
 
-    parent = subprocess.check_output(
-        ["git", "-C", str(ROOT), "rev-parse", "HEAD"],
-        text=True
-    ).strip()
-
     inventory = {
         "schema_version": "1.0",
         "native_version": VERSION,
         "source_branch": branch,
-        "source_parent_commit": parent,
         "scope": (
             "repository-wide textual version references "
             "for v39/v40/v41 families"
