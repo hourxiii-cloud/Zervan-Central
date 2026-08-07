@@ -62,6 +62,13 @@ RINGS = [
         "tests/test_goblin_signal.py",
     ),
 
+    (
+        "R3-I",
+        "Hydration Request / Release",
+        "tools/validate_hydration.py",
+        "tests/test_hydration.py",
+    ),
+
 ]
 
 print()
