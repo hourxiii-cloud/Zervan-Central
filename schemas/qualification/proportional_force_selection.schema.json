@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/qualification/proportional_force_selection.schema.json",
+  "title": "Zervan R3-F Proportional Force Selection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "proportional_force_selection_id",
+    "object_id",
+    "capability_mission_request_reference",
+    "active_question",
+    "unresolved_signal_profile",
+    "territory_complexity",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "cartography_reference",
+    "stick_reference",
+    "selection_basis",
+    "selected_scale",
+    "selected_capability_class",
+    "selected_capability_allocation",
+    "alternatives_considered",
+    "rejected_larger_force_alternatives",
+    "escalation_conditions",
+    "deescalation_conditions",
+    "toc_reference",
+    "governance_reference",
+    "authorization_reference",
+    "provenance_route",
+    "selected_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "proportional_force_selection_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "capability_mission_request_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unresolved_signal_profile": {
+      "type": "string",
+      "enum": [
+        "FAINT_LOCALIZED",
+        "SPLIT_PLAUSIBLE_SOURCES",
+        "DISTRIBUTED_RECURSIVE_SCAR",
+        "ROOM_COMPLEXITY",
+        "OTHER_BOUNDED"
+      ]
+    },
+    "territory_complexity": {
+      "type": "string",
+      "enum": [
+        "SMALL",
+        "MEDIUM",
+        "LARGE_DISTRIBUTED",
+        "NOT_PRIMARY",
+        "UNRESOLVED"
+      ]
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "selected_scale": {
+      "type": "string",
+      "enum": [
+        "SINGLE",
+        "SIGNAL_OR_INTEL",
+        "TEAM",
+        "PLATOON"
+      ]
+    },
+    "selected_capability_class": {
+      "type": "string",
+      "enum": [
+        "GOBLIN",
+        "GOBLIN_SIGNAL",
+        "INTEL_SQUAD",
+        "GOBLIN_TEAM",
+        "GOBLIN_PLATOON"
+      ]
+    },
+    "selected_capability_allocation": {
+      "type": [
+        "integer",
+        "string",
+        "object"
+      ],
+      "minimum": 1
+    },
+    "alternatives_considered": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "rejected_larger_force_alternatives": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "escalation_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deescalation_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "toc_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "selected_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

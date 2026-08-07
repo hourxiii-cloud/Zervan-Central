@@ -2723,6 +2723,24 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/qualification/PROPORTIONAL_FORCE_QUALIFICATION_SCALE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/qualification/PROPORTIONAL_FORCE_QUALIFICATION_SCALE.md",
+      "line": 69,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/qualification/PROPORTIONAL_FORCE_QUALIFICATION_SCALE.md",
+      "line": 124,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/qualification/QUALIFICATION_RECORD_DISPOSITION.md",
       "line": 5,
       "token": "vTemporal.41.0",

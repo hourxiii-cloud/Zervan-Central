@@ -41,6 +41,13 @@ RINGS = [
         "tests/test_capability_mission.py",
     ),
 
+    (
+        "R3-F",
+        "Proportional Force / Qualification Scale",
+        "tools/validate_proportional_force.py",
+        "tests/test_proportional_force.py",
+    ),
+
 ]
 
 print()
