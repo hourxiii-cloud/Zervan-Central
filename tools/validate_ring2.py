@@ -25,6 +25,12 @@ RINGS = [
         "tools/validate_terrain_territory.py",
         "tests/test_terrain_territory.py",
     ),
+    (
+        "R2-D",
+        "Bounded Zone",
+        "tools/validate_bounded_zone.py",
+        "tests/test_bounded_zone.py",
+    ),
 ]
 
 print()

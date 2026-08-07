@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "563572b8109cc326bb36945819a6fa24d8a19f0d",
+  "source_parent_commit": "5bc829d56505385d8c0da65a7033c265a3efd8a7",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2518,6 +2518,18 @@
       "line": 6049,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/geography/BOUNDED_ZONE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/geography/BOUNDED_ZONE.md",
+      "line": 94,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "contracts/geography/TERRAIN_TERRITORY.md",
