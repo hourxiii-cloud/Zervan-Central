@@ -19,6 +19,12 @@ RINGS = [
         "tools/validate_origin_establishment_object_binding.py",
         "tests/test_origin_establishment_object_binding.py",
     ),
+    (
+        "R2-C",
+        "Terrain / Territory",
+        "tools/validate_terrain_territory.py",
+        "tests/test_terrain_territory.py",
+    ),
 ]
 
 print()

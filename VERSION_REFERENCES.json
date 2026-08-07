@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "b474069318e38817c5008ae134ad64bc3b36d488",
+  "source_parent_commit": "563572b8109cc326bb36945819a6fa24d8a19f0d",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2518,6 +2518,12 @@
       "line": 6049,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/geography/TERRAIN_TERRITORY.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "contracts/identity/IDENTITY_INTEGRITY_PROVENANCE.md",
