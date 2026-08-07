@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "cd2c19b3f6ad402f8ad716169666c54321120e9a",
+  "source_parent_commit": "b474069318e38817c5008ae134ad64bc3b36d488",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2582,6 +2582,18 @@
     {
       "path": "contracts/object/CANONICAL_ROOM_OBJECT_IDENTITY_SINGULARITY.md",
       "line": 116,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/object/ORIGIN_ESTABLISHMENT_OBJECT_BINDING.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/object/ORIGIN_ESTABLISHMENT_OBJECT_BINDING.md",
+      "line": 41,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },

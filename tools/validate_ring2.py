@@ -13,6 +13,12 @@ RINGS = [
         "tools/validate_canonical_room_object_identity.py",
         "tests/test_canonical_room_object_identity.py",
     ),
+    (
+        "R2-B",
+        "Origin Establishment / Object Binding",
+        "tools/validate_origin_establishment_object_binding.py",
+        "tests/test_origin_establishment_object_binding.py",
+    ),
 ]
 
 print()
@@ -37,10 +43,14 @@ if ring1.returncode != 0:
     print("  Ring 1 substrate: FAIL")
 
     if ring1.stdout.strip():
-        print(ring1.stdout.rstrip())
+        print(
+            ring1.stdout.rstrip()
+        )
 
     if ring1.stderr.strip():
-        print(ring1.stderr.rstrip())
+        print(
+            ring1.stderr.rstrip()
+        )
 
     print()
     print("RING 2 RESULT: FAIL")

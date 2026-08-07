@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/object/origin_establishment_receipt.schema.json",
+  "title": "Zervan R2-B Origin Establishment Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "establishment_receipt_id",
+    "ingress_envelope_reference",
+    "genesis_manifest_reference",
+    "object_id",
+    "initial_status",
+    "final_status",
+    "duplicate_check",
+    "prerequisite_checks",
+    "authorization_reference",
+    "human_gate",
+    "provenance_route",
+    "decided_at",
+    "decision_reason"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "establishment_receipt_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "ingress_envelope_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "genesis_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "initial_status": {
+      "type": "string",
+      "const": "PROPOSED"
+    },
+    "final_status": {
+      "type": "string",
+      "enum": [
+        "ESTABLISHED",
+        "REJECTED"
+      ]
+    },
+    "duplicate_check": {
+      "type": "string",
+      "enum": [
+        "CLEAR",
+        "EXISTING_OBJECT",
+        "UNRESOLVED"
+      ]
+    },
+    "prerequisite_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ingress_present",
+        "content_identity_valid",
+        "genesis_present",
+        "ingress_reference_match",
+        "content_identity_match",
+        "provenance_continuity",
+        "object_identity_match",
+        "authorization_resolved"
+      ],
+      "properties": {
+        "ingress_present": {
+          "type": "boolean"
+        },
+        "content_identity_valid": {
+          "type": "boolean"
+        },
+        "genesis_present": {
+          "type": "boolean"
+        },
+        "ingress_reference_match": {
+          "type": "boolean"
+        },
+        "content_identity_match": {
+          "type": "boolean"
+        },
+        "provenance_continuity": {
+          "type": "boolean"
+        },
+        "object_identity_match": {
+          "type": "boolean"
+        },
+        "authorization_resolved": {
+          "type": "boolean"
+        }
+      }
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reference"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "REQUIRED_SATISFIED",
+            "NOT_REQUIRED",
+            "UNRESOLVED"
+          ]
+        },
+        "reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "decided_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decision_reason": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
