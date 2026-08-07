@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/qualification/goblin_signal_event.schema.json",
+  "title": "Zervan R3-H Goblin Signal Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "goblin_signal_event_id",
+    "object_id",
+    "event_class",
+    "event_subtype",
+    "source_record_type",
+    "source_record_reference",
+    "source_component",
+    "event_subject",
+    "prior_state_reference",
+    "resulting_state_reference",
+    "zone_references",
+    "space_references",
+    "cartography_reference",
+    "stick_reference",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "propagation_scope",
+    "intended_recipients",
+    "delivery_state",
+    "sequence_coordinate",
+    "provenance_route",
+    "emitted_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "goblin_signal_event_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "event_class": {
+      "type": "string",
+      "enum": [
+        "ROOM_EVENT",
+        "DISTURBANCE",
+        "QUALIFICATION_CHANGE",
+        "OCCUPANCY_CHANGE",
+        "BRANCH_OR_ADJOINING_OBJECT_SIGNAL",
+        "CAPABILITY_RETURN_NOTIFICATION"
+      ]
+    },
+    "event_subtype": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_record_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_record_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_component": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_subject": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "prior_state_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resulting_state_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zone_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "space_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "cartography_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "propagation_scope": {
+      "type": "string",
+      "enum": [
+        "LOCAL",
+        "ROOM",
+        "FORMATION",
+        "FAMILY",
+        "CONTROL_PLANE"
+      ]
+    },
+    "intended_recipients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "delivery_state": {
+      "type": "string",
+      "enum": [
+        "EMITTED",
+        "DELIVERED",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "sequence_coordinate": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "emitted_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

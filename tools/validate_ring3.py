@@ -55,6 +55,13 @@ RINGS = [
         "tests/test_formation_selection.py",
     ),
 
+    (
+        "R3-H",
+        "Goblin Signal / Room Event Propagation",
+        "tools/validate_goblin_signal.py",
+        "tests/test_goblin_signal.py",
+    ),
+
 ]
 
 print()
