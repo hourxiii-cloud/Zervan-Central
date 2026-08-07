@@ -218,6 +218,10 @@ def validate():
         encoding="utf-8"
     )
 
+    normalized_contract_text = " ".join(
+        contract_text.split()
+    )
+
     locks = [
         "Analysis produces understanding.",
         "Cartography preserves understanding as navigable geometry without cloning the object.",
@@ -240,7 +244,11 @@ def validate():
     ]
 
     for lock in locks:
-        if lock not in contract_text:
+        normalized_lock = " ".join(
+            lock.split()
+        )
+
+        if normalized_lock not in normalized_contract_text:
             errors.append(
                 f"missing R2-H lock: {lock}"
             )
