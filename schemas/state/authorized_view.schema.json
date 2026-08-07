@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/state/authorized_view.schema.json",
+  "title": "Zervan R1-E Authorized View",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_state_root",
+    "authorization_reference",
+    "view_scope",
+    "projection",
+    "restrictions",
+    "created_at",
+    "authorized_view_root"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "source_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "view_scope": {
+      "type": "object"
+    },
+    "projection": {
+      "type": "object"
+    },
+    "restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    }
+  }
+}

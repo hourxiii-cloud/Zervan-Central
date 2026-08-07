@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/state/state_pointer.schema.json",
+  "title": "Zervan R1-E State Pointer",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "active_manifest_reference",
+    "active_state_root",
+    "state_sequence",
+    "prior_state_root",
+    "updated_at",
+    "mutation_reason",
+    "authorization_reference",
+    "provenance_route"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "active_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "state_sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "prior_state_root": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mutation_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
