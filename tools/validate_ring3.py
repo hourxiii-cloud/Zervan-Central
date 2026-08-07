@@ -13,6 +13,13 @@ RINGS = [
         "tools/validate_qualification_request.py",
         "tests/test_qualification_request.py",
     ),
+    (
+        "R3-B",
+        "Qualification Record / Disposition",
+        "tools/validate_qualification_record.py",
+        "tests/test_qualification_record.py",
+    ),
+
 ]
 
 print()

@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/qualification/qualification_record.schema.json",
+  "title": "Zervan R3-B Qualification Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "qualification_record_id",
+    "qualification_request_reference",
+    "object_id",
+    "provisional_room_id",
+    "origin_reference",
+    "ingress_reference",
+    "qualification_mission",
+    "active_question",
+    "qualification_lead",
+    "participating_capabilities",
+    "occupied_zone_id",
+    "occupied_space_id",
+    "included_evidence",
+    "excluded_evidence",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "observed_geometry",
+    "cartographic_change_references",
+    "provenance_anchors",
+    "uncertainty_frontiers",
+    "unresolved_contradictions",
+    "restricted_or_inaccessible_surfaces",
+    "adjoining_object_candidates",
+    "distinct_object_result",
+    "recommended_formation_or_next_reconnaissance_action",
+    "qualification_disposition",
+    "disposition_basis",
+    "return_coordinates",
+    "replay_route",
+    "provenance_route",
+    "completed_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "qualification_record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "qualification_request_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "provisional_room_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ingress_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualification_mission": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualification_lead": {
+      "type": "string",
+      "minLength": 1
+    },
+    "participating_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "occupied_zone_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "occupied_space_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "included_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "excluded_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "observed_geometry": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "cartographic_change_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "provenance_anchors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "uncertainty_frontiers": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "unresolved_contradictions": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "restricted_or_inaccessible_surfaces": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "adjoining_object_candidates": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "distinct_object_result": {
+      "type": "string",
+      "enum": [
+        "SAME_OBJECT",
+        "DISTINCT_OBJECT",
+        "UNRESOLVED"
+      ]
+    },
+    "recommended_formation_or_next_reconnaissance_action": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "qualification_disposition": {
+      "type": "string",
+      "enum": [
+        "QUALIFIED",
+        "PROVISIONAL",
+        "REJECTED",
+        "DEGRADED"
+      ]
+    },
+    "disposition_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "return_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "replay_route": {
+      "type": [
+        "string",
+        "object",
+        "array"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
