@@ -37,6 +37,13 @@ RINGS = [
         "tools/validate_bounded_space.py",
         "tests/test_bounded_space.py",
     ),
+    (
+        "R2-F",
+        "Perspective / Representation Transform",
+        "tools/validate_representation_transform.py",
+        "tests/test_representation_transform.py",
+    ),
+
 ]
 
 print()
