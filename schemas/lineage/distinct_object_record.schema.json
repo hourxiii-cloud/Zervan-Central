@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/lineage/distinct_object_record.schema.json",
+  "title": "Zervan R1-F Distinct Object Determination",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_lineage_reference",
+    "evidence_of_distinctness",
+    "relationship_to_source",
+    "shared_provenance",
+    "non_shared_provenance",
+    "independent_boundary",
+    "origin_route",
+    "object_geometry",
+    "passageway_conditions",
+    "contamination_controls",
+    "return_route",
+    "determination",
+    "authorization_reference"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "source_lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_of_distinctness": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "relationship_to_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shared_provenance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "non_shared_provenance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "independent_boundary": {
+      "type": "object"
+    },
+    "origin_route": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "object_geometry": {
+      "type": "object"
+    },
+    "passageway_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contamination_controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "return_route": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "determination": {
+      "type": "string",
+      "enum": [
+        "SAME_OBJECT",
+        "DISTINCT_OBJECT",
+        "UNRESOLVED"
+      ]
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

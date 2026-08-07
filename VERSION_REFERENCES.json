@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "5bbd262798f69df9c752b6df04b09daf5fe417ae",
+  "source_parent_commit": "c995e8dd238bd16e19a594dc61bbcbf4f6df272c",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2524,6 +2524,42 @@
       "line": 5,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/lineage/REVISION_BRANCH_MERGE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/lineage/REVISION_BRANCH_MERGE.md",
+      "line": 372,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/lineage/REVISION_BRANCH_MERGE.md",
+      "line": 374,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/lineage/REVISION_BRANCH_MERGE.md",
+      "line": 383,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/lineage/REVISION_BRANCH_MERGE.md",
+      "line": 391,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/lineage/REVISION_BRANCH_MERGE.md",
+      "line": 393,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "contracts/manifest/MANIFEST_ARCHITECTURE.md",
