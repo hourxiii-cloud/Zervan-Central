@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "7f5c39ca301557bbc6b360fef375ae5952f084b3",
+  "source_parent_commit": "73e16fea04548be753dc44cd9ce6b80becbd404a",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2564,6 +2564,18 @@
     {
       "path": "contracts/geography/ORIENTATION_COORDINATES.md",
       "line": 115,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/geography/PASSAGEWAY_DISTINCT_OBJECT_CONTACT.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/geography/PASSAGEWAY_DISTINCT_OBJECT_CONTACT.md",
+      "line": 146,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },

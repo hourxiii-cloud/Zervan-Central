@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/geography/passageway_record.schema.json",
+  "title": "Zervan R2-J Passageway Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "passageway_id",
+    "source_object_id",
+    "target_object_id",
+    "distinct_object_determination_reference",
+    "distinct_object_result",
+    "relationship_to_source",
+    "source_origin_reference",
+    "target_origin_reference",
+    "source_cartography_reference",
+    "target_cartography_reference",
+    "source_stick_reference",
+    "target_stick_reference",
+    "shared_provenance",
+    "non_shared_provenance",
+    "evidence_of_distinctness_references",
+    "passageway_conditions",
+    "contamination_controls",
+    "return_route",
+    "authorization_reference",
+    "human_gate_reference",
+    "passageway_state",
+    "provenance_route",
+    "recorded_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "passageway_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "source_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "target_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "distinct_object_determination_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "distinct_object_result": {
+      "type": "string",
+      "enum": [
+        "SAME_OBJECT",
+        "DISTINCT_OBJECT",
+        "UNRESOLVED"
+      ]
+    },
+    "relationship_to_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_origin_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_origin_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_stick_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_stick_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "shared_provenance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "non_shared_provenance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_of_distinctness_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "passageway_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contamination_controls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "return_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "passageway_state": {
+      "type": "string",
+      "enum": [
+        "PROPOSED",
+        "ESTABLISHED",
+        "BLOCKED"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -65,6 +65,13 @@ RINGS = [
         "tests/test_stick_contact_continuity.py",
     ),
 
+    (
+        "R2-J",
+        "Passageways / Distinct-Object Contact",
+        "tools/validate_passageway_distinct_object_contact.py",
+        "tests/test_passageway_distinct_object_contact.py",
+    ),
+
 ]
 
 print()
