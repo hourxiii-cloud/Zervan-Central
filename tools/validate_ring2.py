@@ -58,6 +58,13 @@ RINGS = [
         "tests/test_cartography.py",
     ),
 
+    (
+        "R2-I",
+        "Stick / Contact Continuity",
+        "tools/validate_stick_contact_continuity.py",
+        "tests/test_stick_contact_continuity.py",
+    ),
+
 ]
 
 print()
