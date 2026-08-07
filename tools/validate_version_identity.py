@@ -22,6 +22,7 @@ TEXT_SUFFIXES = {
 SCAN_EXCLUDE = {
     "VERSION_REFERENCES.json",
     "tools/validate_version_identity.py",
+    "tools/regenerate_version_references.py",
     "tests/test_version_identity.py",
 }
 

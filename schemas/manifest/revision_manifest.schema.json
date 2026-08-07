@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/manifest/revision_manifest.schema.json",
+  "title": "Zervan R1-D Revision Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "manifest_type",
+    "created_at",
+    "genesis_manifest_reference",
+    "predecessor_manifest_reference",
+    "revision_sequence",
+    "revision_reason",
+    "definition_change",
+    "provenance_route",
+    "authority_posture",
+    "human_gate_posture"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "manifest_type": {
+      "type": "string",
+      "const": "REVISION"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "genesis_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "predecessor_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision_sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "revision_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "definition_change": {
+      "type": "object"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_posture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gate_posture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manifest_content_identity": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    }
+  }
+}

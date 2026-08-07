@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/manifest/manifest_pointer.schema.json",
+  "title": "Zervan R1-D Manifest Pointer",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "genesis_manifest_reference",
+    "active_manifest_reference",
+    "revision_sequence",
+    "updated_at",
+    "mutation_reason",
+    "authorization_reference",
+    "prior_pointer_reference"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "genesis_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision_sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mutation_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prior_pointer_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

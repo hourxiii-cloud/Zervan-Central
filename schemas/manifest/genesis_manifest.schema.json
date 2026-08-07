@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/manifest/genesis_manifest.schema.json",
+  "title": "Zervan R1-D Genesis Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "manifest_type",
+    "created_at",
+    "origin_content_identity",
+    "ingress_envelope_reference",
+    "provenance_origin_reference",
+    "establishment_boundary",
+    "definition",
+    "authority_posture",
+    "human_gate_posture"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "manifest_type": {
+      "type": "string",
+      "const": "GENESIS"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "origin_content_identity": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "ingress_envelope_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_origin_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "establishment_boundary": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "definition": {
+      "type": "object"
+    },
+    "authority_posture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gate_posture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manifest_content_identity": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    }
+  }
+}
