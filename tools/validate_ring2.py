@@ -44,6 +44,13 @@ RINGS = [
         "tests/test_representation_transform.py",
     ),
 
+    (
+        "R2-G",
+        "Orientation / Coordinates",
+        "tools/validate_orientation_coordinates.py",
+        "tests/test_orientation_coordinates.py",
+    ),
+
 ]
 
 print()

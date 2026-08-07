@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/geography/orientation_record.schema.json",
+  "title": "Zervan R2-G Orientation Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "orientation_id",
+    "object_id",
+    "origin_reference",
+    "zone_id",
+    "territory_reference",
+    "space_id",
+    "representation_transform_reference",
+    "perspective_or_discipline",
+    "time_constraint",
+    "evidence_constraints",
+    "active_question",
+    "active_mission",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "current_coordinates",
+    "return_coordinates",
+    "resolution_state",
+    "provenance_route"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "orientation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "origin_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "zone_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "territory_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "space_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "representation_transform_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "perspective_or_discipline": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "time_constraint": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "evidence_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "active_question": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "active_mission": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "current_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "return_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "resolution_state": {
+      "type": "string",
+      "enum": [
+        "RESOLVED",
+        "PROVISIONAL",
+        "UNRESOLVED"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
