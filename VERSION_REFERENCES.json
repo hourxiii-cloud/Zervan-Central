@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "2a86714c0713432766ea2b049b3ae032d078ca7e",
+  "source_parent_commit": "b3e8c4735aee15d3cc1bb0ad401c7bfa277d1e1d",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2540,6 +2540,18 @@
     {
       "path": "contracts/geography/BOUNDED_ZONE.md",
       "line": 94,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/geography/CARTOGRAPHY.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/geography/CARTOGRAPHY.md",
+      "line": 106,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },

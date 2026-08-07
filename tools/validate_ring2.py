@@ -51,6 +51,13 @@ RINGS = [
         "tests/test_orientation_coordinates.py",
     ),
 
+    (
+        "R2-H",
+        "Analytical Cartography",
+        "tools/validate_cartography.py",
+        "tests/test_cartography.py",
+    ),
+
 ]
 
 print()
