@@ -271,9 +271,221 @@ Ambiguity without declaration is forbidden.
 
 ⸻
 
-9. Canonical Statement
+9. R1-A — Canonical Implementation Resolution
+
+Canonical implementation resolution and doctrinal authority are separate concerns.
+
+The active canonical implementation baseline is resolved from the repository's
+canonical branch, `main`, at a specific commit.
+
+Git `main` may:
+    • identify the active canonical implementation set
+    • bind implementation state to a concrete commit
+    • distribute and preserve canonical artifacts
+    • provide repository evidence for version and implementation resolution
+
+Git `main` may not:
+    • create doctrinal truth by repository placement alone
+    • elevate a lower authority-class artifact
+    • override Cathedral, DoctrineOps, or Doctrine
+    • resolve doctrinal contradiction merely because a file is committed
+
+A development, candidate, recovery, or feature branch is non-canonical until
+promotion is explicitly authorized and completed.
+
+Canonical implementation resolution therefore answers:
+
+    Which implementation state is active?
+
+Authority resolution answers:
+
+    Which artifact governs when assertions conflict?
+
+These questions MUST NOT be collapsed into one another.
+
+⸻
+
+10. Runtime Authority
+
+Runtime authority is a separate axis from artifact and doctrinal authority.
+
+Unless a valid governing state explicitly resolves otherwise:
+
+    Runtime Authority: NONE
+
+Runtime Authority: NONE means that an analytical runtime, engine, model,
+observer, module, capability, or conversation possesses no independent authority
+to authorize external action, canonical mutation, publication, certification,
+or downstream execution.
+
+Runtime Authority: NONE does not demote or nullify the authority class of
+Cathedral, DoctrineOps, Doctrine, Interfaces, Contracts, or other canonical
+artifacts.
+
+Artifact authority governs what is controlling truth within Zervan.
+
+Runtime authority governs what the executing runtime itself is permitted to do.
+
+The two MUST NOT be conflated.
+
+⸻
+
+11. Human Gate
+
+Human Gate is the controlled authorization boundary for governed transitions.
+
+Unless a valid governing state explicitly resolves otherwise:
+
+    Human Gate: ACTIVE
+
+Human Gate may approve or reject, when otherwise admissible:
+
+    • canonical mutation
+    • candidate promotion
+    • publication
+    • authorized downstream execution
+    • other explicitly Human-Gated transitions
+
+Human Gate does not:
+
+    • manufacture truth
+    • override Cathedral or DoctrineOps
+    • convert an inadmissible state into an admissible state
+    • erase provenance or unresolved contradiction
+    • replace PMC, MC, Audit, Registry, Governance, or other bounded functions
+    • itself constitute execution of an approved action
+
+A Human Gate decision MUST remain attributable as governance state.
+
+Approval and execution remain distinct events.
+
+⸻
+
+12. Mutation Authority
+
+Technical ability to modify a file, branch, repository, system, or artifact
+does not constitute authority to perform that mutation.
+
+Canonical mutation requires all of the following:
+
+    • an explicitly identified canonical target
+    • an admissible proposed change
+    • preserved provenance
+    • satisfied required validation
+    • explicit mutation authorization
+    • Human Gate approval where required
+    • a recorded resulting state
+
+Candidate and development surfaces may be modified within their authorized
+scope without becoming canonical.
+
+Mutation of a candidate does not constitute promotion.
+
+Mutation of a repository does not create doctrinal authority.
+
+Write capability is capability only.
+
+⸻
+
+13. Promotion Authority
+
+Promotion is a governed state transition from non-canonical candidate state to
+canonical implementation state.
+
+Promotion requires, at minimum:
+
+    • explicit candidate identity
+    • explicit canonical target
+    • provenance for the proposed change
+    • required validation evidence
+    • known conflicts and unresolved conditions surfaced
+    • applicable completeness or acceptance conditions satisfied
+    • Human Gate approval
+    • actual canonical repository mutation
+    • a verifiable resulting canonical state
+
+The following do not constitute promotion:
+
+    • candidate existence
+    • branch creation
+    • successful file write
+    • commit creation
+    • push capability
+    • pull-request creation
+    • test availability without test execution
+    • model confidence
+    • human intent that has not crossed the required gate
+    • naming an artifact "canonical"
+
+No system may report promotion as complete before the required transition
+evidence exists.
+
+⸻
+
+14. Default and Resolved State Precedence
+
+A default is an entry state or fallback state only.
+
+A default governs only while the relevant state is genuinely undefined.
+
+When a valid governing source explicitly resolves that state, the resolved
+state supersedes the default for its authorized scope and duration.
+
+Therefore:
+
+    DEFAULT < VALID RESOLVED STATE
+
+A runtime MUST NOT remain at, revert to, or reassert a default merely because
+the default is easier, more familiar, or globally available.
+
+A resolved state remains controlling until:
+
+    • its defined scope ends
+    • it is explicitly superseded
+    • it is revoked
+    • its validity condition fails
+    • a higher-authority governing state lawfully replaces it
+
+When the resolved state ceases to apply and no replacement exists, the
+appropriate default may again govern.
+
+Defaults may never be used to erase provenance, bypass a Human Gate, defeat an
+active contract, or silently reset established state.
+
+⸻
+
+15. R1-A Separation Invariant
+
+The following are independent control dimensions and MUST remain separately
+resolvable:
+
+    • canonical implementation resolution
+    • artifact / doctrinal authority
+    • runtime authority
+    • Human Gate state
+    • mutation authorization
+    • promotion authorization
+    • default state
+    • currently resolved state
+
+No outer capability may redefine, merge, or locally override these dimensions.
+
+No Room identity, branch semantics, merge semantics, state-root semantics,
+authorized-view semantics, or capability-local behavior is defined by R1-A.
+
+Those surfaces remain downstream and unresolved until their prerequisite
+contracts are established.
+
+⸻
+
+16. Canonical Statement
 
 Truth is not where it is stored.
 Truth is where authority is resolved.
+
+Implementation is not authority.
+Capability is not authorization.
+Approval is not execution.
+A default is not authority over a resolved state.
 
 — End of Document —
