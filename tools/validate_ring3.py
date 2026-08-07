@@ -27,6 +27,13 @@ RINGS = [
         "tests/test_room_lifecycle_readiness.py",
     ),
 
+    (
+        "R3-D",
+        "Occupancy Witness / Presence",
+        "tools/validate_occupancy_witness.py",
+        "tests/test_occupancy_witness.py",
+    ),
+
 ]
 
 print()

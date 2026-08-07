@@ -2687,6 +2687,18 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/qualification/OCCUPANCY_WITNESS_PRESENCE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/qualification/OCCUPANCY_WITNESS_PRESENCE.md",
+      "line": 119,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/qualification/QUALIFICATION_RECORD_DISPOSITION.md",
       "line": 5,
       "token": "vTemporal.41.0",
