@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/qualification/capability_mission_request.schema.json",
+  "title": "Zervan R3-E Capability Mission Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "capability_mission_request_id",
+    "object_id",
+    "occupancy_witness_reference",
+    "active_question",
+    "mission_objective",
+    "mission_justification",
+    "target_zone_id",
+    "target_space_id",
+    "orientation_reference",
+    "cartography_reference",
+    "stick_reference",
+    "territory_reference",
+    "permitted_movement",
+    "permitted_actions",
+    "prohibited_actions",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "evidence_obligations",
+    "expected_return_obligations",
+    "completion_conditions",
+    "governance_reference",
+    "toc_coordination_reference",
+    "authorization_reference",
+    "human_gate_reference",
+    "provenance_route",
+    "requested_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "capability_mission_request_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "occupancy_witness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mission_objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mission_justification": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "target_zone_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "target_space_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "orientation_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "territory_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "permitted_movement": {
+      "type": [
+        "string",
+        "object",
+        "array"
+      ]
+    },
+    "permitted_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "prohibited_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "expected_return_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "completion_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "toc_coordination_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "requested_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

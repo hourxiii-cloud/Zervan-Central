@@ -34,6 +34,13 @@ RINGS = [
         "tests/test_occupancy_witness.py",
     ),
 
+    (
+        "R3-E",
+        "Capability Mission Request / Return",
+        "tools/validate_capability_mission.py",
+        "tests/test_capability_mission.py",
+    ),
+
 ]
 
 print()

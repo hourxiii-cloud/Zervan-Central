@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/qualification/capability_return.schema.json",
+  "title": "Zervan R3-E Capability Return",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "capability_return_id",
+    "capability_mission_request_reference",
+    "object_id",
+    "occupancy_witness_reference",
+    "returning_capability",
+    "bounded_findings",
+    "evidence_references",
+    "observed_effects",
+    "unresolved_signals",
+    "discriminating_evidence_needs",
+    "cartographic_change_references",
+    "restriction_findings",
+    "continuity_state",
+    "stick_reference",
+    "final_coordinates",
+    "return_coordinates",
+    "completion_assessment",
+    "provenance_route",
+    "returned_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "capability_return_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "capability_mission_request_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "occupancy_witness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "returning_capability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bounded_findings": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "evidence_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "observed_effects": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "unresolved_signals": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "discriminating_evidence_needs": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "cartographic_change_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "restriction_findings": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "object"
+        ]
+      }
+    },
+    "continuity_state": {
+      "type": "string",
+      "enum": [
+        "CONTINUOUS",
+        "DEGRADED",
+        "BROKEN"
+      ]
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "final_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "return_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "completion_assessment": {
+      "type": "string",
+      "enum": [
+        "COMPLETED",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "returned_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
