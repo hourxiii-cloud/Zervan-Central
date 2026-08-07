@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/geography/bounded_space.schema.json",
+  "title": "Zervan R2-E Bounded Space",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "object_id",
+    "space_id",
+    "representation_binding_mode",
+    "zone_id",
+    "direct_transform_reference",
+    "field",
+    "discipline",
+    "question_set",
+    "controls",
+    "capabilities",
+    "evidence_ceiling",
+    "allowed_mission",
+    "prohibited_assumptions",
+    "rendering_obligations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "space_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "representation_binding_mode": {
+      "type": "string",
+      "enum": [
+        "ZONE",
+        "DIRECT_TRANSFORM"
+      ]
+    },
+    "zone_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "direct_transform_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "field": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "discipline": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "question_set": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "allowed_mission": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prohibited_assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rendering_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "representation_binding_mode": {
+            "const": "ZONE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "zone_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "direct_transform_reference": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "representation_binding_mode": {
+            "const": "DIRECT_TRANSFORM"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "zone_id": {
+            "type": "null"
+          },
+          "direct_transform_reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

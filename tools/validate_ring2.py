@@ -31,6 +31,12 @@ RINGS = [
         "tools/validate_bounded_zone.py",
         "tests/test_bounded_zone.py",
     ),
+    (
+        "R2-E",
+        "Bounded Space",
+        "tools/validate_bounded_space.py",
+        "tests/test_bounded_space.py",
+    ),
 ]
 
 print()
