@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "native_version": "vTemporal.41.0",
   "source_branch": "candidate/v41-complete",
-  "source_parent_commit": "c995e8dd238bd16e19a594dc61bbcbf4f6df272c",
+  "source_parent_commit": "cd2c19b3f6ad402f8ad716169666c54321120e9a",
   "scope": "repository-wide textual version references for v39/v40/v41 families",
   "excluded_control_files": [
     "VERSION_REFERENCES.json",
@@ -2570,6 +2570,18 @@
     {
       "path": "contracts/manifest/MANIFEST_ARCHITECTURE.md",
       "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/object/CANONICAL_ROOM_OBJECT_IDENTITY_SINGULARITY.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/object/CANONICAL_ROOM_OBJECT_IDENTITY_SINGULARITY.md",
+      "line": 116,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },

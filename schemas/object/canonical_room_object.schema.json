@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/object/canonical_room_object.schema.json",
+  "title": "Zervan R2-A Canonical Room Object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "object_id",
+    "genesis_manifest_reference",
+    "origin_content_identity",
+    "object_nonce",
+    "provenance_origin_reference",
+    "establishment_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "genesis_manifest_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin_content_identity": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_nonce": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_origin_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "establishment_status": {
+      "type": "string",
+      "enum": [
+        "PROPOSED",
+        "ESTABLISHED",
+        "REJECTED"
+      ]
+    }
+  }
+}
