@@ -20,6 +20,13 @@ RINGS = [
         "tests/test_qualification_record.py",
     ),
 
+    (
+        "R3-C",
+        "Room Lifecycle / Readiness",
+        "tools/validate_room_lifecycle_readiness.py",
+        "tests/test_room_lifecycle_readiness.py",
+    ),
+
 ]
 
 print()

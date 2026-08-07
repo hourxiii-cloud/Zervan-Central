@@ -2717,6 +2717,36 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
+      "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
+      "line": 55,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
+      "line": 115,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
+      "line": 305,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/state/STATE_ROOTS_AUTHORIZED_VIEWS.md",
       "line": 5,
       "token": "vTemporal.41.0",
