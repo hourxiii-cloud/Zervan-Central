@@ -33,15 +33,24 @@ RINGS = [
     ),
 ]
 
-optional = (
-    "R1-E",
-    "State Roots / Authorized Views",
-    "tools/validate_state_roots_authorized_views.py",
-    "tests/test_state_roots_authorized_views.py",
-)
+OPTIONAL_RINGS = [
+    (
+        "R1-E",
+        "State Roots / Authorized Views",
+        "tools/validate_state_roots_authorized_views.py",
+        "tests/test_state_roots_authorized_views.py",
+    ),
+    (
+        "R1-F",
+        "Revision / Branch / Merge",
+        "tools/validate_revision_branch_merge.py",
+        "tests/test_revision_branch_merge.py",
+    ),
+]
 
-if (ROOT / optional[2]).exists():
-    RINGS.append(optional)
+for optional in OPTIONAL_RINGS:
+    if (ROOT / optional[2]).exists():
+        RINGS.append(optional)
 
 results = []
 
