@@ -359,7 +359,7 @@ def validate():
     r6a = normalized(R6A)
 
     for lock in (
-        "DISTINCT_OBJECT_TEST",
+        "Distinct-Object Test",
         "A viewpoint change remains one Room.",
         "A genuinely distinct object receives independent identity",
     ):

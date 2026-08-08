@@ -670,7 +670,7 @@ def validate():
     )
 
     for lock in (
-        "FORMATION_REJUSTIFICATION",
+        "Formation Re-Justification",
         "Formation change != object change.",
         "Re-justification != reconstruction.",
     ):

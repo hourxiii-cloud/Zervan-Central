@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/ring6_aggregate_audit_closure.schema.json",
+  "title": "Zervan R6-P Ring 6 Aggregate Audit Closure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "closure_type",
+    "native_version",
+    "implementation_identity",
+    "ring",
+    "ring5_dependency_traversal",
+    "ring_sections",
+    "required_validation_families",
+    "family_coverage",
+    "named_validation_vectors",
+    "vector_coverage",
+    "required_audit_surfaces",
+    "audit_surface_states",
+    "failure_taxonomy",
+    "classified_failures",
+    "unclassified_failures",
+    "blocking_coverage_gaps",
+    "promotion_dependencies",
+    "fresh_reader_promoted_entry_state",
+    "authority_state",
+    "human_gate_state",
+    "promotion_state",
+    "closure_disposition",
+    "lineage",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "closure_type": {
+      "type": "string",
+      "const": "RING6_AGGREGATE_AUDIT_CLOSURE"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "type": "string",
+      "const": "v41 Complete"
+    },
+    "ring": {
+      "type": "string",
+      "const": "R6-P"
+    },
+    "ring5_dependency_traversal": {
+      "type": "string",
+      "const": "EXACTLY_ONCE"
+    },
+    "ring_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "VALIDATED",
+          "BLOCKED"
+        ]
+      }
+    },
+    "required_validation_families": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "family_coverage": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "named_validation_vectors": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "vector_coverage": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "required_audit_surfaces": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "audit_surface_states": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "IMPLEMENTED",
+          "VALIDATED",
+          "DEFERRED_TO_RING9",
+          "BLOCKED"
+        ]
+      }
+    },
+    "failure_taxonomy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "classified_failures": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "unclassified_failures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocking_coverage_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "promotion_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fresh_reader_promoted_entry_state": {
+      "type": "string",
+      "enum": [
+        "READY",
+        "DEFERRED_TO_PROMOTION"
+      ]
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "closure_disposition": {
+      "type": "string",
+      "enum": [
+        "VALIDATED_CANDIDATE",
+        "BLOCKED"
+      ]
+    },
+    "lineage": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

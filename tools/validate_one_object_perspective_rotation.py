@@ -729,7 +729,7 @@ def validate():
 
     r6a_locks = [
         "PERSPECTIVE_ROTATION",
-        "ONE_OBJECT_PERSPECTIVE_ROTATION",
+        "One-Object Perspective Rotation",
         "Turn the object.",
         "Do not clone the world.",
     ]

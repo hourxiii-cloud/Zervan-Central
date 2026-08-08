@@ -499,7 +499,7 @@ def validate():
     )
 
     for lock in (
-        "PREMATURE_ANALYSIS_REJECTION",
+        "Premature-Analysis Rejection",
         "Capability availability != qualification.",
         "Qualification precedes analysis.",
     ):

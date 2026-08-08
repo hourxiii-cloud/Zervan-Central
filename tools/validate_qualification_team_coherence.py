@@ -672,7 +672,7 @@ def validate():
     )
 
     for lock in (
-        "QUALIFICATION_TEAM_COHERENCE",
+        "Qualification-Team Coherence",
         "Independent observation != independent Room.",
         "Disagreement != integrity failure.",
     ):

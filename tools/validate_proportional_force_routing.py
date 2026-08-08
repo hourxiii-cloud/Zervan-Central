@@ -693,7 +693,7 @@ def validate():
     )
 
     for lock in (
-        "PROPORTIONAL_FORCE_ROUTING",
+        "Proportional-Force Routing",
         "Need determines force.",
         "Question determines mission.",
         "Evidence determines escalation.",

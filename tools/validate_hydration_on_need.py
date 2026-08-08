@@ -803,7 +803,7 @@ def validate():
     )
 
     for lock in (
-        "HYDRATION_ON_NEED",
+        "Hydration-On-Need",
         "Identity travels.",
         "Payload rests.",
         "Hydration remains mission-required.",

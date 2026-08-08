@@ -146,6 +146,12 @@ RINGS = [
         "tools/validate_lossless_collapse.py",
         "tests/test_lossless_collapse.py",
     ),
+    (
+        "R6-P",
+        "Aggregate Validation / Audit Closure",
+        "tools/validate_ring6_closure.py",
+        "tests/test_ring6_closure.py",
+    ),
 ]
 
 results = []
