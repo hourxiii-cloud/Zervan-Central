@@ -80,6 +80,12 @@ RINGS = [
         "tools/validate_proportional_force_routing.py",
         "tests/test_proportional_force_routing.py",
     ),
+    (
+        "R6-E",
+        "Qualification-Team Coherence",
+        "tools/validate_qualification_team_coherence.py",
+        "tests/test_qualification_team_coherence.py",
+    ),
 ]
 
 results = []

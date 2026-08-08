@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/qualification_team_coherence.schema.json",
+  "title": "Zervan R6-E Qualification Team Coherence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "object_id",
+    "qualification_record_reference",
+    "active_question",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "returns",
+    "correlation_summary",
+    "material_disagreements",
+    "discriminating_evidence_needs",
+    "aggregate_provenance_route",
+    "claim_ceiling_changed",
+    "formation_created",
+    "occupancy_mutated",
+    "lifecycle_mutated",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "QUALIFICATION_TEAM_COHERENCE"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "qualification_record_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "returns": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_return_id",
+          "capability_id",
+          "object_id",
+          "mission_reference",
+          "finding",
+          "evidence_references",
+          "unresolved_signals",
+          "restriction_findings",
+          "provenance_route"
+        ],
+        "properties": {
+          "capability_return_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "capability_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "mission_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "finding": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "unresolved_signals": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "restriction_findings": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "provenance_route": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "correlation_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "material_disagreements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "discriminating_evidence_needs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "aggregate_provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "claim_ceiling_changed": {
+      "type": "boolean",
+      "const": false
+    },
+    "formation_created": {
+      "type": "boolean",
+      "const": false
+    },
+    "occupancy_mutated": {
+      "type": "boolean",
+      "const": false
+    },
+    "lifecycle_mutated": {
+      "type": "boolean",
+      "const": false
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "COHERENT_WITH_AGREEMENT",
+        "COHERENT_WITH_DISAGREEMENT",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OBJECT_IDENTITY_DIVERGENCE",
+          "DUPLICATE_RETURN_ID",
+          "RETURN_PROVENANCE_MISSING",
+          "RETURN_ATTRIBUTION_MISSING",
+          "FALSE_CONSENSUS",
+          "DISAGREEMENT_ERASED",
+          "EVIDENCE_CEILING_INFLATED",
+          "FORMATION_INVENTED",
+          "OCCUPANCY_MUTATED",
+          "LIFECYCLE_MUTATED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}
