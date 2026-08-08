@@ -2993,6 +2993,42 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/runtime/RING4_RUNTIME_STATE_OPERATIONS_CLOSURE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/runtime/RING4_RUNTIME_STATE_OPERATIONS_CLOSURE.md",
+      "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/runtime/RING4_RUNTIME_STATE_OPERATIONS_CLOSURE.md",
+      "line": 419,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/runtime/RING4_RUNTIME_STATE_OPERATIONS_CLOSURE.md",
+      "line": 423,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/runtime/RING4_RUNTIME_STATE_OPERATIONS_CLOSURE.md",
+      "line": 455,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/runtime/RING4_RUNTIME_STATE_OPERATIONS_CLOSURE.md",
+      "line": 713,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/runtime/RUNTIME_STATE_CONTINUITY_CROSS_OPERATION_INTEGRITY.md",
       "line": 5,
       "token": "vTemporal.41.0",
@@ -3263,6 +3299,12 @@
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
+      "path": "schemas/runtime/ring4_closure_receipt.schema.json",
+      "line": 51,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "scripts/local_provenance_simulator.py",
       "line": 2,
       "token": "v39.0",
@@ -3283,6 +3325,12 @@
     {
       "path": "tests/test_ring3_closure.py",
       "line": 32,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_ring4_closure.py",
+      "line": 33,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
@@ -3565,6 +3613,30 @@
     {
       "path": "tools/validate_ring3_closure.py",
       "line": 524,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring4_closure.py",
+      "line": 162,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring4_closure.py",
+      "line": 500,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring4_closure.py",
+      "line": 535,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring4_closure.py",
+      "line": 596,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
