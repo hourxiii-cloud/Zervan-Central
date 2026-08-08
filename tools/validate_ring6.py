@@ -122,6 +122,12 @@ RINGS = [
         "tools/validate_orthogonal_transition.py",
         "tests/test_orthogonal_transition.py",
     ),
+    (
+        "R6-L",
+        "RBT-001 Recursive Butt Topology",
+        "tools/validate_rbt_001_recursive_butt_topology.py",
+        "tests/test_rbt_001_recursive_butt_topology.py",
+    ),
 ]
 
 results = []

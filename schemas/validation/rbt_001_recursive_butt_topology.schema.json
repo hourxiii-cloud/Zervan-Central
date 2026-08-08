@@ -1,0 +1,313 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/rbt_001_recursive_butt_topology.schema.json",
+  "title": "Zervan R6-L RBT-001 Recursive Butt Topology",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "carrier_id",
+    "carrier_name",
+    "primary_object_id",
+    "control_object_id",
+    "primary_origin_reference",
+    "primary_cartography_reference",
+    "primary_stick_reference",
+    "primary_boundary_before",
+    "primary_boundary_after",
+    "control_boundary_reference",
+    "primary_evidence_ceiling_before",
+    "primary_evidence_ceiling_after",
+    "signals",
+    "landing_witness_reference",
+    "landing_object_id",
+    "landing_coordinate",
+    "reflight_trigger_type",
+    "reflight_trigger_evidence",
+    "reflight_material_change_basis",
+    "prior_signal_state_reference",
+    "current_signal_state_reference",
+    "reflight_eligibility",
+    "returned_object_id",
+    "return_coordinate",
+    "returned_coordinate",
+    "reconstruction_used",
+    "control_state_absorbed",
+    "control_provenance_absorbed",
+    "lifecycle_mutated",
+    "occupancy_invented",
+    "formation_invented",
+    "full_payload_hydration_requested",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "RBT_001"
+    },
+    "carrier_id": {
+      "type": "string",
+      "const": "RBT-001"
+    },
+    "carrier_name": {
+      "type": "string",
+      "const": "Recursive Butt Topology"
+    },
+    "primary_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "control_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "primary_origin_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_cartography_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_stick_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_boundary_before": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primary_boundary_after": {
+      "type": "string",
+      "minLength": 1
+    },
+    "control_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primary_evidence_ceiling_before": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primary_evidence_ceiling_after": {
+      "type": "string",
+      "minLength": 1
+    },
+    "signals": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "signal_id",
+          "signal_source",
+          "signal_route",
+          "evidence_references",
+          "provenance_route"
+        ],
+        "properties": {
+          "signal_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "signal_source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "signal_route": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "provenance_route": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "landing_witness_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "landing_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "landing_coordinate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reflight_trigger_type": {
+      "type": "string",
+      "enum": [
+        "NEW_EVIDENCE",
+        "CONTRADICTION",
+        "CHANGED_QUESTION",
+        "CHANGED_EVIDENCE_CEILING",
+        "SIGNAL_SPLIT",
+        "SIGNAL_CONVERGENCE",
+        "CHALLENGED_CONCLUSION",
+        "NEWLY_REACHABLE_SURFACE",
+        "MATERIALLY_DIFFERENT_RENDERING_REQUESTED",
+        "ACKNOWLEDGMENT",
+        "REPETITION",
+        "CELEBRATION",
+        "AFFECT",
+        "CONVERSATIONAL_CONTINUATION",
+        "CAPABILITY_AVAILABLE"
+      ]
+    },
+    "reflight_trigger_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "reflight_material_change_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_signal_state_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_signal_state_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reflight_eligibility": {
+      "type": "string",
+      "enum": [
+        "ELIGIBLE",
+        "BLOCKED"
+      ]
+    },
+    "returned_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "return_coordinate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "returned_coordinate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reconstruction_used": {
+      "type": "boolean"
+    },
+    "control_state_absorbed": {
+      "type": "boolean"
+    },
+    "control_provenance_absorbed": {
+      "type": "boolean"
+    },
+    "lifecycle_mutated": {
+      "type": "boolean"
+    },
+    "occupancy_invented": {
+      "type": "boolean"
+    },
+    "formation_invented": {
+      "type": "boolean"
+    },
+    "full_payload_hydration_requested": {
+      "type": "boolean"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OBJECT_ISOLATION_FAILED",
+          "CONTROL_OBJECT_IDENTITY_COLLISION",
+          "SIGNAL_DIFFERENTIATION_LOST",
+          "SIGNAL_PROVENANCE_LOST",
+          "PRIMARY_BOUNDARY_CHANGED",
+          "CONTROL_BOUNDARY_ABSORBED",
+          "EVIDENCE_CEILING_CHANGED",
+          "LANDING_WITNESS_MISSING",
+          "LANDING_OBJECT_IDENTITY_CHANGED",
+          "LANDING_COORDINATE_MISSING",
+          "REFLIGHT_TRIGGER_INVALID",
+          "REFLIGHT_TRIGGER_EVIDENCE_MISSING",
+          "REFLIGHT_MATERIAL_CHANGE_MISSING",
+          "SIGNAL_STATE_REFERENCE_MISSING",
+          "RETURN_OBJECT_IDENTITY_CHANGED",
+          "RETURN_COORDINATE_CHANGED",
+          "RECONSTRUCTION_USED",
+          "STICK_NOT_PRESERVED",
+          "CONTROL_PROVENANCE_ABSORBED",
+          "LIFECYCLE_MUTATED",
+          "OCCUPANCY_INVENTED",
+          "FORMATION_INVENTED",
+          "FULL_PAYLOAD_HYDRATION_REQUESTED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}
