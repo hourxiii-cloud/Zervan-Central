@@ -2687,6 +2687,78 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 14,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 53,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 84,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 120,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 369,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 374,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 396,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 467,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 500,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 533,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+      "line": 577,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/qualification/CAPABILITY_MISSION_REQUEST_RETURN.md",
       "line": 5,
       "token": "vTemporal.41.0",
@@ -3293,6 +3365,12 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "schemas/pipeline/pipeline_integration_boundary_record.schema.json",
+      "line": 38,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "schemas/qualification/ring3_closure_receipt.schema.json",
       "line": 40,
       "token": "vTemporal.41.0",
@@ -3321,6 +3399,12 @@
       "line": 202,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_pipeline_integration_boundary.py",
+      "line": 32,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "tests/test_ring3_closure.py",
@@ -3603,6 +3687,30 @@
       "line": 24,
       "token": "v40",
       "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_pipeline_integration_boundary.py",
+      "line": 126,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_pipeline_integration_boundary.py",
+      "line": 383,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pipeline_integration_boundary.py",
+      "line": 405,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pipeline_integration_boundary.py",
+      "line": 480,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "tools/validate_ring3_closure.py",

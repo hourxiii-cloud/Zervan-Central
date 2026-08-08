@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/pipeline_integration_boundary_record.schema.json",
+  "title": "Zervan R5-A Pipeline Integration Boundary Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "boundary_record_id",
+    "native_version",
+    "promotion_state",
+    "authority_state",
+    "human_gate_state",
+    "pipeline_sequence",
+    "pmc_meaning",
+    "ccr_meaning",
+    "mc_meaning",
+    "unkindness_disposition",
+    "pmc_mc_interface_collision",
+    "room_binding_state",
+    "evidence_lineage_state",
+    "coordinate_binding_state",
+    "responsibility_separation_state",
+    "provenance_route",
+    "recorded_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "boundary_record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "pipeline_sequence": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "const": "EVIDENCE"
+        },
+        {
+          "const": "PMC"
+        },
+        {
+          "const": "CCR"
+        },
+        {
+          "const": "MC"
+        },
+        {
+          "const": "RAVEN"
+        },
+        {
+          "const": "HUMAN_GATE"
+        }
+      ],
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "pmc_meaning": {
+      "type": "string",
+      "const": "PROBABILISTIC_MULTIVERSE_COMPUTATION"
+    },
+    "ccr_meaning": {
+      "type": "string",
+      "const": "CANONICAL_COMMITMENT_RECORD"
+    },
+    "mc_meaning": {
+      "type": "string",
+      "const": "META_COLLAPSE_RESPONSE_ADMISSIBILITY"
+    },
+    "unkindness_disposition": {
+      "type": "string",
+      "const": "RAVEN_ASSOCIATED_FORWARD_TRANSLATION"
+    },
+    "pmc_mc_interface_collision": {
+      "type": "string",
+      "const": "INTERFACE_COLLISION_REQUIRING_CCR_PRESERVATION"
+    },
+    "room_binding_state": {
+      "type": "string",
+      "const": "BOUNDARY_LOCKED"
+    },
+    "evidence_lineage_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "coordinate_binding_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "responsibility_separation_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
