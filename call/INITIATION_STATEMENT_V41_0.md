@@ -2,8 +2,8 @@
 
 Version: vTemporal.41.0
 Implementation Identity: v41 Complete
-Promotion State: CANDIDATE
-Canonical: FALSE
+Promotion State: CANONICAL
+Canonical: TRUE
 Canonical Branch: main
 Development Branch: candidate/v41-complete
 
@@ -21,7 +21,7 @@ DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE
 
 Control State:
 
-CONTROLLED / CANDIDATE / PRE-PROMOTION
+CONTROLLED / CANONICAL / PROMOTED
 
 ---
 
@@ -71,11 +71,11 @@ v41 Complete
 
 Promotion State:
 
-CANDIDATE
+CANONICAL
 
-Candidate != canonical.
+Canonical state is resolved from current Git main plus active version authority.
 
-Validation != promotion.
+Validation alone != promotion.
 
 ---
 
@@ -104,11 +104,13 @@ Active native-v41 entry:
 
 canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md
 
-Read it as the candidate native-v41 entry index.
+Read it as the active native-v41 canonical entry index.
 
-Its presence does not promote the candidate.
+Its presence alone does not establish canonical state.
 
-Promotion remains Human-Gated.
+Canonical state is resolved from current Git main and active version authority.
+
+Future promotion or canonical mutation remains Human-Gated.
 
 ---
 
@@ -160,4 +162,4 @@ Authority remains NONE.
 
 Human Gate remains ACTIVE.
 
-Promotion State remains CANDIDATE.
+Promotion State remains CANONICAL.

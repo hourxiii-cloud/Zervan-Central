@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/post_promotion_fresh_reader.schema.json",
+  "title": "Zervan Post-Promotion Fresh Reader",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "ring",
+    "version",
+    "implementation_identity",
+    "active_branch",
+    "promotion_state",
+    "canonical",
+    "candidate_dependency",
+    "conversation_dependency",
+    "stored_memory_dependency",
+    "original_architect_dependency",
+    "historical_v39_dependency",
+    "historical_v40_dependency",
+    "authority_state",
+    "human_gate_state",
+    "disposition"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "POST_PROMOTION_FRESH_READER"
+    },
+    "ring": {
+      "const": "R8-J"
+    },
+    "version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "active_branch": {
+      "const": "main"
+    },
+    "promotion_state": {
+      "const": "CANONICAL"
+    },
+    "canonical": {
+      "const": true
+    },
+    "candidate_dependency": {
+      "const": false
+    },
+    "conversation_dependency": {
+      "const": false
+    },
+    "stored_memory_dependency": {
+      "const": false
+    },
+    "original_architect_dependency": {
+      "const": false
+    },
+    "historical_v39_dependency": {
+      "const": false
+    },
+    "historical_v40_dependency": {
+      "const": false
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "disposition": {
+      "const": "POST_PROMOTION_FRESH_READER_VALIDATED"
+    }
+  }
+}

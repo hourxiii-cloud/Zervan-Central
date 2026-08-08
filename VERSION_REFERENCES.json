@@ -684,25 +684,25 @@
     },
     {
       "path": "call/INITIATION_STATEMENT_V41_0.md",
-      "line": 147,
+      "line": 149,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "call/INITIATION_STATEMENT_V41_0.md",
-      "line": 149,
+      "line": 151,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "call/INITIATION_STATEMENT_V41_0.md",
-      "line": 151,
+      "line": 153,
       "token": "v39",
       "classification": "HISTORICAL_V39"
     },
     {
       "path": "call/INITIATION_STATEMENT_V41_0.md",
-      "line": 153,
+      "line": 155,
       "token": "v40",
       "classification": "HISTORICAL_V40"
     },
@@ -3905,6 +3905,84 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 21,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 25,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 26,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 69,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 71,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 116,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 116,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 132,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 223,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_FRESH_READER.md",
+      "line": 225,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/POST_PROMOTION_INTEGRITY_VERIFICATION.md",
+      "line": 45,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/promotion/PRE_PROMOTION_VERIFICATION.md",
       "line": 7,
       "token": "vTemporal.41.0",
@@ -6413,6 +6491,18 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "schemas/promotion/post_promotion_fresh_reader.schema.json",
+      "line": 37,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/post_promotion_fresh_reader.schema.json",
+      "line": 40,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "schemas/promotion/pre_promotion_verification.schema.json",
       "line": 44,
       "token": "vTemporal.41.0",
@@ -6711,6 +6801,30 @@
       "line": 32,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_post_promotion_fresh_reader.py",
+      "line": 50,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_post_promotion_fresh_reader.py",
+      "line": 132,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_post_promotion_fresh_reader.py",
+      "line": 132,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_post_promotion_fresh_reader.py",
+      "line": 132,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "tests/test_pre_promotion_verification.py",
@@ -7927,6 +8041,120 @@
     {
       "path": "tools/validate_pmc_ccr_mc_compatibility.py",
       "line": 840,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 77,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 94,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 95,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 116,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 116,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 116,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 138,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 138,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 138,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 198,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 199,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 232,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 233,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 290,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 293,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 314,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_post_promotion_fresh_reader.py",
+      "line": 314,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_post_promotion_integrity.py",
+      "line": 103,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_post_promotion_integrity.py",
+      "line": 160,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
