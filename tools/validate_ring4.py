@@ -62,6 +62,13 @@ RINGS = [
         "tests/test_scar_replay.py",
     ),
 
+    (
+        "R4-I",
+        "Runtime-State Continuity / Cross-Operation Integrity",
+        "tools/validate_runtime_state_continuity.py",
+        "tests/test_runtime_state_continuity.py",
+    ),
+
 ]
 
 print()

@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/runtime_state_continuity_record.schema.json",
+  "title": "Zervan R4-I Runtime-State Continuity Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "continuity_record_id",
+    "object_id",
+    "operation_chain",
+    "room_state_reference",
+    "representation_state_reference",
+    "execution_state_reference",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "cartography_reference",
+    "stick_reference",
+    "lineage_reference",
+    "provenance_route",
+    "continuity_status",
+    "blocking_reasons",
+    "governance_reference",
+    "authorization_reference",
+    "human_gate_reference",
+    "validated_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "continuity_record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "operation_chain": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "operation",
+          "artifact_reference",
+          "object_id",
+          "input_coordinate_reference",
+          "output_coordinate_reference",
+          "evidence_boundary_reference",
+          "evidence_ceiling_reference",
+          "lineage_reference",
+          "provenance_reference"
+        ],
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "R4-A",
+              "R4-B",
+              "R4-C",
+              "R4-D",
+              "R4-E",
+              "R4-F",
+              "R4-G",
+              "R4-H"
+            ]
+          },
+          "artifact_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "input_coordinate_reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output_coordinate_reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_boundary_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_ceiling_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lineage_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance_reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "room_state_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representation_state_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution_state_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "continuity_status": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
