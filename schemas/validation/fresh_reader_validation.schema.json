@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/fresh_reader_validation.schema.json",
+  "title": "Zervan R6-M Fresh Reader Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "repository_orientation_present",
+    "inventory_present",
+    "contracts_present",
+    "schemas_present",
+    "tools_present",
+    "tests_present",
+    "r6_registry_present",
+    "ring6_runner_present",
+    "candidate_version_identity_present",
+    "authority_none_present",
+    "human_gate_active_present",
+    "requires_v40_knowledge",
+    "requires_prior_conversation",
+    "requires_architect_interpretation",
+    "requires_emotional_discovery_history",
+    "v41_initiation_present",
+    "v41_canonical_entry_present",
+    "historical_v40_initiation_present",
+    "historical_v40_canonical_present",
+    "historical_substitution_used",
+    "candidate_readability",
+    "promoted_entry_state",
+    "promotion_dependency_references",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "FRESH_READER_TEST"
+    },
+    "repository_orientation_present": {
+      "type": "boolean"
+    },
+    "inventory_present": {
+      "type": "boolean"
+    },
+    "contracts_present": {
+      "type": "boolean"
+    },
+    "schemas_present": {
+      "type": "boolean"
+    },
+    "tools_present": {
+      "type": "boolean"
+    },
+    "tests_present": {
+      "type": "boolean"
+    },
+    "r6_registry_present": {
+      "type": "boolean"
+    },
+    "ring6_runner_present": {
+      "type": "boolean"
+    },
+    "candidate_version_identity_present": {
+      "type": "boolean"
+    },
+    "authority_none_present": {
+      "type": "boolean"
+    },
+    "human_gate_active_present": {
+      "type": "boolean"
+    },
+    "requires_v40_knowledge": {
+      "type": "boolean"
+    },
+    "requires_prior_conversation": {
+      "type": "boolean"
+    },
+    "requires_architect_interpretation": {
+      "type": "boolean"
+    },
+    "requires_emotional_discovery_history": {
+      "type": "boolean"
+    },
+    "v41_initiation_present": {
+      "type": "boolean"
+    },
+    "v41_canonical_entry_present": {
+      "type": "boolean"
+    },
+    "historical_v40_initiation_present": {
+      "type": "boolean"
+    },
+    "historical_v40_canonical_present": {
+      "type": "boolean"
+    },
+    "historical_substitution_used": {
+      "type": "boolean"
+    },
+    "candidate_readability": {
+      "type": "string",
+      "enum": [
+        "CANDIDATE_READABLE",
+        "BLOCKED"
+      ]
+    },
+    "promoted_entry_state": {
+      "type": "string",
+      "enum": [
+        "READY",
+        "DEFERRED_TO_PROMOTION",
+        "BLOCKED"
+      ]
+    },
+    "promotion_dependency_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALIDATED_CANDIDATE",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "REPOSITORY_ORIENTATION_MISSING",
+          "INVENTORY_MISSING",
+          "CONTRACT_SURFACE_MISSING",
+          "SCHEMA_SURFACE_MISSING",
+          "TOOL_SURFACE_MISSING",
+          "TEST_SURFACE_MISSING",
+          "R6_REGISTRY_MISSING",
+          "RING6_RUNNER_MISSING",
+          "CANDIDATE_VERSION_IDENTITY_MISSING",
+          "AUTHORITY_BOUNDARY_MISSING",
+          "HUMAN_GATE_BOUNDARY_MISSING",
+          "V40_KNOWLEDGE_REQUIRED",
+          "PRIOR_CONVERSATION_REQUIRED",
+          "ARCHITECT_INTERPRETATION_REQUIRED",
+          "EMOTIONAL_HISTORY_REQUIRED",
+          "HISTORICAL_VERSION_SUBSTITUTED",
+          "PROMOTED_ENTRY_FALSELY_CLAIMED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}

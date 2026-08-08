@@ -128,6 +128,12 @@ RINGS = [
         "tools/validate_rbt_001_recursive_butt_topology.py",
         "tests/test_rbt_001_recursive_butt_topology.py",
     ),
+    (
+        "R6-M",
+        "Fresh-Reader Validation",
+        "tools/validate_fresh_reader.py",
+        "tests/test_fresh_reader.py",
+    ),
 ]
 
 results = []
