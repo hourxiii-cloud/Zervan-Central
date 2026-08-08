@@ -116,6 +116,12 @@ RINGS = [
         "tools/validate_pmc_ccr_mc_compatibility.py",
         "tests/test_pmc_ccr_mc_compatibility.py",
     ),
+    (
+        "R6-K",
+        "Orthogonal Transition",
+        "tools/validate_orthogonal_transition.py",
+        "tests/test_orthogonal_transition.py",
+    ),
 ]
 
 results = []
