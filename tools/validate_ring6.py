@@ -104,6 +104,12 @@ RINGS = [
         "tools/validate_hydration_on_need.py",
         "tests/test_hydration_on_need.py",
     ),
+    (
+        "R6-I",
+        "Replay Fidelity",
+        "tools/validate_replay_fidelity.py",
+        "tests/test_replay_fidelity.py",
+    ),
 ]
 
 results = []
