@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/landing_witness.schema.json",
+  "title": "Zervan R4-C Landing Witness",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "landing_witness_id",
+    "object_id",
+    "occupant_capability",
+    "occupancy_witness_reference",
+    "mission_reference",
+    "formation_reference",
+    "zone_reference",
+    "space_reference",
+    "orientation_reference",
+    "cartography_reference",
+    "stick_reference",
+    "prior_question",
+    "prior_rendering_reference",
+    "unresolved_terrain_references",
+    "readiness_reference",
+    "restriction_constriction_references",
+    "collapse_boundary_references",
+    "active_payload_before_landing",
+    "payload_released_at_landing",
+    "active_payload_retained_after_landing",
+    "current_coordinates",
+    "return_coordinates",
+    "landing_basis",
+    "governance_reference",
+    "authorization_reference",
+    "human_gate_reference",
+    "provenance_route",
+    "landed_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "landing_witness_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "occupant_capability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "occupancy_witness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mission_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formation_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zone_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "space_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "orientation_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prior_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prior_rendering_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unresolved_terrain_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "readiness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "restriction_constriction_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "collapse_boundary_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "active_payload_before_landing": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "payload_released_at_landing": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "active_payload_retained_after_landing": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "current_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "return_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "landing_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "landed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

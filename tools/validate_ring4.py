@@ -20,6 +20,13 @@ RINGS = [
         "tests/test_collapse_boundary.py",
     ),
 
+    (
+        "R4-C",
+        "Landing Witness",
+        "tools/validate_landing_witness.py",
+        "tests/test_landing_witness.py",
+    ),
+
 ]
 
 print()
