@@ -74,6 +74,12 @@ RINGS = [
         "tools/validate_premature_analysis_rejection.py",
         "tests/test_premature_analysis_rejection.py",
     ),
+    (
+        "R6-D",
+        "Proportional-Force Routing",
+        "tools/validate_proportional_force_routing.py",
+        "tests/test_proportional_force_routing.py",
+    ),
 ]
 
 results = []

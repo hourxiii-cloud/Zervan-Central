@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/proportional_force_routing.schema.json",
+  "title": "Zervan R6-D Proportional Force Routing",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "object_id",
+    "active_question",
+    "signal_profile",
+    "territory_complexity",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "selected_scale",
+    "selected_capability_class",
+    "selected_capability_count",
+    "selection_basis",
+    "alternatives_considered",
+    "rejected_larger_force_alternatives",
+    "rejected_smaller_force_alternatives",
+    "escalation_conditions",
+    "deescalation_conditions",
+    "formation_reference",
+    "occupancy_created",
+    "active_lifecycle_created",
+    "execution_authorized",
+    "validation_disposition",
+    "failure_reasons",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "PROPORTIONAL_FORCE_ROUTING"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "active_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "signal_profile": {
+      "type": "string",
+      "enum": [
+        "FAINT_LOCALIZED",
+        "SPLIT_PLAUSIBLE_SOURCES",
+        "DISTRIBUTED_RECURSIVE_SCAR",
+        "LOCALIZED_RESOLVED",
+        "CUSTOM_BOUNDED"
+      ]
+    },
+    "territory_complexity": {
+      "type": "string",
+      "enum": [
+        "SMALL",
+        "MEDIUM",
+        "LARGE_DISTRIBUTED"
+      ]
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selected_scale": {
+      "type": "string",
+      "enum": [
+        "SINGLE",
+        "SIGNAL_OR_INTEL",
+        "TEAM",
+        "PLATOON"
+      ]
+    },
+    "selected_capability_class": {
+      "type": "string",
+      "enum": [
+        "GOBLIN",
+        "GOBLIN_SIGNAL",
+        "INTEL_SQUAD",
+        "GOBLIN_TEAM",
+        "GOBLIN_PLATOON"
+      ]
+    },
+    "selected_capability_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "selection_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alternatives_considered": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rejected_larger_force_alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rejected_smaller_force_alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "escalation_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deescalation_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "formation_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "occupancy_created": {
+      "type": "boolean",
+      "const": false
+    },
+    "active_lifecycle_created": {
+      "type": "boolean",
+      "const": false
+    },
+    "execution_authorized": {
+      "type": "boolean",
+      "const": false
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "REJECTED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OVERSIZED_FORCE_WITHOUT_JUSTIFICATION",
+          "UNDERSIZED_FORCE_FOR_DECLARED_MISSION",
+          "ESCALATION_WITHOUT_EVIDENCE",
+          "QUESTION_REWRITTEN_FOR_FORCE",
+          "EVIDENCE_BOUNDARY_EXCEEDED",
+          "EVIDENCE_CEILING_PROMOTED",
+          "FORCE_FORMATION_COLLAPSE",
+          "OCCUPANCY_INVENTED",
+          "ACTIVE_STATE_INVENTED",
+          "EXECUTION_AUTHORITY_INVENTED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
