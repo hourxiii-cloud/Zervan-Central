@@ -48,6 +48,13 @@ RINGS = [
         "tests/test_replay_envelope.py",
     ),
 
+    (
+        "R4-G",
+        "Scar Record",
+        "tools/validate_scar_record.py",
+        "tests/test_scar_record.py",
+    ),
+
 ]
 
 print()
