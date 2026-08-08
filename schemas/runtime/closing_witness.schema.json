@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/closing_witness.schema.json",
+  "title": "Zervan R4-E Closing Witness",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "closing_witness_id",
+    "object_id",
+    "landing_witness_reference",
+    "convergence_state_reference",
+    "closure_basis",
+    "preserved_question",
+    "representation_reference",
+    "zone_reference",
+    "space_reference",
+    "cartography_reference",
+    "stick_reference",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "unresolved_terrain_references",
+    "restriction_constriction_references",
+    "collapse_boundary_references",
+    "reflight_trigger_references",
+    "outstanding_analytical_obligations",
+    "preserved_lineage_reference",
+    "replay_coordinates",
+    "return_coordinates",
+    "current_rendering_reference",
+    "closure_disposition",
+    "blocking_reasons",
+    "audit_witness_reference",
+    "registry_reference",
+    "governance_reference",
+    "human_gate_reference",
+    "provenance_route",
+    "closed_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "closing_witness_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "landing_witness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "convergence_state_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "closure_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "preserved_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representation_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "zone_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "space_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "unresolved_terrain_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "restriction_constriction_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "collapse_boundary_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "reflight_trigger_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "outstanding_analytical_obligations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "preserved_lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replay_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "return_coordinates": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "current_rendering_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "closure_disposition": {
+      "type": "string",
+      "enum": [
+        "CLOSED",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "audit_witness_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "registry_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

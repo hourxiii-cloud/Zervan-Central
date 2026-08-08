@@ -34,6 +34,13 @@ RINGS = [
         "tests/test_reflight_trigger.py",
     ),
 
+    (
+        "R4-E",
+        "Post-Convergence Closure / Closing Witness",
+        "tools/validate_closing_witness.py",
+        "tests/test_closing_witness.py",
+    ),
+
 ]
 
 print()
