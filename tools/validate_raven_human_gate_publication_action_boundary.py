@@ -354,7 +354,7 @@ def validate():
     raven_locks = [
         "Authority Scope: REPORTING ONLY",
         "Generate actions that execute automatically",
-        "Raven is the system's voice — not its will.",
+        "Authority Scope: REPORTING ONLY (no governance, no gating)",
     ]
 
     for lock in raven_locks:
