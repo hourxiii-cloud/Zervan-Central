@@ -100,6 +100,12 @@ RINGS = [
         "tools/validate_pipeline_cross_stage_integrity.py",
         "tests/test_pipeline_cross_stage_integrity.py",
     ),
+    (
+        "R5-J",
+        "Ring 5 Existing Pipeline Integration Aggregate Closure",
+        "tools/validate_ring5_aggregate_closure.py",
+        "tests/test_ring5_aggregate_closure.py",
+    ),
 ]
 
 print()

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/ring5_aggregate_closure.schema.json",
+  "title": "Zervan R5-J Ring 5 Aggregate Closure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ring5_closure_id",
+    "native_version",
+    "implementation_identity",
+    "ring",
+    "completed_subrings",
+    "dependency_rings",
+    "pipeline_route",
+    "collision_states",
+    "ownership_separation_state",
+    "authority_separation_state",
+    "no_compression_out_state",
+    "closure_disposition",
+    "promotion_state",
+    "authority_state",
+    "human_gate_state",
+    "blocking_reasons",
+    "lineage_reference",
+    "provenance_route"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "ring5_closure_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "type": "string",
+      "const": "v41 Complete"
+    },
+    "ring": {
+      "type": "string",
+      "const": "R5-J"
+    },
+    "completed_subrings": {
+      "type": "array",
+      "const": [
+        "R5-A",
+        "R5-B",
+        "R5-C",
+        "R5-D",
+        "R5-E",
+        "R5-F",
+        "R5-G",
+        "R5-H",
+        "R5-I"
+      ]
+    },
+    "dependency_rings": {
+      "type": "array",
+      "const": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    "pipeline_route": {
+      "type": "array",
+      "const": [
+        "ROOM_BOUND_EVIDENCE",
+        "PMC_INTAKE",
+        "PMC",
+        "CCR",
+        "MC",
+        "RAVEN",
+        "HUMAN_GATE"
+      ]
+    },
+    "collision_states": {
+      "type": "array",
+      "const": [
+        "INTERFACE_COLLISION_REQUIRING_CCR_PRESERVATION",
+        "MC_EPHEMERALITY_LINEAGE_COLLISION"
+      ]
+    },
+    "ownership_separation_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "authority_separation_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "no_compression_out_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "closure_disposition": {
+      "type": "string",
+      "enum": [
+        "VALIDATED_CANDIDATE",
+        "BLOCKED"
+      ]
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
