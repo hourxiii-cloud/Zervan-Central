@@ -4043,6 +4043,24 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/promotion/PROMOTION_COMPLETION_RECEIPT.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_COMPLETION_RECEIPT.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_COMPLETION_RECEIPT.md",
+      "line": 100,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/promotion/PROMOTION_DECISION_CONTRACT.md",
       "line": 7,
       "token": "vTemporal.41.0",
@@ -6329,6 +6347,24 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "receipts/promotion/R8_K_PROMOTION_COMPLETION_RECEIPT.json",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R8_K_PROMOTION_COMPLETION_RECEIPT.json",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R8_K_PROMOTION_COMPLETION_RECEIPT.json",
+      "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "receipts/v39_0_load_receipt.md",
       "line": 1,
       "token": "v39.0",
@@ -6535,6 +6571,24 @@
     {
       "path": "schemas/promotion/promotion_candidate_binding.schema.json",
       "line": 49,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/promotion_completion_receipt.schema.json",
+      "line": 53,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/promotion_completion_receipt.schema.json",
+      "line": 56,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/promotion_completion_receipt.schema.json",
+      "line": 74,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
@@ -8197,6 +8251,30 @@
     {
       "path": "tools/validate_promotion_candidate_binding.py",
       "line": 143,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_promotion_completion_receipt.py",
+      "line": 125,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_promotion_completion_receipt.py",
+      "line": 146,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_promotion_completion_receipt.py",
+      "line": 147,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_promotion_completion_receipt.py",
+      "line": 153,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },

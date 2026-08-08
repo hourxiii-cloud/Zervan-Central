@@ -59,6 +59,12 @@ RINGS = [
         "tools/validate_post_promotion_fresh_reader.py",
         "tests/test_post_promotion_fresh_reader.py",
     ),
+    (
+        "R8-K",
+        "Promotion Completion Receipt",
+        "tools/validate_promotion_completion_receipt.py",
+        "tests/test_promotion_completion_receipt.py",
+    ),
 ]
 
 results = []
@@ -122,17 +128,18 @@ if failed:
     raise SystemExit(1)
 
 print("RING 8 RESULT: INSTANTIATED")
-print("CURRENT: R8-J PASS")
+print("CURRENT: R8-K PASS")
 print("R8-F: SKIPPED BY HUMAN DIRECTION")
 print("R8-G: PROMOTION EXECUTED")
 print("R8-H: CANONICAL TRANSITION COMPLETE")
 print("R8-I: POST-PROMOTION INTEGRITY VERIFIED")
 print("R8-J: POST-PROMOTION FRESH READER VALIDATED")
+print("R8-K: PROMOTION COMPLETED")
 print("R8-E Human Gate Authorization: GRANTED")
 print("Candidate preserved: TRUE")
 print("Canonical: TRUE")
 print("Authority: NONE")
 print("Human Gate: ACTIVE")
 print("Promotion State: CANONICAL")
-print("NEXT: R8-K Promotion Completion Receipt")
+print("NEXT: R8-L Aggregate Human Gate / Promotion Closure")
 raise SystemExit(0)
