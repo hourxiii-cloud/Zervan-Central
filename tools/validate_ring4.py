@@ -69,6 +69,13 @@ RINGS = [
         "tests/test_runtime_state_continuity.py",
     ),
 
+    (
+        "R4-J",
+        "Ring 4 Runtime State Operations Aggregate Closure",
+        "tools/validate_ring4_closure.py",
+        "tests/test_ring4_closure.py",
+    ),
+
 ]
 
 print()

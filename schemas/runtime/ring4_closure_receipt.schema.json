@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/ring4_closure_receipt.schema.json",
+  "title": "Zervan R4-J Ring 4 Closure Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ring4_closure_receipt_id",
+    "native_version",
+    "ring",
+    "promotion_state",
+    "authority_state",
+    "human_gate_state",
+    "ring1_dependency_state",
+    "ring2_dependency_state",
+    "ring3_dependency_state",
+    "hydration_handoff_state",
+    "component_states",
+    "tranche6_coverage_state",
+    "source_boundary_state",
+    "one_object_continuity_state",
+    "state_domain_separation_state",
+    "coordinate_continuity_state",
+    "lineage_continuity_state",
+    "evidence_boundary_continuity_state",
+    "evidence_ceiling_continuity_state",
+    "cartography_continuity_state",
+    "stick_continuity_state",
+    "provenance_continuity_state",
+    "responsibility_integrity_state",
+    "post_convergence_control_state",
+    "replay_fidelity_state",
+    "scar_integrity_state",
+    "failure_lock_state",
+    "closure_state",
+    "provenance_route",
+    "closed_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "ring4_closure_receipt_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "ring": {
+      "type": "string",
+      "const": "R4"
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "ring1_dependency_state": {
+      "type": "string",
+      "const": "PASS"
+    },
+    "ring2_dependency_state": {
+      "type": "string",
+      "const": "PASS"
+    },
+    "ring3_dependency_state": {
+      "type": "string",
+      "const": "PASS"
+    },
+    "hydration_handoff_state": {
+      "type": "string",
+      "const": "BOUND"
+    },
+    "component_states": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "R4-A",
+        "R4-B",
+        "R4-C",
+        "R4-D",
+        "R4-E",
+        "R4-F",
+        "R4-G",
+        "R4-H",
+        "R4-I"
+      ],
+      "properties": {
+        "R4-A": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-B": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-C": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-D": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-E": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-F": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-G": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-H": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R4-I": {
+          "type": "string",
+          "const": "PASS"
+        }
+      }
+    },
+    "tranche6_coverage_state": {
+      "type": "string",
+      "const": "COMPLETE"
+    },
+    "source_boundary_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "one_object_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "state_domain_separation_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "coordinate_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "lineage_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "evidence_boundary_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "evidence_ceiling_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "cartography_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "stick_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "provenance_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "responsibility_integrity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "post_convergence_control_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "replay_fidelity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "scar_integrity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "failure_lock_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "closure_state": {
+      "type": "string",
+      "const": "VALIDATED_CANDIDATE"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
