@@ -13,6 +13,13 @@ RINGS = [
         "tools/validate_restriction_constriction.py",
         "tests/test_restriction_constriction.py",
     ),
+    (
+        "R4-B",
+        "Collapse Boundary",
+        "tools/validate_collapse_boundary.py",
+        "tests/test_collapse_boundary.py",
+    ),
+
 ]
 
 print()

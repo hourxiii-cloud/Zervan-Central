@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/collapse_boundary.schema.json",
+  "title": "Zervan R4-B Collapse Boundary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "collapse_boundary_id",
+    "object_id",
+    "restriction_constriction_reference",
+    "source_representation_references",
+    "collapse_trigger",
+    "collapse_justification",
+    "governing_evidence_references",
+    "pre_collapse_possibilities",
+    "removed_possibilities",
+    "retained_possibilities",
+    "deferred_possibilities",
+    "surviving_uncertainty",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "preserved_invariants",
+    "newly_available_frontier",
+    "re_expansion_considerations",
+    "pre_collapse_state_reference",
+    "return_route",
+    "cartography_reference",
+    "stick_reference",
+    "provenance_anchors",
+    "governance_reference",
+    "authorization_reference",
+    "human_gate_reference",
+    "provenance_route",
+    "collapsed_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "collapse_boundary_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "restriction_constriction_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_representation_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "collapse_trigger": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "collapse_justification": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governing_evidence_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "pre_collapse_possibilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "removed_possibilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "retained_possibilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "deferred_possibilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "surviving_uncertainty": {
+      "type": [
+        "string",
+        "object",
+        "array"
+      ]
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "preserved_invariants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "newly_available_frontier": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "re_expansion_considerations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "pre_collapse_state_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "return_route": {
+      "type": [
+        "string",
+        "object",
+        "array"
+      ]
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_anchors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "collapsed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
