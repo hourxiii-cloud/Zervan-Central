@@ -1,11 +1,11 @@
 # VERSION_AUTHORITY — Native v41 Version Identity and Promotion
 
-Status: CONTROLLED CANDIDATE CONTRACT
+Status: CONTROLLED CANONICAL CONTRACT
 Ring: R1-B — Version Identity & Promotion
 Version Identity: vTemporal.41.0
 Implementation Identity: v41 Complete
-Promotion State: CANDIDATE
-Canonical: FALSE
+Promotion State: CANONICAL
+Canonical: TRUE
 Canonical Branch: `main`
 Development Branch: `candidate/v41-complete`
 Authority: NONE
@@ -72,7 +72,7 @@ The current native implementation identity is:
 
 Its current promotion state is:
 
-`CANDIDATE`
+`CANONICAL`
 
 Promotion MUST NOT manufacture a new version identifier merely because the same
 validated implementation moves from candidate state to canonical state.
@@ -142,6 +142,23 @@ Only after those conditions are satisfied may `/VERSION.json` on promoted
 and:
 
 `canonical = true`
+
+Those conditions have now been satisfied for native v41 through the explicit
+Human Gate decision and the R8-G fast-forward promotion of approved commit
+`2d1013304c6c13efd08fc3a9d7aed7804642cde2` to `main`.
+
+Current canonical state:
+
+- Version: `vTemporal.41.0`
+- Implementation Identity: `v41 Complete`
+- Promotion State: `CANONICAL`
+- Canonical: `TRUE`
+- Canonical Branch: `main`
+- Authority: `NONE`
+- Human Gate: `ACTIVE`
+
+Promotion did not create a new version identity and did not grant autonomous
+runtime authority.
 
 Promotion is not complete merely because a merge, push, commit, or file write
 is technically possible.

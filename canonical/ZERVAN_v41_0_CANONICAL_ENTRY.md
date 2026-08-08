@@ -1,10 +1,10 @@
 # Zervan v41 — Native Canonical Entry
 
-Status: CONTROLLED CANDIDATE ENTRY
+Status: CONTROLLED CANONICAL ENTRY
 Version: vTemporal.41.0
 Implementation Identity: v41 Complete
-Promotion State: CANDIDATE
-Canonical: FALSE
+Promotion State: CANONICAL
+Canonical: TRUE
 Canonical Branch: main
 Development Branch: candidate/v41-complete
 Authority: NONE
@@ -16,18 +16,24 @@ Human Gate: ACTIVE
 
 This file is the native-v41 repository entry surface.
 
-It identifies the implemented candidate architecture without duplicating the
+It identifies the implemented canonical architecture without duplicating the
 entire contract body.
 
 Canonical Entry is the name of the entry surface.
 
-Canonical Entry != canonical promotion.
+Canonical Entry != promotion authority by itself.
 
-While this file is carried on candidate/v41-complete:
+After explicit Human Gate approval and R8-G promotion to main:
 
-Promotion State = CANDIDATE
+Promotion State = CANONICAL
 
-Canonical = FALSE
+Canonical = TRUE
+
+The promoted implementation remains vTemporal.41.0.
+
+Authority remains NONE.
+
+Human Gate remains ACTIVE.
 
 ---
 

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/canonical_version_authority_transition.schema.json",
+  "title": "Zervan Canonical Version Authority Transition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "ring",
+    "version",
+    "implementation_identity",
+    "promotion_subject_commit",
+    "active_branch",
+    "promotion_state",
+    "canonical",
+    "canonical_branch",
+    "candidate_preserved",
+    "human_gate_authorization",
+    "authority_state",
+    "human_gate_state",
+    "external_runtime",
+    "external_action",
+    "system_population",
+    "disposition"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "CANONICAL_VERSION_AUTHORITY_TRANSITION"
+    },
+    "ring": {
+      "const": "R8-H"
+    },
+    "version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "promotion_subject_commit": {
+      "const": "2d1013304c6c13efd08fc3a9d7aed7804642cde2"
+    },
+    "active_branch": {
+      "const": "main"
+    },
+    "promotion_state": {
+      "const": "CANONICAL"
+    },
+    "canonical": {
+      "const": true
+    },
+    "canonical_branch": {
+      "const": "main"
+    },
+    "candidate_preserved": {
+      "const": true
+    },
+    "human_gate_authorization": {
+      "const": "GRANTED"
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "external_runtime": {
+      "const": "DISABLED"
+    },
+    "external_action": {
+      "const": "DISABLED"
+    },
+    "system_population": {
+      "const": "DISALLOWED"
+    },
+    "disposition": {
+      "const": "CANONICAL_TRANSITION_VALIDATED"
+    }
+  }
+}

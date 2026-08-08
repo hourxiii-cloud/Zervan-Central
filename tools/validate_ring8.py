@@ -41,6 +41,12 @@ RINGS = [
         "tools/validate_human_gate_authorization_receipt.py",
         "tests/test_human_gate_authorization_receipt.py",
     ),
+    (
+        "R8-H",
+        "Canonical / Version Authority Transition",
+        "tools/validate_canonical_version_authority_transition.py",
+        "tests/test_canonical_version_authority_transition.py",
+    ),
 ]
 
 results = []
@@ -104,10 +110,11 @@ if failed:
     raise SystemExit(1)
 
 print("RING 8 RESULT: INSTANTIATED")
-print("CURRENT: R8-E PASS")
-print("RING 8 STATE: WAITING_FOR_HUMAN_GATE")
-print("NEXT: explicit Human Gate decision")
-print("R8-F Promotion Execution Manifest: BLOCKED")
+print("CURRENT: R8-H PASS")
+print("R8-F: SKIPPED BY HUMAN DIRECTION")
+print("R8-G: PROMOTION EXECUTED")
+print("R8-E Human Gate Authorization: GRANTED")
+print("NEXT: R8-I Post-Promotion Integrity Verification")
 print("Pre-Promotion Verification: VERIFIED")
 print("Persistent candidate binding: NOT YET CREATED")
 print("Decision instance: NONE")

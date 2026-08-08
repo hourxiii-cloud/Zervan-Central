@@ -16,17 +16,19 @@ Implementation identity:
 
 This branch:
 
-`candidate/v41-complete`
+`main`
 
 Promotion state:
 
-`CANDIDATE`
+`CANONICAL`
 
 Canonical branch:
 
 `main`
 
-The candidate is not canonical merely because it is complete or validated.
+Native v41 is canonical because the explicit Human Gate-approved candidate was
+promoted to `main` and the resulting canonical state is independently
+resolvable from Git.
 
 ## Version Authority
 
@@ -95,7 +97,7 @@ Mode:
 
 Control State:
 
-`CONTROLLED / CANDIDATE / PRE-PROMOTION`
+`CONTROLLED / CANONICAL / PROMOTED`
 
 ## Validation
 
@@ -107,7 +109,7 @@ Ring 7 documentation / promotion validation is executed through:
 
 `python3 tools/validate_ring7.py`
 
-Validation success does not promote the candidate.
+Validation success alone does not create canonical promotion. Current canonical state derives from Human Gate-authorized promotion plus the resulting Git state on `main`.
 
 ## Documentation Responsibilities
 

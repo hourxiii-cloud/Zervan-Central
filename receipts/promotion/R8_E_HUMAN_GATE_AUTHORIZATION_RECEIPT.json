@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "record_type": "HUMAN_GATE_AUTHORIZATION_RECEIPT",
+  "ring": "R8-E",
+  "native_version": "vTemporal.41.0",
+  "implementation_identity": "v41 Complete",
+  "candidate_branch": "candidate/v41-complete",
+  "candidate_commit": "2d1013304c6c13efd08fc3a9d7aed7804642cde2",
+  "candidate_tree": "e0c04a16a3490ebfd1eb9c3b55c0aeaaba05fd82",
+  "target_branch": "main",
+  "binding_sha512": "a10866f56d588ba1e6cab70fc71d44cc895dd6e26ce0d5e3e276690d2f19c9833b7c61c95eb19003c5587ae17ab0e2e83e9813de652f7dfda0719f27b7f96f2a",
+  "decision": "APPROVE",
+  "authorization_state": "GRANTED",
+  "decision_actor": "human",
+  "decision_timestamp": "2026-08-08T05:39:00-04:00",
+  "decision_scope": "complete",
+  "rationale": "I approve",
+  "provenance": [
+    "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+    "contracts/promotion/RING8_HUMAN_GATE_PROMOTION_BOUNDARY.md",
+    "contracts/promotion/PROMOTION_DECISION_CONTRACT.md",
+    "contracts/promotion/PROMOTION_CANDIDATE_BINDING.md",
+    "contracts/promotion/PRE_PROMOTION_VERIFICATION.md"
+  ],
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "promotion_state": "CANDIDATE",
+  "promotion_executed": false,
+  "canonical": false,
+  "promoted": false,
+  "merged": false
+}
