@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/promotion_receipt.schema.json",
+  "title": "Zervan R7-L Promotion Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_type",
+    "ring",
+    "native_version",
+    "implementation_identity",
+    "stability_baseline",
+    "source_branch",
+    "target_branch",
+    "transition_state",
+    "stability_state",
+    "completeness_state",
+    "fresh_reader_state",
+    "aggregate_state",
+    "authority_state",
+    "human_gate_state",
+    "human_gate_authorization",
+    "promotion_state",
+    "promotion_readiness",
+    "promoted",
+    "canonical",
+    "merged",
+    "remaining_preconditions",
+    "disposition",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "receipt_type": {
+      "const": "PROMOTION_RECEIPT"
+    },
+    "ring": {
+      "const": "R7-L"
+    },
+    "native_version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "stability_baseline": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "source_branch": {
+      "const": "candidate/v41-complete"
+    },
+    "target_branch": {
+      "const": "main"
+    },
+    "transition_state": {
+      "const": "ACCOUNTED"
+    },
+    "stability_state": {
+      "const": "STABLE_BASELINE"
+    },
+    "completeness_state": {
+      "const": "COMPLETENESS_VALIDATED"
+    },
+    "fresh_reader_state": {
+      "const": "PENDING_R7_M"
+    },
+    "aggregate_state": {
+      "const": "PENDING_R7_N"
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "human_gate_authorization": {
+      "const": "NOT_GRANTED"
+    },
+    "promotion_state": {
+      "const": "CANDIDATE"
+    },
+    "promotion_readiness": {
+      "const": "PRE_AUTHORIZATION_READY"
+    },
+    "promoted": {
+      "const": false
+    },
+    "canonical": {
+      "const": false
+    },
+    "merged": {
+      "const": false
+    },
+    "remaining_preconditions": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "disposition": {
+      "const": "PRE_AUTHORIZATION_READY"
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

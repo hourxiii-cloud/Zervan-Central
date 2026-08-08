@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "PROMOTION_RECEIPT",
+  "ring": "R7-L",
+  "native_version": "vTemporal.41.0",
+  "implementation_identity": "v41 Complete",
+  "stability_baseline": "ae8dd9e22a34589f546f64ed452c0eee976cf299",
+  "source_branch": "candidate/v41-complete",
+  "target_branch": "main",
+  "transition_state": "ACCOUNTED",
+  "stability_state": "STABLE_BASELINE",
+  "completeness_state": "COMPLETENESS_VALIDATED",
+  "fresh_reader_state": "PENDING_R7_M",
+  "aggregate_state": "PENDING_R7_N",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "human_gate_authorization": "NOT_GRANTED",
+  "promotion_state": "CANDIDATE",
+  "promotion_readiness": "PRE_AUTHORIZATION_READY",
+  "promoted": false,
+  "canonical": false,
+  "merged": false,
+  "remaining_preconditions": [
+    "R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION",
+    "R7_N_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE",
+    "EXPLICIT_HUMAN_GATE_AUTHORIZATION_FOR_ACTUAL_PROMOTION"
+  ],
+  "disposition": "PRE_AUTHORIZATION_READY",
+  "provenance": [
+    "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+    "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+    "receipts/promotion/R7_J_STABILITY_RECEIPT.json",
+    "receipts/promotion/R7_K_COMPLETENESS_RECEIPT.json",
+    "VERSION",
+    "VERSION.json",
+    "VERSION_AUTHORITY.md"
+  ]
+}
