@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/representation_independence.schema.json",
+  "title": "Zervan R6-N Representation Independence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_family",
+    "canonical_primitive",
+    "canonical_object_id",
+    "canonical_boundary_reference",
+    "canonical_owner_map",
+    "canonical_authority_state",
+    "canonical_human_gate_state",
+    "canonical_lineage_reference",
+    "canonical_provenance_route",
+    "canonical_return_route",
+    "representations",
+    "object_identity_changed",
+    "boundary_changed",
+    "ownership_changed",
+    "authority_changed",
+    "lineage_changed",
+    "provenance_changed",
+    "return_route_changed",
+    "metaphor_required",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_family": {
+      "type": "string",
+      "const": "REPRESENTATION_INDEPENDENCE"
+    },
+    "canonical_primitive": {
+      "type": "string",
+      "const": "CANONICAL_ROOM_OBJECT"
+    },
+    "canonical_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "canonical_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_owner_map": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "canonical_authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "canonical_human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "canonical_lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "canonical_return_route": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representations": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "domain",
+          "local_vocabulary",
+          "canonical_role_map",
+          "object_id",
+          "boundary_reference",
+          "owner_map",
+          "authority_state",
+          "human_gate_state",
+          "lineage_reference",
+          "provenance_route",
+          "return_route"
+        ],
+        "properties": {
+          "domain": {
+            "type": "string",
+            "enum": [
+              "GEOGRAPHIC",
+              "CYBER_SECURITY",
+              "DATA_ANALYTICS"
+            ]
+          },
+          "local_vocabulary": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "canonical_role_map": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "object_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "boundary_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner_map": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "authority_state": {
+            "type": "string",
+            "const": "NONE"
+          },
+          "human_gate_state": {
+            "type": "string",
+            "const": "ACTIVE"
+          },
+          "lineage_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance_route": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "return_route": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "object_identity_changed": {
+      "type": "boolean"
+    },
+    "boundary_changed": {
+      "type": "boolean"
+    },
+    "ownership_changed": {
+      "type": "boolean"
+    },
+    "authority_changed": {
+      "type": "boolean"
+    },
+    "lineage_changed": {
+      "type": "boolean"
+    },
+    "provenance_changed": {
+      "type": "boolean"
+    },
+    "return_route_changed": {
+      "type": "boolean"
+    },
+    "metaphor_required": {
+      "type": "boolean"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "INSUFFICIENT_DOMAIN_DIVERSITY",
+          "CANONICAL_ROLE_MAPPING_MISSING",
+          "OBJECT_IDENTITY_CHANGED",
+          "BOUNDARY_CHANGED",
+          "OWNERSHIP_CHANGED",
+          "AUTHORITY_CHANGED",
+          "HUMAN_GATE_CHANGED",
+          "LINEAGE_CHANGED",
+          "PROVENANCE_CHANGED",
+          "RETURN_ROUTE_CHANGED",
+          "METAPHOR_DEPENDENCY_DETECTED",
+          "SEMANTIC_ROLE_COLLISION",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}

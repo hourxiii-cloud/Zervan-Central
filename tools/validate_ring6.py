@@ -134,6 +134,12 @@ RINGS = [
         "tools/validate_fresh_reader.py",
         "tests/test_fresh_reader.py",
     ),
+    (
+        "R6-N",
+        "Representation Independence",
+        "tools/validate_representation_independence.py",
+        "tests/test_representation_independence.py",
+    ),
 ]
 
 results = []
