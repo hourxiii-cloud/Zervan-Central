@@ -27,6 +27,13 @@ RINGS = [
         "tests/test_landing_witness.py",
     ),
 
+    (
+        "R4-D",
+        "Reflight Trigger",
+        "tools/validate_reflight_trigger.py",
+        "tests/test_reflight_trigger.py",
+    ),
+
 ]
 
 print()

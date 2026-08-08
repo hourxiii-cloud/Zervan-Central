@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/reflight_trigger.schema.json",
+  "title": "Zervan R4-D Reflight Trigger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "reflight_trigger_id",
+    "object_id",
+    "landing_witness_reference",
+    "trigger_type",
+    "trigger_subject",
+    "trigger_evidence_references",
+    "prior_question",
+    "current_question",
+    "prior_evidence_ceiling",
+    "current_evidence_ceiling",
+    "prior_signal_state_reference",
+    "current_signal_state_reference",
+    "challenged_conclusion_reference",
+    "newly_reachable_surface_reference",
+    "requested_rendering_reference",
+    "material_change_basis",
+    "evidence_boundary",
+    "representation_reference",
+    "cartography_reference",
+    "stick_reference",
+    "readiness_reference",
+    "reflight_eligibility",
+    "blocking_reasons",
+    "governance_reference",
+    "authorization_reference",
+    "human_gate_reference",
+    "provenance_route",
+    "triggered_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "reflight_trigger_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "landing_witness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trigger_type": {
+      "type": "string",
+      "enum": [
+        "NEW_EVIDENCE",
+        "CONTRADICTION",
+        "CHANGED_QUESTION",
+        "CHANGED_EVIDENCE_CEILING",
+        "SIGNAL_SPLIT",
+        "SIGNAL_CONVERGENCE",
+        "CHALLENGED_CONCLUSION",
+        "NEWLY_REACHABLE_SURFACE",
+        "MATERIALLY_DIFFERENT_RENDERING_REQUESTED"
+      ]
+    },
+    "trigger_subject": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "trigger_evidence_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "prior_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prior_evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "current_evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "prior_signal_state_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_signal_state_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "challenged_conclusion_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "newly_reachable_surface_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "requested_rendering_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "material_change_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "representation_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "readiness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reflight_eligibility": {
+      "type": "string",
+      "enum": [
+        "ELIGIBLE",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "triggered_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
