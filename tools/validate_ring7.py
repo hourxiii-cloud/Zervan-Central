@@ -84,6 +84,12 @@ RINGS = [
         "tools/validate_promotion_receipt.py",
         "tests/test_promotion_receipt.py",
     ),
+    (
+        "R7-M",
+        "Fresh-Reader Final Package Validation",
+        "tools/validate_fresh_reader_final_package.py",
+        "tests/test_fresh_reader_final_package.py",
+    ),
 ]
 
 results = []
@@ -141,7 +147,6 @@ for ring, name, passed in results:
         failed = True
 
 for ring, name in (
-    ("R7-M", "Fresh-Reader Final Package Validation"),
     ("R7-N", "Aggregate Documentation / Promotion Readiness Closure"),
 ):
     print(
