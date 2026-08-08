@@ -82,6 +82,12 @@ RINGS = [
         "tools/validate_raven_human_gate_publication_action_boundary.py",
         "tests/test_raven_human_gate_publication_action_boundary.py",
     ),
+    (
+        "R5-G",
+        "Decision Option Lineage",
+        "tools/validate_decision_option_lineage.py",
+        "tests/test_decision_option_lineage.py",
+    ),
 ]
 
 print()

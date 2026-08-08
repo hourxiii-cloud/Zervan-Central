@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/decision_option_lineage.schema.json",
+  "title": "Zervan R5-G Decision Option Lineage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "decision_option_id",
+    "option_label",
+    "option_description",
+    "option_status",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "coordinate_reference",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "pmc_intake_binding_id",
+    "pmc_run_id",
+    "ccr_id",
+    "mc_evaluation_id",
+    "mc_response_class",
+    "mc_disposition",
+    "required_conditions",
+    "inadmissibility_reasons",
+    "raven_representation_id",
+    "human_gate_decision_reference",
+    "uncertainty_references",
+    "lineage_reference",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "decision_option_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "option_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "option_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "option_status": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "CONDITIONAL",
+        "UNAVAILABLE",
+        "BLOCKED"
+      ]
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "coordinate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pmc_intake_binding_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pmc_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ccr_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "mc_evaluation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "mc_response_class": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mc_disposition": {
+      "type": "string",
+      "enum": [
+        "ADMISSIBLE",
+        "CONDITIONAL",
+        "INADMISSIBLE"
+      ]
+    },
+    "required_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "inadmissibility_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "raven_representation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "human_gate_decision_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "uncertainty_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
