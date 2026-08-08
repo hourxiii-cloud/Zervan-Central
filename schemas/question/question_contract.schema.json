@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/question/question_contract.schema.json",
+  "title": "Zervan Native v41 Question Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "question_contract_id",
+    "version",
+    "question",
+    "scope",
+    "temporal_window",
+    "included_analytical_objects",
+    "required_artifacts",
+    "exclusions",
+    "evidence_thresholds",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "audience",
+    "rendering_format",
+    "personalization_policy",
+    "decision_option_requirements",
+    "read_only",
+    "write_operation_requested",
+    "human_gate_requirements",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "question_contract_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope_type",
+        "room_object_id",
+        "room_revision_id",
+        "scope_reference"
+      ],
+      "properties": {
+        "scope_type": {
+          "type": "string",
+          "enum": [
+            "ROOM",
+            "ZONE",
+            "TERRITORY"
+          ]
+        },
+        "room_object_id": {
+          "type": "string",
+          "pattern": "^sha512:[0-9a-f]{128}$"
+        },
+        "room_revision_id": {
+          "type": "string",
+          "pattern": "^sha512:[0-9a-f]{128}$"
+        },
+        "scope_reference": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "temporal_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "start",
+        "end",
+        "historical_reference"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "CURRENT",
+            "HISTORICAL",
+            "BOUNDED_RANGE"
+          ]
+        },
+        "start": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "end": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "historical_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "included_analytical_objects": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required_artifacts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "exclusions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_thresholds": {
+      "type": "object"
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audience": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rendering_format": {
+      "type": "string",
+      "minLength": 1
+    },
+    "personalization_policy": {
+      "type": "string",
+      "enum": [
+        "ALLOWED",
+        "DISABLED",
+        "MEETING_MODE"
+      ]
+    },
+    "decision_option_requirements": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "read_only": {
+      "type": "boolean",
+      "const": true
+    },
+    "write_operation_requested": {
+      "type": "boolean",
+      "const": false
+    },
+    "human_gate_requirements": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "CONTRACT_IDENTITY_INVALID",
+          "VERSION_INVALID",
+          "QUESTION_MISSING",
+          "SCOPE_INVALID",
+          "ROOM_IDENTITY_MISSING",
+          "ROOM_REVISION_MISSING",
+          "SCOPE_REFERENCE_MISSING",
+          "TEMPORAL_WINDOW_INVALID",
+          "HISTORICAL_REFERENCE_MISSING",
+          "BOUNDED_RANGE_INVALID",
+          "EVIDENCE_BOUNDARY_MISSING",
+          "EVIDENCE_CEILING_MISSING",
+          "PERSONALIZATION_POLICY_INVALID",
+          "PROVENANCE_MISSING",
+          "READ_ONLY_VIOLATED",
+          "WRITE_OPERATION_EMBEDDED",
+          "HUMAN_GATE_DISABLED",
+          "SEMANTIC_VERSION_DRIFT",
+          "EXECUTOR_SEMANTIC_DRIFT",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}

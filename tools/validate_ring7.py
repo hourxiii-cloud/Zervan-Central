@@ -18,6 +18,12 @@ RINGS = [
         "tools/validate_ring7_documentation_promotion_boundary.py",
         "tests/test_ring7_documentation_promotion_boundary.py",
     ),
+    (
+        "R7-B",
+        "Question Contract",
+        "tools/validate_question_contract.py",
+        "tests/test_question_contract.py",
+    ),
 ]
 
 results = []
@@ -75,7 +81,6 @@ for ring, name, passed in results:
         failed = True
 
 for ring, name in (
-    ("R7-B", "Question Contract"),
     ("R7-C", "README / Version Authority / Native-v41 Entry Surfaces"),
     ("R7-D", "User Manual"),
     ("R7-E", "Architecture Guide"),
