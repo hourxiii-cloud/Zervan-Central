@@ -58,6 +58,12 @@ RINGS = [
         "tools/validate_room_bound_evidence_pmc_intake.py",
         "tests/test_room_bound_evidence_pmc_intake.py",
     ),
+    (
+        "R5-C",
+        "PMC -> CCR Candidate Commitment Lineage",
+        "tools/validate_pmc_ccr_candidate_commitment_lineage.py",
+        "tests/test_pmc_ccr_candidate_commitment_lineage.py",
+    ),
 ]
 
 print()

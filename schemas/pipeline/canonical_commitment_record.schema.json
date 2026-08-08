@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/canonical_commitment_record.schema.json",
+  "title": "Zervan R5-C Canonical Commitment Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ccr_id",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "pmc_intake_binding_id",
+    "pmc_run_id",
+    "pmc_output_reference",
+    "selected_world_id",
+    "candidate_ordering",
+    "rejection_references",
+    "evidence_references",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "coordinate_reference",
+    "representation_reference",
+    "transform_references",
+    "uncertainty_references",
+    "unresolved_state_references",
+    "invariants_checked_references",
+    "replay_reference",
+    "lineage_reference",
+    "provenance_route",
+    "commitment_disposition",
+    "blocking_reasons",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "ccr_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pmc_intake_binding_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pmc_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pmc_output_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selected_world_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "candidate_ordering": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rejection_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representation_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transform_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "uncertainty_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unresolved_state_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "invariants_checked_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "replay_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "commitment_disposition": {
+      "type": "string",
+      "enum": [
+        "CANDIDATE_RECORDED",
+        "NULL_RECORDED",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
