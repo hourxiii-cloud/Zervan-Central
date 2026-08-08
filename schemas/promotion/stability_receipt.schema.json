@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/stability_receipt.schema.json",
+  "title": "Zervan R7-J Stability Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_type",
+    "ring",
+    "baseline_commit",
+    "baseline_branch",
+    "native_version",
+    "implementation_identity",
+    "ring6_state",
+    "transition_state",
+    "documentation_freeze",
+    "known_conditions",
+    "runtime_assumptions",
+    "authority_state",
+    "human_gate_state",
+    "promotion_state",
+    "disposition",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "receipt_type": {
+      "const": "STABILITY_RECEIPT"
+    },
+    "ring": {
+      "const": "R7-J"
+    },
+    "baseline_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "baseline_branch": {
+      "const": "candidate/v41-complete"
+    },
+    "native_version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "ring6_state": {
+      "const": "VALIDATED_CANDIDATE"
+    },
+    "transition_state": {
+      "const": "ACCOUNTED"
+    },
+    "documentation_freeze": {
+      "const": true
+    },
+    "known_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "runtime_assumptions": {
+      "type": "object"
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "promotion_state": {
+      "const": "CANDIDATE"
+    },
+    "disposition": {
+      "const": "STABLE_BASELINE"
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

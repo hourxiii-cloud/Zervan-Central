@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "STABILITY_RECEIPT",
+  "ring": "R7-J",
+  "baseline_commit": "ae8dd9e22a34589f546f64ed452c0eee976cf299",
+  "baseline_branch": "candidate/v41-complete",
+  "native_version": "vTemporal.41.0",
+  "implementation_identity": "v41 Complete",
+  "ring6_state": "VALIDATED_CANDIDATE",
+  "transition_state": "ACCOUNTED",
+  "documentation_freeze": true,
+  "known_conditions": [
+    "PREMATURE_R7_D_ATTEMPT_DISCARDED_BEFORE_COMMIT",
+    "VERSION_REFERENCES_RECONCILIATION_REMAINS_SEPARATE"
+  ],
+  "runtime_assumptions": {
+    "external_runtime": "DISABLED",
+    "external_action": "DISABLED",
+    "system_population": "DISALLOWED",
+    "canonical_mutation": "HUMAN_GATE_ONLY"
+  },
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "promotion_state": "CANDIDATE",
+  "disposition": "STABLE_BASELINE",
+  "provenance": [
+    "VERSION",
+    "VERSION.json",
+    "VERSION_AUTHORITY.md",
+    "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+    "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+    "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md"
+  ]
+}
