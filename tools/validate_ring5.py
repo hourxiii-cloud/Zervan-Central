@@ -52,6 +52,12 @@ RINGS = [
         "tools/validate_pipeline_integration_boundary.py",
         "tests/test_pipeline_integration_boundary.py",
     ),
+    (
+        "R5-B",
+        "Room-Bound Evidence -> PMC Intake Binding",
+        "tools/validate_room_bound_evidence_pmc_intake.py",
+        "tests/test_room_bound_evidence_pmc_intake.py",
+    ),
 ]
 
 print()
