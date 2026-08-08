@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/ring8_aggregate_promotion_closure.schema.json",
+  "title": "Zervan Ring 8 Aggregate Promotion Closure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_type",
+    "ring",
+    "version",
+    "implementation_identity",
+    "approved_candidate_commit",
+    "r8h_commit",
+    "r8i_commit",
+    "r8j_commit",
+    "r8k_commit",
+    "human_gate_decision",
+    "human_gate_authorization",
+    "r8f_disposition",
+    "promotion_executed",
+    "candidate_preserved",
+    "fast_forward_promotion",
+    "merge_commit_created",
+    "promotion_state",
+    "canonical",
+    "canonical_branch",
+    "post_promotion_integrity",
+    "post_promotion_fresh_reader",
+    "promotion_completion",
+    "authority_state",
+    "human_gate_state",
+    "external_runtime",
+    "external_action",
+    "system_population",
+    "disposition"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "receipt_type": {
+      "const": "RING8_AGGREGATE_PROMOTION_CLOSURE"
+    },
+    "ring": {
+      "const": "R8-L"
+    },
+    "version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "approved_candidate_commit": {
+      "const": "2d1013304c6c13efd08fc3a9d7aed7804642cde2"
+    },
+    "r8h_commit": {
+      "const": "62bd3c9f54d46034181c9d94a443757a857423c1"
+    },
+    "r8i_commit": {
+      "const": "e4ce260198fa962f9915f1af7f227454856a96ed"
+    },
+    "r8j_commit": {
+      "const": "676e03e98b94f0461596f13605195242ba7290fc"
+    },
+    "r8k_commit": {
+      "const": "be3e098fd4e50ed152a8f3060c6ba310aa096510"
+    },
+    "human_gate_decision": {
+      "const": "APPROVE"
+    },
+    "human_gate_authorization": {
+      "const": "GRANTED"
+    },
+    "r8f_disposition": {
+      "const": "SKIPPED_BY_HUMAN_DIRECTION"
+    },
+    "promotion_executed": {
+      "const": true
+    },
+    "candidate_preserved": {
+      "const": true
+    },
+    "fast_forward_promotion": {
+      "const": true
+    },
+    "merge_commit_created": {
+      "const": false
+    },
+    "promotion_state": {
+      "const": "CANONICAL"
+    },
+    "canonical": {
+      "const": true
+    },
+    "canonical_branch": {
+      "const": "main"
+    },
+    "post_promotion_integrity": {
+      "const": "VERIFIED"
+    },
+    "post_promotion_fresh_reader": {
+      "const": "VALIDATED"
+    },
+    "promotion_completion": {
+      "const": "RECORDED"
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "external_runtime": {
+      "const": "DISABLED"
+    },
+    "external_action": {
+      "const": "DISABLED"
+    },
+    "system_population": {
+      "const": "DISALLOWED"
+    },
+    "disposition": {
+      "const": "RING8_CLOSED_CANONICAL"
+    }
+  }
+}

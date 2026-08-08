@@ -4241,6 +4241,36 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/promotion/RING8_AGGREGATE_HUMAN_GATE_PROMOTION_CLOSURE.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/RING8_AGGREGATE_HUMAN_GATE_PROMOTION_CLOSURE.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING8_AGGREGATE_HUMAN_GATE_PROMOTION_CLOSURE.md",
+      "line": 35,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING8_AGGREGATE_HUMAN_GATE_PROMOTION_CLOSURE.md",
+      "line": 105,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/RING8_AGGREGATE_HUMAN_GATE_PROMOTION_CLOSURE.md",
+      "line": 107,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/promotion/RING8_HUMAN_GATE_PROMOTION_BOUNDARY.md",
       "line": 6,
       "token": "vTemporal.41.0",
@@ -6365,6 +6395,18 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "receipts/promotion/R8_L_AGGREGATE_PROMOTION_CLOSURE.json",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R8_L_AGGREGATE_PROMOTION_CLOSURE.json",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "receipts/v39_0_load_receipt.md",
       "line": 1,
       "token": "v39.0",
@@ -6637,6 +6679,18 @@
     {
       "path": "schemas/promotion/ring7_documentation_promotion_registry.schema.json",
       "line": 45,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/ring8_aggregate_promotion_closure.schema.json",
+      "line": 49,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/ring8_aggregate_promotion_closure.schema.json",
+      "line": 52,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
@@ -8509,6 +8563,12 @@
     {
       "path": "tools/validate_ring7_documentation_promotion_boundary.py",
       "line": 553,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring8_aggregate_promotion_closure.py",
+      "line": 124,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
