@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/formation_rejustification.schema.json",
+  "title": "Zervan R6-F Formation Re-Justification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "object_id",
+    "previous_formation_id",
+    "previous_formation_type",
+    "new_formation_id",
+    "new_formation_type",
+    "rejustification_trigger",
+    "rejustification_basis",
+    "active_question",
+    "proportional_force_basis_reference",
+    "force_scale_changed",
+    "force_change_reference",
+    "evidence_boundary_reference",
+    "previous_evidence_ceiling_reference",
+    "new_evidence_ceiling_reference",
+    "evidence_ceiling_change_reference",
+    "stick_reference",
+    "stick_continuity_state",
+    "origin_reference",
+    "ingress_reference",
+    "cartography_reference",
+    "transform_history_references",
+    "evidence_lineage_references",
+    "provenance_route",
+    "source_coordinates",
+    "target_coordinates",
+    "return_coordinates",
+    "prior_history_preserved",
+    "new_room_created",
+    "branch_created",
+    "passageway_created",
+    "occupancy_mutated",
+    "lifecycle_mutated",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "FORMATION_REJUSTIFICATION"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "previous_formation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "previous_formation_type": {
+      "type": "string",
+      "enum": [
+        "SINGLE_ROUTE",
+        "STACK_ANALYSIS",
+        "EXPANDED_ANALYSIS",
+        "SWARM"
+      ]
+    },
+    "new_formation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "new_formation_type": {
+      "type": "string",
+      "enum": [
+        "SINGLE_ROUTE",
+        "STACK_ANALYSIS",
+        "EXPANDED_ANALYSIS",
+        "SWARM"
+      ]
+    },
+    "rejustification_trigger": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "TERRAIN_CONTACT_CHANGED",
+        "CONTRADICTION_APPEARED_OR_PERSISTED",
+        "EVIDENCE_CEILING_CHANGED",
+        "SIGNAL_ECOLOGY_CHANGED",
+        "ONE_ROUTE_BECAME_SUFFICIENT",
+        null
+      ]
+    },
+    "rejustification_basis": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "active_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "proportional_force_basis_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "force_scale_changed": {
+      "type": "boolean"
+    },
+    "force_change_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "previous_evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "new_evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_change_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stick_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stick_continuity_state": {
+      "type": "string",
+      "enum": [
+        "CONTINUOUS",
+        "DEGRADED",
+        "BROKEN"
+      ]
+    },
+    "origin_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ingress_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cartography_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transform_history_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_lineage_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_coordinates": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_coordinates": {
+      "type": "string",
+      "minLength": 1
+    },
+    "return_coordinates": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_history_preserved": {
+      "type": "boolean"
+    },
+    "new_room_created": {
+      "type": "boolean",
+      "const": false
+    },
+    "branch_created": {
+      "type": "boolean",
+      "const": false
+    },
+    "passageway_created": {
+      "type": "boolean",
+      "const": false
+    },
+    "occupancy_mutated": {
+      "type": "boolean",
+      "const": false
+    },
+    "lifecycle_mutated": {
+      "type": "boolean",
+      "const": false
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "REJUSTIFICATION_TRIGGER_MISSING",
+          "REJUSTIFICATION_BASIS_MISSING",
+          "OBJECT_IDENTITY_CHANGED",
+          "PRIOR_HISTORY_ERASED",
+          "STICK_NOT_PRESERVED",
+          "ORIGIN_CONTINUITY_LOST",
+          "INGRESS_CONTINUITY_LOST",
+          "CARTOGRAPHY_CONTINUITY_LOST",
+          "TRANSFORM_HISTORY_LOST",
+          "EVIDENCE_LINEAGE_LOST",
+          "PROVENANCE_LOST",
+          "RETURN_COORDINATES_LOST",
+          "FORCE_BASIS_LOST",
+          "SILENT_FORCE_INFLATION",
+          "EVIDENCE_CEILING_CHANGED_UNATTRIBUTED",
+          "NEW_ROOM_INVENTED",
+          "BRANCH_INVENTED",
+          "PASSAGEWAY_INVENTED",
+          "OCCUPANCY_MUTATED",
+          "LIFECYCLE_MUTATED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}

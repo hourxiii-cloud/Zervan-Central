@@ -86,6 +86,12 @@ RINGS = [
         "tools/validate_qualification_team_coherence.py",
         "tests/test_qualification_team_coherence.py",
     ),
+    (
+        "R6-F",
+        "Formation Re-Justification",
+        "tools/validate_formation_rejustification.py",
+        "tests/test_formation_rejustification.py",
+    ),
 ]
 
 results = []
