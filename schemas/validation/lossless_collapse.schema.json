@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/lossless_collapse.schema.json",
+  "title": "Zervan R6-O Lossless Collapse Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_family",
+    "required_preservation_classes",
+    "observed_preservation_classes",
+    "retained_surfaces",
+    "collapsed_surfaces",
+    "rejected_residue",
+    "invariant_mappings",
+    "test_mappings",
+    "failure_condition_mappings",
+    "unresolved_items",
+    "unexplained_vanishing_detected",
+    "historical_hoarding_detected",
+    "semantic_loss_detected",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_family": {
+      "type": "string",
+      "const": "LOSSLESS_COLLAPSE"
+    },
+    "required_preservation_classes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OBJECT_IDENTITY",
+          "CAPABILITY",
+          "BEHAVIOR",
+          "RATIONALE",
+          "PROVENANCE",
+          "COORDINATES",
+          "TRANSFORM_HISTORY",
+          "CONTRACTS",
+          "TESTS",
+          "EVIDENCE_BOUNDARIES",
+          "KNOWN_FAILURE_CONDITIONS"
+        ]
+      }
+    },
+    "observed_preservation_classes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OBJECT_IDENTITY",
+          "CAPABILITY",
+          "BEHAVIOR",
+          "RATIONALE",
+          "PROVENANCE",
+          "COORDINATES",
+          "TRANSFORM_HISTORY",
+          "CONTRACTS",
+          "TESTS",
+          "EVIDENCE_BOUNDARIES",
+          "KNOWN_FAILURE_CONDITIONS"
+        ]
+      }
+    },
+    "retained_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "collapsed_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "rejected_residue": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "invariant_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "test_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "failure_condition_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "unresolved_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unexplained_vanishing_detected": {
+      "type": "boolean"
+    },
+    "historical_hoarding_detected": {
+      "type": "boolean"
+    },
+    "semantic_loss_detected": {
+      "type": "boolean"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

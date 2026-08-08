@@ -140,6 +140,12 @@ RINGS = [
         "tools/validate_representation_independence.py",
         "tests/test_representation_independence.py",
     ),
+    (
+        "R6-O",
+        "Lossless Collapse",
+        "tools/validate_lossless_collapse.py",
+        "tests/test_lossless_collapse.py",
+    ),
 ]
 
 results = []

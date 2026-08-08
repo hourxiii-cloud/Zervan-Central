@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/lossless_collapse_receipt.schema.json",
+  "title": "Zervan Lossless-Collapse Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_type",
+    "native_version",
+    "implementation_identity",
+    "preservation_classes",
+    "retained_surfaces",
+    "collapsed_surfaces",
+    "rejected_residue",
+    "invariant_mappings",
+    "test_mappings",
+    "failure_condition_mappings",
+    "unresolved_items",
+    "collapse_disposition",
+    "authority_state",
+    "human_gate_state",
+    "provenance_route"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "receipt_type": {
+      "type": "string",
+      "const": "LOSSLESS_COLLAPSE_RECEIPT"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "type": "string",
+      "const": "v41 Complete"
+    },
+    "preservation_classes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OBJECT_IDENTITY",
+          "CAPABILITY",
+          "BEHAVIOR",
+          "RATIONALE",
+          "PROVENANCE",
+          "COORDINATES",
+          "TRANSFORM_HISTORY",
+          "CONTRACTS",
+          "TESTS",
+          "EVIDENCE_BOUNDARIES",
+          "KNOWN_FAILURE_CONDITIONS"
+        ]
+      }
+    },
+    "retained_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "surface_reference",
+          "retention_basis",
+          "preservation_classes",
+          "invariant_references",
+          "provenance_references"
+        ],
+        "properties": {
+          "surface_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retention_basis": {
+            "type": "string"
+          },
+          "preservation_classes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "invariant_references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provenance_references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "collapsed_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "old_surface_reference",
+          "retained_destination_reference",
+          "removal_basis",
+          "preserved_invariant_references",
+          "provenance_references"
+        ],
+        "properties": {
+          "old_surface_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retained_destination_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "removal_basis": {
+            "type": "string"
+          },
+          "preserved_invariant_references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provenance_references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "rejected_residue": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "invariant_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "test_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "failure_condition_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "unresolved_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collapse_disposition": {
+      "type": "string",
+      "enum": [
+        "LOSSLESS",
+        "BLOCKED"
+      ]
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
