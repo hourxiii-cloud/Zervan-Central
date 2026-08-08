@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "TRANSITION_RECEIPT",
+  "ring": "R7-I",
+  "native_version": "vTemporal.41.0",
+  "implementation_identity": "v41 Complete",
+  "prior_canonical": {
+    "branch": "main",
+    "version": "vTemporal.40.0",
+    "provenance_surface": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+    "state": "PRIOR_CANONICAL_BASELINE"
+  },
+  "candidate": {
+    "branch": "candidate/v41-complete",
+    "version": "vTemporal.41.0",
+    "promotion_state": "CANDIDATE",
+    "canonical": false
+  },
+  "validated_candidate": {
+    "state": "VALIDATED_CANDIDATE",
+    "ring6_result": "PASS",
+    "provenance_surface": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md"
+  },
+  "ring7_state": {
+    "current": "DOCUMENTATION_AND_PROMOTION",
+    "target": "READY_FOR_HUMAN_GATE"
+  },
+  "future_transition": {
+    "source_branch": "candidate/v41-complete",
+    "target_branch": "main",
+    "target_state": "CANONICAL",
+    "authorization_required": "EXPLICIT_HUMAN_GATE",
+    "performed": false
+  },
+  "history_preserved": true,
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "promotion_state": "CANDIDATE",
+  "transition_disposition": "ACCOUNTED",
+  "provenance": [
+    "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+    "VERSION",
+    "VERSION.json",
+    "VERSION_AUTHORITY.md",
+    "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+    "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+    "contracts/question/QUESTION_CONTRACT.md",
+    "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md"
+  ]
+}

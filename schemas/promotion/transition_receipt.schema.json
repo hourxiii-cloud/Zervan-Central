@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/transition_receipt.schema.json",
+  "title": "Zervan R7-I Transition Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_type",
+    "ring",
+    "native_version",
+    "implementation_identity",
+    "prior_canonical",
+    "candidate",
+    "validated_candidate",
+    "ring7_state",
+    "future_transition",
+    "history_preserved",
+    "authority_state",
+    "human_gate_state",
+    "promotion_state",
+    "transition_disposition",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "receipt_type": {
+      "type": "string",
+      "const": "TRANSITION_RECEIPT"
+    },
+    "ring": {
+      "type": "string",
+      "const": "R7-I"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "type": "string",
+      "const": "v41 Complete"
+    },
+    "prior_canonical": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branch",
+        "version",
+        "provenance_surface",
+        "state"
+      ],
+      "properties": {
+        "branch": {
+          "type": "string",
+          "const": "main"
+        },
+        "version": {
+          "type": "string",
+          "const": "vTemporal.40.0"
+        },
+        "provenance_surface": {
+          "type": "string",
+          "const": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md"
+        },
+        "state": {
+          "type": "string",
+          "const": "PRIOR_CANONICAL_BASELINE"
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branch",
+        "version",
+        "promotion_state",
+        "canonical"
+      ],
+      "properties": {
+        "branch": {
+          "type": "string",
+          "const": "candidate/v41-complete"
+        },
+        "version": {
+          "type": "string",
+          "const": "vTemporal.41.0"
+        },
+        "promotion_state": {
+          "type": "string",
+          "const": "CANDIDATE"
+        },
+        "canonical": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "validated_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "ring6_result",
+        "provenance_surface"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "const": "VALIDATED_CANDIDATE"
+        },
+        "ring6_result": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "provenance_surface": {
+          "type": "string",
+          "const": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md"
+        }
+      }
+    },
+    "ring7_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current",
+        "target"
+      ],
+      "properties": {
+        "current": {
+          "type": "string",
+          "const": "DOCUMENTATION_AND_PROMOTION"
+        },
+        "target": {
+          "type": "string",
+          "const": "READY_FOR_HUMAN_GATE"
+        }
+      }
+    },
+    "future_transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_branch",
+        "target_branch",
+        "target_state",
+        "authorization_required",
+        "performed"
+      ],
+      "properties": {
+        "source_branch": {
+          "type": "string",
+          "const": "candidate/v41-complete"
+        },
+        "target_branch": {
+          "type": "string",
+          "const": "main"
+        },
+        "target_state": {
+          "type": "string",
+          "const": "CANONICAL"
+        },
+        "authorization_required": {
+          "type": "string",
+          "const": "EXPLICIT_HUMAN_GATE"
+        },
+        "performed": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "history_preserved": {
+      "type": "boolean",
+      "const": true
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "transition_disposition": {
+      "type": "string",
+      "const": "ACCOUNTED"
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

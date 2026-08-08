@@ -49,6 +49,47 @@ Ring 7 does not reopen completed inner rings absent a classified defect.
 
 # DEPLOYMENT ORDER
 
+## EXECUTION DEPENDENCY CORRECTION
+
+Section identifier defines ownership, not mandatory chronological execution.
+
+Final documentation completion follows stabilized implementation state.
+
+Effective execution dependency after sealed R7-C:
+
+R7-I
+->
+R7-J
+->
+R7-D
+->
+R7-E
+->
+R7-F
+->
+R7-G
+->
+R7-H
+->
+R7-K
+->
+R7-L
+->
+R7-M
+->
+R7-N
+
+R7-D through R7-H remain registered at their original section identities.
+
+They are executed after R7-J establishes the documentation freeze point.
+
+Implementation leads.
+
+Documentation follows.
+
+Section identifier != execution dependency order.
+
+
 ## R7-A — Documentation / Promotion Boundary and Required-Surface Registry
 
 Establish:

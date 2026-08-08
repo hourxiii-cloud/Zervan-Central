@@ -30,6 +30,12 @@ RINGS = [
         "tools/validate_native_v41_entry.py",
         "tests/test_native_v41_entry.py",
     ),
+    (
+        "R7-I",
+        "Transition Receipt",
+        "tools/validate_transition_receipt.py",
+        "tests/test_transition_receipt.py",
+    ),
 ]
 
 results = []
@@ -92,7 +98,6 @@ for ring, name in (
     ("R7-F", "Developer Guide"),
     ("R7-G", "Audit Guide"),
     ("R7-H", "Operations Guide"),
-    ("R7-I", "Transition Receipt"),
     ("R7-J", "Stability Receipt"),
     ("R7-K", "Completeness Receipt"),
     ("R7-L", "Promotion Receipt / Promotion-Readiness Record"),
