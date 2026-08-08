@@ -70,6 +70,12 @@ RINGS = [
         "tools/validate_ccr_mc_response_output_admissibility.py",
         "tests/test_ccr_mc_response_output_admissibility.py",
     ),
+    (
+        "R5-E",
+        "MC -> Raven Representation / Report Binding",
+        "tools/validate_mc_raven_representation_binding.py",
+        "tests/test_mc_raven_representation_binding.py",
+    ),
 ]
 
 print()
