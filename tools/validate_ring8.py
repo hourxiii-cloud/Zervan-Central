@@ -35,6 +35,12 @@ RINGS = [
         "tools/validate_pre_promotion_verification.py",
         "tests/test_pre_promotion_verification.py",
     ),
+    (
+        "R8-E",
+        "Human Gate Authorization Receipt",
+        "tools/validate_human_gate_authorization_receipt.py",
+        "tests/test_human_gate_authorization_receipt.py",
+    ),
 ]
 
 results = []
@@ -98,8 +104,10 @@ if failed:
     raise SystemExit(1)
 
 print("RING 8 RESULT: INSTANTIATED")
-print("CURRENT: R8-D PASS")
-print("NEXT: R8-E Human Gate Authorization Receipt")
+print("CURRENT: R8-E PASS")
+print("RING 8 STATE: WAITING_FOR_HUMAN_GATE")
+print("NEXT: explicit Human Gate decision")
+print("R8-F Promotion Execution Manifest: BLOCKED")
 print("Pre-Promotion Verification: VERIFIED")
 print("Persistent candidate binding: NOT YET CREATED")
 print("Decision instance: NONE")
