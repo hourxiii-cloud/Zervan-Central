@@ -90,6 +90,12 @@ RINGS = [
         "tools/validate_fresh_reader_final_package.py",
         "tests/test_fresh_reader_final_package.py",
     ),
+    (
+        "R7-N",
+        "Aggregate Documentation / Promotion Readiness Closure",
+        "tools/validate_ring7_aggregate_closure.py",
+        "tests/test_ring7_aggregate_closure.py",
+    ),
 ]
 
 results = []
@@ -146,20 +152,27 @@ for ring, name, passed in results:
     if not passed:
         failed = True
 
-for ring, name in (
-    ("R7-N", "Aggregate Documentation / Promotion Readiness Closure"),
-):
-    print(
-        f"{ring:<5} DEFER  {name}"
-    )
-
 print("-" * 72)
 
 if failed:
     print("RING 7 RESULT: FAIL")
     raise SystemExit(1)
 
-print("RING 7 RESULT: INSTANTIATED")
-print("CURRENT: R7-A PASS")
-print("NEXT: R7-B Question Contract")
+print("RING 7 RESULT: PASS")
+print("DOCUMENTATION COMPLETE")
+print("QUESTION CONTRACT COMPLETE")
+print("NATIVE-v41 ENTRY COMPLETE")
+print("TRANSITION ACCOUNTING COMPLETE")
+print("STABILITY VALIDATED")
+print("COMPLETENESS VALIDATED")
+print("FRESH-READER VALIDATED")
+print("PROMOTION PACKAGE COMPLETE")
+print("PROMOTION READINESS READY_FOR_HUMAN_GATE")
+print("AUTHORITY: NONE")
+print("HUMAN GATE: ACTIVE")
+print("PROMOTION STATE: CANDIDATE")
+print("CANONICAL: FALSE")
+print("PROMOTED: FALSE")
+print("MERGED: FALSE")
+print("HUMAN GATE AUTHORIZATION: NOT_GRANTED")
 raise SystemExit(0)

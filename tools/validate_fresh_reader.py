@@ -71,6 +71,10 @@ V41_INIT_CANDIDATES = [
 V41_CANONICAL_CANDIDATES = [
     ROOT
     / "canonical"
+    / "ZERVAN_v41_0_CANONICAL_ENTRY.md",
+
+    ROOT
+    / "canonical"
     / "ZERVAN_v41_0_CANONICAL_LOAD.md",
 
     ROOT
@@ -641,8 +645,6 @@ def validate():
     for lock in (
         "Authority: NONE",
         "Human Gate: ACTIVE",
-        "Historical versions may remain for provenance.",
-        "Git main governs repository state.",
         "No fake retrieval.",
         "No authority promotion.",
         "No compression out.",
@@ -656,6 +658,30 @@ def validate():
             errors.append(
                 f"README missing required reader orientation: {lock}"
             )
+
+    historical_orientation = (
+        "Historical versions may remain for provenance."
+        in readme
+        or "Historical references remain provenance."
+        in readme
+    )
+
+    if not historical_orientation:
+        errors.append(
+            "README missing historical-provenance orientation"
+        )
+
+    git_orientation = (
+        "Git main governs repository state."
+        in readme
+        or "Current Git is implementation truth."
+        in readme
+    )
+
+    if not git_orientation:
+        errors.append(
+            "README missing current-Git orientation"
+        )
 
     try:
         load(
