@@ -94,6 +94,12 @@ RINGS = [
         "tools/validate_report_rendering_contract.py",
         "tests/test_report_rendering_contract.py",
     ),
+    (
+        "R5-I",
+        "Pipeline Cross-Stage Integrity / No-Responsibility-Absorption",
+        "tools/validate_pipeline_cross_stage_integrity.py",
+        "tests/test_pipeline_cross_stage_integrity.py",
+    ),
 ]
 
 print()

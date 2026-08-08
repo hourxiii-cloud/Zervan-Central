@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/pipeline_cross_stage_integrity.schema.json",
+  "title": "Zervan R5-I Pipeline Cross-Stage Integrity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "cross_stage_integrity_id",
+    "pipeline_route",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "coordinate_reference",
+    "pmc_intake_binding_id",
+    "pmc_run_id",
+    "ccr_id",
+    "mc_evaluation_id",
+    "raven_representation_id",
+    "human_gate_decision_reference",
+    "decision_option_references",
+    "report_references",
+    "collision_states",
+    "ownership_checks",
+    "authority_checks",
+    "lineage_reference",
+    "provenance_route",
+    "integrity_disposition",
+    "blocking_reasons",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "cross_stage_integrity_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pipeline_route": {
+      "type": "array",
+      "const": [
+        "ROOM_BOUND_EVIDENCE",
+        "PMC_INTAKE",
+        "PMC",
+        "CCR",
+        "MC",
+        "RAVEN",
+        "HUMAN_GATE"
+      ]
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pmc_intake_binding_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pmc_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ccr_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "mc_evaluation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "raven_representation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "human_gate_decision_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_option_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "report_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "collision_states": {
+      "type": "array",
+      "uniqueItems": true,
+      "allOf": [
+        {
+          "contains": {
+            "const": "INTERFACE_COLLISION_REQUIRING_CCR_PRESERVATION"
+          }
+        },
+        {
+          "contains": {
+            "const": "MC_EPHEMERALITY_LINEAGE_COLLISION"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "ownership_checks": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 10,
+      "items": {
+        "type": "string",
+        "enum": [
+          "ROOM_IDENTITY_NOT_ABSORBED",
+          "REGISTRY_NOT_ABSORBED",
+          "GOVERNANCE_NOT_ABSORBED",
+          "AUDIT_NOT_ABSORBED",
+          "CARTOGRAPHY_NOT_ABSORBED",
+          "PMC_NOT_ABSORBED",
+          "CCR_NOT_ABSORBED",
+          "MC_NOT_ABSORBED",
+          "RAVEN_NOT_ABSORBED",
+          "HUMAN_GATE_NOT_ABSORBED"
+        ]
+      }
+    },
+    "authority_checks": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 9,
+      "items": {
+        "type": "string",
+        "enum": [
+          "PMC_NO_ACTION_AUTHORITY",
+          "CCR_NO_ACTION_AUTHORITY",
+          "MC_NO_ACTION_AUTHORITY",
+          "RAVEN_NO_ACTION_AUTHORITY",
+          "DECISION_OPTION_NO_ACTION_AUTHORITY",
+          "REPORT_NO_ACTION_AUTHORITY",
+          "HUMAN_GATE_APPROVAL_NOT_EXECUTION",
+          "ZERVAN_AUTHORITY_NONE",
+          "HUMAN_GATE_ACTIVE"
+        ]
+      }
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "integrity_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
