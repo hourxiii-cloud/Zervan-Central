@@ -3011,6 +3011,36 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/runtime/SCAR_REPLAY.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/runtime/SCAR_REPLAY.md",
+      "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/runtime/SCAR_REPLAY.md",
+      "line": 77,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/runtime/SCAR_REPLAY.md",
+      "line": 139,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/runtime/SCAR_REPLAY.md",
+      "line": 723,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/state/STATE_ROOTS_AUTHORIZED_VIEWS.md",
       "line": 5,
       "token": "vTemporal.41.0",
@@ -3519,6 +3549,12 @@
       "line": 524,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_scar_replay.py",
+      "line": 322,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "verification/hash_inventory_plan.md",
