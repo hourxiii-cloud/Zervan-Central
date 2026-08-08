@@ -88,6 +88,12 @@ RINGS = [
         "tools/validate_decision_option_lineage.py",
         "tests/test_decision_option_lineage.py",
     ),
+    (
+        "R5-H",
+        "Report / Rendering Contract",
+        "tools/validate_report_rendering_contract.py",
+        "tests/test_report_rendering_contract.py",
+    ),
 ]
 
 print()

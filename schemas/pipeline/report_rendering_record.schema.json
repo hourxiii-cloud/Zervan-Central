@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/report_rendering_record.schema.json",
+  "title": "Zervan R5-H Report Rendering Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "report_id",
+    "report_class",
+    "rendering_profile",
+    "raven_representation_id",
+    "decision_option_references",
+    "human_gate_decision_reference",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "coordinate_reference",
+    "findings",
+    "unknowns",
+    "mc_response_class_results",
+    "trace_map",
+    "redaction_references",
+    "lineage_reference",
+    "provenance_route",
+    "report_status",
+    "publication_state",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "report_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "report_class": {
+      "type": "string",
+      "enum": [
+        "HUMAN_READABLE",
+        "STRUCTURED",
+        "EXECUTIVE",
+        "TECHNICAL",
+        "AUDIT",
+        "GOVERNANCE",
+        "DECISION_SUPPORT"
+      ]
+    },
+    "rendering_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "audience",
+        "density",
+        "language"
+      ],
+      "properties": {
+        "format": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audience": {
+          "type": "string",
+          "minLength": 1
+        },
+        "density": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "raven_representation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "decision_option_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "human_gate_decision_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "finding_id",
+          "classification",
+          "text"
+        ],
+        "properties": {
+          "finding_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "OBSERVED",
+              "INFERRED",
+              "UNKNOWN"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "mc_response_class_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "response_class",
+          "disposition",
+          "required_conditions",
+          "inadmissibility_reasons"
+        ],
+        "properties": {
+          "response_class": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposition": {
+            "type": "string",
+            "enum": [
+              "ADMISSIBLE",
+              "CONDITIONAL",
+              "INADMISSIBLE"
+            ]
+          },
+          "required_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "inadmissibility_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "trace_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_reference",
+          "source_references"
+        ],
+        "properties": {
+          "claim_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_references": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "redaction_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "restricted_reference",
+          "existence_preserved",
+          "governing_reference"
+        ],
+        "properties": {
+          "restricted_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "existence_preserved": {
+            "type": "boolean",
+            "const": true
+          },
+          "governing_reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "report_status": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "DEGRADED",
+        "FAILED_TRACEABILITY",
+        "INSUFFICIENT_EVIDENCE",
+        "BLOCKED"
+      ]
+    },
+    "publication_state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "RENDERED",
+        "PUBLICATION_READY",
+        "PUBLICATION_APPROVED"
+      ]
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
