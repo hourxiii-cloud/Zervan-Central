@@ -101,6 +101,72 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "README.md",
+      "line": 11,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "README.md",
+      "line": 15,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "README.md",
+      "line": 19,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "README.md",
+      "line": 49,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "README.md",
+      "line": 51,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "README.md",
+      "line": 59,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "README.md",
+      "line": 59,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "README.md",
+      "line": 62,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "README.md",
+      "line": 64,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "README.md",
+      "line": 64,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "README.md",
+      "line": 64,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "VERSION",
       "line": 1,
       "token": "vTemporal.41.0",
@@ -509,6 +575,120 @@
       "classification": "HISTORICAL_V40"
     },
     {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 3,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 4,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 30,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 38,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 66,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 70,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 93,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 95,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 95,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 95,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 101,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 103,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 107,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 147,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 149,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 151,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V41_0.md",
+      "line": 153,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
       "path": "call/verify_local_call.py",
       "line": 2,
       "token": "v39.0",
@@ -555,6 +735,216 @@
       "line": 189,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 36,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 87,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 142,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 143,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 216,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 229,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 231,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 235,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 236,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 248,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 248,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 250,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 252,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 252,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 337,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 345,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 533,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 535,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 666,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 682,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 730,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 760,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 788,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 806,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 822,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 878,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 879,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 915,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 975,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 999,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/RING7_INSTANTIATION_STATEMENT.md",
+      "line": 999,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "candidate/v40/README.md",
@@ -2519,6 +2909,150 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 4,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 26,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 44,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 56,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 101,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 171,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 194,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 247,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 309,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 309,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 311,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 313,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 313,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 315,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 351,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 355,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 369,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 371,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 376,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+      "line": 378,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
       "path": "contracts/geography/BOUNDED_SPACE.md",
       "line": 5,
       "token": "vTemporal.41.0",
@@ -2687,6 +3221,138 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 35,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 53,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 79,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 83,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 147,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 406,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 595,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+      "line": 597,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/DECISION_OPTION_LINEAGE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/DECISION_OPTION_LINEAGE.md",
+      "line": 14,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/DECISION_OPTION_LINEAGE.md",
+      "line": 31,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/MC_RAVEN_REPRESENTATION_REPORT_BINDING.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/MC_RAVEN_REPRESENTATION_REPORT_BINDING.md",
+      "line": 36,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/MC_RAVEN_REPRESENTATION_REPORT_BINDING.md",
+      "line": 341,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 14,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 40,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 183,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 427,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 429,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+      "line": 889,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
       "line": 5,
       "token": "vTemporal.41.0",
@@ -2757,6 +3423,654 @@
       "line": 577,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PMC_CCR_CANDIDATE_COMMITMENT_LINEAGE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/PMC_CCR_CANDIDATE_COMMITMENT_LINEAGE.md",
+      "line": 37,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PMC_CCR_CANDIDATE_COMMITMENT_LINEAGE.md",
+      "line": 55,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PMC_CCR_CANDIDATE_COMMITMENT_LINEAGE.md",
+      "line": 425,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/PMC_CCR_CANDIDATE_COMMITMENT_LINEAGE.md",
+      "line": 569,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RAVEN_HUMAN_GATE_PUBLICATION_ACTION_BOUNDARY.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/RAVEN_HUMAN_GATE_PUBLICATION_ACTION_BOUNDARY.md",
+      "line": 33,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/REPORT_RENDERING_CONTRACT.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/REPORT_RENDERING_CONTRACT.md",
+      "line": 14,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/REPORT_RENDERING_CONTRACT.md",
+      "line": 32,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 40,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 147,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 446,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 687,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 691,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 903,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+      "line": 905,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/ROOM_BOUND_EVIDENCE_PMC_INTAKE_BINDING.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/pipeline/ROOM_BOUND_EVIDENCE_PMC_INTAKE_BINDING.md",
+      "line": 35,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/ROOM_BOUND_EVIDENCE_PMC_INTAKE_BINDING.md",
+      "line": 201,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/ROOM_BOUND_EVIDENCE_PMC_INTAKE_BINDING.md",
+      "line": 287,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/pipeline/ROOM_BOUND_EVIDENCE_PMC_INTAKE_BINDING.md",
+      "line": 523,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/COMPLETENESS_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/COMPLETENESS_RECEIPT.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 16,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 25,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 44,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 62,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 86,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 87,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 105,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 107,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 121,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 122,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 133,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 135,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 159,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 159,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 165,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 167,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 169,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 179,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 179,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 223,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 245,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 267,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 268,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 299,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 300,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 302,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 302,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 302,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 339,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 345,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 347,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 348,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 349,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 349,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/NATIVE_V41_ENTRY_VERSION_AUTHORITY.md",
+      "line": 358,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 36,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 37,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 38,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 79,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/PROMOTION_RECEIPT.md",
+      "line": 157,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 41,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 100,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 107,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 108,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 112,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 112,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 114,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 116,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 116,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 155,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 197,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 253,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 254,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 400,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/RING7_DOCUMENTATION_PROMOTION_BOUNDARY_REGISTRY.md",
+      "line": 414,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/STABILITY_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/STABILITY_RECEIPT.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/STABILITY_RECEIPT.md",
+      "line": 23,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/STABILITY_RECEIPT.md",
+      "line": 37,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/STABILITY_RECEIPT.md",
+      "line": 127,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/STABILITY_RECEIPT.md",
+      "line": 129,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 16,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 46,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 54,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 56,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 58,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 60,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 62,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 108,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 131,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 132,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 212,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/promotion/TRANSITION_RECEIPT.md",
+      "line": 214,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "contracts/qualification/CAPABILITY_MISSION_REQUEST_RETURN.md",
@@ -2953,6 +4267,30 @@
     {
       "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
       "line": 305,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/question/QUESTION_CONTRACT.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/question/QUESTION_CONTRACT.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/question/QUESTION_CONTRACT.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/question/QUESTION_CONTRACT.md",
+      "line": 549,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
@@ -3173,6 +4511,852 @@
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
+      "path": "contracts/validation/DISTINCT_OBJECT_VALIDATION.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/DISTINCT_OBJECT_VALIDATION.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/DISTINCT_OBJECT_VALIDATION.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FORMATION_REJUSTIFICATION.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/FORMATION_REJUSTIFICATION.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FORMATION_REJUSTIFICATION.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 19,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 22,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 39,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 51,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 66,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 67,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 68,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 69,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 73,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 75,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 75,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 98,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 112,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 146,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 167,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 199,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 201,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 201,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 202,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 204,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 208,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 208,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 214,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 233,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 295,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 304,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 307,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 308,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 325,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 329,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 369,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 382,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 382,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 383,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 383,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 387,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 467,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 514,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 517,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 529,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 529,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 533,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 534,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 535,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 547,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 548,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 561,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 579,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 579,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 587,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 593,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/FRESH_READER_VALIDATION.md",
+      "line": 600,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/HYDRATION_ON_NEED.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/HYDRATION_ON_NEED.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/HYDRATION_ON_NEED.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/HYDRATION_ON_NEED.md",
+      "line": 38,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/LOSSLESS_COLLAPSE.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/LOSSLESS_COLLAPSE.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/LOSSLESS_COLLAPSE.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/LOSSLESS_COLLAPSE.md",
+      "line": 19,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/LOSSLESS_COLLAPSE.md",
+      "line": 64,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/LOSSLESS_COLLAPSE.md",
+      "line": 671,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/ONE_OBJECT_PERSPECTIVE_ROTATION.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/ONE_OBJECT_PERSPECTIVE_ROTATION.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/ONE_OBJECT_PERSPECTIVE_ROTATION.md",
+      "line": 36,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/ORTHOGONAL_TRANSITION.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/ORTHOGONAL_TRANSITION.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/ORTHOGONAL_TRANSITION.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 125,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 136,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 216,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 269,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 593,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PMC_CCR_MC_COMPATIBILITY.md",
+      "line": 773,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PREMATURE_ANALYSIS_REJECTION.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/PREMATURE_ANALYSIS_REJECTION.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PREMATURE_ANALYSIS_REJECTION.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PROPORTIONAL_FORCE_ROUTING.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/PROPORTIONAL_FORCE_ROUTING.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/PROPORTIONAL_FORCE_ROUTING.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/QUALIFICATION_TEAM_COHERENCE.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/QUALIFICATION_TEAM_COHERENCE.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/QUALIFICATION_TEAM_COHERENCE.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 14,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 25,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 42,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 76,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 80,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 84,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 84,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 84,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 290,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 304,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/R7_M_FRESH_READER_FINAL_PACKAGE_VALIDATION.md",
+      "line": 305,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RBT_001_RECURSIVE_BUTT_TOPOLOGY.md",
+      "line": 9,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/RBT_001_RECURSIVE_BUTT_TOPOLOGY.md",
+      "line": 10,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RBT_001_RECURSIVE_BUTT_TOPOLOGY.md",
+      "line": 23,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/REPLAY_FIDELITY.md",
+      "line": 8,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/REPLAY_FIDELITY.md",
+      "line": 9,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/REPLAY_FIDELITY.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/REPRESENTATION_INDEPENDENCE.md",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/REPRESENTATION_INDEPENDENCE.md",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/REPRESENTATION_INDEPENDENCE.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/REPRESENTATION_INDEPENDENCE.md",
+      "line": 42,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/REPRESENTATION_INDEPENDENCE.md",
+      "line": 105,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+      "line": 326,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+      "line": 344,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+      "line": 360,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING6_AGGREGATE_AUDIT_CLOSURE.md",
+      "line": 383,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 69,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 109,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 125,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 125,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 127,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 244,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md",
+      "line": 286,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 38,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 346,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 349,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 386,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/validation/VALIDATION_AUDIT_BOUNDARY_VECTOR_REGISTRY.md",
+      "line": 504,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "controls/data_provenance_control_layer.md",
       "line": 1,
       "token": "v39.0",
@@ -3189,6 +5373,468 @@
       "line": 5,
       "token": "v39",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 47,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 136,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 483,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 619,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 691,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/ARCHITECTURE_GUIDE.md",
+      "line": 727,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 71,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 88,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 92,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 793,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 793,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 796,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/AUDIT_GUIDE.md",
+      "line": 884,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 63,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 67,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 71,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 81,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 131,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 197,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 217,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 652,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 886,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 886,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 888,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 891,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/DEVELOPER_GUIDE.md",
+      "line": 931,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 17,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 68,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 72,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 76,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 845,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 845,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 847,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 851,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/OPERATIONS_GUIDE.md",
+      "line": 979,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 1,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 6,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 7,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 18,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 30,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 30,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 30,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 34,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 46,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 50,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 84,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 605,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/USER_MANUAL.md",
+      "line": 643,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 4,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 5,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 15,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 140,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 148,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 149,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 157,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 162,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 192,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 311,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 345,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 349,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "docs/deployment/RING7_DEPLOYMENT_PLAY.md",
+      "line": 375,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "governance/human_gate_authority_boundary.md",
@@ -3287,6 +5933,90 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+      "line": 9,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+      "line": 14,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+      "line": 15,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R7_I_TRANSITION_RECEIPT.json",
+      "line": 29,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_J_STABILITY_RECEIPT.json",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_J_STABILITY_RECEIPT.json",
+      "line": 7,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R7_J_STABILITY_RECEIPT.json",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_K_COMPLETENESS_RECEIPT.json",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R7_K_COMPLETENESS_RECEIPT.json",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_L_PROMOTION_RECEIPT.json",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "receipts/promotion/R7_L_PROMOTION_RECEIPT.json",
+      "line": 6,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "receipts/promotion/R7_L_PROMOTION_RECEIPT.json",
+      "line": 8,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "receipts/v39_0_load_receipt.md",
       "line": 1,
       "token": "v39.0",
@@ -3371,16 +6101,190 @@
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
+      "path": "schemas/pipeline/ring5_aggregate_closure.schema.json",
+      "line": 39,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/pipeline/ring5_aggregate_closure.schema.json",
+      "line": 43,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/completeness_receipt.schema.json",
+      "line": 37,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/completeness_receipt.schema.json",
+      "line": 40,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/native_v41_entry.schema.json",
+      "line": 4,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/native_v41_entry.schema.json",
+      "line": 33,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/native_v41_entry.schema.json",
+      "line": 37,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/native_v41_entry.schema.json",
+      "line": 53,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/promotion_receipt.schema.json",
+      "line": 44,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/promotion_receipt.schema.json",
+      "line": 47,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/promotion_receipt.schema.json",
+      "line": 54,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/ring7_documentation_promotion_registry.schema.json",
+      "line": 41,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/ring7_documentation_promotion_registry.schema.json",
+      "line": 45,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/stability_receipt.schema.json",
+      "line": 41,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/stability_receipt.schema.json",
+      "line": 44,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/stability_receipt.schema.json",
+      "line": 47,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/transition_receipt.schema.json",
+      "line": 40,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/transition_receipt.schema.json",
+      "line": 44,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/transition_receipt.schema.json",
+      "line": 62,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "schemas/promotion/transition_receipt.schema.json",
+      "line": 86,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/promotion/transition_receipt.schema.json",
+      "line": 90,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/promotion/transition_receipt.schema.json",
+      "line": 156,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "schemas/qualification/ring3_closure_receipt.schema.json",
       "line": 40,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
+      "path": "schemas/question/question_contract.schema.json",
+      "line": 4,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "schemas/runtime/ring4_closure_receipt.schema.json",
       "line": 51,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/validation/lossless_collapse_receipt.schema.json",
+      "line": 36,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/validation/lossless_collapse_receipt.schema.json",
+      "line": 40,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/validation/ring6_aggregate_audit_closure.schema.json",
+      "line": 45,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/validation/ring6_aggregate_audit_closure.schema.json",
+      "line": 49,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "schemas/validation/validation_audit_registry.schema.json",
+      "line": 32,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "schemas/validation/validation_audit_registry.schema.json",
+      "line": 36,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "scripts/local_provenance_simulator.py",
@@ -3401,10 +6305,94 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "tests/test_fresh_reader_final_package.py",
+      "line": 48,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_fresh_reader_final_package.py",
+      "line": 54,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_fresh_reader_final_package.py",
+      "line": 71,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_fresh_reader_final_package.py",
+      "line": 124,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_fresh_reader_final_package.py",
+      "line": 124,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 41,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 53,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 100,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 119,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 159,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 199,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 209,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_native_v41_entry.py",
+      "line": 301,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "tests/test_pipeline_integration_boundary.py",
       "line": 32,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_promotion_receipt.py",
+      "line": 64,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "tests/test_ring3_closure.py",
@@ -3417,6 +6405,54 @@
       "line": 33,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_ring7_aggregate_closure.py",
+      "line": 69,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_stability_receipt.py",
+      "line": 61,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_stability_receipt.py",
+      "line": 67,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_transition_receipt.py",
+      "line": 42,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_transition_receipt.py",
+      "line": 54,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_transition_receipt.py",
+      "line": 66,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tests/test_transition_receipt.py",
+      "line": 72,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tests/test_transition_receipt.py",
+      "line": 107,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "tests/test_v40_candidate_continuity.py",
@@ -3689,6 +6725,726 @@
       "classification": "HISTORICAL_V40"
     },
     {
+      "path": "tools/validate_architecture_guide.py",
+      "line": 108,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_architecture_guide.py",
+      "line": 160,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_architecture_guide.py",
+      "line": 162,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_architecture_guide.py",
+      "line": 167,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_audit_guide.py",
+      "line": 107,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_audit_guide.py",
+      "line": 108,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ccr_mc_response_output_admissibility.py",
+      "line": 296,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ccr_mc_response_output_admissibility.py",
+      "line": 297,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_completeness_receipt.py",
+      "line": 97,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_completeness_receipt.py",
+      "line": 98,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_developer_guide.py",
+      "line": 123,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_developer_guide.py",
+      "line": 184,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_developer_guide.py",
+      "line": 188,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 135,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 137,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 277,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 278,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 573,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 582,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 582,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 586,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 589,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 592,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 624,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 730,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 733,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 745,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 831,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 837,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 849,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 849,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 859,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader.py",
+      "line": 866,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 115,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 117,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 121,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 122,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 126,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 143,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 144,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 145,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 158,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 165,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 172,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 179,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 190,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 190,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 190,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 197,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 197,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 412,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 413,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 414,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_fresh_reader_final_package.py",
+      "line": 502,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 482,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 497,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 520,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 532,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 544,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 552,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 587,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 588,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 596,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 597,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 605,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 606,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 736,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 739,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 927,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_lossless_collapse.py",
+      "line": 992,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 46,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 78,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 90,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 183,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 186,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 198,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 223,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 224,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 235,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 256,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 308,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 309,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 310,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 321,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 321,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 321,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 341,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 342,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 343,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 344,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 362,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 363,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 367,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 382,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 382,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 382,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 383,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 384,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 393,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 406,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 407,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 411,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 424,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 425,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 436,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 521,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 532,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 535,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 538,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 553,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 556,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 559,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 559,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 562,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tools/validate_native_v41_entry.py",
+      "line": 562,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_operations_guide.py",
+      "line": 109,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_operations_guide.py",
+      "line": 110,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_operations_guide.py",
+      "line": 111,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pipeline_cross_stage_integrity.py",
+      "line": 363,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pipeline_cross_stage_integrity.py",
+      "line": 715,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "tools/validate_pipeline_integration_boundary.py",
       "line": 126,
       "token": "vTemporal.41.0",
@@ -3711,6 +7467,72 @@
       "line": 480,
       "token": "vTemporal.41.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_pmc_ccr_candidate_commitment_lineage.py",
+      "line": 257,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pmc_ccr_mc_compatibility.py",
+      "line": 762,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pmc_ccr_mc_compatibility.py",
+      "line": 819,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pmc_ccr_mc_compatibility.py",
+      "line": 834,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_pmc_ccr_mc_compatibility.py",
+      "line": 840,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_promotion_receipt.py",
+      "line": 95,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_promotion_receipt.py",
+      "line": 96,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_promotion_receipt.py",
+      "line": 97,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_promotion_receipt.py",
+      "line": 206,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_question_contract.py",
+      "line": 431,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_question_contract.py",
+      "line": 550,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
     },
     {
       "path": "tools/validate_ring3_closure.py",
@@ -3749,8 +7571,404 @@
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 188,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 191,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 241,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 283,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 286,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 291,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 294,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 456,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 713,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring5_aggregate_closure.py",
+      "line": 714,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring6_closure.py",
+      "line": 556,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring6_closure.py",
+      "line": 559,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7.py",
+      "line": 29,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7.py",
+      "line": 164,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_aggregate_closure.py",
+      "line": 184,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring7_aggregate_closure.py",
+      "line": 185,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_aggregate_closure.py",
+      "line": 189,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_aggregate_closure.py",
+      "line": 200,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring7_aggregate_closure.py",
+      "line": 265,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_aggregate_closure.py",
+      "line": 353,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_documentation_promotion_boundary.py",
+      "line": 57,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_documentation_promotion_boundary.py",
+      "line": 230,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring7_documentation_promotion_boundary.py",
+      "line": 233,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_documentation_promotion_boundary.py",
+      "line": 368,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_documentation_promotion_boundary.py",
+      "line": 375,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_ring7_documentation_promotion_boundary.py",
+      "line": 553,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_room_bound_evidence_pmc_intake.py",
+      "line": 248,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "tools/validate_scar_replay.py",
       "line": 322,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 98,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 105,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 157,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 160,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 163,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 299,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_stability_receipt.py",
+      "line": 302,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 37,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 47,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 48,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 54,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 63,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 66,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 67,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 69,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 93,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 94,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 139,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 140,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 160,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 161,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 171,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 174,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 193,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 240,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 241,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_transition_receipt.py",
+      "line": 241,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_user_manual.py",
+      "line": 16,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_user_manual.py",
+      "line": 110,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_user_manual.py",
+      "line": 111,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_user_manual.py",
+      "line": 173,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_user_manual.py",
+      "line": 175,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 109,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 112,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 148,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 163,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 165,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 170,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "tools/validate_validation_audit_boundary.py",
+      "line": 172,
       "token": "v41",
       "classification": "CURRENT_V41_FAMILY"
     },
