@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/post_promotion_integrity_verification.schema.json",
+  "title": "Zervan Post-Promotion Integrity Verification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "ring",
+    "approved_candidate_commit",
+    "canonical_transition_commit",
+    "candidate_preserved",
+    "approved_candidate_in_main",
+    "canonical_transition_in_main",
+    "authorized_delta_exact",
+    "authorized_delta_count",
+    "human_gate_authorization",
+    "canonical",
+    "authority_state",
+    "human_gate_state",
+    "disposition"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "POST_PROMOTION_INTEGRITY_VERIFICATION"
+    },
+    "ring": {
+      "const": "R8-I"
+    },
+    "approved_candidate_commit": {
+      "const": "2d1013304c6c13efd08fc3a9d7aed7804642cde2"
+    },
+    "canonical_transition_commit": {
+      "const": "62bd3c9f54d46034181c9d94a443757a857423c1"
+    },
+    "candidate_preserved": {
+      "const": true
+    },
+    "approved_candidate_in_main": {
+      "const": true
+    },
+    "canonical_transition_in_main": {
+      "const": true
+    },
+    "authorized_delta_exact": {
+      "const": true
+    },
+    "authorized_delta_count": {
+      "const": 11
+    },
+    "human_gate_authorization": {
+      "const": "GRANTED"
+    },
+    "canonical": {
+      "const": true
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "disposition": {
+      "const": "POST_PROMOTION_INTEGRITY_VERIFIED"
+    }
+  }
+}

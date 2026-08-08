@@ -47,6 +47,12 @@ RINGS = [
         "tools/validate_canonical_version_authority_transition.py",
         "tests/test_canonical_version_authority_transition.py",
     ),
+    (
+        "R8-I",
+        "Post-Promotion Integrity Verification",
+        "tools/validate_post_promotion_integrity.py",
+        "tests/test_post_promotion_integrity.py",
+    ),
 ]
 
 results = []
@@ -110,16 +116,16 @@ if failed:
     raise SystemExit(1)
 
 print("RING 8 RESULT: INSTANTIATED")
-print("CURRENT: R8-H PASS")
+print("CURRENT: R8-I PASS")
 print("R8-F: SKIPPED BY HUMAN DIRECTION")
 print("R8-G: PROMOTION EXECUTED")
+print("R8-H: CANONICAL TRANSITION COMPLETE")
 print("R8-E Human Gate Authorization: GRANTED")
-print("NEXT: R8-I Post-Promotion Integrity Verification")
-print("Pre-Promotion Verification: VERIFIED")
-print("Persistent candidate binding: NOT YET CREATED")
-print("Decision instance: NONE")
-print("Human Gate Authorization: NOT_GRANTED")
+print("Post-Promotion Integrity: VERIFIED")
+print("Candidate preserved: TRUE")
+print("Canonical: TRUE")
 print("Authority: NONE")
 print("Human Gate: ACTIVE")
-print("Promotion State: CANDIDATE")
+print("Promotion State: CANONICAL")
+print("NEXT: R8-J Post-Promotion Fresh Reader")
 raise SystemExit(0)
