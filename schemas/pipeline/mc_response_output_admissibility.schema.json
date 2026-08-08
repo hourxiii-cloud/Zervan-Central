@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/mc_response_output_admissibility.schema.json",
+  "title": "Zervan R5-D MC Response / Output Admissibility",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mc_evaluation_id",
+    "ccr_id",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "coordinate_reference",
+    "representation_reference",
+    "governance_constraint_references",
+    "propagated_uncertainty_references",
+    "response_class_results",
+    "lineage_reference",
+    "provenance_route",
+    "evaluation_disposition",
+    "blocking_reasons",
+    "ephemerality_collision_state",
+    "interface_collision_state",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "mc_evaluation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "ccr_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "representation_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "governance_constraint_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "propagated_uncertainty_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "response_class_results": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "response_class",
+          "disposition",
+          "required_conditions",
+          "inadmissibility_reasons"
+        ],
+        "properties": {
+          "response_class": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposition": {
+            "type": "string",
+            "enum": [
+              "ADMISSIBLE",
+              "CONDITIONAL",
+              "INADMISSIBLE"
+            ]
+          },
+          "required_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "inadmissibility_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evaluation_disposition": {
+      "type": "string",
+      "enum": [
+        "EVALUATED",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "ephemerality_collision_state": {
+      "type": "string",
+      "const": "MC_EPHEMERALITY_LINEAGE_COLLISION"
+    },
+    "interface_collision_state": {
+      "type": "string",
+      "const": "INTERFACE_COLLISION_REQUIRING_CCR_PRESERVATION"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}

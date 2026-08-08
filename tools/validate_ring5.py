@@ -64,6 +64,12 @@ RINGS = [
         "tools/validate_pmc_ccr_candidate_commitment_lineage.py",
         "tests/test_pmc_ccr_candidate_commitment_lineage.py",
     ),
+    (
+        "R5-D",
+        "CCR -> MC Response / Output Admissibility Binding",
+        "tools/validate_ccr_mc_response_output_admissibility.py",
+        "tests/test_ccr_mc_response_output_admissibility.py",
+    ),
 ]
 
 print()
