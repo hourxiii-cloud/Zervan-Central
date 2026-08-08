@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/hydration_on_need.schema.json",
+  "title": "Zervan R6-H Hydration On Need",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "object_id",
+    "operation_context",
+    "active_question",
+    "active_mission_reference",
+    "payload_scope",
+    "verified_territory_available",
+    "requested_verified_territory",
+    "requested_payload",
+    "mission_required_payload",
+    "restored_verified_territory",
+    "restored_payload",
+    "retained_at_rest_payload",
+    "blocked_payload",
+    "pre_landing_active_payload",
+    "landing_released_payload",
+    "landing_retained_payload",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "restriction_references",
+    "stick_reference",
+    "object_identity_changed",
+    "lifecycle_mutated",
+    "occupancy_mutated",
+    "formation_mutated",
+    "release_state",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "HYDRATION_ON_NEED"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "operation_context": {
+      "type": "string",
+      "enum": [
+        "ACTIVE_MISSION",
+        "NARROW_QUESTION",
+        "LANDING",
+        "REPLAY",
+        "BOUNDED_REVISIT"
+      ]
+    },
+    "active_question": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "active_mission_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payload_scope": {
+      "type": "string"
+    },
+    "verified_territory_available": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "requested_verified_territory": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "requested_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "mission_required_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "restored_verified_territory": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "restored_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "retained_at_rest_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "blocked_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "pre_landing_active_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "landing_released_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "landing_retained_payload": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "restriction_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stick_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "object_identity_changed": {
+      "type": "boolean"
+    },
+    "lifecycle_mutated": {
+      "type": "boolean"
+    },
+    "occupancy_mutated": {
+      "type": "boolean"
+    },
+    "formation_mutated": {
+      "type": "boolean"
+    },
+    "release_state": {
+      "type": "string",
+      "enum": [
+        "RELEASED",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "FULL_PAYLOAD_SCOPE_FORBIDDEN",
+          "ACTIVE_MISSION_MISSING",
+          "ACTIVE_QUESTION_MISSING",
+          "MISSION_NECESSITY_MISSING",
+          "UNVERIFIED_TERRITORY_REQUESTED",
+          "RESTORED_TERRITORY_OUTSIDE_REQUEST",
+          "RESTORED_PAYLOAD_OUTSIDE_REQUEST",
+          "RESTORED_PAYLOAD_OUTSIDE_MISSION_NEED",
+          "UNNECESSARY_PAYLOAD_NOT_AT_REST",
+          "LANDING_PAYLOAD_PARTITION_INVALID",
+          "RESTRICTION_BYPASSED",
+          "EVIDENCE_BOUNDARY_BROADENED",
+          "EVIDENCE_CEILING_ELEVATED",
+          "OBJECT_IDENTITY_REPLACED",
+          "LIFECYCLE_MUTATED",
+          "OCCUPANCY_MUTATED",
+          "FORMATION_MUTATED",
+          "STICK_NOT_PRESERVED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}

@@ -98,6 +98,12 @@ RINGS = [
         "tools/validate_distinct_object_validation.py",
         "tests/test_distinct_object_validation.py",
     ),
+    (
+        "R6-H",
+        "Hydration-On-Need",
+        "tools/validate_hydration_on_need.py",
+        "tests/test_hydration_on_need.py",
+    ),
 ]
 
 results = []
