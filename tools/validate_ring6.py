@@ -110,6 +110,12 @@ RINGS = [
         "tools/validate_replay_fidelity.py",
         "tests/test_replay_fidelity.py",
     ),
+    (
+        "R6-J",
+        "PMC / CCR / MC Compatibility",
+        "tools/validate_pmc_ccr_mc_compatibility.py",
+        "tests/test_pmc_ccr_mc_compatibility.py",
+    ),
 ]
 
 results = []

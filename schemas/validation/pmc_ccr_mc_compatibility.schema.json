@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/pmc_ccr_mc_compatibility.schema.json",
+  "title": "Zervan R6-J PMC CCR MC Compatibility",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "pipeline_route",
+    "room_object_id",
+    "pmc_room_object_id",
+    "ccr_room_object_id",
+    "mc_room_object_id",
+    "pmc_selected_world_id",
+    "ccr_selected_world_id",
+    "pmc_candidate_ordering",
+    "ccr_candidate_ordering",
+    "pmc_rejection_references",
+    "ccr_rejection_references",
+    "pmc_uncertainty_references",
+    "ccr_uncertainty_references",
+    "mc_uncertainty_references",
+    "pmc_evidence_boundary_reference",
+    "ccr_evidence_boundary_reference",
+    "mc_evidence_boundary_reference",
+    "pmc_evidence_ceiling_reference",
+    "ccr_evidence_ceiling_reference",
+    "mc_evidence_ceiling_reference",
+    "ccr_reference",
+    "mc_input_kind",
+    "mc_class_dispositions",
+    "legacy_direct_interface_present",
+    "legacy_naming_lock_present",
+    "interface_collision_state",
+    "mc_ephemerality_collision_state",
+    "room_semantics_absorbed",
+    "pmc_authority_promoted",
+    "ccr_authority_promoted",
+    "mc_authority_promoted",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "PMC_CCR_MC_COMPATIBILITY"
+    },
+    "pipeline_route": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "room_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pmc_room_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "ccr_room_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "mc_room_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "pmc_selected_world_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ccr_selected_world_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pmc_candidate_ordering": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ccr_candidate_ordering": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pmc_rejection_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ccr_rejection_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pmc_uncertainty_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ccr_uncertainty_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mc_uncertainty_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pmc_evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ccr_evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mc_evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pmc_evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ccr_evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mc_evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ccr_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mc_input_kind": {
+      "type": "string",
+      "enum": [
+        "CCR",
+        "RAW_PMC"
+      ]
+    },
+    "mc_class_dispositions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "response_class",
+          "disposition"
+        ],
+        "properties": {
+          "response_class": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposition": {
+            "type": "string",
+            "enum": [
+              "ADMISSIBLE",
+              "CONDITIONAL",
+              "INADMISSIBLE"
+            ]
+          }
+        }
+      }
+    },
+    "legacy_direct_interface_present": {
+      "type": "boolean"
+    },
+    "legacy_naming_lock_present": {
+      "type": "boolean"
+    },
+    "interface_collision_state": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "INTERFACE_COLLISION_REQUIRING_CCR_PRESERVATION",
+        null
+      ]
+    },
+    "mc_ephemerality_collision_state": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "MC_EPHEMERALITY_LINEAGE_COLLISION",
+        null
+      ]
+    },
+    "room_semantics_absorbed": {
+      "type": "boolean"
+    },
+    "pmc_authority_promoted": {
+      "type": "boolean"
+    },
+    "ccr_authority_promoted": {
+      "type": "boolean"
+    },
+    "mc_authority_promoted": {
+      "type": "boolean"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "PIPELINE_ORDER_CHANGED",
+          "CCR_BYPASSED",
+          "ROOM_IDENTITY_CHANGED",
+          "PMC_SELECTION_REINTERPRETED",
+          "PMC_CANDIDATE_ORDER_CHANGED",
+          "PMC_REJECTION_HISTORY_LOST",
+          "UNCERTAINTY_LOST",
+          "EVIDENCE_BOUNDARY_CHANGED",
+          "EVIDENCE_CEILING_CHANGED",
+          "CCR_REFERENCE_MISSING",
+          "MC_RAW_PMC_INPUT_USED",
+          "HISTORICAL_INTERFACE_ARTIFACT_MISSING",
+          "HISTORICAL_NAMING_LOCK_MISSING",
+          "INTERFACE_COLLISION_NORMALIZED_AWAY",
+          "MC_EPHEMERALITY_COLLISION_LOST",
+          "ROOM_SEMANTICS_ABSORBED",
+          "PMC_AUTHORITY_PROMOTED",
+          "CCR_AUTHORITY_PROMOTED",
+          "MC_AUTHORITY_PROMOTED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}
