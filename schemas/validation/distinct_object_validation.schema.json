@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/distinct_object_validation.schema.json",
+  "title": "Zervan R6-G Distinct Object Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "source_object_id",
+    "candidate_target_object_id",
+    "perspective_changed",
+    "zone_changed",
+    "space_changed",
+    "authorized_view_changed",
+    "branch_present",
+    "evidence_of_distinctness",
+    "shared_provenance",
+    "non_shared_provenance",
+    "independent_origin_reference",
+    "independent_boundary_reference",
+    "independent_geometry_reference",
+    "independent_genesis_reference",
+    "relationship_to_source",
+    "passageway_conditions",
+    "contamination_controls",
+    "return_route",
+    "determination",
+    "passageway_state",
+    "new_object_created",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "validation_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "DISTINCT_OBJECT_TEST"
+    },
+    "source_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "candidate_target_object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "perspective_changed": {
+      "type": "boolean"
+    },
+    "zone_changed": {
+      "type": "boolean"
+    },
+    "space_changed": {
+      "type": "boolean"
+    },
+    "authorized_view_changed": {
+      "type": "boolean"
+    },
+    "branch_present": {
+      "type": "boolean"
+    },
+    "evidence_of_distinctness": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "shared_provenance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "non_shared_provenance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "independent_origin_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independent_boundary_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independent_geometry_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independent_genesis_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relationship_to_source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "passageway_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contamination_controls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "return_route": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "determination": {
+      "type": "string",
+      "enum": [
+        "SAME_OBJECT",
+        "DISTINCT_OBJECT",
+        "UNRESOLVED"
+      ]
+    },
+    "passageway_state": {
+      "type": "string",
+      "enum": [
+        "PROPOSED",
+        "ESTABLISHED",
+        "BLOCKED"
+      ]
+    },
+    "new_object_created": {
+      "type": "boolean"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "PERSPECTIVE_CLONED_AS_OBJECT",
+          "BRANCH_CLONED_AS_OBJECT",
+          "DISTINCTNESS_WITHOUT_EVIDENCE",
+          "DISTINCT_OBJECT_IDENTITY_COLLISION",
+          "INDEPENDENT_GENESIS_MISSING",
+          "INDEPENDENT_ORIGIN_MISSING",
+          "INDEPENDENT_BOUNDARY_MISSING",
+          "INDEPENDENT_GEOMETRY_MISSING",
+          "NON_SHARED_PROVENANCE_MISSING",
+          "PASSAGEWAY_ESTABLISHED_FOR_SAME_OBJECT",
+          "PASSAGEWAY_ESTABLISHED_WHILE_UNRESOLVED",
+          "PASSAGEWAY_EVIDENCE_MISSING",
+          "PASSAGEWAY_CONTROLS_MISSING",
+          "RETURN_ROUTE_MISSING",
+          "NEW_OBJECT_CREATED_WHILE_UNRESOLVED",
+          "AUTHORITY_PROMOTED"
+        ]
+      }
+    }
+  }
+}

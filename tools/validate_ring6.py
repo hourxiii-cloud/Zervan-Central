@@ -92,6 +92,12 @@ RINGS = [
         "tools/validate_formation_rejustification.py",
         "tests/test_formation_rejustification.py",
     ),
+    (
+        "R6-G",
+        "Distinct-Object Validation",
+        "tools/validate_distinct_object_validation.py",
+        "tests/test_distinct_object_validation.py",
+    ),
 ]
 
 results = []
