@@ -69,6 +69,13 @@ RINGS = [
         "tests/test_hydration.py",
     ),
 
+    (
+        "R3-J",
+        "Ring 3 Qualification & Occupation Aggregate Closure",
+        "tools/validate_ring3_closure.py",
+        "tests/test_ring3_closure.py",
+    ),
+
 ]
 
 print()

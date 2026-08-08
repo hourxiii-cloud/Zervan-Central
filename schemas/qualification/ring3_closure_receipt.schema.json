@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/qualification/ring3_closure_receipt.schema.json",
+  "title": "Zervan R3-J Ring 3 Closure Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ring3_closure_receipt_id",
+    "native_version",
+    "ring",
+    "promotion_state",
+    "authority_state",
+    "human_gate_state",
+    "ring1_dependency_state",
+    "ring2_dependency_state",
+    "component_states",
+    "qualification_occupation_core_state",
+    "runtime_state_handoff_state",
+    "source_tranche_boundary_state",
+    "responsibility_integrity_state",
+    "one_object_continuity_state",
+    "state_separation_state",
+    "failure_lock_state",
+    "closure_state",
+    "provenance_route",
+    "closed_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "ring3_closure_receipt_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "native_version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "ring": {
+      "type": "string",
+      "const": "R3"
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "ring1_dependency_state": {
+      "type": "string",
+      "const": "PASS"
+    },
+    "ring2_dependency_state": {
+      "type": "string",
+      "const": "PASS"
+    },
+    "component_states": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "R3-A",
+        "R3-B",
+        "R3-C",
+        "R3-D",
+        "R3-E",
+        "R3-F",
+        "R3-G",
+        "R3-H",
+        "R3-I"
+      ],
+      "properties": {
+        "R3-A": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-B": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-C": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-D": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-E": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-F": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-G": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-H": {
+          "type": "string",
+          "const": "PASS"
+        },
+        "R3-I": {
+          "type": "string",
+          "const": "PASS"
+        }
+      }
+    },
+    "qualification_occupation_core_state": {
+      "type": "string",
+      "const": "PASS"
+    },
+    "runtime_state_handoff_state": {
+      "type": "string",
+      "const": "BOUND"
+    },
+    "source_tranche_boundary_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "responsibility_integrity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "one_object_continuity_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "state_separation_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "failure_lock_state": {
+      "type": "string",
+      "const": "PRESERVED"
+    },
+    "closure_state": {
+      "type": "string",
+      "const": "VALIDATED_CANDIDATE"
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

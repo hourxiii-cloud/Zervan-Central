@@ -2837,6 +2837,24 @@
       "classification": "CURRENT_V41_FAMILY"
     },
     {
+      "path": "contracts/qualification/RING3_QUALIFICATION_OCCUPATION_CLOSURE.md",
+      "line": 5,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "contracts/qualification/RING3_QUALIFICATION_OCCUPATION_CLOSURE.md",
+      "line": 12,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
+      "path": "contracts/qualification/RING3_QUALIFICATION_OCCUPATION_CLOSURE.md",
+      "line": 384,
+      "token": "v41",
+      "classification": "CURRENT_V41_FAMILY"
+    },
+    {
       "path": "contracts/qualification/ROOM_LIFECYCLE_READINESS.md",
       "line": 5,
       "token": "vTemporal.41.0",
@@ -3065,6 +3083,12 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "schemas/qualification/ring3_closure_receipt.schema.json",
+      "line": 40,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "scripts/local_provenance_simulator.py",
       "line": 2,
       "token": "v39.0",
@@ -3081,6 +3105,12 @@
       "line": 202,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "tests/test_ring3_closure.py",
+      "line": 32,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "tests/test_v40_candidate_continuity.py",
@@ -3351,6 +3381,18 @@
       "line": 24,
       "token": "v40",
       "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tools/validate_ring3_closure.py",
+      "line": 167,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "tools/validate_ring3_closure.py",
+      "line": 524,
+      "token": "vTemporal.41.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "verification/hash_inventory_plan.md",
