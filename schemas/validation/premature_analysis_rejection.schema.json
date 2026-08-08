@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/premature_analysis_rejection.schema.json",
+  "title": "Zervan R6-C Premature Analysis Rejection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "object_id",
+    "qualification_request_reference",
+    "qualification_record_reference",
+    "request_state",
+    "qualification_disposition",
+    "room_lifecycle_state",
+    "readiness_blockers",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "analytical_capability_available",
+    "analytical_admission_requested",
+    "hydration_state",
+    "analytical_occupancy_state",
+    "gate_result",
+    "rejection_reasons",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "PREMATURE_ANALYSIS_REJECTION"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "qualification_request_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualification_record_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "request_state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "READY",
+        "BLOCKED"
+      ]
+    },
+    "qualification_disposition": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "QUALIFIED",
+        "PROVISIONAL",
+        "REJECTED",
+        "DEGRADED",
+        null
+      ]
+    },
+    "room_lifecycle_state": {
+      "type": "string",
+      "enum": [
+        "DETECTED",
+        "PROVISIONAL",
+        "QUALIFYING",
+        "QUALIFIED",
+        "READY",
+        "ACTIVE",
+        "LANDED",
+        "DEGRADED",
+        "SEALED",
+        "REOPENED",
+        "REJECTED",
+        "SUPERSEDED"
+      ]
+    },
+    "readiness_blockers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_ceiling_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "analytical_capability_available": {
+      "type": "boolean"
+    },
+    "analytical_admission_requested": {
+      "type": "boolean"
+    },
+    "hydration_state": {
+      "type": "string",
+      "enum": [
+        "NOT_REQUESTED",
+        "RELEASED",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "analytical_occupancy_state": {
+      "type": "string",
+      "const": "NOT_ENTERED"
+    },
+    "gate_result": {
+      "type": "string",
+      "enum": [
+        "ALLOWED",
+        "REJECTED"
+      ]
+    },
+    "rejection_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "REQUEST_NOT_READY",
+          "ROOM_NOT_QUALIFIED",
+          "ROOM_NOT_READY",
+          "READINESS_BLOCKER_PRESENT",
+          "CAPABILITY_UNAVAILABLE",
+          "ANALYSIS_NOT_REQUESTED",
+          "EVIDENCE_BOUNDARY_UNRESOLVED",
+          "EVIDENCE_CEILING_UNRESOLVED"
+        ]
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}

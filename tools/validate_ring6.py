@@ -68,6 +68,12 @@ RINGS = [
         "tools/validate_one_object_perspective_rotation.py",
         "tests/test_one_object_perspective_rotation.py",
     ),
+    (
+        "R6-C",
+        "Premature-Analysis Rejection",
+        "tools/validate_premature_analysis_rejection.py",
+        "tests/test_premature_analysis_rejection.py",
+    ),
 ]
 
 results = []
