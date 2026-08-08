@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/native_v41_entry.schema.json",
+  "title": "Zervan Native v41 Repository Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "version",
+    "implementation_identity",
+    "promotion_state",
+    "canonical",
+    "canonical_branch",
+    "development_branch",
+    "version_surfaces",
+    "initiation_surface",
+    "canonical_entry_surface",
+    "historical_entry_surfaces",
+    "authority_state",
+    "human_gate_state",
+    "external_runtime",
+    "external_action",
+    "system_population",
+    "target_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "version": {
+      "type": "string",
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "type": "string",
+      "const": "v41 Complete"
+    },
+    "promotion_state": {
+      "type": "string",
+      "const": "CANDIDATE"
+    },
+    "canonical": {
+      "type": "boolean",
+      "const": false
+    },
+    "canonical_branch": {
+      "type": "string",
+      "const": "main"
+    },
+    "development_branch": {
+      "type": "string",
+      "const": "candidate/v41-complete"
+    },
+    "version_surfaces": {
+      "type": "array",
+      "const": [
+        "VERSION",
+        "VERSION.json",
+        "VERSION_AUTHORITY.md"
+      ]
+    },
+    "initiation_surface": {
+      "type": "string",
+      "const": "call/INITIATION_STATEMENT_V41_0.md"
+    },
+    "canonical_entry_surface": {
+      "type": "string",
+      "const": "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md"
+    },
+    "historical_entry_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "external_runtime": {
+      "type": "string",
+      "const": "DISABLED"
+    },
+    "external_action": {
+      "type": "string",
+      "const": "DISABLED"
+    },
+    "system_population": {
+      "type": "string",
+      "const": "DISALLOWED"
+    },
+    "target_state": {
+      "type": "string",
+      "const": "READY_FOR_HUMAN_GATE"
+    }
+  }
+}
