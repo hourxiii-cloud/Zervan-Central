@@ -23,6 +23,12 @@ RINGS = [
         "tools/validate_promotion_decision_contract.py",
         "tests/test_promotion_decision_contract.py",
     ),
+    (
+        "R8-C",
+        "Promotion Candidate Binding",
+        "tools/validate_promotion_candidate_binding.py",
+        "tests/test_promotion_candidate_binding.py",
+    ),
 ]
 
 results = []
@@ -86,8 +92,9 @@ if failed:
     raise SystemExit(1)
 
 print("RING 8 RESULT: INSTANTIATED")
-print("CURRENT: R8-B PASS")
-print("NEXT: R8-C Promotion Candidate Binding")
+print("CURRENT: R8-C PASS")
+print("NEXT: R8-D Pre-Promotion Verification")
+print("Persistent candidate binding: NOT YET CREATED")
 print("Decision instance: NONE")
 print("Human Gate Authorization: NOT_GRANTED")
 print("Authority: NONE")

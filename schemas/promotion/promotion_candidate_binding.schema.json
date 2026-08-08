@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/promotion_candidate_binding.schema.json",
+  "title": "Zervan Promotion Candidate Binding",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "ring",
+    "native_version",
+    "implementation_identity",
+    "repository",
+    "candidate_branch",
+    "candidate_commit",
+    "candidate_tree",
+    "target_branch",
+    "ring7_closure_path",
+    "ring7_closure_blob",
+    "r8a_boundary_path",
+    "r8a_boundary_blob",
+    "r8b_decision_contract_path",
+    "r8b_decision_contract_blob",
+    "binding_serialization",
+    "binding_sha512",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "PROMOTION_CANDIDATE_BINDING"
+    },
+    "ring": {
+      "const": "R8-C"
+    },
+    "native_version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "repository": {
+      "const": "hourxiii-cloud/Zervan-Central"
+    },
+    "candidate_branch": {
+      "const": "candidate/v41-complete"
+    },
+    "candidate_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "candidate_tree": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "target_branch": {
+      "const": "main"
+    },
+    "ring7_closure_path": {
+      "const": "contracts/validation/RING7_AGGREGATE_DOCUMENTATION_PROMOTION_READINESS_CLOSURE.md"
+    },
+    "ring7_closure_blob": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "r8a_boundary_path": {
+      "const": "contracts/promotion/RING8_HUMAN_GATE_PROMOTION_BOUNDARY.md"
+    },
+    "r8a_boundary_blob": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "r8b_decision_contract_path": {
+      "const": "contracts/promotion/PROMOTION_DECISION_CONTRACT.md"
+    },
+    "r8b_decision_contract_blob": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "binding_serialization": {
+      "const": "JSON_SORTED_KEYS_COMPACT_UTF8"
+    },
+    "binding_sha512": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{128}$"
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    }
+  }
+}
