@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/validation/one_object_perspective_rotation.schema.json",
+  "title": "Zervan R6-B One-Object Perspective Rotation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "validation_vector",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "provenance_anchors",
+    "exclusion_references",
+    "disagreement_references",
+    "perspectives",
+    "stick_transitions",
+    "branch_references",
+    "passageway_references",
+    "validation_disposition",
+    "failure_reasons",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "validation_vector": {
+      "type": "string",
+      "const": "ONE_OBJECT_PERSPECTIVE_ROTATION"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_anchors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "exclusion_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "disagreement_references": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "perspectives": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "perspective_id",
+          "object_id",
+          "room_revision_id",
+          "room_state_root",
+          "authorized_view_root",
+          "zone_reference",
+          "space_reference",
+          "representation_transform_reference",
+          "orientation_reference",
+          "coordinate_reference",
+          "evidence_boundary_reference",
+          "evidence_ceiling_reference",
+          "provenance_anchors",
+          "exclusion_references",
+          "disagreement_references"
+        ],
+        "properties": {
+          "perspective_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "room_revision_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "room_state_root": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "authorized_view_root": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "zone_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "space_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "representation_transform_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "orientation_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coordinate_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_boundary_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_ceiling_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance_anchors": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "exclusion_references": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "disagreement_references": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "stick_transitions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_perspective_id",
+          "destination_perspective_id",
+          "source_object_id",
+          "destination_object_id",
+          "continuity_state"
+        ],
+        "properties": {
+          "source_perspective_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "destination_perspective_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_object_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "destination_object_id": {
+            "type": "string",
+            "pattern": "^sha512:[0-9a-f]{128}$"
+          },
+          "continuity_state": {
+            "type": "string",
+            "const": "PRESERVED"
+          }
+        }
+      }
+    },
+    "branch_references": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "passageway_references": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "validation_disposition": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "BLOCKED"
+      ]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
