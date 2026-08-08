@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/pipeline/human_gate_transition_decision.schema.json",
+  "title": "Zervan R5-F Human Gate Transition Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "human_gate_decision_id",
+    "raven_representation_id",
+    "mc_evaluation_id",
+    "ccr_id",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "coordinate_reference",
+    "transition_class",
+    "transition_target",
+    "requested_scope",
+    "mc_admissibility_references",
+    "governance_constraint_references",
+    "human_decision_reference",
+    "decision_state",
+    "decision_reasons",
+    "lineage_reference",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "decision_time_reference"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "human_gate_decision_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "raven_representation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "mc_evaluation_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "ccr_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "room_revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "room_state_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authorized_view_root": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transition_class": {
+      "type": "string",
+      "enum": [
+        "PUBLICATION",
+        "EXTERNAL_DEPLOYMENT",
+        "PRODUCTION_EXECUTION",
+        "SYSTEM_POPULATION",
+        "PACKAGE_PROMOTION",
+        "COMPLIANCE_CLAIM",
+        "LEGAL_FINDING",
+        "CERTIFICATION_CLAIM",
+        "OPERATIONAL_AUTHORITY",
+        "DISCIPLINARY_OR_HR_ACTION",
+        "AUTHORITY_BEARING_AUTOMATION",
+        "IRREVERSIBLE_EXTERNAL_CHANGE"
+      ]
+    },
+    "transition_target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requested_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mc_admissibility_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_constraint_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "human_decision_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_state": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "DENIED"
+      ]
+    },
+    "decision_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "decision_time_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

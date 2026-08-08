@@ -76,6 +76,12 @@ RINGS = [
         "tools/validate_mc_raven_representation_binding.py",
         "tests/test_mc_raven_representation_binding.py",
     ),
+    (
+        "R5-F",
+        "Raven -> Human Gate Publication / Action Boundary",
+        "tools/validate_raven_human_gate_publication_action_boundary.py",
+        "tests/test_raven_human_gate_publication_action_boundary.py",
+    ),
 ]
 
 print()
