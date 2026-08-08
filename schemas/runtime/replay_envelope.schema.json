@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/runtime/replay_envelope.schema.json",
+  "title": "Zervan R4-F Replay Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "replay_envelope_id",
+    "object_id",
+    "closing_witness_reference",
+    "preserved_lineage_reference",
+    "question_contract_reference",
+    "inquiry_envelope_reference",
+    "departure_coordinate",
+    "replay_observational_coordinate",
+    "occupied_zone_reference",
+    "occupied_space_reference",
+    "transform_references",
+    "evidence_used_references",
+    "capability_movement_references",
+    "evidence_boundary",
+    "evidence_ceiling",
+    "restriction_constriction_references",
+    "collapse_boundary_references",
+    "finding_references",
+    "rendering_reference",
+    "return_coordinate",
+    "cartography_reference",
+    "stick_reference",
+    "replay_purpose",
+    "replay_eligibility",
+    "blocking_reasons",
+    "governance_reference",
+    "authorization_reference",
+    "human_gate_reference",
+    "provenance_route",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "replay_envelope_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "object_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "closing_witness_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preserved_lineage_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question_contract_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inquiry_envelope_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "departure_coordinate": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "replay_observational_coordinate": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "occupied_zone_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "occupied_space_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transform_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_used_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "capability_movement_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_boundary": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "restriction_constriction_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "collapse_boundary_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "finding_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rendering_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "return_coordinate": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "cartography_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stick_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replay_purpose": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "replay_eligibility": {
+      "type": "string",
+      "enum": [
+        "ELIGIBLE",
+        "BLOCKED"
+      ]
+    },
+    "blocking_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "governance_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "human_gate_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

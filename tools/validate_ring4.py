@@ -41,6 +41,13 @@ RINGS = [
         "tests/test_closing_witness.py",
     ),
 
+    (
+        "R4-F",
+        "Replay Envelope",
+        "tools/validate_replay_envelope.py",
+        "tests/test_replay_envelope.py",
+    ),
+
 ]
 
 print()
