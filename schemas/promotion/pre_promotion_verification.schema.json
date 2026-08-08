@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/promotion/pre_promotion_verification.schema.json",
+  "title": "Zervan Pre-Promotion Verification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "ring",
+    "native_version",
+    "implementation_identity",
+    "candidate_branch",
+    "candidate_commit",
+    "candidate_tree",
+    "target_branch",
+    "target_commit",
+    "ring7_ready",
+    "r8a_valid",
+    "r8b_valid",
+    "r8c_valid",
+    "binding_sha512",
+    "decision_instance",
+    "human_gate_authorization",
+    "authority_state",
+    "human_gate_state",
+    "promotion_state",
+    "canonical",
+    "promoted",
+    "merged",
+    "disposition"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "PRE_PROMOTION_VERIFICATION"
+    },
+    "ring": {
+      "const": "R8-D"
+    },
+    "native_version": {
+      "const": "vTemporal.41.0"
+    },
+    "implementation_identity": {
+      "const": "v41 Complete"
+    },
+    "candidate_branch": {
+      "const": "candidate/v41-complete"
+    },
+    "candidate_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "candidate_tree": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "target_branch": {
+      "const": "main"
+    },
+    "target_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "ring7_ready": {
+      "const": true
+    },
+    "r8a_valid": {
+      "const": true
+    },
+    "r8b_valid": {
+      "const": true
+    },
+    "r8c_valid": {
+      "const": true
+    },
+    "binding_sha512": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{128}$"
+    },
+    "decision_instance": {
+      "const": "NONE"
+    },
+    "human_gate_authorization": {
+      "const": "NOT_GRANTED"
+    },
+    "authority_state": {
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "const": "ACTIVE"
+    },
+    "promotion_state": {
+      "const": "CANDIDATE"
+    },
+    "canonical": {
+      "const": false
+    },
+    "promoted": {
+      "const": false
+    },
+    "merged": {
+      "const": false
+    },
+    "disposition": {
+      "const": "PRE_PROMOTION_VERIFIED"
+    }
+  }
+}
