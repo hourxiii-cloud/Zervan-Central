@@ -60,6 +60,12 @@ RINGS = [
         "tools/validate_developer_guide.py",
         "tests/test_developer_guide.py",
     ),
+    (
+        "R7-G",
+        "Audit Guide",
+        "tools/validate_audit_guide.py",
+        "tests/test_audit_guide.py",
+    ),
 ]
 
 results = []
@@ -117,7 +123,6 @@ for ring, name, passed in results:
         failed = True
 
 for ring, name in (
-    ("R7-G", "Audit Guide"),
     ("R7-H", "Operations Guide"),
     ("R7-K", "Completeness Receipt"),
     ("R7-L", "Promotion Receipt / Promotion-Readiness Record"),
