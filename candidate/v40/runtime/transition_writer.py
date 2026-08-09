@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import fcntl
+
 import hashlib
 import json
 import os
@@ -154,6 +156,40 @@ def validate_event(event: dict) -> list[str]:
     return errors
 
 
+class LedgerSerializationLock:
+    """Serialize authoritative transition-ledger mutation across writer instances."""
+
+    def __init__(self, ledger_dir: Path):
+        self.path = Path(ledger_dir) / ".transition-writer.lock"
+        self.handle = None
+
+    def __enter__(self):
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.handle = self.path.open("a+b")
+        fcntl.flock(self.handle.fileno(), fcntl.LOCK_EX)
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        try:
+            if self.handle is not None:
+                fcntl.flock(self.handle.fileno(), fcntl.LOCK_UN)
+        finally:
+            if self.handle is not None:
+                self.handle.close()
+                self.handle = None
+
+            # The lock file is synchronization infrastructure, not a ledger
+            # witness. Remove it after releasing the advisory lock so a
+            # failed first publication does not leave an otherwise empty
+            # ledger observably mutated.
+            try:
+                self.path.unlink()
+            except FileNotFoundError:
+                pass
+
+        return False
+
+
 class TransitionWitnessWriter:
     """Append immutable, ordered, SHA-512-chained transition witnesses."""
 
@@ -180,6 +216,14 @@ class TransitionWitnessWriter:
         self._load_and_validate()
 
     def _load_and_validate(self) -> None:
+        # Reconstruct derived writer state exclusively from the durable ledger.
+        # This method is used both during initialization and after acquiring
+        # the cross-instance serialization lock. Cached instance state must
+        # therefore not participate in authoritative reconstruction.
+        self.sequence = 0
+        self.head_sha512 = None
+        self.event_ids = set()
+
         expected_sequence = 1
         expected_previous = None
         for path in sorted(self.ledger_dir.glob("*.json")):
@@ -209,54 +253,120 @@ class TransitionWitnessWriter:
         self.head_sha512 = expected_previous
 
     def append(self, payload: dict) -> dict:
-        sequence = self.sequence + 1
-        expected_id = f"TE-{self.contract_instance_id.removeprefix('OCI-')}-{sequence:06d}"
-        event_id = payload.get("event_id", expected_id)
-        if event_id in self.event_ids:
-            raise TransitionWitnessError(f"duplicate event identifier: {event_id}")
-        if "sequence" in payload and payload["sequence"] != sequence:
-            raise TransitionWitnessError(f"sequence gap or rollback: expected {sequence}, got {payload['sequence']}")
+        with LedgerSerializationLock(self.ledger_dir):
+            # Another writer instance may have advanced the ledger while this
+            # instance was waiting. Re-resolve authoritative state only after
+            # exclusive serialization has been acquired.
+            self._load_and_validate()
 
-        event = {
-            "event_version": "v40-candidate.2",
-            "event_id": event_id,
-            "contract_ref": self.contract_ref,
-            "contract_instance_id": self.contract_instance_id,
-            "sequence": sequence,
-            "timestamp_utc": self.clock(),
-            "route_lock": self.route_lock,
-            "previous_event_sha512": self.head_sha512,
-            **{key: value for key, value in payload.items() if key not in {"event_id", "sequence", "event_sha512", "previous_event_sha512"}},
-        }
-        event["event_sha512"] = event_digest(event)
-        errors = validate_event(event)
-        if errors:
-            raise TransitionWitnessError("invalid transition witness: " + "; ".join(errors))
+            sequence = self.sequence + 1
+            expected_id = (
+                f"TE-{self.contract_instance_id.removeprefix('OCI-')}-"
+                f"{sequence:06d}"
+            )
+            event_id = payload.get("event_id", expected_id)
 
-        target = self.ledger_dir / f"{sequence:06d}_{event_id}.json"
-        temporary = self.ledger_dir / f".{target.name}.tmp-{os.getpid()}"
-        if target.exists():
-            raise TransitionWitnessError(f"witness overwrite refused: {target.name}")
-        try:
-            with temporary.open("x", encoding="utf-8") as handle:
-                handle.write(json.dumps(event, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
-                handle.flush()
-                os.fsync(handle.fileno())
-            self.publisher(temporary, target)
-        except OSError as exc:
-            if temporary.exists():
-                temporary.unlink()
-            emergency = {
-                "state": "STOPPED",
-                "stop_class": "TRANSITION_WITNESS_FAILURE",
-                "reason": str(exc),
-                "durable": False,
+            if event_id in self.event_ids:
+                raise TransitionWitnessError(
+                    f"duplicate event identifier: {event_id}"
+                )
+
+            if (
+                "sequence" in payload
+                and payload["sequence"] != sequence
+            ):
+                raise TransitionWitnessError(
+                    "sequence gap or rollback: "
+                    f"expected {sequence}, got {payload['sequence']}"
+                )
+
+            event = {
+                "event_version": "v40-candidate.2",
+                "event_id": event_id,
+                "contract_ref": self.contract_ref,
                 "contract_instance_id": self.contract_instance_id,
-                "attempted_sequence": sequence,
+                "sequence": sequence,
+                "timestamp_utc": self.clock(),
+                "route_lock": self.route_lock,
+                "previous_event_sha512": self.head_sha512,
+                **{
+                    key: value
+                    for key, value in payload.items()
+                    if key not in {
+                        "event_id",
+                        "sequence",
+                        "event_sha512",
+                        "previous_event_sha512",
+                    }
+                },
             }
-            raise WitnessPersistenceError(f"unable to persist transition witness: {exc}", emergency) from exc
 
-        self.sequence = sequence
-        self.head_sha512 = event["event_sha512"]
-        self.event_ids.add(event_id)
-        return event
+            event["event_sha512"] = event_digest(event)
+
+            errors = validate_event(event)
+            if errors:
+                raise TransitionWitnessError(
+                    "invalid transition witness: "
+                    + "; ".join(errors)
+                )
+
+            target = (
+                self.ledger_dir
+                / f"{sequence:06d}_{event_id}.json"
+            )
+            temporary = (
+                self.ledger_dir
+                / f".{target.name}.tmp-{os.getpid()}"
+            )
+
+            if target.exists():
+                raise TransitionWitnessError(
+                    f"witness overwrite refused: {target.name}"
+                )
+
+            try:
+                with temporary.open(
+                    "x",
+                    encoding="utf-8",
+                ) as handle:
+                    handle.write(
+                        json.dumps(
+                            event,
+                            ensure_ascii=False,
+                            indent=2,
+                            sort_keys=True,
+                        )
+                        + "\n"
+                    )
+                    handle.flush()
+                    os.fsync(handle.fileno())
+
+                self.publisher(
+                    temporary,
+                    target,
+                )
+
+            except OSError as exc:
+                if temporary.exists():
+                    temporary.unlink()
+
+                emergency = {
+                    "state": "STOPPED",
+                    "stop_class": "TRANSITION_WITNESS_FAILURE",
+                    "reason": str(exc),
+                    "durable": False,
+                    "contract_instance_id":
+                        self.contract_instance_id,
+                    "attempted_sequence": sequence,
+                }
+
+                raise WitnessPersistenceError(
+                    f"unable to persist transition witness: {exc}",
+                    emergency,
+                ) from exc
+
+            self.sequence = sequence
+            self.head_sha512 = event["event_sha512"]
+            self.event_ids.add(event_id)
+
+            return event
