@@ -6,6 +6,11 @@ import json
 from pathlib import Path
 import sys
 
+ROOT = Path(__file__).resolve().parents[1]
+
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from tools.collision_boundary import (
     CLEAN,
     COLLISION,
@@ -15,8 +20,6 @@ from tools.collision_boundary import (
     analyze_collision_boundary,
     measurable_body_identity,
 )
-
-ROOT = Path(__file__).resolve().parents[1]
 
 CONTRACT = (
     ROOT
