@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/integrity/cross_stage_semantic_integrity.schema.json",
+  "title": "AC-07 Cross-Stage Semantic Integrity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "composition_id",
+    "stage_sequence",
+    "object_id",
+    "room_revision_id",
+    "room_state_root",
+    "authorized_view_root",
+    "pmc_reference",
+    "ccr_reference",
+    "mc_reference",
+    "raven_reference",
+    "human_gate_reference",
+    "candidate_order",
+    "rejected_candidate_references",
+    "uncertainty_references",
+    "material_unknown_references",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "governance_constraint_references",
+    "claim_strength",
+    "lineage_references",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state",
+    "composition_disposition",
+    "failure_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "composition_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "stage_sequence": {
+      "type": "array",
+      "prefixItems": [
+        {"const": "PMC"},
+        {"const": "CCR"},
+        {"const": "MC"},
+        {"const": "RAVEN"},
+        {"const": "HUMAN_GATE"}
+      ],
+      "items": false,
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "object_id": {"type": "string", "minLength": 1},
+    "room_revision_id": {"type": "string", "minLength": 1},
+    "room_state_root": {"type": "string", "minLength": 1},
+    "authorized_view_root": {"type": "string", "minLength": 1},
+    "pmc_reference": {"type": "string", "minLength": 1},
+    "ccr_reference": {"type": "string", "minLength": 1},
+    "mc_reference": {"type": "string", "minLength": 1},
+    "raven_reference": {"type": "string", "minLength": 1},
+    "human_gate_reference": {"type": "string", "minLength": 1},
+    "candidate_order": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "rejected_candidate_references": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "uncertainty_references": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "material_unknown_references": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "evidence_boundary_reference": {"type": "string", "minLength": 1},
+    "evidence_ceiling_reference": {"type": "string", "minLength": 1},
+    "governance_constraint_references": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "claim_strength": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lineage_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "composition_disposition": {
+      "type": "string",
+      "enum": ["VALID", "BLOCKED"]
+    },
+    "failure_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "STAGE_SEQUENCE_INVALID",
+          "PMC_CANDIDATE_NOT_EMITTED",
+          "REJECTED_CANDIDATE_LOST",
+          "CANDIDATE_ORDER_CHANGED",
+          "UNCERTAINTY_ERASED",
+          "MATERIAL_UNKNOWN_SUPPRESSED",
+          "EVIDENCE_BOUNDARY_CHANGED",
+          "EVIDENCE_CEILING_RAISED",
+          "GOVERNANCE_CONSTRAINT_INVENTED",
+          "GOVERNANCE_CONSTRAINT_DROPPED",
+          "CONDITIONAL_STATE_PROMOTED",
+          "CLAIM_STRENGTH_INCREASED",
+          "OBJECT_IDENTITY_CHANGED",
+          "CROSS_OBJECT_CONTAMINATION",
+          "LINEAGE_BROKEN",
+          "PROVENANCE_BROKEN",
+          "GLOBAL_STATE_IMPOSSIBLE"
+        ]
+      }
+    }
+  }
+}
