@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/analysis/collision_boundary.schema.json",
+  "title": "Zervan Collision Boundary Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "population_disposition",
+    "measurable_body_sha512",
+    "feature_identity_surface",
+    "member_reference",
+    "reviewed_label",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "population_disposition": {
+      "type": "string",
+      "enum": [
+        "CLEAN",
+        "COLLISION",
+        "UNRESOLVED_CONTEXT"
+      ]
+    },
+    "measurable_body_sha512": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "collision_group_id": {
+      "type": ["string", "null"],
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "feature_identity_surface": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "member_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewed_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_reference": {
+      "type": ["string", "null"]
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
