@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/semantics/semantic_state.schema.json",
+  "title": "Zervan Multidimensional Semantic-State Coordinate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "semantic_state_id",
+    "subject_reference",
+    "existence_state",
+    "epistemic_state",
+    "accessibility_state",
+    "topology_state",
+    "hydration_state",
+    "hydration_boundary_reference",
+    "operational_state",
+    "decision_state",
+    "representation_state",
+    "evidence_boundary_reference",
+    "evidence_ceiling_reference",
+    "restriction_references",
+    "unresolved_references",
+    "provenance_route",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "semantic_state_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "subject_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "existence_state": {
+      "type": "string",
+      "enum": [
+        "KNOWN_PRESENT",
+        "KNOWN_ABSENT",
+        "UNRESOLVED_EXISTENCE"
+      ]
+    },
+    "epistemic_state": {
+      "type": "string",
+      "enum": [
+        "KNOWN",
+        "UNKNOWN",
+        "UNRESOLVED",
+        "CONTRADICTED"
+      ]
+    },
+    "accessibility_state": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "RESTRICTED",
+        "UNAVAILABLE"
+      ]
+    },
+    "topology_state": {
+      "type": "string",
+      "enum": [
+        "TOPOLOGY_KNOWN",
+        "TOPOLOGY_RESTRICTED",
+        "TOPOLOGY_UNRESOLVED",
+        "TOPOLOGY_ABSENT"
+      ]
+    },
+    "hydration_state": {
+      "type": "string",
+      "enum": [
+        "UNHYDRATED",
+        "PARTIAL",
+        "COMPLETE"
+      ]
+    },
+    "hydration_boundary_reference": {
+      "type": ["string", "null"]
+    },
+    "operational_state": {
+      "type": "string",
+      "enum": [
+        "PERMITTED",
+        "BLOCKED",
+        "INACTIVE",
+        "ACTIVE",
+        "COMPLETED",
+        "FAILED"
+      ]
+    },
+    "decision_state": {
+      "type": "string",
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "APPROVED",
+        "DENIED"
+      ]
+    },
+    "representation_state": {
+      "type": "string",
+      "enum": [
+        "FULL",
+        "REDACTED",
+        "EXISTENCE_ONLY",
+        "SUMMARY",
+        "OMITTED_BY_VIEW"
+      ]
+    },
+    "evidence_boundary_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_ceiling_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "restriction_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unresolved_references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "provenance_route": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  }
+}
