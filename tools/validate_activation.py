@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-from __future__ import annotations
-
-import os
 from pathlib import Path
 import subprocess
 import sys
@@ -23,48 +20,51 @@ CONTROLS = [
         "tools/validate_human_gate_authority_semantics.py",
         "tests/test_ac11_human_gate_authority_semantics.py",
     ),
+    (
+        "AC-12",
+        "Activation Aggregate Closure",
+        "tools/validate_activation_aggregate_closure.py",
+        "tests/test_ac12_activation_aggregate_closure.py",
+    ),
 ]
 
 
-def run_python(relative_path: str, *args: str) -> int:
-    env = dict(os.environ)
-    env["PYTHONDONTWRITEBYTECODE"] = "1"
-
-    result = subprocess.run(
-        [
-            sys.executable,
-            "-B",
-            *args,
-            str(ROOT / relative_path),
-        ],
+def run_command(args):
+    return subprocess.run(
+        args,
         cwd=ROOT,
-        env=env,
-    )
-
-    return result.returncode
+        text=True,
+    ).returncode
 
 
-def main() -> int:
+def main():
     print()
     print("=" * 72)
     print("ZERVAN ACTIVATION CONTROL VALIDATION")
     print("=" * 72)
 
-    failed = False
     results = []
 
     for control, name, validator, test_path in CONTROLS:
         print()
         print(f"[{control}] {name}")
 
-        validator_rc = run_python(
-            validator,
+        validator_rc = run_command(
+            [
+                sys.executable,
+                "-B",
+                str(ROOT / validator),
+            ]
         )
 
-        test_rc = run_python(
-            test_path,
-            "-m",
-            "unittest",
+        test_rc = run_command(
+            [
+                sys.executable,
+                "-B",
+                "-m",
+                "unittest",
+                str(ROOT / test_path),
+            ]
         )
 
         passed = (
@@ -83,36 +83,36 @@ def main() -> int:
         )
 
         print(
-            "  Validator: "
-            + (
-                "PASS"
-                if validator_rc == 0
-                else "FAIL"
-            )
+            f"  Validator: "
+            f"{'PASS' if validator_rc == 0 else 'FAIL'}"
         )
-
         print(
-            "  Tests:     "
-            + (
-                "PASS"
-                if test_rc == 0
-                else "FAIL"
-            )
+            f"  Tests:     "
+            f"{'PASS' if test_rc == 0 else 'FAIL'}"
         )
-
-        if not passed:
-            failed = True
 
     print()
     print("-" * 72)
     print("ACTIVATION CONTROL RECEIPT")
     print("-" * 72)
 
-    for control, name, validator_rc, test_rc, passed in results:
+    failed = False
+
+    for (
+        control,
+        name,
+        validator_rc,
+        test_rc,
+        passed,
+    ) in results:
         state = "PASS" if passed else "FAIL"
+
         print(
-            f"{control:<6} {state:<4}  {name}"
+            f"{control:<5} {state:<4}  {name}"
         )
+
+        if not passed:
+            failed = True
 
     print("-" * 72)
 
@@ -124,9 +124,10 @@ def main() -> int:
 
     print("ACTIVATION CONTROL RESULT: PASS")
     print("AC-10: ACTIVE")
-print("AC-11: ACTIVE")
+    print("AC-11: ACTIVE")
+    print("AC-12: ACTIVE")
     print("Evidence-Ceiling Semantic Enforcement: ENFORCED")
-print("Human-Gate / Authority Semantic Enforcement: ENFORCED")
+    print("Human-Gate / Authority Semantic Enforcement: ENFORCED")
     print("Authority: NONE")
     print("Human Gate: ACTIVE")
 
