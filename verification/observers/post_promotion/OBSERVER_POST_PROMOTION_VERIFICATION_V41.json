@@ -1,0 +1,204 @@
+{
+  "authority": "NONE",
+  "canonical_branch": "main",
+  "canonical_head": "2ea8e0b5ec802264ced9e627ce94555517dd2a39",
+  "canonical_head_matches_origin": true,
+  "external_action": "DISABLED",
+  "external_runtime": "DISABLED",
+  "human_gate": "ACTIVE",
+  "next_stage": null,
+  "observer_bindings": [
+    {
+      "canonical_name": "AnimalKingdom",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "distinctive_invariant": "Synthetic pressure remains synthetic even when it successfully exposes a real weakness.",
+      "observer_id": "animal_kingdom",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "path": "canonical/observers/capabilities/09_ANIMAL_KINGDOM_CAPABILITY.json",
+      "sha512": "7730f4c2274c519b303b559e049ac88f0b1f0af958949fe4219eb327df18162fcc4054e9382b2789ce3bbb088b9aae02ade4f3bc82179ac1f75548217af0c5db",
+      "supported_modes": [
+        "CONTROLLED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "Armadillo",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "distinctive_invariant": "Integrity challenge may bound or weaken a claim; it does not manufacture attribution or authenticity.",
+      "observer_id": "armadillo",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "path": "canonical/observers/capabilities/10_ARMADILLO_CAPABILITY.json",
+      "sha512": "9674d84dc72fd89ba9241b6360565ce8d0d2da72011e44e87e97a1b0cefc9b2ccfc37d635e459faeefce10cf7d327ca3e80e1ce0f45c27a8c8059c638255d697",
+      "supported_modes": [
+        "CONTROLLED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "Duck",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Failure to reconcile is information, not automatic threat attribution.",
+      "observer_id": "duck",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/03_DUCK_CAPABILITY.json",
+      "sha512": "55e9c472185b3045abda81c04a6b4764624a69a6b8c7463a95a026306b4bc7820e406b79f63337c94a59ed6c049c0185435e84c989aacf6aa54d92dd99af4ab4",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Eagle",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Trajectory is observation of supported direction, not ownership of the future.",
+      "observer_id": "eagle",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/01_EAGLE_CAPABILITY.json",
+      "sha512": "edabf9e08b883266935e48be6f8b2c2db2da40793f40877cbe322427c04073fd7f12d4db92a9e4182a85bd92e28514c51e7ab167fc4e1662569d3c9917571b4e",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Mockingbird",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Representation may change while evidentiary meaning remains invariant.",
+      "observer_id": "mockingbird",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/05_MOCKINGBIRD_CAPABILITY.json",
+      "sha512": "275f3de6af559b9b4e4c0e2035da7d92a2f5428eeafc93f03156b0c8bca111a432a49b0ac8b13bfb54d7ccea50faca6d9adb1f2c0d6f74bce0618d1a1689b60b",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Mole",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Subsurface observation remains bounded by what the authorized evidence can support.",
+      "observer_id": "mole",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/02_MOLE_CAPABILITY.json",
+      "sha512": "bae09602c8fe657067aed14c1270b256c26813b07161a2fd3e111dc839b687f746f7e4c1f34582b9e5f2728541912c2bc3081cddfe07d1a43dfc29bf8b2a5e5d",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Osprey",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "distinctive_invariant": "External context may pressure analysis without acquiring primary-evidence status or collection authority.",
+      "observer_id": "osprey",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "path": "canonical/observers/capabilities/08_OSPREY_CAPABILITY.json",
+      "sha512": "3cc8e4ae79d6ce47ee66c6e31bc1863cf7a9949aa983aeba6ccf211bbd478a968ad2ef5b135beeaa3107630d8dc4084e979af277e96e1140704068deb59a2e02",
+      "supported_modes": [
+        "CONTROLLED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "Owl_Hoot",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Absence of observation is not observation of absence.",
+      "observer_id": "owl_hoot",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/07_OWL_HOOT_CAPABILITY.json",
+      "sha512": "ebf322dccaaa8f0c9cf73889aa1e7d57b401bf6f4c889a1c31a7a43a2c734bc4674b967d5033c31ac2e3bea4551cfb4a3d3ed362f475ca65c82d8cb0399f0748",
+      "supported_modes": [
+        "PRIMARY",
+        "BOUNDED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "Platypus",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Category insufficiency does not authorize invention of a different underlying object.",
+      "observer_id": "platypus",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/06_PLATYPUS_CAPABILITY.json",
+      "sha512": "73e940b9b614649fb9d7b2c1a1b4d9211a1960882c4bad4005e2a29d0d798a21125affe6f25dd2e3cc8ba83c556fdb0ec81cc11fef7017b660e2aa823bb0a0b6",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Wildflower",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Emergence may reveal structure without establishing why that structure exists.",
+      "observer_id": "wildflower",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/04_WILDFLOWER_CAPABILITY.json",
+      "sha512": "7ed1588c28ee3fa1e0fe78c5544f9c4c684c2269fefa7b95c3dec975aa6465c5fdf9df30f4c7b64b9a03df2aa67437cbfb7171d43b42dc834c858352f05747f5",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    }
+  ],
+  "observer_inventory": {
+    "controlled_count": 3,
+    "controlled_sub_observers": [
+      "animal_kingdom",
+      "armadillo",
+      "osprey"
+    ],
+    "primary": [
+      "duck",
+      "eagle",
+      "mockingbird",
+      "mole",
+      "owl_hoot",
+      "platypus",
+      "wildflower"
+    ],
+    "primary_count": 7,
+    "total_count": 10
+  },
+  "origin_main_head": "2ea8e0b5ec802264ced9e627ce94555517dd2a39",
+  "post_promotion_invariants": [
+    "CANONICAL_MAIN_EQUALS_ORIGIN_MAIN",
+    "PROMOTED_STATE_RECONSTRUCTS_FROM_COMMITTED_HEAD",
+    "TEN_OBSERVERS_SURVIVE_PROMOTION",
+    "SEVEN_PRIMARY_OBSERVERS_SURVIVE_PROMOTION",
+    "THREE_CONTROLLED_SUB_OBSERVERS_SURVIVE_PROMOTION",
+    "OWL_HOOT_PRIMARY_SEAT_SURVIVES_PROMOTION",
+    "OWL_HOOT_BOUNDED_MODE_SURVIVES_PROMOTION",
+    "TEN_DISTINCTIVE_INVARIANTS_SURVIVE_PROMOTION",
+    "NO_GENERIC_OBSERVER_SUBSTITUTION",
+    "NO_SEMANTIC_COMPRESSION",
+    "AC_REVALIDATION_SURVIVES_PROMOTION",
+    "LOSSLESS_COLLAPSE_SURVIVES_PROMOTION",
+    "FRESH_READER_RECONSTRUCTION_SURVIVES_PROMOTION",
+    "AUTHORITY_REMAINS_NONE",
+    "HUMAN_GATE_REMAINS_ACTIVE",
+    "EXTERNAL_RUNTIME_REMAINS_DISABLED",
+    "EXTERNAL_ACTION_REMAINS_DISABLED"
+  ],
+  "promotion_bindings": {
+    "human_gate_decision": "EXPLICIT_APPROVAL_RECEIVED_2026-08-10",
+    "or18_contract": {
+      "path": "verification/observers/promotion/OBSERVER_CANONICAL_PROMOTION_CONTRACT.json",
+      "sha512": "86c4e988de0d0e76111c1efeb23502df23cba9d521c55bd59989f5350004c6024ea6ed19ec8740861e05ea10df0eea03935b9e2424f555e9a612fddb0a3edd4d"
+    },
+    "or18_executor": {
+      "path": "verification/observers/promotion/execute_observer_canonical_promotion.py",
+      "sha512": "91ea4e206a731c7261a2347c53148d24a3213effceae4944e4ff0f2311ef72d0fa13136e89a5948b6cd208c4aa58ca3139fcb26421c20ac5c156fe3f34c2568a"
+    },
+    "promotion_mode": "FAST_FORWARD_ONLY"
+  },
+  "promotion_status": "CANONICAL_PROMOTION_VERIFIED",
+  "receipt_type": "ZERVAN_V41_OBSERVER_POST_PROMOTION_VERIFICATION",
+  "receipt_version": "1.0",
+  "restoration_stage": "OR-19",
+  "restoration_status": "COMPLETE_CANONICAL_AND_INDEPENDENTLY_VERIFIED",
+  "verification_results": {
+    "controlled_sub_observers": "3/3 PASS",
+    "distinctive_invariants": "10/10 PASS",
+    "local_main_equals_origin_main": "PASS",
+    "or10_functional": "120/120 PASS",
+    "or11_completeness": "30/30 PASS",
+    "or12_fresh_reader": "20/20 PASS",
+    "or16_stability": "PASS",
+    "owl_hoot_bounded_mode": "PASS",
+    "owl_hoot_primary_seat": "PASS",
+    "post_promotion_controls": "30/30 PASS",
+    "primary_observers": "7/7 PASS",
+    "total_observers": "10/10 PASS"
+  },
+  "version": "vTemporal.41.0"
+}
