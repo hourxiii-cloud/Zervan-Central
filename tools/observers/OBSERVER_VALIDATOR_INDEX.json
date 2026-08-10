@@ -1,0 +1,64 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_VALIDATOR_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-5_ROUTING_INTEGRATION",
+  "restoration_stage": "OR-4",
+  "self_test_state": {
+    "capability_validator": "PASS",
+    "operation_negative_controls": 8,
+    "operation_positive_controls": 1,
+    "operation_validator": "PASS"
+  },
+  "validator_count": 2,
+  "validators": [
+    {
+      "path": "tools/observers/validate_observer_capabilities.py",
+      "sha512": "a7b9f6db9d0f995b86e7a1df83b438f3ab3224c8da89a04a483c9a83e3e9820cb5eded189ef16bc0396600ec8ea1cf3f23a47a1088189c43540014c9c7ffaca1",
+      "validates": [
+        "observer_cardinality",
+        "observer_identity",
+        "operating_class",
+        "canonical_seat",
+        "owl_hoot_primary_seat",
+        "authority_none",
+        "human_gate_active",
+        "read_only_posture",
+        "capability_independence",
+        "owned_signal",
+        "owned_output",
+        "capability_index_sha512",
+        "schema_index_capability_sha512",
+        "no_compression"
+      ],
+      "validator_id": "observer_capability_validator"
+    },
+    {
+      "path": "tools/observers/validate_observer_operation.py",
+      "sha512": "6cdc4d1e2b289ab5357e52dbe9575a880cf5dc0c9f5b2e2767ee63f2e347301184fca8af1cf03afd43ea7456f4134c72bee99488b30ff93e9ef4884c4d0d5031",
+      "validates": [
+        "request_schema",
+        "result_schema",
+        "observer_identity_continuity",
+        "operation_identity_continuity",
+        "room_identity_continuity",
+        "room_revision_continuity",
+        "authorized_view_continuity",
+        "evidence_boundary",
+        "operating_level",
+        "mode_continuity",
+        "authority_none",
+        "human_gate_active",
+        "primary_evidence_nonmutation",
+        "canonical_state_nonmutation",
+        "claim_ceiling_nonincrease",
+        "provenance_continuity",
+        "controlled_pressure_isolation"
+      ],
+      "validator_id": "observer_operation_validator"
+    }
+  ],
+  "version": "vTemporal.41.0"
+}
