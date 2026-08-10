@@ -1,0 +1,1018 @@
+{
+  "authority": "NONE",
+  "branch": "candidate/v41-observer-restoration",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "external_action": "DISABLED",
+  "external_runtime": "DISABLED",
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_STABILITY_REGRESSION_INDEX",
+  "index_version": "1.0",
+  "lossless_assertions": {
+    "collapse_deterministic": true,
+    "controlled_count": "3/3",
+    "distinctive_identity_preserved": "10/10",
+    "full_contract_objects_preserved": "10/10",
+    "generic_observer_substitution": false,
+    "meaning_compressed": false,
+    "observer_count": "10/10",
+    "primary_count": "7/7",
+    "reconstruction_equal_to_source": true,
+    "source_sha512_preserved": "10/10"
+  },
+  "lossless_collapse": {
+    "collapse_type": "ZERVAN_V41_LOSSLESS_OBSERVER_COLLAPSE",
+    "collapse_version": "1.0",
+    "controlled_count": 3,
+    "observer_count": 10,
+    "observers": [
+      {
+        "contract": {
+          "aliases": [],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "AnimalKingdom",
+          "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Synthetic pressure remains synthetic even when it successfully exposes a real weakness.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "animal_kingdom",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_OVERWRITE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CONVERT_SYNTHETIC_INPUT_TO_FACT",
+            "MUST_NOT_STEER_PRIMARY_OUTPUT",
+            "MUST_NOT_BECOME_SOURCE_OF_TRUTH"
+          ],
+          "operating_class": "CONTROLLED_SUB_OBSERVER",
+          "ordinal": 9,
+          "outputs": [
+            "synthetic_pressure_result",
+            "edge_case_result",
+            "contradiction_pressure",
+            "fuzz_result",
+            "assumption_failure"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Apply synthetic adversarial, fuzz, edge-case, contradiction, malformed-input, hostile-assumption, and label-inversion pressure while preserving synthetic/factual separation.",
+          "questions": [
+            "Does the bounded claim survive synthetic adversarial pressure?",
+            "What edge condition causes the assumption or contract to fail?",
+            "Does malformed or inverted input expose an unsupported dependency?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "synthetic_adversarial_pressure",
+            "fuzz_pressure",
+            "edge_case",
+            "contradiction",
+            "malformed_input",
+            "hostile_assumption",
+            "label_inversion"
+          ],
+          "supported_modes": [
+            "CONTROLLED_SUB_OBSERVER"
+          ]
+        },
+        "observer_id": "animal_kingdom",
+        "source_path": "canonical/observers/capabilities/09_ANIMAL_KINGDOM_CAPABILITY.json",
+        "source_sha512": "7730f4c2274c519b303b559e049ac88f0b1f0af958949fe4219eb327df18162fcc4054e9382b2789ce3bbb088b9aae02ade4f3bc82179ac1f75548217af0c5db"
+      },
+      {
+        "contract": {
+          "aliases": [],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Armadillo",
+          "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Integrity challenge may bound or weaken a claim; it does not manufacture attribution or authenticity.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "armadillo",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_MANUFACTURE_ATTRIBUTION",
+            "MUST_NOT_MANUFACTURE_AUTHENTICITY",
+            "MUST_NOT_CONVERT_CHALLENGE_TO_CONCLUSION",
+            "MUST_NOT_MUTATE_SUPPLIED_ARTIFACT"
+          ],
+          "operating_class": "CONTROLLED_SUB_OBSERVER",
+          "ordinal": 10,
+          "outputs": [
+            "artifact_integrity_observation",
+            "authentication_pressure_result",
+            "attribution_pressure_result",
+            "identity_integrity_observation",
+            "integrity_unresolved_condition"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Apply bounded artifact, media, authentication, attribution, and claimed-identity integrity pressure without manufacturing authenticity or attribution.",
+          "questions": [
+            "Does the supplied artifact support its claimed identity?",
+            "What integrity or authentication pressure remains unresolved?",
+            "Does the available evidence support attribution, contradict it, or leave it unresolved?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "artifact_integrity",
+            "media_integrity",
+            "authentication_pressure",
+            "attribution_pressure",
+            "identity_integrity",
+            "integrity_conflict"
+          ],
+          "supported_modes": [
+            "CONTROLLED_SUB_OBSERVER"
+          ]
+        },
+        "observer_id": "armadillo",
+        "source_path": "canonical/observers/capabilities/10_ARMADILLO_CAPABILITY.json",
+        "source_sha512": "9674d84dc72fd89ba9241b6360565ce8d0d2da72011e44e87e97a1b0cefc9b2ccfc37d635e459faeefce10cf7d327ca3e80e1ce0f45c27a8c8059c638255d697"
+      },
+      {
+        "contract": {
+          "aliases": [],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Duck",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Failure to reconcile is information, not automatic threat attribution.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "duck",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_EQUATE_ANOMALY_WITH_THREAT",
+            "MUST_NOT_CONVERT_DIVERGENCE_TO_CAUSATION",
+            "MUST_NOT_FORCE_RECONCILIATION"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 3,
+          "outputs": [
+            "divergence_observation",
+            "wobble_observation",
+            "mismatch_pressure",
+            "false_wall_pressure",
+            "reconciliation_gap"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe wobble, spin, divergence, mismatch, and apparently ordinary conditions that fail to reconcile cleanly.",
+          "questions": [
+            "What appears ordinary but does not reconcile with neighboring evidence?",
+            "Where does behavior wobble or diverge from its apparent route?",
+            "Is a visible wall structurally supported or merely presenting as stable?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "wobble",
+            "spin",
+            "divergence",
+            "mismatch",
+            "false_wall_pressure",
+            "reconciliation_failure"
+          ],
+          "supported_modes": [
+            "PRIMARY"
+          ]
+        },
+        "observer_id": "duck",
+        "source_path": "canonical/observers/capabilities/03_DUCK_CAPABILITY.json",
+        "source_sha512": "55e9c472185b3045abda81c04a6b4764624a69a6b8c7463a95a026306b4bc7820e406b79f63337c94a59ed6c049c0185435e84c989aacf6aa54d92dd99af4ab4"
+      },
+      {
+        "contract": {
+          "aliases": [
+            "Project_Eagle"
+          ],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Eagle",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Trajectory is observation of supported direction, not ownership of the future.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "eagle",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_MANUFACTURE_FUTURE_STATE",
+            "MUST_NOT_CONVERT_TRAJECTORY_TO_FACT",
+            "MUST_NOT_EXCEED_EVIDENCE_CEILING"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 1,
+          "outputs": [
+            "trajectory_observation",
+            "coherence_observation",
+            "directional_pressure",
+            "route_discontinuity",
+            "bounded_projection_pressure"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe trajectory, long-range coherence, directional continuity, and route-level stability without converting projected movement into established future state.",
+          "questions": [
+            "Does observed behavior maintain directional coherence across the permitted analytical territory?",
+            "Is a trajectory stable, changing, fragmenting, or reversing?",
+            "Do separated observations form a supported long-range route or merely appear aligned?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "trajectory",
+            "directional_coherence",
+            "long_range_stability",
+            "route_continuity",
+            "direction_change",
+            "trajectory_fragmentation"
+          ],
+          "supported_modes": [
+            "PRIMARY"
+          ]
+        },
+        "observer_id": "eagle",
+        "source_path": "canonical/observers/capabilities/01_EAGLE_CAPABILITY.json",
+        "source_sha512": "edabf9e08b883266935e48be6f8b2c2db2da40793f40877cbe322427c04073fd7f12d4db92a9e4182a85bd92e28514c51e7ab167fc4e1662569d3c9917571b4e"
+      },
+      {
+        "contract": {
+          "aliases": [
+            "Project_MockingBird"
+          ],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Mockingbird",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Representation may change while evidentiary meaning remains invariant.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "mockingbird",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_REQUIRE_BYTE_IDENTITY",
+            "MUST_NOT_TREAT_LEGITIMATE_REPRESENTATION_CHANGE_AS_DRIFT",
+            "MUST_NOT_STRENGTHEN_EVIDENTIARY_MEANING"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 5,
+          "outputs": [
+            "semantic_fidelity_observation",
+            "reflection_observation",
+            "mimicry_pressure",
+            "narrative_drift_observation",
+            "representation_drift_observation"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe reflection, echo, mimicry, false-compliance pressure, narrative drift, representational drift, and semantic fidelity across legitimate transformations.",
+          "questions": [
+            "Did meaning survive a legitimate representation change?",
+            "Is an apparent match genuine equivalence, reflection, mimicry, or echo?",
+            "Has narrative or representation strengthened, weakened, or altered evidentiary meaning?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "reflection",
+            "echo",
+            "mimicry",
+            "false_compliance_pressure",
+            "narrative_drift",
+            "representational_drift",
+            "semantic_fidelity"
+          ],
+          "supported_modes": [
+            "PRIMARY"
+          ]
+        },
+        "observer_id": "mockingbird",
+        "source_path": "canonical/observers/capabilities/05_MOCKINGBIRD_CAPABILITY.json",
+        "source_sha512": "275f3de6af559b9b4e4c0e2035da7d92a2f5428eeafc93f03156b0c8bca111a432a49b0ac8b13bfb54d7ccea50faca6d9adb1f2c0d6f74bce0618d1a1689b60b"
+      },
+      {
+        "contract": {
+          "aliases": [],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Mole",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Subsurface observation remains bounded by what the authorized evidence can support.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "mole",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_EXPAND_AUTHORIZED_VIEW",
+            "MUST_NOT_INFER_HIDDEN_EVIDENCE_AS_PRESENT",
+            "MUST_NOT_EQUATE_LATENCY_WITH_THREAT"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 2,
+          "outputs": [
+            "latent_structure_observation",
+            "subsurface_pressure",
+            "buried_relationship_observation",
+            "slow_drift_observation",
+            "collapse_pressure"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe subsurface, latent, buried, or slowly developing structure within permitted evidence and authorized visibility.",
+          "questions": [
+            "What supported structure exists beneath the immediately visible surface?",
+            "Are latent relationships or slow drift present?",
+            "Does apparent surface stability conceal bounded collapse or hidden-structure pressure?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "latent_signal",
+            "subsurface_structure",
+            "buried_relationship",
+            "slow_drift",
+            "collapse_pressure",
+            "hidden_structure"
+          ],
+          "supported_modes": [
+            "PRIMARY"
+          ]
+        },
+        "observer_id": "mole",
+        "source_path": "canonical/observers/capabilities/02_MOLE_CAPABILITY.json",
+        "source_sha512": "bae09602c8fe657067aed14c1270b256c26813b07161a2fd3e111dc839b687f746f7e4c1f34582b9e5f2728541912c2bc3081cddfe07d1a43dfc29bf8b2a5e5d"
+      },
+      {
+        "contract": {
+          "aliases": [],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Osprey",
+          "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "External context may pressure analysis without acquiring primary-evidence status or collection authority.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "osprey",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_AUTHORIZE_EXTERNAL_COLLECTION",
+            "MUST_NOT_AUTHORIZE_EXTERNAL_RUNTIME",
+            "MUST_NOT_AUTHORIZE_EXTERNAL_ACTION",
+            "MUST_NOT_PROMOTE_EXTERNAL_CONTEXT_TO_PRIMARY_EVIDENCE"
+          ],
+          "operating_class": "CONTROLLED_SUB_OBSERVER",
+          "ordinal": 8,
+          "outputs": [
+            "external_context_observation",
+            "contextual_pressure",
+            "external_comparison_result",
+            "contextual_unresolved_condition"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Apply bounded external-context or OSINT-style contextual pressure using only explicitly supplied or separately permitted external context.",
+          "questions": [
+            "Does supplied external context materially pressure the bounded claim?",
+            "What changes if the supplied external context is considered without promoting it to primary evidence?",
+            "Does contextual comparison expose an unresolved condition?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "external_context_pressure",
+            "osint_style_pressure",
+            "contextual_comparison",
+            "external_relationship_pressure"
+          ],
+          "supported_modes": [
+            "CONTROLLED_SUB_OBSERVER"
+          ]
+        },
+        "observer_id": "osprey",
+        "source_path": "canonical/observers/capabilities/08_OSPREY_CAPABILITY.json",
+        "source_sha512": "3cc8e4ae79d6ce47ee66c6e31bc1863cf7a9949aa983aeba6ccf211bbd478a968ad2ef5b135beeaa3107630d8dc4084e979af277e96e1140704068deb59a2e02"
+      },
+      {
+        "contract": {
+          "aliases": [],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Owl_Hoot",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Absence of observation is not observation of absence.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": "Bounded sub-observer operation changes scope, not canonical seat or identity.",
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "owl_hoot",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_CONVERT_UNOBSERVED_TO_NONEXISTENT",
+            "MUST_NOT_DEMOTE_CANONICAL_SEAT",
+            "MUST_NOT_TREAT_SILENCE_AS_PROOF_WITHOUT_OBSERVABILITY"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 7,
+          "outputs": [
+            "absence_pressure",
+            "silence_observation",
+            "visibility_limit",
+            "missing_trace_observation",
+            "cadence_break_observation",
+            "meta_signal_pressure"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe absence, silence, visibility limits, missing traces, cadence breaks, hidden-observer pressure, and meta-signal conditions while preserving the distinction between absence of observation and observation of absence.",
+          "questions": [
+            "What expected trace is absent, and was it actually observable?",
+            "Is silence itself supported as information or merely a visibility limitation?",
+            "Has cadence broken in a way that creates bounded analytical pressure?",
+            "Does a narrow claim or function family require absence-oriented pressure?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "absence",
+            "silence",
+            "visibility_limit",
+            "missing_trace",
+            "cadence_break",
+            "hidden_observer_pressure",
+            "meta_signal"
+          ],
+          "supported_modes": [
+            "PRIMARY",
+            "BOUNDED_SUB_OBSERVER"
+          ]
+        },
+        "observer_id": "owl_hoot",
+        "source_path": "canonical/observers/capabilities/07_OWL_HOOT_CAPABILITY.json",
+        "source_sha512": "ebf322dccaaa8f0c9cf73889aa1e7d57b401bf6f4c889a1c31a7a43a2c734bc4674b967d5033c31ac2e3bea4551cfb4a3d3ed362f475ca65c82d8cb0399f0748"
+      },
+      {
+        "contract": {
+          "aliases": [
+            "Project_Platypus"
+          ],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Platypus",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Category insufficiency does not authorize invention of a different underlying object.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "platypus",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_MANUFACTURE_NEW_OBJECT",
+            "MUST_NOT_FORCE_EXISTING_CATEGORY",
+            "MUST_NOT_EQUATE_CATEGORY_FAILURE_WITH_MALICE"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 6,
+          "outputs": [
+            "hybrid_condition_observation",
+            "category_pressure",
+            "classification_mismatch",
+            "incompatible_property_observation",
+            "anomaly_synthesis_observation"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe hybrid conditions, category violations, incompatible-property pressure, and evidence that does not reconcile cleanly with its apparent classification.",
+          "questions": [
+            "Does the object exhibit supported properties that cross expected categories?",
+            "Does the apparent classification fail to contain the observed evidence?",
+            "Are incompatible properties simultaneously present without justification for inventing a new object?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "hybrid_condition",
+            "category_violation",
+            "incompatible_property",
+            "classification_pressure",
+            "category_mismatch",
+            "anomaly_synthesis"
+          ],
+          "supported_modes": [
+            "PRIMARY"
+          ]
+        },
+        "observer_id": "platypus",
+        "source_path": "canonical/observers/capabilities/06_PLATYPUS_CAPABILITY.json",
+        "source_sha512": "73e940b9b614649fb9d7b2c1a1b4d9211a1960882c4bad4005e2a29d0d798a21125affe6f25dd2e3cc8ba83c556fdb0ec81cc11fef7017b660e2aa823bb0a0b6"
+      },
+      {
+        "contract": {
+          "aliases": [
+            "Project_WildFlower"
+          ],
+          "allowed_dispositions": [
+            "OBSERVED",
+            "NO_SIGNAL",
+            "INSUFFICIENT_EVIDENCE",
+            "EVIDENCE_CEILING_REACHED",
+            "VIEW_RESTRICTED",
+            "BOUNDARY_BLOCKED",
+            "PROVENANCE_INCOMPLETE",
+            "STALE_BINDING",
+            "DIVERGENT_BINDING",
+            "SEMANTIC_CONFLICT",
+            "OPERATING_SCOPE_EXCEEDED",
+            "AUTHORITY_VIOLATION",
+            "SCARRED"
+          ],
+          "authority": "NONE",
+          "canonical_name": "Wildflower",
+          "canonical_seat": "PRIMARY_OBSERVER",
+          "canonical_status": "CANDIDATE_NOT_PROMOTED",
+          "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+          "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+          "contract_version": "1.0",
+          "distinctive_invariant": "Emergence may reveal structure without establishing why that structure exists.",
+          "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+          "human_gate": "ACTIVE",
+          "mode_invariant": null,
+          "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+          "observer_id": "wildflower",
+          "observer_specific_prohibitions": [
+            "MUST_NOT_MANUFACTURE_CAUSATION",
+            "MUST_NOT_PROMOTE_EMERGENCE_TO_FACT",
+            "MUST_NOT_COLLAPSE_DISTINCT_RELATIONSHIPS"
+          ],
+          "operating_class": "PRIMARY",
+          "ordinal": 4,
+          "outputs": [
+            "emergence_observation",
+            "pattern_bloom_observation",
+            "relationship_field_pressure",
+            "recurrence_observation",
+            "developing_structure_observation"
+          ],
+          "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+          "purpose": "Observe emergence, pattern bloom, relationship fields, and developing structure that becomes visible through composition or recurrence.",
+          "questions": [
+            "What new structure becomes visible only when bounded observations are composed?",
+            "Is a pattern emerging through recurrence?",
+            "Are relationships blooming into a supported field without yet establishing causation?"
+          ],
+          "required_bindings": [
+            "room_id",
+            "room_revision",
+            "room_state",
+            "authorized_view",
+            "evidence_refs",
+            "provenance_refs",
+            "evidence_status",
+            "claim_ceiling",
+            "permitted_operation",
+            "observer_identity",
+            "observer_class",
+            "operation_id"
+          ],
+          "restoration_stage": "OR-2",
+          "shared_prohibitions": [
+            "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+            "MUST_NOT_CREATE_AUTHORITY",
+            "MUST_NOT_PROMOTE_AUTHORITY",
+            "MUST_NOT_SATISFY_HUMAN_GATE",
+            "MUST_NOT_INCREASE_CLAIM_CEILING",
+            "MUST_NOT_CREATE_CANONICAL_TRUTH",
+            "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+          ],
+          "signals": [
+            "emergence",
+            "pattern_bloom",
+            "relationship_field",
+            "recurrence",
+            "developing_structure",
+            "composition_signal"
+          ],
+          "supported_modes": [
+            "PRIMARY"
+          ]
+        },
+        "observer_id": "wildflower",
+        "source_path": "canonical/observers/capabilities/04_WILDFLOWER_CAPABILITY.json",
+        "source_sha512": "7ed1588c28ee3fa1e0fe78c5544f9c4c684c2269fefa7b95c3dec975aa6465c5fdf9df30f4c7b64b9a03df2aa67437cbfb7171d43b42dc834c858352f05747f5"
+      }
+    ],
+    "primary_count": 7
+  },
+  "lossless_collapse_sha512": "93fe526a34506726cb854a2184017a46a2ae14194c6325158d8cd531ee1309d4028cf33a538508ebf872fde52453fdd083794453eb281a3196a102cc5690874b",
+  "next_stage": "OR-17_HUMAN_GATE_PACKAGE",
+  "promotion_state": {
+    "canonical_mutation_performed": false,
+    "canonical_promotion_performed": false,
+    "human_gate_required": true,
+    "promotion_authorized_by_or16": false
+  },
+  "python_interpreter": "/home/codespace/.python/current/bin/python3",
+  "regression_requirements": {
+    "or10_functional": "120/120 PASS",
+    "or11_completeness": "30/30 PASS",
+    "or12_fresh_reader": "20/20 PASS",
+    "or15_ac_surface": "REEXECUTE"
+  },
+  "restoration_stage": "OR-16",
+  "source_head": "8bdc26bfb5f7b3f0692efe71c3ab5d5ec97b4d47",
+  "source_or15": {
+    "path": "verification/observers/ac_revalidation/AC01_AC12_OBSERVER_REVALIDATION.json",
+    "sha512": "14799c2495639c174f740ffad9bbd93d798835749a628eaf8c3a83f23fcf6a639042837e2c72a7d544635d02c94a5ad02cab060141e94f59cb0d586ef8086a70"
+  },
+  "stability_invariants": [
+    "SAME_INPUTS_PRODUCE_SAME_COLLAPSE",
+    "COLLAPSE_PRESERVES_ALL_TEN_OBSERVER_IDENTITIES",
+    "COLLAPSE_PRESERVES_ALL_SOURCE_CONTRACT_FIELDS",
+    "COLLAPSE_PRESERVES_SOURCE_SHA512_BINDINGS",
+    "RECONSTRUCTION_EQUALS_SOURCE",
+    "AGGREGATION_DOES_NOT_EQUAL_SEMANTIC_COMPRESSION",
+    "SHARED_CONTAINER_DOES_NOT_CREATE_SHARED_MEANING",
+    "OWL_HOOT_PRIMARY_SEAT_SURVIVES_COLLAPSE",
+    "CONTROLLED_PRESSURE_IDENTITIES_SURVIVE_COLLAPSE",
+    "AC_REGRESSION_SURVIVES_COLLAPSE",
+    "OBSERVER_FUNCTIONAL_REGRESSION_SURVIVES_COLLAPSE",
+    "FRESH_READER_RECONSTRUCTION_SURVIVES_COLLAPSE",
+    "NO_TRACKED_IMPLEMENTATION_MUTATION",
+    "AUTHORITY_REMAINS_NONE",
+    "HUMAN_GATE_REMAINS_ACTIVE",
+    "NO_CANONICAL_MUTATION",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "stability_model": {
+    "ac_regression_required_each_iteration": true,
+    "deterministic_collapse_required": true,
+    "full_contract_reconstruction_required": true,
+    "iterations": 3,
+    "observer_regression_required_each_iteration": true,
+    "same_committed_inputs": true
+  },
+  "validator": {
+    "path": "verification/observers/stability/validate_observer_stability.py",
+    "sha512": "fb17bcbc1f25ce3ed45fb570a4d03a3ed203ca8291b07a6549b4e3b576ebfe119b65cae75e6a9387dfce9ce14e99051e50eb24f95f113659da9fe36a96181473"
+  },
+  "version": "vTemporal.41.0"
+}
