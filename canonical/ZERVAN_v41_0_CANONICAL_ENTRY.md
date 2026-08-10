@@ -292,21 +292,33 @@ Ring 7 owns:
 - final Fresh-Reader package validation;
 - promotion-readiness closure.
 
-Current Ring 7 target:
+Ring 7 promotion state:
 
-READY_FOR_HUMAN_GATE
+COMPLETE
 
-not:
+Human Gate promotion:
 
-PROMOTED
+APPROVED
 
-not:
+Promotion State:
 
 CANONICAL
 
-not:
+Canonical:
 
-MERGED
+TRUE
+
+Canonical Branch:
+
+main
+
+R8-G promotion to main is complete.
+
+vTemporal.41.0 remains the promoted implementation identity.
+
+Authority remains NONE.
+
+Human Gate remains ACTIVE.
 
 ---
 
@@ -362,11 +374,15 @@ v41 Complete
 
 Promotion State:
 
-CANDIDATE
+CANONICAL
 
 Canonical:
 
-FALSE
+TRUE
+
+Canonical Branch:
+
+main
 
 Use current Git.
 
