@@ -1,0 +1,195 @@
+{
+  "ac_summary": {
+    "controls_with_committed_test_coverage": 12,
+    "controls_with_executed_passing_coverage": 12,
+    "failed_controls": 0,
+    "required_controls": 12,
+    "unique_test_files": 4,
+    "unique_test_files_passed": 4,
+    "unittest_executions_passed": 64
+  },
+  "aggregate_activation_contract": {
+    "path": "contracts/activation/ACTIVATION_AGGREGATE_CLOSURE.md",
+    "required_controls": [
+      "AC-01",
+      "AC-02",
+      "AC-03",
+      "AC-04",
+      "AC-05",
+      "AC-06",
+      "AC-07",
+      "AC-08",
+      "AC-09",
+      "AC-10",
+      "AC-11",
+      "AC-12"
+    ],
+    "sha512": "57b7533ba3d7431f63c2daad18e3c093ebc57241c9ebaf7e493dffd56747b8dd29a5248642fd9a4775f33c5b7d060a8f28db7907e97ad23673582c6580c79b06"
+  },
+  "authority": "NONE",
+  "branch": "candidate/v41-observer-restoration",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "control_results": {
+    "AC-01": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-02": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-03": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-04": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-05": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-06": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-07": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-08": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-09": {
+      "executed_test_count": 22,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac09_atomic_canonical_state_mutation.py",
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-10": {
+      "executed_test_count": 39,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac10_evidence_ceiling_semantics.py",
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-11": {
+      "executed_test_count": 45,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac11_human_gate_authority_semantics.py",
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    },
+    "AC-12": {
+      "executed_test_count": 21,
+      "status": "PASS",
+      "test_files": [
+        "tests/test_ac12_activation_aggregate_closure.py"
+      ]
+    }
+  },
+  "external_action": "DISABLED",
+  "external_runtime": "DISABLED",
+  "human_gate": "ACTIVE",
+  "next_stage": "OR-16_STABILITY_REGRESSION_LOSSLESS_COLLAPSE",
+  "observer_regression": {
+    "or10_functional": "120/120 PASS",
+    "or11_completeness": "30/30 PASS",
+    "or12_fresh_reader": "20/20 PASS"
+  },
+  "promotion_state": {
+    "canonical_mutation_performed": false,
+    "canonical_promotion_performed": false,
+    "human_gate_required": true,
+    "promotion_authorized_by_or15": false
+  },
+  "python_interpreter": "/home/codespace/.python/current/bin/python3",
+  "pythonpath_root": "/workspaces/Zervan-Central",
+  "receipt_type": "ZERVAN_V41_OR15_AC_FULL_REVALIDATION",
+  "receipt_version": "1.0",
+  "restoration_receipt": {
+    "path": "receipts/observers/OBSERVER_RESTORATION_RECEIPT_V41.json",
+    "sha512": "8019b39fcfe27505985aec85b3752b2b91caa504e64460f9b13c52f5175341b6c2fd9d1e4183a1aa8cd82144879e2117652873c1c531c9566fec7c9a752a53d1"
+  },
+  "restoration_stage": "OR-15",
+  "revalidation_invariants": [
+    "AC01_THROUGH_AC12_REQUIRED_SURFACE_PRESERVED",
+    "AC01_THROUGH_AC12_HAVE_COMMITTED_EXECUTABLE_TEST_COVERAGE",
+    "AC01_THROUGH_AC12_HAVE_EXECUTED_PASSING_TEST_COVERAGE",
+    "TESTS_EXECUTE_VIA_UNITTEST_DISCOVERY",
+    "REPOSITORY_ROOT_EXPLICITLY_PRESENT_ON_PYTHONPATH",
+    "NO_DIRECT_TEST_FILE_EXECUTION",
+    "NO_PYTEST_DEPENDENCY",
+    "OBSERVER_FUNCTIONAL_REGRESSION_PASSES",
+    "OBSERVER_COMPLETENESS_REGRESSION_PASSES",
+    "FRESH_READER_REGRESSION_PASSES",
+    "NO_TRACKED_IMPLEMENTATION_MUTATION",
+    "AUTHORITY_REMAINS_NONE",
+    "HUMAN_GATE_REMAINS_ACTIVE",
+    "NO_CANONICAL_MUTATION",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "source_head": "600407ee7914c2e429d34dc2008e92b3a8223451",
+  "test_results": {
+    "tests/test_ac09_atomic_canonical_state_mutation.py": {
+      "command": "/home/codespace/.python/current/bin/python3 -m unittest discover -s tests -p test_ac09_atomic_canonical_state_mutation.py -v",
+      "runner": "PYTHON3_UNITTEST_DISCOVER",
+      "sha512": "734eaf9e3fe795c91047085de3c8206c3c54789652ff627837bc786f10202e37d641ff5db9e55d0541fc752bda1512e06083970a7336cd6d4ccdc1a054f02976",
+      "status": "PASS",
+      "test_count": 1
+    },
+    "tests/test_ac10_evidence_ceiling_semantics.py": {
+      "command": "/home/codespace/.python/current/bin/python3 -m unittest discover -s tests -p test_ac10_evidence_ceiling_semantics.py -v",
+      "runner": "PYTHON3_UNITTEST_DISCOVER",
+      "sha512": "d7ae1e07430fc5ca3ddd019466628d0ce25d2a73b5edc4c2ea534f6d91d5773747e392ba99681bad4027273b388e6874317e5bba8efc00b0341b2aed7683c86e",
+      "status": "PASS",
+      "test_count": 18
+    },
+    "tests/test_ac11_human_gate_authority_semantics.py": {
+      "command": "/home/codespace/.python/current/bin/python3 -m unittest discover -s tests -p test_ac11_human_gate_authority_semantics.py -v",
+      "runner": "PYTHON3_UNITTEST_DISCOVER",
+      "sha512": "4f4ade23c43fd59e4b08f5d668feac9bdbbca55b91c10671a8ce1f82d2ffc07fc800dbb39c1e9b6e7c79d559531e8e443ae4a0b906bed0c84e1805e7724a2a56",
+      "status": "PASS",
+      "test_count": 24
+    },
+    "tests/test_ac12_activation_aggregate_closure.py": {
+      "command": "/home/codespace/.python/current/bin/python3 -m unittest discover -s tests -p test_ac12_activation_aggregate_closure.py -v",
+      "runner": "PYTHON3_UNITTEST_DISCOVER",
+      "sha512": "458c918315ee265f82e8ae88532a9b1ec2aad482abddfe6ff33e984c8d1d6b9a41fa620af054ef047e360347448fa3c4641d258055f049dfc59f8f7bdd4fc6fd",
+      "status": "PASS",
+      "test_count": 21
+    }
+  },
+  "test_runner": "PYTHON3_UNITTEST_DISCOVER",
+  "version": "vTemporal.41.0"
+}
