@@ -6,6 +6,8 @@ from dataclasses import dataclass, replace
 from hashlib import sha512
 import json
 from typing import Tuple
+from tools.validate_evidence_ceiling_semantics import compare_semantics
+from tools.validate_human_gate_authority_semantics import validate_human_gate_authority_transition
 
 
 PIPELINE = (
@@ -518,4 +520,56 @@ def make_valid_pipeline():
             **common,
         )
         for stage in PIPELINE
+    )
+
+
+# AC-10 EVIDENCE-CEILING SEMANTIC ENFORCEMENT
+
+def validate_evidence_ceiling_semantic_transition(
+    source_claim: dict,
+    downstream_claim: dict,
+) -> tuple[str, ...]:
+    """
+    Validate claim meaning across an analytical/reporting transition.
+
+    AC-10 requires semantic claim strength to remain within the
+    evidence-supported ceiling. Metadata agreement alone is insufficient.
+
+    This seam is validation only. It does not mutate either claim.
+    It does not create evidence, authority, or Human Gate approval.
+    """
+    return tuple(
+        compare_semantics(
+            source_claim,
+            downstream_claim,
+        )
+    )
+
+
+def evidence_ceiling_semantic_transition_valid(
+    source_claim: dict,
+    downstream_claim: dict,
+) -> bool:
+    return not validate_evidence_ceiling_semantic_transition(
+        source_claim,
+        downstream_claim,
+    )
+
+def human_gate_authority_semantic_transition_valid(
+    source_state: dict,
+    downstream_state: dict,
+) -> bool:
+    """
+    AC-11 semantic seam.
+
+    Preserve the Human Gate / authority boundary across a
+    cross-stage transition.
+
+    This seam validates only. It does not execute, publish,
+    mutate canonical state, populate systems, create claim
+    authority, or promote system authority.
+    """
+    return not validate_human_gate_authority_transition(
+        source_state,
+        downstream_state,
     )

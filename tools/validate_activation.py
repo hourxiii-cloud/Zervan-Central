@@ -17,6 +17,12 @@ CONTROLS = [
         "tools/validate_evidence_ceiling_semantics.py",
         "tests/test_ac10_evidence_ceiling_semantics.py",
     ),
+    (
+        "AC-11",
+        "Human-Gate / Authority Semantic Enforcement",
+        "tools/validate_human_gate_authority_semantics.py",
+        "tests/test_ac11_human_gate_authority_semantics.py",
+    ),
 ]
 
 
@@ -118,7 +124,9 @@ def main() -> int:
 
     print("ACTIVATION CONTROL RESULT: PASS")
     print("AC-10: ACTIVE")
+print("AC-11: ACTIVE")
     print("Evidence-Ceiling Semantic Enforcement: ENFORCED")
+print("Human-Gate / Authority Semantic Enforcement: ENFORCED")
     print("Authority: NONE")
     print("Human Gate: ACTIVE")
 

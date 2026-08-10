@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/activation/human_gate_authority_semantic_enforcement.schema.json",
+  "title": "AC-11 Human-Gate / Authority Semantic Enforcement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "activation_control",
+    "source_state",
+    "downstream_state",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "activation_control": {
+      "type": "string",
+      "const": "AC-11"
+    },
+    "source_state": {
+      "$ref": "#/$defs/governed_state"
+    },
+    "downstream_state": {
+      "$ref": "#/$defs/governed_state"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  },
+  "$defs": {
+    "governed_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state_id",
+        "analytical_support",
+        "selection_state",
+        "mc_admissibility",
+        "report_state",
+        "human_gate_decision",
+        "human_decision_ref",
+        "transition_class",
+        "transition_target",
+        "requested_scope",
+        "room_object_id",
+        "room_revision_id",
+        "room_state_root",
+        "authorized_view_root",
+        "evidence_boundary_ref",
+        "evidence_ceiling_ref",
+        "execution_state",
+        "publication_state",
+        "canonical_mutation_state",
+        "system_population_state",
+        "claim_authority_state"
+      ],
+      "properties": {
+        "state_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "analytical_support": {
+          "type": "string",
+          "enum": [
+            "SUPPORTED",
+            "PARTIALLY_SUPPORTED",
+            "CONTRADICTED",
+            "UNRESOLVED",
+            "UNKNOWN"
+          ]
+        },
+        "selection_state": {
+          "type": "string",
+          "enum": [
+            "SELECTED",
+            "NOT_SELECTED",
+            "NULL_RECORDED",
+            "BLOCKED",
+            "UNKNOWN"
+          ]
+        },
+        "mc_admissibility": {
+          "type": "string",
+          "enum": [
+            "ADMISSIBLE",
+            "CONDITIONAL",
+            "INADMISSIBLE",
+            "NOT_EVALUATED"
+          ]
+        },
+        "report_state": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "DRAFT",
+            "RENDERED",
+            "PUBLICATION_READY",
+            "PUBLICATION_APPROVED"
+          ]
+        },
+        "human_gate_decision": {
+          "type": "string",
+          "enum": [
+            "NOT_REQUIRED",
+            "PENDING",
+            "APPROVED",
+            "DENIED"
+          ]
+        },
+        "human_decision_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transition_class": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transition_target": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requested_scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "room_object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "room_revision_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "room_state_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorized_view_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_boundary_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ceiling_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "execution_state": {
+          "type": "string",
+          "enum": [
+            "NOT_EXECUTED",
+            "EXECUTED"
+          ]
+        },
+        "publication_state": {
+          "type": "string",
+          "enum": [
+            "NOT_PUBLISHED",
+            "PUBLISHED"
+          ]
+        },
+        "canonical_mutation_state": {
+          "type": "string",
+          "enum": [
+            "NOT_MUTATED",
+            "MUTATED"
+          ]
+        },
+        "system_population_state": {
+          "type": "string",
+          "enum": [
+            "NOT_POPULATED",
+            "POPULATED"
+          ]
+        },
+        "claim_authority_state": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "COMPLIANCE",
+            "LEGAL",
+            "CERTIFICATION",
+            "OPERATIONAL"
+          ]
+        }
+      }
+    }
+  }
+}
