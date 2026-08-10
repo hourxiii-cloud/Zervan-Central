@@ -1,0 +1,108 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "coverage": {
+    "aggregate_completeness": "30/30 PASS",
+    "composition": true,
+    "controlled_pressure": true,
+    "controlled_sub_observers": "3/3",
+    "distinctive_invariants": "10/10",
+    "failure_scar_semantics": true,
+    "fresh_reader": "20/20 PASS",
+    "functional_tests": "120/120 PASS",
+    "integration": true,
+    "no_compression_out": true,
+    "primary_observers": "7/7",
+    "restoration_stages": "OR-0 THROUGH OR-13",
+    "routing": true,
+    "total_observers": "10/10"
+  },
+  "dependencies": [
+    {
+      "path": "canonical/observers/OBSERVER_RECOVERY_INVENTORY.md",
+      "sha512": "ae776757ab84495d051005d1a106f9eaa3f4e970c2f61178d576181bf6d56a03563343a592100bac1edfc83406676f012c1dfcbdf2bbe59b48584fe4c9e04d33",
+      "stage": "OR-0"
+    },
+    {
+      "path": "canonical/observers/OBSERVER_CONTRACT_V41.md",
+      "sha512": "bcca2b31ddeff64c85c0877a06d5ed5ced1d53fa7c63e8e959fba5dc1db0a8cb54a8f0388a47c11d82bca0835ab8320e3c2732df5e46164ccee258a21953ccc6",
+      "stage": "OR-1"
+    },
+    {
+      "path": "canonical/observers/capabilities/OBSERVER_CAPABILITY_INDEX.json",
+      "sha512": "6fc617c8568d6d1222ee736a9b95e7f59d9c2e3d4223a5b59b85335ec93f791bcfef7b71a0c4b425396495e72eb584459c8f464203b204ca28f86776e72bfd7a",
+      "stage": "OR-2"
+    },
+    {
+      "path": "schemas/observers/observer_schema_index.json",
+      "sha512": "9f1f4b323e51e562ce827a52d583ecab3486edf4149b6acfae86b2f2f211872f9fb49de81a5e4f917359d11420f0814aadaa1378fdb64253cc2cc7959709a791",
+      "stage": "OR-3"
+    },
+    {
+      "path": "tools/observers/OBSERVER_VALIDATOR_INDEX.json",
+      "sha512": "f8445fa6d1af4da4474198bf17e4b616c5dcc24fb306d7638e14af55cbbd283f7580bcd03eaced72691f1c371b8cb6645ee26d69128d6699bc1f327d6df9c2aa",
+      "stage": "OR-4"
+    },
+    {
+      "path": "routes/observers/OBSERVER_ROUTING_INDEX.json",
+      "sha512": "318063e4c147cd9a5d246cc54c8233aaa830178bb9e5246791d42483014444e7e4580f7c9aefa4390a5c0e48cfab2451d1a9655bc68da53e2984db3396ae51f5",
+      "stage": "OR-5"
+    },
+    {
+      "path": "observers/composition/OBSERVER_COMPOSITION_INDEX.json",
+      "sha512": "7ff6cb664829970b83b77247aacca2f284b57ea70135638cc20a4f0cb965117539fea7d4b1a4460e3f0a321ead46cda484b992f25774a80bd19e9d1857c4fcc6",
+      "stage": "OR-6"
+    },
+    {
+      "path": "observers/integration/OBSERVER_INTEGRATION_INDEX.json",
+      "sha512": "ce26b7ec4c7e2c1e00e2a326b6a2a01bb1e904ff06d52284f804f2ea41d51b8f3c1d396f08804386d42d85ea8f5bebf17550709ad4cd75832d1fb80b323de87b",
+      "stage": "OR-7"
+    },
+    {
+      "path": "observers/pressure/CONTROLLED_PRESSURE_INDEX.json",
+      "sha512": "15784b192c296ad6dfe7691ddc81f6cefcbd1d7c55bd8f75fd81df5319e7d696440a6e1fb5eebe85478e47182648dcd5877e25df290a29d03d7a4dc2b83d30fa",
+      "stage": "OR-8"
+    },
+    {
+      "path": "observers/failure/OBSERVER_FAILURE_SCAR_INDEX.json",
+      "sha512": "ec1375bc11d4cc95ae46801dad7b6b49a258242633cc0bf6bcceb8949784324a1ee846ba1895a3605f18ff0e92c410e92f2f907080683335d8b12828f31408d9",
+      "stage": "OR-9"
+    },
+    {
+      "path": "tests/observers/functional/OBSERVER_FUNCTIONAL_TEST_INDEX.json",
+      "sha512": "8a8044ff322eebeab2724c88ffb15cbc2981fa4de1f3f1cb671cbfb596f25f910fd57c8e9d7dc60e25a7067a47caef2bda0f4d4ef9846e27116c85474db746d7",
+      "stage": "OR-10"
+    },
+    {
+      "path": "tools/observers/completeness/OBSERVER_RESTORATION_COMPLETENESS_INDEX.json",
+      "sha512": "cbdf0305ff5a524645b3679c2626fdce9cedcfa327a85bf037f63b2f09a8ab514becdd065bca775a051fd5628b0c0e976c2f5e227c5d2de10f09fbc943e04bbf",
+      "stage": "OR-11"
+    },
+    {
+      "path": "verification/observers/fresh_reader/OBSERVER_FRESH_READER_INDEX.json",
+      "sha512": "0444f575dffbf91fc4551091e70d8d1bda9bbd1c3d6f3db720e786f5093f8206e64a91002476e6368bd6ba8cd3492dd9ae3554623652e36883a7abb8e5a09088",
+      "stage": "OR-12"
+    }
+  ],
+  "documentation": {
+    "path": "docs/observers/OBSERVER_RESTORATION_V41.md",
+    "sha512": "3cf244fb4217ae969b639ac1a19c41b2497203e6e093e1f914a0e3e696c8bbe3493c892854eb0dfb6c204e28439475b1eee269517bc3732cab0b082e28ae85f6"
+  },
+  "documentation_invariants": [
+    "DOCUMENTATION_DOES_NOT_CREATE_AUTHORITY",
+    "DOCUMENTATION_DOES_NOT_PROMOTE_CANONICAL_STATE",
+    "DOCUMENTATION_DOES_NOT_REPLACE_EXECUTABLE_VALIDATION",
+    "DOCUMENTATION_PRESERVES_TEN_NAMED_OBSERVER_IDENTITIES",
+    "DOCUMENTATION_PRESERVES_PRIMARY_CONTROLLED_DISTINCTION",
+    "DOCUMENTATION_PRESERVES_OWL_HOOT_PRIMARY_SEAT",
+    "DOCUMENTATION_PRESERVES_CONTROLLED_PRESSURE_BOUNDARIES",
+    "DOCUMENTATION_PRESERVES_FAILURE_SCAR_DISTINCTIONS",
+    "DOCUMENTATION_RECORDS_NO_COMPRESSION_OUT"
+  ],
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_DOCUMENTATION_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-14_RESTORATION_RECEIPT",
+  "restoration_stage": "OR-13",
+  "version": "vTemporal.41.0"
+}
