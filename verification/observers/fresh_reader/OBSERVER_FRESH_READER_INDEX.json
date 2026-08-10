@@ -1,0 +1,39 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "fresh_reader_assertions": {
+    "aggregate_controls": "20/20 PASS",
+    "artifact_manifest_verified_against_head": true,
+    "canonical_promotion_performed": false,
+    "committed_git_head_sufficient": true,
+    "controlled_sub_observers_recovered": "3/3",
+    "conversation_state_required": false,
+    "distinctive_invariants_recovered": "10/10",
+    "observer_inventory_recovered": "10/10",
+    "or12_output_required_for_reconstruction": false,
+    "owl_hoot_bounded_mode_recovered": true,
+    "owl_hoot_primary_seat_recovered": true,
+    "primary_observers_recovered": "7/7",
+    "restoration_chain_recovered": "OR-0 THROUGH OR-11",
+    "stored_memory_required": false,
+    "uncommitted_tracked_state_required": false
+  },
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_FRESH_READER_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-13_DOCUMENTATION",
+  "restoration_stage": "OR-12",
+  "source_completeness_index": {
+    "path": "tools/observers/completeness/OBSERVER_RESTORATION_COMPLETENESS_INDEX.json",
+    "sha512": "cbdf0305ff5a524645b3679c2626fdce9cedcfa327a85bf037f63b2f09a8ab514becdd065bca775a051fd5628b0c0e976c2f5e227c5d2de10f09fbc943e04bbf"
+  },
+  "source_manifest_count": 39,
+  "validation_model": "COMMITTED_HEAD_ONLY",
+  "validator": {
+    "path": "verification/observers/fresh_reader/validate_fresh_reader.py",
+    "sha512": "0d6d6649828f3ca6b7969e82e0b16d705d4ca8aaad4772da579205e533a9828aad8ed5ce18c651dba7a5368bd847524ac7431bd1ad2f0bbc7c32429eba9b274c",
+    "status": "20/20 PASS"
+  },
+  "version": "vTemporal.41.0",
+  "workspace_rule": "TRACKED_STATE_MUST_EQUAL_HEAD; OR12_UNTRACKED_OUTPUTS_DO_NOT_PARTICIPATE_IN_RECONSTRUCTION"
+}
