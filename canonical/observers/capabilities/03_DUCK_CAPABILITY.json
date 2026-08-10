@@ -1,0 +1,87 @@
+{
+  "aliases": [],
+  "allowed_dispositions": [
+    "OBSERVED",
+    "NO_SIGNAL",
+    "INSUFFICIENT_EVIDENCE",
+    "EVIDENCE_CEILING_REACHED",
+    "VIEW_RESTRICTED",
+    "BOUNDARY_BLOCKED",
+    "PROVENANCE_INCOMPLETE",
+    "STALE_BINDING",
+    "DIVERGENT_BINDING",
+    "SEMANTIC_CONFLICT",
+    "OPERATING_SCOPE_EXCEEDED",
+    "AUTHORITY_VIOLATION",
+    "SCARRED"
+  ],
+  "authority": "NONE",
+  "canonical_name": "Duck",
+  "canonical_seat": "PRIMARY_OBSERVER",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+  "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+  "contract_version": "1.0",
+  "distinctive_invariant": "Failure to reconcile is information, not automatic threat attribution.",
+  "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+  "human_gate": "ACTIVE",
+  "mode_invariant": null,
+  "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+  "observer_id": "duck",
+  "observer_specific_prohibitions": [
+    "MUST_NOT_EQUATE_ANOMALY_WITH_THREAT",
+    "MUST_NOT_CONVERT_DIVERGENCE_TO_CAUSATION",
+    "MUST_NOT_FORCE_RECONCILIATION"
+  ],
+  "operating_class": "PRIMARY",
+  "ordinal": 3,
+  "outputs": [
+    "divergence_observation",
+    "wobble_observation",
+    "mismatch_pressure",
+    "false_wall_pressure",
+    "reconciliation_gap"
+  ],
+  "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+  "purpose": "Observe wobble, spin, divergence, mismatch, and apparently ordinary conditions that fail to reconcile cleanly.",
+  "questions": [
+    "What appears ordinary but does not reconcile with neighboring evidence?",
+    "Where does behavior wobble or diverge from its apparent route?",
+    "Is a visible wall structurally supported or merely presenting as stable?"
+  ],
+  "required_bindings": [
+    "room_id",
+    "room_revision",
+    "room_state",
+    "authorized_view",
+    "evidence_refs",
+    "provenance_refs",
+    "evidence_status",
+    "claim_ceiling",
+    "permitted_operation",
+    "observer_identity",
+    "observer_class",
+    "operation_id"
+  ],
+  "restoration_stage": "OR-2",
+  "shared_prohibitions": [
+    "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+    "MUST_NOT_CREATE_AUTHORITY",
+    "MUST_NOT_PROMOTE_AUTHORITY",
+    "MUST_NOT_SATISFY_HUMAN_GATE",
+    "MUST_NOT_INCREASE_CLAIM_CEILING",
+    "MUST_NOT_CREATE_CANONICAL_TRUTH",
+    "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+  ],
+  "signals": [
+    "wobble",
+    "spin",
+    "divergence",
+    "mismatch",
+    "false_wall_pressure",
+    "reconciliation_failure"
+  ],
+  "supported_modes": [
+    "PRIMARY"
+  ]
+}

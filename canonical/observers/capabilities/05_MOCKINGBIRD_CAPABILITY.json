@@ -1,0 +1,90 @@
+{
+  "aliases": [
+    "Project_MockingBird"
+  ],
+  "allowed_dispositions": [
+    "OBSERVED",
+    "NO_SIGNAL",
+    "INSUFFICIENT_EVIDENCE",
+    "EVIDENCE_CEILING_REACHED",
+    "VIEW_RESTRICTED",
+    "BOUNDARY_BLOCKED",
+    "PROVENANCE_INCOMPLETE",
+    "STALE_BINDING",
+    "DIVERGENT_BINDING",
+    "SEMANTIC_CONFLICT",
+    "OPERATING_SCOPE_EXCEEDED",
+    "AUTHORITY_VIOLATION",
+    "SCARRED"
+  ],
+  "authority": "NONE",
+  "canonical_name": "Mockingbird",
+  "canonical_seat": "PRIMARY_OBSERVER",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+  "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+  "contract_version": "1.0",
+  "distinctive_invariant": "Representation may change while evidentiary meaning remains invariant.",
+  "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+  "human_gate": "ACTIVE",
+  "mode_invariant": null,
+  "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+  "observer_id": "mockingbird",
+  "observer_specific_prohibitions": [
+    "MUST_NOT_REQUIRE_BYTE_IDENTITY",
+    "MUST_NOT_TREAT_LEGITIMATE_REPRESENTATION_CHANGE_AS_DRIFT",
+    "MUST_NOT_STRENGTHEN_EVIDENTIARY_MEANING"
+  ],
+  "operating_class": "PRIMARY",
+  "ordinal": 5,
+  "outputs": [
+    "semantic_fidelity_observation",
+    "reflection_observation",
+    "mimicry_pressure",
+    "narrative_drift_observation",
+    "representation_drift_observation"
+  ],
+  "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+  "purpose": "Observe reflection, echo, mimicry, false-compliance pressure, narrative drift, representational drift, and semantic fidelity across legitimate transformations.",
+  "questions": [
+    "Did meaning survive a legitimate representation change?",
+    "Is an apparent match genuine equivalence, reflection, mimicry, or echo?",
+    "Has narrative or representation strengthened, weakened, or altered evidentiary meaning?"
+  ],
+  "required_bindings": [
+    "room_id",
+    "room_revision",
+    "room_state",
+    "authorized_view",
+    "evidence_refs",
+    "provenance_refs",
+    "evidence_status",
+    "claim_ceiling",
+    "permitted_operation",
+    "observer_identity",
+    "observer_class",
+    "operation_id"
+  ],
+  "restoration_stage": "OR-2",
+  "shared_prohibitions": [
+    "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+    "MUST_NOT_CREATE_AUTHORITY",
+    "MUST_NOT_PROMOTE_AUTHORITY",
+    "MUST_NOT_SATISFY_HUMAN_GATE",
+    "MUST_NOT_INCREASE_CLAIM_CEILING",
+    "MUST_NOT_CREATE_CANONICAL_TRUTH",
+    "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+  ],
+  "signals": [
+    "reflection",
+    "echo",
+    "mimicry",
+    "false_compliance_pressure",
+    "narrative_drift",
+    "representational_drift",
+    "semantic_fidelity"
+  ],
+  "supported_modes": [
+    "PRIMARY"
+  ]
+}

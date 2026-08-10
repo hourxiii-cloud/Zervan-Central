@@ -1,0 +1,112 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "capabilities": [
+    {
+      "canonical_name": "Eagle",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "eagle",
+      "operating_class": "PRIMARY",
+      "ordinal": 1,
+      "path": "canonical/observers/capabilities/01_EAGLE_CAPABILITY.json",
+      "sha512": "edabf9e08b883266935e48be6f8b2c2db2da40793f40877cbe322427c04073fd7f12d4db92a9e4182a85bd92e28514c51e7ab167fc4e1662569d3c9917571b4e"
+    },
+    {
+      "canonical_name": "Mole",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "mole",
+      "operating_class": "PRIMARY",
+      "ordinal": 2,
+      "path": "canonical/observers/capabilities/02_MOLE_CAPABILITY.json",
+      "sha512": "bae09602c8fe657067aed14c1270b256c26813b07161a2fd3e111dc839b687f746f7e4c1f34582b9e5f2728541912c2bc3081cddfe07d1a43dfc29bf8b2a5e5d"
+    },
+    {
+      "canonical_name": "Duck",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "duck",
+      "operating_class": "PRIMARY",
+      "ordinal": 3,
+      "path": "canonical/observers/capabilities/03_DUCK_CAPABILITY.json",
+      "sha512": "55e9c472185b3045abda81c04a6b4764624a69a6b8c7463a95a026306b4bc7820e406b79f63337c94a59ed6c049c0185435e84c989aacf6aa54d92dd99af4ab4"
+    },
+    {
+      "canonical_name": "Wildflower",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "wildflower",
+      "operating_class": "PRIMARY",
+      "ordinal": 4,
+      "path": "canonical/observers/capabilities/04_WILDFLOWER_CAPABILITY.json",
+      "sha512": "7ed1588c28ee3fa1e0fe78c5544f9c4c684c2269fefa7b95c3dec975aa6465c5fdf9df30f4c7b64b9a03df2aa67437cbfb7171d43b42dc834c858352f05747f5"
+    },
+    {
+      "canonical_name": "Mockingbird",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "mockingbird",
+      "operating_class": "PRIMARY",
+      "ordinal": 5,
+      "path": "canonical/observers/capabilities/05_MOCKINGBIRD_CAPABILITY.json",
+      "sha512": "275f3de6af559b9b4e4c0e2035da7d92a2f5428eeafc93f03156b0c8bca111a432a49b0ac8b13bfb54d7ccea50faca6d9adb1f2c0d6f74bce0618d1a1689b60b"
+    },
+    {
+      "canonical_name": "Platypus",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "platypus",
+      "operating_class": "PRIMARY",
+      "ordinal": 6,
+      "path": "canonical/observers/capabilities/06_PLATYPUS_CAPABILITY.json",
+      "sha512": "73e940b9b614649fb9d7b2c1a1b4d9211a1960882c4bad4005e2a29d0d798a21125affe6f25dd2e3cc8ba83c556fdb0ec81cc11fef7017b660e2aa823bb0a0b6"
+    },
+    {
+      "canonical_name": "Owl_Hoot",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "observer_id": "owl_hoot",
+      "operating_class": "PRIMARY",
+      "ordinal": 7,
+      "path": "canonical/observers/capabilities/07_OWL_HOOT_CAPABILITY.json",
+      "sha512": "ebf322dccaaa8f0c9cf73889aa1e7d57b401bf6f4c889a1c31a7a43a2c734bc4674b967d5033c31ac2e3bea4551cfb4a3d3ed362f475ca65c82d8cb0399f0748"
+    },
+    {
+      "canonical_name": "Osprey",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "observer_id": "osprey",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "ordinal": 8,
+      "path": "canonical/observers/capabilities/08_OSPREY_CAPABILITY.json",
+      "sha512": "3cc8e4ae79d6ce47ee66c6e31bc1863cf7a9949aa983aeba6ccf211bbd478a968ad2ef5b135beeaa3107630d8dc4084e979af277e96e1140704068deb59a2e02"
+    },
+    {
+      "canonical_name": "AnimalKingdom",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "observer_id": "animal_kingdom",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "ordinal": 9,
+      "path": "canonical/observers/capabilities/09_ANIMAL_KINGDOM_CAPABILITY.json",
+      "sha512": "7730f4c2274c519b303b559e049ac88f0b1f0af958949fe4219eb327df18162fcc4054e9382b2789ce3bbb088b9aae02ade4f3bc82179ac1f75548217af0c5db"
+    },
+    {
+      "canonical_name": "Armadillo",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "observer_id": "armadillo",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "ordinal": 10,
+      "path": "canonical/observers/capabilities/10_ARMADILLO_CAPABILITY.json",
+      "sha512": "9674d84dc72fd89ba9241b6360565ce8d0d2da72011e44e87e97a1b0cefc9b2ccfc37d635e459faeefce10cf7d327ca3e80e1ce0f45c27a8c8059c638255d697"
+    }
+  ],
+  "counts": {
+    "controlled_sub_observer": 3,
+    "primary": 7,
+    "total": 10
+  },
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_CAPABILITY_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-3_SCHEMAS",
+  "no_compression_rule": "Ten independently meaningful capability contracts are required. Shared machinery SHALL NOT erase independent Observer meaning.",
+  "operating_level_invariant": {
+    "owl_hoot": "PRIMARY_OBSERVER",
+    "owl_hoot_bounded_mode_changes_seat": false
+  },
+  "restoration_stage": "OR-2",
+  "version": "vTemporal.41.0"
+}

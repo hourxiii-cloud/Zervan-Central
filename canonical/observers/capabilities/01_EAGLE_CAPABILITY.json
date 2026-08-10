@@ -1,0 +1,89 @@
+{
+  "aliases": [
+    "Project_Eagle"
+  ],
+  "allowed_dispositions": [
+    "OBSERVED",
+    "NO_SIGNAL",
+    "INSUFFICIENT_EVIDENCE",
+    "EVIDENCE_CEILING_REACHED",
+    "VIEW_RESTRICTED",
+    "BOUNDARY_BLOCKED",
+    "PROVENANCE_INCOMPLETE",
+    "STALE_BINDING",
+    "DIVERGENT_BINDING",
+    "SEMANTIC_CONFLICT",
+    "OPERATING_SCOPE_EXCEEDED",
+    "AUTHORITY_VIOLATION",
+    "SCARRED"
+  ],
+  "authority": "NONE",
+  "canonical_name": "Eagle",
+  "canonical_seat": "PRIMARY_OBSERVER",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "compression_rule": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label.",
+  "contract_type": "ZERVAN_V41_OBSERVER_CAPABILITY",
+  "contract_version": "1.0",
+  "distinctive_invariant": "Trajectory is observation of supported direction, not ownership of the future.",
+  "evidence_rule": "Observer output SHALL remain evidence-bounded and SHALL NOT silently strengthen uncertainty, visibility, or claim status.",
+  "human_gate": "ACTIVE",
+  "mode_invariant": null,
+  "mutation_posture": "READ_ONLY_OBSERVATION_OR_PRESSURE",
+  "observer_id": "eagle",
+  "observer_specific_prohibitions": [
+    "MUST_NOT_MANUFACTURE_FUTURE_STATE",
+    "MUST_NOT_CONVERT_TRAJECTORY_TO_FACT",
+    "MUST_NOT_EXCEED_EVIDENCE_CEILING"
+  ],
+  "operating_class": "PRIMARY",
+  "ordinal": 1,
+  "outputs": [
+    "trajectory_observation",
+    "coherence_observation",
+    "directional_pressure",
+    "route_discontinuity",
+    "bounded_projection_pressure"
+  ],
+  "provenance_rule": "Every material result SHALL remain attributable to Observer identity, operation identity, bound Room/revision/view, evidence references, applicable ceiling, and disposition.",
+  "purpose": "Observe trajectory, long-range coherence, directional continuity, and route-level stability without converting projected movement into established future state.",
+  "questions": [
+    "Does observed behavior maintain directional coherence across the permitted analytical territory?",
+    "Is a trajectory stable, changing, fragmenting, or reversing?",
+    "Do separated observations form a supported long-range route or merely appear aligned?"
+  ],
+  "required_bindings": [
+    "room_id",
+    "room_revision",
+    "room_state",
+    "authorized_view",
+    "evidence_refs",
+    "provenance_refs",
+    "evidence_status",
+    "claim_ceiling",
+    "permitted_operation",
+    "observer_identity",
+    "observer_class",
+    "operation_id"
+  ],
+  "restoration_stage": "OR-2",
+  "shared_prohibitions": [
+    "MUST_NOT_MUTATE_PRIMARY_EVIDENCE",
+    "MUST_NOT_CREATE_AUTHORITY",
+    "MUST_NOT_PROMOTE_AUTHORITY",
+    "MUST_NOT_SATISFY_HUMAN_GATE",
+    "MUST_NOT_INCREASE_CLAIM_CEILING",
+    "MUST_NOT_CREATE_CANONICAL_TRUTH",
+    "MUST_NOT_AUTHORIZE_OWN_CONSUMPTION"
+  ],
+  "signals": [
+    "trajectory",
+    "directional_coherence",
+    "long_range_stability",
+    "route_continuity",
+    "direction_change",
+    "trajectory_fragmentation"
+  ],
+  "supported_modes": [
+    "PRIMARY"
+  ]
+}
