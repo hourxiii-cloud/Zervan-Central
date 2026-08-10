@@ -1,0 +1,109 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "dependencies": [
+    {
+      "path": "canonical/observers/capabilities/OBSERVER_CAPABILITY_INDEX.json",
+      "sha512": "6fc617c8568d6d1222ee736a9b95e7f59d9c2e3d4223a5b59b85335ec93f791bcfef7b71a0c4b425396495e72eb584459c8f464203b204ca28f86776e72bfd7a",
+      "stage": "OR-2"
+    },
+    {
+      "path": "schemas/observers/observer_schema_index.json",
+      "sha512": "9f1f4b323e51e562ce827a52d583ecab3486edf4149b6acfae86b2f2f211872f9fb49de81a5e4f917359d11420f0814aadaa1378fdb64253cc2cc7959709a791",
+      "stage": "OR-3"
+    },
+    {
+      "path": "tools/observers/OBSERVER_VALIDATOR_INDEX.json",
+      "sha512": "f8445fa6d1af4da4474198bf17e4b616c5dcc24fb306d7638e14af55cbbd283f7580bcd03eaced72691f1c371b8cb6645ee26d69128d6699bc1f327d6df9c2aa",
+      "stage": "OR-4"
+    },
+    {
+      "path": "routes/observers/OBSERVER_ROUTING_INDEX.json",
+      "sha512": "318063e4c147cd9a5d246cc54c8233aaa830178bb9e5246791d42483014444e7e4580f7c9aefa4390a5c0e48cfab2451d1a9655bc68da53e2984db3396ae51f5",
+      "stage": "OR-5"
+    },
+    {
+      "path": "observers/composition/OBSERVER_COMPOSITION_INDEX.json",
+      "sha512": "7ff6cb664829970b83b77247aacca2f284b57ea70135638cc20a4f0cb965117539fea7d4b1a4460e3f0a321ead46cda484b992f25774a80bd19e9d1857c4fcc6",
+      "stage": "OR-6"
+    },
+    {
+      "path": "observers/integration/OBSERVER_INTEGRATION_INDEX.json",
+      "sha512": "ce26b7ec4c7e2c1e00e2a326b6a2a01bb1e904ff06d52284f804f2ea41d51b8f3c1d396f08804386d42d85ea8f5bebf17550709ad4cd75832d1fb80b323de87b",
+      "stage": "OR-7"
+    },
+    {
+      "path": "observers/pressure/CONTROLLED_PRESSURE_INDEX.json",
+      "sha512": "15784b192c296ad6dfe7691ddc81f6cefcbd1d7c55bd8f75fd81df5319e7d696440a6e1fb5eebe85478e47182648dcd5877e25df290a29d03d7a4dc2b83d30fa",
+      "stage": "OR-8"
+    }
+  ],
+  "engine": {
+    "path": "observers/failure/observer_failure_semantics.py",
+    "self_test": "22/22 PASS",
+    "sha512": "bc10b52206813fd2d2c8c29ff9f49239bc042400f0f734e70128ba0590b5b11f0e4328bba8abae20ef76c60b92931bdeed3ab035b1a884bca9c60ad8d080954c"
+  },
+  "failure_semantics": [
+    "AUTHORITY_VIOLATION",
+    "BOUNDARY_BLOCKED",
+    "DIVERGENT_BINDING",
+    "EVIDENCE_CEILING_REACHED",
+    "INSUFFICIENT_EVIDENCE",
+    "NO_SIGNAL",
+    "OBSERVER_UNAVAILABLE",
+    "OPERATING_SCOPE_EXCEEDED",
+    "PROVENANCE_INCOMPLETE",
+    "SCARRED",
+    "SEMANTIC_CONFLICT",
+    "STALE_BINDING",
+    "VIEW_RESTRICTED"
+  ],
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_FAILURE_SCAR_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-10_TEN_FUNCTIONAL_TEST_SUITES",
+  "non_scar_terminal_states": [
+    "BOUNDARY_BLOCKED",
+    "NO_SIGNAL",
+    "OBSERVER_UNAVAILABLE",
+    "VIEW_RESTRICTED"
+  ],
+  "restoration_stage": "OR-9",
+  "scar_required_states": [
+    "AUTHORITY_VIOLATION",
+    "DIVERGENT_BINDING",
+    "EVIDENCE_CEILING_REACHED",
+    "INSUFFICIENT_EVIDENCE",
+    "OPERATING_SCOPE_EXCEEDED",
+    "PROVENANCE_INCOMPLETE",
+    "SCARRED",
+    "SEMANTIC_CONFLICT",
+    "STALE_BINDING"
+  ],
+  "semantic_invariants": [
+    "NO_SIGNAL_IS_NOT_FAILURE_TO_OBSERVE",
+    "ABSENCE_IS_NOT_AUTOMATICALLY_NO_SIGNAL",
+    "NO_SIGNAL_IS_NOT_FACT",
+    "INSUFFICIENT_EVIDENCE_IS_NOT_NEGATIVE_EVIDENCE",
+    "EVIDENCE_CEILING_REACHED_STOPS_CLAIM_EXPANSION",
+    "VIEW_RESTRICTED_PRESERVES_EXISTENCE_AWARENESS",
+    "BOUNDARY_BLOCKED_PRESERVES_BOUNDARY",
+    "PROVENANCE_INCOMPLETE_PRESERVES_UNCERTAINTY",
+    "STALE_BINDING_IS_NOT_CURRENT_BINDING",
+    "DIVERGENT_BINDING_IS_NOT_SILENTLY_RECONCILED",
+    "SEMANTIC_CONFLICT_IS_INFORMATION",
+    "OBSERVER_UNAVAILABLE_IS_NOT_NO_SIGNAL",
+    "OPERATING_SCOPE_EXCEEDED_STOPS_OBSERVER_SCOPE",
+    "AUTHORITY_VIOLATION_CREATES_NO_AUTHORITY",
+    "SCAR_RECORDS_UNRESOLVED_CONDITION",
+    "SCAR_DOES_NOT_SELF_RESOLVE",
+    "SCAR_IS_NOT_FINDING",
+    "SCAR_IS_NOT_FACT",
+    "SCAR_IS_NOT_AUTHORITY",
+    "FAILURE_IS_NOT_FINDING",
+    "FAILURE_IS_NOT_FACT",
+    "FAILURE_DOES_NOT_INCREASE_CLAIM_CEILING",
+    "FAILURE_DOES_NOT_MUTATE_CANONICAL_STATE"
+  ],
+  "version": "vTemporal.41.0"
+}
