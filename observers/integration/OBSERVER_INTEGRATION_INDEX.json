@@ -1,0 +1,194 @@
+{
+  "authority": "NONE",
+  "bridge": {
+    "path": "observers/integration/observer_integration.py",
+    "self_test": "12/12 PASS",
+    "sha512": "83c539ff67f136d652e426590e0c6d6c5330598ecc66fecd4cda3e25484ba4905964025afaf63e01a574f4a2ecb79a3371d16a677af02e698688304960bde802"
+  },
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "dependencies": [
+    {
+      "path": "canonical/observers/capabilities/OBSERVER_CAPABILITY_INDEX.json",
+      "sha512": "6fc617c8568d6d1222ee736a9b95e7f59d9c2e3d4223a5b59b85335ec93f791bcfef7b71a0c4b425396495e72eb584459c8f464203b204ca28f86776e72bfd7a",
+      "stage": "OR-2"
+    },
+    {
+      "path": "schemas/observers/observer_schema_index.json",
+      "sha512": "9f1f4b323e51e562ce827a52d583ecab3486edf4149b6acfae86b2f2f211872f9fb49de81a5e4f917359d11420f0814aadaa1378fdb64253cc2cc7959709a791",
+      "stage": "OR-3"
+    },
+    {
+      "path": "tools/observers/OBSERVER_VALIDATOR_INDEX.json",
+      "sha512": "f8445fa6d1af4da4474198bf17e4b616c5dcc24fb306d7638e14af55cbbd283f7580bcd03eaced72691f1c371b8cb6645ee26d69128d6699bc1f327d6df9c2aa",
+      "stage": "OR-4"
+    },
+    {
+      "path": "routes/observers/OBSERVER_ROUTING_INDEX.json",
+      "sha512": "318063e4c147cd9a5d246cc54c8233aaa830178bb9e5246791d42483014444e7e4580f7c9aefa4390a5c0e48cfab2451d1a9655bc68da53e2984db3396ae51f5",
+      "stage": "OR-5"
+    },
+    {
+      "path": "observers/composition/OBSERVER_COMPOSITION_INDEX.json",
+      "sha512": "7ff6cb664829970b83b77247aacca2f284b57ea70135638cc20a4f0cb965117539fea7d4b1a4460e3f0a321ead46cda484b992f25774a80bd19e9d1857c4fcc6",
+      "stage": "OR-6"
+    }
+  ],
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_INTEGRATION_INDEX",
+  "index_version": "1.0",
+  "integration_invariants": [
+    "OBSERVER_IDENTITY_PRESERVED",
+    "CONTROLLED_PRESSURE_PRESERVED",
+    "PROVENANCE_PRESERVED",
+    "OBSERVER_DISAGREEMENT_PRESERVED",
+    "NO_VOTING",
+    "NO_AVERAGING",
+    "NO_WINNER_SELECTION",
+    "NO_FORCED_CONSENSUS",
+    "NO_SILENT_RECONCILIATION",
+    "NO_AUTHORITY_CREATION",
+    "NO_HUMAN_GATE_SUBSTITUTION",
+    "NO_PUBLICATION_AUTHORITY_CREATION",
+    "NO_AUDIT_APPROVAL_AUTHORITY_CREATION",
+    "NO_CLAIM_CEILING_INCREASE",
+    "NO_PRIMARY_EVIDENCE_MUTATION",
+    "NO_CANONICAL_STATE_MUTATION"
+  ],
+  "integration_surfaces": {
+    "AUDIT": {
+      "anchors": [
+        "Accelerator/Archive/Double_Helix_Zervan_Initialization.md",
+        "Accelerator/CONTEXT_PACK.md",
+        "Accelerator/Double_Helix_Zervan_Initialization_v1.2.0.md",
+        "Accelerator/LLM_INIT.md",
+        "Chunking/FastCDC/1/DETERMINISM.md",
+        "Doctrine/PMC.md",
+        "DoctrineOps/AUTHORITY_RESOLUTION.md",
+        "DoctrineOps/DOCTRINE_MANIFEST.md",
+        "INVENTORY.md",
+        "LLM_Output/DemoBundle_v0.1/Demo_Playbook_v0.1.md",
+        "Modules/Beagle/README.md",
+        "Modules/Beagle/beagle_contract.md",
+        "Modules/Raven/README.md",
+        "Modules/Raven/raven_contract.md",
+        "Modules/Retriever/README.md",
+        "Modules/Retriever/retriever_contract.md",
+        "README.md",
+        "RUNBOOK_MINIMAL_PASS1.md",
+        "ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+        "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md"
+      ],
+      "discovered": true
+    },
+    "CCR": {
+      "anchors": [
+        "Accelerator/Archive/Double_Helix_Zervan_Initialization.md",
+        "Doctrine/PMC_MC_NAMING_LOCK.md",
+        "Doctrine/README.md",
+        "PMC_MC_NAMING_REPAIR_RECEIPT.md",
+        "ZERVAN #U2014 EQUATIONS WIRE MAP (PASS 1 + PASS 2.md",
+        "candidate/RING7_INSTANTIATION_STATEMENT.md",
+        "canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md",
+        "contracts/activation/EVIDENCE_CEILING_SEMANTIC_ENFORCEMENT.md",
+        "contracts/activation/HUMAN_GATE_AUTHORITY_SEMANTIC_ENFORCEMENT.md",
+        "contracts/integrity/CROSS_STAGE_SEMANTIC_INTEGRITY.md",
+        "contracts/pipeline/CCR_MC_RESPONSE_OUTPUT_ADMISSIBILITY_BINDING.md",
+        "contracts/pipeline/DECISION_OPTION_LINEAGE.md",
+        "contracts/pipeline/MC_RAVEN_REPRESENTATION_REPORT_BINDING.md",
+        "contracts/pipeline/PIPELINE_CROSS_STAGE_INTEGRITY_NO_RESPONSIBILITY_ABSORPTION.md",
+        "contracts/pipeline/PIPELINE_INTEGRATION_BOUNDARY_EXISTING_SEMANTICS_LOCK.md",
+        "contracts/pipeline/PMC_CCR_CANDIDATE_COMMITMENT_LINEAGE.md",
+        "contracts/pipeline/RAVEN_HUMAN_GATE_PUBLICATION_ACTION_BOUNDARY.md",
+        "contracts/pipeline/REPORT_RENDERING_CONTRACT.md",
+        "contracts/pipeline/RING5_EXISTING_PIPELINE_INTEGRATION_AGGREGATE_CLOSURE.md",
+        "contracts/pipeline/ROOM_BOUND_EVIDENCE_PMC_INTAKE_BINDING.md"
+      ],
+      "discovered": true
+    },
+    "MC": {
+      "anchors": [
+        "AC_06_CLOSURE.md",
+        "Accelerator/Archive/Double_Helix_Zervan_Initialization.md",
+        "Accelerator/Archive/General_Zervan_Initialization.md",
+        "Accelerator/HYDRATION_SURFACE.md",
+        "Accelerator/LLM_DELTA.md",
+        "Accelerator/LLM_INIT.md",
+        "Accelerator/LLM_INTAKE_GATE.md",
+        "Accelerator/hydration_profile.full.json",
+        "CAS_CHUNK_MANIFEST.md",
+        "Doctrine/CATHEDRAL.md",
+        "Doctrine/MC.md",
+        "Doctrine/PMC.md",
+        "Doctrine/PMC_MC_INTERFACE.md",
+        "Doctrine/PMC_MC_NAMING_LOCK.md",
+        "Doctrine/README.md",
+        "DoctrineOps/AUTHORITY_RESOLUTION.md",
+        "DoctrineOps/DOCTRINE_MANIFEST.md",
+        "DoctrineOps/README.md",
+        "INVENTORY.md",
+        "Modules/AnimalKingdom/README.md"
+      ],
+      "discovered": true
+    },
+    "PMC": {
+      "anchors": [
+        "Accelerator/Archive/Double_Helix_Zervan_Initialization.md",
+        "Accelerator/Archive/General_Zervan_Initialization.md",
+        "Accelerator/CONTEXT_PACK.md",
+        "Accelerator/HYDRATION_SURFACE.md",
+        "Accelerator/LLM_DELTA.md",
+        "Accelerator/LLM_INIT.md",
+        "Accelerator/LLM_INTAKE_GATE.md",
+        "Accelerator/hydration_profile.full.json",
+        "CAS_CHUNK_MANIFEST.md",
+        "Doctrine/CATHEDRAL.md",
+        "Doctrine/MC.md",
+        "Doctrine/ORABORUS.md",
+        "Doctrine/PMC.md",
+        "Doctrine/PMC_ARENA.md",
+        "Doctrine/PMC_MC_INTERFACE.md",
+        "Doctrine/PMC_MC_NAMING_LOCK.md",
+        "Doctrine/README.md",
+        "Doctrine/ZEA.md",
+        "Doctrine/ZEE.md",
+        "Doctrine/ZERVAN PKI_ECC DOCTRINE.md"
+      ],
+      "discovered": true
+    },
+    "RAVEN": {
+      "anchors": [
+        "Accelerator/CONTEXT_PACK.md",
+        "Accelerator/LLM_DELTA.md",
+        "Accelerator/LLM_INIT.md",
+        "Doctrine/PMC_MC_NAMING_LOCK.md",
+        "DoctrineOps/DOCTRINE_MANIFEST.md",
+        "DoctrineOps/ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
+        "INVENTORY.md",
+        "Modules/AnimalKingdom/README.md",
+        "Modules/AnimalKingdom/animalkingdom_contract.md",
+        "Modules/Beagle/README.md",
+        "Modules/Beagle/beagle_contract.md",
+        "Modules/Raven/README.md",
+        "Modules/Raven/raven_contract.md",
+        "Modules/Retriever/README.md",
+        "Modules/Retriever/retriever_contract.md",
+        "PMC_MC_NAMING_REPAIR_RECEIPT.md",
+        "ZERVAN #U2014 EQUATIONS WIRE MAP (PASS 1 + PASS 2.md",
+        "ZERVAN_5_6_CANONICAL_DEFINITIONS.md",
+        "ZERVAN_5_6_CODE_REVIEW_RESPONSE.md",
+        "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md"
+      ],
+      "discovered": true
+    }
+  },
+  "next_stage": "OR-8_CONTROLLED_PRESSURE_ISOLATION",
+  "restoration_stage": "OR-7",
+  "surface_roles": {
+    "AUDIT": "INTEGRITY_REVIEW_INPUT_WITH_PROVENANCE_PRESERVATION",
+    "CCR": "OBSERVER_COMPOSITION_CONSIDERATION",
+    "MC": "OBSERVER_COMPOSITION_CONSIDERATION",
+    "PMC": "OBSERVER_COMPOSITION_CONSIDERATION",
+    "RAVEN": "REPORTING_INPUT_WITH_IDENTITY_PRESERVATION"
+  },
+  "version": "vTemporal.41.0"
+}
