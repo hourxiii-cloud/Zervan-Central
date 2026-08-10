@@ -1,0 +1,314 @@
+{
+  "$id": "zervan://v41/observers/observer_capability.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "observer_id": {
+            "enum": [
+              "eagle",
+              "mole",
+              "duck",
+              "wildflower",
+              "mockingbird",
+              "platypus",
+              "owl_hoot"
+            ]
+          }
+        },
+        "required": [
+          "observer_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "canonical_seat": {
+            "const": "PRIMARY_OBSERVER"
+          },
+          "operating_class": {
+            "const": "PRIMARY"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "observer_id": {
+            "enum": [
+              "osprey",
+              "animal_kingdom",
+              "armadillo"
+            ]
+          }
+        },
+        "required": [
+          "observer_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "canonical_seat": {
+            "const": "CONTROLLED_SUB_OBSERVER"
+          },
+          "operating_class": {
+            "const": "CONTROLLED_SUB_OBSERVER"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "observer_id": {
+            "const": "owl_hoot"
+          }
+        },
+        "required": [
+          "observer_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "mode_invariant": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "supported_modes": {
+            "allOf": [
+              {
+                "contains": {
+                  "const": "PRIMARY"
+                }
+              },
+              {
+                "contains": {
+                  "const": "BOUNDED_SUB_OBSERVER"
+                }
+              }
+            ],
+            "type": "array"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "aliases": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "allowed_dispositions": {
+      "items": {
+        "enum": [
+          "OBSERVED",
+          "NO_SIGNAL",
+          "INSUFFICIENT_EVIDENCE",
+          "EVIDENCE_CEILING_REACHED",
+          "VIEW_RESTRICTED",
+          "BOUNDARY_BLOCKED",
+          "PROVENANCE_INCOMPLETE",
+          "STALE_BINDING",
+          "DIVERGENT_BINDING",
+          "SEMANTIC_CONFLICT",
+          "OBSERVER_UNAVAILABLE",
+          "OPERATING_SCOPE_EXCEEDED",
+          "AUTHORITY_VIOLATION",
+          "SCARRED"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "authority": {
+      "const": "NONE"
+    },
+    "canonical_name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "canonical_seat": {
+      "enum": [
+        "PRIMARY_OBSERVER",
+        "CONTROLLED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "canonical_status": {
+      "const": "CANDIDATE_NOT_PROMOTED"
+    },
+    "compression_rule": {
+      "const": "This capability SHALL remain independently meaningful and SHALL NOT be reduced to a generic Observer label."
+    },
+    "contract_type": {
+      "const": "ZERVAN_V41_OBSERVER_CAPABILITY"
+    },
+    "contract_version": {
+      "const": "1.0"
+    },
+    "distinctive_invariant": {
+      "minLength": 20,
+      "type": "string"
+    },
+    "evidence_rule": {
+      "minLength": 20,
+      "type": "string"
+    },
+    "human_gate": {
+      "const": "ACTIVE"
+    },
+    "mode_invariant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mutation_posture": {
+      "const": "READ_ONLY_OBSERVATION_OR_PRESSURE"
+    },
+    "observer_id": {
+      "enum": [
+        "eagle",
+        "mole",
+        "duck",
+        "wildflower",
+        "mockingbird",
+        "platypus",
+        "owl_hoot",
+        "osprey",
+        "animal_kingdom",
+        "armadillo"
+      ],
+      "type": "string"
+    },
+    "observer_specific_prohibitions": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 3,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "operating_class": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "ordinal": {
+      "maximum": 10,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "outputs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 4,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "provenance_rule": {
+      "minLength": 20,
+      "type": "string"
+    },
+    "purpose": {
+      "minLength": 20,
+      "type": "string"
+    },
+    "questions": {
+      "items": {
+        "minLength": 10,
+        "type": "string"
+      },
+      "minItems": 3,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "required_bindings": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 10,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "restoration_stage": {
+      "const": "OR-2"
+    },
+    "shared_prohibitions": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 7,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "signals": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 4,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "supported_modes": {
+      "items": {
+        "enum": [
+          "PRIMARY",
+          "CONTROLLED_SUB_OBSERVER",
+          "BOUNDED_SUB_OBSERVER"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "contract_type",
+    "contract_version",
+    "restoration_stage",
+    "ordinal",
+    "observer_id",
+    "canonical_name",
+    "aliases",
+    "operating_class",
+    "canonical_seat",
+    "supported_modes",
+    "authority",
+    "human_gate",
+    "mutation_posture",
+    "purpose",
+    "questions",
+    "signals",
+    "outputs",
+    "required_bindings",
+    "allowed_dispositions",
+    "shared_prohibitions",
+    "observer_specific_prohibitions",
+    "distinctive_invariant",
+    "mode_invariant",
+    "evidence_rule",
+    "provenance_rule",
+    "compression_rule",
+    "canonical_status"
+  ],
+  "title": "Zervan v41 Observer Capability Contract",
+  "type": "object"
+}

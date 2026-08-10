@@ -1,0 +1,110 @@
+{
+  "$id": "zervan://v41/observers/observer_binding.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "const": "NONE"
+    },
+    "authorized_view": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "claim_ceiling": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "evidence_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "evidence_status": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "human_gate": {
+      "const": "ACTIVE"
+    },
+    "observer_class": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "observer_identity": {
+      "enum": [
+        "eagle",
+        "mole",
+        "duck",
+        "wildflower",
+        "mockingbird",
+        "platypus",
+        "owl_hoot",
+        "osprey",
+        "animal_kingdom",
+        "armadillo"
+      ],
+      "type": "string"
+    },
+    "observer_mode": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER",
+        "BOUNDED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "operation_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "permitted_operation": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "provenance_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "room_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "room_revision": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "room_state": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "room_id",
+    "room_revision",
+    "room_state",
+    "authorized_view",
+    "evidence_refs",
+    "provenance_refs",
+    "evidence_status",
+    "claim_ceiling",
+    "permitted_operation",
+    "observer_identity",
+    "observer_class",
+    "observer_mode",
+    "operation_id",
+    "authority",
+    "human_gate"
+  ],
+  "title": "Zervan v41 Observer Native Binding",
+  "type": "object"
+}

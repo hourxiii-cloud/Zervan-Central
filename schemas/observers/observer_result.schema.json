@@ -1,0 +1,155 @@
+{
+  "$id": "zervan://v41/observers/observer_result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "const": "NONE"
+    },
+    "canonical_state_mutated": {
+      "const": false
+    },
+    "claim_ceiling_increased": {
+      "const": false
+    },
+    "disposition": {
+      "enum": [
+        "OBSERVED",
+        "NO_SIGNAL",
+        "INSUFFICIENT_EVIDENCE",
+        "EVIDENCE_CEILING_REACHED",
+        "VIEW_RESTRICTED",
+        "BOUNDARY_BLOCKED",
+        "PROVENANCE_INCOMPLETE",
+        "STALE_BINDING",
+        "DIVERGENT_BINDING",
+        "SEMANTIC_CONFLICT",
+        "OBSERVER_UNAVAILABLE",
+        "OPERATING_SCOPE_EXCEEDED",
+        "AUTHORITY_VIOLATION",
+        "SCARRED"
+      ],
+      "type": "string"
+    },
+    "human_gate": {
+      "const": "ACTIVE"
+    },
+    "observations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "confidence_status": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence_refs": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+          },
+          "observation_type": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "statement": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "observation_type",
+          "statement",
+          "evidence_refs",
+          "confidence_status"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "observer_class": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "observer_id": {
+      "enum": [
+        "eagle",
+        "mole",
+        "duck",
+        "wildflower",
+        "mockingbird",
+        "platypus",
+        "owl_hoot",
+        "osprey",
+        "animal_kingdom",
+        "armadillo"
+      ],
+      "type": "string"
+    },
+    "observer_mode": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER",
+        "BOUNDED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "operation_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "primary_evidence_mutated": {
+      "const": false
+    },
+    "provenance": {
+      "$ref": "zervan://v41/observers/observer_provenance.schema.json"
+    },
+    "result_type": {
+      "const": "ZERVAN_V41_OBSERVER_RESULT"
+    },
+    "result_version": {
+      "const": "1.0"
+    },
+    "scars": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "unresolved_conditions": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "result_type",
+    "result_version",
+    "observer_id",
+    "observer_class",
+    "observer_mode",
+    "operation_id",
+    "disposition",
+    "observations",
+    "unresolved_conditions",
+    "scars",
+    "provenance",
+    "authority",
+    "human_gate",
+    "primary_evidence_mutated",
+    "canonical_state_mutated",
+    "claim_ceiling_increased"
+  ],
+  "title": "Zervan v41 Observer Result",
+  "type": "object"
+}

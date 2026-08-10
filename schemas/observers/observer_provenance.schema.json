@@ -1,0 +1,128 @@
+{
+  "$id": "zervan://v41/observers/observer_provenance.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorized_view": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "claim_ceiling": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "disposition": {
+      "enum": [
+        "OBSERVED",
+        "NO_SIGNAL",
+        "INSUFFICIENT_EVIDENCE",
+        "EVIDENCE_CEILING_REACHED",
+        "VIEW_RESTRICTED",
+        "BOUNDARY_BLOCKED",
+        "PROVENANCE_INCOMPLETE",
+        "STALE_BINDING",
+        "DIVERGENT_BINDING",
+        "SEMANTIC_CONFLICT",
+        "OBSERVER_UNAVAILABLE",
+        "OPERATING_SCOPE_EXCEEDED",
+        "AUTHORITY_VIOLATION",
+        "SCARRED"
+      ],
+      "type": "string"
+    },
+    "downstream_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "input_provenance_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "observer_class": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "observer_id": {
+      "enum": [
+        "eagle",
+        "mole",
+        "duck",
+        "wildflower",
+        "mockingbird",
+        "platypus",
+        "owl_hoot",
+        "osprey",
+        "animal_kingdom",
+        "armadillo"
+      ],
+      "type": "string"
+    },
+    "observer_mode": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER",
+        "BOUNDED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "operation_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "room_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "room_revision": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "sequence": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "timestamp": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "observer_id",
+    "observer_class",
+    "observer_mode",
+    "operation_id",
+    "room_id",
+    "room_revision",
+    "authorized_view",
+    "evidence_refs",
+    "input_provenance_refs",
+    "claim_ceiling",
+    "disposition"
+  ],
+  "title": "Zervan v41 Observer Provenance",
+  "type": "object"
+}

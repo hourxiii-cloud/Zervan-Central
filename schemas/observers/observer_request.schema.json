@@ -1,0 +1,137 @@
+{
+  "$id": "zervan://v41/observers/observer_request.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "observer_id": {
+            "enum": [
+              "eagle",
+              "mole",
+              "duck",
+              "wildflower",
+              "mockingbird",
+              "platypus"
+            ]
+          }
+        },
+        "required": [
+          "observer_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "requested_mode": {
+            "const": "PRIMARY"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "observer_id": {
+            "enum": [
+              "osprey",
+              "animal_kingdom",
+              "armadillo"
+            ]
+          }
+        },
+        "required": [
+          "observer_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "requested_mode": {
+            "const": "CONTROLLED_SUB_OBSERVER"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "observer_id": {
+            "const": "owl_hoot"
+          }
+        },
+        "required": [
+          "observer_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "requested_mode": {
+            "enum": [
+              "PRIMARY",
+              "BOUNDED_SUB_OBSERVER"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "binding": {
+      "$ref": "zervan://v41/observers/observer_binding.schema.json"
+    },
+    "observer_id": {
+      "enum": [
+        "eagle",
+        "mole",
+        "duck",
+        "wildflower",
+        "mockingbird",
+        "platypus",
+        "owl_hoot",
+        "osprey",
+        "animal_kingdom",
+        "armadillo"
+      ],
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "question": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "request_type": {
+      "const": "ZERVAN_V41_OBSERVER_REQUEST"
+    },
+    "request_version": {
+      "const": "1.0"
+    },
+    "requested_mode": {
+      "enum": [
+        "PRIMARY",
+        "CONTROLLED_SUB_OBSERVER",
+        "BOUNDED_SUB_OBSERVER"
+      ],
+      "type": "string"
+    },
+    "target_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "request_type",
+    "request_version",
+    "observer_id",
+    "requested_mode",
+    "question",
+    "binding"
+  ],
+  "title": "Zervan v41 Observer Request",
+  "type": "object"
+}

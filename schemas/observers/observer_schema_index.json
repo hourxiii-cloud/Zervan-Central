@@ -1,0 +1,111 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_SCHEMA_INDEX",
+  "index_version": "1.0",
+  "negative_controls": [
+    "PRIMARY_MODE_ESCALATION",
+    "CONTROLLED_TO_PRIMARY_ESCALATION",
+    "AUTHORITY_PROMOTION",
+    "HUMAN_GATE_SUBSTITUTION",
+    "PRIMARY_EVIDENCE_MUTATION",
+    "CANONICAL_STATE_MUTATION",
+    "CLAIM_CEILING_ESCALATION",
+    "GENERIC_OBSERVER_COMPRESSION"
+  ],
+  "next_stage": "OR-4_VALIDATORS",
+  "observer_counts": {
+    "controlled_sub_observer": 3,
+    "primary": 7,
+    "total": 10
+  },
+  "restoration_stage": "OR-3",
+  "schema_ids": {
+    "binding": "zervan://v41/observers/observer_binding.schema.json",
+    "capability": "zervan://v41/observers/observer_capability.schema.json",
+    "provenance": "zervan://v41/observers/observer_provenance.schema.json",
+    "request": "zervan://v41/observers/observer_request.schema.json",
+    "result": "zervan://v41/observers/observer_result.schema.json"
+  },
+  "schemas": [
+    {
+      "path": "schemas/observers/observer_capability.schema.json",
+      "schema_role": "capability",
+      "sha512": "6532db16f009e0062190607a831950a65851a6504665d9f2274243ab99965c055e814f045ada88bb8e52e3e11625eeaa6e8e24049dfecd17fbf1527d05c9a731"
+    },
+    {
+      "path": "schemas/observers/observer_binding.schema.json",
+      "schema_role": "binding",
+      "sha512": "2c0a8c9de3ebaf8a7b61e4311a8e5c1d142aad110af925a8e54ee6004f4af7327c38a7cb302b19ae0ecdc4e64299cde1fe126fe45ca448fa7a9d678c4c5f0050"
+    },
+    {
+      "path": "schemas/observers/observer_request.schema.json",
+      "schema_role": "request",
+      "sha512": "b13c4ced342d04037f005e96a64093836c50c830df57376a50e5d8f3f53e5f6df2e966c28b9644679e1a0518e16485f9fadeeb0df71456ec790cdefbd42b61b6"
+    },
+    {
+      "path": "schemas/observers/observer_provenance.schema.json",
+      "schema_role": "provenance",
+      "sha512": "3b8985edb8ef32fec835f08a34395ba4cb39cf0aa25002bef18674c45711622ccddd8342822b60aee2e945e64e5b600b88156b4e7760ada6df330de1b012759b"
+    },
+    {
+      "path": "schemas/observers/observer_result.schema.json",
+      "schema_role": "result",
+      "sha512": "18f009b71e531ffce183d3e96092ef12b4499a091c20e8282a890c4478c58d4b8207721816c29fb209ad83f348a556a872da104e34184755fc968632d5c057cf"
+    }
+  ],
+  "validated_capability_contracts": [
+    {
+      "observer_id": "eagle",
+      "path": "canonical/observers/capabilities/01_EAGLE_CAPABILITY.json",
+      "sha512": "edabf9e08b883266935e48be6f8b2c2db2da40793f40877cbe322427c04073fd7f12d4db92a9e4182a85bd92e28514c51e7ab167fc4e1662569d3c9917571b4e"
+    },
+    {
+      "observer_id": "mole",
+      "path": "canonical/observers/capabilities/02_MOLE_CAPABILITY.json",
+      "sha512": "bae09602c8fe657067aed14c1270b256c26813b07161a2fd3e111dc839b687f746f7e4c1f34582b9e5f2728541912c2bc3081cddfe07d1a43dfc29bf8b2a5e5d"
+    },
+    {
+      "observer_id": "duck",
+      "path": "canonical/observers/capabilities/03_DUCK_CAPABILITY.json",
+      "sha512": "55e9c472185b3045abda81c04a6b4764624a69a6b8c7463a95a026306b4bc7820e406b79f63337c94a59ed6c049c0185435e84c989aacf6aa54d92dd99af4ab4"
+    },
+    {
+      "observer_id": "wildflower",
+      "path": "canonical/observers/capabilities/04_WILDFLOWER_CAPABILITY.json",
+      "sha512": "7ed1588c28ee3fa1e0fe78c5544f9c4c684c2269fefa7b95c3dec975aa6465c5fdf9df30f4c7b64b9a03df2aa67437cbfb7171d43b42dc834c858352f05747f5"
+    },
+    {
+      "observer_id": "mockingbird",
+      "path": "canonical/observers/capabilities/05_MOCKINGBIRD_CAPABILITY.json",
+      "sha512": "275f3de6af559b9b4e4c0e2035da7d92a2f5428eeafc93f03156b0c8bca111a432a49b0ac8b13bfb54d7ccea50faca6d9adb1f2c0d6f74bce0618d1a1689b60b"
+    },
+    {
+      "observer_id": "platypus",
+      "path": "canonical/observers/capabilities/06_PLATYPUS_CAPABILITY.json",
+      "sha512": "73e940b9b614649fb9d7b2c1a1b4d9211a1960882c4bad4005e2a29d0d798a21125affe6f25dd2e3cc8ba83c556fdb0ec81cc11fef7017b660e2aa823bb0a0b6"
+    },
+    {
+      "observer_id": "owl_hoot",
+      "path": "canonical/observers/capabilities/07_OWL_HOOT_CAPABILITY.json",
+      "sha512": "ebf322dccaaa8f0c9cf73889aa1e7d57b401bf6f4c889a1c31a7a43a2c734bc4674b967d5033c31ac2e3bea4551cfb4a3d3ed362f475ca65c82d8cb0399f0748"
+    },
+    {
+      "observer_id": "osprey",
+      "path": "canonical/observers/capabilities/08_OSPREY_CAPABILITY.json",
+      "sha512": "3cc8e4ae79d6ce47ee66c6e31bc1863cf7a9949aa983aeba6ccf211bbd478a968ad2ef5b135beeaa3107630d8dc4084e979af277e96e1140704068deb59a2e02"
+    },
+    {
+      "observer_id": "animal_kingdom",
+      "path": "canonical/observers/capabilities/09_ANIMAL_KINGDOM_CAPABILITY.json",
+      "sha512": "7730f4c2274c519b303b559e049ac88f0b1f0af958949fe4219eb327df18162fcc4054e9382b2789ce3bbb088b9aae02ade4f3bc82179ac1f75548217af0c5db"
+    },
+    {
+      "observer_id": "armadillo",
+      "path": "canonical/observers/capabilities/10_ARMADILLO_CAPABILITY.json",
+      "sha512": "9674d84dc72fd89ba9241b6360565ce8d0d2da72011e44e87e97a1b0cefc9b2ccfc37d635e459faeefce10cf7d327ca3e80e1ce0f45c27a8c8059c638255d697"
+    }
+  ],
+  "version": "vTemporal.41.0"
+}
