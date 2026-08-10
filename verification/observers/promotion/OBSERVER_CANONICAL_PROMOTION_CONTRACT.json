@@ -1,0 +1,61 @@
+{
+  "approval_scope": {
+    "candidate_branch": "candidate/v41-observer-restoration",
+    "canonical_destination": "main",
+    "exact_promotion_head": "RESOLVED_AFTER_OR18_PREPARATION_COMMIT",
+    "promotion_mode": "FAST_FORWARD_ONLY",
+    "restoration_target": "V41_OBSERVER_RESTORATION",
+    "single_use": true
+  },
+  "approval_source": "CURRENT_HUMAN_GATE_COMMAND",
+  "authority": "NONE",
+  "candidate_branch": "candidate/v41-observer-restoration",
+  "canonical_branch": "main",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "contract_type": "ZERVAN_V41_OBSERVER_CANONICAL_PROMOTION_CONTRACT",
+  "contract_version": "1.0",
+  "external_action": "DISABLED",
+  "external_runtime": "DISABLED",
+  "human_gate": "ACTIVE",
+  "human_gate_decision": "EXPLICIT_APPROVAL_RECEIVED_2026-08-10",
+  "next_stage": "OR-19_POST_PROMOTION_INDEPENDENT_VERIFICATION",
+  "or17_committed_candidate_head": "4c3d5ceb5a56bbf1e21f7ba58cc6578538296c78",
+  "or17_evidence_base_head": "466f46f88065e8e30e6a01a1abf3eb43fcb2c3ee",
+  "promotion_candidate_head_rule": "EXACT_OR18_PREPARATION_COMMIT_HEAD",
+  "promotion_invariants": [
+    "HUMAN_GATE_APPROVAL_IS_EXPLICIT",
+    "APPROVAL_IS_SINGLE_USE",
+    "APPROVAL_BINDS_EXACT_OR18_COMMIT_HEAD",
+    "CANONICAL_MOVEMENT_IS_FAST_FORWARD_ONLY",
+    "NO_MERGE_COMMIT",
+    "NO_SQUASH",
+    "NO_REBASE",
+    "NO_FORCE_PUSH",
+    "NO_HISTORY_REWRITE",
+    "NO_BRANCH_SUBSTITUTION",
+    "NO_HEAD_SUBSTITUTION",
+    "TEN_OBSERVERS_MUST_SURVIVE_PROMOTION",
+    "AUTHORITY_REMAINS_NONE",
+    "HUMAN_GATE_REMAINS_ACTIVE",
+    "EXTERNAL_RUNTIME_REMAINS_DISABLED",
+    "EXTERNAL_ACTION_REMAINS_DISABLED"
+  ],
+  "restoration_stage": "OR-18",
+  "source_ac_revalidation": {
+    "path": "verification/observers/ac_revalidation/AC01_AC12_OBSERVER_REVALIDATION.json",
+    "sha512": "14799c2495639c174f740ffad9bbd93d798835749a628eaf8c3a83f23fcf6a639042837e2c72a7d544635d02c94a5ad02cab060141e94f59cb0d586ef8086a70"
+  },
+  "source_human_gate_package": {
+    "path": "verification/observers/human_gate/OBSERVER_HUMAN_GATE_PACKAGE_V41.json",
+    "sha512": "9f06ab68c3d8964161c6df71324f34ad75f8a5ec4edf8fd93f9d0899072740d30b77cecc7de8ea7e6f486e8c35db3436bff9f74a40ab71a9714fe3dca3301da8"
+  },
+  "source_restoration_receipt": {
+    "path": "receipts/observers/OBSERVER_RESTORATION_RECEIPT_V41.json",
+    "sha512": "8019b39fcfe27505985aec85b3752b2b91caa504e64460f9b13c52f5175341b6c2fd9d1e4183a1aa8cd82144879e2117652873c1c531c9566fec7c9a752a53d1"
+  },
+  "source_stability_index": {
+    "path": "verification/observers/stability/OBSERVER_STABILITY_REGRESSION_INDEX.json",
+    "sha512": "46c0708ad1fb11d09fe62feae4cae5bd36245f2d208c1459090c504e75df962a0df8ef69a4040b6a98cf06ca53ea5cb21c7b0ebba92d7c49f3086bba3be2217a"
+  },
+  "version": "vTemporal.41.0"
+}
