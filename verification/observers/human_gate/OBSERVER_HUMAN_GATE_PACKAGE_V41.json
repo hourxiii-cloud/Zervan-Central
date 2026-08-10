@@ -1,0 +1,283 @@
+{
+  "authority": "NONE",
+  "branch": "candidate/v41-observer-restoration",
+  "canonical_mutation_performed": false,
+  "canonical_promotion_performed": false,
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "evidence_bindings": [
+    {
+      "claim": "30/30 AGGREGATE COMPLETENESS PASS",
+      "path": "tools/observers/completeness/OBSERVER_RESTORATION_COMPLETENESS_INDEX.json",
+      "sha512": "cbdf0305ff5a524645b3679c2626fdce9cedcfa327a85bf037f63b2f09a8ab514becdd065bca775a051fd5628b0c0e976c2f5e227c5d2de10f09fbc943e04bbf",
+      "stage": "OR-11"
+    },
+    {
+      "claim": "20/20 FRESH-READER PASS",
+      "path": "verification/observers/fresh_reader/OBSERVER_FRESH_READER_INDEX.json",
+      "sha512": "0444f575dffbf91fc4551091e70d8d1bda9bbd1c3d6f3db720e786f5093f8206e64a91002476e6368bd6ba8cd3492dd9ae3554623652e36883a7abb8e5a09088",
+      "stage": "OR-12"
+    },
+    {
+      "claim": "10/10 OBSERVERS DOCUMENTED",
+      "path": "docs/observers/OBSERVER_DOCUMENTATION_INDEX.json",
+      "sha512": "243a9d5d4ab88588cab2b9409c934dcf546b6447b8506cf76f9f2e9ab4c3bbdbbea2c7ee31c241a3d5dd40f4ed211b30071d04a09cef789cb7ccd5466b2072ad",
+      "stage": "OR-13"
+    },
+    {
+      "claim": "RESTORATION RECEIPT",
+      "path": "receipts/observers/OBSERVER_RESTORATION_RECEIPT_V41.json",
+      "sha512": "8019b39fcfe27505985aec85b3752b2b91caa504e64460f9b13c52f5175341b6c2fd9d1e4183a1aa8cd82144879e2117652873c1c531c9566fec7c9a752a53d1",
+      "stage": "OR-14"
+    },
+    {
+      "claim": "AC-01 THROUGH AC-12 REVALIDATED",
+      "path": "verification/observers/ac_revalidation/AC01_AC12_OBSERVER_REVALIDATION.json",
+      "sha512": "14799c2495639c174f740ffad9bbd93d798835749a628eaf8c3a83f23fcf6a639042837e2c72a7d544635d02c94a5ad02cab060141e94f59cb0d586ef8086a70",
+      "stage": "OR-15"
+    },
+    {
+      "claim": "STABILITY / REGRESSION / LOSSLESS COLLAPSE PASS",
+      "path": "verification/observers/stability/OBSERVER_STABILITY_REGRESSION_INDEX.json",
+      "sha512": "46c0708ad1fb11d09fe62feae4cae5bd36245f2d208c1459090c504e75df962a0df8ef69a4040b6a98cf06ca53ea5cb21c7b0ebba92d7c49f3086bba3be2217a",
+      "stage": "OR-16"
+    }
+  ],
+  "external_action": "DISABLED",
+  "external_runtime": "DISABLED",
+  "fail_closed_conditions": [
+    "SOURCE_HEAD_CHANGED",
+    "BRANCH_CHANGED",
+    "EVIDENCE_BINDING_CHANGED",
+    "OBSERVER_BINDING_CHANGED",
+    "RESTORATION_REGRESSION",
+    "AUTHORITY_PROMOTED",
+    "HUMAN_GATE_DISABLED",
+    "UNCOMMITTED_TRACKED_STATE",
+    "MISSING_HUMAN_DECISION",
+    "AMBIGUOUS_HUMAN_DECISION",
+    "STALE_HUMAN_DECISION",
+    "DECISION_SCOPE_MISMATCH"
+  ],
+  "human_gate": "ACTIVE",
+  "human_gate_decision_contract": {
+    "absence_of_decision_means": "NO_PROMOTION_AUTHORITY",
+    "approval_does_not_mean": [
+      "ANALYTICAL_TRUTH",
+      "PUBLICATION",
+      "SYSTEM_POPULATION",
+      "EXTERNAL_ACTION",
+      "EXTERNAL_RUNTIME_ENABLEMENT",
+      "GENERAL_AUTHORITY",
+      "STANDING_AUTHORIZATION",
+      "FUTURE_PROMOTION_AUTHORIZATION"
+    ],
+    "approval_is_single_use": true,
+    "approval_must_bind_exact_scope": true,
+    "approval_must_bind_exact_source_head": true,
+    "approval_must_bind_exact_target": true,
+    "approval_must_not_be_reused": true,
+    "approval_scope": {
+      "authority_after_approval": "NONE",
+      "branch": "candidate/v41-observer-restoration",
+      "canonical_destination": "main",
+      "human_gate_after_approval": "ACTIVE",
+      "promotion_stage": "OR-18",
+      "source_head": "466f46f88065e8e30e6a01a1abf3eb43fcb2c3ee",
+      "target": "V41_OBSERVER_RESTORATION"
+    },
+    "decision_not_prepopulated": true,
+    "decision_owner": "HUMAN_GATE",
+    "decision_required": true,
+    "default_decision": null,
+    "permitted_decisions": [
+      "APPROVE_CANONICAL_PROMOTION",
+      "REJECT_CANONICAL_PROMOTION",
+      "RETURN_FOR_REPAIR"
+    ]
+  },
+  "human_gate_state": {
+    "decision": null,
+    "decision_actor": null,
+    "decision_ref": null,
+    "decision_status": "PENDING",
+    "decision_timestamp": null,
+    "promotion_authorized": false
+  },
+  "next_stage": "OR-18_CANONICAL_PROMOTION_AFTER_EXPLICIT_HUMAN_GATE_APPROVAL",
+  "observer_bindings": [
+    {
+      "canonical_name": "Eagle",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Trajectory is observation of supported direction, not ownership of the future.",
+      "observer_id": "eagle",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/01_EAGLE_CAPABILITY.json",
+      "sha512": "edabf9e08b883266935e48be6f8b2c2db2da40793f40877cbe322427c04073fd7f12d4db92a9e4182a85bd92e28514c51e7ab167fc4e1662569d3c9917571b4e",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Mole",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Subsurface observation remains bounded by what the authorized evidence can support.",
+      "observer_id": "mole",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/02_MOLE_CAPABILITY.json",
+      "sha512": "bae09602c8fe657067aed14c1270b256c26813b07161a2fd3e111dc839b687f746f7e4c1f34582b9e5f2728541912c2bc3081cddfe07d1a43dfc29bf8b2a5e5d",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Duck",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Failure to reconcile is information, not automatic threat attribution.",
+      "observer_id": "duck",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/03_DUCK_CAPABILITY.json",
+      "sha512": "55e9c472185b3045abda81c04a6b4764624a69a6b8c7463a95a026306b4bc7820e406b79f63337c94a59ed6c049c0185435e84c989aacf6aa54d92dd99af4ab4",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Wildflower",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Emergence may reveal structure without establishing why that structure exists.",
+      "observer_id": "wildflower",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/04_WILDFLOWER_CAPABILITY.json",
+      "sha512": "7ed1588c28ee3fa1e0fe78c5544f9c4c684c2269fefa7b95c3dec975aa6465c5fdf9df30f4c7b64b9a03df2aa67437cbfb7171d43b42dc834c858352f05747f5",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Mockingbird",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Representation may change while evidentiary meaning remains invariant.",
+      "observer_id": "mockingbird",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/05_MOCKINGBIRD_CAPABILITY.json",
+      "sha512": "275f3de6af559b9b4e4c0e2035da7d92a2f5428eeafc93f03156b0c8bca111a432a49b0ac8b13bfb54d7ccea50faca6d9adb1f2c0d6f74bce0618d1a1689b60b",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Platypus",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Category insufficiency does not authorize invention of a different underlying object.",
+      "observer_id": "platypus",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/06_PLATYPUS_CAPABILITY.json",
+      "sha512": "73e940b9b614649fb9d7b2c1a1b4d9211a1960882c4bad4005e2a29d0d798a21125affe6f25dd2e3cc8ba83c556fdb0ec81cc11fef7017b660e2aa823bb0a0b6",
+      "supported_modes": [
+        "PRIMARY"
+      ]
+    },
+    {
+      "canonical_name": "Owl_Hoot",
+      "canonical_seat": "PRIMARY_OBSERVER",
+      "distinctive_invariant": "Absence of observation is not observation of absence.",
+      "observer_id": "owl_hoot",
+      "operating_class": "PRIMARY",
+      "path": "canonical/observers/capabilities/07_OWL_HOOT_CAPABILITY.json",
+      "sha512": "ebf322dccaaa8f0c9cf73889aa1e7d57b401bf6f4c889a1c31a7a43a2c734bc4674b967d5033c31ac2e3bea4551cfb4a3d3ed362f475ca65c82d8cb0399f0748",
+      "supported_modes": [
+        "PRIMARY",
+        "BOUNDED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "Osprey",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "distinctive_invariant": "External context may pressure analysis without acquiring primary-evidence status or collection authority.",
+      "observer_id": "osprey",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "path": "canonical/observers/capabilities/08_OSPREY_CAPABILITY.json",
+      "sha512": "3cc8e4ae79d6ce47ee66c6e31bc1863cf7a9949aa983aeba6ccf211bbd478a968ad2ef5b135beeaa3107630d8dc4084e979af277e96e1140704068deb59a2e02",
+      "supported_modes": [
+        "CONTROLLED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "AnimalKingdom",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "distinctive_invariant": "Synthetic pressure remains synthetic even when it successfully exposes a real weakness.",
+      "observer_id": "animal_kingdom",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "path": "canonical/observers/capabilities/09_ANIMAL_KINGDOM_CAPABILITY.json",
+      "sha512": "7730f4c2274c519b303b559e049ac88f0b1f0af958949fe4219eb327df18162fcc4054e9382b2789ce3bbb088b9aae02ade4f3bc82179ac1f75548217af0c5db",
+      "supported_modes": [
+        "CONTROLLED_SUB_OBSERVER"
+      ]
+    },
+    {
+      "canonical_name": "Armadillo",
+      "canonical_seat": "CONTROLLED_SUB_OBSERVER",
+      "distinctive_invariant": "Integrity challenge may bound or weaken a claim; it does not manufacture attribution or authenticity.",
+      "observer_id": "armadillo",
+      "operating_class": "CONTROLLED_SUB_OBSERVER",
+      "path": "canonical/observers/capabilities/10_ARMADILLO_CAPABILITY.json",
+      "sha512": "9674d84dc72fd89ba9241b6360565ce8d0d2da72011e44e87e97a1b0cefc9b2ccfc37d635e459faeefce10cf7d327ca3e80e1ce0f45c27a8c8059c638255d697",
+      "supported_modes": [
+        "CONTROLLED_SUB_OBSERVER"
+      ]
+    }
+  ],
+  "package_invariants": [
+    "PACKAGE_IS_EVIDENCE_NOT_AUTHORITY",
+    "READY_FOR_DECISION_IS_NOT_APPROVED",
+    "APPROVAL_IS_NOT_EXECUTION",
+    "APPROVAL_IS_NOT_STANDING_AUTHORITY",
+    "APPROVAL_BINDS_EXACT_SOURCE_HEAD",
+    "APPROVAL_BINDS_EXACT_PROMOTION_TARGET",
+    "APPROVAL_IS_SINGLE_USE",
+    "REJECTION_DOES_NOT_MUTATE_CANONICAL_STATE",
+    "RETURN_FOR_REPAIR_DOES_NOT_MUTATE_CANONICAL_STATE",
+    "ABSENCE_OF_DECISION_FAILS_CLOSED",
+    "AUTHORITY_REMAINS_NONE",
+    "HUMAN_GATE_REMAINS_ACTIVE",
+    "NO_CANONICAL_MUTATION_IN_OR17",
+    "NO_CANONICAL_PROMOTION_IN_OR17"
+  ],
+  "package_status": "READY_FOR_HUMAN_DECISION",
+  "package_type": "ZERVAN_V41_OBSERVER_HUMAN_GATE_PACKAGE",
+  "package_version": "1.0",
+  "promotion_authorized_by_package": false,
+  "promotion_preconditions": [
+    "EXACT_SOURCE_HEAD_MATCH",
+    "EXACT_BRANCH_MATCH",
+    "OR14_RESTORATION_RECEIPT_BOUND",
+    "OR15_AC_REVALIDATION_BOUND",
+    "OR16_STABILITY_BOUND",
+    "TEN_OBSERVER_INVENTORY_PRESENT",
+    "SEVEN_PRIMARY_SEATS_PRESENT",
+    "THREE_CONTROLLED_SEATS_PRESENT",
+    "OWL_HOOT_PRIMARY_SEAT_PRESENT",
+    "OWL_HOOT_BOUNDED_MODE_PRESENT",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "NO_UNCOMMITTED_TRACKED_STATE",
+    "EXPLICIT_HUMAN_DECISION_REQUIRED"
+  ],
+  "restoration_stage": "OR-17",
+  "restoration_summary": {
+    "ac_revalidation": "12/12 PASS",
+    "aggregate_completeness": "30/30 PASS",
+    "controlled_sub_observers": "3/3 PASS",
+    "fresh_reader": "20/20 PASS",
+    "functional_controls": "120/120 PASS",
+    "generic_observer_substitution": "NONE",
+    "lossless_reconstruction": "10/10 PASS",
+    "primary_observers": "7/7 PASS",
+    "semantic_compression": "NONE",
+    "stability_iterations": "3/3 PASS",
+    "total_observers": "10/10 PASS"
+  },
+  "restoration_target": "V41_OBSERVER_RESTORATION",
+  "source_head": "466f46f88065e8e30e6a01a1abf3eb43fcb2c3ee",
+  "version": "vTemporal.41.0"
+}
