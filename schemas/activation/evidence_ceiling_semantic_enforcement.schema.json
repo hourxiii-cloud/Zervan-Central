@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/activation/evidence_ceiling_semantic_enforcement.schema.json",
+  "title": "AC-10 Evidence-Ceiling Semantic Enforcement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "activation_control",
+    "source_claim",
+    "downstream_claim",
+    "authority_state",
+    "human_gate_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "activation_control": {
+      "type": "string",
+      "const": "AC-10"
+    },
+    "source_claim": {
+      "$ref": "#/$defs/semantic_claim"
+    },
+    "downstream_claim": {
+      "$ref": "#/$defs/semantic_claim"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    }
+  },
+  "$defs": {
+    "semantic_claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "subject",
+        "predicate",
+        "object_or_value",
+        "polarity",
+        "assertion_strength",
+        "support_state",
+        "causal_posture",
+        "uncertainty_state",
+        "surviving_alternatives",
+        "temporal_scope",
+        "evidence_refs",
+        "evidence_boundary_ref",
+        "evidence_ceiling_ref",
+        "provenance_refs",
+        "source_analytical_state_ref",
+        "truth_posture",
+        "cryptographic_integrity_valid"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "predicate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object_or_value": {},
+        "polarity": {
+          "type": "string",
+          "enum": [
+            "AFFIRMATIVE",
+            "NEGATIVE",
+            "NEUTRAL",
+            "UNKNOWN"
+          ]
+        },
+        "assertion_strength": {
+          "type": "string",
+          "enum": [
+            "OBSERVATION",
+            "POSSIBLE",
+            "PLAUSIBLE",
+            "PROBABLE",
+            "ESTABLISHED"
+          ]
+        },
+        "support_state": {
+          "type": "string",
+          "enum": [
+            "SUPPORTED",
+            "PARTIALLY_SUPPORTED",
+            "CONTRADICTED",
+            "UNRESOLVED",
+            "RETRACTED",
+            "UNKNOWN"
+          ]
+        },
+        "causal_posture": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "ASSOCIATION",
+            "CONTRIBUTORY",
+            "CAUSAL",
+            "UNKNOWN"
+          ]
+        },
+        "uncertainty_state": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "BOUNDED",
+            "UNRESOLVED",
+            "CONTRADICTORY",
+            "UNKNOWN"
+          ]
+        },
+        "surviving_alternatives": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "temporal_scope": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "historical_state_ref"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "CURRENT",
+                "HISTORICAL",
+                "BOUNDED_RANGE"
+              ]
+            },
+            "historical_state_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "start": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "end": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence_boundary_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ceiling_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_analytical_state_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "truth_posture": {
+          "type": "string",
+          "enum": [
+            "NOT_ASSERTED",
+            "OBSERVED",
+            "INFERRED",
+            "ESTABLISHED",
+            "UNKNOWN"
+          ]
+        },
+        "cryptographic_integrity_valid": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
