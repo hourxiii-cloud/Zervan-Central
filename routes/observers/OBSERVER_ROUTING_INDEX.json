@@ -1,0 +1,72 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "dependencies": [
+    {
+      "path": "canonical/observers/capabilities/OBSERVER_CAPABILITY_INDEX.json",
+      "sha512": "6fc617c8568d6d1222ee736a9b95e7f59d9c2e3d4223a5b59b85335ec93f791bcfef7b71a0c4b425396495e72eb584459c8f464203b204ca28f86776e72bfd7a",
+      "stage": "OR-2"
+    },
+    {
+      "path": "schemas/observers/observer_schema_index.json",
+      "sha512": "9f1f4b323e51e562ce827a52d583ecab3486edf4149b6acfae86b2f2f211872f9fb49de81a5e4f917359d11420f0814aadaa1378fdb64253cc2cc7959709a791",
+      "stage": "OR-3"
+    },
+    {
+      "path": "tools/observers/OBSERVER_VALIDATOR_INDEX.json",
+      "sha512": "f8445fa6d1af4da4474198bf17e4b616c5dcc24fb306d7638e14af55cbbd283f7580bcd03eaced72691f1c371b8cb6645ee26d69128d6699bc1f327d6df9c2aa",
+      "stage": "OR-4"
+    }
+  ],
+  "external_action": "DISABLED",
+  "external_runtime": "DISABLED",
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_ROUTING_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-6_MULTI_OBSERVER_COMPOSITION",
+  "observer_counts": {
+    "controlled_sub_observer": 3,
+    "primary": 7,
+    "total": 10
+  },
+  "owl_hoot": {
+    "bounded_mode": "BOUNDED_SUB_OBSERVER",
+    "bounded_mode_changes_seat": false,
+    "canonical_seat": "PRIMARY_OBSERVER"
+  },
+  "restoration_stage": "OR-5",
+  "router": {
+    "path": "routes/observers/observer_router.py",
+    "self_test": "14/14 PASS",
+    "sha512": "f5705ac702818a8960eae9c3abad70e5f2daa9682163b05edf5957074a82ad283257b2d357b8be7787e29009d61bf482d244b014b995276674827a1deb4f62ef"
+  },
+  "routing_dispositions": [
+    "NO_OBSERVER_REQUIRED",
+    "CANDIDATES_IDENTIFIED",
+    "ROUTABLE",
+    "BLOCKED"
+  ],
+  "routing_invariants": [
+    "NEED_DETERMINES_FORCE",
+    "QUESTION_DETERMINES_MISSION",
+    "EVIDENCE_DETERMINES_ESCALATION",
+    "CAPABILITY_AVAILABILITY_DOES_NOT_EQUAL_AUTHORIZATION",
+    "INVOCATION_DOES_NOT_EQUAL_PERMISSION",
+    "IDENTITY_TRAVELS",
+    "PAYLOAD_RESTS"
+  ],
+  "routing_rules": {
+    "analysis_execution": false,
+    "automatic_escalation_allowed": false,
+    "composition_execution": false,
+    "composition_state": "DEFERRED_TO_OR_6",
+    "explicit_permission_required": true,
+    "generic_observer_allowed": false,
+    "multiple_observer_allowed": true,
+    "payload_movement": false,
+    "recommendation_is_authorization": false,
+    "single_observer_allowed": true,
+    "zero_observer_allowed": true
+  },
+  "version": "vTemporal.41.0"
+}
