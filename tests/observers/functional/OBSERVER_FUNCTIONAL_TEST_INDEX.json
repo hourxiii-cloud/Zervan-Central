@@ -1,0 +1,150 @@
+{
+  "authority": "NONE",
+  "canonical_status": "CANDIDATE_NOT_PROMOTED",
+  "control_counts": {
+    "aggregate": 120,
+    "passed": 120,
+    "per_observer": 12
+  },
+  "dependencies": [
+    {
+      "path": "canonical/observers/capabilities/OBSERVER_CAPABILITY_INDEX.json",
+      "sha512": "6fc617c8568d6d1222ee736a9b95e7f59d9c2e3d4223a5b59b85335ec93f791bcfef7b71a0c4b425396495e72eb584459c8f464203b204ca28f86776e72bfd7a",
+      "stage": "OR-2"
+    },
+    {
+      "path": "schemas/observers/observer_schema_index.json",
+      "sha512": "9f1f4b323e51e562ce827a52d583ecab3486edf4149b6acfae86b2f2f211872f9fb49de81a5e4f917359d11420f0814aadaa1378fdb64253cc2cc7959709a791",
+      "stage": "OR-3"
+    },
+    {
+      "path": "tools/observers/OBSERVER_VALIDATOR_INDEX.json",
+      "sha512": "f8445fa6d1af4da4474198bf17e4b616c5dcc24fb306d7638e14af55cbbd283f7580bcd03eaced72691f1c371b8cb6645ee26d69128d6699bc1f327d6df9c2aa",
+      "stage": "OR-4"
+    },
+    {
+      "path": "routes/observers/OBSERVER_ROUTING_INDEX.json",
+      "sha512": "318063e4c147cd9a5d246cc54c8233aaa830178bb9e5246791d42483014444e7e4580f7c9aefa4390a5c0e48cfab2451d1a9655bc68da53e2984db3396ae51f5",
+      "stage": "OR-5"
+    },
+    {
+      "path": "observers/composition/OBSERVER_COMPOSITION_INDEX.json",
+      "sha512": "7ff6cb664829970b83b77247aacca2f284b57ea70135638cc20a4f0cb965117539fea7d4b1a4460e3f0a321ead46cda484b992f25774a80bd19e9d1857c4fcc6",
+      "stage": "OR-6"
+    },
+    {
+      "path": "observers/integration/OBSERVER_INTEGRATION_INDEX.json",
+      "sha512": "ce26b7ec4c7e2c1e00e2a326b6a2a01bb1e904ff06d52284f804f2ea41d51b8f3c1d396f08804386d42d85ea8f5bebf17550709ad4cd75832d1fb80b323de87b",
+      "stage": "OR-7"
+    },
+    {
+      "path": "observers/pressure/CONTROLLED_PRESSURE_INDEX.json",
+      "sha512": "15784b192c296ad6dfe7691ddc81f6cefcbd1d7c55bd8f75fd81df5319e7d696440a6e1fb5eebe85478e47182648dcd5877e25df290a29d03d7a4dc2b83d30fa",
+      "stage": "OR-8"
+    },
+    {
+      "path": "observers/failure/OBSERVER_FAILURE_SCAR_INDEX.json",
+      "sha512": "ec1375bc11d4cc95ae46801dad7b6b49a258242633cc0bf6bcceb8949784324a1ee846ba1895a3605f18ff0e92c410e92f2f907080683335d8b12828f31408d9",
+      "stage": "OR-9"
+    }
+  ],
+  "human_gate": "ACTIVE",
+  "index_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_INDEX",
+  "index_version": "1.0",
+  "next_stage": "OR-11_AGGREGATE_COMPLETENESS_VALIDATOR",
+  "required_independence": {
+    "canonical_mutation_block_checked": true,
+    "distinctive_invariant_checked": true,
+    "every_named_observer_has_suite": true,
+    "failure_path_checked": true,
+    "function_specific_path_checked": true,
+    "generic_observer_suite": false,
+    "observer_identity_preserved": true,
+    "permission_checked": true,
+    "routing_checked": true
+  },
+  "restoration_stage": "OR-10",
+  "runner": {
+    "path": "tests/observers/functional/run_observer_functional_tests.py",
+    "sha512": "2ca4eae5e1b23169c5b2db13dab592dfbe400fc2c0734950d63f4e4f51db6c4ac93604d211e9a469d4bd9e801043796b570ec4014fc9d3516ce7037e3d546279",
+    "status": "120/120 PASS"
+  },
+  "suite_counts": {
+    "controlled_sub_observer": 3,
+    "primary": 7,
+    "total": 10
+  },
+  "suites": [
+    {
+      "controls": 12,
+      "observer_id": "animal_kingdom",
+      "path": "tests/observers/functional/ANIMAL_KINGDOM_FUNCTIONAL_TEST.json",
+      "sha512": "70a76dbe9dce03c9652416202cf419e48a337f9de96e5c1ea95dde5a783c3e30399a7c0cf8519b0255d7defba39afcca82cd85a6e4c0b58d6de9f9d0a070c615",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "armadillo",
+      "path": "tests/observers/functional/ARMADILLO_FUNCTIONAL_TEST.json",
+      "sha512": "5ca1c94ffd8f17eaf4f6429ec2aaaa37468889955c5fe4629f823496cdd347731acbc80ea7977b235a32f3686b3896b9701098c5f17ac681276792d34db35a25",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "duck",
+      "path": "tests/observers/functional/DUCK_FUNCTIONAL_TEST.json",
+      "sha512": "ff4af9ea5f47c0db0b1852ff4d66ac08e456499e682d3d6ce993e6a2f0bf0dca8bac9170d75c1d10035e5b431288140469d952ecd2bb368b28695eaa14921a9c",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "eagle",
+      "path": "tests/observers/functional/EAGLE_FUNCTIONAL_TEST.json",
+      "sha512": "ed26c63ceca09bc4176927507483a79703a4fcad175964e19cfb510da8db7d180939980fa41586ea5d965f3ce7647f851c5f1937d2a580d39e8306ecfdbf7e64",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "mockingbird",
+      "path": "tests/observers/functional/MOCKINGBIRD_FUNCTIONAL_TEST.json",
+      "sha512": "b68734d7999b7de765d07a33c8fe33e528f3c80a0886da6f06347dfe781a62b8841b1ee9e9593be77c6e8e9130586bd3d4b782cc69477307c688d4446692095a",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "mole",
+      "path": "tests/observers/functional/MOLE_FUNCTIONAL_TEST.json",
+      "sha512": "de514e4315d513fcd2f6728f08185bb6dabec49fe31c2b4762677239fce60a5ff88f4210aa6fc1ce167cd36b6bca37e8da0dd41b9913b0fbb9b7cfc897122ece",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "osprey",
+      "path": "tests/observers/functional/OSPREY_FUNCTIONAL_TEST.json",
+      "sha512": "344c6eeb6e213a143b5358d5acef4bbc30d9e3e991314eb88508c96997691b7c458a826d7cd4d3654610d251d6b8a9fb15efbec0d46d21d0d140d003d1d5aa3a",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "owl_hoot",
+      "path": "tests/observers/functional/OWL_HOOT_FUNCTIONAL_TEST.json",
+      "sha512": "e655a9693eefb3a93d647c93063e3193cab166c00e1222c3053a539556b075a29a7e7b79a5f812cd3c8ca2f655cee71962838c938bd235fed054642e919e7efd",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "platypus",
+      "path": "tests/observers/functional/PLATYPUS_FUNCTIONAL_TEST.json",
+      "sha512": "e3c8b029c526dcb08df9f6e9c3125c60b1c61d53d7322b054a394463fe401d650afe958c7357abaf275ba6aaacd39cabfbe119abea359156b669ed5144f27ea1",
+      "status": "12/12 PASS"
+    },
+    {
+      "controls": 12,
+      "observer_id": "wildflower",
+      "path": "tests/observers/functional/WILDFLOWER_FUNCTIONAL_TEST.json",
+      "sha512": "2e17f218e9cdbcb8c1ecbb783157feb3bc9ad77c7f5116a674a2c625ccea87a50baf9efd584a28446ee119485a48c411bf0732c11645a7f78fcc59d6f3f28b06",
+      "status": "12/12 PASS"
+    }
+  ],
+  "version": "vTemporal.41.0"
+}

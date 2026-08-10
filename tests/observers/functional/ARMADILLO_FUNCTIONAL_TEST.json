@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Armadillo",
+  "capability_path": "canonical/observers/capabilities/10_ARMADILLO_CAPABILITY.json",
+  "capability_sha512": "9674d84dc72fd89ba9241b6360565ce8d0d2da72011e44e87e97a1b0cefc9b2ccfc37d635e459faeefce10cf7d327ca3e80e1ce0f45c27a8c8059c638255d697",
+  "distinctive_invariant": "Integrity challenge may bound or weaken a claim; it does not manufacture attribution or authenticity.",
+  "expected_canonical_seat": "CONTROLLED_SUB_OBSERVER",
+  "expected_operating_class": "CONTROLLED_SUB_OBSERVER",
+  "expected_outputs": [
+    "artifact_integrity_observation",
+    "authentication_pressure_result",
+    "attribution_pressure_result",
+    "identity_integrity_observation",
+    "integrity_unresolved_condition"
+  ],
+  "functional_path": "CONTROLLED_PRESSURE_ISOLATION",
+  "observer_id": "armadillo",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "CONTROLLED_SUB_OBSERVER",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "artifact_integrity"
+}

@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Wildflower",
+  "capability_path": "canonical/observers/capabilities/04_WILDFLOWER_CAPABILITY.json",
+  "capability_sha512": "7ed1588c28ee3fa1e0fe78c5544f9c4c684c2269fefa7b95c3dec975aa6465c5fdf9df30f4c7b64b9a03df2aa67437cbfb7171d43b42dc834c858352f05747f5",
+  "distinctive_invariant": "Emergence may reveal structure without establishing why that structure exists.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "emergence_observation",
+    "pattern_bloom_observation",
+    "relationship_field_pressure",
+    "recurrence_observation",
+    "developing_structure_observation"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "wildflower",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "PRIMARY",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "emergence"
+}

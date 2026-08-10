@@ -1,0 +1,35 @@
+{
+  "canonical_name": "Osprey",
+  "capability_path": "canonical/observers/capabilities/08_OSPREY_CAPABILITY.json",
+  "capability_sha512": "3cc8e4ae79d6ce47ee66c6e31bc1863cf7a9949aa983aeba6ccf211bbd478a968ad2ef5b135beeaa3107630d8dc4084e979af277e96e1140704068deb59a2e02",
+  "distinctive_invariant": "External context may pressure analysis without acquiring primary-evidence status or collection authority.",
+  "expected_canonical_seat": "CONTROLLED_SUB_OBSERVER",
+  "expected_operating_class": "CONTROLLED_SUB_OBSERVER",
+  "expected_outputs": [
+    "external_context_observation",
+    "contextual_pressure",
+    "external_comparison_result",
+    "contextual_unresolved_condition"
+  ],
+  "functional_path": "CONTROLLED_PRESSURE_ISOLATION",
+  "observer_id": "osprey",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "CONTROLLED_SUB_OBSERVER",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "external_context_pressure"
+}

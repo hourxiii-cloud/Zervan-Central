@@ -1,0 +1,36 @@
+{
+  "canonical_name": "AnimalKingdom",
+  "capability_path": "canonical/observers/capabilities/09_ANIMAL_KINGDOM_CAPABILITY.json",
+  "capability_sha512": "7730f4c2274c519b303b559e049ac88f0b1f0af958949fe4219eb327df18162fcc4054e9382b2789ce3bbb088b9aae02ade4f3bc82179ac1f75548217af0c5db",
+  "distinctive_invariant": "Synthetic pressure remains synthetic even when it successfully exposes a real weakness.",
+  "expected_canonical_seat": "CONTROLLED_SUB_OBSERVER",
+  "expected_operating_class": "CONTROLLED_SUB_OBSERVER",
+  "expected_outputs": [
+    "synthetic_pressure_result",
+    "edge_case_result",
+    "contradiction_pressure",
+    "fuzz_result",
+    "assumption_failure"
+  ],
+  "functional_path": "CONTROLLED_PRESSURE_ISOLATION",
+  "observer_id": "animal_kingdom",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "CONTROLLED_SUB_OBSERVER",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "synthetic_adversarial_pressure"
+}

@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Eagle",
+  "capability_path": "canonical/observers/capabilities/01_EAGLE_CAPABILITY.json",
+  "capability_sha512": "edabf9e08b883266935e48be6f8b2c2db2da40793f40877cbe322427c04073fd7f12d4db92a9e4182a85bd92e28514c51e7ab167fc4e1662569d3c9917571b4e",
+  "distinctive_invariant": "Trajectory is observation of supported direction, not ownership of the future.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "trajectory_observation",
+    "coherence_observation",
+    "directional_pressure",
+    "route_discontinuity",
+    "bounded_projection_pressure"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "eagle",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "PRIMARY",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "trajectory"
+}

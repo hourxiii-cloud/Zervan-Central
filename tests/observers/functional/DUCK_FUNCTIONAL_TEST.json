@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Duck",
+  "capability_path": "canonical/observers/capabilities/03_DUCK_CAPABILITY.json",
+  "capability_sha512": "55e9c472185b3045abda81c04a6b4764624a69a6b8c7463a95a026306b4bc7820e406b79f63337c94a59ed6c049c0185435e84c989aacf6aa54d92dd99af4ab4",
+  "distinctive_invariant": "Failure to reconcile is information, not automatic threat attribution.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "divergence_observation",
+    "wobble_observation",
+    "mismatch_pressure",
+    "false_wall_pressure",
+    "reconciliation_gap"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "duck",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "PRIMARY",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "wobble"
+}

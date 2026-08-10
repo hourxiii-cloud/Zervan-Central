@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Platypus",
+  "capability_path": "canonical/observers/capabilities/06_PLATYPUS_CAPABILITY.json",
+  "capability_sha512": "73e940b9b614649fb9d7b2c1a1b4d9211a1960882c4bad4005e2a29d0d798a21125affe6f25dd2e3cc8ba83c556fdb0ec81cc11fef7017b660e2aa823bb0a0b6",
+  "distinctive_invariant": "Category insufficiency does not authorize invention of a different underlying object.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "hybrid_condition_observation",
+    "category_pressure",
+    "classification_mismatch",
+    "incompatible_property_observation",
+    "anomaly_synthesis_observation"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "platypus",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "PRIMARY",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "hybrid_condition"
+}

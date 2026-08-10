@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Mole",
+  "capability_path": "canonical/observers/capabilities/02_MOLE_CAPABILITY.json",
+  "capability_sha512": "bae09602c8fe657067aed14c1270b256c26813b07161a2fd3e111dc839b687f746f7e4c1f34582b9e5f2728541912c2bc3081cddfe07d1a43dfc29bf8b2a5e5d",
+  "distinctive_invariant": "Subsurface observation remains bounded by what the authorized evidence can support.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "latent_structure_observation",
+    "subsurface_pressure",
+    "buried_relationship_observation",
+    "slow_drift_observation",
+    "collapse_pressure"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "mole",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "PRIMARY",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "latent_signal"
+}

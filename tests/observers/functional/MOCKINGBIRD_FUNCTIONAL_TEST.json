@@ -1,0 +1,36 @@
+{
+  "canonical_name": "Mockingbird",
+  "capability_path": "canonical/observers/capabilities/05_MOCKINGBIRD_CAPABILITY.json",
+  "capability_sha512": "275f3de6af559b9b4e4c0e2035da7d92a2f5428eeafc93f03156b0c8bca111a432a49b0ac8b13bfb54d7ccea50faca6d9adb1f2c0d6f74bce0618d1a1689b60b",
+  "distinctive_invariant": "Representation may change while evidentiary meaning remains invariant.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "semantic_fidelity_observation",
+    "reflection_observation",
+    "mimicry_pressure",
+    "narrative_drift_observation",
+    "representation_drift_observation"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "mockingbird",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "PRIMARY",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "reflection"
+}

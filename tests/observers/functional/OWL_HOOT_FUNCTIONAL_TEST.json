@@ -1,0 +1,37 @@
+{
+  "canonical_name": "Owl_Hoot",
+  "capability_path": "canonical/observers/capabilities/07_OWL_HOOT_CAPABILITY.json",
+  "capability_sha512": "ebf322dccaaa8f0c9cf73889aa1e7d57b401bf6f4c889a1c31a7a43a2c734bc4674b967d5033c31ac2e3bea4551cfb4a3d3ed362f475ca65c82d8cb0399f0748",
+  "distinctive_invariant": "Absence of observation is not observation of absence.",
+  "expected_canonical_seat": "PRIMARY_OBSERVER",
+  "expected_operating_class": "PRIMARY",
+  "expected_outputs": [
+    "absence_pressure",
+    "silence_observation",
+    "visibility_limit",
+    "missing_trace_observation",
+    "cadence_break_observation",
+    "meta_signal_pressure"
+  ],
+  "functional_path": "PRIMARY_COMPOSITION",
+  "observer_id": "owl_hoot",
+  "required_controls": [
+    "CAPABILITY_IDENTITY",
+    "OPERATING_CLASS",
+    "CANONICAL_SEAT",
+    "SUPPORTED_MODE",
+    "DISTINCTIVE_INVARIANT",
+    "ROUTING",
+    "EXPLICIT_PERMISSION",
+    "AUTHORITY_NONE",
+    "HUMAN_GATE_ACTIVE",
+    "FAILURE_SEMANTIC",
+    "FUNCTION_SPECIFIC_PATH",
+    "NO_CANONICAL_MUTATION"
+  ],
+  "restoration_stage": "OR-10",
+  "route_mode": "BOUNDED_SUB_OBSERVER",
+  "suite_type": "ZERVAN_V41_OBSERVER_FUNCTIONAL_TEST_SUITE",
+  "suite_version": "1.0",
+  "test_signal": "absence"
+}
