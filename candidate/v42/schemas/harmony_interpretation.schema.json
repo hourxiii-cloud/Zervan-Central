@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v42/schemas/harmony_interpretation.schema.json",
+  "title": "Zervan candidate v42 harmony_interpretation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "object_id",
+    "mobius_state_id",
+    "patterns",
+    "evidence_ceiling",
+    "unresolved_influence",
+    "provocation_authority",
+    "authority_state",
+    "human_gate_state",
+    "canonical"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "harmony_interpretation"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "canonical": {
+      "type": "boolean",
+      "const": false
+    },
+    "object_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "mobius_state_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "patterns": {
+      "type": "array"
+    },
+    "evidence_ceiling": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "unresolved_influence": {
+      "type": "array"
+    },
+    "provocation_authority": {
+      "type": "string",
+      "enum": [
+        "NONE"
+      ]
+    }
+  }
+}

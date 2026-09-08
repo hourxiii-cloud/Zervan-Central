@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v42/schemas/execution_trace.schema.json",
+  "title": "Zervan candidate v42 execution_trace",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "object_id",
+    "execution_authorization_id",
+    "carrier_id",
+    "steps",
+    "envelope_checks",
+    "completion_state",
+    "authority_state",
+    "human_gate_state",
+    "canonical"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "execution_trace"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "canonical": {
+      "type": "boolean",
+      "const": false
+    },
+    "object_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "execution_authorization_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "carrier_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "steps": {
+      "type": "array"
+    },
+    "envelope_checks": {
+      "type": "array"
+    },
+    "completion_state": {
+      "type": "string",
+      "enum": [
+        "COMPLETED",
+        "VALID_NON_FINDING",
+        "STOPPED_IN_BOUNDS",
+        "FAILED_IN_BOUNDS",
+        "ABORTED",
+        "CONTAMINATED"
+      ]
+    }
+  }
+}

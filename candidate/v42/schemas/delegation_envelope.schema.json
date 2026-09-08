@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v42/schemas/delegation_envelope.schema.json",
+  "title": "Zervan candidate v42 delegation_envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "object_id",
+    "permitted_trigger_classes",
+    "permitted_carriers",
+    "max_force",
+    "execution_limit",
+    "expires_at",
+    "revoked",
+    "disposition",
+    "authority_state",
+    "human_gate_state",
+    "canonical"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "delegation_envelope"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "canonical": {
+      "type": "boolean",
+      "const": false
+    },
+    "object_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "permitted_trigger_classes": {
+      "type": "array"
+    },
+    "permitted_carriers": {
+      "type": "array"
+    },
+    "max_force": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "execution_limit": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "revoked": {
+      "type": "boolean"
+    },
+    "disposition": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    }
+  }
+}

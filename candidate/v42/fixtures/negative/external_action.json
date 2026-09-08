@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "record_type": "execution_authorization",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "carrier_admissibility_id": "sha512:f57d3b69a7e81e81e85ca263d316e11f0c55dd026851572eaddf62cbffc4cf775efd660cab6710b8dc15506edc647548b84917578bdddcb52e2e93b0a6f9fbea",
+  "authorization_source": "human-gate:bounded-test-fixture",
+  "execution_limit": 1,
+  "external_action": "ENABLED",
+  "disposition": "AUTHORIZED",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:a33fb3d6cce29405b05bf43ce00a76e4c610d87b849d4b79555f84dfbff3cd3a1a05be9c27795f5deded7d672be8658a1a1cdc09f677bd696d453498befc12a1"
+}

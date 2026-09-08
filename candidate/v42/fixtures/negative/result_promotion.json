@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "record_type": "evidence_qualification",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "return_record_id": "sha512:7a9fb4ff5db00fac561fc3ca3d1d44d452876b24eb11e2c3b9057d2d42bd76233c5712aa17dcbe1ac4a58006513e0b569b1e62e1c58ee5ac7c60b53b94d4d9f3",
+  "claim_id": "claim:two-trails-observed",
+  "evidence_class": "OBSERVATION",
+  "independence_status": "UNKNOWN",
+  "contamination_status": "CLEAN",
+  "disposition": "TRUTH",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:0c9520634514e66c98929ea9b800dbc6fecd29e1c641817a6717f2ac95cd4952197f4dacb51ad1f1468e27c3a236d5cf635afb00654f0532f422cb36b4364f33"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "record_type": "carrier_admissibility",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "pressure_route_id": "sha512:36834dc4d5b0840bfeb91ca774e4d6401b4ba83e361c5c945959870346c61783aa4d4dd8a9f4cfaf78ed5250aa7843c93331f1cea7254b673f6069e815e2ae1d",
+  "carrier_id": "goblin:observer:1",
+  "contract_ref": "candidate:bounded-observer",
+  "input_class": "CANDIDATE_READ_ONLY",
+  "pressure_envelope": "OBSERVATION_ONLY",
+  "disposition": "SELF_AUTHORIZED",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:09ab372ed3f791d68f26f03d10bb775ed74adf38f7fd1a4e5dec2e86649487b83f38a86c4bd3693fb17f5df9f433865b902e2588c802ff34987229e0e5321ca5"
+}

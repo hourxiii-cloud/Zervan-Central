@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "record_type": "harmony_interpretation",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "mobius_state_id": "sha512:f45c37a7d7b8467531907090d21c1fe2d46d6116e08ff45c8f355745cef1f1b164b88550178b32fb5442d64a95c090d3be18a9557b27059045128b562f4f042d",
+  "patterns": [
+    "qualified-material-contradiction"
+  ],
+  "evidence_ceiling": "CANDIDATE",
+  "unresolved_influence": [
+    "cause:unknown"
+  ],
+  "provocation_authority": "SCHEDULER",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:db708ef97c8a22e6a0dade6035c340be1319bdde8af17c950a8b55844de136de1c85163cd5740a23e0ebc04fa1a9ebbc57c564366d60dab378dcfaf9bb64a25f"
+}

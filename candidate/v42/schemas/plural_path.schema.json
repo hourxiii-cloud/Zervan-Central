@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v42/schemas/plural_path.schema.json",
+  "title": "Zervan candidate v42 plural_path",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "object_id",
+    "path_id",
+    "source",
+    "lineage",
+    "independence_status",
+    "uncertainties",
+    "authority_state",
+    "human_gate_state",
+    "canonical"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "plural_path"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "canonical": {
+      "type": "boolean",
+      "const": false
+    },
+    "object_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "path_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "source": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "lineage": {
+      "type": "array"
+    },
+    "independence_status": {
+      "type": "string",
+      "enum": [
+        "QUALIFIED",
+        "DEPENDENT",
+        "UNKNOWN"
+      ]
+    },
+    "uncertainties": {
+      "type": "array"
+    }
+  }
+}

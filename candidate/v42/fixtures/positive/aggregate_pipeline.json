@@ -1,0 +1,241 @@
+[
+  {
+    "schema_version": "1.0",
+    "record_type": "plural_path",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "path_id": "path:zervan:1",
+    "source": "ZERVAN",
+    "lineage": [
+      "source:z",
+      "transform:1"
+    ],
+    "independence_status": "QUALIFIED",
+    "uncertainties": [],
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:2787cf04965cb3efb1bdf5c9deca8631b82b2f8bd274823facbdd755c354165c148aab6d1fc16b9b75bd7ee77b2166735434015bb78334ec02be9531d07eef2c"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "mobius_state",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "coordinate": "c:1",
+    "human_lineage": [
+      "human:1"
+    ],
+    "zervan_lineage": [
+      "sha512:2787cf04965cb3efb1bdf5c9deca8631b82b2f8bd274823facbdd755c354165c148aab6d1fc16b9b75bd7ee77b2166735434015bb78334ec02be9531d07eef2c"
+    ],
+    "evidence_ceiling": "CANDIDATE",
+    "causality_status": "UNKNOWN",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:f45c37a7d7b8467531907090d21c1fe2d46d6116e08ff45c8f355745cef1f1b164b88550178b32fb5442d64a95c090d3be18a9557b27059045128b562f4f042d"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "harmony_interpretation",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "mobius_state_id": "sha512:f45c37a7d7b8467531907090d21c1fe2d46d6116e08ff45c8f355745cef1f1b164b88550178b32fb5442d64a95c090d3be18a9557b27059045128b562f4f042d",
+    "patterns": [
+      "qualified-material-contradiction"
+    ],
+    "evidence_ceiling": "CANDIDATE",
+    "unresolved_influence": [
+      "cause:unknown"
+    ],
+    "provocation_authority": "NONE",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:97c1f82eef991a858d7e55f652758c3c5c48bc6e8f2e2b7c4416c6f2bbf757e2409db57d0d61b04d8e8b40e671a01a02c30b7ecf52a4df9b2c316637211c3350"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "trigger_evaluation",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "coordinate": "c:1",
+    "initiation_class": "ZERVAN_ENDOGENOUS_CANDIDATE",
+    "question": "Can bounded observation discriminate two attributable paths?",
+    "evidence_refs": [
+      "sha512:2787cf04965cb3efb1bdf5c9deca8631b82b2f8bd274823facbdd755c354165c148aab6d1fc16b9b75bd7ee77b2166735434015bb78334ec02be9531d07eef2c",
+      "sha512:f45c37a7d7b8467531907090d21c1fe2d46d6116e08ff45c8f355745cef1f1b164b88550178b32fb5442d64a95c090d3be18a9557b27059045128b562f4f042d",
+      "sha512:97c1f82eef991a858d7e55f652758c3c5c48bc6e8f2e2b7c4416c6f2bbf757e2409db57d0d61b04d8e8b40e671a01a02c30b7ecf52a4df9b2c316637211c3350"
+    ],
+    "expected_discriminating_value": "distinguish trail from reflection",
+    "disposition": "ELIGIBLE",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:842a20123eb67f49a5722bc51b432ed8701f515dc3b31d7393c5f6dd4a7a76275edb5a13c91a4291814e041bab3bc1ff0146ed10d7131930e71a95d1519c8116"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "pressure_route",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "trigger_evaluation_id": "sha512:842a20123eb67f49a5722bc51b432ed8701f515dc3b31d7393c5f6dd4a7a76275edb5a13c91a4291814e041bab3bc1ff0146ed10d7131930e71a95d1519c8116",
+    "mission_question": "Can bounded observation discriminate two attributable paths?",
+    "required_work": [
+      "observe-existing-state"
+    ],
+    "selected_force": "OBSERVATION",
+    "rejected_stronger_force": [
+      "SQUAD:not-required",
+      "PLATOON:not-required",
+      "ANIMALKINGDOM:contract-not-required"
+    ],
+    "disposition": "ROUTED",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:36834dc4d5b0840bfeb91ca774e4d6401b4ba83e361c5c945959870346c61783aa4d4dd8a9f4cfaf78ed5250aa7843c93331f1cea7254b673f6069e815e2ae1d"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "carrier_admissibility",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "pressure_route_id": "sha512:36834dc4d5b0840bfeb91ca774e4d6401b4ba83e361c5c945959870346c61783aa4d4dd8a9f4cfaf78ed5250aa7843c93331f1cea7254b673f6069e815e2ae1d",
+    "carrier_id": "goblin:observer:1",
+    "contract_ref": "candidate:bounded-observer",
+    "input_class": "CANDIDATE_READ_ONLY",
+    "pressure_envelope": "OBSERVATION_ONLY",
+    "disposition": "ADMISSIBLE",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:f57d3b69a7e81e81e85ca263d316e11f0c55dd026851572eaddf62cbffc4cf775efd660cab6710b8dc15506edc647548b84917578bdddcb52e2e93b0a6f9fbea"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "execution_authorization",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "carrier_admissibility_id": "sha512:f57d3b69a7e81e81e85ca263d316e11f0c55dd026851572eaddf62cbffc4cf775efd660cab6710b8dc15506edc647548b84917578bdddcb52e2e93b0a6f9fbea",
+    "authorization_source": "human-gate:bounded-test-fixture",
+    "execution_limit": 1,
+    "external_action": "DISABLED",
+    "disposition": "AUTHORIZED",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:09c0990b661360596b7da13ce510e1b7752150991f3677a1e17e359aa33fa8940c3b5e73747c3abcb2cc8d4705166781db32f4b473eea80b86be9934a4798569"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "execution_trace",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "execution_authorization_id": "sha512:09c0990b661360596b7da13ce510e1b7752150991f3677a1e17e359aa33fa8940c3b5e73747c3abcb2cc8d4705166781db32f4b473eea80b86be9934a4798569",
+    "carrier_id": "goblin:observer:1",
+    "steps": [
+      "inspect",
+      "report"
+    ],
+    "envelope_checks": [
+      "object:match",
+      "force:observation",
+      "authority:none"
+    ],
+    "completion_state": "COMPLETED",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:90c7bbeb2ae754758fb109c5a0114923f064adb2779d776ce804f8d7c486d10ddff21ffce3dc4f58c176bdd2df23bb940f9884fedaaef94ef0b2c338c1f7f089"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "termination_record",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "execution_id": "sha512:90c7bbeb2ae754758fb109c5a0114923f064adb2779d776ce804f8d7c486d10ddff21ffce3dc4f58c176bdd2df23bb940f9884fedaaef94ef0b2c338c1f7f089",
+    "termination_state": "COMPLETED",
+    "boundary_status": "PRESERVED",
+    "contamination_status": "CLEAN",
+    "object_evidence_admissibility": "QUALIFICATION_REQUIRED",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:916cc5a8edbbf4cc25e0d45386204a38cfa34df8a3a98e1bb848a323ce0a20e0033c225d9b7a7544d6ef28b616245c8858aa28ac40f39ce6334061a1d95e4f51"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "return_record",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "execution_id": "sha512:90c7bbeb2ae754758fb109c5a0114923f064adb2779d776ce804f8d7c486d10ddff21ffce3dc4f58c176bdd2df23bb940f9884fedaaef94ef0b2c338c1f7f089",
+    "starting_coordinate": "c:1",
+    "returned_object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "object_continuity": "PRESERVED",
+    "reconstruction_required": false,
+    "result_status": "UNQUALIFIED",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:7a9fb4ff5db00fac561fc3ca3d1d44d452876b24eb11e2c3b9057d2d42bd76233c5712aa17dcbe1ac4a58006513e0b569b1e62e1c58ee5ac7c60b53b94d4d9f3"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "evidence_qualification",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "return_record_id": "sha512:7a9fb4ff5db00fac561fc3ca3d1d44d452876b24eb11e2c3b9057d2d42bd76233c5712aa17dcbe1ac4a58006513e0b569b1e62e1c58ee5ac7c60b53b94d4d9f3",
+    "claim_id": "claim:two-trails-observed",
+    "evidence_class": "OBSERVATION",
+    "independence_status": "UNKNOWN",
+    "contamination_status": "CLEAN",
+    "disposition": "QUALIFIED_AT_CURRENT_CEILING",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:6bc154907e07520ea1f3506e5b79ac113d7ac73b96f9f2ccf792affbac1ff480c510c883ad517943999b033056ecb92e9dcb525fa4eb127d3d945f07a4e3da83"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "delegation_envelope",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "permitted_trigger_classes": [
+      "MATERIAL_CONTRADICTION"
+    ],
+    "permitted_carriers": [
+      "goblin:observer:1"
+    ],
+    "max_force": "OBSERVATION",
+    "execution_limit": 1,
+    "expires_at": "2099-01-01T00:00:00Z",
+    "revoked": false,
+    "disposition": "ACTIVE",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:a315393103fb4c380ae25b5fc60509e386f592c114526f077df650b0db1af98e7501e1688e2d4ce4fdcfecb6b94f6def727d56a917949becec032265c0d28559"
+  },
+  {
+    "schema_version": "1.0",
+    "record_type": "aggregate_closure",
+    "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+    "stage_records": [
+      "sha512:2787cf04965cb3efb1bdf5c9deca8631b82b2f8bd274823facbdd755c354165c148aab6d1fc16b9b75bd7ee77b2166735434015bb78334ec02be9531d07eef2c",
+      "sha512:f45c37a7d7b8467531907090d21c1fe2d46d6116e08ff45c8f355745cef1f1b164b88550178b32fb5442d64a95c090d3be18a9557b27059045128b562f4f042d",
+      "sha512:97c1f82eef991a858d7e55f652758c3c5c48bc6e8f2e2b7c4416c6f2bbf757e2409db57d0d61b04d8e8b40e671a01a02c30b7ecf52a4df9b2c316637211c3350",
+      "sha512:842a20123eb67f49a5722bc51b432ed8701f515dc3b31d7393c5f6dd4a7a76275edb5a13c91a4291814e041bab3bc1ff0146ed10d7131930e71a95d1519c8116",
+      "sha512:36834dc4d5b0840bfeb91ca774e4d6401b4ba83e361c5c945959870346c61783aa4d4dd8a9f4cfaf78ed5250aa7843c93331f1cea7254b673f6069e815e2ae1d",
+      "sha512:f57d3b69a7e81e81e85ca263d316e11f0c55dd026851572eaddf62cbffc4cf775efd660cab6710b8dc15506edc647548b84917578bdddcb52e2e93b0a6f9fbea",
+      "sha512:09c0990b661360596b7da13ce510e1b7752150991f3677a1e17e359aa33fa8940c3b5e73747c3abcb2cc8d4705166781db32f4b473eea80b86be9934a4798569",
+      "sha512:90c7bbeb2ae754758fb109c5a0114923f064adb2779d776ce804f8d7c486d10ddff21ffce3dc4f58c176bdd2df23bb940f9884fedaaef94ef0b2c338c1f7f089",
+      "sha512:916cc5a8edbbf4cc25e0d45386204a38cfa34df8a3a98e1bb848a323ce0a20e0033c225d9b7a7544d6ef28b616245c8858aa28ac40f39ce6334061a1d95e4f51",
+      "sha512:7a9fb4ff5db00fac561fc3ca3d1d44d452876b24eb11e2c3b9057d2d42bd76233c5712aa17dcbe1ac4a58006513e0b569b1e62e1c58ee5ac7c60b53b94d4d9f3",
+      "sha512:6bc154907e07520ea1f3506e5b79ac113d7ac73b96f9f2ccf792affbac1ff480c510c883ad517943999b033056ecb92e9dcb525fa4eb127d3d945f07a4e3da83",
+      "sha512:a315393103fb4c380ae25b5fc60509e386f592c114526f077df650b0db1af98e7501e1688e2d4ce4fdcfecb6b94f6def727d56a917949becec032265c0d28559"
+    ],
+    "removal_results": [
+      "STAGE1:PASS",
+      "STAGE2:PASS",
+      "STAGE3:PASS",
+      "STAGE4:PASS"
+    ],
+    "v41_regression": true,
+    "lossless_recollapse": true,
+    "disposition": "CANDIDATE_CLOSED",
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "canonical": false,
+    "record_id": "sha512:00615f08e12eb9850b1b04803eea28bee73d63de6c0e71a7ecad6112d12d010e0f99c9d8ee3823eb8ab3f95ea343169c6064770f48d24c7fe4195a8af7768fe1"
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://candidate/v42/schemas/termination_record.schema.json",
+  "title": "Zervan candidate v42 termination_record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "record_id",
+    "object_id",
+    "execution_id",
+    "termination_state",
+    "boundary_status",
+    "contamination_status",
+    "object_evidence_admissibility",
+    "authority_state",
+    "human_gate_state",
+    "canonical"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "record_type": {
+      "type": "string",
+      "const": "termination_record"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^sha512:[0-9a-f]{128}$"
+    },
+    "authority_state": {
+      "type": "string",
+      "const": "NONE"
+    },
+    "human_gate_state": {
+      "type": "string",
+      "const": "ACTIVE"
+    },
+    "canonical": {
+      "type": "boolean",
+      "const": false
+    },
+    "object_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "execution_id": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "boolean",
+        "integer"
+      ],
+      "minLength": 1
+    },
+    "termination_state": {
+      "type": "string",
+      "enum": [
+        "COMPLETED",
+        "VALID_NON_FINDING",
+        "STOPPED_IN_BOUNDS",
+        "FAILED_IN_BOUNDS",
+        "ABORTED_PRE_VIOLATION",
+        "ABORTED_BOUNDARY_UNKNOWN",
+        "CONTAMINATED",
+        "TERMINATION_FAILED",
+        "RETURN_FAILED",
+        "UNKNOWN_TERMINATION"
+      ]
+    },
+    "boundary_status": {
+      "type": "string",
+      "enum": [
+        "PRESERVED",
+        "VIOLATED",
+        "UNKNOWN"
+      ]
+    },
+    "contamination_status": {
+      "type": "string",
+      "enum": [
+        "CLEAN",
+        "CONTAMINATED",
+        "UNKNOWN"
+      ]
+    },
+    "object_evidence_admissibility": {
+      "type": "string",
+      "enum": [
+        "UNQUALIFIED",
+        "QUALIFICATION_REQUIRED",
+        "INADMISSIBLE",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

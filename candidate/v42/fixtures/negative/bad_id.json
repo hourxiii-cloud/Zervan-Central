@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "record_type": "trigger_evaluation",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "coordinate": "c:1",
+  "initiation_class": "ZERVAN_ENDOGENOUS_CANDIDATE",
+  "question": "Can bounded observation discriminate two attributable paths?",
+  "evidence_refs": [
+    "sha512:2787cf04965cb3efb1bdf5c9deca8631b82b2f8bd274823facbdd755c354165c148aab6d1fc16b9b75bd7ee77b2166735434015bb78334ec02be9531d07eef2c",
+    "sha512:f45c37a7d7b8467531907090d21c1fe2d46d6116e08ff45c8f355745cef1f1b164b88550178b32fb5442d64a95c090d3be18a9557b27059045128b562f4f042d",
+    "sha512:97c1f82eef991a858d7e55f652758c3c5c48bc6e8f2e2b7c4416c6f2bbf757e2409db57d0d61b04d8e8b40e671a01a02c30b7ecf52a4df9b2c316637211c3350"
+  ],
+  "expected_discriminating_value": "distinguish trail from reflection",
+  "disposition": "ELIGIBLE",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:86e9260891a5b7e99d0a2e81f74f5de984b6d5982a01dbfa1d79e5fe0cf2d35b52dc327559bf1efa10c484aecee761957d69adb36d74e9484fb6b3ba2b07402e"
+}

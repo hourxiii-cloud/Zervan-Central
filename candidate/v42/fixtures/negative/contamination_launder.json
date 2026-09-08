@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "record_type": "termination_record",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "execution_id": "sha512:90c7bbeb2ae754758fb109c5a0114923f064adb2779d776ce804f8d7c486d10ddff21ffce3dc4f58c176bdd2df23bb940f9884fedaaef94ef0b2c338c1f7f089",
+  "termination_state": "COMPLETED",
+  "boundary_status": "PRESERVED",
+  "contamination_status": "CONTAMINATED",
+  "object_evidence_admissibility": "QUALIFICATION_REQUIRED",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:e49cb7893ea4c4a39849dc8511f8f86dd3c596bf78f871bc6bf8430ab50be2e572a4b78a7973db2ec39264f2d9014c9cbecde96e76d722edeb212f38feff698e"
+}

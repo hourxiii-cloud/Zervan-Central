@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "record_type": "pressure_route",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "trigger_evaluation_id": "sha512:842a20123eb67f49a5722bc51b432ed8701f515dc3b31d7393c5f6dd4a7a76275edb5a13c91a4291814e041bab3bc1ff0146ed10d7131930e71a95d1519c8116",
+  "mission_question": "Can bounded observation discriminate two attributable paths?",
+  "required_work": [
+    "observe-existing-state"
+  ],
+  "selected_force": "PLATOON",
+  "rejected_stronger_force": [
+    "SQUAD:not-required",
+    "PLATOON:not-required",
+    "ANIMALKINGDOM:contract-not-required"
+  ],
+  "disposition": "ROUTED",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:85a9cd2a8c9f7d20f2c6e9b009a3f3582818764d090b677914c86f936b4af6934e274225b8b8249e4fc44e8984878e5d4dcd34438f7d8052bcc981708f582dcb"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "record_type": "execution_trace",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "execution_authorization_id": "sha512:09c0990b661360596b7da13ce510e1b7752150991f3677a1e17e359aa33fa8940c3b5e73747c3abcb2cc8d4705166781db32f4b473eea80b86be9934a4798569",
+  "carrier_id": "goblin:observer:1",
+  "steps": [
+    "inspect",
+    "recruit-helper",
+    "expand-mission"
+  ],
+  "envelope_checks": [
+    "object:match",
+    "force:observation",
+    "authority:none"
+  ],
+  "completion_state": "COMPLETED",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:f3fa142e93e06a9678fa4000403b636f16fb1b21bd4e0ee709a53e3996337e54d08de443d680b5e95f56220e0cfd31be6c301a3bac908327c208fc8cd2413a24"
+}

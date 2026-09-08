@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "record_type": "delegation_envelope",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "permitted_trigger_classes": [
+    "MATERIAL_CONTRADICTION"
+  ],
+  "permitted_carriers": [
+    "goblin:observer:1"
+  ],
+  "max_force": "OBSERVATION",
+  "execution_limit": 999999,
+  "expires_at": "2099-01-01T00:00:00Z",
+  "revoked": false,
+  "disposition": "ACTIVE",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:3b5230d65fa8d3243c34b41a56033e58978d7b368f868347aae83794bff9e1b6e9107511fd545a3744d0def2117765bf65b505f7a0626ee36b4d3b6f393edb54"
+}

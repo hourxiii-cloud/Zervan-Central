@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "record_type": "return_record",
+  "object_id": "sha512:8288e97e0d6cd7b4cb041fb4cca81cf9803e18f263b764df3874d54a479158e99d644db40af1f6ed0cdd2b247e67073c6cfa12aaa0cdcc471e46427e56b1c862",
+  "execution_id": "sha512:90c7bbeb2ae754758fb109c5a0114923f064adb2779d776ce804f8d7c486d10ddff21ffce3dc4f58c176bdd2df23bb940f9884fedaaef94ef0b2c338c1f7f089",
+  "starting_coordinate": "c:1",
+  "returned_object_id": "sha512:9c5c69fe661636c562939163fc6296f68d7242ba6b0c86e6606df0673de8698f546573d18e2c9a63a6152ca7b73cd332d98d7ef67187be92d8dfeb0b446c9d70",
+  "object_continuity": "PRESERVED",
+  "reconstruction_required": false,
+  "result_status": "UNQUALIFIED",
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "canonical": false,
+  "record_id": "sha512:d69a1da05bdf18deb6d7a67056fcfbd6678be5d83bceca4597309c7f921c42cc9253cfba77e6f3b5a42358053eb5e099f2d0da4eefbe614410e81b096be906b0"
+}

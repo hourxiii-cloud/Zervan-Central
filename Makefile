@@ -1,4 +1,4 @@
-.PHONY: smoke pmc-seal pmc-admit validate-v40-candidate test-v40-candidate
+.PHONY: smoke pmc-seal pmc-admit validate-v40-candidate test-v40-candidate validate-v42-candidate test-v42-candidate
 
 smoke:
 
@@ -24,3 +24,10 @@ validate-v40-candidate:
 
 test-v40-candidate:
 	@PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p 'test_v40_candidate_*.py' -v
+
+validate-v42-candidate:
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v42/tools/generate_artifacts.py --check
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v42/tools/validate_v42.py --fixtures
+
+test-v42-candidate:
+	@PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s candidate/v42/tests -p 'test_*.py' -v
