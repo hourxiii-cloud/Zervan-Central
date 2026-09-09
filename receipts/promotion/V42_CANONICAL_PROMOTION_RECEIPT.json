@@ -1,0 +1,21 @@
+{
+  "receipt_type": "V42_CANONICAL_PROMOTION_RECEIPT",
+  "version": "vTemporal.42.0",
+  "implementation_identity": "v42 Complete",
+  "source_baseline": "ae898ab803061823b36fb825e0664e3d8d255409",
+  "candidate_commit": "e9b0c08",
+  "candidate_branch": "candidate/v42-governed-development",
+  "target_branch": "main",
+  "candidate_validation": "PASS",
+  "candidate_tests": {"passed": 26, "failed": 0},
+  "human_gate_decision": "APPROVE",
+  "promotion_state": "CANONICAL",
+  "canonical": true,
+  "authority_state": "NONE",
+  "human_gate_state": "ACTIVE",
+  "external_runtime": "DISABLED",
+  "external_action": "DISABLED",
+  "system_population": "DISALLOWED",
+  "no_compression_out": true,
+  "historical_v41_preserved": true
+}

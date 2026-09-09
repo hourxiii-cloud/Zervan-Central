@@ -9,8 +9,8 @@ import sys
 
 TOKEN_RE = re.compile(
     r"\b(?:"
-    r"vTemporal\.(?:39|40|41)(?:[._]\d+){0,3}"
-    r"|v(?:39|40|41)(?:[._]\d+){0,3}"
+    r"vTemporal\.(?:39|40|41|42)(?:[._]\d+){0,3}"
+    r"|v(?:39|40|41|42)(?:[._]\d+){0,3}"
     r")\b"
 )
 
@@ -41,10 +41,10 @@ def classify(token, native_version):
         return "HISTORICAL_V39"
     if normalized.startswith("vTemporal.40") or normalized.startswith("v40"):
         return "HISTORICAL_V40"
-    if normalized == "v41" or normalized.startswith("v41.0"):
-        return "CURRENT_V41_FAMILY"
-    if normalized.startswith("vTemporal.41"):
-        return "CURRENT_V41_FAMILY"
+    if normalized == "v41" or normalized.startswith("v41.0") or normalized.startswith("vTemporal.41"):
+        return "HISTORICAL_V41"
+    if normalized == "v42" or normalized.startswith("v42.0") or normalized.startswith("vTemporal.42"):
+        return "CURRENT_V42_FAMILY"
     return "REVIEW_REQUIRED"
 
 def git_files(root):

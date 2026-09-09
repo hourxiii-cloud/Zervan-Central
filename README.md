@@ -8,11 +8,11 @@ human-governed decision support.
 
 Active version:
 
-`vTemporal.41.0`
+`vTemporal.42.0`
 
 Implementation identity:
 
-`v41 Complete`
+`v42 Complete`
 
 This branch:
 
@@ -26,9 +26,9 @@ Canonical branch:
 
 `main`
 
-Native v41 is canonical because the explicit Human Gate-approved candidate was
-promoted to `main` and the resulting canonical state is independently
-resolvable from Git.
+Native v42 is canonical because the four-stage governed-development candidate
+qualified, Human Gate approved promotion, and the resulting state is
+independently resolvable from Git `main`.
 
 ## Version Authority
 
@@ -48,22 +48,22 @@ One authority path.
 
 No inferred versioning.
 
-## Native-v41 Entry
+## Native-v42 Entry
 
-Initialize native v41 through:
+Initialize native v42 through:
 
-`call/INITIATION_STATEMENT_V41_0.md`
+`call/INITIATION_STATEMENT_V42_0.md`
 
 Then enter the native implementation through:
 
-`canonical/ZERVAN_v41_0_CANONICAL_ENTRY.md`
+`canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md`
 
-Historical v39 and v40 initiation / canonical-load files may remain for
+Historical v39, v40, and v41 initiation / canonical-entry files remain for
 provenance.
 
-They are not the active native-v41 entry path.
+They are not the active native-v42 entry path.
 
-Native v41 does not require prior v39 or v40 knowledge to initialize.
+Native v42 does not require prior-version knowledge to initialize.
 
 ## Operating Posture
 

@@ -1,4 +1,4 @@
-.PHONY: smoke pmc-seal pmc-admit validate-v40-candidate test-v40-candidate validate-v42-candidate test-v42-candidate
+.PHONY: smoke pmc-seal pmc-admit validate-v40-candidate test-v40-candidate validate-v42-candidate test-v42-candidate validate-v42-canonical test-v42-canonical
 
 smoke:
 
@@ -30,4 +30,13 @@ validate-v42-candidate:
 	@PYTHONDONTWRITEBYTECODE=1 python candidate/v42/tools/validate_v42.py --fixtures
 
 test-v42-candidate:
+	@PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s candidate/v42/tests -p 'test_*.py' -v
+
+validate-v42-canonical:
+	@PYTHONDONTWRITEBYTECODE=1 python tools/validate_version_identity.py
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v42/tools/generate_artifacts.py --check
+	@PYTHONDONTWRITEBYTECODE=1 python candidate/v42/tools/validate_v42.py --fixtures
+
+test-v42-canonical:
+	@PYTHONDONTWRITEBYTECODE=1 python -m unittest tests.test_native_v42_entry -v
 	@PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s candidate/v42/tests -p 'test_*.py' -v

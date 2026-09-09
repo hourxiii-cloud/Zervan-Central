@@ -12,8 +12,8 @@ VERSION = (ROOT / "VERSION").read_text(
 
 TOKEN_RE = re.compile(
     r"\b(?:"
-    r"vTemporal\.(?:39|40|41)(?:[._]\d+){0,3}"
-    r"|v(?:39|40|41)(?:[._]\d+){0,3}"
+    r"vTemporal\.(?:39|40|41|42)(?:[._]\d+){0,3}"
+    r"|v(?:39|40|41|42)(?:[._]\d+){0,3}"
     r")\b"
 )
 
@@ -40,10 +40,10 @@ def classify(token):
         return "HISTORICAL_V39"
     if normalized.startswith("vTemporal.40") or normalized.startswith("v40"):
         return "HISTORICAL_V40"
-    if normalized == "v41" or normalized.startswith("v41.0"):
-        return "CURRENT_V41_FAMILY"
-    if normalized.startswith("vTemporal.41"):
-        return "CURRENT_V41_FAMILY"
+    if normalized == "v41" or normalized.startswith("v41.0") or normalized.startswith("vTemporal.41"):
+        return "HISTORICAL_V41"
+    if normalized == "v42" or normalized.startswith("v42.0") or normalized.startswith("vTemporal.42"):
+        return "CURRENT_V42_FAMILY"
 
     return "REVIEW_REQUIRED"
 
@@ -109,13 +109,16 @@ def main():
         text=True
     ).strip()
 
+    if json.loads((ROOT / "VERSION.json").read_text())["promotion_state"] == "CANONICAL":
+        branch = "main"
+
     inventory = {
         "schema_version": "1.0",
         "native_version": VERSION,
         "source_branch": branch,
         "scope": (
             "repository-wide textual version references "
-            "for v39/v40/v41 families"
+            "for v39/v40/v41/v42 families"
         ),
         "excluded_control_files": sorted(SCAN_EXCLUDE),
         "entries": entries,

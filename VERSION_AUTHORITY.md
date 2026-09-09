@@ -1,294 +1,61 @@
-# VERSION_AUTHORITY — Native v41 Version Identity and Promotion
+# VERSION_AUTHORITY — Native v42 Version Identity and Promotion
 
 Status: CONTROLLED CANONICAL CONTRACT
-Ring: R1-B — Version Identity & Promotion
-Version Identity: vTemporal.41.0
-Implementation Identity: v41 Complete
+Version Identity: vTemporal.42.0
+Implementation Identity: v42 Complete
 Promotion State: CANONICAL
 Canonical: TRUE
 Canonical Branch: `main`
-Development Branch: `candidate/v41-complete`
+Development Branch: `candidate/v42-governed-development`
 Authority: NONE
 Human Gate: ACTIVE
 
 ---
 
-## 0. Purpose
+## Active Identity
 
-This contract defines how native v41 version identity is declared, resolved,
-validated, and promoted without conflating version identity with authority,
-repository location, or promotion state.
+The active implementation is `vTemporal.42.0`, resolved first from `/VERSION`, then `/VERSION.json`, then this contract. These surfaces MUST agree.
 
-R1-B consumes the authority and canonical-resolution rules established by
-`DoctrineOps/AUTHORITY_RESOLUTION.md`.
+The active entry path is `call/INITIATION_STATEMENT_V42_0.md` followed by `canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md`. README owns orientation, not version authority. Historical files do not control active identity.
 
-R1-B does not redefine R1-A.
+## Promotion Finding
 
----
+Four independently qualified stages were integrated as candidate commit `e9b0c08` from canonical-v41 baseline `ae898ab803061823b36fb825e0664e3d8d255409`:
 
-## 1. Single Version Identity
+1. ONE↔MANY / MANY↔ONE
+2. MÖBIUS
+3. HARMONY INTERPRETS MÖBIUS
+4. ANIMALKINGDOM / QUALIFIED ENDOGENOUS PROVOCATION
 
-Native v41 has one implementation version identity:
+Candidate validation passed. Twenty-six candidate tests passed. Human Gate explicitly approved full canonical-v42 promotion. Canonical mutation is authorized only for this bounded promotion.
 
-`vTemporal.41.0`
+## Canonical State
 
-The human-readable declaration is:
-
-`/VERSION`
-
-The machine-readable declaration is:
-
-`/VERSION.json`
-
-These two declarations MUST agree exactly.
-
-`VERSION_AUTHORITY.md` defines their interpretation and resolution.
-
-No README, branch name, directory name, historical artifact, bridge artifact,
-candidate document, manifest, conversation state, or implementation detail may
-independently redefine the active version.
-
-One active version.
-One authority path.
-No inferred versioning.
-
----
-
-## 2. Implementation Identity and Promotion State Are Separate
-
-Version identity answers:
-
-> Which native implementation is this?
-
-Promotion state answers:
-
-> Has this implementation crossed the governed boundary into canonical `main`?
-
-These are independent dimensions.
-
-The current native implementation identity is:
-
-`vTemporal.41.0`
-
-Its current promotion state is:
-
-`CANONICAL`
-
-Promotion MUST NOT manufacture a new version identifier merely because the same
-validated implementation moves from candidate state to canonical state.
-
-Therefore:
-
-`vTemporal.41.0 CANDIDATE`
-
-and, after valid Human-Gated promotion:
-
-`vTemporal.41.0 CANONICAL`
-
-refer to the same version identity at different governed promotion states.
-
-A substantive implementation change requiring a new version is a separate
-versioning decision and MUST NOT be inferred from promotion alone.
-
----
-
-## 3. Candidate State
-
-While development occurs on:
-
-`candidate/v41-complete`
-
-the native v41 implementation is:
-
-- Version: `vTemporal.41.0`
-- Implementation Identity: `v41 Complete`
-- Promotion State: `CANDIDATE`
-- Canonical: `FALSE`
-
-Candidate strength, completeness, test success, branch existence, commit
-existence, or technical write capability does not independently make the
-candidate canonical.
-
-The canonical implementation remains whatever is validly resolved from `main`
-until promotion completes.
-
----
-
-## 4. Canonical State
-
-The canonical implementation surface is `main`.
-
-Native v41 becomes canonical only after the promotion requirements established
-by R1-A and the applicable v41 validation contracts are satisfied.
-
-Promotion requires, at minimum:
-
-1. candidate identity is explicit;
-2. intended canonical target is explicit;
-3. source disposition and provenance are preserved;
-4. required stability, regression, completeness, and lossless-collapse
-   validation succeeds;
-5. unresolved conflicts and evidence ceilings are surfaced;
-6. required promotion evidence exists;
-7. Human Gate explicitly approves promotion;
-8. canonical repository mutation actually occurs;
-9. the resulting state on `main` is independently resolvable and verifiable.
-
-Only after those conditions are satisfied may `/VERSION.json` on promoted
-`main` declare:
-
-`promotion_state = CANONICAL`
-
-and:
-
-`canonical = true`
-
-Those conditions have now been satisfied for native v41 through the explicit
-Human Gate decision and the R8-G fast-forward promotion of approved commit
-`2d1013304c6c13efd08fc3a9d7aed7804642cde2` to `main`.
-
-Current canonical state:
-
-- Version: `vTemporal.41.0`
-- Implementation Identity: `v41 Complete`
+- Version: `vTemporal.42.0`
+- Implementation Identity: `v42 Complete`
 - Promotion State: `CANONICAL`
 - Canonical: `TRUE`
 - Canonical Branch: `main`
 - Authority: `NONE`
 - Human Gate: `ACTIVE`
+- External Runtime: `DISABLED`
+- External Action: `DISABLED`
+- System Population: `DISALLOWED`
 
-Promotion did not create a new version identity and did not grant autonomous
-runtime authority.
+Promotion does not manufacture truth, evidence, authority, execution, formation, or object identity.
 
-Promotion is not complete merely because a merge, push, commit, or file write
-is technically possible.
+## Historical Boundary
 
----
+v39, v40, v41, bridge, candidate, frozen, and prior promotion artifacts remain historical provenance. They MUST NOT be rewritten to impersonate v42 or silently promoted. Their presence does not create mixed active identity.
 
-## 5. No Mixed-Version Identity
+## v42 Governing Lock
 
-An active repository state MUST NOT simultaneously claim incompatible current
-version identities.
+Human at full strength. Zervan at full strength. Governed object preserved between them. Neither owns the middle.
 
-Historical versions MAY remain for provenance.
+Plural development does not establish independence by cardinality. Reconvergence does not erase lineage. Möbius preserves object-anchored developmental relationship without becoming chronology, truth, or authority. Harmony interprets Möbius-qualified geometry without becoming evidence, consensus, scheduler, or decision authority. Qualified endogenous provocation requires attributable need, minimum sufficient force, preserved independent contribution, and clean return.
 
-Candidate bridge versions MAY remain as historical development evidence.
+Independence is preserved through attributable contribution, not isolation.
 
-Neither historical nor bridge identifiers may impersonate the active native
-version.
+## Final Authority Lock
 
-In particular:
-
-- v39 references are historical when preserved;
-- v40 references are baseline/history when preserved;
-- v41.1.x references identify candidate/recovery/bridge development history;
-- `vTemporal.41.0` identifies the native v41 implementation.
-
-Historical presence is not active authority.
-
----
-
-## 6. Historical-Reference Inventory
-
-`/VERSION_REFERENCES.json` is the repository-wide inventory of detected v39,
-v40, v41, and vTemporal version references.
-
-Its purpose is to prevent old version residue from silently becoming active
-version authority.
-
-The inventory records:
-
-- file path;
-- detected version token;
-- line;
-- classification.
-
-The inventory is evidence and control metadata.
-
-It does not create authority and does not replace `/VERSION` or
-`/VERSION.json`.
-
-Any repository change adding, deleting, or changing a version reference MUST
-cause version-reference validation to be rerun.
-
----
-
-## 7. Active Version Surfaces
-
-The only native version declaration surfaces are:
-
-1. `/VERSION`
-2. `/VERSION.json`
-3. `/VERSION_AUTHORITY.md`
-
-README owns orientation, not version authority.
-
-Historical canonical loads, archived initiation statements, transition
-documents, bridge documents, manifests, receipts, and prior-version materials
-may retain version identifiers for provenance but may not supersede these
-active version surfaces.
-
----
-
-## 8. Validation
-
-`tools/validate_version_identity.py` MUST fail when:
-
-- `/VERSION` is absent;
-- `/VERSION.json` is absent;
-- the two active version declarations disagree;
-- the declared version is empty or inferred;
-- candidate/canonical state is internally contradictory;
-- the authority contract is missing;
-- the historical-reference inventory is missing;
-- repository version references differ from the recorded inventory;
-- active control surfaces assert a competing version identity.
-
-A silent version disagreement is invalid.
-
----
-
-## 9. Promotion Receipt Boundary
-
-R1-B defines that a Promotion Receipt is required.
-
-R1-B does not create that receipt.
-
-A Promotion Receipt may be produced only after the required native v41
-implementation, disposition, validation, completeness, and lossless-collapse
-work has actually occurred.
-
-Receipt existence without satisfied evidence does not authorize promotion.
-
----
-
-## 10. Downstream Boundary
-
-R1-B defines version identity and promotion interpretation only.
-
-It does NOT define:
-
-- Room identity;
-- object identity;
-- provenance primitives;
-- Genesis or Revision Manifests;
-- state roots;
-- authorized-view roots;
-- active object pointers;
-- revision semantics;
-- branch semantics;
-- merge semantics.
-
-Those remain downstream Ring 1 dependencies.
-
----
-
-## 11. R1-B Lock
-
-Version identity is singular.
-Promotion state is explicit.
-Version identity and promotion state are not the same thing.
-Historical references remain provenance, not current authority.
-No version is inferred.
-No mixed-version identity is admissible.
-Human Gate remains required for canonical promotion.
+Authority remains NONE. Human Gate remains ACTIVE. External runtime and action remain DISABLED. System population remains DISALLOWED. No compression out. Future canonical mutation remains Human-Gated.

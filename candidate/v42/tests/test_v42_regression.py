@@ -7,8 +7,8 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class CandidateV42RegressionTests(unittest.TestCase):
-    def test_baseline_identity_unchanged(self):
-        self.assertEqual("vTemporal.41.0", (ROOT / "VERSION").read_text().strip())
+    def test_promoted_identity(self):
+        self.assertEqual("vTemporal.42.0", (ROOT / "VERSION").read_text().strip())
 
     def test_canonical_animalkingdom_unchanged(self):
         text = (ROOT / "Modules" / "AnimalKingdom" / "animalkingdom_contract.md").read_text()
@@ -20,11 +20,9 @@ class CandidateV42RegressionTests(unittest.TestCase):
         self.assertIn("Routing determines **how evidence enters the system**", text)
         self.assertIn("Routing decides **path only**", text)
 
-    def test_candidate_is_removable_surface(self):
-        status = subprocess.run(["git", "diff", "--name-only", "ae898ab803061823b36fb825e0664e3d8d255409..HEAD"], cwd=ROOT, text=True, capture_output=True, check=True).stdout.splitlines()
-        paths = status
-        self.assertTrue(paths, "candidate implementation must be visible to Git")
-        self.assertTrue(all(p == "Makefile" or p.startswith("candidate/v42/") for p in paths), paths)
+    def test_promoted_surface_preserves_candidate_lineage(self):
+        self.assertTrue((ROOT / "candidate" / "v42" / "CANDIDATE_MANIFEST.json").exists())
+        self.assertTrue((ROOT / "receipts" / "promotion" / "V42_CANONICAL_PROMOTION_RECEIPT.json").exists())
 
 
 if __name__ == "__main__": unittest.main()
