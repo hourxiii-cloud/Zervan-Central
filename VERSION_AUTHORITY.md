@@ -1,105 +1,88 @@
-# VERSION_AUTHORITY — Native v42.1 Version Identity and Promotion
+# VERSION AUTHORITY — vTemporal.42.1.1
 
-Status: CONTROLLED CANONICAL CONTRACT
-Version Identity: vTemporal.42.1
-Implementation Identity: v42.1 Complete
-Promotion State: CANONICAL
-Canonical: TRUE
-Canonical Branch: `main`
-Development Branch: `candidate/v42.1-staged-patch`
-Promotion Commit: `c879996`
-Authority: NONE
-Human Gate: ACTIVE
+## Target identity
 
----
+Version: **vTemporal.42.1.1**  
+Implementation Identity: **v42.1.1 Complete**  
+Canonical Branch: **main**  
+Integration Base: `a3a89bf8e75c128bd2f5f919e0d08ddd828fcf3c`  
+Authority: **NONE**  
+Human Gate: **ACTIVE**
 
-## Active Identity
+## Canonical standing
 
-The active implementation is `vTemporal.42.1`, resolved first from `/VERSION`, then `/VERSION.json`, then this contract. These surfaces MUST agree.
+This file is the v42.1.1 replacement authority surface supplied by the canonical integration package.
 
-The active entry path is `call/INITIATION_STATEMENT_V42_1.md` followed by `canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md`.
+The package itself is not self-promoting. Before promotion, its standing is **STAGED FOR CANONICAL INTEGRATION**.
 
-README owns orientation, not version authority. Historical files do not control active identity.
+After Human Gate authorizes repository movement, the v42.1.1 overlay is integrated to `main`, and the exact resulting `main` commit is resolved into all promotion-commit fields, the active standing becomes:
 
-## Promotion Finding
+- Promotion State: **CANONICAL**
+- Canonical: **TRUE**
+- Control State: **CONTROLLED / CANONICAL / PROMOTED / ACTIVATED**
 
-Native v42.1 extends the four independently qualified native-v42 stages without replacing or collapsing them:
+No file may infer or predeclare the future promotion commit.
 
-1. ONE↔MANY / MANY↔ONE
-2. MÖBIUS
-3. HARMONY INTERPRETS MÖBIUS
-4. ANIMALKINGDOM / QUALIFIED ENDOGENOUS PROVOCATION
+## Active initiation path after closure
 
-The qualified v42.1 candidate lineage was promoted to canonical `main` by promotion commit `c879996`.
+1. `/VERSION`
+2. `/VERSION.json`
+3. `/VERSION_AUTHORITY.md`
+4. `/call/INITIATION_STATEMENT_V42_1_1.md`
+5. `/canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md`
 
-The v42.1 extension preserves:
+Exact current canonical commit is always resolved from Git `main` at initiation.
 
-- same-data referential anchoring and No Footprints;
-- interpretive divergence without referential drift;
-- Zero Trust analytical standing;
-- Null Space;
-- Earned Significance and Dynamic Hydration;
-- AnimalKingdom necessity-by-consequence / removal testing;
-- same-traversal processing and qualification with distinct evidence classes;
-- Möbius internal/external movement without confusing operation with object.
+## v42.1 continuity
 
-Canonical promotion does not manufacture truth, evidence, decision authority, execution authority, publication authority, certification authority, or autonomous runtime authority.
+v42.1.1 extends v42.1 and preserves its established architecture, including:
 
-## Canonical State
+- One-to-Many / Many-to-One
+- Möbius
+- Harmony
+- AnimalKingdom / qualified endogenous provocation
+- Same-data referential anchoring / No Footprints
+- Zero Trust analytical standing
+- Null Space
+- Earned Significance / Dynamic Hydration
+- necessity-by-consequence / removal pressure
+- same-traversal processing and qualification with distinct evidence classes
+- Möbius internal/external observation geometry
 
-- Version: `vTemporal.42.1`
-- Implementation Identity: `v42.1 Complete`
-- Promotion State: `CANONICAL`
-- Canonical: `TRUE`
-- Canonical Branch: `main`
-- Promotion Commit: `c879996`
-- Authority: `NONE`
-- Human Gate: `ACTIVE`
-- External Runtime: `DISABLED`
-- External Action: `DISABLED`
-- System Population: `DISALLOWED`
+No prior canonical history is rewritten.
 
-## Historical Boundary
+## v42.1.1 addition — Sundial
 
-v39, v40, v41, v42.0, bridge, candidate, frozen, staged, and prior promotion artifacts remain historical provenance.
+Sundial becomes a native canonical analytical coordinate for detached observation of an analytical encounter.
 
-They MUST NOT be rewritten to impersonate v42.1. Their presence does not create mixed active identity.
+Canonical locks:
 
-The staged v42.1 artifacts retain their historical staged standing. Promotion commit `c879996`, not retrospective rewriting, establishes their canonical integration.
+1. **The Sundial is not a mirror.**
+2. **Operate inside. Observe outside. Preserve the distinction. Turn.**
+3. **The system may observe its operation. It may not manufacture independence from itself.**
+4. Object evidence, analysis evidence, and Zervan evidence retain distinct standing.
+5. A third representation is not independent merely because it is different.
+6. **X is not assigned. X is qualified.**
+7. Coordinate existence does not imply coordinate standing.
+8. Difference does not imply independence.
+9. Independence does not imply truth.
+10. Relationship does not imply qualification.
+11. Qualification does not imply authority.
+12. A candidate X may already exist in the surrounding data ecology.
+13. **Do not manufacture the yardstick. Discover the candidate relationship. Qualify whether it can measure.**
+14. AnimalKingdom may pressure a qualified Sundial relationship; returned **Y** remains evidence, not certification.
+15. Y does not rewrite the governed object, prior evidence, or prior standing.
+16. No Footprints remains binding.
 
-## v42.1 Governing Lock
+## Testing / Git boundary
 
-Same data. Turn the data. Preserve the relationship. Let everything else qualify its movement.
+**The repository is not the laboratory.**
 
-Originating data remains untouched.
+Exploratory pressure, falsification, simulation, and analytical experimentation occur outside Git. Git receives qualified implementation state.
 
-Interpretive divergence does not permit referential drift.
+## Authority lock
 
-Analytical standing is not inherited merely from source, position, prior conclusion, representation, agreement, or Human Gate approval.
+Zervan decides nothing.
 
-Null Space preserves qualified release without converting release into absence, discard, or permanent resolution.
-
-Attention follows earned significance through time.
-
-Relevance is temporal. Standing is durable. Residency is conditional.
-
-AnimalKingdom force follows qualified need. Capability does not establish its necessity merely by existing.
-
-Evidence about the object and evidence about Zervan operation may arise during the same traversal but remain independently attributable.
-
-Möbius permits movement between operating on the object and interrogating operation without object substitution or evidence-class collapse.
-
-## Testing / Git Boundary
-
-Testing, exploratory pressure, falsification, simulation, and analytical experimentation occur outside Git.
-
-Git receives qualified implementation state and preserves implementation identity, lineage, and canonical promotion history.
-
-## Final Authority Lock
-
-Authority remains NONE.
-Human Gate remains ACTIVE.
-External runtime and action remain DISABLED.
-System population remains DISALLOWED.
-No Compression Out remains ACTIVE.
-Future canonical mutation remains Human-Gated.
+Authority remains **NONE**.  
+Human Gate remains **ACTIVE**.

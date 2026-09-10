@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "record_type": "canonical_validator_transition",
+  "target_version": "vTemporal.42.1.1",
+  "source_branch": "main",
+  "base_main_commit": "8534421c35f5b52e261d4e63d6d806e12f9f1e83",
+  "validator_object": "Zervan_v42_1_1_ROOT_OVERLAY.zip",
+  "canonicalization_rule": "hash exact artifact bytes; no normalization",
+  "sha256": "21cf4b951721c3ef8935c879496add98ae801b21e0c7ec3dcdfe0c20e0e47259",
+  "sha512": "6afece609499659896025e755d6fe21136566269871fe5c262deb720f2deb14d67d3a2d6bbbb701116c1da280e848ca53bc1dbd9e9097b5849dc040a585d6ba8",
+  "hash_status": "computed_from_exact_local_artifact_bytes",
+  "authority_state": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "prior_state_preservation": "REQUIRED",
+  "note": "Hash establishes identity/continuity of the named validator object; it does not establish truth, correctness, compliance, or authority."
+}
