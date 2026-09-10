@@ -1,0 +1,11 @@
+{
+  "package": "Zervan_v42_1_Staged_Patch",
+  "target_version": "v42.1",
+  "base_version": "v42.0",
+  "standing": "STAGED / HUMAN-GATE APPROVED FOR IMPLEMENTATION MOVEMENT",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "canonical_promotion": "NOT IMPLIED",
+  "originating_data_mutation": "DISALLOWED",
+  "no_compression_out": "ACTIVE"
+}
