@@ -86,3 +86,75 @@ Zervan decides nothing.
 
 Authority remains **NONE**.  
 Human Gate remains **ACTIVE**.
+
+---
+
+# v42.2.0 canonical standing
+
+This section is the v42.2.0 replacement authority surface supplied by the Human Gate-authorized direct-main canonical application.
+
+Active Version: **vTemporal.42.2.0**
+
+Implementation Identity: **v42.2.0 Complete**
+
+Canonical Branch: **main**
+
+Promotion State: **CANONICAL**
+
+Canonical: **TRUE**
+
+Control State: **CONTROLLED / CANONICAL / PROMOTED / ACTIVATED**
+
+Authority: **NONE**
+
+Human Gate: **ACTIVE**
+
+Canonical Parent: **vTemporal.42.1.1**
+
+Integration Base: `02a8285671fb3b423cff888c4de1fb41575a3707`
+
+Active initiation path:
+
+1. `/VERSION`
+
+2. `/VERSION.json`
+
+3. `/VERSION_AUTHORITY.md`
+
+4. `/call/INITIATION_STATEMENT_V42_2_0.md`
+
+5. `/canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md`
+
+Exact current canonical commit is always resolved from Git `main` at initiation.
+
+No file may infer or predeclare the resulting promotion commit.
+
+## v42.2.0 continuity
+
+v42.2.0 extends v42.1.1 and preserves its established architecture.
+
+No prior canonical history is rewritten.
+
+v42.2.0 adds the canonical Relational State Trajectory composition produced by CR-1, CR-2R, and CR-3.
+
+Canonical locks include:
+
+- ΔO ≠ ΔQ
+
+- Precedence ≠ Causation
+
+- Temporal preservation ≠ Temporal maneuver
+
+- historical standing remains distinct from current standing concerning history
+
+- later evidence does not acquire retrospective authority
+
+- temporal difference does not manufacture Sundial independence
+
+- movement does not manufacture AnimalKingdom pressure
+
+- trajectory does not replace constituent state
+
+- Authority NONE
+
+- Human Gate ACTIVE

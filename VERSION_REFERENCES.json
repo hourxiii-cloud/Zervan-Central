@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "native_version": "vTemporal.42.0",
+  "native_version": "vTemporal.42.2.0",
   "source_branch": "main",
   "scope": "repository-wide textual version references for v39/v40/v41/v42 families",
   "excluded_control_files": [
@@ -116,7 +116,7 @@
       "path": "README.md",
       "line": 11,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "README.md",
@@ -175,13 +175,13 @@
     {
       "path": "VERSION",
       "line": 1,
-      "token": "vTemporal.42.0",
+      "token": "vTemporal.42.2.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "VERSION.json",
       "line": 3,
-      "token": "vTemporal.42.0",
+      "token": "vTemporal.42.2.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
@@ -193,98 +193,116 @@
     {
       "path": "VERSION.json",
       "line": 5,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "VERSION.json",
-      "line": 9,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "VERSION_AUTHORITY.md",
       "line": 1,
-      "token": "v42",
+      "token": "vTemporal.42.1.1",
       "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "VERSION_AUTHORITY.md",
-      "line": 4,
-      "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "VERSION_AUTHORITY.md",
       "line": 5,
-      "token": "v42",
+      "token": "vTemporal.42.1.1",
       "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 9,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
+      "line": 6,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 17,
-      "token": "vTemporal.42.0",
+      "line": 14,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 18,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 36,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 38,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 38,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 54,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 92,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 94,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 96,
+      "token": "vTemporal.42.2.0",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 23,
-      "token": "v41",
-      "classification": "HISTORICAL_V41"
+      "line": 98,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 30,
-      "token": "v42",
+      "line": 112,
+      "token": "vTemporal.42.1.1",
       "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 34,
-      "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "line": 132,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 35,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
+      "line": 134,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 49,
-      "token": "v39",
-      "classification": "HISTORICAL_V39"
+      "line": 134,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "VERSION_AUTHORITY.md",
-      "line": 49,
-      "token": "v40",
-      "classification": "HISTORICAL_V40"
-    },
-    {
-      "path": "VERSION_AUTHORITY.md",
-      "line": 49,
-      "token": "v41",
-      "classification": "HISTORICAL_V41"
-    },
-    {
-      "path": "VERSION_AUTHORITY.md",
-      "line": 49,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "VERSION_AUTHORITY.md",
-      "line": 51,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
+      "line": 138,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
@@ -638,7 +656,7 @@
       "path": "call/INITIATION_STATEMENT_V42_0.md",
       "line": 3,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "call/INITIATION_STATEMENT_V42_0.md",
@@ -698,7 +716,193 @@
       "path": "call/INITIATION_STATEMENT_V42_0.md",
       "line": 50,
       "token": "vTemporal.42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 1,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 3,
+      "token": "vTemporal.42.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 4,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 8,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 24,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 41,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 43,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 43,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 52,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 54,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 112,
+      "token": "v39",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 112,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 112,
+      "token": "v41",
+      "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 112,
+      "token": "v42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 117,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 121,
+      "token": "vTemporal.42.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1.md",
+      "line": 123,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 1,
+      "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 5,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 31,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 31,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 31,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 31,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_1_1.md",
+      "line": 33,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 1,
+      "token": "vTemporal.42.2.0",
       "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 5,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 47,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 47,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 49,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 49,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_2_0.md",
+      "line": 49,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "call/verify_local_call.py",
@@ -2930,7 +3134,7 @@
       "path": "candidate/v42/tests/test_v42_regression.py",
       "line": 11,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "candidate/v42/tests/test_v42_regression.py",
@@ -2985,6 +3189,1230 @@
       "line": 184,
       "token": "v42",
       "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/INTEGRATION_CHECKLIST.md",
+      "line": 1,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/INTEGRATION_CHECKLIST.md",
+      "line": 4,
+      "token": "v42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/INTEGRATION_CHECKLIST.md",
+      "line": 5,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/INTEGRATION_CHECKLIST.md",
+      "line": 6,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/MANIFEST.json",
+      "line": 3,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/MANIFEST.json",
+      "line": 4,
+      "token": "v42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/PACKAGE_SHA256SUMS.txt",
+      "line": 4,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 1,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 12,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 12,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 14,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 14,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 16,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 20,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 30,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 31,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 35,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 36,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 37,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 38,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 41,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 45,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 49,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 51,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 54,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 57,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 58,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 59,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 61,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 65,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 69,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 84,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 85,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 88,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 89,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 90,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 91,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 92,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 94,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 96,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 98,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 102,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 104,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 106,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 107,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 108,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 110,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 114,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 117,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 121,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 180,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 182,
+      "token": "v41",
+      "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 182,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 183,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 185,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 187,
+      "token": "v41",
+      "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 188,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 190,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 192,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 194,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 198,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 202,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 205,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 209,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 282,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 298,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 299,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 300,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 301,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 302,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 303,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 304,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 305,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 306,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 307,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 308,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 309,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 330,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 331,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 332,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 333,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 334,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 335,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 336,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 337,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 338,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 339,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 340,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 341,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 342,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 343,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 344,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 377,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 378,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 379,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 380,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 381,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 382,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 383,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 384,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 385,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 386,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 387,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 388,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 389,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 390,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 391,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 392,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 393,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 450,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 451,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 452,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 453,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 454,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 455,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 456,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 457,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 458,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 459,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 460,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 461,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 462,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 463,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 464,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 465,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 466,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 524,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 525,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 526,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 527,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 528,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 529,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 530,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 531,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 532,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 533,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 534,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 535,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 536,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 537,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 538,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 539,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 540,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 541,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 596,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 597,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 598,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 599,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 600,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 601,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 602,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 603,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 604,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 605,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 606,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 664,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 665,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 666,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 667,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 668,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 669,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 670,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 671,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 672,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 673,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 674,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 675,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 676,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 677,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 678,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 679,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 680,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 681,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 738,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 739,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 740,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 741,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 742,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 743,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 744,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 745,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 746,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 747,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 748,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 749,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 750,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 751,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 752,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 753,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 754,
+      "token": "v42_1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 786,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 786,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 787,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 797,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_NATIVE_INTEGRATION_MATRIX.md",
+      "line": 797,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_STAGED_PATCH_SURFACE.md",
+      "line": 1,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_STAGED_PATCH_SURFACE.md",
+      "line": 4,
+      "token": "v42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_STAGED_PATCH_SURFACE.md",
+      "line": 12,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_STAGED_PATCH_SURFACE.md",
+      "line": 117,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1/V42_1_STAGED_PATCH_SURFACE.md",
+      "line": 143,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1_1/V42_1_1_INTEGRATION_RECEIPT.md",
+      "line": 1,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1_1/V42_1_1_INTEGRATION_RECEIPT.md",
+      "line": 4,
+      "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42_1_1/V42_1_1_INTEGRATION_RECEIPT.md",
+      "line": 11,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42_1_1/V42_1_1_INTEGRATION_RECEIPT.md",
+      "line": 29,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
@@ -3716,7 +5144,7 @@
       "path": "canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md",
       "line": 4,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md",
@@ -3776,13 +5204,181 @@
       "path": "canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md",
       "line": 60,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md",
       "line": 62,
       "token": "v42",
       "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
+      "line": 12,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
+      "line": 18,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
+      "line": 20,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
+      "line": 174,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 4,
+      "token": "vTemporal.42.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 9,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 18,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 20,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 20,
+      "token": "v42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 22,
+      "token": "v42.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 24,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 28,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 30,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 116,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 116,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 137,
+      "token": "vTemporal.42.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_1_CANONICAL_ENTRY.md",
+      "line": 139,
+      "token": "v42.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.2.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "vTemporal.42.2.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 7,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 15,
+      "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 29,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 183,
+      "token": "v42.1.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+      "line": 241,
+      "token": "v42.2.0",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "canonical/observers/OBSERVER_CONTRACT_V41.md",
@@ -3885,6 +5481,12 @@
       "line": 111,
       "token": "vTemporal.41.0",
       "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "canonical/sundial/SUNDIAL_DETACHED_RELATIONAL_OBSERVATION_V42_1_1.md",
+      "line": 3,
+      "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "contracts/activation/ACTIVATION_AGGREGATE_CLOSURE.md",
@@ -7448,7 +9050,7 @@
       "path": "receipts/promotion/V42_CANONICAL_PROMOTION_RECEIPT.json",
       "line": 3,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "receipts/promotion/V42_CANONICAL_PROMOTION_RECEIPT.json",
@@ -8090,13 +9692,13 @@
       "path": "tests/test_native_v42_entry.py",
       "line": 10,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "tests/test_native_v42_entry.py",
       "line": 14,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "tests/test_native_v42_entry.py",
@@ -10035,6 +11637,12 @@
       "line": 172,
       "token": "v41",
       "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "verification/V42_1_1_CANONICAL_VALIDATOR_TRANSITION.json",
+      "line": 4,
+      "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "verification/hash_inventory_plan.md",

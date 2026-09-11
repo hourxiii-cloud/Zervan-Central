@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "version": "vTemporal.42.1.1",
+  "version": "vTemporal.42.2.0",
   "release_line": "v42",
-  "implementation_identity": "v42.1.1 Complete",
+  "implementation_identity": "v42.2.0 Complete",
   "promotion_state": "CANONICAL",
   "canonical": true,
   "canonical_branch": "main",
-  "integration_base_commit": "a3a89bf8e75c128bd2f5f919e0d08ddd828fcf3c",
-  "previous_canonical_identity_commit": "6ac917656e73bdceaaeb94566b5f5eb158f08b4d",
+  "integration_base_commit": "02a8285671fb3b423cff888c4de1fb41575a3707",
+  "previous_canonical_identity_commit": "434a178a5fe48a00623d20d09bb5fe3e015ba15d",
   "sundial_candidate_commit": "4bb0fe2c6cf1297432c5ef34ededeabd79f9e3bf",
   "authority_contract": "VERSION_AUTHORITY.md",
   "authority_resolution": "DoctrineOps/AUTHORITY_RESOLUTION.md",
-  "canonical_entry": "canonical/ZERVAN_v42_1_1_CANONICAL_ENTRY.md",
-  "initiation_call": "call/INITIATION_STATEMENT_V42_1_1.md",
+  "canonical_entry": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
+  "initiation_call": "call/INITIATION_STATEMENT_V42_2_0.md",
   "sundial_doctrine": "canonical/sundial/SUNDIAL_DETACHED_RELATIONAL_OBSERVATION_V42_1_1.md",
-  "promotion_commit": "434a178a5fe48a00623d20d09bb5fe3e015ba15d",
+  "promotion_commit": null,
   "human_gate_decision": "APPROVE",
   "promotion_receipt_required": true,
   "inferred_versioning_allowed": false,
@@ -25,5 +25,19 @@
   "originating_data_mutation": "DISALLOWED",
   "external_runtime": "DISABLED",
   "external_action": "DISABLED",
-  "system_population": "DISALLOWED"
+  "system_population": "DISALLOWED",
+  "temporal_relational_trajectory": {
+    "status": "CANONICAL",
+    "qualification_lineage": [
+      "CR-1",
+      "CR-2R",
+      "CR-3"
+    ],
+    "composition_disposition": "PASS \u2014 COMPOSITION WITH EMERGENT OBJECT",
+    "emergent_object": "RELATIONAL STATE TRAJECTORY",
+    "delta_o_not_delta_q": true,
+    "precedence_not_causation": true,
+    "temporal_preservation_not_temporal_maneuver": true,
+    "historical_standing_distinct_from_current_historical_standing": true
+  }
 }
