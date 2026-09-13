@@ -158,3 +158,29 @@ Canonical locks include:
 - Authority NONE
 
 - Human Gate ACTIVE
+
+---
+
+# v42.4.0 canonical standing
+Active Version: **vTemporal.42.4.0**
+Implementation Identity: **v42.4.0 Complete**
+Canonical Branch: **main**
+Promotion State: **CANONICAL**
+Canonical: **TRUE**
+Control State: **CONTROLLED / CANONICAL / PROMOTED / ACTIVATED**
+Authority: **NONE**
+Human Gate: **ACTIVE**
+Canonical Parent: **vTemporal.42.2.0**
+Qualification Commit: `32cc85ec91a3d9f51aceb9c4e49d9fee03c6f1d0`
+
+Active initiation path:
+1. /VERSION
+2. /VERSION.json
+3. /VERSION_AUTHORITY.md
+4. /call/INITIATION_STATEMENT_V42_4_0.md
+5. /canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md
+
+Exact current canonical commit is always resolved from Git main at initiation.
+No file may infer or predeclare the resulting promotion commit.
+v42.4.0 canonically adds qualified Null-Space Thought / Object-Without-Manufacture.
+Authority remains NONE. Human Gate remains ACTIVE. No Compression Out remains ACTIVE.

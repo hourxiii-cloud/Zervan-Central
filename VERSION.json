@@ -1,19 +1,16 @@
 {
   "schema_version": "1.0",
-  "version": "vTemporal.42.2.0",
+  "version": "vTemporal.42.4.0",
   "release_line": "v42",
-  "implementation_identity": "v42.2.0 Complete",
+  "implementation_identity": "v42.4.0 Complete",
   "promotion_state": "CANONICAL",
   "canonical": true,
   "canonical_branch": "main",
-  "integration_base_commit": "02a8285671fb3b423cff888c4de1fb41575a3707",
-  "previous_canonical_identity_commit": "434a178a5fe48a00623d20d09bb5fe3e015ba15d",
-  "sundial_candidate_commit": "4bb0fe2c6cf1297432c5ef34ededeabd79f9e3bf",
+  "parent_canonical_identity": "vTemporal.42.2.0",
+  "qualification_commit": "32cc85ec91a3d9f51aceb9c4e49d9fee03c6f1d0",
   "authority_contract": "VERSION_AUTHORITY.md",
-  "authority_resolution": "DoctrineOps/AUTHORITY_RESOLUTION.md",
-  "canonical_entry": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
-  "initiation_call": "call/INITIATION_STATEMENT_V42_2_0.md",
-  "sundial_doctrine": "canonical/sundial/SUNDIAL_DETACHED_RELATIONAL_OBSERVATION_V42_1_1.md",
+  "canonical_entry": "canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md",
+  "initiation_call": "call/INITIATION_STATEMENT_V42_4_0.md",
   "promotion_commit": null,
   "human_gate_decision": "APPROVE",
   "promotion_receipt_required": true,
@@ -26,18 +23,22 @@
   "external_runtime": "DISABLED",
   "external_action": "DISABLED",
   "system_population": "DISALLOWED",
-  "temporal_relational_trajectory": {
+  "null_space_thought": {
     "status": "CANONICAL",
-    "qualification_lineage": [
-      "CR-1",
-      "CR-2R",
-      "CR-3"
+    "individual_validations": [
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08"
     ],
-    "composition_disposition": "PASS \u2014 COMPOSITION WITH EMERGENT OBJECT",
-    "emergent_object": "RELATIONAL STATE TRAJECTORY",
-    "delta_o_not_delta_q": true,
-    "precedence_not_causation": true,
-    "temporal_preservation_not_temporal_maneuver": true,
-    "historical_standing_distinct_from_current_historical_standing": true
+    "aggregate_validation": "PASS",
+    "qualification": "PASS",
+    "null_to_something_prohibited": true,
+    "thought_without_object_manufacture": true,
+    "closed_box_remains_closed": true
   }
 }
