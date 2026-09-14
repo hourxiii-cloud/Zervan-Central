@@ -1,10 +1,10 @@
 # ZERVAN vTemporal.42.5.0 — CANONICAL ENTRY
 
-Status: CANDIDATE PROMOTION SURFACE — DO NOT TREAT AS CANONICAL UNTIL HUMAN GATE PROMOTION
+Status: CANONICAL
 Version: vTemporal.42.5.0
 Implementation Identity: v42.5.0 Complete
 Canonical Parent: vTemporal.42.4.0
-Qualification Commit: `QUALIFICATION_COMMIT_RESOLVED_AT_PROMOTION`
+Qualification Commit: `c9a4618b7de751a52d8b84141f7eab8ec8152f79`
 Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE

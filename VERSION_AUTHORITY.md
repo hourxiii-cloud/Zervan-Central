@@ -184,3 +184,23 @@ Exact current canonical commit is always resolved from Git main at initiation.
 No file may infer or predeclare the resulting promotion commit.
 v42.4.0 canonically adds qualified Null-Space Thought / Object-Without-Manufacture.
 Authority remains NONE. Human Gate remains ACTIVE. No Compression Out remains ACTIVE.
+
+---
+
+# v42.5.0 canonical standing
+
+This section records the Human Gate-authorized v42.5.0 canonical standing.
+
+Target Version: vTemporal.42.5.0
+Implementation Identity: v42.5.0 Complete
+Canonical Parent: vTemporal.42.4.0
+Qualification Commit: `c9a4618b7de751a52d8b84141f7eab8ec8152f79`
+Authority: NONE
+Human Gate: ACTIVE
+No Compression Out: ACTIVE
+
+Promotion State: CANONICAL
+Canonical: TRUE
+Canonical Branch: main
+
+No file may predeclare the future promotion commit. Resolve the exact main commit after promotion and record it in a separate receipt.
