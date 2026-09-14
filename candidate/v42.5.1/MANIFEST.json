@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "target_version": "vTemporal.42.5.1",
+  "status": "CANDIDATE",
+  "canonical": false,
+  "promotion_state": "NONE",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "canonical_parent": "vTemporal.42.5.0",
+  "canonical_parent_commit": "de79c24aef044dc57f13a980c8ca0be25e14f4b6",
+  "source_objects": [
+    "candidate/v42.5.1/TEMPORAL_COMPUTE_AVAILABILITY_FROZEN_SOURCE.md",
+    "candidate/v42.5.1/ANALYTICAL_QUALITY_INVARIANT_COMPUTE_SUFFICIENCY_BOUNDARY.md"
+  ],
+  "change_request": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+  "candidate_implementation": "candidate/v42.5.1/TEMPORAL_COMPUTE_CANONICAL_IMPLEMENTATION.md",
+  "validation_plan": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
+  "validation": "NOT PERFORMED",
+  "qualification": "NOT ESTABLISHED",
+  "canonical_promotion": "NOT ESTABLISHED"
+}
