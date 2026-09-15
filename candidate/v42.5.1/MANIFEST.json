@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "target_version": "vTemporal.42.5.1",
-  "status": "QUALIFIED",
-  "canonical": false,
-  "promotion_state": "APPROVED",
+  "status": "PROMOTION APPROVED",
+  "canonical": true,
+  "promotion_state": "CANONICAL",
   "authority": "NONE",
   "human_gate": "ACTIVE",
   "no_compression_out": "ACTIVE",
@@ -21,7 +21,7 @@
   "validation_plan": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
   "validation": "PASS",
   "qualification": "PASS",
-  "canonical_promotion": "AUTHORIZED",
+  "canonical_promotion": "APPROVED",
   "development_register": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
   "source_packages": [
     "Zervan_v42.5.1_Transfer_Package.zip",

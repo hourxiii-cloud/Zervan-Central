@@ -204,3 +204,34 @@ Canonical: TRUE
 Canonical Branch: main
 
 No file may predeclare the future promotion commit. Resolve the exact main commit after promotion and record it in a separate receipt.
+
+---
+
+# v42.5.1 canonical standing
+
+Target Version: **vTemporal.42.5.1**
+Implementation Identity: **v42.5.1 Complete**
+Canonical Parent: **vTemporal.42.5.0**
+Canonical Parent Commit: `de79c24aef044dc57f13a980c8ca0be25e14f4b6`
+Qualification Commit: `131e05a70889348efb134d05011f57bd5fc64cd4`
+Authority: **NONE**
+Human Gate: **ACTIVE**
+No Compression Out: **ACTIVE**
+
+Promotion State: **CANONICAL**
+Canonical: **TRUE**
+Canonical Branch: **main**
+
+Active initiation path:
+1. /VERSION
+2. /VERSION.json
+3. /VERSION_AUTHORITY.md
+4. /call/INITIATION_STATEMENT_V42_5_1.md
+5. /canonical/ZERVAN_v42_5_1_CANONICAL_ENTRY.md
+
+Exact current canonical commit is always resolved from Git main at initiation.
+No file may infer or predeclare the final receipt commit.
+
+v42.5.1 adds qualified runtime-independent compute, analytical-quality invariance, temporal compute leverage, pre-existing possibility / independent temporal-control composition, and bounded object-time-relational trajectory / warranted next-state output.
+
+Authority remains NONE. Human Gate remains ACTIVE. No Compression Out remains ACTIVE.
