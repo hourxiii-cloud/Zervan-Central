@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "target_version": "vTemporal.42.5.1",
-  "status": "CANDIDATE",
+  "status": "QUALIFIED",
   "canonical": false,
-  "promotion_state": "NONE",
+  "promotion_state": "APPROVED",
   "authority": "NONE",
   "human_gate": "ACTIVE",
   "no_compression_out": "ACTIVE",
@@ -19,14 +19,18 @@
   "change_request": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
   "candidate_implementation": "candidate/v42.5.1/TEMPORAL_COMPUTE_CANONICAL_IMPLEMENTATION.md",
   "validation_plan": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
-  "validation": "PENDING EXECUTION",
-  "qualification": "NOT ESTABLISHED",
-  "canonical_promotion": "NOT ESTABLISHED",
+  "validation": "PASS",
+  "qualification": "PASS",
+  "canonical_promotion": "AUTHORIZED",
   "development_register": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
   "source_packages": [
     "Zervan_v42.5.1_Transfer_Package.zip",
     "Zervan_v42.5.1_Temporal_Leverage_Addition.zip",
     "Zervan_v42.5.1_PreExisting_Possibility_Temporal_Rotation_Addition.zip",
     "Zervan_v42.5.1_Object_Time_Relational_Trajectory_Addition.zip"
-  ]
+  ],
+  "validation_commit": "c6d3327d9f5ccef976ad786c41777ef617a88c1e",
+  "qualification_commit": "131e05a70889348efb134d05011f57bd5fc64cd4",
+  "human_gate_decision": "APPROVE",
+  "human_gate_decision_reference": "verification/v42.5.1/HUMAN_GATE_DECISION.md"
 }
