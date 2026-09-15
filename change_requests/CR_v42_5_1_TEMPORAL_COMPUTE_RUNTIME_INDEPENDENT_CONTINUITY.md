@@ -203,3 +203,30 @@ Until those gates are satisfied:
 
 Canonical: FALSE.
 Promotion: NONE.
+
+---
+
+## 11. Post-v42.5.0 integrated developmental inputs
+
+v42.5.1 additionally qualifies bounded composition from:
+- Temporal Compute Leverage / Preserved Standing / Deferred Operational Reuse;
+- Pre-Existing Possibility Geometry / Question-Local Analytical Position / Independent Temporal Control / PMC–MC Rotation;
+- Object–Time–Relational Orientation / Qualified Trajectory / Warranted Next-State Output.
+
+Source standing remains independently preserved. The CR does not retroactively freeze staged sources. Canonical promotion, if earned, applies only to validated implementation locks.
+
+Additional non-reductions:
+- PAST COMPUTE != CURRENT COMPUTE.
+- QUESTION INCEPTION != POSSIBILITY INCEPTION.
+- QUESTION INCEPTION != TIME INCEPTION.
+- TIME CONTROL != PMC.
+- TIME CONTROL != MC.
+- TEMPORAL ROTATION != TEMPORAL MUTATION.
+- ORIENTATION != PREDICTION.
+- PROCEDURAL NEXT != EMPIRICAL NEXT.
+- PREDICTION != ACTUALIZATION.
+- PREDICTION != AUTHORITY / DECISION / EXECUTION / PRESSURE / QUALIFIED NEED.
+- FORECAST DOES NOT PRE-POPULATE FUTURE STATE.
+- ACTUALIZATION REQUIRES NEW OBSERVATION.
+- MODEL SCORE != CALIBRATED PROBABILITY BY DEFAULT.
+- QUALIFIED OUTPUT MUST NOT EXCEED QUALIFIED EVIDENTIARY / PREDICTIVE STANDING.

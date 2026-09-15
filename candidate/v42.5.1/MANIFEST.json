@@ -11,12 +11,22 @@
   "canonical_parent_commit": "de79c24aef044dc57f13a980c8ca0be25e14f4b6",
   "source_objects": [
     "candidate/v42.5.1/TEMPORAL_COMPUTE_AVAILABILITY_FROZEN_SOURCE.md",
-    "candidate/v42.5.1/ANALYTICAL_QUALITY_INVARIANT_COMPUTE_SUFFICIENCY_BOUNDARY.md"
+    "candidate/v42.5.1/ANALYTICAL_QUALITY_INVARIANT_COMPUTE_SUFFICIENCY_BOUNDARY.md",
+    "candidate/v42.5.1/TEMPORAL_COMPUTE_LEVERAGE_PRESERVED_STANDING_DEFERRED_OPERATIONAL_REUSE.md",
+    "candidate/v42.5.1/PRE_EXISTING_POSSIBILITY_GEOMETRY_QUESTION_LOCAL_POSITION_INDEPENDENT_TEMPORAL_CONTROL_PMC_MC_ROTATION.md",
+    "candidate/v42.5.1/OBJECT_TIME_RELATIONAL_ORIENTATION_QUALIFIED_TRAJECTORY_WARRANTED_NEXT_STATE_OUTPUT.md"
   ],
   "change_request": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
   "candidate_implementation": "candidate/v42.5.1/TEMPORAL_COMPUTE_CANONICAL_IMPLEMENTATION.md",
   "validation_plan": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
-  "validation": "NOT PERFORMED",
+  "validation": "PENDING EXECUTION",
   "qualification": "NOT ESTABLISHED",
-  "canonical_promotion": "NOT ESTABLISHED"
+  "canonical_promotion": "NOT ESTABLISHED",
+  "development_register": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+  "source_packages": [
+    "Zervan_v42.5.1_Transfer_Package.zip",
+    "Zervan_v42.5.1_Temporal_Leverage_Addition.zip",
+    "Zervan_v42.5.1_PreExisting_Possibility_Temporal_Rotation_Addition.zip",
+    "Zervan_v42.5.1_Object_Time_Relational_Trajectory_Addition.zip"
+  ]
 }
