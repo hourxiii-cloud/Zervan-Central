@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zervan://schemas/question/box_question_return_v42_5_2.schema.json",
+  "title": "v42.5.2 candidate Box question return",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "operation_id", "governed_object_id", "root_box_id", "original_question", "question_scope", "representations", "collapse", "return", "authority_state", "human_gate_state"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "operation_id": {"type": "string", "minLength": 1},
+    "governed_object_id": {"type": "string", "minLength": 1},
+    "root_box_id": {"type": "string", "minLength": 1},
+    "original_question": {"type": "string", "minLength": 1},
+    "question_scope": {"enum": ["LOCAL", "GLOBAL", "MIXED", "OTHER"]},
+    "representations": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "root_box_id", "governed_object_id", "question", "possibility_state", "observation_refs"], "properties": {"id": {"type": "string", "minLength": 1}, "root_box_id": {"type": "string", "minLength": 1}, "governed_object_id": {"type": "string", "minLength": 1}, "question": {"type": "string", "minLength": 1}, "possibility_state": {"enum": ["AVAILABLE_UNACTUALIZED", "OBSERVED", "UNRESOLVED"]}, "observation_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}}}},
+    "collapse": {"type": "object", "additionalProperties": false, "required": ["disposition", "standing_refs", "unresolved_scope", "retained_possibilities", "paradox_trigger"], "properties": {"disposition": {"enum": ["ANSWER", "BOUNDED_ALTERNATIVES", "CONTRADICTION", "UNRESOLVED", "INSUFFICIENT_EVIDENCE", "MALFORMED_CONDITION", "PARTIAL_RESOLUTION"]}, "standing_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}, "unresolved_scope": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}, "retained_possibilities": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}, "paradox_trigger": {"type": "boolean"}}},
+    "return": {"type": "object", "additionalProperties": false, "required": ["question", "result", "answer_scope", "root_box_id", "governed_object_id", "identity_receipt", "traversal_receipts", "opened", "observed", "qualified"], "properties": {"question": {"type": "string", "minLength": 1}, "result": {"type": "string"}, "answer_scope": {"enum": ["LOCAL", "GLOBAL", "MIXED", "NONE", "OTHER"]}, "root_box_id": {"type": "string", "minLength": 1}, "governed_object_id": {"type": "string", "minLength": 1}, "identity_receipt": {"type": "object", "additionalProperties": false, "required": ["question", "root_box_id", "governed_object_id"], "properties": {"question": {"type": "string", "minLength": 1}, "root_box_id": {"type": "string", "minLength": 1}, "governed_object_id": {"type": "string", "minLength": 1}}}, "traversal_receipts": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["representation_id", "evidence_refs"], "properties": {"representation_id": {"type": "string", "minLength": 1}, "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}}}}, "opened": {"type": "boolean"}, "observed": {"type": "boolean"}, "qualified": {"type": "boolean"}}},
+    "authority_state": {"const": "NONE"},
+    "human_gate_state": {"const": "ACTIVE"}
+  }
+}
