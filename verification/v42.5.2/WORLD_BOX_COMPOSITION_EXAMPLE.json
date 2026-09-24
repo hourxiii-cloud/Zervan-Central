@@ -1,0 +1,136 @@
+{
+  "box_question_return": {
+    "schema_version": "1.0",
+    "operation_id": "op:world",
+    "governed_object_id": "object:inquiry",
+    "root_box_id": "box:question",
+    "original_question": "Could presently observed Reality be another availability relative to a containing Zervan test?",
+    "question_scope": "OTHER",
+    "representations": [],
+    "collapse": {
+      "disposition": "UNRESOLVED",
+      "standing_refs": [],
+      "unresolved_scope": [
+        "Containing relation not established"
+      ],
+      "retained_possibilities": [],
+      "paradox_trigger": false
+    },
+    "authority_state": "NONE",
+    "human_gate_state": "ACTIVE",
+    "return": {
+      "question": "Could presently observed Reality be another availability relative to a containing Zervan test?",
+      "result": "Representable; not observed; not established.",
+      "answer_scope": "NONE",
+      "root_box_id": "box:question",
+      "governed_object_id": "object:inquiry",
+      "identity_receipt": {
+        "question": "Could presently observed Reality be another availability relative to a containing Zervan test?",
+        "root_box_id": "box:question",
+        "governed_object_id": "object:inquiry"
+      },
+      "traversal_receipts": [],
+      "opened": true,
+      "observed": true,
+      "qualified": false
+    }
+  },
+  "world_development": {
+    "format": "WORLD_BOX_CANDIDATE_1",
+    "origin": {
+      "operation_id": "op:world",
+      "governed_object_id": "object:inquiry",
+      "root_box_id": "box:question",
+      "question": "Could presently observed Reality be another availability relative to a containing Zervan test?",
+      "world_ref": "world:referent"
+    },
+    "profile": {
+      "null_space": "Null Space is the consideration of unavailability.",
+      "possibility": "The condition of possibility creates pre-existing Boxes as superposition.",
+      "box_condition": "The condition of The Box, itself, collapses into REALITY and is simply OBSERVED.",
+      "mechanism": "UNRESOLVED",
+      "world_reality_identity": "UNRESOLVED",
+      "authority": "NONE",
+      "human_gate": "ACTIVE"
+    },
+    "unresolved": [
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U05",
+      "U06",
+      "U07",
+      "U08",
+      "U09",
+      "U10",
+      "U11",
+      "U12",
+      "U13",
+      "U14",
+      "U15",
+      "U16",
+      "U17",
+      "U18",
+      "U19",
+      "U20",
+      "U21",
+      "U22",
+      "U23",
+      "U24"
+    ],
+    "receipts": [
+      {
+        "id": "contribution",
+        "role": "CONTRIBUTION",
+        "detail": "Synthetic fixture; CONTRIBUTION",
+        "ceiling": null
+      },
+      {
+        "id": "frame",
+        "role": "FRAME",
+        "detail": "Synthetic fixture; FRAME",
+        "ceiling": null
+      },
+      {
+        "id": "function",
+        "role": "FUNCTION",
+        "detail": "Synthetic fixture; FUNCTION",
+        "ceiling": null
+      },
+      {
+        "id": "need",
+        "role": "NEED",
+        "detail": "Synthetic fixture; NEED",
+        "ceiling": null
+      },
+      {
+        "id": "qualification",
+        "role": "QUALIFICATION",
+        "detail": "Synthetic fixture; QUALIFICATION",
+        "ceiling": "SUPPORTED"
+      },
+      {
+        "id": "source",
+        "role": "SOURCE",
+        "detail": "Synthetic fixture; SOURCE",
+        "ceiling": null
+      }
+    ],
+    "events": [
+      {
+        "id": "r1",
+        "type": "REPRESENT",
+        "contribution_ref": "contribution",
+        "surface": "BOX",
+        "referent_id": "box:question",
+        "content": "Representable; not observed; not established.",
+        "frame_refs": [
+          "frame"
+        ],
+        "need_ref": "need",
+        "parents": []
+      }
+    ]
+  }
+}

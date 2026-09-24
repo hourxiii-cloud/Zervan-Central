@@ -1,0 +1,12 @@
+{
+  "source_file": "change_requests/CR_WORLD_REPRESENTATIONAL_MULTIPLICITY_BOX_SUPERPOSITION_REALITY_OBSERVATION.md",
+  "sha256": "314ed4c7d9c33e13543b29da261c0d52bb7f49985a1598b21752e5dd3191899f",
+  "sections": 50,
+  "unresolved_questions": 24,
+  "source_transcription": "Full supplied text; line separators/list indentation/section whitespace normalized; not chat transport byte identity",
+  "baseline_commit": "65df9336f869e5f0c82ded5e50c8c7dca9f7f2d5",
+  "target_branch": "development/v42.5.2",
+  "target_release": "vTemporal.42.5.2",
+  "source_canonical": false,
+  "implementation_canonical": false
+}

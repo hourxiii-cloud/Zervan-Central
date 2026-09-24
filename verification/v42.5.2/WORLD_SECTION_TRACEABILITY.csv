@@ -1,0 +1,51 @@
+section,title,disposition,implementation_or_preservation,remaining_work
+1,PURPOSE,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+2,DEVELOPMENTAL PROBLEM,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+3,ORIGINATING PRIMITIVE,PARTIAL_EXECUTABLE_CONTROL,recover_question; validate(previous),Semantic and aggregate qualification remain required
+4,NULL SPACE,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+5,THE BOX,PARTIAL_EXECUTABLE_CONTROL,origin/event separation,Semantic and aggregate qualification remain required
+6,CONDITION OF POSSIBILITY,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+7,BOX SUPERPOSITION,PARTIAL_EXECUTABLE_CONTROL,referent binding; separate surfaces,Semantic and aggregate qualification remain required
+8,CONDITION OF THE BOX,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+9,REALITY,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+10,OBSERVATION,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+11,WORLD,PARTIAL_EXECUTABLE_CONTROL,WORLD referent binding,Semantic and aggregate qualification remain required
+12,REPRESENTATIONAL MULTIPLICITY,PARTIAL_EXECUTABLE_CONTROL,plural REPRESENT events,Semantic and aggregate qualification remain required
+13,REPRESENTATIONAL NECESSITY,PARTIAL_EXECUTABLE_CONTROL,NEED receipt linkage,Semantic and aggregate qualification remain required
+14,TEMPORAL BOUNDARY,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+15,EXTERNAL FUNCTION,PARTIAL_EXECUTABLE_CONTROL,apply_function,Semantic and aggregate qualification remain required
+16,RECIPROCAL EXTERNAL-FUNCTION BOUNDARY,PARTIAL_EXECUTABLE_CONTROL,apply_function,Semantic and aggregate qualification remain required
+17,FAILURE DISCOVERED BY THE BOX,PARTIAL_EXECUTABLE_CONTROL,origin/event separation; previous comparison,Semantic and aggregate qualification remain required
+18,EXPANSIVE ANALYTICAL YIELD,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+19,BOUNDED ORIGIN / OPEN REPRESENTATIONAL CAPACITY,PARTIAL_EXECUTABLE_CONTROL,origin immutable through event API,Semantic and aggregate qualification remain required
+20,RECURSIVE AVAILABILITY QUESTION,PARTIAL_EXECUTABLE_CONTROL,recursive Question fixture,Semantic and aggregate qualification remain required
+21,RECURSIVE REPRESENTABILITY,PARTIAL_EXECUTABLE_CONTROL,default UNRESOLVED; no container operation,Semantic and aggregate qualification remain required
+22,RECURSION DOES NOT REQUIRE REGRESS,PARTIAL_EXECUTABLE_CONTROL,finite caller-supplied events; no recursion launcher,Semantic and aggregate qualification remain required
+23,REPRESENTABILITY / ACTUALITY BOUNDARY,PARTIAL_EXECUTABLE_CONTROL,QUALIFY receipt linkage/ceiling,Semantic and aggregate qualification remain required
+24,DISCRIMINATING EVIDENCE,PARTIAL_EXECUTABLE_CONTROL,discriminating observation linkage (semantic assessment external),Semantic and aggregate qualification remain required
+25,CURRENT REALITY REMAINS INTACT,PARTIAL_EXECUTABLE_CONTROL,append-only observations,Semantic and aggregate qualification remain required
+26,NO META-LEVEL PRIVILEGE,PARTIAL_EXECUTABLE_CONTROL,profile Authority NONE,Semantic and aggregate qualification remain required
+27,HISTORICAL STANDING,PARTIAL_EXECUTABLE_CONTROL,replay; validate(previous),Semantic and aggregate qualification remain required
+28,UNKNOWN STANDING,PARTIAL_EXECUTABLE_CONTROL,QUALIFY updates retained history,Semantic and aggregate qualification remain required
+29,QUALIFICATION BOUNDARY,PARTIAL_EXECUTABLE_CONTROL,record validation only; no truth state,Semantic and aggregate qualification remain required
+30,WORLD / BOX / REALITY SEPARATION,PARTIAL_EXECUTABLE_CONTROL,WORLD/BOX namespaces; identity unresolved,Semantic and aggregate qualification remain required
+31,CURRENT GEOMETRY,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+32,RECURSIVE GEOMETRY,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+33,IMPLEMENTATION REQUIREMENT — PRIMITIVE OBJECT RECOVERY,PARTIAL_EXECUTABLE_CONTROL,recover_question,Semantic and aggregate qualification remain required
+34,IMPLEMENTATION REQUIREMENT — REPRESENTATION IDENTITY,PARTIAL_EXECUTABLE_CONTROL,REPRESENT provenance; unique ids,Semantic and aggregate qualification remain required
+35,IMPLEMENTATION REQUIREMENT — EXTERNAL FUNCTION BOUNDARY,PARTIAL_EXECUTABLE_CONTROL,apply_function on detached copy,Semantic and aggregate qualification remain required
+36,IMPLEMENTATION REQUIREMENT — EVIDENCE CEILING,PARTIAL_EXECUTABLE_CONTROL,QUALIFY ceiling and observation references,Semantic and aggregate qualification remain required
+37,IMPLEMENTATION REQUIREMENT — NON-ENUMERATION,PARTIAL_EXECUTABLE_CONTROL,zero representations accepted,Semantic and aggregate qualification remain required
+38,IMPLEMENTATION REQUIREMENT — ECONOMY OF REPRESENTATION,PARTIAL_EXECUTABLE_CONTROL,NEED receipt linkage,Semantic and aggregate qualification remain required
+39,IMPLEMENTATION REQUIREMENT — NO MECHANISM MANUFACTURE,PARTIAL_EXECUTABLE_CONTROL,no collapse operation; mechanism UNRESOLVED,Semantic and aggregate qualification remain required
+40,IMPLEMENTATION REQUIREMENT — RECURSIVE SAFETY,PARTIAL_EXECUTABLE_CONTROL,same qualification controls for recursive Question,Semantic and aggregate qualification remain required
+41,IMPLEMENTATION REQUIREMENT — HISTORICAL RETRAVERSABILITY,PARTIAL_EXECUTABLE_CONTROL,ordered events; receipt roles; previous comparison,Semantic and aggregate qualification remain required
+42,FAILURE CONDITIONS,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+43,REQUIRED RECIPROCAL DEFENSES,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+44,PRESERVED DISTINCTIONS,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+45,UNRESOLVED SURFACE,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+46,CURRENT FULL DEVELOPMENTAL OBJECT,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+47,DEVELOPMENTAL CONSEQUENCE,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+48,IMPLEMENTATION INTENT,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+49,SUCCESS CONDITION,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
+50,CR STANDING,PRESERVED_SOURCE,Full source section retained; contract boundaries and unresolved register apply,Semantic and aggregate qualification remain required
