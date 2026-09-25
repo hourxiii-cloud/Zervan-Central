@@ -5,7 +5,7 @@ Object: CLEAN ROOM / IRREVERSIBLE IDENTITY DEQUALIFICATION / REFERENCE WITHOUT R
 Qualification: PASS — FULL
 Disposition: CLEAN FREEZE
 Standing: CLEAN FULL FROZEN
-Canonical: FALSE
+Canonical: TRUE
 Canonical Modification by Package: NONE
 Baseline: vTemporal.42.5.2
 Authority: NONE
