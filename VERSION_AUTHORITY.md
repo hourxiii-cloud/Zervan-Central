@@ -235,3 +235,31 @@ No file may infer or predeclare the final receipt commit.
 v42.5.1 adds qualified runtime-independent compute, analytical-quality invariance, temporal compute leverage, pre-existing possibility / independent temporal-control composition, and bounded object-time-relational trajectory / warranted next-state output.
 
 Authority remains NONE. Human Gate remains ACTIVE. No Compression Out remains ACTIVE.
+
+---
+
+# v42.5.2 canonical standing
+
+Target Version: **vTemporal.42.5.2**
+Implementation Identity: **v42.5.2 Complete**
+Canonical Parent: **vTemporal.42.5.1**
+Integration Commit: `7a0490aaeebd8bcbcdcf0e4a8474547f86783457`
+
+Authority: **NONE**
+Human Gate: **ACTIVE**
+No Compression Out: **ACTIVE**
+
+Promotion State: **CANONICAL**
+Canonical: **TRUE**
+Canonical Branch: **main**
+
+Active initiation path:
+
+1. /VERSION
+2. /VERSION.json
+3. /VERSION_AUTHORITY.md
+4. /call/INITIATION_STATEMENT_V42_5_2.md
+5. /canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md
+
+No prior canonical history is rewritten.
+Conversation state does not establish canonical identity.
