@@ -1,6 +1,6 @@
 # CLEAN FULL FREEZE — HISTORICAL RETRIEVAL / RETURN BOUNDARY
 Status: CLEAN FULL FROZEN
-Canonical: FALSE
+Canonical: TRUE
 Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE

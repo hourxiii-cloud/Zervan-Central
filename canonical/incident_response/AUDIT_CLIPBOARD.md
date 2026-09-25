@@ -2,7 +2,7 @@
 Status: CLEAN FULL FROZEN
 Qualification: PASS — FULL
 Hostile Composition: PASS
-Canonical: FALSE
+Canonical: TRUE
 Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE

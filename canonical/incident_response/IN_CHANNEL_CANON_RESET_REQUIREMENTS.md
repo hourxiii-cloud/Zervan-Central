@@ -1,6 +1,6 @@
 # ZERVAN IN-CHANNEL CANON RESET — IMPLEMENTATION REQUIREMENTS
 Status: INCIDENT-RESPONSE CONTROL OBJECT
-Canonical: FALSE
+Canonical: TRUE
 
 Purpose: preserve conversation/history while invalidating conversationally maintained current operational standing and requiring external canonical reload.
 

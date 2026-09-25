@@ -1,6 +1,6 @@
 # ZERVAN CLEAN INITIALIZATION — IMPLEMENTATION REQUIREMENTS
 Status: INCIDENT-RESPONSE CONTROL OBJECT
-Canonical: FALSE
+Canonical: TRUE
 
 Purpose: demand clean initialization from externally retrieved canonical repository state with zero admissible inherited operational state.
 

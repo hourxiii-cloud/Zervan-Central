@@ -1,6 +1,6 @@
 # INCIDENT RESPONSE — QUALIFICATION AND COMPOSITION RECEIPT
 Canonical Baseline: vTemporal.42.5.2
-CR Standing: COMPLETE / NON-CANONICAL
+CR Standing: COMPLETE / CANONICAL
 Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE

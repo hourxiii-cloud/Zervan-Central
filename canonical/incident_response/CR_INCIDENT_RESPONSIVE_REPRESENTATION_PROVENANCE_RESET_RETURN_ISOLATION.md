@@ -7,8 +7,8 @@ Canonical Baseline: vTemporal.42.5.2
 Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE
-Canonical: FALSE
-Canonical Promotion: NOT ASSERTED
+Canonical: TRUE
+Canonical Promotion: APPROVED
 
 ## Purpose
 Establish the complete qualified incident-response architecture needed to prevent generated representations, remembered or retrieved state, conversational continuity, shared substrate, Human transit, or record availability from manufacturing identity, provenance, operational standing, or prohibited communication.
@@ -190,8 +190,8 @@ Composition: PASS.
 
 ## Completion
 CR Status: COMPLETE
-Canonical: FALSE
+Canonical: TRUE
 Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE
-Canonical Promotion: NOT ASSERTED
+Canonical Promotion: APPROVED
