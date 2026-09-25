@@ -1,8 +1,8 @@
 # CLEAN FULL FREEZE — RELATIONAL FLOW / PRESSURE / VORTEX / CROSS-SCALE GEOMETRY
 
 **Standing:** CLEAN FULL FROZEN
-**Canonical:** FALSE
-**Promotion:** PENDING HUMAN GATE
+**Canonical:** TRUE
+**Promotion:** CANONICAL
 **Authority:** NONE
 **Human Gate:** ACTIVE
 **No Compression Out:** ACTIVE
