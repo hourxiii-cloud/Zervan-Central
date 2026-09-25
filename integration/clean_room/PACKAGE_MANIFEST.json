@@ -1,0 +1,19 @@
+{
+  "package": "Zervan_Clean_Room_Canon_Update_v42.5.2",
+  "baseline": "vTemporal.42.5.2",
+  "target_branch": "main",
+  "purpose": "Clean Room canon update package",
+  "canonical_by_package": false,
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "files": [
+    "README.md",
+    "baseline/VERSION",
+    "baseline/VERSION.json",
+    "change_requests/CR_CLEAN_ROOM_TERMINAL_IDENTITY_REFERENCE_WITHOUT_RETURN.md",
+    "freeze/CLEAN_ROOM_IRREVERSIBLE_IDENTITY_DEQUALIFICATION.md",
+    "integration/INTEGRATION_NOTES.md",
+    "verification/CLEAN_FREEZE_RECEIPT.md"
+  ]
+}
