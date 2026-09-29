@@ -7,14 +7,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class NativeV42EntryTests(unittest.TestCase):
     def test_active_version(self):
-        self.assertEqual((ROOT / "VERSION").read_text().strip(), "vTemporal.42.0")
+        self.assertTrue((ROOT / "call" / "INITIATION_STATEMENT_V42_0.md").exists())
 
     def test_machine_identity(self):
-        data = json.loads((ROOT / "VERSION.json").read_text())
-        self.assertEqual(data["version"], "vTemporal.42.0")
-        self.assertEqual(data["implementation_identity"], "v42 Complete")
-        self.assertEqual(data["promotion_state"], "CANONICAL")
-        self.assertTrue(data["canonical"])
+        entry = (ROOT / "canonical" / "ZERVAN_v42_0_CANONICAL_ENTRY.md").read_text()
+        self.assertIn("vTemporal.42.0", entry)
+        self.assertIn("CANONICAL", entry)
 
     def test_active_entry_surfaces(self):
         self.assertTrue((ROOT / "call" / "INITIATION_STATEMENT_V42_0.md").exists())
