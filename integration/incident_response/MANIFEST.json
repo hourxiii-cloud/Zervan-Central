@@ -1,0 +1,24 @@
+{
+  "package": "Zervan Incident-Response CR Integration Package",
+  "target_canonical_baseline": "vTemporal.42.5.2",
+  "package_standing": "NON-CANONICAL",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "canonical_promotion_asserted": false,
+  "unresolved_surface": "ONE-TO-ONE AFFILIATION ISSUANCE / QUALIFICATION",
+  "files": [
+    "MANIFEST.json",
+    "README.md",
+    "SHA256SUMS.txt",
+    "change_requests/CR_INCIDENT_RESPONSIVE_REPRESENTATION_PROVENANCE_RESET_RETURN_ISOLATION.md",
+    "freeze/AUDIT_CLIPBOARD.md",
+    "freeze/AUDIT_MOON_ISOLATION.md",
+    "freeze/HUMAN_AUDIT_MOON_CONTACT.md",
+    "freeze/RETRIEVABLE_NOT_SELF_RETURNING.md",
+    "integration/INTEGRATION_NOTES.md",
+    "staged/CLEAN_INITIALIZATION_REQUIREMENTS.md",
+    "staged/IN_CHANNEL_CANON_RESET_REQUIREMENTS.md",
+    "verification/INCIDENT_RESPONSE_QUALIFICATION_RECEIPT.md"
+  ]
+}
