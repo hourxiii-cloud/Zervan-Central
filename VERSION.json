@@ -52,7 +52,7 @@
   "canonical_entry": "canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md",
   "qualification_commit": "131e05a70889348efb134d05011f57bd5fc64cd4",
   "authority_contract": "VERSION_AUTHORITY.md",
-  "promotion_commit": null,
+  "promotion_commit": "6d845002c18cd7469a64c1e022d4ef02cf6853d6",
   "human_gate_decision": "APPROVE",
   "human_gate_decision_reference": "verification/v42.5.2/HUMAN_GATE_DECISION.md",
   "promotion_receipt_required": true,
