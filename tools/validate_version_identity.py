@@ -33,7 +33,8 @@ ACTIVE_VERSION_DECLARATION_SURFACES = {
 
 def classify(token, native_version):
     normalized = token.replace("_", ".")
-    if normalized == native_version:
+    short_native_version = "v" + native_version.removeprefix("vTemporal.")
+    if normalized in {native_version, short_native_version}:
         return "CURRENT_NATIVE_VERSION"
     if normalized.startswith("v41.1"):
         return "CANDIDATE_BRIDGE_HISTORY"
@@ -43,7 +44,7 @@ def classify(token, native_version):
         return "HISTORICAL_V40"
     if normalized == "v41" or normalized.startswith("v41.0") or normalized.startswith("vTemporal.41"):
         return "HISTORICAL_V41"
-    if normalized == "v42" or normalized.startswith("v42.0") or normalized.startswith("vTemporal.42"):
+    if normalized == "v42" or normalized.startswith("v42.") or normalized.startswith("vTemporal.42"):
         return "CURRENT_V42_FAMILY"
     return "REVIEW_REQUIRED"
 

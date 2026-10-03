@@ -31,8 +31,9 @@ SCAN_EXCLUDE = {
 
 def classify(token):
     normalized = token.replace("_", ".")
+    short_native_version = "v" + VERSION.removeprefix("vTemporal.")
 
-    if normalized == VERSION:
+    if normalized in {VERSION, short_native_version}:
         return "CURRENT_NATIVE_VERSION"
     if normalized.startswith("v41.1"):
         return "CANDIDATE_BRIDGE_HISTORY"
@@ -42,7 +43,7 @@ def classify(token):
         return "HISTORICAL_V40"
     if normalized == "v41" or normalized.startswith("v41.0") or normalized.startswith("vTemporal.41"):
         return "HISTORICAL_V41"
-    if normalized == "v42" or normalized.startswith("v42.0") or normalized.startswith("vTemporal.42"):
+    if normalized == "v42" or normalized.startswith("v42.") or normalized.startswith("vTemporal.42"):
         return "CURRENT_V42_FAMILY"
 
     return "REVIEW_REQUIRED"
