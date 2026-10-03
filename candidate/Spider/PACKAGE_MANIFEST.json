@@ -1,0 +1,46 @@
+{
+  "object": "SPIDER-R1",
+  "standing": "CLEAN FULL FROZEN \u2014 DEVELOPMENTAL SPECIFICATION",
+  "canonical": false,
+  "promotion": "NONE",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "REQUIRED / ACTIVE",
+  "semantic_rules_unchanged_from_stage": true,
+  "initializer_sha256": "1dc3e4c3d578211ba6dac52d9bb950f18f2153c921572f3ed1ab33a7e07f723f",
+  "payloads": [
+    {
+      "path": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "size_bytes": 76034,
+      "sha256": "41c238b63ca91a01b9d526fe55ac45617dbc172c8e17e1def35923ef696c0ac0"
+    },
+    {
+      "path": "candidate/Spider/FREEZE_RECEIPT.md",
+      "size_bytes": 7249,
+      "sha256": "0148493c0a3ab53ccd359715509b948fad6062363155e0c44808e28a93a2272b"
+    },
+    {
+      "path": "candidate/Spider/ONE_RUN_SPIDER_INITIALIZATION_R1.txt",
+      "size_bytes": 7205,
+      "sha256": "1dc3e4c3d578211ba6dac52d9bb950f18f2153c921572f3ed1ab33a7e07f723f"
+    },
+    {
+      "path": "candidate/Spider/README.md",
+      "size_bytes": 1126,
+      "sha256": "2f2b0bd3c7c388d4d05ea28dbffafb8aa16f1e3e79ca44628f5b931c35ab7300"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "size_bytes": 40524,
+      "sha256": "4a67b12ba129b12429ca7d4961a1c96cd2ff89e63720ce0ed58e2b6162b1e507"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_R1_FULL_CORRECTED_STAGED.md",
+      "size_bytes": 71106,
+      "sha256": "6efafed64d57267771fb66a702b22ae7f15a78bd6cf01f686ddf650535c5cefe"
+    }
+  ],
+  "manifest_scope": "payloads only; excludes manifest itself",
+  "git_mutation": "NONE",
+  "runtime_validation": "NOT PERFORMED"
+}

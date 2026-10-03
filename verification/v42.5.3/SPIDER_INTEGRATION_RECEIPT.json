@@ -1,0 +1,61 @@
+{
+  "release": "vTemporal.42.5.3",
+  "parent_release": "vTemporal.42.5.2",
+  "parent_repository_commit": "59b73853420fcfaaf4706cf3721513197c2432c4",
+  "timestamp_utc": "2026-10-03T20:02:19.847550+00:00",
+  "user_direction": "Integrate Spider into canon; v42.5.3 proposed; user: Go go go",
+  "human_gate_decision": "APPROVE",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "checks": {
+    "uploaded_package_identity": "PASS",
+    "package_payload_hashes": "PASS",
+    "installed_candidate_matches_package": "PASS",
+    "canonical_specification_matches_frozen_source": "PASS",
+    "canonical_initializer_matches_frozen_source": "PASS",
+    "new_load_paths_exist": "PASS",
+    "parent_entry_and_call_unchanged": "PASS",
+    "old_release_validation_not_claimed_for_new_release": "PASS"
+  },
+  "runtime_validation": "NOT PERFORMED",
+  "publication": "PENDING COMMIT AND PUSH",
+  "files": [
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "sha256": "41c238b63ca91a01b9d526fe55ac45617dbc172c8e17e1def35923ef696c0ac0"
+    },
+    {
+      "path": "canonical/Spider/ONE_RUN_SPIDER_INITIALIZATION_R1.txt",
+      "sha256": "1dc3e4c3d578211ba6dac52d9bb950f18f2153c921572f3ed1ab33a7e07f723f"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R1_ADMISSION.json",
+      "sha256": "764d9199d8dd98d21eac1c47f36089433b3497c6fd14b9919b180acaecc0b9ed"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_3_CANONICAL_ENTRY.md",
+      "sha256": "6fb9fbfdbd814e1959df7a2a287b4f3f1345dd9e30d5e93dc946b161d70099d8"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_3.md",
+      "sha256": "3d960ba8c5a49c8e8dcb00a62925b5ee5de5c9758465058b7f73b65f03e4850c"
+    },
+    {
+      "path": "verification/v42.5.3/PARENT_VERSION.json",
+      "sha256": "e821a27c01bb772fd9b771e71f1c04881018ae60abd70f16b02318a6e375ed95"
+    },
+    {
+      "path": "VERSION",
+      "sha256": "7b59950e244be7017adaf9378697f9ec8591af26dedf967539cadda5dfcff633"
+    },
+    {
+      "path": "VERSION.json",
+      "sha256": "6bd0481acefe36ee5e42229ad876b92a88749080b9d8472f07656e1ceedc958e"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "sha256": "d98a362c4ca2ca8323574134277e72c4e1997fa6fceb44a09328484b4809e0f2"
+    }
+  ]
+}

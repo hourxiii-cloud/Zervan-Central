@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "native_version": "vTemporal.42.2.0",
+  "native_version": "vTemporal.42.5.3",
   "source_branch": "main",
   "scope": "repository-wide textual version references for v39/v40/v41/v42 families",
   "excluded_control_files": [
@@ -175,13 +175,13 @@
     {
       "path": "VERSION",
       "line": 1,
-      "token": "vTemporal.42.2.0",
+      "token": "vTemporal.42.5.3",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "VERSION.json",
       "line": 3,
-      "token": "vTemporal.42.2.0",
+      "token": "vTemporal.42.5.3",
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
@@ -193,7 +193,31 @@
     {
       "path": "VERSION.json",
       "line": 5,
-      "token": "v42.2.0",
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 9,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 22,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 26,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION.json",
+      "line": 29,
+      "token": "v42.5.3",
       "classification": "REVIEW_REQUIRED"
     },
     {
@@ -266,7 +290,7 @@
       "path": "VERSION_AUTHORITY.md",
       "line": 96,
       "token": "vTemporal.42.2.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "VERSION_AUTHORITY.md",
@@ -303,6 +327,168 @@
       "line": 138,
       "token": "v42.2.0",
       "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 164,
+      "token": "v42.4.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 165,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 166,
+      "token": "v42.4.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 173,
+      "token": "vTemporal.42.2.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 185,
+      "token": "v42.4.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 190,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 192,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 194,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 195,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 196,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 210,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 212,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 213,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 214,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 235,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 241,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 243,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 244,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 245,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 269,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 271,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 272,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 273,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY_APPEND_v42_5.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY_APPEND_v42_5.md",
+      "line": 5,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "VERSION_AUTHORITY_APPEND_v42_5.md",
+      "line": 6,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "VERSION_AUTHORITY_APPEND_v42_5.md",
+      "line": 7,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "ZERVAN_5_6_DEPLOYMENT_BRIDGE.md",
@@ -866,7 +1052,7 @@
       "path": "call/INITIATION_STATEMENT_V42_2_0.md",
       "line": 1,
       "token": "vTemporal.42.2.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "call/INITIATION_STATEMENT_V42_2_0.md",
@@ -903,6 +1089,108 @@
       "line": 49,
       "token": "v42.1.1",
       "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_4_0.md",
+      "line": 1,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_4_0.md",
+      "line": 2,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_4_0.md",
+      "line": 11,
+      "token": "v42.4.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_0.md",
+      "line": 1,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_0.md",
+      "line": 19,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_1.md",
+      "line": 1,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_1.md",
+      "line": 3,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_1_CANDIDATE.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_1_CANDIDATE.md",
+      "line": 8,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_1_CANDIDATE.md",
+      "line": 10,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_2.md",
+      "line": 1,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_2.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_2.md",
+      "line": 4,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_3.md",
+      "line": 1,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_3.md",
+      "line": 3,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_3.md",
+      "line": 4,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_3.md",
+      "line": 5,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "call/verify_local_call.py",
@@ -1161,6 +1449,102 @@
       "line": 999,
       "token": "v41",
       "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "line": 15,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "line": 23,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "line": 23,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "line": 63,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "line": 598,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "line": 15,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "line": 19,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "line": 19,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "line": 47,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "line": 410,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_CONTEXT_PRESERVING_ARTIFACT_ANALYSIS.md",
+      "line": 515,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_R1_FULL_CORRECTED_STAGED.md",
+      "line": 15,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_R1_FULL_CORRECTED_STAGED.md",
+      "line": 23,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_R1_FULL_CORRECTED_STAGED.md",
+      "line": 23,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_R1_FULL_CORRECTED_STAGED.md",
+      "line": 63,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/Spider/history/CR_SPIDER_R1_FULL_CORRECTED_STAGED.md",
+      "line": 598,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "candidate/v40/README.md",
@@ -2553,6 +2937,282 @@
       "line": 185,
       "token": "v40",
       "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 1,
+      "token": "vTemporal.42.3.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 11,
+      "token": "v42.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 12,
+      "token": "v42.3.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 16,
+      "token": "v42.3.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 17,
+      "token": "v42.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 21,
+      "token": "v42.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 24,
+      "token": "v42.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.3.1/README.md",
+      "line": 29,
+      "token": "v42.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.4/NULL_SPACE_THOUGHT_IMPLEMENTATION.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.4/NULL_SPACE_THOUGHT_IMPLEMENTATION.md",
+      "line": 16,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.4/NULL_SPACE_THOUGHT_IMPLEMENTATION.md",
+      "line": 352,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/ANALYTICAL_QUALITY_INVARIANT_COMPUTE_SUFFICIENCY_BOUNDARY.md",
+      "line": 8,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 3,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 10,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 13,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 14,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 15,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 16,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 17,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 20,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 21,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 25,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/MANIFEST.json",
+      "line": 35,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 1,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 8,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 11,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 14,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 17,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 18,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 21,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 22,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 25,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
+      "line": 26,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/TEMPORAL_COMPUTE_AVAILABILITY_FROZEN_SOURCE.md",
+      "line": 9,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.5.1/TEMPORAL_COMPUTE_AVAILABILITY_FROZEN_SOURCE.md",
+      "line": 33,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/TEMPORAL_COMPUTE_AVAILABILITY_FROZEN_SOURCE.md",
+      "line": 354,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/TEMPORAL_COMPUTE_CANONICAL_IMPLEMENTATION.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/TEMPORAL_COMPUTE_CANONICAL_IMPLEMENTATION.md",
+      "line": 94,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5.1/TEMPORAL_COMPUTE_LEVERAGE_PRESERVED_STANDING_DEFERRED_OPERATIONAL_REUSE.md",
+      "line": 10,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "candidate/v42.5/CAPTURED_DEVELOPMENT_REGISTER.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5/CAPTURED_DEVELOPMENT_REGISTER.md",
+      "line": 9,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5/CAPTURED_DEVELOPMENT_REGISTER.md",
+      "line": 9,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5/PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS_IMPLEMENTATION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5/PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS_IMPLEMENTATION.md",
+      "line": 16,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "candidate/v42.5/PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS_IMPLEMENTATION.md",
+      "line": 16,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "candidate/v42/CANDIDATE_MANIFEST.json",
@@ -4415,6 +5075,54 @@
       "classification": "REVIEW_REQUIRED"
     },
     {
+      "path": "canonical/Spider/SPIDER_R1_ADMISSION.json",
+      "line": 3,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "line": 15,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "line": 23,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "line": 23,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "line": 63,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "line": 598,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/V42_4_0_PROMOTION_RECEIPT.md",
+      "line": 1,
+      "token": "v42.4.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/V42_4_0_PROMOTION_RECEIPT.md",
+      "line": 4,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
       "path": "canonical/ZERVAN_v39_0_CANONICAL_LOAD.md",
       "line": 3,
       "token": "vTemporal.39.0",
@@ -5342,13 +6050,13 @@
       "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
       "line": 1,
       "token": "vTemporal.42.2.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
       "line": 5,
       "token": "vTemporal.42.2.0",
-      "classification": "CURRENT_NATIVE_VERSION"
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "canonical/ZERVAN_v42_2_0_CANONICAL_ENTRY.md",
@@ -5379,6 +6087,168 @@
       "line": 241,
       "token": "v42.2.0",
       "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md",
+      "line": 2,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md",
+      "line": 3,
+      "token": "v42.4.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md",
+      "line": 7,
+      "token": "vTemporal.42.2.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_4_0_CANONICAL_ENTRY.md",
+      "line": 14,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_0_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_0_CANONICAL_ENTRY.md",
+      "line": 4,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_0_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_0_CANONICAL_ENTRY.md",
+      "line": 6,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_1_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_1_CANONICAL_ENTRY.md",
+      "line": 4,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_1_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_1_CANONICAL_ENTRY.md",
+      "line": 6,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_1_CANONICAL_ENTRY.md",
+      "line": 88,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md",
+      "line": 4,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_2_CANONICAL_ENTRY.md",
+      "line": 17,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_3_CANONICAL_ENTRY.md",
+      "line": 1,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_3_CANONICAL_ENTRY.md",
+      "line": 3,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_3_CANONICAL_ENTRY.md",
+      "line": 4,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_3_CANONICAL_ENTRY.md",
+      "line": 5,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
+      "line": 9,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
+      "line": 24,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/incident_response/CR_INCIDENT_RESPONSIVE_REPRESENTATION_PROVENANCE_RESET_RETURN_ISOLATION.md",
+      "line": 6,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "canonical/incident_response/INCIDENT_RESPONSE_QUALIFICATION_RECEIPT.md",
+      "line": 2,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "canonical/observers/OBSERVER_CONTRACT_V41.md",
@@ -5486,6 +6356,144 @@
       "path": "canonical/sundial/SUNDIAL_DETACHED_RELATIONAL_OBSERVATION_V42_1_1.md",
       "line": 3,
       "token": "vTemporal.42.1.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_CLEAN_ROOM_TERMINAL_IDENTITY_REFERENCE_WITHOUT_RETURN.md",
+      "line": 4,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_CLEAN_ROOM_TERMINAL_IDENTITY_REFERENCE_WITHOUT_RETURN.md",
+      "line": 249,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
+      "line": 9,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 4,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 15,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 25,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 25,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 29,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 181,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 209,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
+      "line": 211,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 4,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 15,
+      "token": "vTemporal.42.4.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 24,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 24,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 50,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 52,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 74,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 98,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/CR_v42_5_PRESERVED_ANALYTICAL_ORIENTATION_NATIVE_EXTERNAL_MANEUVER_OPERATION_BOUND_ACCESS.md",
+      "line": 429,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "change_requests/incident_response/CR_INCIDENT_RESPONSIVE_REPRESENTATION_PROVENANCE_RESET_RETURN_ISOLATION.md",
+      "line": 6,
+      "token": "vTemporal.42.5.2",
       "classification": "CURRENT_V42_FAMILY"
     },
     {
@@ -7139,6 +8147,48 @@
       "classification": "HISTORICAL_V41"
     },
     {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 1,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 10,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 13,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 26,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 29,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 31,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/BOX_QUESTION_RETURN_V42_5_2.md",
+      "line": 100,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
       "path": "contracts/question/QUESTION_CONTRACT.md",
       "line": 7,
       "token": "vTemporal.41.0",
@@ -7161,6 +8211,54 @@
       "line": 549,
       "token": "v41",
       "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 1,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 4,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 141,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 146,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 147,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 153,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 161,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "contracts/question/WORLD_BOX_REPRESENTATION_V42_5_2.md",
+      "line": 169,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "contracts/runtime/COLLAPSE_BOUNDARY.md",
@@ -8771,6 +9869,60 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "integration/clean_room/INTEGRATION_NOTES.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/clean_room/INTEGRATION_NOTES.md",
+      "line": 5,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "integration/clean_room/INTEGRATION_NOTES.md",
+      "line": 15,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/clean_room/PACKAGE_MANIFEST.json",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/incident_response/INTEGRATION_NOTES.md",
+      "line": 2,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/incident_response/INTEGRATION_NOTES.md",
+      "line": 4,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/incident_response/MANIFEST.json",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/incident_response/README.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "integration/incident_response/README.md",
+      "line": 9,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
       "path": "manifests/v39_0_manifest.json",
       "line": 3,
       "token": "v39",
@@ -8867,6 +10019,594 @@
       "classification": "HISTORICAL_V41"
     },
     {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 5,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 7,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 11,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 45,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 46,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 47,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 48,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 50,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 62,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 72,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 73,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 74,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 79,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 91,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 113,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 114,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 114,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 121,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 124,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 127,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 130,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 131,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 134,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 135,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 138,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 139,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 148,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 151,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 152,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 153,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 154,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 155,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 157,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 170,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 172,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 234,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 236,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 260,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 273,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 302,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 302,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 304,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 304,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 313,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 314,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 315,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 316,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 317,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 318,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 370,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 378,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 399,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 403,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 406,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 407,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 411,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 412,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 419,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 427,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 434,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 439,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 440,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 444,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 445,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 448,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 454,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 457,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 464,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 472,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 478,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 478,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 479,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 484,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 486,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 528,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 531,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 532,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 533,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 615,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 627,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 628,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 629,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 633,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 652,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 664,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 666,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 667,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 668,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 689,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 697,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 709,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 712,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 737,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 740,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 741,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 742,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 763,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "promote_v42_5_1_to_main.sh",
+      "line": 768,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
       "path": "provenance/origin_dataset_boundary.md",
       "line": 1,
       "token": "v39.0",
@@ -8877,6 +10617,12 @@
       "line": 4,
       "token": "vTemporal.39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/INCIDENT_RESPONSE_CANONICAL_PROMOTION.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "receipts/observers/OBSERVER_RESTORATION_RECEIPT_V41.json",
@@ -9105,6 +10851,66 @@
       "line": 213,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "receipts/v42.5.2/ZERVAN_V42_5_2_PROMOTION_RECEIPT.md",
+      "line": 1,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "receipts/v42.5.2/ZERVAN_V42_5_2_PROMOTION_RECEIPT.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "receipts/v42.5/CANONICAL_PROMOTION_RECEIPT.md",
+      "line": 1,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "receipts/v42.5/CANONICAL_PROMOTION_RECEIPT.md",
+      "line": 3,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "receipts/v42.5/CANONICAL_PROMOTION_RECEIPT.md",
+      "line": 4,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "receipts/v42.5/CANONICAL_PROMOTION_RECEIPT.md",
+      "line": 5,
+      "token": "v42.5.0",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "receipts/v42.5/ZERVAN_v42_5_1_PROMOTION_RECEIPT.md",
+      "line": 1,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "receipts/v42.5/ZERVAN_v42_5_1_PROMOTION_RECEIPT.md",
+      "line": 4,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "receipts/v42.5/ZERVAN_v42_5_1_PROMOTION_RECEIPT.md",
+      "line": 5,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "receipts/v42.5/ZERVAN_v42_5_1_PROMOTION_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "replay/v39_0_replay_scars.md",
@@ -9527,6 +11333,12 @@
       "classification": "HISTORICAL_V41"
     },
     {
+      "path": "schemas/question/box_question_return_v42_5_2.schema.json",
+      "line": 4,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
       "path": "schemas/question/question_contract.schema.json",
       "line": 4,
       "token": "v41",
@@ -9690,20 +11502,8 @@
     },
     {
       "path": "tests/test_native_v42_entry.py",
-      "line": 10,
-      "token": "vTemporal.42.0",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "tests/test_native_v42_entry.py",
       "line": 14,
       "token": "vTemporal.42.0",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "tests/test_native_v42_entry.py",
-      "line": 15,
-      "token": "v42",
       "classification": "CURRENT_V42_FAMILY"
     },
     {
@@ -10089,6 +11889,12 @@
       "line": 24,
       "token": "v40",
       "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "tests/test_world_box_v42_5_2.py",
+      "line": 241,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
     },
     {
       "path": "tools/issue_human_gate_authorization_receipt.py",
@@ -11645,6 +13451,24 @@
       "classification": "CURRENT_V42_FAMILY"
     },
     {
+      "path": "verification/clean_room/CLEAN_FREEZE_RECEIPT.md",
+      "line": 10,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_CANON_QUALIFICATION.md",
+      "line": 9,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_QUALIFICATION.md",
+      "line": 7,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
       "path": "verification/hash_inventory_plan.md",
       "line": 1,
       "token": "v39.0",
@@ -11673,6 +13497,12 @@
       "line": 169,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/incident_response/INCIDENT_RESPONSE_QUALIFICATION_RECEIPT.md",
+      "line": 2,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "verification/observers/ac_revalidation/AC01_AC12_OBSERVER_REVALIDATION.json",
@@ -11841,6 +13671,540 @@
       "line": 82,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "verification/v42.4/V01_CLOSED_BOX_OPERATOR_COLLAPSE_GEOMETRY.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V01_CLOSED_BOX_OPERATOR_COLLAPSE_GEOMETRY.md",
+      "line": 18,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V01_CLOSED_BOX_OPERATOR_COLLAPSE_GEOMETRY.md",
+      "line": 186,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V01_CLOSED_BOX_OPERATOR_COLLAPSE_GEOMETRY.md",
+      "line": 202,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V02_CLOSED_BOX_DATASET_ENCOUNTER_EMERGENT_RETURN.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V02_CLOSED_BOX_DATASET_ENCOUNTER_EMERGENT_RETURN.md",
+      "line": 18,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V02_CLOSED_BOX_DATASET_ENCOUNTER_EMERGENT_RETURN.md",
+      "line": 209,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V02_CLOSED_BOX_DATASET_ENCOUNTER_EMERGENT_RETURN.md",
+      "line": 231,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V03_QUALITATIVE_INTAKE_SOMETHING_NOTHING_COMPLETE_POSSIBILITY.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V03_QUALITATIVE_INTAKE_SOMETHING_NOTHING_COMPLETE_POSSIBILITY.md",
+      "line": 18,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V03_QUALITATIVE_INTAKE_SOMETHING_NOTHING_COMPLETE_POSSIBILITY.md",
+      "line": 269,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V04_NULL_SPACE_NON_MANIFESTATION_TEMPORAL_REHYDRATION_RETURN_RIGHTS.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V04_NULL_SPACE_NON_MANIFESTATION_TEMPORAL_REHYDRATION_RETURN_RIGHTS.md",
+      "line": 18,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V04_NULL_SPACE_NON_MANIFESTATION_TEMPORAL_REHYDRATION_RETURN_RIGHTS.md",
+      "line": 278,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V05_NULL_SPACE_SUPERPOSITION_BOX_EXISTENCE_COMPLETE_POSSIBILITY.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V06_ERROR_TELEMETRY_SYSTEM_SELF_INTERSECTION.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V07_QUALIFIED_BOXING_COMPLETE_SOUTH_TELEMACHY_BOUNDARY_ROUTING.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V08_COMPLETE_ORIENTATION_SUNDIAL_COMPLETE_SOUTH_RECIPROCAL_POLES.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V42_4_AGGREGATE_VALIDATION.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.4/V42_4_QUALIFICATION_DISPOSITION.md",
+      "line": 1,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/HUMAN_GATE_DECISION.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/HUMAN_GATE_DECISION.md",
+      "line": 4,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.1/HUMAN_GATE_DECISION.md",
+      "line": 10,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/HUMAN_GATE_DECISION.md",
+      "line": 13,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_QUALIFICATION.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_QUALIFICATION.md",
+      "line": 8,
+      "token": "vTemporal.42.5.0",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_QUALIFICATION.md",
+      "line": 16,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_QUALIFICATION.md",
+      "line": 23,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
+      "line": 26,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
+      "line": 60,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_VALIDATION_RESULT.md",
+      "line": 1,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_VALIDATION_RESULT.md",
+      "line": 9,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.1/V42_5_1_VALIDATION_RESULT.md",
+      "line": 30,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 1,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 4,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 12,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 17,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 23,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 25,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 34,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/BOX_QUESTION_RETURN_DEVELOPMENT_RECEIPT.md",
+      "line": 35,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/HUMAN_GATE_DECISION.md",
+      "line": 1,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.2/HUMAN_GATE_DECISION.md",
+      "line": 5,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.2/HUMAN_GATE_DECISION.md",
+      "line": 6,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/HUMAN_GATE_DECISION.md",
+      "line": 15,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_IMPLEMENTATION_RECEIPT.md",
+      "line": 3,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_IMPLEMENTATION_RECEIPT.md",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_IMPLEMENTATION_RECEIPT.md",
+      "line": 11,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_IMPLEMENTATION_RECEIPT.md",
+      "line": 17,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_IMPLEMENTATION_RECEIPT.md",
+      "line": 18,
+      "token": "v42.5.1",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_IMPLEMENTATION_RECEIPT.md",
+      "line": 53,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_SOURCE_RECEIPT.json",
+      "line": 8,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.2/WORLD_SOURCE_RECEIPT.json",
+      "line": 9,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.3/PARENT_VERSION.json",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.3/PARENT_VERSION.json",
+      "line": 4,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.3/PARENT_VERSION.json",
+      "line": 5,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.3/PARENT_VERSION.json",
+      "line": 9,
+      "token": "vTemporal.42.5.1",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.3/PARENT_VERSION.json",
+      "line": 57,
+      "token": "v42.5.2",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.3/SPIDER_INTEGRATION_RECEIPT.json",
+      "line": 2,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/v42.5.3/SPIDER_INTEGRATION_RECEIPT.json",
+      "line": 3,
+      "token": "vTemporal.42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/v42.5.3/SPIDER_INTEGRATION_RECEIPT.json",
+      "line": 6,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5.3/SPIDER_INTEGRATION_RECEIPT.json",
+      "line": 45,
+      "token": "v42.5.3",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V01_OBSERVATION_EXISTENCE_STANDING_BOUNDARY.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V02_COMPLETE_POSSIBILITY_PRE-EXISTING_BOX_NULL_COMPATIBILITY.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V03_PMC_CONSIDERATION_MC_SELECTABLE_COLLAPSE.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V04_ANALYTICAL_FIELD_BOX_BOUNDARY_CAPABILITY.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V05_TEMPORAL_PERSISTENCE_ACTUALIZATION_REVALIDATION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V06_NATIVE_PUBLIC_OBSERVATION_ECOLOGY.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V07_SENSOR_COVERAGE_BLIND-SPOT_STANDING.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V08_OFF-BOARD_SENSOR_EXTENSION_GOVERNANCE_RETENTION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V09_PUBLIC_REPRESENTATION_SURFACE_EARNED_ATTRIBUTION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V10_CONTINUOUS_MULTI-GEOMETRY_ORIENTATION_DEPENDENCY_GEOMETRY.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V11_SUNDIAL_NULL-SPACE_BOX_COMPOSITION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V12_ANIMALKINGDOM_MISMATCH_PRESSURE_STILLNESS.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V13_NATIVE_OSINT_ORIGINATION_CORRECTION-LINEAGE.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V14_OSPREY_MINIMUM-SUFFICIENT_EXTERNAL_MOTION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V15_OSPREY_EXTREME_MANEUVER_SPACE_FASTEST_WARRANTED_DROP.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V16_OSPREY_NATIVE_CALL_SELECTION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V17_OSPREY_ACCESS_INHERITANCE_MANEUVER_NON-INHERITANCE.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V18_CORRECTION_RADIUS_ORIGINATING-DATA_PRESERVATION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V19_AUTHORITY_HUMAN_GATE_EXTERNAL_RUNTIME_BOUNDARY.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_AGGREGATE_VALIDATION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_AGGREGATE_VALIDATION.md",
+      "line": 31,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_HOSTILE_VALIDATION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_IMPLEMENTATION_REVISION_LOG.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_QUALIFICATION_DISPOSITION.md",
+      "line": 1,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_QUALIFICATION_DISPOSITION.md",
+      "line": 11,
+      "token": "v42.5",
+      "classification": "REVIEW_REQUIRED"
+    },
+    {
+      "path": "verification/v42.5/V42_5_QUALIFICATION_DISPOSITION.md",
+      "line": 16,
+      "token": "v42.4",
+      "classification": "REVIEW_REQUIRED"
     }
   ]
 }

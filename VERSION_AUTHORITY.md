@@ -263,3 +263,33 @@ Active initiation path:
 
 No prior canonical history is rewritten.
 Conversation state does not establish canonical identity.
+
+---
+
+# v42.5.3 canonical standing
+
+Target Version: **vTemporal.42.5.3**
+Implementation Identity: **v42.5.3 — Spider R1 specification integration**
+Canonical Parent: **vTemporal.42.5.2**
+Parent Repository Snapshot: `59b73853420fcfaaf4706cf3721513197c2432c4`
+
+Promotion State: **CANONICAL**
+Canonical: **TRUE**
+Canonical Branch: **main**
+Authority: **NONE**
+Human Gate: **ACTIVE**
+No Compression Out: **ACTIVE**
+
+Active initiation path:
+1. /VERSION
+2. /VERSION.json
+3. /VERSION_AUTHORITY.md
+4. /call/INITIATION_STATEMENT_V42_5_3.md
+5. /canonical/ZERVAN_v42_5_3_CANONICAL_ENTRY.md
+
+Spider is admitted as a complete specification, with its originating
+developmental source preserved unchanged. Runtime implementation and
+empirical performance are not established by specification admission.
+
+Exact release standing attaches to the committed main tree. Resolve the
+final commit after publication; no future commit is predeclared.
