@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "release": "vTemporal.42.5.3",
+  "object": "SPIDER-R1",
+  "standing": "CANONICAL SPECIFICATION",
+  "source_standing": "CLEAN FULL FROZEN DEVELOPMENTAL SPECIFICATION",
+  "source_preserved_byte_for_byte": true,
+  "source_package": "SPIDER_R1_CLEAN_FULL_FROZEN_STAGE.zip",
+  "source_package_sha256": "311fb700d45002daa4303214ecc4352bcbef618dd6d9a6775698b5126a058e28",
+  "source_document": "candidate/Spider/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+  "load_order": [
+    "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+    "canonical/Spider/ONE_RUN_SPIDER_INITIALIZATION_R1.txt"
+  ],
+  "payloads": [
+    {
+      "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
+      "sha256": "41c238b63ca91a01b9d526fe55ac45617dbc172c8e17e1def35923ef696c0ac0",
+      "size_bytes": 76034
+    },
+    {
+      "path": "canonical/Spider/ONE_RUN_SPIDER_INITIALIZATION_R1.txt",
+      "sha256": "1dc3e4c3d578211ba6dac52d9bb950f18f2153c921572f3ed1ab33a7e07f723f",
+      "size_bytes": 7205
+    }
+  ],
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "runtime_validation": "NOT PERFORMED",
+  "component_credentials_issued": false
+}

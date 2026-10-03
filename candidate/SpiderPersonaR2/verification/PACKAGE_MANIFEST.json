@@ -1,0 +1,149 @@
+{
+  "object": "SPIDER-R2 FULL PERSONA CORRECTION CANDIDATE",
+  "parent_release": "vTemporal.42.5.3",
+  "parent_commit": "bde60b3e16c978070d46047847fd00e0d7938af4",
+  "target_release_candidate": "vTemporal.42.5.4",
+  "canonical": false,
+  "promotion": "NONE",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "payloads": [
+    {
+      "path": "README.md",
+      "size_bytes": 3640,
+      "sha256": "978889bae69cb28f4a55c763fa3ea81946075bfab6d6786b4437a80b1435ed5b"
+    },
+    {
+      "path": "candidate/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt",
+      "size_bytes": 4571,
+      "sha256": "00c0c3910431b3f42d53f5a2e1fc3d30184f5e59ff3398707de01ab1ecdf5e6a"
+    },
+    {
+      "path": "candidate/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "size_bytes": 69734,
+      "sha256": "0c5ee1e9d6d8a1fb471e3f61766ef4cb9e20fc8913dcc01d805e53725d76749b"
+    },
+    {
+      "path": "candidate/SPIDER_R2_PERSONA_ADMISSION_CANDIDATE.json",
+      "size_bytes": 1408,
+      "sha256": "6ab9a40981d203d23428240b0871b7d931e578bcd8dbac92271db4b123cb35a3"
+    },
+    {
+      "path": "candidate/SPIDER_R2_PERSONA_CONTRACT.md",
+      "size_bytes": 4573,
+      "sha256": "93c7ac8a2051a7e552e5dcbc639642a02f873df343f0407ff81a300bbcef1456"
+    },
+    {
+      "path": "integration/apply_canonical_overlay.sh",
+      "size_bytes": 2008,
+      "sha256": "d4c989cda4f7a755c02aee15ebb1d512fc5e6cad139afc5aa6b14c4542311333"
+    },
+    {
+      "path": "integration/canonical_overlay/VERSION",
+      "size_bytes": 17,
+      "sha256": "0f2ba96474bae1e7a19d07d44204f4d843d95879f43b125f80662a6f6f66010f"
+    },
+    {
+      "path": "integration/canonical_overlay/VERSION.json",
+      "size_bytes": 1457,
+      "sha256": "96f84b016fbaf0486a9c24d8c977b64058e56e5d3f54a24cfc2d9f69900830df"
+    },
+    {
+      "path": "integration/canonical_overlay/VERSION_AUTHORITY.md",
+      "size_bytes": 10163,
+      "sha256": "9ec93ef378b8306a87c5cfc3a849a65d11bd145feac2daf69ca308d0b9821d23"
+    },
+    {
+      "path": "integration/canonical_overlay/call/INITIATION_STATEMENT_V42_5_4.md",
+      "size_bytes": 1438,
+      "sha256": "e8d73b760183ed3e1367f490aed39261f7fc9741f259060bf83db748fff377ed"
+    },
+    {
+      "path": "integration/canonical_overlay/canonical/Spider/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt",
+      "size_bytes": 4571,
+      "sha256": "00c0c3910431b3f42d53f5a2e1fc3d30184f5e59ff3398707de01ab1ecdf5e6a"
+    },
+    {
+      "path": "integration/canonical_overlay/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "size_bytes": 69734,
+      "sha256": "0c5ee1e9d6d8a1fb471e3f61766ef4cb9e20fc8913dcc01d805e53725d76749b"
+    },
+    {
+      "path": "integration/canonical_overlay/canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json",
+      "size_bytes": 1728,
+      "sha256": "53617f926c5236b7fd15d3ddd97b4e8a8860758dad9831e81ccef56de132893c"
+    },
+    {
+      "path": "integration/canonical_overlay/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "size_bytes": 4573,
+      "sha256": "93c7ac8a2051a7e552e5dcbc639642a02f873df343f0407ff81a300bbcef1456"
+    },
+    {
+      "path": "integration/canonical_overlay/canonical/ZERVAN_v42_5_4_CANONICAL_ENTRY.md",
+      "size_bytes": 2242,
+      "sha256": "137d608f7b39c6ccede92b299c709f14ddd65f91425f1f4813f315dac63010f1"
+    },
+    {
+      "path": "integration/install_candidate.sh",
+      "size_bytes": 1074,
+      "sha256": "03c43972151ce52980aad9b7c08f5920ccf04fbb56ad6f084e06409276f3946b"
+    },
+    {
+      "path": "integration/record_publication.py",
+      "size_bytes": 2521,
+      "sha256": "fd4082bd1604038ed7994cc48cb4a2291bc1767b059644cf398aab07a4f9d49d"
+    },
+    {
+      "path": "source/CR_SPIDER_R1_CLEAN_FULL_FROZEN.md",
+      "size_bytes": 76034,
+      "sha256": "41c238b63ca91a01b9d526fe55ac45617dbc172c8e17e1def35923ef696c0ac0"
+    },
+    {
+      "path": "source/INITIATION_STATEMENT_V42_5_3.md",
+      "size_bytes": 1410,
+      "sha256": "3d960ba8c5a49c8e8dcb00a62925b5ee5de5c9758465058b7f73b65f03e4850c"
+    },
+    {
+      "path": "source/ONE_RUN_SPIDER_INITIALIZATION_R1.txt",
+      "size_bytes": 7205,
+      "sha256": "1dc3e4c3d578211ba6dac52d9bb950f18f2153c921572f3ed1ab33a7e07f723f"
+    },
+    {
+      "path": "source/SPIDER_R1_ADMISSION.json",
+      "size_bytes": 1168,
+      "sha256": "764d9199d8dd98d21eac1c47f36089433b3497c6fd14b9919b180acaecc0b9ed"
+    },
+    {
+      "path": "source/VERSION",
+      "size_bytes": 17,
+      "sha256": "7b59950e244be7017adaf9378697f9ec8591af26dedf967539cadda5dfcff633"
+    },
+    {
+      "path": "source/VERSION.json",
+      "size_bytes": 1465,
+      "sha256": "6bd0481acefe36ee5e42229ad876b92a88749080b9d8472f07656e1ceedc958e"
+    },
+    {
+      "path": "source/VERSION_AUTHORITY.md",
+      "size_bytes": 8960,
+      "sha256": "d98a362c4ca2ca8323574134277e72c4e1997fa6fceb44a09328484b4809e0f2"
+    },
+    {
+      "path": "source/ZERVAN_v42_5_3_CANONICAL_ENTRY.md",
+      "size_bytes": 1922,
+      "sha256": "6fb9fbfdbd814e1959df7a2a287b4f3f1345dd9e30d5e93dc946b161d70099d8"
+    },
+    {
+      "path": "verification/QUALIFICATION_RECEIPT.md",
+      "size_bytes": 1946,
+      "sha256": "3ff788260c10984c8383c9c4be24351cb183ff75e56e1539ba66349accdbe234"
+    },
+    {
+      "path": "verification/validate_package.py",
+      "size_bytes": 3114,
+      "sha256": "010884b360d8bda09e40c8f9ab3c089b8c15f58d7fe1d2ead0c3c398f33cedd5"
+    }
+  ],
+  "manifest_scope": "files except manifest and build scripts; ZIP hash supplied separately at delivery"
+}

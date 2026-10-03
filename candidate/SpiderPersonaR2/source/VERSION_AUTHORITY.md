@@ -293,18 +293,3 @@ empirical performance are not established by specification admission.
 
 Exact release standing attaches to the committed main tree. Resolve the
 final commit after publication; no future commit is predeclared.
-
----
-
-# v42.5.4 Spider R2 persona correction — proposed canonical standing
-
-Target Version: **vTemporal.42.5.4**  
-Implementation Identity: **v42.5.4 — Spider R2 native persona correction**  
-Canonical Parent: **vTemporal.42.5.3** at `bde60b3e16c978070d46047847fd00e0d7938af4`  
-Authority: **NONE**  
-Human Gate: **ACTIVE**  
-No Compression Out: **ACTIVE**
-
-This overlay has candidate standing until explicitly authorized, committed, pushed, and externally verified on `main`. At that point its operative standing is canonical. Resolve the exact published commit after promotion and record it in a separate publication receipt; no future commit is predeclared.
-
-The correction establishes Spider as a named analytical persona with a distinct seat, voice, provenance and complete R2 method. It does not alter the preserved R1 source or its historical standing, issue a WORK ID, instantiate a component, or establish runtime validation. Active initiation path after promotion: `/VERSION`, `/VERSION.json`, `/VERSION_AUTHORITY.md`, `/call/INITIATION_STATEMENT_V42_5_4.md`, `/canonical/ZERVAN_v42_5_4_CANONICAL_ENTRY.md`, then the parent architecture and the three Spider R2 paths in the entry's order.

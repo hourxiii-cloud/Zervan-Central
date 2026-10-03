@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "object": "SPIDER-R2",
+  "target_release": "vTemporal.42.5.4",
+  "standing": "COMPLETE CANDIDATE PERSONA SPECIFICATION",
+  "canonical": false,
+  "promotion": "NONE",
+  "parent_release": "vTemporal.42.5.3",
+  "parent_commit": "bde60b3e16c978070d46047847fd00e0d7938af4",
+  "persona": "SPIDER",
+  "seat": "ANALYTICAL_PERSONA_ARTIFACT_CONTEXT_CLAIM_QUALIFICATION",
+  "load_order": [
+    "candidate/SPIDER_R2_PERSONA_CONTRACT.md",
+    "candidate/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+    "candidate/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt"
+  ],
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "originating_data_mutation": "DISALLOWED",
+  "runtime_validation": "NOT PERFORMED",
+  "component_credentials_issued": false,
+  "publication": "NOT PERFORMED",
+  "payloads": [
+    {
+      "path": "candidate/SPIDER_R2_PERSONA_CONTRACT.md",
+      "size_bytes": 4573,
+      "sha256": "93c7ac8a2051a7e552e5dcbc639642a02f873df343f0407ff81a300bbcef1456"
+    },
+    {
+      "path": "candidate/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "size_bytes": 69734,
+      "sha256": "0c5ee1e9d6d8a1fb471e3f61766ef4cb9e20fc8913dcc01d805e53725d76749b"
+    },
+    {
+      "path": "candidate/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt",
+      "size_bytes": 4571,
+      "sha256": "00c0c3910431b3f42d53f5a2e1fc3d30184f5e59ff3398707de01ab1ecdf5e6a"
+    }
+  ]
+}
