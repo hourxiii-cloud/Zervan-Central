@@ -1,0 +1,12 @@
+{
+  "release": "vTemporal.42.5.4",
+  "base_commit": "12d41fd7e17af7c9384917913b569a996fe370b3",
+  "correction": "Canonical admission load paths and publication standing",
+  "admission_sha256_before": "53617f926c5236b7fd15d3ddd97b4e8a8860758dad9831e81ccef56de132893c",
+  "admission_sha256_after": "af25fcdfced16ca47933983d03ca5e0c87a20d93a31dc124a34d29304e790789",
+  "spider_payloads_changed": false,
+  "spider_payload_hashes": "PASS",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "runtime_validation": "NOT PERFORMED"
+}

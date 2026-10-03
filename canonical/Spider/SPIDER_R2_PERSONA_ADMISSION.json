@@ -2,17 +2,17 @@
   "schema_version": "1.0",
   "object": "SPIDER-R2",
   "target_release": "vTemporal.42.5.4",
-  "standing": "CANONICAL PERSONA SPECIFICATION only after approved publication on main",
+  "standing": "CANONICAL PERSONA SPECIFICATION",
   "canonical": true,
-  "promotion": "CANONICAL upon approved publication on main",
+  "promotion": "CANONICAL",
   "parent_release": "vTemporal.42.5.3",
   "parent_commit": "bde60b3e16c978070d46047847fd00e0d7938af4",
   "persona": "SPIDER",
   "seat": "ANALYTICAL_PERSONA_ARTIFACT_CONTEXT_CLAIM_QUALIFICATION",
   "load_order": [
-    "candidate/SPIDER_R2_PERSONA_CONTRACT.md",
-    "candidate/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
-    "candidate/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt"
+    "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+    "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+    "canonical/Spider/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt"
   ],
   "authority": "NONE",
   "human_gate": "ACTIVE",
@@ -20,7 +20,7 @@
   "originating_data_mutation": "DISALLOWED",
   "runtime_validation": "NOT PERFORMED",
   "component_credentials_issued": false,
-  "publication": "PENDING verification receipt",
+  "publication": "PUBLISHED TO MAIN — verified by verification/v42.5.4/SPIDER_PERSONA_INTEGRATION_RECEIPT.json",
   "payloads": [
     {
       "path": "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
