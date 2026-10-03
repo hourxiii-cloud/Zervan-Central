@@ -24,13 +24,13 @@
   "payloads": [
     {
       "path": "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
-      "size_bytes": 4573,
-      "sha256": "93c7ac8a2051a7e552e5dcbc639642a02f873df343f0407ff81a300bbcef1456"
+      "size_bytes": 4783,
+      "sha256": "ab5a01d9c3e3e267a80b33651761a8f9f47d95f14517a72b652ff66af968ccfa"
     },
     {
       "path": "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
-      "size_bytes": 69734,
-      "sha256": "0c5ee1e9d6d8a1fb471e3f61766ef4cb9e20fc8913dcc01d805e53725d76749b"
+      "size_bytes": 69915,
+      "sha256": "c62e21831129aebccfd397f33003db6cea8955e475a863b2f12a3dced3afcfbe"
     },
     {
       "path": "canonical/Spider/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt",

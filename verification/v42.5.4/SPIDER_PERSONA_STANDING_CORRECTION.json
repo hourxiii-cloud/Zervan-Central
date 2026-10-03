@@ -1,0 +1,22 @@
+{
+  "release": "vTemporal.42.5.4",
+  "base_commit": "895cbbe306fbc0e06020f61fa0b13a1e00c5ccfe",
+  "execution_head_before_correction": "ce78251bf702dcdf3799a7c42bbc0897e1ce95a6",
+  "correction": "Align canonical Spider R2 payload standing with approved publication; explicitly retain ordinary named persona participation.",
+  "changed_payload_sha256_before": {
+    "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md": "93c7ac8a2051a7e552e5dcbc639642a02f873df343f0407ff81a300bbcef1456",
+    "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md": "0c5ee1e9d6d8a1fb471e3f61766ef4cb9e20fc8913dcc01d805e53725d76749b",
+    "canonical/Spider/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt": "00c0c3910431b3f42d53f5a2e1fc3d30184f5e59ff3398707de01ab1ecdf5e6a"
+  },
+  "changed_payload_sha256_after": {
+    "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md": "ab5a01d9c3e3e267a80b33651761a8f9f47d95f14517a72b652ff66af968ccfa",
+    "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md": "c62e21831129aebccfd397f33003db6cea8955e475a863b2f12a3dced3afcfbe",
+    "canonical/Spider/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt": "00c0c3910431b3f42d53f5a2e1fc3d30184f5e59ff3398707de01ab1ecdf5e6a"
+  },
+  "historical_candidate_qualification_preserved": true,
+  "full_analytical_run_gate_unchanged": true,
+  "independent_component_runtime_claimed": false,
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE"
+}

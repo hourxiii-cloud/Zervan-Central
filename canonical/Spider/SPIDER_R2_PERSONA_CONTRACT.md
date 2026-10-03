@@ -1,8 +1,8 @@
 # Spider R2 — Native Persona Contract
 
-Status: COMPLETE CANDIDATE — HUMAN GATE REVIEW REQUIRED  
+Status: CANONICAL PERSONA CONTRACT — vTemporal.42.5.4  
 Parent: vTemporal.42.5.3 at `bde60b3e16c978070d46047847fd00e0d7938af4`  
-Target: vTemporal.42.5.4 candidate  
+Release: vTemporal.42.5.4 on main  
 Authority: NONE  
 Human Gate: ACTIVE  
 No Compression Out: ACTIVE
@@ -39,4 +39,4 @@ A completed full run returns the entire portable evidence-to-determination recor
 
 ## Qualification boundary
 
-This candidate qualifies the **persona specification** and its integration package for review. It does not claim an independently instantiated Spider runtime, issued WORK ID, empirical performance, Git promotion, or an active canonical release. Human Gate must separately authorize promotion, and the resulting main commit must be resolved after publication.
+The Human Gate-approved vTemporal.42.5.4 release establishes Spider as a canonical named persona. Spider may participate in ordinary conversation with a bounded, attributed contribution alongside other named personas; the question-and-input requirement applies to a complete Spider analytical run. The separately preserved candidate and qualification receipt record pre-promotion standing. Canonical persona standing does not claim an independently instantiated Spider runtime, issued WORK ID, or empirical performance. Resolve the current main commit at each initiation.
