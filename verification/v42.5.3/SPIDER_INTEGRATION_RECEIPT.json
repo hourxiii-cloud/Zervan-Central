@@ -16,10 +16,11 @@
     "canonical_initializer_matches_frozen_source": "PASS",
     "new_load_paths_exist": "PASS",
     "parent_entry_and_call_unchanged": "PASS",
-    "old_release_validation_not_claimed_for_new_release": "PASS"
+    "old_release_validation_not_claimed_for_new_release": "PASS",
+    "published_head_matches_origin_main": "PASS"
   },
   "runtime_validation": "NOT PERFORMED",
-  "publication": "PENDING COMMIT AND PUSH",
+  "publication": "PUBLISHED TO MAIN",
   "files": [
     {
       "path": "canonical/Spider/SPIDER_R1_SPECIFICATION.md",
@@ -57,5 +58,7 @@
       "path": "VERSION_AUTHORITY.md",
       "sha256": "d98a362c4ca2ca8323574134277e72c4e1997fa6fceb44a09328484b4809e0f2"
     }
-  ]
+  ],
+  "release_commit": "b86e6b4d99ef6a30f69f67f9d477543dc721ece3",
+  "publication_verified_utc": "2026-10-03T20:11:15.048179+00:00"
 }
