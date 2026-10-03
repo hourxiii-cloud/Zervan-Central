@@ -4,157 +4,54 @@ Zervan is a portable analytical operating model for disciplined reasoning,
 evidence preservation, provenance, replay, controlled reporting, and
 human-governed decision support.
 
-## Current Native Implementation
-
-Active version:
-
-`vTemporal.42.0`
-
-Implementation identity:
-
-`v42 Complete`
-
-This branch:
-
-`main`
-
-Promotion state:
-
-`CANONICAL`
-
-Canonical branch:
-
-`main`
-
-Native v42 is canonical because the four-stage governed-development candidate
-qualified, Human Gate approved promotion, and the resulting state is
-independently resolvable from Git `main`.
-
-## Version Authority
-
-Resolve active version identity from:
-
-1. `VERSION`
-2. `VERSION.json`
-3. `VERSION_AUTHORITY.md`
-
-README owns orientation.
-
-README does not own version authority.
-
-One active version.
-
-One authority path.
-
-No inferred versioning.
-
-## Native-v42 Entry
-
-Initialize native v42 through:
-
-`call/INITIATION_STATEMENT_V42_0.md`
-
-Then enter the native implementation through:
-
-`canonical/ZERVAN_v42_0_CANONICAL_ENTRY.md`
-
-Historical v39, v40, and v41 initiation / canonical-entry files remain for
-provenance.
-
-They are not the active native-v42 entry path.
-
-Native v42 does not require prior-version knowledge to initialize.
-
-## Operating Posture
-
-Authority:
-
-`NONE`
-
-Human Gate:
-
-`ACTIVE`
-
-External Runtime:
-
-`DISABLED`
-
-External Action:
-
-`DISABLED`
-
-System Population:
-
-`DISALLOWED`
-
-Canonical Mutation:
-
-`DISALLOWED except through explicit Human Gate-authorized promotion`
-
-Mode:
-
-`DISCUSSION / TECH / NONE / NON-DOCTRINAL / STABLE`
-
-Control State:
-
-`CONTROLLED / CANONICAL / PROMOTED`
-
-## Validation
-
-Ring 6 candidate validation is executed through:
-
-`python3 tools/validate_ring6.py`
-
-Ring 7 documentation / promotion validation is executed through:
-
-`python3 tools/validate_ring7.py`
-
-Validation success alone does not create canonical promotion. Current canonical state derives from Human Gate-authorized promotion plus the resulting Git state on `main`.
-
-## Documentation Responsibilities
-
-README:
-
-`ORIENTATION`
-
-User Manual:
-
-`UNDERSTANDING AND OPERATION`
-
-Architecture Guide:
-
-`RATIONALE AND PRIMITIVES`
-
-Developer Guide:
-
-`IMPLEMENTATION AND EXTENSION`
-
-Audit Guide:
-
-`VERIFICATION / REPLACEMENT / RESILIENCE / PROVENANCE / COMPLETION CRITERIA`
-
-Operations Guide:
-
-`CONSISTENT RUNTIME OPERATION`
-
-The README shall not carry the entire civilization.
-
-## Repository Rule
-
-Current Git is implementation truth.
-
-Historical references remain provenance.
-
-Documentation does not replace implementation.
-
-No fake retrieval.
-
-No authority promotion.
-
-No unauthorized external action.
-
-No system population.
-
-No compression out.
-
-Human Gate controls promotion.
+## Current canonical release
+
+The published native release on `main` is **vTemporal.42.5.4**,
+implementation identity **v42.5.4 — Spider R2 native persona correction**.
+Its promotion state is **CANONICAL**. Spider R2 has a native named analytical
+persona specification for artifact, context, and claim qualification. The
+frozen R1 source and its v42.5.3 admission retain their historical standing.
+Canonical specification does not establish deployed runtime validation or
+independently issued component credentials.
+
+The release identity and controls are declared by [VERSION](VERSION),
+[VERSION.json](VERSION.json), and
+[VERSION_AUTHORITY.md](VERSION_AUTHORITY.md). This README provides orientation;
+it does not select a version or grant authority.
+
+## Canonical entry
+
+Resolve the actual Git `main` commit and pin retrievals to it. Load the
+version authority files above, then
+[the v42.5.4 initiation call](call/INITIATION_STATEMENT_V42_5_4.md) and
+[canonical entry](canonical/ZERVAN_v42_5_4_CANONICAL_ENTRY.md). Follow the
+entry's full dependency order, including its preserved parent architecture,
+applicable contracts, and
+[Spider R2 admission](canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json)
+with its payload hashes. Missing or failed retrieval stops initialization.
+Earlier initiation and entry files remain historical provenance.
+
+## Operating posture
+
+Authority **NONE**; Human Gate **ACTIVE**; No Compression Out **ACTIVE**;
+originating-data mutation **DISALLOWED**. External runtime and action are
+disabled, and system population is disallowed, unless independently qualified.
+Document loading does not issue a WORK ID, establish component execution, or
+authorize repository mutation. Human Gate governs any promotion.
+
+## Validation and documentation
+
+`make smoke` checks current release identity and Spider admission.
+`make check` also runs bounded current-release and observer checks.
+`make test-repository` is a separate historical repository regression target.
+Validation success alone does not promote canon.
+
+The [User Manual](docs/USER_MANUAL.md) covers operation; the
+[Architecture Guide](docs/ARCHITECTURE_GUIDE.md) explains rationale; the
+[Developer Guide](docs/DEVELOPER_GUIDE.md) covers implementation; the
+[Audit Guide](docs/AUDIT_GUIDE.md) covers verification and provenance; and the
+[Operations Guide](docs/OPERATIONS_GUIDE.md) covers consistent runtime practice.
+
+Current Git is implementation truth. Historical references remain provenance.
+No inferred versioning, fake retrieval, authority promotion, unauthorized
+external action, system population, or compression out.

@@ -114,63 +114,27 @@
     },
     {
       "path": "README.md",
-      "line": 11,
-      "token": "vTemporal.42.0",
+      "line": 9,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "README.md",
+      "line": 10,
+      "token": "v42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "README.md",
+      "line": 13,
+      "token": "v42.5.3",
       "classification": "CURRENT_V42_FAMILY"
     },
     {
       "path": "README.md",
-      "line": 15,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "README.md",
-      "line": 29,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "README.md",
-      "line": 51,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "README.md",
-      "line": 53,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "README.md",
-      "line": 61,
-      "token": "v39",
-      "classification": "HISTORICAL_V39"
-    },
-    {
-      "path": "README.md",
-      "line": 61,
-      "token": "v40",
-      "classification": "HISTORICAL_V40"
-    },
-    {
-      "path": "README.md",
-      "line": 61,
-      "token": "v41",
-      "classification": "HISTORICAL_V41"
-    },
-    {
-      "path": "README.md",
-      "line": 64,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
-    },
-    {
-      "path": "README.md",
-      "line": 66,
-      "token": "v42",
-      "classification": "CURRENT_V42_FAMILY"
+      "line": 26,
+      "token": "v42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "VERSION",
