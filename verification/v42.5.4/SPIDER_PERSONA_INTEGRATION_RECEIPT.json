@@ -1,0 +1,33 @@
+{
+  "release": "vTemporal.42.5.4",
+  "parent_release": "vTemporal.42.5.3",
+  "parent_repository_commit": "bde60b3e16c978070d46047847fd00e0d7938af4",
+  "release_commit": "a5cc9cc86baa75c6a917e977b590fc38985f6a82",
+  "published_origin_main": "a5cc9cc86baa75c6a917e977b590fc38985f6a82",
+  "publication_verified_utc": "2026-10-03T20:43:07.451793+00:00",
+  "persona": "SPIDER",
+  "standing": "CANONICAL PERSONA SPECIFICATION \u2014 PUBLISHED FILES VERIFIED",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "runtime_validation": "NOT PERFORMED",
+  "component_credentials_issued": false,
+  "source_standing": "R1 frozen developmental source retained unchanged",
+  "files": [
+    {
+      "path": "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "size_bytes": 4573,
+      "sha256": "93c7ac8a2051a7e552e5dcbc639642a02f873df343f0407ff81a300bbcef1456"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "size_bytes": 69734,
+      "sha256": "0c5ee1e9d6d8a1fb471e3f61766ef4cb9e20fc8913dcc01d805e53725d76749b"
+    },
+    {
+      "path": "canonical/Spider/ONE_RUN_SPIDER_PERSONA_INITIALIZATION_R2.txt",
+      "size_bytes": 4571,
+      "sha256": "00c0c3910431b3f42d53f5a2e1fc3d30184f5e59ff3398707de01ab1ecdf5e6a"
+    }
+  ]
+}
