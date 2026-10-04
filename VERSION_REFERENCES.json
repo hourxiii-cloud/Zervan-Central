@@ -449,6 +449,12 @@
       "classification": "CURRENT_NATIVE_VERSION"
     },
     {
+      "path": "VERSION_AUTHORITY.md",
+      "line": 314,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "VERSION_AUTHORITY_APPEND_v42_5.md",
       "line": 1,
       "token": "v42.5",
@@ -6899,6 +6905,24 @@
       "classification": "CURRENT_V42_FAMILY"
     },
     {
+      "path": "canonical/middleware/ZERVAN_MANDATORY_MIDDLEWARE_CONTRACT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/middleware/ZERVAN_MANDATORY_MIDDLEWARE_CONTRACT.md",
+      "line": 57,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json",
+      "line": 2,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "canonical/observers/OBSERVER_CONTRACT_V41.md",
       "line": 1,
       "token": "v41",
@@ -7007,6 +7031,12 @@
       "classification": "CURRENT_V42_FAMILY"
     },
     {
+      "path": "change_requests/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md",
+      "line": 9,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "change_requests/CR_CLEAN_ROOM_TERMINAL_IDENTITY_REFERENCE_WITHOUT_RETURN.md",
       "line": 4,
       "token": "vTemporal.42.5.2",
@@ -7017,6 +7047,18 @@
       "line": 249,
       "token": "vTemporal.42.5.2",
       "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "change_requests/CR_GENERIC_CHATGPT_MIDDLEWARE_ONLY_V42_5_4_REVISION_3.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "change_requests/CR_GENERIC_CHATGPT_MIDDLEWARE_ONLY_V42_5_4_REVISION_3.md",
+      "line": 57,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
     },
     {
       "path": "change_requests/CR_RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
@@ -10505,6 +10547,504 @@
       "classification": "HISTORICAL_V41"
     },
     {
+      "path": "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 44,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 90,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 90,
+      "token": "v42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 5,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 6,
+      "token": "v42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 7,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 8,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 18,
+      "token": "v42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 54,
+      "token": "v42.5.2",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 54,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 66,
+      "token": "v41",
+      "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 66,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 464,
+      "token": "v41",
+      "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 582,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 667,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 679,
+      "token": "v42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "line": 713,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "line": 3,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "line": 4,
+      "token": "vTemporal.42.5.3",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "line": 5,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "line": 34,
+      "token": "v41",
+      "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "line": 42,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 3,
+      "token": "vTemporal.40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 17,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 19,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 21,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 23,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 23,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 25,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 27,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 58,
+      "token": "v40.0",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5973,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5975,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5977,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5979,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5981,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5983,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5985,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5987,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5989,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5991,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5993,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5995,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5997,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 5999,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6001,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6003,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6005,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6007,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6009,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6011,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6013,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6015,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6017,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6019,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6021,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6023,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6025,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6027,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6029,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6031,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6033,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6035,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6037,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6039,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6041,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6043,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6045,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6047,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "line": 6049,
+      "token": "v39.0",
+      "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "freeze/middleware/revision2/change_requests/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md",
+      "line": 9,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 44,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 90,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 90,
+      "token": "v42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md",
+      "line": 47,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "freeze/middleware/revision2/verification/middleware_revision2/CLEAN_FULL_FREEZE_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "freeze/middleware/revision2/verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md",
+      "line": 11,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
       "path": "governance/human_gate_authority_boundary.md",
       "line": 1,
       "token": "v39.0",
@@ -12051,6 +12591,60 @@
       "line": 202,
       "token": "v39.0",
       "classification": "HISTORICAL_V39"
+    },
+    {
+      "path": "staged/middleware/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md",
+      "line": 4,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 44,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 90,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "line": 90,
+      "token": "v42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md",
+      "line": 47,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_3.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_3.md",
+      "line": 57,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
     },
     {
       "path": "tests/observers/functional/OBSERVER_FUNCTIONAL_TEST_INDEX.json",
@@ -14093,6 +14687,48 @@
       "classification": "HISTORICAL_V41"
     },
     {
+      "path": "verification/BEAGLE_GATE0_CANDIDATE_RECEIPT.md",
+      "line": 8,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/CHATGPT_CODEX_COMPARATIVE_CANON_ANALYSIS.md",
+      "line": 5,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/CHAT_MIDDLEWARE_RUNTIME_TELEMETRY.json",
+      "line": 3,
+      "token": "v42",
+      "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/CHAT_MIDDLEWARE_RUNTIME_TELEMETRY.json",
+      "line": 9,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/CR_CHATGPT_CODEX_CLEAN_FULL_FREEZE_RECEIPT.md",
+      "line": 4,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/PACKAGE_MANIFEST.json",
+      "line": 3,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/TECH_EAGLE_OSPREY_MIDDLEWARE_VALIDATION.md",
+      "line": 4,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "verification/V42_1_1_CANONICAL_VALIDATOR_TRANSITION.json",
       "line": 4,
       "token": "vTemporal.42.1.1",
@@ -14151,6 +14787,24 @@
       "line": 2,
       "token": "vTemporal.42.5.2",
       "classification": "CURRENT_V42_FAMILY"
+    },
+    {
+      "path": "verification/middleware_revision2/CLEAN_FULL_FREEZE_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md",
+      "line": 6,
+      "token": "vTemporal.42.5.4",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md",
+      "line": 11,
+      "token": "v40",
+      "classification": "HISTORICAL_V40"
     },
     {
       "path": "verification/observers/ac_revalidation/AC01_AC12_OBSERVER_REVALIDATION.json",

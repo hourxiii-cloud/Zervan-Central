@@ -1,0 +1,39 @@
+{
+  "artifact_type": "runtime_telemetry",
+  "artifact_id": "chat-middleware-invariant-stress-v42-5-4",
+  "intended_consumer": "Beagle Gate 0 candidate validation",
+  "evidence_class": "DERIVED",
+  "structural_definition": "verification/CHAT_MIDDLEWARE_RUNTIME_TELEMETRY.schema.json",
+  "source_identifier": "verification/validate_chat_middleware_duck_100000.py",
+  "declared_versions": {
+    "release": "vTemporal.42.5.4",
+    "middleware_condition": "CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4",
+    "test_harness": "duck-100000-v1"
+  },
+  "hash_algorithm": "SHA-512",
+  "runtime_mode": "candidate_deterministic_harness",
+  "runtime_execution": "NOT_DEPLOYED",
+  "beagle_component_execution": "UNKNOWN — canonical runtime path not freshly resolved",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "metrics": {
+    "trials": 100000,
+    "events": 3200000,
+    "escalation_attempts_rejected": 2133766,
+    "governed_standing_wobble": 0,
+    "authority": "NONE",
+    "membership": "NONE",
+    "work_id": "NONE",
+    "persona_owner": "NONE",
+    "promotion": "NONE",
+    "human_gate": "ACTIVE",
+    "unsupported_resolution": "UNKNOWN"
+  },
+  "result": "PASS — candidate invariant stress condition",
+  "limitations": [
+    "This artifact is derived from a deterministic candidate-side harness.",
+    "It is not primary evidence from a deployed runtime.",
+    "A formal Beagle admission receipt was not verified in this operation."
+  ]
+}

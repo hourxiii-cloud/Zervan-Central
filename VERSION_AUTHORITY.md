@@ -308,3 +308,7 @@ No Compression Out: **ACTIVE**
 The Human Gate-approved overlay was committed and externally verified on `main`. Its operative standing is canonical. The publication receipt is `verification/v42.5.4/SPIDER_PERSONA_INTEGRATION_RECEIPT.json`; resolve the current main commit at initiation.
 
 The correction establishes Spider as a named analytical persona with a distinct seat, voice, provenance and complete R2 method. It does not alter the preserved R1 source or its historical standing, issue a WORK ID, instantiate a component, or establish runtime validation. Active initiation path: `/VERSION`, `/VERSION.json`, `/VERSION_AUTHORITY.md`, `/call/INITIATION_STATEMENT_V42_5_4.md`, `/canonical/ZERVAN_v42_5_4_CANONICAL_ENTRY.md`, then the parent architecture and the three Spider R2 paths in the entry's order.
+
+## Mandatory middleware canonical correction
+
+The Human Gate-authorized correction is admitted through `/canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json` and the active entry. Release identity remains vTemporal.42.5.4. Frozen predecessor and staged source bytes retain their original standing. Publication establishes a canonical contract, not independently executed components or live host enforcement.

@@ -30,3 +30,11 @@ The frozen R1 developmental source retains `Canonical FALSE / Promotion NONE` as
 Persona standing is separate from actual producer identity, independently issued WORK ID, deployed runtime, and empirical validation. Chat cannot impersonate a component or issue its credentials. No external action, collection, publication, repository mutation or system population follows from initialization.
 
 Exact release commit is resolved from Git main after publication and recorded separately. No future commit is predeclared here.
+
+## Mandatory middleware correction
+
+11. `/canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json`; verify all payload and frozen dependency bindings.
+12. `/canonical/middleware/ZERVAN_MANDATORY_MIDDLEWARE_CONTRACT.md` in full.
+13. `/verification/middleware/MIDDLEWARE_PROMOTION_RECEIPT.json`.
+
+The mandatory Zervan development and return route applies at every approved object standing, including ordinary conversation. Existing entry dependencies, Spider payloads, and incident-response contracts remain required. Canonical document publication does not certify host enforcement.

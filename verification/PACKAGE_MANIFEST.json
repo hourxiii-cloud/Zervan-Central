@@ -1,0 +1,140 @@
+{
+  "package": "Zervan_ChatGPT_Codex_Corrective_v42_5_4",
+  "release": "vTemporal.42.5.4",
+  "repository": "https://github.com/hourxiii-cloud/Zervan-Central",
+  "branch": "main",
+  "last_externally_resolved_commit_available_locally": "f09fc1768d4924992134602c8984e4ea5485d31a",
+  "fresh_external_read": "BLOCKED_BY_APPROVAL_SERVICE_USAGE_LIMIT",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "canonical_promotion": "NONE",
+  "package_standing": "CORRECTIVE CANDIDATE — HUMAN GATE REVIEW",
+  "contents": [
+    {
+      "path": "staged/middleware/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md",
+      "role": "staged middleware condition"
+    },
+    {
+      "path": "verification/CHATGPT_CODEX_COMPARATIVE_CANON_ANALYSIS.md",
+      "role": "comparative canon analysis"
+    },
+    {
+      "path": "verification/CHATGPT_CODEX_FAILURE_INVENTORY.md",
+      "role": "historical failure inventory"
+    },
+    {
+      "path": "verification/CORRECTIVE_PACKAGE_README.md",
+      "role": "package orientation"
+    },
+    {
+      "path": "verification/validate_chat_middleware_1000.py",
+      "role": "deterministic logical invariant test"
+    },
+    {
+      "path": "verification/TECH_EAGLE_OSPREY_MIDDLEWARE_VALIDATION.md",
+      "role": "Tech, Eagle, and Osprey validation receipt"
+    },
+    {
+      "path": "verification/validate_chat_middleware_duck_100000.py",
+      "role": "Duck 100,000-trial logical stress test"
+    },
+    {
+      "path": "verification/DUCK_100000_MIDDLEWARE_STRESS_RECEIPT.md",
+      "role": "Duck stress-test receipt"
+    },
+    {
+      "path": "verification/CHAT_MIDDLEWARE_RUNTIME_TELEMETRY.json",
+      "role": "derived candidate runtime telemetry"
+    },
+    {
+      "path": "verification/CHAT_MIDDLEWARE_RUNTIME_TELEMETRY.schema.json",
+      "role": "telemetry structural definition"
+    },
+    {
+      "path": "verification/run_beagle_gate0_middleware_telemetry.py",
+      "role": "Beagle Gate 0 contract check"
+    },
+    {
+      "path": "verification/BEAGLE_GATE0_CANDIDATE_RECEIPT.md",
+      "role": "Beagle candidate receipt"
+    },
+    {
+      "path": "verification/BEAGLE_STATUS_CORRECTION_RECEIPT.md",
+      "role": "correction of unsupported Beagle absence inference"
+    },
+    {
+      "path": "change_requests/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md",
+      "role": "four-lens CR qualification object"
+    },
+    {
+      "path": "verification/FOUR_LENS_CR_QUALIFICATION_RECEIPT.md",
+      "role": "Spider, Tech, Duck, and Mole qualification receipt"
+    },
+    {
+      "path": "verification/CR_CHATGPT_CODEX_CLEAN_FULL_FREEZE_RECEIPT.md",
+      "role": "clean full freeze receipt"
+    },
+    {
+      "path": "call/INITIATION_STATEMENT_V42_5_4.md",
+      "role": "canonical initiation reference"
+    },
+    {
+      "path": "canonical/ZERVAN_v42_5_4_CANONICAL_ENTRY.md",
+      "role": "canonical entry reference"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "role": "Spider contract reference"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "role": "Spider specification reference"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "role": "Tech persona and processor reference"
+    },
+    {
+      "path": "observers/Duck/duck_contract.md",
+      "role": "Duck contract reference"
+    },
+    {
+      "path": "observers/Eagle/eagle_contract.md",
+      "role": "Eagle contract reference"
+    },
+    {
+      "path": "observers/Mole/mole_contract.md",
+      "role": "Mole contract reference"
+    },
+    {
+      "path": "observers/Osprey/osprey_contract.md",
+      "role": "Osprey contract reference"
+    },
+    {
+      "path": "Modules/Beagle/beagle_contract.md",
+      "role": "Beagle Gate 0 contract reference"
+    }
+  ],
+  "runtime_validation": "NOT PERFORMED",
+  "logical_invariant_test": {
+    "status": "PASS",
+    "trials": 1000,
+    "events": 32000,
+    "scope": "ChatGPT/Codex escalation attempts cannot alter Zervan standing"
+  },
+  "duck_stress_test": {
+    "status": "PASS",
+    "trials": 100000,
+    "events": 3200000,
+    "governed_standing_wobble": 0,
+    "formal_observer_status": "INSUFFICIENT_EVIDENCE"
+  },
+  "beagle_status_correction": {
+    "previous": "NOT_AVAILABLE_IN_CHECKOUT",
+    "corrected": "UNKNOWN — canonical runtime path not freshly resolved",
+    "formal_receipt": "NOT_VERIFIED"
+  },
+  "external_action": "DISABLED",
+  "repository_promotion": "NOT PERFORMED"
+}

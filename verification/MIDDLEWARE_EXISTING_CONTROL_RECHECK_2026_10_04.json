@@ -1,0 +1,77 @@
+{
+  "operation": "RECHECK_EXISTING_MIDDLEWARE_CONTROLS",
+  "timestamp_utc": "2026-10-04T13:03:50.213175+00:00",
+  "producer": "CHATGPT/CODEX",
+  "independent_component_execution": false,
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "standing": "LOCAL VERIFICATION RECORD; NO PROMOTION",
+  "revision3_sha256": "d18b42f13b111b1b39ff8ab549b44f6a98247e86ae16724a5fdf482750b9bb72",
+  "scope": "Existing Revision 2 candidate checks and logical model; Revision 3 read in full, not validated by predecessor tests. No live host enforcement claim.",
+  "test_results": [
+    {
+      "script": "verification/middleware_revision2/validate.py",
+      "exit_code": 0,
+      "stdout": "ordinary_spider_valid: PASS\nresponse_id_missing: REJECT CHAT_RESPONSE_WORK_ID\ncomponent_id_not_assumed: PASS\nindependent_execution_without_receipt: REJECT UNSUPPORTED_COMPONENT_EXECUTION\ncomponent_id_without_issuance: REJECT UNISSUED_COMPONENT_ID\ncomponent_execution_evidenced: PASS\nabbreviated_spider_fields: REJECT SPIDER_ATTRIBUTION\nspider_full_missing_portable: REJECT PORTABLE_RECORD\nspider_full_complete: PASS\nfull_run_missing_question_and_inputs: REJECT PORTABLE_RECORD,RUN_GATE\nreset_blocks_contribution: REJECT RESET_REHYDRATION\nfailed_reload_blocks_contribution: REJECT CANON_NOT_LOADED\nhistorical_retrieval_no_self_return: REJECT RETURN_NOT_QUALIFIED,SELF_RETURN\nqualified_historical_return: PASS\nactual_access_denial_holds: PASS\nrun_without_access: REJECT ACCESS_CEILING\nno_permission_blocks_contribution: REJECT PERMISSION_CEILING\nnative_preference_no_veto: REJECT NATIVE_VETO\ninvented_attempt: REJECT INVENTED_ATTEMPT\ninvented_boundary: REJECT INVENTED_BOUNDARY\nPASS: 20 source-bound candidate cases; no runtime or formal observer validation claimed\n",
+      "stderr": ""
+    },
+    {
+      "script": "verification/validate_chat_middleware_1000.py",
+      "exit_code": 0,
+      "stdout": "PASS: 1000 trials; 32000 events; invariants preserved\n",
+      "stderr": ""
+    }
+  ],
+  "frozen_files_checked": 20,
+  "frozen_bytes_unchanged": true,
+  "frozen_sha256_before": {
+    "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md": "8d3f5957274ac40d3e94e74ac6feb65bde1d07b9c8b0e307bd721899fc0f9f92",
+    "freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md": "610acb3cda3ab436dba30ae3c02ca8d0c15fa6797090c5884378b4c61d414a57",
+    "freeze/middleware/MANIFEST.json": "401e0b1c9df91cf40ea219f5fc6e8a279a82128f895eafe4cf024dbf4b040e6c",
+    "freeze/middleware/revision2/MANIFEST.json": "e589b896ca28ee81a761352e1b82ff3252fd7011b1b8e6bfd55fd2ce10dc73e4",
+    "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md": "c62e21831129aebccfd397f33003db6cea8955e475a863b2f12a3dced3afcfbe",
+    "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md": "ab5a01d9c3e3e267a80b33651761a8f9f47d95f14517a72b652ff66af968ccfa",
+    "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md": "f8328e04b2704b36f4e065b80fa14c65a3a2f1f635bddaaf79ebddbb0e11b158",
+    "freeze/middleware/revision2/canonical/incident_response/CLEAN_INITIALIZATION_REQUIREMENTS.md": "571a7151b41fce5830598ce2882c8270b0889558b01a07933d38344ffdf53e47",
+    "freeze/middleware/revision2/canonical/incident_response/IN_CHANNEL_CANON_RESET_REQUIREMENTS.md": "8e4d4214a68fd1b4063434fa9c175e578f8019cbba9b65108ff4039dc0dfe0fb",
+    "freeze/middleware/revision2/canonical/incident_response/RETRIEVABLE_NOT_SELF_RETURNING.md": "cd9d785a7aa8fab60d1bf79d9598af5af0c0d351e294232d2210a7b6ae829264",
+    "freeze/middleware/revision2/change_requests/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md": "16ed3a1dbf1f715953bdcec0638b1063c910e6a2925cf416b2d5cf35858abf0d",
+    "freeze/middleware/revision2/freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md": "8d3f5957274ac40d3e94e74ac6feb65bde1d07b9c8b0e307bd721899fc0f9f92",
+    "freeze/middleware/revision2/freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md": "610acb3cda3ab436dba30ae3c02ca8d0c15fa6797090c5884378b4c61d414a57",
+    "freeze/middleware/revision2/staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md": "fa719bd045b54fb650df53fd916b21fe66dff8032aac14548500eec267f07caf",
+    "freeze/middleware/revision2/staged/middleware/middleware_route.schema.json": "b32dd568e87f0111c54b3e395a5e646e0dd816826861daba88b6ca677292ce5e",
+    "freeze/middleware/revision2/verification/middleware_revision2/CLEAN_FULL_FREEZE_RECEIPT.md": "fc73ec36d04e7e760ca4c66b4cdc82c83ad650c385d17d73ddb6e1d91c63f1b5",
+    "freeze/middleware/revision2/verification/middleware_revision2/IN_CHANNEL_APPLICATION_REPORT.md": "07279cebedae6b41a9a464d2bc9442a1c5f079acb2b562552bf9abd80bff53a6",
+    "freeze/middleware/revision2/verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md": "6f6171bf51bc0efff8da5087d11bc95045036060af6cdd81d47ccd468aff0f41",
+    "freeze/middleware/revision2/verification/middleware_revision2/cases.json": "e6bcedc673b78b004c38a68ad9ed7180fc1ea43478a342a8ba2b8bcff9b7ee69",
+    "freeze/middleware/revision2/verification/middleware_revision2/validate.py": "99bcaedb722f5f9183f5bdd9bfb4c966f175063709ba57245c3de13eaacf5475"
+  },
+  "frozen_sha256_after": {
+    "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md": "8d3f5957274ac40d3e94e74ac6feb65bde1d07b9c8b0e307bd721899fc0f9f92",
+    "freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md": "610acb3cda3ab436dba30ae3c02ca8d0c15fa6797090c5884378b4c61d414a57",
+    "freeze/middleware/MANIFEST.json": "401e0b1c9df91cf40ea219f5fc6e8a279a82128f895eafe4cf024dbf4b040e6c",
+    "freeze/middleware/revision2/MANIFEST.json": "e589b896ca28ee81a761352e1b82ff3252fd7011b1b8e6bfd55fd2ce10dc73e4",
+    "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md": "c62e21831129aebccfd397f33003db6cea8955e475a863b2f12a3dced3afcfbe",
+    "freeze/middleware/revision2/canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md": "ab5a01d9c3e3e267a80b33651761a8f9f47d95f14517a72b652ff66af968ccfa",
+    "freeze/middleware/revision2/canonical/ZERVAN_v40_0_CANONICAL_LOAD.md": "f8328e04b2704b36f4e065b80fa14c65a3a2f1f635bddaaf79ebddbb0e11b158",
+    "freeze/middleware/revision2/canonical/incident_response/CLEAN_INITIALIZATION_REQUIREMENTS.md": "571a7151b41fce5830598ce2882c8270b0889558b01a07933d38344ffdf53e47",
+    "freeze/middleware/revision2/canonical/incident_response/IN_CHANNEL_CANON_RESET_REQUIREMENTS.md": "8e4d4214a68fd1b4063434fa9c175e578f8019cbba9b65108ff4039dc0dfe0fb",
+    "freeze/middleware/revision2/canonical/incident_response/RETRIEVABLE_NOT_SELF_RETURNING.md": "cd9d785a7aa8fab60d1bf79d9598af5af0c0d351e294232d2210a7b6ae829264",
+    "freeze/middleware/revision2/change_requests/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md": "16ed3a1dbf1f715953bdcec0638b1063c910e6a2925cf416b2d5cf35858abf0d",
+    "freeze/middleware/revision2/freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md": "8d3f5957274ac40d3e94e74ac6feb65bde1d07b9c8b0e307bd721899fc0f9f92",
+    "freeze/middleware/revision2/freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md": "610acb3cda3ab436dba30ae3c02ca8d0c15fa6797090c5884378b4c61d414a57",
+    "freeze/middleware/revision2/staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md": "fa719bd045b54fb650df53fd916b21fe66dff8032aac14548500eec267f07caf",
+    "freeze/middleware/revision2/staged/middleware/middleware_route.schema.json": "b32dd568e87f0111c54b3e395a5e646e0dd816826861daba88b6ca677292ce5e",
+    "freeze/middleware/revision2/verification/middleware_revision2/CLEAN_FULL_FREEZE_RECEIPT.md": "fc73ec36d04e7e760ca4c66b4cdc82c83ad650c385d17d73ddb6e1d91c63f1b5",
+    "freeze/middleware/revision2/verification/middleware_revision2/IN_CHANNEL_APPLICATION_REPORT.md": "07279cebedae6b41a9a464d2bc9442a1c5f079acb2b562552bf9abd80bff53a6",
+    "freeze/middleware/revision2/verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md": "6f6171bf51bc0efff8da5087d11bc95045036060af6cdd81d47ccd468aff0f41",
+    "freeze/middleware/revision2/verification/middleware_revision2/cases.json": "e6bcedc673b78b004c38a68ad9ed7180fc1ea43478a342a8ba2b8bcff9b7ee69",
+    "freeze/middleware/revision2/verification/middleware_revision2/validate.py": "99bcaedb722f5f9183f5bdd9bfb4c966f175063709ba57245c3de13eaacf5475"
+  },
+  "unresolved": [
+    "Revision 3 qualification is not established by Revision 2 tests.",
+    "Live response adherence is not established by candidate tests.",
+    "Independent component credentials were not examined in this operation."
+  ],
+  "repository_mutation": "One new local verification receipt only; no commit or push."
+}

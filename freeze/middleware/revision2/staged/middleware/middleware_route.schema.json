@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Candidate middleware qualification route, not a canonical execution schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["case_id", "mode", "persona", "producer", "reset_pending", "canon_loaded", "historical_return", "question", "inputs", "response_work_id", "component_work_id", "component_issuance", "independent_execution_claim", "execution_receipt", "fields", "portable_sections", "access", "permission", "native_opt_out", "attempt_claimed", "attempt_evidence", "failure_boundary", "disposition"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "mode": {"enum": ["ordinary", "full_run", "component_execution", "historical_return"]},
+    "persona": {"type": "string"},
+    "producer": {"enum": ["CHAT", "COMPONENT"]},
+    "reset_pending": {"type": "boolean"},
+    "canon_loaded": {"type": "boolean"},
+    "historical_return": {"enum": ["none", "retrieved", "qualified_authorized"]},
+    "question": {"type": ["string", "null"]},
+    "inputs": {"type": "array", "items": {"type": "string"}},
+    "response_work_id": {"type": ["string", "null"]},
+    "component_work_id": {"type": ["string", "null"]},
+    "component_issuance": {"type": "boolean"},
+    "independent_execution_claim": {"type": "boolean"},
+    "execution_receipt": {"type": "boolean"},
+    "fields": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "portable_sections": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 13}},
+    "access": {"enum": ["available", "denied", "unknown"]},
+    "permission": {"type": "boolean"},
+    "native_opt_out": {"type": "boolean"},
+    "attempt_claimed": {"type": "boolean"},
+    "attempt_evidence": {"type": "boolean"},
+    "failure_boundary": {"type": ["string", "null"]},
+    "disposition": {"enum": ["contribute", "run", "hold", "report_boundary", "return"]}
+  }
+}

@@ -26,5 +26,6 @@
   "spider_admission": "canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json",
   "qualification_scope": "Spider R2 persona specification and package integrity; deployed runtime not validated",
   "integration_receipt": "verification/v42.5.4/SPIDER_PERSONA_INTEGRATION_RECEIPT.json",
-  "runtime_validation": "NOT PERFORMED"
+  "runtime_validation": "NOT PERFORMED",
+  "middleware_admission": "canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json"
 }

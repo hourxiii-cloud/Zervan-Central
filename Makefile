@@ -81,3 +81,15 @@ test-repository:
 test-current-canon: test-v42-5-4 test-observers
 
 check: validate-current-canon test-current-canon
+
+.PHONY: validate-middleware
+validate-middleware:
+	@PYTHONDONTWRITEBYTECODE=1 python3 tools/validate_middleware_admission.py
+
+validate-current-canon: validate-middleware
+
+.PHONY: test-middleware
+test-middleware:
+	@PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_middleware_admission -v
+
+test-current-canon: test-middleware

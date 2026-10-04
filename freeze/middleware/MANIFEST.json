@@ -1,0 +1,19 @@
+{
+  "object": "GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE",
+  "standing": "CLEAN FULL FROZEN — DEVELOPMENTAL; REVISE BEFORE PROMOTION",
+  "canonical": false,
+  "base_commit": "f09fc1768d4924992134602c8984e4ea5485d31a",
+  "remote_main_newly_resolved": false,
+  "files": [
+    {
+      "path": "CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "size_bytes": 10236,
+      "sha256": "8d3f5957274ac40d3e94e74ac6feb65bde1d07b9c8b0e307bd721899fc0f9f92"
+    },
+    {
+      "path": "GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md",
+      "size_bytes": 6134,
+      "sha256": "610acb3cda3ab436dba30ae3c02ca8d0c15fa6797090c5884378b4c61d414a57"
+    }
+  ]
+}

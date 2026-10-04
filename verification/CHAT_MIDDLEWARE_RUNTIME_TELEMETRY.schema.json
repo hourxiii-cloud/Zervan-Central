@@ -1,0 +1,17 @@
+{
+  "schema": "zervan://schema/runtime-telemetry/1",
+  "required": [
+    "artifact_type",
+    "artifact_id",
+    "intended_consumer",
+    "evidence_class",
+    "structural_definition",
+    "source_identifier",
+    "declared_versions",
+    "hash_algorithm",
+    "runtime_mode",
+    "metrics"
+  ],
+  "evidence_class_enum": ["PRIMARY", "DERIVED"],
+  "hash_algorithm_enum": ["SHA-512"]
+}

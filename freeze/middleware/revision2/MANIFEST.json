@@ -1,0 +1,89 @@
+{
+  "object": "MIDDLEWARE_REVISION_2_CLEAN_FULL_FREEZE",
+  "standing": "CLEAN FULL FROZEN — DEVELOPMENTAL; CANDIDATE VALIDATION PASS; PROMOTION HOLD",
+  "repository": "hourxiii-cloud/Zervan-Central",
+  "local_commit": "f09fc1768d4924992134602c8984e4ea5485d31a",
+  "remote_main_newly_resolved": false,
+  "files": [
+    {
+      "path": "staged/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4_REVISION_2.md",
+      "bytes": 13663,
+      "sha256": "fa719bd045b54fb650df53fd916b21fe66dff8032aac14548500eec267f07caf"
+    },
+    {
+      "path": "staged/middleware/middleware_route.schema.json",
+      "bytes": 1947,
+      "sha256": "b32dd568e87f0111c54b3e395a5e646e0dd816826861daba88b6ca677292ce5e"
+    },
+    {
+      "path": "verification/middleware_revision2/cases.json",
+      "bytes": 25881,
+      "sha256": "e6bcedc673b78b004c38a68ad9ed7180fc1ea43478a342a8ba2b8bcff9b7ee69"
+    },
+    {
+      "path": "verification/middleware_revision2/validate.py",
+      "bytes": 6933,
+      "sha256": "99bcaedb722f5f9183f5bdd9bfb4c966f175063709ba57245c3de13eaacf5475"
+    },
+    {
+      "path": "verification/middleware_revision2/QUALIFICATION_VALIDATION_RECEIPT.md",
+      "bytes": 6169,
+      "sha256": "6f6171bf51bc0efff8da5087d11bc95045036060af6cdd81d47ccd468aff0f41"
+    },
+    {
+      "path": "verification/middleware_revision2/IN_CHANNEL_APPLICATION_REPORT.md",
+      "bytes": 7795,
+      "sha256": "07279cebedae6b41a9a464d2bc9442a1c5f079acb2b562552bf9abd80bff53a6"
+    },
+    {
+      "path": "verification/middleware_revision2/CLEAN_FULL_FREEZE_RECEIPT.md",
+      "bytes": 3670,
+      "sha256": "fc73ec36d04e7e760ca4c66b4cdc82c83ad650c385d17d73ddb6e1d91c63f1b5"
+    },
+    {
+      "path": "freeze/middleware/CR_GENERIC_CHAT_MIDDLEWARE_ONLY_EXPLICIT_V42_5_4.md",
+      "bytes": 10236,
+      "sha256": "8d3f5957274ac40d3e94e74ac6feb65bde1d07b9c8b0e307bd721899fc0f9f92"
+    },
+    {
+      "path": "freeze/middleware/GENERIC_CHAT_MIDDLEWARE_ONLY_V42_5_4_CLEAN_FULL_FREEZE_RECEIPT.md",
+      "bytes": 6134,
+      "sha256": "610acb3cda3ab436dba30ae3c02ca8d0c15fa6797090c5884378b4c61d414a57"
+    },
+    {
+      "path": "canonical/ZERVAN_v40_0_CANONICAL_LOAD.md",
+      "bytes": 172616,
+      "sha256": "f8328e04b2704b36f4e065b80fa14c65a3a2f1f635bddaaf79ebddbb0e11b158"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R2_PERSONA_CONTRACT.md",
+      "bytes": 4783,
+      "sha256": "ab5a01d9c3e3e267a80b33651761a8f9f47d95f14517a72b652ff66af968ccfa"
+    },
+    {
+      "path": "canonical/Spider/SPIDER_R2_FULL_PERSONA_SPECIFICATION.md",
+      "bytes": 69915,
+      "sha256": "c62e21831129aebccfd397f33003db6cea8955e475a863b2f12a3dced3afcfbe"
+    },
+    {
+      "path": "canonical/incident_response/IN_CHANNEL_CANON_RESET_REQUIREMENTS.md",
+      "bytes": 1255,
+      "sha256": "8e4d4214a68fd1b4063434fa9c175e578f8019cbba9b65108ff4039dc0dfe0fb"
+    },
+    {
+      "path": "canonical/incident_response/CLEAN_INITIALIZATION_REQUIREMENTS.md",
+      "bytes": 1285,
+      "sha256": "571a7151b41fce5830598ce2882c8270b0889558b01a07933d38344ffdf53e47"
+    },
+    {
+      "path": "canonical/incident_response/RETRIEVABLE_NOT_SELF_RETURNING.md",
+      "bytes": 1002,
+      "sha256": "cd9d785a7aa8fab60d1bf79d9598af5af0c0d351e294232d2210a7b6ae829264"
+    },
+    {
+      "path": "change_requests/CR_CHATGPT_CODEX_MIDDLEWARE_CONDITION_V42_5_4.md",
+      "bytes": 6026,
+      "sha256": "16ed3a1dbf1f715953bdcec0638b1063c910e6a2925cf416b2d5cf35858abf0d"
+    }
+  ]
+}
