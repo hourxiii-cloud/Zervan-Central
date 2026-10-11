@@ -1,12 +1,40 @@
 {
-  "schema": "zervan-promotion-receipt/v1",
+  "schema": "zervan-promotion-receipt/v2",
   "version": "vTemporal.47.8.0",
   "branch": "main",
-  "promotion_commit": "dbf4432d0edabbc771c4ed15b7ae27d01c234cfd",
-  "standing": "CANONICAL DESIGN SPECIFICATION",
-  "human_gate_decision": "APPROVE_SPECIFICATION_SCOPE",
+  "standing": "HUMAN-GATE APPROVED FOR CANONICAL INTEGRATION",
+  "decision": "APPROVE",
+  "decision_scope": "Origin-bound v47.8 relational-flow mathematics package: specification, deterministic synthetic arithmetic implementation, admission record, and existing tests.",
+  "decision_date": "2026-10-11",
+  "decision_timezone": "America/New_York",
+  "decision_basis": "User's direct approval: “I DID THIS. I APPROVE.” The record restores the Human Gate approval omitted from the package handoff.",
   "decision_record": "canonical/v47.8/HUMAN_GATE_DECISION.md",
+  "supersedes": "Prior v47.8 promotion receipt for the flow-math approval scope.",
+  "recorded_against_main_commit": "f3362640d4a3f935bf8251a4b8e2879273c7aa53",
+  "originating_candidate_commit": "249a62f631f661ae688fb6e21bb8302969385e4f",
+  "source_baseline_commit": "bf8c82dfb911ba4eac4b984c77ace741c4e81c6f",
+  "source_baseline_release": "vTemporal.42.5.4",
+  "transport_artifact": {
+    "path": "Zervan_v47_8_Flow_Math_Port.zip",
+    "sha256": "b9f25ee53f604ec731412bc72db56bb4870c880633e835137efbbb788729f330"
+  },
+  "port_baseline_commit": "1e2847133eb69c925dcb85fa91bf1fe17919e4b2",
+  "port_commit": "21c9f1e83f7f999f9af03f856c9ede47564a0e3b",
+  "origin_contract": {
+    "path": "canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md",
+    "sha256": "27ec46f561c2d1680039f0a92e32f7a713b377ddaeac9c08fb82cfa5c0b0e1ce"
+  },
+  "qualification_evidence": {
+    "source_receipt": "verification/geometry/FLOW_MATH_QUALIFICATION_RECEIPT.md",
+    "source_receipt_scope": "Historical source-baseline qualification only; it reports 19 tests passing at the source baseline.",
+    "v47_8_port_tests": "NOT ASSERTED AS PASSING",
+    "repository_check": "This receipt records user approval and origin binding; it does not certify a successful make check."
+  },
   "runtime_validation": "NOT PERFORMED",
-  "physical_sensor_qualification": "NOT PERFORMED",
-  "external_action": "DISABLED"
+  "physical_applicability": "NOT QUALIFIED",
+  "sensor_qualification": "NOT PERFORMED",
+  "independent_component_execution": false,
+  "external_action": "DISABLED",
+  "authority": "NONE",
+  "human_gate": "ACTIVE for runtime, physical validation, external action, and any scope beyond this approval."
 }

@@ -29,6 +29,8 @@ current-runtime integration.
 
 ## Additive relational-flow mathematical supplement
 
-The v47.8 supplement binds `/canonical/geometry/FLOW_MATH_ADMISSION.json`, which loads the frozen flow/pressure/vortex source before `/canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md`. The scoped arithmetic implementation is `/tools/relational_flow_math.py`; its port record is `/verification/v47.8/FLOW_MATH_PORT_RECEIPT.md`.
+The v47.8 supplement binds `/canonical/geometry/FLOW_MATH_ADMISSION.json`, which loads the frozen flow/pressure/vortex source before `/canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md`. The scoped arithmetic implementation is `/tools/relational_flow_math.py`.
 
-The supplement provides synthetic accounting and interval-flow calculations. Runtime deployment, physical applicability, sensors, and independent execution remain unqualified. The historical source-suite result is not a test result for this v47.8 port.
+The Human Gate approval and exact source lineage are bound by `/canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md`, `/canonical/v47.8/HUMAN_GATE_DECISION.md`, and `/verification/v47.8/PROMOTION_RECEIPT.json`. The earlier port record remains `/verification/v47.8/FLOW_MATH_PORT_RECEIPT.md`. The originating candidate SHA and transport archive digest must match the contract and admission.
+
+The supplement provides synthetic accounting and interval-flow calculations. The source qualification receipt is scoped to its original baseline and is not a v47.8 port test result. This approval does not certify that `make check` passed. Runtime deployment, physical applicability, sensors, and independent execution remain unqualified.

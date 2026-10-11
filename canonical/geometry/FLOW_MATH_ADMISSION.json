@@ -1,5 +1,5 @@
 {
-  "object": "Relational Flow Mathematics \u2014 additive formal successor",
+  "object": "Relational Flow Mathematics — additive formal successor",
   "release": "vTemporal.47.8.0",
   "canonical": true,
   "standing": "CANONICAL ADDITIVE MATHEMATICAL SUPPLEMENT; RUNTIME NOT QUALIFIED",
@@ -8,7 +8,7 @@
   "no_compression_out": "ACTIVE",
   "originating_data_mutation": "DISALLOWED",
   "baseline_commit": "1e2847133eb69c925dcb85fa91bf1fe17919e4b2",
-  "human_authorization": "2026-10-05 America/New_York: patch the MATHS, restack and redeploy",
+  "human_authorization": "2026-10-11 America/New_York: user explicitly approved the origin-bound flow-math package for Canon integration; see canonical/v47.8/HUMAN_GATE_DECISION.md",
   "runtime_validation": "NOT PERFORMED",
   "independent_component_execution": false,
   "frozen_parent": {
@@ -34,22 +34,36 @@
     },
     {
       "path": "tools/validate_flow_math_admission.py",
-      "size_bytes": 1856,
-      "sha256": "1227886c69773565fc8fb1ce9edc9cdcfa5cd5cb289bba4df4492c08a9c98bca"
+      "size_bytes": 3195,
+      "sha256": "a2947f24f7420c6e6dc05684a2279008aadd96c10102f93d443e6f91caf1204f"
     },
     {
       "path": "tests/test_flow_math_admission.py",
-      "size_bytes": 2116,
-      "sha256": "d2d2c9af3a71ad66eba84afc4a2e55c8ef1ac7706e95d0d1618d462aab8f16be"
+      "size_bytes": 2167,
+      "sha256": "27b8ff2febb4b32a6851d051c056d4e6a48a7d61a02ffe60a25f173bbb1a142d"
     },
     {
       "path": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md",
       "size_bytes": 1095,
       "sha256": "b09edc1626bc32c816114a72dec94bf42f7efb005c131f06c8e50e282914a986"
+    },
+    {
+      "path": "canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md",
+      "size_bytes": 2573,
+      "sha256": "27ec46f561c2d1680039f0a92e32f7a713b377ddaeac9c08fb82cfa5c0b0e1ce"
+    },
+    {
+      "path": "verification/v47.8/PROMOTION_RECEIPT.json",
+      "size_bytes": 2251,
+      "sha256": "eff7cb60604c31cfdcd258a7a2310f16376065fa8fb10125a8f09ee27b673f45"
     }
   ],
   "load_order": [
     "canonical/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
     "canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md"
-  ]
+  ],
+  "originating_candidate_commit": "249a62f631f661ae688fb6e21bb8302969385e4f",
+  "transport_artifact_sha256": "b9f25ee53f604ec731412bc72db56bb4870c880633e835137efbbb788729f330",
+  "origin_contract": "canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md",
+  "promotion_receipt": "verification/v47.8/PROMOTION_RECEIPT.json"
 }

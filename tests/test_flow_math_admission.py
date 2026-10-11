@@ -30,7 +30,8 @@ class AdmissionTests(unittest.TestCase):
     def test_removed_load_dependency_rejected(self):
         with tempfile.TemporaryDirectory() as temp:
             dest = Path(temp); self.copy_bound_objects(dest)
-            p = dest / 'canonical/ZERVAN_v42_5_4_CANONICAL_ENTRY.md'
+            version = json.loads((dest / 'VERSION.json').read_text())
+            p = dest / version['canonical_entry']
             p.write_text(p.read_text().replace('/canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md', '/missing'))
             with self.assertRaisesRegex(ValueError, 'load missing'):
                 validate(dest)

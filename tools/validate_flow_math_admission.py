@@ -25,8 +25,28 @@ def validate(root=ROOT):
         b = (root / path).read_bytes()
         if len(b) != item['size_bytes'] or hashlib.sha256(b).hexdigest() != item['sha256']:
             raise ValueError(f'bound artifact mismatch: {path}')
+    origin_sha = a.get('originating_candidate_commit')
+    transport_sha = a.get('transport_artifact_sha256')
+    contract_path = a.get('origin_contract')
+    receipt_path = a.get('promotion_receipt')
+    payloads = {item['path']: item for item in a['payloads']}
+    if not origin_sha or not transport_sha or contract_path not in payloads or receipt_path not in payloads:
+        raise ValueError('origin contract or receipt binding missing')
+    contract_text = (root / contract_path).read_text()
+    receipt = json.loads((root / receipt_path).read_text())
+    contract_item = payloads[contract_path]
+    if f"Originating candidate commit SHA: `{origin_sha}`" not in contract_text:
+        raise ValueError('originating candidate SHA mismatch')
+    if f"Transport artifact SHA-256: `{transport_sha}`" not in contract_text:
+        raise ValueError('transport artifact SHA mismatch')
+    if receipt.get('originating_candidate_commit') != origin_sha:
+        raise ValueError('receipt originating SHA mismatch')
+    if receipt.get('transport_artifact', {}).get('sha256') != transport_sha:
+        raise ValueError('receipt transport SHA mismatch')
+    if receipt.get('origin_contract') != {'path': contract_path, 'sha256': contract_item['sha256']}:
+        raise ValueError('receipt contract binding mismatch')
     entry = (root / version['canonical_entry']).read_text()
-    for path in [admission_path, *a['load_order']]:
+    for path in [admission_path, *a['load_order'], contract_path, receipt_path]:
         if '/' + path not in entry:
             raise ValueError(f'required entry load missing: {path}')
     return a
