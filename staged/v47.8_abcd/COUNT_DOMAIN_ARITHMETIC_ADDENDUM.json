@@ -1,0 +1,25 @@
+{
+  "schema": "zervan-count-domain-correction/v1",
+  "standing": "STAGED_QUALIFICATION_ADDENDUM",
+  "canonical": false,
+  "promotion": "NONE",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "mutation_lock": "ACTIVE",
+  "source_archive": {
+    "path": "staged/v47.8_abcd/Zervan_v47_8_One_Push_Canon_Review_Candidate_COMPACT_CLEAN_FULL_FREEZE.zip",
+    "bytes": 56464957,
+    "sha256": "d1e695fe054e13a072fbe49b05b32bc982aa1add9de38b5c079424e00bb52768",
+    "sha512": "8032b690ea4c0ea59f9dabceccd8d19d4f18d753f30143e6e13bcb42e8758dfbff1009658f6f85a73aae5498d1464494be3461561d83709de38370e400578634"
+  },
+  "calculation": {
+    "capacity": "124^3 = 1,906,624",
+    "occupied": 1306824,
+    "vacant": 599800,
+    "possible_integer_count_values": "0 through 1,906,624 inclusive = 1,906,625",
+    "identity": "n + (1,906,624 - n) = 1,906,624",
+    "result": "PASS: explicit Python arithmetic loop executed in Codespaces",
+    "limit": "This does not establish production runtime enumeration or physical/sensor qualification."
+  },
+  "disposition": "The frozen package already distinguishes count values from executed program tests. This addendum records the subsequent arithmetic run without changing that frozen archive."
+}
