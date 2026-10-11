@@ -93,3 +93,12 @@ test-middleware:
 	@PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_middleware_admission -v
 
 test-current-canon: test-middleware
+
+.PHONY: validate-flow-math test-flow-math
+validate-flow-math:
+	@PYTHONDONTWRITEBYTECODE=1 python3 tools/validate_flow_math_admission.py
+test-flow-math:
+	@PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_relational_flow_math tests.test_flow_math_admission -v
+
+validate-current-canon: validate-flow-math
+test-current-canon: test-flow-math

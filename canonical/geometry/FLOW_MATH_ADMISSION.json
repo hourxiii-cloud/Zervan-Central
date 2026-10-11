@@ -1,0 +1,55 @@
+{
+  "object": "Relational Flow Mathematics \u2014 additive formal successor",
+  "release": "vTemporal.47.8.0",
+  "canonical": true,
+  "standing": "CANONICAL ADDITIVE MATHEMATICAL SUPPLEMENT; RUNTIME NOT QUALIFIED",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "originating_data_mutation": "DISALLOWED",
+  "baseline_commit": "1e2847133eb69c925dcb85fa91bf1fe17919e4b2",
+  "human_authorization": "2026-10-05 America/New_York: patch the MATHS, restack and redeploy",
+  "runtime_validation": "NOT PERFORMED",
+  "independent_component_execution": false,
+  "frozen_parent": {
+    "path": "canonical/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
+    "size_bytes": 10863,
+    "sha256": "79231ef5fbd10ef51761f84118edb0b3e32fd49321f0cbeda906fcf86a0bf28c"
+  },
+  "payloads": [
+    {
+      "path": "canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md",
+      "size_bytes": 12172,
+      "sha256": "ec3c62ac9754ee0f70686ccd0834e6f5ad3fccea5a8bf27a2fa2fe198f2e8f36"
+    },
+    {
+      "path": "tools/relational_flow_math.py",
+      "size_bytes": 3990,
+      "sha256": "caf1fde4caf65e72f11d6f883a18222e376d0c82eb9c8b5876e7f3aece07ed4f"
+    },
+    {
+      "path": "tests/test_relational_flow_math.py",
+      "size_bytes": 3750,
+      "sha256": "f8d3fb1813e149d8e8399f489b439939b4f381e2e2604c569369d0c891626dd9"
+    },
+    {
+      "path": "tools/validate_flow_math_admission.py",
+      "size_bytes": 1856,
+      "sha256": "1227886c69773565fc8fb1ce9edc9cdcfa5cd5cb289bba4df4492c08a9c98bca"
+    },
+    {
+      "path": "tests/test_flow_math_admission.py",
+      "size_bytes": 2116,
+      "sha256": "d2d2c9af3a71ad66eba84afc4a2e55c8ef1ac7706e95d0d1618d462aab8f16be"
+    },
+    {
+      "path": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md",
+      "size_bytes": 1095,
+      "sha256": "b09edc1626bc32c816114a72dec94bf42f7efb005c131f06c8e50e282914a986"
+    }
+  ],
+  "load_order": [
+    "canonical/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md",
+    "canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md"
+  ]
+}

@@ -26,3 +26,9 @@ Unqualified items remain open: unit-ID-to-role mapping, the stale diagram
 caption, subnet field implementation, hash/ECC benchmarking, measured acoustic
 coverage, coordinate mapping, runtime enforcement of the 121 m design cap, and
 current-runtime integration.
+
+## Additive relational-flow mathematical supplement
+
+The v47.8 supplement binds `/canonical/geometry/FLOW_MATH_ADMISSION.json`, which loads the frozen flow/pressure/vortex source before `/canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md`. The scoped arithmetic implementation is `/tools/relational_flow_math.py`; its port record is `/verification/v47.8/FLOW_MATH_PORT_RECEIPT.md`.
+
+The supplement provides synthetic accounting and interval-flow calculations. Runtime deployment, physical applicability, sensors, and independent execution remain unqualified. The historical source-suite result is not a test result for this v47.8 port.
