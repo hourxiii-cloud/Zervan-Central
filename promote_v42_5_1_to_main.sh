@@ -3,7 +3,7 @@ set -euo pipefail
 
 REPO_EXPECTED="hourxiii-cloud/Zervan-Central"
 BRANCH="candidate/v42.5.1-temporal-compute"
-PARENT_CANONICAL="de79c24aef044dc57f13a980c8ca0be25e14f4b6"
+PARENT_CANONICAL="730fed276fae7756c6a87f72a930c0820aa35391"
 TARGET_VERSION="vTemporal.42.5.1"
 
 die() { echo; echo "=== ABORT ==="; echo "$*"; exit 1; }
