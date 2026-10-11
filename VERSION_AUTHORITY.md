@@ -312,3 +312,13 @@ The correction establishes Spider as a named analytical persona with a distinct 
 ## Mandatory middleware canonical correction
 
 The Human Gate-authorized correction is admitted through `/canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json` and the active entry. Release identity remains vTemporal.42.5.4. Frozen predecessor and staged source bytes retain their original standing. Publication establishes a canonical contract, not independently executed components or live host enforcement.
+
+# v47.8 canonical specification
+
+Active version: vTemporal.47.8.0
+Parent canonical identity: vTemporal.42.5.4
+Standing: CANONICAL DESIGN SPECIFICATION
+Human Gate decision: APPROVE, limited to the scope recorded in
+`canonical/v47.8/HUMAN_GATE_DECISION.md`.
+Authority: NONE. Runtime qualification: NOT PERFORMED.
+The promotion commit is recorded in `verification/v47.8/PROMOTION_RECEIPT.json`.
