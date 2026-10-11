@@ -19,9 +19,9 @@
   "change_request": "change_requests/CR_v42_5_1_TEMPORAL_COMPUTE_RUNTIME_INDEPENDENT_CONTINUITY.md",
   "candidate_implementation": "candidate/v42.5.1/TEMPORAL_COMPUTE_CANONICAL_IMPLEMENTATION.md",
   "validation_plan": "verification/v42.5.1/V42_5_1_VALIDATION_PLAN.md",
-  "validation": "PASS",
-  "qualification": "PASS",
-  "canonical_promotion": "APPROVED",
+  "validation": "PENDING EXECUTION",
+  "qualification": "NOT ESTABLISHED",
+  "canonical_promotion": "NOT ESTABLISHED",
   "development_register": "candidate/v42.5.1/POST_V42_5_0_DEVELOPMENT_REGISTER.md",
   "source_packages": [
     "Zervan_v42.5.1_Transfer_Package.zip",
