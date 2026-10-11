@@ -1,0 +1,12 @@
+{
+  "schema": "zervan-promotion-receipt/v1",
+  "version": "vTemporal.47.8.0",
+  "branch": "main",
+  "promotion_commit": "dbf4432d0edabbc771c4ed15b7ae27d01c234cfd",
+  "standing": "CANONICAL DESIGN SPECIFICATION",
+  "human_gate_decision": "APPROVE_SPECIFICATION_SCOPE",
+  "decision_record": "canonical/v47.8/HUMAN_GATE_DECISION.md",
+  "runtime_validation": "NOT PERFORMED",
+  "physical_sensor_qualification": "NOT PERFORMED",
+  "external_action": "DISABLED"
+}
