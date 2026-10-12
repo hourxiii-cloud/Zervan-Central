@@ -12,8 +12,8 @@ VERSION = (ROOT / "VERSION").read_text(
 
 TOKEN_RE = re.compile(
     r"\b(?:"
-    r"vTemporal\.(?:39|40|41|42)(?:[._]\d+){0,3}"
-    r"|v(?:39|40|41|42)(?:[._]\d+){0,3}"
+    r"vTemporal\.(?:39|40|41|42|47)(?:[._]\d+){0,3}"
+    r"|v(?:39|40|41|42|47)(?:[._]\d+){0,3}"
     r")\b"
 )
 
@@ -43,8 +43,12 @@ def classify(token):
         return "HISTORICAL_V40"
     if normalized == "v41" or normalized.startswith("v41.0") or normalized.startswith("vTemporal.41"):
         return "HISTORICAL_V41"
+    if normalized.startswith("vTemporal.47.8") or normalized == "v47.8" or normalized.startswith("v47.8."):
+        return "CURRENT_V47_FAMILY"
+    if normalized.startswith("vTemporal.47") or normalized == "v47" or normalized.startswith("v47."):
+        return "HISTORICAL_V47_FAMILY"
     if normalized == "v42" or normalized.startswith("v42.") or normalized.startswith("vTemporal.42"):
-        return "CURRENT_V42_FAMILY"
+        return "PARENT_CANONICAL_FAMILY"
 
     return "REVIEW_REQUIRED"
 
@@ -55,8 +59,6 @@ def main():
             "git", "-C", str(ROOT),
             "ls-files",
             "--cached",
-            "--others",
-            "--exclude-standard",
         ],
         text=True
     ).splitlines()
@@ -119,7 +121,7 @@ def main():
         "source_branch": branch,
         "scope": (
             "repository-wide textual version references "
-            "for v39/v40/v41/v42 families"
+            "for v39/v40/v41/v42/v47 families"
         ),
         "excluded_control_files": sorted(SCAN_EXCLUDE),
         "entries": entries,

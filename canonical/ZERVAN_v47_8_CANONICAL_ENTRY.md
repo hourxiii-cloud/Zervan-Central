@@ -27,6 +27,10 @@ caption, subnet field implementation, hash/ECC benchmarking, measured acoustic
 coverage, coordinate mapping, runtime enforcement of the 121 m design cap, and
 current-runtime integration.
 
+## Release component registry
+
+The active v47.8 release-to-component lineage is recorded in `/canonical/v47.8/COMPONENT_REGISTRY.json`. It preserves the v42.5.4 identities and frozen hashes of inherited Spider and middleware components while binding the approved v47.8 flow-math supplement to its originating candidate and transport digest.
+
 ## Additive relational-flow mathematical supplement
 
 The v47.8 supplement binds `/canonical/geometry/FLOW_MATH_ADMISSION.json`, which loads the frozen flow/pressure/vortex source before `/canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md`. The scoped arithmetic implementation is `/tools/relational_flow_math.py`.

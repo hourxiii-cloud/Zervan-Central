@@ -12,7 +12,6 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = "vTemporal." + "42.5.4"
 R1 = "canonical/Spider/SPIDER_R1_ADMISSION.json"
 R2 = "canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json"
 STANDING = "verification/" + "v" + "42.5.4/SPIDER_PERSONA_STANDING_CORRECTION.json"
@@ -69,18 +68,23 @@ def validate():
         r1 = read_json(R1)
         r2 = read_json(R2)
         correction = read_json(STANDING)
+        registry = read_json(identity["component_registry"])
+        component = registry["components"]["spider_persona"]
     except (OSError, UnicodeError, ValueError) as exc:
         return [f"required document unavailable or invalid: {exc}"]
 
-    check_equal(version, RELEASE, "VERSION", errors)
     check_equal(identity.get("version"), version, "VERSION.json version", errors)
+    check_equal(registry.get("active_release"), version, "component registry active release", errors)
+    check_equal(registry.get("canonical_branch"), identity.get("canonical_branch"), "component registry branch", errors)
+    spider_release = component.get("source_release")
+    check_equal(component.get("admission", {}).get("path"), R2, "registered Spider admission", errors)
+    check_equal(component.get("admission", {}).get("sha256"), hashlib.sha256((ROOT / R2).read_bytes()).hexdigest(), "registered Spider admission SHA-256", errors)
+    check_equal(component.get("standing_record", {}).get("path"), STANDING, "registered Spider standing record", errors)
+    check_equal(component.get("standing_record", {}).get("sha256"), hashlib.sha256((ROOT / STANDING).read_bytes()).hexdigest(), "registered Spider standing SHA-256", errors)
     check_equal(identity.get("promotion_state"), "CANONICAL", "promotion state", errors)
     check_equal(identity.get("canonical_branch"), "main", "canonical branch", errors)
     check_equal(identity.get("spider_admission"), R2, "active Spider admission", errors)
-    release_suffix = RELEASE.removeprefix("vTemporal.").replace(".", "_")
-    check_equal(identity.get("initiation_call"), f"call/INITIATION_STATEMENT_V{release_suffix}.md", "initiation call", errors)
-    check_equal(identity.get("canonical_entry"), f"canonical/ZERVAN_v{release_suffix}_CANONICAL_ENTRY.md", "canonical entry", errors)
-    check_equal(r2.get("target_release"), RELEASE, "R2 release", errors)
+    check_equal(r2.get("target_release"), spider_release, "Spider R2 historical release", errors)
     check_equal(r2.get("persona"), "SPIDER", "R2 persona", errors)
     check_equal(r2.get("seat"), "ANALYTICAL_PERSONA_ARTIFACT_CONTEXT_CLAIM_QUALIFICATION", "R2 seat", errors)
     check_equal(r2.get("standing"), "CANONICAL PERSONA SPECIFICATION", "R2 standing", errors)
@@ -102,7 +106,7 @@ def validate():
     check_equal(r2.get("originating_data_mutation"), "DISALLOWED", "R2 source mutation", errors)
     check_equal(r2.get("component_credentials_issued"), False, "R2 credentials", errors)
     check_equal(r2.get("runtime_validation"), "NOT PERFORMED", "R2 runtime validation", errors)
-    check_equal(correction.get("release"), RELEASE, "correction release", errors)
+    check_equal(correction.get("release"), spider_release, "correction source release", errors)
     check_equal(correction.get("independent_component_runtime_claimed"), False, "correction runtime claim", errors)
     check_equal(correction.get("historical_candidate_qualification_preserved"), True, "candidate provenance", errors)
     check_equal(correction.get("full_analytical_run_gate_unchanged"), True, "full run gate", errors)

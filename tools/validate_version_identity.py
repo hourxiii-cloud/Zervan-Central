@@ -9,8 +9,8 @@ import sys
 
 TOKEN_RE = re.compile(
     r"\b(?:"
-    r"vTemporal\.(?:39|40|41|42)(?:[._]\d+){0,3}"
-    r"|v(?:39|40|41|42)(?:[._]\d+){0,3}"
+    r"vTemporal\.(?:39|40|41|42|47)(?:[._]\d+){0,3}"
+    r"|v(?:39|40|41|42|47)(?:[._]\d+){0,3}"
     r")\b"
 )
 
@@ -44,8 +44,12 @@ def classify(token, native_version):
         return "HISTORICAL_V40"
     if normalized == "v41" or normalized.startswith("v41.0") or normalized.startswith("vTemporal.41"):
         return "HISTORICAL_V41"
+    if normalized.startswith("vTemporal.47.8") or normalized == "v47.8" or normalized.startswith("v47.8."):
+        return "CURRENT_V47_FAMILY"
+    if normalized.startswith("vTemporal.47") or normalized == "v47" or normalized.startswith("v47."):
+        return "HISTORICAL_V47_FAMILY"
     if normalized == "v42" or normalized.startswith("v42.") or normalized.startswith("vTemporal.42"):
-        return "CURRENT_V42_FAMILY"
+        return "PARENT_CANONICAL_FAMILY"
     return "REVIEW_REQUIRED"
 
 def git_files(root):
@@ -54,8 +58,6 @@ def git_files(root):
             "git", "-C", str(root),
             "ls-files",
             "--cached",
-            "--others",
-            "--exclude-standard",
         ],
         text=True
     )
@@ -162,6 +164,19 @@ def validate(root):
             f"invalid promotion_state: {state!r}"
         )
 
+    registry_rel = metadata.get("component_registry")
+    if not isinstance(registry_rel, str) or not registry_rel or Path(registry_rel).is_absolute() or ".." in Path(registry_rel).parts:
+        errors.append("VERSION.json component_registry is missing or unsafe")
+    else:
+        try:
+            registry = json.loads((root / registry_rel).read_text(encoding="utf-8"))
+            if registry.get("active_release") != native_version:
+                errors.append("component registry active_release does not match VERSION")
+            if registry.get("canonical_branch") != metadata.get("canonical_branch"):
+                errors.append("component registry canonical_branch does not match VERSION.json")
+        except Exception as exc:
+            errors.append(f"component registry invalid: {exc}")
+
     if metadata.get("authority_contract") != "VERSION_AUTHORITY.md":
         errors.append(
             "VERSION.json authority_contract does not resolve "
@@ -193,8 +208,8 @@ def validate(root):
             "VERSION_REFERENCES.json; regenerate inventory"
         )
 
-    # Active control surfaces may reference the native version or v41
-    # family, but may not assert v39/v40 or v41.1.x as active identity.
+    # Active controls may name the v47.8 native release and its v42.5.4
+    # parent; historical and unrelated release families are not active identity.
     for entry in actual:
         if entry["path"] not in ACTIVE_VERSION_DECLARATION_SURFACES:
             continue
@@ -203,6 +218,7 @@ def validate(root):
             "HISTORICAL_V39",
             "HISTORICAL_V40",
             "CANDIDATE_BRIDGE_HISTORY",
+            "HISTORICAL_V47_FAMILY",
             "REVIEW_REQUIRED",
         }:
             errors.append(

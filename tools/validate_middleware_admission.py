@@ -20,7 +20,14 @@ def main():
     admission_path = identity['middleware_admission']
     admission = json.loads((ROOT / admission_path).read_text())
     receipt = json.loads((ROOT / admission['promotion_receipt']).read_text())
-    assert admission['release'] == identity['version'] == (ROOT / 'VERSION').read_text().strip()
+    registry = json.loads((ROOT / identity['component_registry']).read_text())
+    component = registry['components']['middleware']
+    assert registry['active_release'] == identity['version'] == (ROOT / 'VERSION').read_text().strip()
+    assert registry['canonical_branch'] == identity['canonical_branch'] == 'main'
+    assert component['source_release'] == admission['release']
+    assert component['admission']['path'] == admission_path
+    assert component['admission']['sha256'] == hashlib.sha256((ROOT / admission_path).read_bytes()).hexdigest()
+    assert identity['version'] == (ROOT / 'VERSION').read_text().strip()
     assert admission['canonical'] is True
     assert admission['authority'] == receipt['authority'] == 'NONE'
     assert admission['human_gate'] == receipt['human_gate'] == 'ACTIVE'

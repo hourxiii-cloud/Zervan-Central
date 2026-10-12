@@ -29,5 +29,6 @@
   "runtime_validation": "NOT PERFORMED",
   "middleware_admission": "canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json",
   "flow_math_admission": "canonical/geometry/FLOW_MATH_ADMISSION.json",
-  "flow_math_port_record": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md"
+  "flow_math_port_record": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md",
+  "component_registry": "canonical/v47.8/COMPONENT_REGISTRY.json"
 }

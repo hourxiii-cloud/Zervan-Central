@@ -1,0 +1,61 @@
+{
+  "schema": "zervan-component-release-registry/v1",
+  "active_release": "vTemporal.47.8.0",
+  "canonical_branch": "main",
+  "parent_release": "vTemporal.42.5.4",
+  "canonical_parent_commit": "bde60b3e16c978070d46047847fd00e0d7938af4",
+  "package_source_baseline": {
+    "release": "vTemporal.42.5.4",
+    "commit": "bf8c82dfb911ba4eac4b984c77ace741c4e81c6f"
+  },
+  "human_gate_decision": "canonical/v47.8/HUMAN_GATE_DECISION.md",
+  "components": {
+    "spider_persona": {
+      "standing": "INHERITED_FROZEN_CANONICAL_COMPONENT",
+      "source_release": "vTemporal.42.5.4",
+      "admission": {
+        "path": "canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json",
+        "sha256": "a1708800ed59ef3d379f2d530ec4fd2c2a27e2658a46251701d6256e8b69aa09"
+      },
+      "standing_record": {
+        "path": "verification/v42.5.4/SPIDER_PERSONA_STANDING_CORRECTION.json",
+        "sha256": "c356606cbb3829c3398b77665db45f9484364c789b3ac0fca140d852ad494023"
+      },
+      "inheritance_rule": "Retains the admitted v42.5.4 identity under active v47.8; source records and payload hashes remain unchanged."
+    },
+    "middleware": {
+      "standing": "INHERITED_FROZEN_CANONICAL_COMPONENT",
+      "source_release": "vTemporal.42.5.4",
+      "admission": {
+        "path": "canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json",
+        "sha256": "ec6eb146e2bbbf55f33caf8c89f8238e65dcbfce1e3194968ebbd42b7b3911a0"
+      },
+      "promotion_receipt": "verification/middleware/MIDDLEWARE_PROMOTION_RECEIPT.json",
+      "inheritance_rule": "Retains the admitted v42.5.4 identity under active v47.8; frozen source, dependencies, receipt, and payload hashes remain unchanged."
+    },
+    "relational_flow_math": {
+      "standing": "APPROVED_CANONICAL_ADDITIVE_SUPPLEMENT",
+      "source_release": "vTemporal.47.8.0",
+      "admission": {
+        "path": "canonical/geometry/FLOW_MATH_ADMISSION.json",
+        "sha256": "4221c67a03b76a64f247b076db37fc43b1f86db28b13944b1b4b5a89def040c1"
+      },
+      "origin_contract": {
+        "path": "canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md",
+        "sha256": "27ec46f561c2d1680039f0a92e32f7a713b377ddaeac9c08fb82cfa5c0b0e1ce"
+      },
+      "promotion_receipt": {
+        "path": "verification/v47.8/PROMOTION_RECEIPT.json",
+        "sha256": "eff7cb60604c31cfdcd258a7a2310f16376065fa8fb10125a8f09ee27b673f45"
+      },
+      "port_record": {
+        "path": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md",
+        "sha256": "b09edc1626bc32c816114a72dec94bf42f7efb005c131f06c8e50e282914a986"
+      },
+      "originating_candidate_commit": "249a62f631f661ae688fb6e21bb8302969385e4f",
+      "transport_artifact_sha256": "b9f25ee53f604ec731412bc72db56bb4870c880633e835137efbbb788729f330",
+      "runtime_validation": "NOT PERFORMED",
+      "independent_component_execution": false
+    }
+  }
+}

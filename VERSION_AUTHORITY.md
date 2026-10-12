@@ -322,3 +322,4 @@ Human Gate decision: APPROVE, limited to the scope recorded in
 `canonical/v47.8/HUMAN_GATE_DECISION.md`.
 Authority: NONE. Runtime qualification: NOT PERFORMED.
 The promotion commit is recorded in `verification/v47.8/PROMOTION_RECEIPT.json`.
+Component lineage is registered in `canonical/v47.8/COMPONENT_REGISTRY.json`. The Spider and middleware admissions retain their frozen v42.5.4 source identities; the v47.8 relational-flow supplement is bound to its originating candidate SHA and transport digest.

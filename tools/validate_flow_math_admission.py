@@ -10,6 +10,19 @@ def validate(root=ROOT):
     admission_path = 'canonical/geometry/FLOW_MATH_ADMISSION.json'
     a = json.loads((root / admission_path).read_text())
     version = json.loads((root / 'VERSION.json').read_text())
+    registry = json.loads((root / version['component_registry']).read_text())
+    component = registry['components']['relational_flow_math']
+    if registry.get('active_release') != version['version']:
+        raise ValueError('component registry active release mismatch')
+    if component['source_release'] != a['release'] or component['admission']['path'] != admission_path:
+        raise ValueError('flow-math component registry lineage mismatch')
+    for key in ('admission', 'origin_contract', 'promotion_receipt', 'port_record'):
+        item = component[key]
+        actual = hashlib.sha256((root / item['path']).read_bytes()).hexdigest()
+        if actual != item['sha256']:
+            raise ValueError(f'registered flow-math {key} hash mismatch')
+    if component['originating_candidate_commit'] != a['originating_candidate_commit'] or component['transport_artifact_sha256'] != a['transport_artifact_sha256']:
+        raise ValueError('originating candidate or transport digest registry mismatch')
     if a['release'] != version['version'] or version['flow_math_admission'] != admission_path:
         raise ValueError('release or admission route mismatch')
     if (a['authority'], a['human_gate'], a['originating_data_mutation']) != ('NONE', 'ACTIVE', 'DISALLOWED'):
