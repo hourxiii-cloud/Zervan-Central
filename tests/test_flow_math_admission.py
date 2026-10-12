@@ -9,7 +9,7 @@ class AdmissionTests(unittest.TestCase):
     def copy_bound_objects(self, dest):
         a = json.loads((ROOT / 'canonical/geometry/FLOW_MATH_ADMISSION.json').read_text())
         version = json.loads((ROOT / 'VERSION.json').read_text())
-        paths = ['VERSION.json', 'canonical/geometry/FLOW_MATH_ADMISSION.json',
+        paths = ['VERSION.json', version['component_registry'], 'canonical/geometry/FLOW_MATH_ADMISSION.json',
                  version['canonical_entry'], a['frozen_parent']['path'],
                  *[x['path'] for x in a['payloads']]]
         for rel in paths:

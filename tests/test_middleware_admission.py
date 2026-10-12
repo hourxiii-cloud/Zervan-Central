@@ -19,7 +19,7 @@ class MiddlewareAdmissionTests(unittest.TestCase):
         admission_path = identity['middleware_admission']
         admission = json.loads((validator.ROOT / admission_path).read_text())
         self.admission = admission
-        paths = ['VERSION', 'VERSION.json', identity['canonical_entry'], admission_path, admission['promotion_receipt']]
+        paths = ['VERSION', 'VERSION.json', identity['canonical_entry'], identity['component_registry'], admission_path, admission['promotion_receipt']]
         paths += [x['path'] for x in admission['payloads'] + admission['frozen_dependencies'] + [admission['preserved_source']]]
         for relative in paths:
             target = self.root / relative
