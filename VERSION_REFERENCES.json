@@ -6191,6 +6191,24 @@
       "classification": "PARENT_CANONICAL_FAMILY"
     },
     {
+      "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json",
+      "line": 4,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json",
+      "line": 8,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json",
+      "line": 28,
+      "token": "v47.8",
+      "classification": "CURRENT_V47_FAMILY"
+    },
+    {
       "path": "canonical/Spider/SPIDER_R1_ADMISSION.json",
       "line": 3,
       "token": "vTemporal.42.5.3",
@@ -7881,6 +7899,12 @@
       "line": 52,
       "token": "v47.8",
       "classification": "CURRENT_V47_FAMILY"
+    },
+    {
+      "path": "canonical/v47.8/COMPONENT_REGISTRY.json",
+      "line": 62,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
     },
     {
       "path": "canonical/v47.8/CR_V47_3_PIPE_CAVERN_FOUR_UNIT_SWARMS.md",
@@ -12585,6 +12609,54 @@
       "line": 84,
       "token": "vTemporal.41.0",
       "classification": "HISTORICAL_V41"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 19,
+      "token": "v47.8",
+      "classification": "CURRENT_V47_FAMILY"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 199,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 203,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 219,
+      "token": "v47.8",
+      "classification": "CURRENT_V47_FAMILY"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 252,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 266,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 284,
+      "token": "v47.8",
+      "classification": "CURRENT_V47_FAMILY"
+    },
+    {
+      "path": "promote_jumping_spider_persona.sh",
+      "line": 295,
+      "token": "v47.8",
+      "classification": "CURRENT_V47_FAMILY"
     },
     {
       "path": "promote_v42_5_1_to_main.sh",

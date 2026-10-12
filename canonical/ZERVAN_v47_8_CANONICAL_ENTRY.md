@@ -18,9 +18,9 @@ occupied plus 599,800 vacant cells. Counting integers from zero through the
 capacity gives 1,906,625 possible count values; this is not a claim that a
 runtime executed that many tests.
 
-The pipe/cavern and Jumping Spider materials are specification-level proposals.
-Jumping Spider remains distinct from Web Spider and does not authorize external
-action or assessment of real people.
+Jumping Spider is a canonical named spatial-approach persona, distinct from Web Spider's direct interrelation operation. Its modeled observer uses a validated supplied map to reach an observation point and returns the full route and observation trace.
+A missing or unvalidated map yields NO_ROUTE/INSUFFICIENT_MAP; a blocked candidate yields NO_ROUTE/UNREACHABLE. Persona standing does not qualify route correctness, implementation, sensors, or runtime.
+Its route is modeled and authorizes no physical movement, external collection, or assessment/action concerning real people. Admission: /canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json.
 
 Unqualified items remain open: unit-ID-to-role mapping, the stale diagram
 caption, subnet field implementation, hash/ECC benchmarking, measured acoustic

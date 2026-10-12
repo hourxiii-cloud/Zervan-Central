@@ -56,6 +56,15 @@
       "transport_artifact_sha256": "b9f25ee53f604ec731412bc72db56bb4870c880633e835137efbbb788729f330",
       "runtime_validation": "NOT PERFORMED",
       "independent_component_execution": false
+    },
+    "jumping_spider_persona": {
+      "standing": "CANONICAL_NAMED_PERSONA_SPECIFICATION; SPATIAL OPERATION NOT QUALIFIED",
+      "source_release": "vTemporal.47.8.0",
+      "admission": {
+        "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json",
+        "sha256": "2557702a7a858308f406e02172c9fab90bcae1b472f299eeaeedc4ed684b637e"
+      },
+      "inheritance_rule": "Establishes the named persona and bounded spatial-approach specification only; implementation, route correctness, map fitness, runtime, credentials, and physical action remain unqualified."
     }
   }
 }

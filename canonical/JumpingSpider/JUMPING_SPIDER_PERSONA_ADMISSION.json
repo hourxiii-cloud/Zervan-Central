@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "object": "JUMPING-SPIDER-PERSONA",
+  "release": "vTemporal.47.8.0",
+  "standing": "CANONICAL NAMED ANALYTICAL PERSONA SPECIFICATION; SPATIAL OPERATION NOT QUALIFIED",
+  "canonical": true,
+  "promotion": "CANONICAL",
+  "parent_release": "vTemporal.47.8.0",
+  "parent_commit": "5d04fed5102f50b941e6a491a94912d41bd83dd9",
+  "persona": "JUMPING SPIDER",
+  "seat": "ANALYTICAL_PERSONA_SPATIAL_APPROACH_OBSERVATION_QUALIFICATION",
+  "load_order": [
+    "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_CONTRACT.md",
+    "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_SPECIFICATION.md",
+    "canonical/JumpingSpider/ONE_RUN_JUMPING_SPIDER_PERSONA_INITIALIZATION.txt"
+  ],
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "originating_data_mutation": "DISALLOWED",
+  "runtime_validation": "NOT PERFORMED",
+  "route_correctness": "NOT QUALIFIED",
+  "map_fitness": "NOT QUALIFIED",
+  "component_credentials_issued": false,
+  "physical_movement": "DISABLED",
+  "external_collection": "DISABLED",
+  "real_person_assessment": "NOT AUTHORIZED",
+  "source_change_request": "canonical/v47.8/CR_V47_8_JUMPING_SPIDER_SPATIAL_INTERACTION.md",
+  "human_authorization": "User direct instruction: It needs upgraded to persona.",
+  "payloads": [
+    {
+      "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_CONTRACT.md",
+      "size_bytes": 5461,
+      "sha256": "829b7d9f1ea489e4be20b31fe0cbae2219bc86a1cbac5f045b915fd2d08ee746"
+    },
+    {
+      "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_SPECIFICATION.md",
+      "size_bytes": 5040,
+      "sha256": "e65748eb6145cf3d0a8fa12095b203f72970ba0b65d25aef15b55f7c6e108c7f"
+    },
+    {
+      "path": "canonical/JumpingSpider/ONE_RUN_JUMPING_SPIDER_PERSONA_INITIALIZATION.txt",
+      "size_bytes": 2267,
+      "sha256": "d558e7686a16af9f65897cc6c75ef2b07ed6692f1ff3167a1d45ac694fb2941b"
+    }
+  ]
+}
