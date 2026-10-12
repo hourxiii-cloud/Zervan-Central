@@ -12461,6 +12461,18 @@
       "classification": "HISTORICAL_V39"
     },
     {
+      "path": "install_jumping_spider_spatial.sh",
+      "line": 11,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
+      "path": "install_jumping_spider_spatial.sh",
+      "line": 12,
+      "token": "vTemporal.47.8.0",
+      "classification": "CURRENT_NATIVE_VERSION"
+    },
+    {
       "path": "integration/clean_room/INTEGRATION_NOTES.md",
       "line": 3,
       "token": "vTemporal.42.5.2",
