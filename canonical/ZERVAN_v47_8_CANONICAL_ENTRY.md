@@ -31,6 +31,8 @@ current-runtime integration.
 
 The active v47.8 release-to-component lineage is recorded in `/canonical/v47.8/COMPONENT_REGISTRY.json`. It preserves the v42.5.4 identities and frozen hashes of inherited Spider and middleware components while binding the approved v47.8 flow-math supplement to its originating candidate and transport digest.
 
+The canonical middleware admission load path is `/canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json`. Load it to qualify the middleware admission and its recorded bindings.
+
 ## Additive relational-flow mathematical supplement
 
 The v47.8 supplement binds `/canonical/geometry/FLOW_MATH_ADMISSION.json`, which loads the frozen flow/pressure/vortex source before `/canonical/geometry/RELATIONAL_FLOW_MATHEMATICS.md`. The scoped arithmetic implementation is `/tools/relational_flow_math.py`.
@@ -38,3 +40,10 @@ The v47.8 supplement binds `/canonical/geometry/FLOW_MATH_ADMISSION.json`, which
 The Human Gate approval and exact source lineage are bound by `/canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md`, `/canonical/v47.8/HUMAN_GATE_DECISION.md`, and `/verification/v47.8/PROMOTION_RECEIPT.json`. The earlier port record remains `/verification/v47.8/FLOW_MATH_PORT_RECEIPT.md`. The originating candidate SHA and transport archive digest must match the contract and admission.
 
 The supplement provides synthetic accounting and interval-flow calculations. The source qualification receipt is scoped to its original baseline and is not a v47.8 port test result. This approval does not certify that `make check` passed. Runtime deployment, physical applicability, sensors, and independent execution remain unqualified.
+
+
+## Middleware canonical load sequence
+1. `/canonical/middleware/ZERVAN_MANDATORY_MIDDLEWARE_CONTRACT.md`
+2. `/canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json`
+3. `/verification/middleware/MIDDLEWARE_PROMOTION_RECEIPT.json`
+- Flow-math source: `/canonical/geometry/RELATIONAL_FLOW_PRESSURE_VORTEX_CROSS_SCALE_GEOMETRY.md`.

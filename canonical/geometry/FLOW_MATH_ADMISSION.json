@@ -1,5 +1,5 @@
 {
-  "object": "Relational Flow Mathematics — additive formal successor",
+  "object": "Relational Flow Mathematics \u2014 additive formal successor",
   "release": "vTemporal.47.8.0",
   "canonical": true,
   "standing": "CANONICAL ADDITIVE MATHEMATICAL SUPPLEMENT; RUNTIME NOT QUALIFIED",
@@ -34,8 +34,8 @@
     },
     {
       "path": "tools/validate_flow_math_admission.py",
-      "size_bytes": 3195,
-      "sha256": "a2947f24f7420c6e6dc05684a2279008aadd96c10102f93d443e6f91caf1204f"
+      "size_bytes": 4203,
+      "sha256": "4e6be63fc08a91920f485fdd6817a481bee95f7097fcf5df392cea2556bfb652"
     },
     {
       "path": "tests/test_flow_math_admission.py",
