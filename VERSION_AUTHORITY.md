@@ -323,3 +323,15 @@ Human Gate decision: APPROVE, limited to the scope recorded in
 Authority: NONE. Runtime qualification: NOT PERFORMED.
 The promotion commit is recorded in `verification/v47.8/PROMOTION_RECEIPT.json`.
 Component lineage is registered in `canonical/v47.8/COMPONENT_REGISTRY.json`. The Spider and middleware admissions retain their frozen v42.5.4 source identities; the v47.8 relational-flow supplement is bound to its originating candidate SHA and transport digest.
+
+## v48.1.3 canonical logical specification
+
+Parent: vTemporal.47.8.0 at 80343dc2701b9ab8f3720be5a9d4d3a52a958b0b
+Human Gate: APPROVE
+Authority: NONE
+No Compression Out: ACTIVE
+Frozen package: immutable
+Runtime and physical qualification: NOT PERFORMED
+Active initiation: call/INITIATION_STATEMENT_V48_1_3.md
+Canonical entry: canonical/ZERVAN_v48_1_3_CANONICAL_ENTRY.md
+Integration receipt: verification/v48.1.3/INTEGRATION_RECEIPT.json
