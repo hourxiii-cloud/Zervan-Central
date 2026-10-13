@@ -1,0 +1,87 @@
+{
+  "schema": "zervan-component-release-registry/v1",
+  "active_release": "vTemporal.48.1.3",
+  "canonical_branch": "main",
+  "parent_release": "vTemporal.47.8.0",
+  "canonical_parent_commit": "80343dc2701b9ab8f3720be5a9d4d3a52a958b0b",
+  "package_source_baseline": {
+    "release": "vTemporal.42.5.4",
+    "commit": "bf8c82dfb911ba4eac4b984c77ace741c4e81c6f"
+  },
+  "human_gate_decision": "canonical/v48.1.3/HUMAN_GATE_DECISION.md",
+  "components": {
+    "spider_persona": {
+      "standing": "INHERITED_FROZEN_CANONICAL_COMPONENT",
+      "source_release": "vTemporal.42.5.4",
+      "admission": {
+        "path": "canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json",
+        "sha256": "a1708800ed59ef3d379f2d530ec4fd2c2a27e2658a46251701d6256e8b69aa09"
+      },
+      "standing_record": {
+        "path": "verification/v42.5.4/SPIDER_PERSONA_STANDING_CORRECTION.json",
+        "sha256": "c356606cbb3829c3398b77665db45f9484364c789b3ac0fca140d852ad494023"
+      },
+      "inheritance_rule": "Retains the admitted v42.5.4 identity under active v47.8; source records and payload hashes remain unchanged."
+    },
+    "middleware": {
+      "standing": "INHERITED_FROZEN_CANONICAL_COMPONENT",
+      "source_release": "vTemporal.42.5.4",
+      "admission": {
+        "path": "canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json",
+        "sha256": "ec6eb146e2bbbf55f33caf8c89f8238e65dcbfce1e3194968ebbd42b7b3911a0"
+      },
+      "promotion_receipt": "verification/middleware/MIDDLEWARE_PROMOTION_RECEIPT.json",
+      "inheritance_rule": "Retains the admitted v42.5.4 identity under active v47.8; frozen source, dependencies, receipt, and payload hashes remain unchanged."
+    },
+    "relational_flow_math": {
+      "standing": "APPROVED_CANONICAL_ADDITIVE_SUPPLEMENT",
+      "source_release": "vTemporal.47.8.0",
+      "admission": {
+        "path": "canonical/geometry/FLOW_MATH_ADMISSION.json",
+        "sha256": "7a9c20172ca9aeb4cad030282d871bde399fa253b13713701376d5feefa73dc6"
+      },
+      "origin_contract": {
+        "path": "canonical/geometry/FLOW_MATH_ORIGIN_CONTRACT.md",
+        "sha256": "27ec46f561c2d1680039f0a92e32f7a713b377ddaeac9c08fb82cfa5c0b0e1ce"
+      },
+      "promotion_receipt": {
+        "path": "verification/v47.8/PROMOTION_RECEIPT.json",
+        "sha256": "eff7cb60604c31cfdcd258a7a2310f16376065fa8fb10125a8f09ee27b673f45"
+      },
+      "port_record": {
+        "path": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md",
+        "sha256": "b09edc1626bc32c816114a72dec94bf42f7efb005c131f06c8e50e282914a986"
+      },
+      "originating_candidate_commit": "249a62f631f661ae688fb6e21bb8302969385e4f",
+      "transport_artifact_sha256": "b9f25ee53f604ec731412bc72db56bb4870c880633e835137efbbb788729f330",
+      "runtime_validation": "NOT PERFORMED",
+      "independent_component_execution": false
+    },
+    "jumping_spider_persona": {
+      "standing": "CANONICAL_NAMED_PERSONA_SPECIFICATION; SPATIAL OPERATION NOT QUALIFIED",
+      "source_release": "vTemporal.47.8.0",
+      "admission": {
+        "path": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json",
+        "sha256": "2557702a7a858308f406e02172c9fab90bcae1b472f299eeaeedc4ed684b637e"
+      },
+      "inheritance_rule": "Establishes the named persona and bounded spatial-approach specification only; implementation, route correctness, map fitness, runtime, credentials, and physical action remain unqualified."
+    },
+    "skyfall_buffer_leap": {
+      "standing": "CANONICAL_LOGICAL_SPECIFICATION",
+      "source_release": "vTemporal.48.1.3",
+      "admission": {
+        "path": "canonical/v48.1.3/SKYFALL_ADMISSION.json",
+        "sha256": "adef13969ebc702a130c660ce02403595818545362867645e84cca26edba2b16"
+      },
+      "frozen_transport_sha256": "6320aaf2050c70d77c5522ea436ef9d308a182493bdd5eebc91cde1a223df1f3",
+      "logical_validation": "PASS",
+      "runtime_validation": "NOT PERFORMED",
+      "physical_validation": "NOT PERFORMED",
+      "inheritance_rule": "Additive admission; all four inherited component records preserved unchanged."
+    }
+  },
+  "inherited_registry": {
+    "path": "canonical/v47.8/COMPONENT_REGISTRY.json",
+    "sha256": "ec46d98ce35ea6c9ba0bac40df610f3670c34f667dfef31f5e7498243bf3beea"
+  }
+}

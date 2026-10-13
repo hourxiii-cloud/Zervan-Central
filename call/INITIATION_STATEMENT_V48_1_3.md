@@ -1,16 +1,20 @@
-# Zervan v48.1.3 Initiation
+# Zervan v48.1.3 Canonical Initiation
 
 Load in order:
 1. /VERSION
 2. /VERSION.json
 3. /VERSION_AUTHORITY.md
-4. /canonical/v47.8/COMPONENT_REGISTRY.json
-5. /call/INITIATION_STATEMENT_V48_1_3.md
-6. /canonical/ZERVAN_v48_1_3_CANONICAL_ENTRY.md
-7. /canonical/v48.1.3/HUMAN_GATE_DECISION.md
-8. /verification/v48.1.3/INTEGRATION_RECEIPT.json
+4. /call/INITIATION_STATEMENT_V48_1_3.md
+5. /canonical/v48.1.3/COMPONENT_REGISTRY.json
+6. /canonical/v48.1.3/SKYFALL_ADMISSION.json
+7. /canonical/ZERVAN_v48_1_3_CANONICAL_ENTRY.md
+8. /canonical/v48.1.3/HUMAN_GATE_DECISION.md
+9. /verification/v48.1.3/INTEGRATION_RECEIPT.json
 
-Then resolve the preserved v47.8 dependencies.
+Resolve all inherited v47.8 dependencies through the
+registered source paths and preserved hash references.
+
+Do not infer runtime implementation or physical qualification.
 
 Authority NONE.
 Human Gate ACTIVE.

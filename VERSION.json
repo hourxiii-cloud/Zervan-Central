@@ -24,12 +24,13 @@
   "inferred_versioning_allowed": false,
   "mixed_version_identity_allowed": false,
   "spider_admission": "canonical/Spider/SPIDER_R2_PERSONA_ADMISSION.json",
-  "qualification_scope": "Bounded design specification and scoped synthetic relational-flow arithmetic; runtime, physical sensors, and external action are not qualified",
+  "qualification_scope": "Inherited v47.8 canonical specification plus SKYFALL v48.1.3 qualified logical buffer-leap specification; physical range, latency, trajectory, runtime, and external action remain unqualified.",
   "integration_receipt": "verification/v48.1.3/INTEGRATION_RECEIPT.json",
   "runtime_validation": "NOT PERFORMED",
   "middleware_admission": "canonical/middleware/ZERVAN_MIDDLEWARE_ADMISSION.json",
   "flow_math_admission": "canonical/geometry/FLOW_MATH_ADMISSION.json",
   "flow_math_port_record": "verification/v47.8/FLOW_MATH_PORT_RECEIPT.md",
-  "component_registry": "canonical/v47.8/COMPONENT_REGISTRY.json",
-  "jumping_spider_admission": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json"
+  "component_registry": "canonical/v48.1.3/COMPONENT_REGISTRY.json",
+  "jumping_spider_admission": "canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json",
+  "skyfall_admission": "canonical/v48.1.3/SKYFALL_ADMISSION.json"
 }
