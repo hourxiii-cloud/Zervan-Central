@@ -5,6 +5,31 @@ Authority: NONE
 Human Gate: ACTIVE
 No Compression Out: ACTIVE
 
+## Current canonical standing
+
+Object: AZIMUTH_CR001_REV3
+Standing: CANONICAL_CONCEPTUAL_SPECIFICATION
+Qualification: QUALIFIED — CONCEPTUAL SPECIFICATION ONLY
+Human Gate decision: APPROVE
+Canonical conceptual admission: PERFORMED
+Admission commit: 2ac8a9451ed432559152c0f6552b057c3b37fa45
+
+The earlier developmental-candidate standing below is retained
+as historical source lineage, not current canonical standing.
+
+Independent test execution: NOT ESTABLISHED
+Runtime validation: NOT PERFORMED
+Integration validation: NOT PERFORMED
+Security/physical performance: NOT ESTABLISHED
+
+SKYFALL v48.1.3 remains unchanged.
+Frozen source revisions remain immutable.
+Authority NONE.
+Human Gate ACTIVE.
+No Compression Out ACTIVE.
+
+## Historical developmental record
+
 ## Source standing
 
 REV1: CLEAN FULL FROZEN
