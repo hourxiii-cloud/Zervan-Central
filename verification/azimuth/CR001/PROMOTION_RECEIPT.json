@@ -1,0 +1,14 @@
+{
+  "schema": "zervan-azimuth-promotion-receipt/v1",
+  "target": "AZIMUTH_CR001_REV3",
+  "standing": "CANONICAL_CONCEPTUAL_SPECIFICATION",
+  "source_sha256": "73e24f16c075b496bc6c959046c9d92c615b4fb80cbf81429ccbe9aa28ce6246",
+  "admission_sha256": "17ef45655bfb001802f9e2bf627bbdddc01fa83dbab9263a892b129a6d9a9005",
+  "registry_sha256": "6a30daea44aa7504ad56e9e51f71252017ae4e0352e9c4a345fa487a367c314f",
+  "canonical_entry_sha256": "f8817c1f92c57b6bf6a6f4310ab316970d624ea184bf832a0167b58d2d9bf13e",
+  "human_gate_sha256": "ad6609b33e1575ebb1182cefd5964abb09ea86025df45eac9d2afbad8601995e",
+  "qualification_limit": "Conceptual specification only; no independent execution claim",
+  "promotion_commit": "RESOLVE_FROM_GIT_MAIN",
+  "authority": "NONE",
+  "human_gate": "ACTIVE"
+}

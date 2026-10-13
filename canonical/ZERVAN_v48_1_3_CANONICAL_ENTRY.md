@@ -28,3 +28,13 @@ The inherited v47.8 architecture remains intact.
 Authority NONE.
 Human Gate ACTIVE.
 No Compression Out ACTIVE.
+
+## AZIMUTH CR-001 Rev3 — additive canonical admission
+
+Standing: CANONICAL CONCEPTUAL SPECIFICATION.
+Admission: canonical/azimuth/AZIMUTH_CR001_REV3_ADMISSION.json
+Six dimensions: Identity, Relationship, Space, Time, Transformation, Verification.
+Object identity, state revisions, address, coordinates and provenance remain distinct.
+First-class relational objects are admitted at the conceptual-specification level.
+No runtime, physical, security, or integration validation is inferred.
+Authority NONE. Human Gate ACTIVE. No Compression Out ACTIVE.

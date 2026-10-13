@@ -1,0 +1,34 @@
+{
+  "schema": "zervan-azimuth-admission/v1",
+  "baseline": "vTemporal.48.1.3",
+  "object": "AZIMUTH_CR001_REV3",
+  "standing": "CANONICAL_CONCEPTUAL_SPECIFICATION",
+  "source_standing": "QUALIFIED_CR_STAGE_CONCEPTUAL_SPECIFICATION",
+  "human_gate_decision": "APPROVE",
+  "authority": "NONE",
+  "no_compression_out": "ACTIVE",
+  "source": {
+    "path": "canonical/azimuth/AZIMUTH_CR001_REV3_CANONICAL_SOURCE.zip",
+    "sha256": "73e24f16c075b496bc6c959046c9d92c615b4fb80cbf81429ccbe9aa28ce6246"
+  },
+  "architecture": {
+    "dimensions": [
+      "Identity",
+      "Relationship",
+      "Space",
+      "Time",
+      "Transformation",
+      "Verification"
+    ],
+    "object_state_distinct": true,
+    "first_class_relational_objects": true,
+    "identity_address_coordinate_provenance_distinct": true
+  },
+  "qualification": {
+    "conceptual_specification": "QUALIFIED",
+    "independent_test_execution": "NOT ESTABLISHED",
+    "runtime_validation": "NOT PERFORMED",
+    "integration_validation": "NOT PERFORMED"
+  },
+  "human_gate_record": "canonical/azimuth/AZIMUTH_CR001_REV3_HUMAN_GATE.md"
+}

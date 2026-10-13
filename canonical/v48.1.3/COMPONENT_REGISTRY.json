@@ -78,6 +78,18 @@
       "runtime_validation": "NOT PERFORMED",
       "physical_validation": "NOT PERFORMED",
       "inheritance_rule": "Additive admission; all four inherited component records preserved unchanged."
+    },
+    "azimuth_cr001_rev3": {
+      "standing": "CANONICAL_CONCEPTUAL_SPECIFICATION",
+      "source_release": "vTemporal.48.1.3",
+      "admission": {
+        "path": "canonical/azimuth/AZIMUTH_CR001_REV3_ADMISSION.json",
+        "sha256": "17ef45655bfb001802f9e2bf627bbdddc01fa83dbab9263a892b129a6d9a9005"
+      },
+      "source_sha256": "73e24f16c075b496bc6c959046c9d92c615b4fb80cbf81429ccbe9aa28ce6246",
+      "runtime_validation": "NOT PERFORMED",
+      "independent_test_execution": "NOT ESTABLISHED",
+      "inheritance_rule": "Additive conceptual-specification admission; existing components and frozen predecessor revisions remain unchanged."
     }
   },
   "inherited_registry": {
