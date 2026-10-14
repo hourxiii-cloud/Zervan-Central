@@ -1,3 +1,26 @@
+<!-- BEGIN GENERATED ACTIVE RELEASE AUTHORITY CONTRACT -->
+# Active release authority contract
+
+**Current release identity is selected exclusively by `VERSION.json`.**
+`VERSION` must match `VERSION.json.version` exactly. The active initiation,
+canonical entry, admission, and verification paths are read from `VERSION.json`
+and the referenced current initiation contract; none are selected from the
+historical sections below.
+
+This document preserves historical release authority declarations as provenance.
+Older statements such as “Active Version”, “Active initiation path”, or
+“Promotion State” are **historical within their originating release scope**;
+they do not compete with the current `VERSION.json` selection.
+
+Any current-release mismatch, missing required target, or inconsistent control
+is a **hard validation failure**, not an opportunity to infer a release from
+this document, the README, or conversation state.
+
+Authority NONE. Human Gate ACTIVE. No Compression Out ACTIVE.
+<!-- END GENERATED ACTIVE RELEASE AUTHORITY CONTRACT -->
+
+---
+
 # VERSION AUTHORITY — vTemporal.42.1.1
 
 ## Target identity
