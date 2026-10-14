@@ -90,6 +90,28 @@
       "runtime_validation": "NOT PERFORMED",
       "independent_test_execution": "NOT ESTABLISHED",
       "inheritance_rule": "Additive conceptual-specification admission; existing components and frozen predecessor revisions remain unchanged."
+    },
+    "architecture_friction_cr": {
+      "standing": "CANONICAL_QUALIFIED_ARCHITECTURAL_BOUNDARIES",
+      "source_release": "vTemporal.48.1.3",
+      "admission": {
+        "path": "canonical/architecture_friction/ARCHITECTURE_FRICTION_CR_ADMISSION.json",
+        "sha256": "61b2aa14b8d6e0de86dd37dc2f4d7edc8f0ede2917d2fdfdf398790693de8dc6"
+      },
+      "frozen_source": {
+        "path": "Zervan_Architecture_Friction_CR_CLEAN_FULL_FREEZE.zip",
+        "sha256": "e1415003f3f86ea6b6fddfcd169173be278c60a5bfd91d9231880c7886354957"
+      },
+      "human_gate_decision": "APPROVE",
+      "qualified_items": [
+        "AF-01",
+        "AF-02",
+        "AF-03",
+        "AF-04"
+      ],
+      "runtime_validation": "NOT PERFORMED",
+      "integration_validation": "NOT PERFORMED",
+      "inheritance_rule": "Additive admission; inherited canon and frozen evidence unchanged."
     }
   },
   "inherited_registry": {

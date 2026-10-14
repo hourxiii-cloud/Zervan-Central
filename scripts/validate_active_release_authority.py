@@ -64,7 +64,9 @@ try:
         fail('canonical entry does not identify active release')
     required_order = ['VERSION','VERSION.json','VERSION_AUTHORITY.md',
                       paths['initiation_call'],paths['component_registry'],paths['skyfall_admission'],
-                      paths['canonical_entry'],paths['human_gate_decision_reference'],paths['integration_receipt']]
+                      paths['canonical_entry'],paths['human_gate_decision_reference'],paths['integration_receipt'],
+                      'canonical/architecture_friction/ARCHITECTURE_FRICTION_CR_ADMISSION.json',
+                      'verification/v48.1.3/ARCHITECTURE_FRICTION_CLOSURE_RECEIPT.json']
     listed = re.findall(r'^\s*\d+\.\s+/?(\S+)\s*$', initiation, re.MULTILINE)
     if listed != required_order:
         fail('initiation load order disagrees with VERSION.json or expected active contract')
@@ -75,6 +77,33 @@ try:
     registry_path = paths['component_registry']
     if registry_path:
         registry = json.loads(read(registry_path))
+        # Mandatory Architecture Friction canonical dependency closure.
+        import hashlib
+        af_path = 'canonical/architecture_friction/ARCHITECTURE_FRICTION_CR_ADMISSION.json'
+        af = json.loads(read(af_path))
+        components = registry.get('components', {})
+        if len(components) != 7:
+            fail('architecture friction requires seven registered components')
+        comp = components.get('architecture_friction_cr', {})
+        actual = hashlib.sha256((ROOT / af_path).read_bytes()).hexdigest()
+        if comp.get('admission') != {'path': af_path, 'sha256': actual}:
+            fail('architecture friction admission not correctly registered')
+        if af.get('canonical') is not True or af.get('human_gate_decision') != 'APPROVE':
+            fail('architecture friction approval missing')
+        if set(af.get('qualified_scope', {})) != {'AF-01','AF-02','AF-03','AF-04'}:
+            fail('architecture friction scope mismatch')
+        source = comp.get('frozen_source', {})
+        if source.get('sha256') != af.get('source_sha256'):
+            fail('architecture friction frozen source mismatch')
+        if hashlib.sha256((ROOT / source['path']).read_bytes()).hexdigest() != source['sha256']:
+            fail('architecture friction frozen archive integrity mismatch')
+        if af_path not in entry or not all(x in entry for x in ('AF-01','AF-02','AF-03','AF-04')):
+            fail('architecture friction missing from canonical entry')
+        closure = json.loads(read('verification/v48.1.3/ARCHITECTURE_FRICTION_CLOSURE_RECEIPT.json'))
+        if closure.get('admission') != {'path': af_path, 'sha256': actual}:
+            fail('architecture friction closure receipt mismatch')
+        if closure.get('human_gate_decision') != 'APPROVE':
+            fail('architecture friction closure approval missing')
         if registry.get('active_release') != version:
             fail('component registry active_release disagrees with VERSION.json')
         if registry.get('canonical_branch') != cfg.get('canonical_branch'):
