@@ -1,0 +1,10 @@
+{
+  "schema": "zervan-abcd-upload-part/v1",
+  "job": "A",
+  "order": 1,
+  "total_jobs": 4,
+  "payload_member": "Zervan_v47_8_FREEZE.part.A",
+  "payload_bytes": 14116240,
+  "payload_sha256": "3ca822a870e556e0a508717710ae40fbfb2218c12d3e4db0a84c12d31c9faaa7",
+  "next_job": "B"
+}

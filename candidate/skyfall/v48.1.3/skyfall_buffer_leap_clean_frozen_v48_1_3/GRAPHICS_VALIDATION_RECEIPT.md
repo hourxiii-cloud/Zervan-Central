@@ -1,0 +1,27 @@
+# SKYFALL v48.1.3 Graphics Validation Receipt
+
+Reviewed: `skyfall_buffer_leap_v48_1_3.png`
+
+```text
+RESULT: PASS
+TEN STATES PRESENT: TRUE
+248-IDENTITY ACCOUNTING PRESENT: TRUE
+GATE 1 / S3 PRESENT: TRUE
+GATE 2 / S7 PRESENT: TRUE
+LANES A / B / C PRESENT: TRUE
+INITIATING RADIUS r_min PRESENT: TRUE
+118-MILE STEP-DISTANCE BASIS PRESENT: TRUE
+39.333333-MILE SELECTED-CHANNEL STEP DISTANCE PRESENT: TRUE
+CHANNELS DO NOT PARTITION DISTANCE: VISIBLE
+AGGREGATE MODEL SPAN UNRESOLVED: VISIBLE
+PHYSICAL RANGE NOT VALIDATED: VISIBLE
+CLEAN-FREEZE FOOTER: VISIBLE
+```
+
+Rejected strings were checked and are absent:
+
+- `3 meters`, `3m`, or `3-meter`;
+- `110-meter`;
+- `clicks`;
+- `trajectory vectors`;
+- zero-latency or automatic-rehydration claims.

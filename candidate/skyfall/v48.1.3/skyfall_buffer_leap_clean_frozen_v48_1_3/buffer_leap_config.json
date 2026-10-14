@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "object": {
+    "name": "SKYFALL — Verified Three-Lane Buffer Leap Modulus",
+    "design_label": "vTemporal.48.1.3",
+    "standing": "COMPLETE_CLEAN_FROZEN",
+    "canonical": false,
+    "immutable": true,
+    "authority": "NONE",
+    "human_gate": "ACTIVE",
+    "git_promotion": "NOT_PERFORMED",
+    "physical_runtime_validation": "NOT_PERFORMED"
+  },
+  "parent": {
+    "name": "SKYFALL — Möbius Superposition Logical Modulus",
+    "version": "vTemporal.48.1.1",
+    "standing": "COMPLETE_CLEAN_FROZEN",
+    "zip_sha256": "06cf22e8936bc5a5e7aea58ba273003f69326884bfc5f840e8e7d08a013ccf7a",
+    "manifest_sha256": "2e8a7ac8ad55355ce0db80bb965f5e57360235f52dc867f09136ff020ea75320",
+    "identity_sha256": "903e785f1b107abb628248f2c3eedb76546e8ff45f55d9c3c42cebf1cc2f877a"
+  },
+  "inventory": {
+    "total_identities": 248,
+    "north_identities": 124,
+    "south_identities": 124,
+    "parameter_units": 224,
+    "transition_buffer_units": 24,
+    "equal_three_way_identity_partition": false
+  },
+  "lanes": {
+    "count": 3,
+    "names": ["A", "B", "C"],
+    "storage_model": "REPLICATED_FULL_LOGICAL_SNAPSHOT",
+    "identities_per_lane_snapshot": 248,
+    "anchor_quorum": 2,
+    "identity_partition": false,
+    "single_selected_lane_per_cycle": true
+  },
+  "geometry": {
+    "domain": "DECLARED_LOGICAL_SPATIAL_MODEL",
+    "distance_unit": "MILE",
+    "initiating_radius_symbol": "r_min",
+    "initiating_radius_definition": "TIGHTEST_ADMISSIBLE_CIRCLE",
+    "initiating_radius_numeric_value": null,
+    "channel_count": 3,
+    "step_distance_basis_miles": 118,
+    "selected_channel_step_expression": "118/3",
+    "selected_channel_step_rational": {"numerator": 118, "denominator": 3},
+    "selected_channel_step_miles": "39 1/3",
+    "channels_partition_distance": false,
+    "aggregate_model_span_miles": null,
+    "three_meter_offset_admitted": false,
+    "three_meter_transit_reserve_admitted": false,
+    "one_hundred_ten_meter_radius_admitted": false,
+    "physical_range_validated": false
+  },
+  "leap_contract": {
+    "precondition": "THREE_SYNCHRONIZED_VERIFIED_SNAPSHOTS",
+    "gate_1": "S3_OUTBOUND_ANCHOR_QUALIFICATION",
+    "selected_lane_action": "ONE_DETERMINISTIC_MOBIUS_TRAVERSAL",
+    "anchor_lane_action": "HOLD_VERIFIED_PRE_TRANSITION_SNAPSHOT",
+    "gate_2": "S7_INBOUND_EXACT_TRANSITION_RECHECK",
+    "commit": "REPLICATE_VERIFIED_RESULT_TO_ALL_LANES",
+    "history_replay_bypass": "ALLOWED_ONLY_FROM_VERIFIED_PARENT_RECEIPT",
+    "automatic_rehydration": false,
+    "zero_latency_claim": false,
+    "semantic_drift_detection": "EXACT_EXPECTED_STATE_COMPARISON"
+  },
+  "timing_model": {
+    "equation": "T_leap = t_gate1 + t_transform + t_gate2 + t_reconcile",
+    "zero_terms": [],
+    "numeric_result_available": false,
+    "speedup_claim_available": false,
+    "reason": "REQUIRES_MEASURED_BASELINE_AND_CANDIDATE_STAGE_TIMES"
+  },
+  "validation": {
+    "cycles": 10000,
+    "deterministic_seed": 48124812,
+    "required_identity_sha256": "903e785f1b107abb628248f2c3eedb76546e8ff45f55d9c3c42cebf1cc2f877a",
+    "required_result": "PASS"
+  }
+}

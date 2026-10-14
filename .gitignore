@@ -16,3 +16,5 @@ hydration_receipt*.json
 *.swp
 *.tmp
 .DS_Store
+
+/zervan-current-main.tar.gz

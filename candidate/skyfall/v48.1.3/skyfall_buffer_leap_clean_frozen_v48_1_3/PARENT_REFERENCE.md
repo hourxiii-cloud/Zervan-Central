@@ -1,0 +1,12 @@
+# Parent Reference
+
+```text
+PARENT: SKYFALL — MÖBIUS SUPERPOSITION LOGICAL MODULUS
+VERSION: vTemporal.48.1.1
+STANDING: COMPLETE — CLEAN FROZEN
+ZIP SHA-256: 06cf22e8936bc5a5e7aea58ba273003f69326884bfc5f840e8e7d08a013ccf7a
+MANIFEST SHA-256: 2e8a7ac8ad55355ce0db80bb965f5e57360235f52dc867f09136ff020ea75320
+IDENTITY SHA-256: 903e785f1b107abb628248f2c3eedb76546e8ff45f55d9c3c42cebf1cc2f877a
+```
+
+The parent is immutable. This qualified child freeze neither rewrites nor promotes it.

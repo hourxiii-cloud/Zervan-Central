@@ -1,0 +1,16 @@
+{
+  "object": "CR-AZIMUTH-001",
+  "revision": 2,
+  "name": "AZIMUTH Object/State Analytical Territory and Addressing",
+  "standing": "CR_STAGED_CONCEPTUAL_SPECIFICATION_FROZEN",
+  "baseline_reference": "vTemporal.48.1.3",
+  "supersedes_proposal_revision": 1,
+  "prior_freeze_immutable": true,
+  "material_change": "Object/State becomes primary; coordinate and address are derived and distinct; lifecycle, provenance, subnetting, invariants and tests specified",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE",
+  "repository_mutation": false,
+  "runtime_tests_executed": false,
+  "canonical_promotion": false
+}
