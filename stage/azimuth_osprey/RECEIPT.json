@@ -1,0 +1,14 @@
+{
+  "object": "AZIMUTH_OSPREY_RECIPROCAL_BRIDGE_STAGE_V1",
+  "baseline": "vTemporal.48.1.3",
+  "base_commit": "61c65bbee55d538fb7c737f8b979fbbb7d24c014",
+  "standing": "STAGED_CANDIDATE",
+  "qualification_scope": "LOCAL_CONTRACT_TESTS_ONLY",
+  "canonical_mutation": false,
+  "runtime_integration": "NOT_ESTABLISHED",
+  "independent_integration_validation": "NOT_PERFORMED",
+  "external_collection": "PROHIBITED",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE"
+}
