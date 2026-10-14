@@ -1,0 +1,43 @@
+{
+  "schema": "zervan-abcd-upload-assembly/v1",
+  "purpose": "Reconstruct the exact compact v47.8 clean-full-freeze ZIP from four ordered GitHub web-upload jobs.",
+  "upload_limit_bytes": 25000000,
+  "final_archive": "Zervan_v47_8_One_Push_Canon_Review_Candidate_COMPACT_CLEAN_FULL_FREEZE.zip",
+  "final_bytes": 56464957,
+  "final_sha256": "d1e695fe054e13a072fbe49b05b32bc982aa1add9de38b5c079424e00bb52768",
+  "final_sha512": "8032b690ea4c0ea59f9dabceccd8d19d4f18d753f30143e6e13bcb42e8758dfbff1009658f6f85a73aae5498d1464494be3461561d83709de38370e400578634",
+  "parts": [
+    {
+      "order": 1,
+      "job": "A",
+      "archive": "Zervan_v47_8_GitHub_Upload_A.zip",
+      "payload_member": "Zervan_v47_8_FREEZE.part.A",
+      "bytes": 14116240,
+      "sha256": "3ca822a870e556e0a508717710ae40fbfb2218c12d3e4db0a84c12d31c9faaa7"
+    },
+    {
+      "order": 2,
+      "job": "B",
+      "archive": "Zervan_v47_8_GitHub_Upload_B.zip",
+      "payload_member": "Zervan_v47_8_FREEZE.part.B",
+      "bytes": 14116240,
+      "sha256": "041f8afd8bae0ebe4f22bc05957608ff14831806a6b86b9a0780f3713eb99ef5"
+    },
+    {
+      "order": 3,
+      "job": "C",
+      "archive": "Zervan_v47_8_GitHub_Upload_C.zip",
+      "payload_member": "Zervan_v47_8_FREEZE.part.C",
+      "bytes": 14116240,
+      "sha256": "a8e05f50eff919f2a79491a98b6c8926df917af8f82c7838a3cb87c8e0bb6694"
+    },
+    {
+      "order": 4,
+      "job": "D",
+      "archive": "Zervan_v47_8_GitHub_Upload_D.zip",
+      "payload_member": "Zervan_v47_8_FREEZE.part.D",
+      "bytes": 14116237,
+      "sha256": "171e017fa055569f4bae98c2c04edffdf09ba84a2b91391164803b38fc9ba232"
+    }
+  ]
+}

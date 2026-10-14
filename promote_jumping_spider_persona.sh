@@ -2,7 +2,7 @@
 set -euo pipefail
 
 cd /workspaces/Zervan-Central
-EXPECTED=5d04fed5102f50b941e6a491a94912d41bd83dd9
+EXPECTED=d48f48816a782052189383fd87aa34aeff297186
 
 git fetch origin main
 if [[ "$(git branch --show-current)" != "main" ]]; then
@@ -275,8 +275,6 @@ registry_path.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\
 print(f"Created Jumping Spider persona admission {admission_sha}")
 PY
 
-python3 tools/regenerate_version_references.py
-
 git add -- \
   canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_CONTRACT.md \
   canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_SPECIFICATION.md \
@@ -284,7 +282,9 @@ git add -- \
   canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_ADMISSION.json \
   canonical/ZERVAN_v47_8_CANONICAL_ENTRY.md \
   canonical/v47.8/COMPONENT_REGISTRY.json \
-  VERSION.json VERSION_REFERENCES.json
+  VERSION.json
+python3 tools/regenerate_version_references.py
+git add -- VERSION_REFERENCES.json
 
 git commit --only -m "feat: admit Jumping Spider persona" -- \
   canonical/JumpingSpider/JUMPING_SPIDER_PERSONA_CONTRACT.md \

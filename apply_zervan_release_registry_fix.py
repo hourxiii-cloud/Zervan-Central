@@ -236,19 +236,31 @@ def main() -> int:
 
     middleware_path = "tools/validate_middleware_admission.py"
     middleware = (ROOT / middleware_path).read_text(encoding="utf-8")
-    middleware = replace_once(
+    if "registry = json.loads((ROOT / identity['component_registry']).read_text())" not in middleware:
+        receipt_line = re.compile(r"(?m)^(?P<indent>[ \t]*)receipt\s*=.*$")
+        matches = list(receipt_line.finditer(middleware))
+        if len(matches) != 1:
+            raise RuntimeError("Cannot locate middleware receipt load; nothing changed.")
+        match = matches[0]
+        indent = match.group("indent")
+        addition = (
+            f"\n{indent}registry = json.loads((ROOT / identity['component_registry']).read_text())"
+            f"\n{indent}component = registry['components']['middleware']"
+            f"\n{indent}assert registry['active_release'] == identity['version'] == (ROOT / 'VERSION').read_text().strip()"
+            f"\n{indent}assert registry['canonical_branch'] == identity['canonical_branch'] == 'main'"
+            f"\n{indent}assert component['source_release'] == admission['release']"
+            f"\n{indent}assert component['admission']['path'] == admission_path"
+            f"\n{indent}assert component['admission']['sha256'] == hashlib.sha256((ROOT / admission_path).read_bytes()).hexdigest()"
+        )
+        middleware = middleware[:match.end()] + addition + middleware[match.end():]
+
+    release_assert = re.compile(r"(?m)^(?P<indent>[ \t]*)assert\s+.*admission.*release.*$")
+    middleware, replaced = release_assert.subn(
+        lambda m: m.group("indent") + "assert component['source_release'] == admission['release']",
         middleware,
-        "    receipt = json.loads((ROOT / admission['promotion_receipt']).read_text())\n    assert admission['release'] == identity['version'] == (ROOT / 'VERSION').read_text().strip()",
-        "    receipt = json.loads((ROOT / admission['promotion_receipt']).read_text())\n"
-        "    registry = json.loads((ROOT / identity['component_registry']).read_text())\n"
-        "    component = registry['components']['middleware']\n"
-        "    assert registry['active_release'] == identity['version'] == (ROOT / 'VERSION').read_text().strip()\n"
-        "    assert registry['canonical_branch'] == identity['canonical_branch'] == 'main'\n"
-        "    assert component['source_release'] == admission['release']\n"
-        "    assert component['admission']['path'] == admission_path\n"
-        "    assert component['admission']['sha256'] == hashlib.sha256((ROOT / admission_path).read_bytes()).hexdigest()",
-        "middleware validator",
     )
+    if not replaced and "assert component['source_release'] == admission['release']" not in middleware:
+        raise RuntimeError("Cannot identify middleware release comparison; nothing changed.")
     updates[middleware_path] = middleware
 
     flow_path = "tools/validate_flow_math_admission.py"
