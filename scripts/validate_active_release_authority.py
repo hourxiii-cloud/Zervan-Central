@@ -82,8 +82,27 @@ try:
         af_path = 'canonical/architecture_friction/ARCHITECTURE_FRICTION_CR_ADMISSION.json'
         af = json.loads(read(af_path))
         components = registry.get('components', {})
-        if len(components) != 7:
-            fail('architecture friction requires seven registered components')
+        # Seven components form the Architecture Friction baseline.
+        # Canonically admitted additive components may extend that registry.
+        required_components = {
+            'spider_persona',
+            'middleware',
+            'relational_flow_math',
+            'jumping_spider_persona',
+            'skyfall_buffer_leap',
+            'azimuth_cr001_rev3',
+            'architecture_friction_cr',
+        }
+        missing_components = required_components - set(components)
+        if missing_components:
+            fail(
+                'architecture friction baseline components missing: '
+                + ', '.join(sorted(missing_components))
+            )
+
+        # CR-2026-10-15-v4813-GOLD is now an admitted additive component.
+        if 'cr_2026_10_15_v4813_gold' not in components:
+            fail('canonical GOLD additive component missing from registry')
         comp = components.get('architecture_friction_cr', {})
         actual = hashlib.sha256((ROOT / af_path).read_bytes()).hexdigest()
         if comp.get('admission') != {'path': af_path, 'sha256': actual}:
