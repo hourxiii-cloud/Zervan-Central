@@ -52,3 +52,23 @@ Human Gate decision: APPROVE.
 Excluded: mandatory 12:1 scheduler, automatic Möbius rollback, invented runtime failures, and retrospective alteration of frozen evidence.
 
 Authority NONE. Human Gate ACTIVE. No Compression Out ACTIVE.
+
+## CR-2026-10-15-v4813-GOLD — additive canonical admission
+
+Standing: CANONICAL ADDITIVE QUALIFIED RECORD.
+
+The exact CLEAN FULL FREEZE transport is admitted without reconstruction,
+compression, or mutation.
+
+Human Gate testing reported complete is preserved at its recorded standing.
+The Stage-Gate 3 provenance/entity-separation correction is preserved.
+248 unique identities replicated across three lanes establish 744 lane
+positions; they do not establish 744 independently unique identities.
+
+Independent full runtime re-execution is not established by this admission.
+Production promotion is not authorized.
+Osprey implementation and standing remain unchanged.
+
+Authority NONE.
+Human Gate ACTIVE.
+No Compression Out ACTIVE.

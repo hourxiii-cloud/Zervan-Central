@@ -1,0 +1,21 @@
+{
+  "schema": "zervan-promotion-receipt/v2",
+  "object": "CR-2026-10-15-v4813-GOLD",
+  "version": "vTemporal.48.1.3",
+  "branch": "main",
+  "standing": "HUMAN-GATE APPROVED FOR CANONICAL ADDITIVE INTEGRATION",
+  "decision": "APPROVE",
+  "promotion_base_commit": "15375b1dc893e7d391538e27b25de00974c17178",
+  "transport_artifact": {
+    "path": "ZERVAN_CR_2026_10_15_v4813_GOLD_CLEAN_FULL_FREEZE.zip",
+    "sha256": "f6d04f3755ff390312906bdde120a0dce3b48a3636b2b2b78187534550819879",
+    "sha512": "719ccbf21d0c48ed0419dd8c5a7981bc8806bf5a29a762ad783638779d5d846c21e379581a7bcfd74db86bf35594d19be8e3b1a50aadd58347700aa9f58f40da"
+  },
+  "admission": "canonical/v48.1.3/CR_2026_10_15_V4813_GOLD_ADMISSION.json",
+  "decision_record": "canonical/v48.1.3/CR_2026_10_15_V4813_GOLD_HUMAN_GATE_DECISION.md",
+  "runtime_reexecution": "NOT ESTABLISHED",
+  "production_authorization": "NOT AUTHORIZED",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE"
+}

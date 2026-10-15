@@ -112,6 +112,18 @@
       "runtime_validation": "NOT PERFORMED",
       "integration_validation": "NOT PERFORMED",
       "inheritance_rule": "Additive admission; inherited canon and frozen evidence unchanged."
+    },
+    "cr_2026_10_15_v4813_gold": {
+      "standing": "CANONICAL_ADDITIVE_QUALIFIED_RECORD",
+      "source_release": "vTemporal.48.1.3",
+      "admission": {
+        "path": "canonical/v48.1.3/CR_2026_10_15_V4813_GOLD_ADMISSION.json"
+      },
+      "human_gate_decision": "canonical/v48.1.3/CR_2026_10_15_V4813_GOLD_HUMAN_GATE_DECISION.md",
+      "frozen_source": {
+        "path": "ZERVAN_CR_2026_10_15_v4813_GOLD_CLEAN_FULL_FREEZE.zip"
+      },
+      "inheritance_rule": "Additive admission of the exact clean-full-freeze qualified record; existing canon, frozen evidence, Osprey implementation, and runtime standing remain unchanged."
     }
   },
   "inherited_registry": {

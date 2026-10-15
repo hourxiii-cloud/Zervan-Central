@@ -1,0 +1,46 @@
+{
+  "schema": "zervan-additive-canonical-admission/v1",
+  "object": "CR-2026-10-15-v4813-GOLD",
+  "version_binding": "vTemporal.48.1.3",
+  "standing": "CANONICAL_ADDITIVE_QUALIFIED_RECORD",
+  "source_standing": "CLEAN_FULL_FREEZE",
+  "promotion_base_commit": "15375b1dc893e7d391538e27b25de00974c17178",
+  "human_gate": "APPROVE",
+  "authority": "NONE",
+  "no_compression_out": "ACTIVE",
+  "frozen_source_mutation": "DISALLOWED",
+  "frozen_transport": {
+    "path": "ZERVAN_CR_2026_10_15_v4813_GOLD_CLEAN_FULL_FREEZE.zip",
+    "sha256": "f6d04f3755ff390312906bdde120a0dce3b48a3636b2b2b78187534550819879",
+    "sha512": "719ccbf21d0c48ed0419dd8c5a7981bc8806bf5a29a762ad783638779d5d846c21e379581a7bcfd74db86bf35594d19be8e3b1a50aadd58347700aa9f58f40da"
+  },
+  "contained_records": {
+    "freeze_record": {
+      "path_in_transport": "FREEZE_RECORD.md",
+      "sha256": "d802d97f53cd55c03fc942b214c8c908ea013e06d10238346b1506623051d9b2"
+    },
+    "validation_receipt": {
+      "path_in_transport": "VALIDATION_RECEIPT.json",
+      "sha256": "f99cded3ee372a1c4d370f1faf9f4be778d274ac999fc33ff3e15d86fdc14b34"
+    }
+  },
+  "qualification": {
+    "human_gate_testing": "REPORTED COMPLETE",
+    "portable_package_retest": "PASS WITHIN PACKAGE SCOPE",
+    "stage_gate_3_correction": "PRESERVED",
+    "lane_interpretation": {
+      "unique_identities": 248,
+      "replicated_lanes": 3,
+      "lane_positions": 744
+    },
+    "independent_full_runtime_reexecution": "NOT ESTABLISHED",
+    "production_promotion": "NOT AUTHORIZED"
+  },
+  "non_mutation": {
+    "existing_canon": "PRESERVED",
+    "osprey_implementation": "UNCHANGED",
+    "external_action": "NOT AUTHORIZED",
+    "originating_data_mutation": "DISALLOWED"
+  },
+  "human_gate_decision": "canonical/v48.1.3/CR_2026_10_15_V4813_GOLD_HUMAN_GATE_DECISION.md"
+}
