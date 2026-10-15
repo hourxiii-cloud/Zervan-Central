@@ -1,0 +1,28 @@
+{
+  "schema": "zervan.canonical_admission.v1",
+  "object": "CR-v48.1.3-ARCHITECTURE-FRICTION-QUALIFIED-001",
+  "baseline": "vTemporal.48.1.3",
+  "source_archive": "Zervan_Architecture_Friction_CR_CLEAN_FULL_FREEZE.zip",
+  "source_sha256": "e1415003f3f86ea6b6fddfcd169173be278c60a5bfd91d9231880c7886354957",
+  "human_gate_decision": "APPROVE",
+  "human_gate_authorization": "Explicit user authorization in conversation",
+  "qualified_scope": {
+    "AF-01": "Reachability must be qualified independently of unassigned occupancy",
+    "AF-02": "Identity replication must not be conflated with physical processing concurrency",
+    "AF-03": "Logical reversibility and external evidence mutation retain separate qualification boundaries",
+    "AF-04": "Logical PASS must remain distinct from runtime, integration and security validation"
+  },
+  "excluded": [
+    "Mandatory 12:1 scheduler",
+    "Automatic Mobius rollback",
+    "Unsupported runtime failure assertions",
+    "Retroactive mutation of frozen qualifications"
+  ],
+  "canonical": true,
+  "standing": "CANONICAL_ADMISSION",
+  "runtime_validation": "NOT PERFORMED",
+  "integration_validation": "NOT PERFORMED",
+  "authority": "NONE",
+  "human_gate": "ACTIVE",
+  "no_compression_out": "ACTIVE"
+}

@@ -10,6 +10,8 @@ Load in order:
 7. /canonical/ZERVAN_v48_1_3_CANONICAL_ENTRY.md
 8. /canonical/v48.1.3/HUMAN_GATE_DECISION.md
 9. /verification/v48.1.3/INTEGRATION_RECEIPT.json
+10. /canonical/architecture_friction/ARCHITECTURE_FRICTION_CR_ADMISSION.json
+11. /verification/v48.1.3/ARCHITECTURE_FRICTION_CLOSURE_RECEIPT.json
 
 Resolve all inherited v47.8 dependencies through the
 registered source paths and preserved hash references.
